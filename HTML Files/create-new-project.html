@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../CSS Files/create-new-project.css">
+</head>
+<body class="dark-theme">
+  <header>
+    <div onclick="
+        window.location.href= 'project-page.html'
+      ">
+      <img src="/Icons/bootstrap icon/chevron-left.svg">
+      <p>Go Back</p>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="head">
+        Project Setup
+      </div>
+      <div class="body-project">
+        <form action="">
+          <div class="form-up">
+            <div class="title-wrap">
+              <label for="title">Title</label>
+              <input id="title" type="text" required>
+              <span class="count">0</span>
+            </div>
+            <div class="cover-wrap">
+              <label for="cover">Cover Image</label>
+              <input id="cover" type="file" required>
+            </div>
+            <div class="describtion-wrap">
+              <label for="describtion">Describtion</label>
+              <textarea id="describtion" required></textarea>
+            </div>
+            <div class="project-type-wrap">
+              <p>Project Type</p>
+              <div>
+                <input type="radio" name="project-type" id="personal" required checked>
+                <label for="personal">Personsl Project</label>
+              </div>
+              <div>
+                <input type="radio" name="project-type" id="public" required>
+                <label for="public">Public Project (To Hire)</label>
+              </div>
+              <div>
+                <input type="radio" name="project-type" id="client" required>
+                <label for="client">Client Project</label>
+              </div>
+            </div>
+            <div class="phases-wrap">
+              <div class="phase-head">
+                <p>Phases (<span class="phase-count">0</span>)</p>
+                <span class="add-phase-btn">Add New Phase</span>
+              </div>
+              <div class="phase-container">
+              </div>
+            </div>
+            <div class="source-wrap">
+              <p>Choose Your Source</p>
+              <div>
+                <input type="radio" name="source" id="internal">
+                <label for="internal">Internal</label>
+              </div>
+              <div>
+                <input type="radio" name="source" id="external">
+                <label for="external">External</label>
+              </div>
+            </div>
+            <div class="source-wrap-option">
+              <p>Select Your Source</p>
+              <div>
+                <input type="text" list="source" id="source-select">
+                <datalist id="source">
+                  <option value="Fiverr"></option>
+                  <option value="LinkedIn"></option>
+                  <option value="Upwork"></option>
+                  <option value="Freelancer"></option>
+                  <option value="X (Twitter)"></option>
+                  <option value="Others"></option>
+                </datalist>
+              </div>
+              <div class="enter-source">
+                <p>Enter Your Source</p>
+                <input type="text">
+              </div>
+            </div>
+            <div class="public-options">
+              <div class="Skill-required" >
+                <label for="skill">Skill Required</label>
+                <input list="category" id="skill">
+                <datalist id="category">
+                  <option value="Developer"></option>
+                  <option value="Designer"></option>
+                  <option value="Software Developer"></option>
+                  <option value="Front-End Developer"></option>
+                </datalist>
+              </div>
+              <div class="budget-range">
+                <label for="budget">Budget Range</label>
+                <input list="budget" id="budget">
+                <datalist id="budget">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </datalist>
+              </div>
+              <div class="deadline">
+                <label for="date">Deadline</label>
+                <input type="date" id="date">
+              </div>
+            </div>
+            <div class="visibility-wrap">
+            <p>Visibility</p>
+            <div>
+              <input type="checkbox" id="visible">
+              <label for="visible">Public Marketplace</label>
+            </div>
+            <div>
+              <input type="checkbox" id="visible2">
+              <label for="visible2">Add to Home Feed</label>
+            </div>
+            <div>
+              <input type="checkbox" id="visible3">
+              <label for="visible3">Private Invite (Work Circle)</label>
+            </div>
+          </div>
+          </div>
+          <div class="create-wrap">
+            <button type="submit">Create Project</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="/Flowvia/script/create-new-project.js" type="module"></script>
+</body>
+</html>

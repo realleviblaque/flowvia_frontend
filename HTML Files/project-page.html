@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS Files/project-page.css">
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="left">
+      <p>Projects</p>
+      <input type="text" placeholder="Search projects...">
+    </div>
+    <div class="right">
+      <select class="filter-project">
+        <option value="all">All Projects</option>
+        <option value="personal">Personal Projects</option>
+        <option value="client">Client Projects</option>
+      </select>
+      <button class="create-project-btn">
+        <img src="/Icons/bootstrap icon/plus.svg">
+        <p>Create New Project</p>
+      </button>
+    </div>
+  </header>
+  <nav>
+    <div class="contetn-container">
+      <div class="head-logo">
+        <a class="head-content" href="home-feed.html">
+          <img src="../src/logo/logo.png" loading="lazy" alt="logo preview">
+          <p>Flowvia</p>
+        </a>
+      </div>
+      <ul class="main-ul">
+        <li><img src="/Icons/bootstrap icon/house-door.svg" loading="lazy"><a href="home-feed.html">Home</a></li>
+        <li class="stat">
+          <div class="stat-text">
+            <a href="status.html"><img style="width: 20px;" src="/Icons/bootstrap icon/graph-up.svg" loading="lazy">Status</a><img class="stat-click" src="/Icons/hero icon/solid/chevron-down.svg" loading="lazy">
+          </div>
+
+          <div class="status-view">
+            <ul class="client">
+              <li><a href="">Open Projects <p>10</p></a></li>
+              <li><a href="">In Negotiations <p>22</p></a></li>
+              <li><a href="">Taken Projects <p>11</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Bookmarked <p>22</p></a></li>
+              <li><a href="">Pending Request <p>11</p></a></li>
+            </ul>
+            <ul class="team">
+              <li><a href="">Available Jobs <p>10</p></a></li>
+              <li><a href="">Active Projects <p class="active-status-project">22</p></a></li>
+              <li><a href="">Applied Jobs <p>11</p></a></li>
+              <li><a href="">Bookmarked Jobs<p>6</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Pending Request <p>11</p></a></li>
+            </ul>
+            <ul class="self">
+              <li><a href="">Active Projects <p class="active-status-project">22</p></a></li>
+              <li><a href="">Applied Jobs <p>11</p></a></li>
+              <li><a href="">Bookmarked Jobs<p>6</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Pending Request<p>8</p></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="pageview"><img src="/Icons/fontawesome icon/solid/folder-open.svg" loading="lazy"><a href="project-page.html">Projects</a></li>
+        <li><img style="width: 18px;" src="/Icons/bootstrap icon/shop.svg" loading="lazy"><a href="market-place.html">Marketplace</a></li>
+        <li><img src="/Icons/bootstrap icon/chat-text.svg" loading="lazy"><a href="message.html">Messages</a></li>
+        <li  class="team-check"><img src="/Icons/bootstrap icon/people.svg" loading="lazy"> <a href="">Team</a></li>
+        <li><img src="/Icons/bootstrap icon/briefcase.svg" loading="lazy"><a href="">Work Circle</a></li>
+        <li><img src="/Icons/bootstrap icon/bell.svg" loading="lazy"><span class="notify-red"></span><a href="">Notifications</a></li>
+        <li><img src="/Icons/bootstrap icon/person.svg" loading="lazy"><a href="user-profile.html">Profile</a></li>
+        <li><img src="/Icons/bootstrap icon/gear.svg" loading="lazy"><a href="settings.html">Settings</a></li>
+      </ul>
+      <div class="nav-bottom">
+        <button class="btn-nav-click">Create Team</button>
+        <div class="log-container">
+          <button><img src="/Icons/bootstrap icon/box-arrow-right.svg" loading="lazy">Logout</button>
+          <img class="change-theme" src="/Icons/bootstrap icon/moon-stars.svg" loading="lazy">
+        </div>
+      </div>
+      <dialog class="dialog">
+        <div class="close-dialog">
+          <img src="/Icons/bootstrap icon/x.svg" loading="lazy">
+        </div>
+        <p class="dialog-head-text">Welcome to Flowvia Team</p>
+        <span></span>
+        <div class="dialog-action">
+          <button>Create New Team</button>
+          <p>or</p>
+          <button>Join Existing Team</button>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+  <main>
+    <div class="main-head">
+      <div>
+        <p class="total-project-count">24</p>
+        <p>TOTAL PROJECTS</p>
+        <p class="total-project-increase">3 this month</p>
+      </div>
+      <div>
+        <p class="ongoing-project-count">8</p>
+        <p>ONGOING</p>
+        <p class="ongoing-project-status">Active now</p>
+      </div>
+      <div>
+        <p class="completed-project-count">14</p>
+        <p>COMPLETED</p>
+        <p class="completed-project-increase">2 this month</p>
+      </div>
+      <div>
+        <p class="hold-project-count">2</p>
+        <p>ON HOLD</p>
+        <p class="hold-project-status">Needs attention</p>
+      </div>
+    </div>
+    <div class="main-tab">
+      <div class="tab-open">
+        <p>All Projects</p>
+        <span>24</span>
+      </div>
+      <div>
+        <p>Ongoing</p>
+        <span>8</span>
+      </div>
+      <div>
+        <p>Completed</p>
+        <span>14</span>
+      </div>
+      <div>
+        <p>On Hold</p>
+        <span>2</span>
+      </div>
+    </div>
+    <div class="project-content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </main>
+
+  <script src="../Script/project-page.js" type="module"></script>
+</body>
+</html>

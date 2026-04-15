@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS Files/settings.css">
+</head>
+<body class="dark-theme">
+  <nav>
+    <div class="contetn-container">
+      <div class="head-logo">
+        <a class="head-content" href="home-feed.html">
+          <img src="../src/logo/logo.png" loading="lazy" alt="logo preview">
+          <p>Flowvia</p>
+        </a>
+      </div>
+      <ul class="main-ul">
+        <li><img src="/Icons/bootstrap icon/house-door.svg" loading="lazy"><a href="home-feed.html">Home</a></li>
+        <li class="stat">
+          <div class="stat-text">
+            <a href="status.html"><img style="width: 20px;" src="/Icons/bootstrap icon/graph-up.svg" loading="lazy">Status</a><img class="stat-click" src="/Icons/hero icon/solid/chevron-down.svg" loading="lazy">
+          </div>
+
+          <div class="status-view">
+            <ul class="client">
+              <li><a href="">Open Projects <p>10</p></a></li>
+              <li><a href="">In Negotiations <p>22</p></a></li>
+              <li><a href="">Taken Projects <p>11</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Bookmarked <p>22</p></a></li>
+              <li><a href="">Pending Request <p>11</p></a></li>
+            </ul>
+            <ul class="team">
+              <li><a href="">Available Jobs <p>10</p></a></li>
+              <li><a href="">Active Projects <p class="active-status-project">22</p></a></li>
+              <li><a href="">Applied Jobs <p>11</p></a></li>
+              <li><a href="">Bookmarked Jobs<p>6</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Pending Request <p>11</p></a></li>
+            </ul>
+            <ul class="self">
+              <li><a href="">Active Projects <p class="active-status-project">22</p></a></li>
+              <li><a href="">Applied Jobs <p>11</p></a></li>
+              <li><a href="">Bookmarked Jobs<p>6</p></a></li>
+              <li><a href="">Completed Projects<p class="completet-status-project">8</p></a></li>
+              <li><a href="">Pending Request<p>8</p></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><img src="/Icons/fontawesome icon/regular/folder-open.svg" loading="lazy""><a href="project-page.html">Projects</a></li>
+        <li><img style="width: 18px;" src="/Icons/bootstrap icon/shop.svg" loading="lazy"><a href="market-place.html">Marketplace</a></li>
+        <li><img src="/Icons/bootstrap icon/chat-text.svg" loading="lazy"><a href="message.html">Messages</a></li>
+        <li  class="team-check"><img src="/Icons/bootstrap icon/people.svg" loading="lazy"> <a href="">Team</a></li>
+        <li><img src="/Icons/bootstrap icon/briefcase.svg" loading="lazy"><a href="">Work Circle</a></li>
+        <li><img src="/Icons/bootstrap icon/bell.svg" loading="lazy"><span class="notify-red"></span><a href="">Notifications</a></li>
+        <li><img src="/Icons/bootstrap icon/person.svg" loading="lazy"><a href="user-profile.html">Profile</a></li>
+        <li class="pageview"><img src="/Icons/bootstrap icon/gear-fill.svg" loading="lazy"><a href="">Settings</a></li>
+      </ul>
+      <div class="nav-bottom">
+        <button class="btn-nav-click">Create Team</button>
+        <div class="log-container">
+          <button><img src="/Icons/bootstrap icon/box-arrow-right.svg" loading="lazy">Logout</button>
+          <img class="change-theme" src="/Icons/bootstrap icon/moon-stars.svg" loading="lazy">
+        </div>
+      </div>
+      <dialog class="dialog">
+        <div class="close-dialog">
+          <img src="/Icons/bootstrap icon/x.svg" loading="lazy">
+        </div>
+        <p class="dialog-head-text">Welcome to Flowvia Team</p>
+        <span></span>
+        <div class="dialog-action">
+          <button>Create New Team</button>
+          <p>or</p>
+          <button>Join Existing Team</button>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+  <main>
+    <div class="wrapper">
+      <div class="conatiner">
+        <div class="sidebar">
+          <ul>
+            <li onclick="
+                window.location.href = '#profile-settings'
+              " class="profile-tab profile-setting"><img src="/Icons/bootstrap icon/person-fill.svg">Profile Settings
+              <span></span>
+            </li>
+            <li onclick="
+                window.location.href = '#acc=mode-settings'
+              " class="acc-mode-tab"><img src="/Icons/bootstrap icon/person-badge-fill.svg">Account Mode
+              <span></span>
+            </li>
+            <li onclick="
+                window.location.href = '#privacy-settings'
+              " class="privacy-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Privacy Control
+              <span></span></li>
+            <li onclick="
+                window.location.href = '#notifi-settings'
+              " class="notifi-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Notification Settings
+              <span></span></li>
+            <li onclick="
+                window.location.href = '#saved-settings'
+              " class="bookmarked-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Bookmark System
+              <span></span></li>
+            <li onclick="
+                window.location.href = '#payment-settings'
+              " class="payment-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Payment & Billing
+              <span></span></li>
+            <li onclick="
+                window.location.href = '#security-settings'
+              " class="security-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Security
+              <span></span></li>
+            <li onclick="
+                window.location.href = '#block-settings'
+              " class="block-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Block & Restrict
+              <span></span>
+            </li>
+            <li onclick="
+                window.location.href = '#account-settings'
+              " class="account-tab"><img src="/Icons/bootstrap icon/person-fill.svg">Data & Account
+              <span></span></li>
+          </ul>
+        </div>
+        <div class="wrapper-cover">
+          <div class="sidebar-wrapper">
+            <div class="sidebar-content">
+              <div class="input-wrap">
+                <input type="text" placeholder="Search settings">
+              </div>
+              <section id="profile-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Edit name</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/pencil-square.svg" loading="lazy">
+                    <p>Username / handle</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/pencil.svg" loading="lazy">
+                    <p>Bio</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-workspace.svg" loading="lazy">
+                    <p>Skill</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/option.svg" loading="lazy">
+                    <p>Category</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-bounding-box.svg" loading="lazy">
+                    <p>Profile image / banner</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="acc=mode-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-badge.svg" loading="lazy">
+                    <p>Switch Account Mode</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="privacy-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/file-lock2.svg" loading="lazy">
+                    <p>Who can message me</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-lock.svg" loading="lazy">
+                    <p>Profile visiblilty</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Activity status</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="notifi-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/chat-dots.svg" loading="lazy">
+                    <p>Messages</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Projects updates</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Team activity</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Payments</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Mentions</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Feed Activity</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="saved-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Saved Items</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Saved Posts</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="payment-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Add payment method</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>View transaction</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Earnings</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Withdrawal settings</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="security-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Change password</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>2FA</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Login sessions</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Email verification</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Phone verification</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="block-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Block users list</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Muted users</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Restricted users</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+              <section id="account-settings">
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Download</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Delete account</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+                <div>
+                  <span>
+                    <img src="/Icons/bootstrap icon/person-check.svg" loading="lazy">
+                    <p>Deactivate account</p>
+                  </span>
+                  <img src="/Icons/bootstrap icon/chevron-right.svg" loading="lazy">
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../Script/settings.js"></script>
+</body>
+</html>

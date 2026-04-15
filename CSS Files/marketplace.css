@@ -1,0 +1,1181 @@
+:root {
+  --background-color: #f8fafc;
+  --dark-bg-color: rgb(32, 23, 66);
+  --btn-white-text-color: white;
+  --placeholder-color: rgb(32, 23, 66);
+  --text-color: rgb(32, 23, 66);
+  --text-color-secondary: rgba(0,0,0,0.6);
+  --border-bottom-right-left-top: 1px solid rgba(32, 23, 66, 0.3);
+  --main-border-color: rgb(32, 23, 66);
+  --main-btn-text-size: 17px;
+  --main-btn-bg-color: rgb(32, 23, 66);
+  --user-active-color: rgb(0, 216, 0);
+  --user-active-border-color: white;
+  --box-shadow-color: rgba(32, 23, 66, 0.5);
+  --notify-border-color: white;
+  --notify-bg-color: red;
+  --staus-count-bg-color: red;
+  --staus-count-color: white;
+  --main-box-shadow-color: rgb(59, 131, 246);
+  --second-main-btn-bg-color: orangered;
+  --icon-filter-color: invert(0);
+  --second-icon: invert(100%);
+  --dialog-bg-color: rgb(32, 23, 66);
+  --dialog-border: 1px solid rgba(255, 255, 255, 0.7);
+  --white-text-color: white;
+  --main-dialog-border-color: white;
+  --green-btn-color: green;
+  --backdrop-bg-color: rgba(0, 0, 0, 0.6);
+  --option-checked-bg-color: rgb(32, 23, 66);
+  --post-head-bg-color: rgba(32, 23, 66, 0.1);
+  --post-username-color: rgba(0, 0, 0, 0.9);
+  --client-account-badge-bg-color: orangered;
+  --team-account-badge-bg-color: green;
+  --self-account-badge-bg-color: blue;
+  --body-deadline-color: rgba(255, 255, 255, 0.952);
+  --footer-active-bg-color: rgba(32, 23, 66, 0.3);
+  --line-bg-color: rgba(32, 23, 66, 0.4);
+  --post-head-display-bg-color: rgb(32, 23, 66, 0.1);
+  --suggesion-title-color: rgba(0, 0, 0, 0.8);
+  --suggestion-border:  1px solid rgba(32, 23, 66, 0.5);
+  --drop-info-box-shadow: rgba(0, 0, 0, 0.2);
+  --drop-info-post-cover: rgba(32, 23, 66, 0.2);
+  --border-06: rgba(0, 0, 0, 0.6);
+  --job-client-color: rgba(0, 0, 0, 0.6);
+  --create-view-apply-btn-bg: linear-gradient(0deg, rgb(32, 23, 66));
+  --view-opportunity-border: none;
+  --profile-image-border: 1px solid rgb(32, 23, 66, 0.6);
+  --border-bottom-small: 1px solid rgba(32, 23, 66, 0.2);
+  --job-time-box-shadow: rgba(0, 0, 0, 0.6);
+}
+.dark-theme {
+  --background-color: rgb(32, 23, 66);;
+  --dark-bg-color: #f8fafc;
+  --btn-white-text-color: white;
+  --placeholder-color: white;
+  --text-color: rgb(230, 234, 242);
+  --border-bottom-right-left-top: 1px solid rgba(255, 255, 255, 0.3);
+  --main-border-color: white;
+  --main-btn-text-size: 17px;
+  --main-btn-bg-color: white;
+  --user-active-color: rgb(0, 216, 0);
+  --user-active-border-color: rgb(32, 23, 66);
+  --box-shadow-color: rgba(255, 255, 255, 0.5);
+  --notify-border-color: rgb(32, 23, 66);
+  --notify-bg-color: red;
+  --staus-count-bg-color: red;
+  --staus-count-color: white;
+  --main-box-shadow-color: rgb(59, 131, 246);
+  --second-main-btn-bg-color: orangered;
+  --icon-filter-color: invert(100%);
+  --second-icon: invert(0);
+  --dialog-bg-color: rgb(32, 23, 66);
+  --dialog-border: 1px solid rgba(255, 255, 255, 0.7);
+  --white-text-color: rgb(32, 23, 66);
+  --main-dialog-border-color: white;
+  --green-btn-color: green;
+  --backdrop-bg-color: rgba(0, 0, 0, 0.6);
+  --option-checked-bg-color: white;
+  --post-head-bg-color: rgba(255, 255, 255, 0.1);
+  --post-username-color: rgba(255, 255, 255, 0.9);
+  --client-account-badge-bg-color: orangered;
+  --team-account-badge-bg-color: green;
+  --self-account-badge-bg-color: blue;
+  --body-deadline-color: rgba(255, 255, 255, 0.952);
+  --footer-active-bg-color: rgba(255, 255, 255, 0.3);
+  --line-bg-color: rgba(255, 255, 255, 0.4);
+  --post-head-display-bg-color: rgb(255, 255, 255, 0.1);
+  --suggesion-title-color: rgba(255, 255, 255, 0.8);
+  --suggestion-border:  1px solid rgba(255, 255, 255, 0.5);
+  --drop-info-box-shadow: rgba(255, 255, 255, 0.2);
+  --drop-info-post-cover: rgba(255, 255, 255, 0.2);
+  --border-06: rgba(255, 255, 255, 0.6);
+  --job-client-color: rgba(255, 255, 255, 1);
+  --create-view-apply-btn-bg: linear-gradient(135deg, #0055dd, #03758a);
+  --view-opportunity-border: 1px solid rgba(255, 255, 255, 0.8);
+  --profile-image-border: 1px solid rgba(255, 255, 255, 0.6);
+  --border-bottom-small: 1px solid rgba(255, 255, 255, 0.4);
+  --job-time-box-shadow: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  font-family: Arial;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-bg-color);
+  border-radius: 9px;
+  border: 2px solid var(--background-color);
+}
+header {
+  color: var(--text-color);
+  height: 80px;
+  margin-left: 250px;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  border-bottom: var(--border-bottom-right-left-top);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  z-index: 100;
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+    input {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      flex: 1;
+      height: 45px;
+      padding: 3px 5px 3px 15px;
+      outline: none;
+      font-size: 16px;
+      border: 1px solid var(--main-border-color);
+      box-shadow:inset 0px -1px 2px var(--box-shadow-color);
+      border-radius: 6px;
+      width: 120px;
+    }
+    input::placeholder {
+      font-weight: bold;
+      color: var(--placeholder-color);
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--btn-white-text-color);
+      background: var(--create-view-apply-btn-bg);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+  .right {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    gap: 45px;
+    margin-right: 30px;
+    .user-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      img {
+        width: 35px;
+      }
+      .user-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 50%;
+        }
+        span {
+          height: 9px;
+          width: 9px;
+          background-color:var(--user-active-color);
+          border-radius: 9px;
+          position: absolute;
+          bottom: -1px;
+          right: -1px;
+          border: 2px solid var(--user-active-border-color);
+        }
+      }
+      .user-name {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+       .name {
+        display: flex;
+        font-weight: bold;
+        font-size: 18px;
+        gap: 8px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        img {
+          width: 18px;
+          filter: var(--icon-filter-color);
+        }
+       }
+       .username {
+        margin: 0;
+        padding: 0;
+       }
+      }
+    }
+  }
+}
+/* Navbar */
+.contetn-container {
+  width: 245px;
+  padding-right: 5px;
+}
+nav {
+  position: fixed;
+  background-color: var(--background-color);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0px 0px 5px 15px;
+  border-right: var(--border-bottom-right-left-top);
+  z-index: 105;
+  overflow-y: auto;
+  .head-logo {
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 250px;
+    z-index: 100;
+    background-color: var(--background-color);
+    .head-content {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    img {
+      width: 50px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 40px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .main-ul {
+    padding-bottom: 165px;
+    padding-right: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    padding: 0;
+    li {
+      position: relative;
+      list-style-type: none;
+      padding-left: 8px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        padding: 18px 0px;
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        align-items: center;
+      }
+      img {
+        width: 20px;
+        filter: var(--icon-filter-color);
+      }
+      .notify-red {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        border: 2px solid var(--notify-border-color);
+        background-color: var(--notify-bg-color);
+        position: absolute;
+        top: 15px;
+        right: 209px;
+      }
+    }
+    .team-check {
+      display: none;
+    }
+    /* Status */
+    .stat-in {
+      padding-bottom: 10px;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 5px;
+      padding-bottom: 0px;
+      width: 100%;
+      gap: 0;
+      .stat-text {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 5px;
+        img {
+          margin-right: 10px;
+          filter: var(--icon-filter-color);
+          width: 26px;
+          cursor: pointer;
+        }
+        .icon-down {
+          content: url('/Icons/hero icon/solid/chevron-up.svg');
+        }
+      }
+      /* Status DropDown */
+      .status-view {
+        display: none;
+      }
+      .status-open {
+        display: flex;
+        background-color: transparent;
+        width: 200px;
+        border-radius: 8px;
+        padding: 0px 15px 0px 0px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        .client,
+        .team {
+          display: none;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          justify-content: center;
+          align-items: start;
+          padding: 0;
+          width: 100%;
+          li {
+            list-style-type: none;
+            padding-left: 8px;
+            padding-right: 0;
+            margin-left: 16px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 7px;
+            a {
+              width: 100%;
+              padding: 10px 0px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 15px;
+              p {
+                margin: 0;
+                font-size: 13px;
+                margin-right: 10px;
+                background-color: var(--staus-count-bg-color);
+                color: var(--staus-count-color);
+                padding: 3px 8px;
+                border-radius: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pageview {
+      background: rgba(59, 130, 236, 0.15);
+      box-shadow: inset -3px 0px 3px 0.3px var(--main-box-shadow-color);
+    }
+    .pageview:hover {
+      box-shadow: inset -3px 0px 3px 0.3px var(--main-box-shadow-color);
+    }
+    li:hover {
+      box-shadow: inset -1px 0px 1px 0.3px var(--main-box-shadow-color);
+    }
+  }
+  .nav-bottom {
+    position: fixed;
+    bottom: 0px;
+    height: fit-content;
+    left: 4px;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-top: var(--border-bottom-right-left-top);
+    background-color: var(--background-color);
+    padding: 10px 0px 25px 0px;
+    .btn-nav-click {
+      padding: 17px 64px;
+      font-weight: bold;
+      font-size: 17px;
+      background: var(--create-view-apply-btn-bg);
+      border: none;
+      color: var(--btn-white-text-color);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    button:hover {
+      opacity: 0.96;
+    }
+    .log-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      button {
+        padding: 14px 35px;
+        font-weight: bold;
+        font-size: 17px;
+        background-color: var(--second-main-btn-bg-color);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        transition: opacity 0.2s;
+        img {
+          filter: invert(100%);
+          width: 22px;
+          padding: 0;
+          border-radius: 0;
+          border: none;
+        }
+      }
+      .change-theme {
+        background-color: white;
+        width: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--main-border-color);
+        cursor: pointer;
+      }
+    }
+  }
+  .dialog[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dialog {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: var(--dialog-bg-color);
+    color: white;
+    border: var(--dialog-border);
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .close-dialog {
+      position: absolute;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--main-dialog-border-color);
+      top: 12px;
+      right: 15px;
+      cursor: pointer;
+      img {
+        width: 25px;
+        filter: invert(100%);
+      }
+    }
+    .dialog-head-text {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    span {
+      width: 200px;
+      height: 1px;
+      background-color: white;
+    }
+    .dialog-action {
+      margin-top: 20px;
+      width: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      button {
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 12px 0px;
+        flex: 1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:nth-child(1) {
+        background-color: var(--second-main-btn-bg-color);
+        color: white;
+      }
+      button:nth-child(3) {
+        background-color: var(--green-btn-color);
+        color: white;
+      }
+    }
+  }
+  .dialog::backdrop {
+    background-color: var(--backdrop-bg-color);
+    backdrop-filter: blur(1px);
+  }
+}
+main {
+  margin-left: 255px;
+  .main-head {
+    position: sticky;
+    top: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border-bottom-right-left-top);
+    gap: 20px;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: var(--background-color);
+    z-index: 99;
+    color: var(--text-color);
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 83%;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+    span {
+      width: 1px;
+      height: 50%;
+      background-color: var(--line-bg-color);
+    }
+    .individual-tab {
+      transition: background-color 0.3s, color 0.3s;
+      background-color: var(--dark-bg-color);
+      color: var(--white-text-color);
+    }
+    .teamInView,
+    .jobInView {
+      transition: background-color 0.3s, color 0.3s;
+      background-color: var(--dark-bg-color);
+      color: var(--white-text-color);
+    }
+  }
+  .individualSectionGone {
+    display: none;
+  }
+  .team-tab-section, 
+  .job-tab-section {
+    display: none;
+  }
+  .teamSectionView,
+  .jobSectionView {
+    display: block;
+  }
+  .individual-tab-section {
+    color: var(--text-color);
+    padding: 10px 20px 10px 30px;
+    .individual-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 15px;
+      .individual-contianer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: var(--border-bottom-right-left-top);
+        border-radius: 20px;
+        padding: 5px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .individual-profile {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 5px;
+          .pic {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 75px;
+              height: 75px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+              border: var(--profile-image-border);
+            }
+            .active-badge {
+              height: 12px;
+              width: 12px;
+              background-color:var(--user-active-color);
+              position: absolute;
+              bottom: 6px;
+              right: 2px;
+              border-radius: 50%;
+              border: 2px solid var(--user-active-border-color);
+            }
+          }
+          .names {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4px;
+            .name {
+              display: flex;
+              flex-direction: column;
+              .individual-name {
+                max-width: 160px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+                font-size: 22px;
+              }
+              .individual-username {
+                font-size: 16px;
+                text-transform: lowercase;
+              }
+            }
+            .skills {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .skill {
+                font-size: 16px;
+              }
+            }
+          }
+          .bookmark {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 15px;
+            padding-right: 10px;
+            img {
+              width: 30px;
+              height: 22px;
+              filter: var(--icon-filter-color);
+              cursor: pointer;
+            }
+          }
+        }
+        .individual-info {
+          color: var(--text-color);
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          .individual-bio {
+            width: auto;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+          }
+          span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+              font-size: 15px;
+          }
+        }
+        .individual-action {
+          margin-top: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            border: none;
+            padding: 13px 40px;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 30px;
+            transition: opacity 0.15s;
+            cursor: pointer;
+          }
+          button:hover {
+            opacity: 0.95;
+          }
+          .view-profile-btn {
+            background-color: rgb(40, 17, 122);
+            color: white;
+          }
+          .hire-btn {
+            color: white;
+            background-color: rgb(68, 32, 197);
+          }
+        }
+      }
+    }
+  }
+  .teamSectionView {
+    color: var(--text-color);
+    padding: 10px 20px 10px 30px;
+    .team-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 15px;
+      .team-contianer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: var(--border-bottom-right-left-top);
+        border-radius: 20px;
+        padding: 5px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .team-profile {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 5px;
+          .pic {
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 75px;
+              height: 75px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+              border: var(--profile-image-border);
+            }
+          }
+          .names {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4px;
+            .name {
+              display: flex;
+              flex-direction: column;
+              .team-name {
+                max-width: 160px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+                font-size: 22px;
+              }
+              .team-username {
+                font-size: 16px;
+                text-transform: lowercase;
+              }
+            }
+            .members {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .count {
+                font-size: 16px;
+              }
+            }
+          }
+          .bookmark {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 15px;
+            padding-right: 10px;
+            img {
+              width: 30px;
+              height: 22px;
+              filter: var(--icon-filter-color);
+              cursor: pointer;
+            }
+          }
+        }
+        .team-info {
+          color: var(--text-color);
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          .team-bio {
+            width: auto;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+          }
+          span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+              font-size: 15px;
+          }
+        }
+        .team-action {
+          margin-top: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            border: none;
+            padding: 13px 36px;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 30px;
+            transition: opacity 0.15s;
+            cursor: pointer;
+          }
+          button:hover {
+            opacity: 0.95;
+          }
+          .view-profile-btn {
+            background-color: rgb(40, 17, 122);
+            color: white;
+          }
+          .contact-btn {
+            color: white;
+            background-color: rgb(68, 32, 197);
+          }
+        }
+      }
+    }
+  }
+  .jobSectionView {
+    padding: 10px 20px 10px 30px;
+    color: var(--text-color);
+    .job-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 15px;
+      .job-contianer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: var(--border-bottom-right-left-top);
+        border-radius: 20px;
+        padding: 5px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .job-profile {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          position: relative;
+          gap: 5px;
+          .pic {
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 75px;
+              height: 75px;
+              border-radius: 10px;
+              object-fit: cover;
+              object-position: center;
+              border: var(--profile-image-border);
+            }
+          }
+          .names {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4px;
+            .name {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              .job-name {
+                max-width: 250px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+                font-size: 22px;
+              }
+              .job-client-info {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                font-size: 15px;
+                gap: 6px;
+                .job-client {
+                  color: var(--text-color);
+                }
+                .job-client-container {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 3px;
+                  .job-client-profile {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                  }
+                  .job-account-badge {
+                    margin-top: 3px;
+                    margin-left: 3px;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                  }
+                  .self-account-type {
+                    background-color: var(--self-account-badge-bg-color);
+                  }
+                  .team-account-type {
+                    background-color: var(--team-account-badge-bg-color);
+                  }
+                  .client-account-type {
+                    background-color: var(--client-account-badge-bg-color);
+                  }
+                }
+              }
+            }
+            .skills {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .skill {
+                font-size: 16px;
+              }
+              .location-tyype {
+                position: absolute;
+                right: 0px;
+                padding: 5px 12px;
+                color: white;
+                background-color: rgb(68, 32, 197);
+                border-radius: 20px;
+              }
+            }
+          }
+          .bookmark {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 15px;
+            padding-right: 10px;
+            img {
+              width: 30px;
+              height: 22px;
+              filter: var(--icon-filter-color);
+              cursor: pointer;
+            }
+          }
+        }
+        .job-info {
+          color: var(--text-color);
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          .description-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            .des-tag {
+              border-bottom: var(--border-bottom-small);
+              font-style: italic;
+              color: var(--post-username-color);
+              font-size: 12px;
+            }
+            .job-description {
+              width: auto;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+            }
+          }
+          .requirement-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            .req-tag {
+              border-bottom: var(--border-bottom-small);
+              font-style: italic;
+              color: var(--post-username-color);
+              font-size: 12px;
+            }
+            .job-requirement {
+              width: auto;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+            }
+          }
+          .pricing {
+            display: fleX;
+            justify-content: space-around;
+            align-items: center;
+            border-top: var(--border-bottom-small);
+            border-bottom: var(--border-bottom-small);
+            padding: 2px 0px;
+            .budget,
+            .deadline,
+            .project-type {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-size: 15px;
+                gap: 2px;
+                span {
+                  font-weight: normal;
+                  font-size: 16px;
+                }
+              }
+            } 
+          }
+        }
+        .job-bottom {
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          .job-status {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            font-size: 14px;
+            gap: 5px;
+            .status-box {
+              padding: 7px 10px;
+              border-radius: 20px;
+              background-color: rgba(255, 68, 0, 0.356);
+              font-weight: bold;
+            }
+            .job-post-date {
+              padding: 7px 10px;
+              border-radius: 20px;
+              box-shadow: 1px 1px 3px var(--job-time-box-shadow)/* ,
+              -1px -1px 1px var(--job-time-box-shadow) */;
+            }
+          }
+          .job-action {
+            flex: 1.56;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            gap: 5px;
+            .apply-count {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-right: 10px;
+              color: var(--post-username-color);
+              p {
+                font-size: 15px;
+                padding: 3px 16px;
+                border-bottom: 2px solid orangered;
+                span {
+                  font-weight: bold;
+                  color: var(--text-color);
+                }
+              }
+            }
+            .action-btn {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 5px;
+              button {
+                border: none;
+                padding: 13px 30px;
+                font-weight: bold;
+                font-size: 15px;
+                border-radius: 30px;
+                transition: opacity 0.15s;
+                cursor: pointer;
+              }
+              button:hover {
+                opacity: 0.95;
+              }
+              .view-profile-btn {
+                background-color: rgb(40, 17, 122);
+                color: white;
+              }
+              .contact-btn {
+                color: white;
+                background-color: rgb(68, 32, 197);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

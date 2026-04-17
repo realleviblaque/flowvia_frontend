@@ -183,17 +183,94 @@ function tabsCick() {
 tabsCick();
 
 function filerProject() {
+  let filterClick = 'all';
+  let filterResult;
   const filterProject = document.querySelector('.filter-project');
   filterProject.addEventListener('change', () => {
     const myProject = projects.filter(p => p.projectType !== 'Public Project');
     const personalProjects = projects.filter(p => p.projectType === 'Personal Project')
     const clientProject = projects.filter(p => p.projectType === 'Client Project')
+    const all = document.querySelector('.all-my-project');
+    const ongoing = document.querySelector('.all-my-ongoing');
+    const completed = document.querySelector('.all-my-completed');
+    const hold = document.querySelector('.all-my-hold');
     if (filterProject.value === 'all') {
+      filterClick = 'all';
       renderProject(myProject)
     } else if (filterProject.value === 'personal') {
+      filterClick = 'personal';
       renderProject(personalProjects)
     } else if (filterProject.value === 'client') {
+      filterClick = 'client';
       renderProject(clientProject)
+    }
+
+    if (filterClick === 'all') {
+      filterResult = projects.filter(p => p.projectType !== 'Public Project');
+      renderProject(filterResult);
+      document.querySelectorAll('.total-project-count').forEach((each) => {
+        each.innerHTML = filterResult.length
+      })
+      document.querySelectorAll('.ongoing-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete).length
+      })
+      document.querySelectorAll('.completed-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete).length
+      })
+      // Project Tab Navigation
+      all.addEventListener('click', () => {
+        renderProject(filterResult)
+      })
+      ongoing.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete))
+      })
+      completed.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType !== 'Public Project' && p.isComplete))
+      })
+    } else if (filterClick === 'personal') {
+      filterResult = projects.filter(p => p.projectType === 'Personal Project');
+      renderProject(filterResult)
+      document.querySelectorAll('.total-project-count').forEach((each) => {
+        each.innerHTML = filterResult.length
+      })
+      document.querySelectorAll('.ongoing-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType === 'Personal Project' && !p.isComplete).length
+      })
+      document.querySelectorAll('.completed-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType === 'Personal Project' && p.isComplete).length
+      })
+      // Project Tab Navigation
+      all.addEventListener('click', () => {
+        renderProject(filterResult)
+      })
+      ongoing.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType === 'Personal Project' && !p.isComplete))
+      })
+      completed.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType === 'Personal Project' && p.isComplete))
+      })
+    } else if (filterClick === 'client') {
+      filterResult = projects.filter(p => p.projectType === 'Client Project');
+      renderProject(filterResult)
+      document.querySelectorAll('.total-project-count').forEach((each) => {
+        each.innerHTML = filterResult.length
+      })
+      document.querySelectorAll('.ongoing-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType === 'Client Project' && !p.isComplete).length
+      })
+      document.querySelectorAll('.completed-project-count').forEach((each) => {
+        each.innerHTML = projects.filter(p => p.projectType === 'Client Project' && p.isComplete).length
+      })
+      // Project Tab Navigation
+      all.addEventListener('click', () => {
+        renderProject(filterResult)
+      })
+      ongoing.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType === 'Client Project' && !p.isComplete))
+      })
+      completed.addEventListener('click', () => {
+        renderProject(projects.filter(p => p.projectType === 'Client Project' && p.isComplete))
+      })
     }
   })
 }

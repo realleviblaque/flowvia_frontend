@@ -1,14 +1,9 @@
 import { projects } from "../data/projects.js";
-import { renderCompletedProject } from "./utils/complete-project-array.js";
 import { chnageTheme, clickTheme } from "./utils/changeTheme.js";
-import { filterCompleteProject } from "./filters/filter-complete-project-type.js";
 import { statusCount } from "./utils/portfolio.js";
-import { renderOngoingProject } from "./utils/ongoing-project-array.js";
 
 chnageTheme();
 clickTheme();
-renderCompletedProject();
-renderOngoingProject();
 statusCount();
 
 /* document.querySelector('.completed-project-type').addEventListener('change', () => {
@@ -120,3 +115,16 @@ function renderProject(allProject = myProject) {
   document.querySelector('.project-content').innerHTML = viewHtml;
 }
 renderProject();
+
+function updateProjectCountCard() {
+  document.querySelectorAll('.total-project-count').forEach((each) => {
+    each.innerHTML = projects.filter(p => p.projectType !== 'Public Project').length
+  })
+  document.querySelectorAll('.ongoing-project-count').forEach((each) => {
+    each.innerHTML = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete).length
+  })
+  document.querySelectorAll('.completed-project-count').forEach((each) => {
+    each.innerHTML = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete).length
+  })
+}
+updateProjectCountCard();

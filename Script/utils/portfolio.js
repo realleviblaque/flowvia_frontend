@@ -1,4 +1,4 @@
-import { projects, completedProject, ongoingProjects, allProjects } from "../../data/projects.js";
+import { projects} from "../../data/projects.js";
 export function checkProject() {
   const personalCount =  projects.filter(p => p.projectType === 'Personal Project').length;
   const publicCount = 30 /* projects.filter(project => project.projectType === 'Public Project').length */;
@@ -27,7 +27,10 @@ export function checkProject() {
   document.querySelector('.js-all-plus').innerHTML = `${completedProject.length <= 0 ? '' : '+'}`
 }
 
+
 export function statusCount() {
+  const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
+  const ongoingProjects = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete)
   document.querySelectorAll('.completet-status-project').forEach(statComplete => statComplete.innerHTML = completedProject.length);
   document.querySelectorAll('.active-status-project').forEach(statComplete => statComplete.innerHTML = ongoingProjects.length);
 }

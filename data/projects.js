@@ -7293,19 +7293,10 @@ export let projects = [{
   budget: '$800 - $2K'
 }];
 
-export const completedProject = projects.filter((p) => {
-  if (p.projectType === 'Personal Project' || p.projectType === 'Client Project') {
-    return p.isComplete;
-  }
-})
 export const completeOpenProject = projects.filter((p) => {
   if (p.projectType === 'Public Project') {
     return p.isComplete;
   }
-})
-export const allProjects = projects.filter(p => p.projectType === 'Personal Project' || p.projectType === 'Client Project')
-export const ongoingProjects = projects.filter((p) => {
-  if (p.projectType === 'Personal Project' || p.projectType === 'Client Project') return !p.isComplete;
 })
 export const OpenProject = projects.filter((p) => {
   if (p.projectType === 'Public Project') return !p.isComplete;

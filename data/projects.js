@@ -1,6 +1,6 @@
 export let projects = [{
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -13,7 +13,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -22,7 +22,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -34,7 +34,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -47,7 +47,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -56,7 +56,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -68,7 +68,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -81,7 +81,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -90,7 +90,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -102,7 +102,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -115,7 +115,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -124,7 +124,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -136,7 +136,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -149,7 +149,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -158,7 +158,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -170,7 +170,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -183,7 +183,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -192,7 +192,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -204,7 +204,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -217,7 +217,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -226,7 +226,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -238,7 +238,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -251,7 +251,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -260,7 +260,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -272,7 +272,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -285,7 +285,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -294,7 +294,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -306,7 +306,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -319,7 +319,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -328,7 +328,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -340,7 +340,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -353,7 +353,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -362,7 +362,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -374,7 +374,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -387,7 +387,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -396,7 +396,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -408,7 +408,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -421,7 +421,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -430,7 +430,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -442,7 +442,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -455,7 +455,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -464,7 +464,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -476,7 +476,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -489,7 +489,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -498,7 +498,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -510,7 +510,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -523,7 +523,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -532,7 +532,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -544,7 +544,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -557,7 +557,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -566,7 +566,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -578,7 +578,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -591,7 +591,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -600,7 +600,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -612,7 +612,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -625,7 +625,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -634,7 +634,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -646,7 +646,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -659,7 +659,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -668,7 +668,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -680,7 +680,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -693,7 +693,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -702,7 +702,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -714,7 +714,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -727,7 +727,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -736,7 +736,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -748,7 +748,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -761,7 +761,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -770,7 +770,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -782,7 +782,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -795,7 +795,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -804,7 +804,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -816,7 +816,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -829,7 +829,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -838,7 +838,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -850,7 +850,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -863,7 +863,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -872,7 +872,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -884,7 +884,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -897,7 +897,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -906,7 +906,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -918,7 +918,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -931,7 +931,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -940,7 +940,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -952,7 +952,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -965,7 +965,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -974,7 +974,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -986,7 +986,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -999,7 +999,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1008,7 +1008,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1020,7 +1020,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1033,7 +1033,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1042,7 +1042,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1054,7 +1054,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1067,7 +1067,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1076,7 +1076,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1088,7 +1088,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1101,7 +1101,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1110,7 +1110,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1122,7 +1122,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1135,7 +1135,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1144,7 +1144,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1156,7 +1156,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1169,7 +1169,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1178,7 +1178,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1190,7 +1190,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1203,7 +1203,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1212,7 +1212,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1224,7 +1224,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1237,7 +1237,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1246,7 +1246,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1258,7 +1258,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1271,7 +1271,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1280,7 +1280,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1292,7 +1292,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1305,7 +1305,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1314,7 +1314,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1326,7 +1326,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1339,7 +1339,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1348,7 +1348,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1360,7 +1360,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1373,7 +1373,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1382,7 +1382,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1394,7 +1394,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1407,7 +1407,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1416,7 +1416,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1428,7 +1428,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1441,7 +1441,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1450,7 +1450,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1462,7 +1462,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1475,7 +1475,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1484,7 +1484,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1496,7 +1496,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1509,7 +1509,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1518,7 +1518,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1530,7 +1530,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1543,7 +1543,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1552,7 +1552,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1564,7 +1564,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1577,7 +1577,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1586,7 +1586,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1598,7 +1598,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1611,7 +1611,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1620,7 +1620,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1632,7 +1632,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1645,7 +1645,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1654,7 +1654,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1666,7 +1666,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1679,7 +1679,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1688,7 +1688,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1700,7 +1700,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1713,7 +1713,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1722,7 +1722,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1734,7 +1734,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1747,7 +1747,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1756,7 +1756,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1768,7 +1768,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1781,7 +1781,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1790,7 +1790,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1802,7 +1802,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1815,7 +1815,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1824,7 +1824,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1836,7 +1836,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1849,7 +1849,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1858,7 +1858,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1870,7 +1870,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1883,7 +1883,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1892,7 +1892,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1904,7 +1904,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1917,7 +1917,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1926,7 +1926,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1938,7 +1938,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1951,7 +1951,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1960,7 +1960,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -1972,7 +1972,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -1985,7 +1985,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -1994,7 +1994,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2006,7 +2006,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2019,7 +2019,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2028,7 +2028,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2040,7 +2040,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2053,7 +2053,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2062,7 +2062,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2074,7 +2074,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2087,7 +2087,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2096,7 +2096,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2108,7 +2108,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2121,7 +2121,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2130,7 +2130,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2142,7 +2142,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2155,7 +2155,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2164,7 +2164,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2176,7 +2176,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2189,7 +2189,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2198,7 +2198,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2210,7 +2210,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2223,7 +2223,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2232,7 +2232,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2244,7 +2244,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2257,7 +2257,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2266,7 +2266,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2278,7 +2278,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2291,7 +2291,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2300,7 +2300,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2312,7 +2312,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2325,7 +2325,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2334,7 +2334,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2346,7 +2346,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2359,7 +2359,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2368,7 +2368,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2380,7 +2380,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2393,7 +2393,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2402,7 +2402,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2414,7 +2414,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2427,7 +2427,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2436,7 +2436,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2448,7 +2448,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2461,7 +2461,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2470,7 +2470,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2482,7 +2482,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2495,7 +2495,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2504,7 +2504,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2516,7 +2516,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2529,7 +2529,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2538,7 +2538,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2550,7 +2550,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2563,7 +2563,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2572,7 +2572,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2584,7 +2584,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2597,7 +2597,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2606,7 +2606,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2618,7 +2618,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2631,7 +2631,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2640,7 +2640,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2652,7 +2652,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2665,7 +2665,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2674,7 +2674,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2686,7 +2686,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2699,7 +2699,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2708,7 +2708,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2720,7 +2720,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2733,7 +2733,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2742,7 +2742,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2754,7 +2754,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2767,7 +2767,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2776,7 +2776,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2788,7 +2788,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2801,7 +2801,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2810,7 +2810,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2822,7 +2822,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2835,7 +2835,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2844,7 +2844,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2856,7 +2856,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2869,7 +2869,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2878,7 +2878,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2890,7 +2890,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2903,7 +2903,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2912,7 +2912,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2924,7 +2924,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2937,7 +2937,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -2946,7 +2946,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2958,7 +2958,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -2971,7 +2971,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2980,7 +2980,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -2992,7 +2992,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3005,7 +3005,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3014,7 +3014,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3026,7 +3026,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3039,7 +3039,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3048,7 +3048,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3060,7 +3060,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3073,7 +3073,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3082,7 +3082,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3094,7 +3094,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3107,7 +3107,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3116,7 +3116,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3128,7 +3128,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3141,7 +3141,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3150,7 +3150,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3162,7 +3162,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3175,7 +3175,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3184,7 +3184,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3196,7 +3196,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3209,7 +3209,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3218,7 +3218,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3230,7 +3230,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3243,7 +3243,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3252,7 +3252,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3264,7 +3264,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3277,7 +3277,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3286,7 +3286,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3298,7 +3298,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3311,7 +3311,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3320,7 +3320,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3332,7 +3332,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3345,7 +3345,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3354,7 +3354,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3366,7 +3366,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3379,7 +3379,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3388,7 +3388,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3400,7 +3400,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3413,7 +3413,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3422,7 +3422,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3434,7 +3434,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3447,7 +3447,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3456,7 +3456,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3468,7 +3468,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3481,7 +3481,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3490,7 +3490,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3502,7 +3502,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3515,7 +3515,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3524,7 +3524,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3536,7 +3536,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3549,7 +3549,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3558,7 +3558,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3570,7 +3570,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3583,7 +3583,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3592,7 +3592,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3604,7 +3604,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3617,7 +3617,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3626,7 +3626,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3638,7 +3638,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3651,7 +3651,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3660,7 +3660,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3672,7 +3672,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3685,7 +3685,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3694,7 +3694,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3706,7 +3706,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3719,7 +3719,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3728,7 +3728,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3740,7 +3740,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3753,7 +3753,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3762,7 +3762,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3774,7 +3774,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3787,7 +3787,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3796,7 +3796,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3808,7 +3808,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3821,7 +3821,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3830,7 +3830,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3842,7 +3842,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3855,7 +3855,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3864,7 +3864,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3876,7 +3876,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3889,7 +3889,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -3898,7 +3898,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3910,7 +3910,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3923,7 +3923,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3932,7 +3932,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3944,7 +3944,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3957,7 +3957,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3966,7 +3966,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -3978,7 +3978,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -3991,7 +3991,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4000,7 +4000,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4012,7 +4012,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4025,7 +4025,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4034,7 +4034,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4046,7 +4046,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4059,7 +4059,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4068,7 +4068,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4080,7 +4080,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4093,7 +4093,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4102,7 +4102,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4114,7 +4114,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4127,7 +4127,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4136,7 +4136,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4148,7 +4148,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4161,7 +4161,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4170,7 +4170,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4182,7 +4182,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4195,7 +4195,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4204,7 +4204,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4216,7 +4216,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4229,7 +4229,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4238,7 +4238,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4250,7 +4250,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4263,7 +4263,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4272,7 +4272,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4284,7 +4284,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4297,7 +4297,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4306,7 +4306,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4318,7 +4318,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4331,7 +4331,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4340,7 +4340,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4352,7 +4352,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4365,7 +4365,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4374,7 +4374,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4386,7 +4386,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4399,7 +4399,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4408,7 +4408,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4420,7 +4420,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4433,7 +4433,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4442,7 +4442,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4454,7 +4454,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4467,7 +4467,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4476,7 +4476,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4488,7 +4488,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4501,7 +4501,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4510,7 +4510,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4522,7 +4522,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4535,7 +4535,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4544,7 +4544,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4556,7 +4556,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4569,7 +4569,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4578,7 +4578,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4590,7 +4590,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4603,7 +4603,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4612,7 +4612,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4624,7 +4624,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4637,7 +4637,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4646,7 +4646,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4658,7 +4658,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4671,7 +4671,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4680,7 +4680,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4692,7 +4692,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4705,7 +4705,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4714,7 +4714,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4726,7 +4726,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4739,7 +4739,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4748,7 +4748,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4760,7 +4760,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4773,7 +4773,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4782,7 +4782,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4794,7 +4794,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4807,7 +4807,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4816,7 +4816,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4828,7 +4828,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4841,7 +4841,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4850,7 +4850,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4862,7 +4862,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4875,7 +4875,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4884,7 +4884,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4896,7 +4896,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4909,7 +4909,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4918,7 +4918,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4930,7 +4930,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4943,7 +4943,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4952,7 +4952,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4964,7 +4964,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -4977,7 +4977,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -4986,7 +4986,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -4998,7 +4998,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5011,7 +5011,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5020,7 +5020,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5032,7 +5032,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5045,7 +5045,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5054,7 +5054,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5066,7 +5066,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5079,7 +5079,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5088,7 +5088,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5100,7 +5100,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5113,7 +5113,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5122,7 +5122,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5134,7 +5134,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5147,7 +5147,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5156,7 +5156,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5168,7 +5168,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5181,7 +5181,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5190,7 +5190,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5202,7 +5202,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5215,7 +5215,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5224,7 +5224,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5236,7 +5236,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5249,7 +5249,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5258,7 +5258,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5270,7 +5270,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5283,7 +5283,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5292,7 +5292,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5304,7 +5304,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5317,7 +5317,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5326,7 +5326,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5338,7 +5338,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5351,7 +5351,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5360,7 +5360,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5372,7 +5372,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5385,7 +5385,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5394,7 +5394,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5406,7 +5406,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5419,7 +5419,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5428,7 +5428,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5440,7 +5440,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5453,7 +5453,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5462,7 +5462,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5474,7 +5474,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5487,7 +5487,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5496,7 +5496,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5508,7 +5508,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5521,7 +5521,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5530,7 +5530,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5542,7 +5542,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5555,7 +5555,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5564,7 +5564,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5576,7 +5576,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5589,7 +5589,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5598,7 +5598,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5610,7 +5610,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5623,7 +5623,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5632,7 +5632,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5644,7 +5644,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5657,7 +5657,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5666,7 +5666,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5678,7 +5678,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5691,7 +5691,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5700,7 +5700,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5712,7 +5712,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5725,7 +5725,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5734,7 +5734,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5746,7 +5746,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5759,7 +5759,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5768,7 +5768,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5780,7 +5780,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5793,7 +5793,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5802,7 +5802,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5814,7 +5814,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5827,7 +5827,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5836,7 +5836,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5848,7 +5848,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5861,7 +5861,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5870,7 +5870,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5882,7 +5882,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5895,7 +5895,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5904,7 +5904,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5916,7 +5916,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5929,7 +5929,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -5938,7 +5938,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5950,7 +5950,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5963,7 +5963,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5972,7 +5972,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -5984,7 +5984,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -5997,7 +5997,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6006,7 +6006,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6018,7 +6018,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6031,7 +6031,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6040,7 +6040,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6052,7 +6052,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6065,7 +6065,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6074,7 +6074,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6086,7 +6086,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6099,7 +6099,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6108,7 +6108,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6120,7 +6120,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6133,7 +6133,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6142,7 +6142,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6154,7 +6154,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6167,7 +6167,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6176,7 +6176,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6188,7 +6188,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6201,7 +6201,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6210,7 +6210,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6222,7 +6222,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6235,7 +6235,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6244,7 +6244,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6256,7 +6256,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6269,7 +6269,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6278,7 +6278,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6290,7 +6290,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6303,7 +6303,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6312,7 +6312,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6324,7 +6324,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6337,7 +6337,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6346,7 +6346,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6358,7 +6358,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6371,7 +6371,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6380,7 +6380,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6392,7 +6392,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6405,7 +6405,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6414,7 +6414,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6426,7 +6426,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6439,7 +6439,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6448,7 +6448,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6460,7 +6460,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6473,7 +6473,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6482,7 +6482,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6494,7 +6494,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6507,7 +6507,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6516,7 +6516,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6528,7 +6528,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6541,7 +6541,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6550,7 +6550,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6562,7 +6562,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6575,7 +6575,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6584,7 +6584,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6596,7 +6596,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6609,7 +6609,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6618,7 +6618,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6630,7 +6630,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6643,7 +6643,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6652,7 +6652,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6664,7 +6664,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6677,7 +6677,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6686,7 +6686,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6698,7 +6698,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6711,7 +6711,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6720,7 +6720,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6732,7 +6732,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6745,7 +6745,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6754,7 +6754,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6766,7 +6766,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6779,7 +6779,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6788,7 +6788,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6800,7 +6800,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6813,7 +6813,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6822,7 +6822,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6834,7 +6834,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6847,7 +6847,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6856,7 +6856,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6868,7 +6868,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6881,7 +6881,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -6890,7 +6890,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6902,7 +6902,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6915,7 +6915,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6924,7 +6924,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6936,7 +6936,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6949,7 +6949,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6958,7 +6958,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6970,7 +6970,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -6983,7 +6983,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -6992,7 +6992,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7004,7 +7004,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7017,7 +7017,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -7026,7 +7026,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7038,7 +7038,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7051,7 +7051,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7060,7 +7060,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7072,7 +7072,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7085,7 +7085,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7094,7 +7094,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7106,7 +7106,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7119,7 +7119,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7128,7 +7128,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7140,7 +7140,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7153,7 +7153,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -7162,7 +7162,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7174,7 +7174,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7187,7 +7187,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7196,7 +7196,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7208,7 +7208,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7221,7 +7221,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7230,7 +7230,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7242,7 +7242,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7255,7 +7255,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7264,7 +7264,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7276,7 +7276,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7289,7 +7289,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -7298,7 +7298,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7310,7 +7310,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7323,7 +7323,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7332,7 +7332,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7344,7 +7344,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7357,7 +7357,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7366,7 +7366,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7378,7 +7378,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7391,7 +7391,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7400,7 +7400,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7412,7 +7412,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7425,7 +7425,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: false,
@@ -7434,7 +7434,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7446,7 +7446,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7459,7 +7459,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7468,7 +7468,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7480,7 +7480,7 @@ export let projects = [{
   budget: '$800 - $2K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   totalPhase: 8,
@@ -7493,7 +7493,7 @@ export let projects = [{
   budget: '--'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,
@@ -7502,7 +7502,7 @@ export let projects = [{
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
-  img: '/Car Project/image/file_0000000076d061f4aa69bd6aa79bafc0.png',
+  img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non quae dolorem reiciendis similique obcaecati odio esse exercitationem tempora nihil? Reiciendis ipsam incidunt quaerat eveniet nihil sint dolores maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eos omnis quasi autem. Alias, quaerat quam. Fugit animi odit in itaque consequuntur quos eum alias? Quisquam optio quaerat mollitia cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ex tempora, minus explicabo placeat nulla vitae, voluptate aspernatur aperiam earum necessitatibus voluptatum incidunt dolores ratione ad totam aut. Natus, dignissimos.',
   isComplete: true,

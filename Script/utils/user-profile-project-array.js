@@ -1,4 +1,5 @@
-import { completedProject } from "../../data/projects.js";
+import { projects } from "../../data/projects.js";
+const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
 
 export function renderAllProject(complete = completedProject) {
   let viewHtml = '';

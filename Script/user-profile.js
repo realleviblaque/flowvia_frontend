@@ -1,5 +1,5 @@
 import {homePost, reuseCount} from "./utils/post-array.js";
-import { completedProject, ongoingProjects, allProjects, OpenProject } from "../data/projects.js";
+import { projects, OpenProject } from "../data/projects.js";
 import { checkProject, statusCount } from "./utils/portfolio.js";
 import { renderAllProject } from "./utils/user-profile-project-array.js";
 import {chnageTheme, clickTheme } from "./utils/changeTheme.js";
@@ -8,6 +8,10 @@ clickTheme();
 renderAllProject();
 checkProject();
 statusCount();
+
+const allProjects = projects.filter(p => p.projectType !== 'Public Project');
+const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
+const ongoingProjects = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete)
 
 const sectionProject = document.querySelector('.project-section');
 const sectionActivity = document.querySelector('.activity-section');

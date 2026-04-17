@@ -1,6 +1,7 @@
 import { projects} from "../../data/projects.js";
 export function checkProject() {
   const personalCount =  projects.filter(p => p.projectType === 'Personal Project').length;
+  const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
   const publicCount = 30 /* projects.filter(project => project.projectType === 'Public Project').length */;
   const clientCount =  projects.filter(p => p.projectType === 'Client Project').length;
   document.querySelector('.js-personal-count').innerText = projects.filter(p => p.isPortfolio && p.isComplete && p.projectType === 'Personal Project').length

@@ -829,7 +829,7 @@ main {
                 word-spacing: 3px;
               }
             }
-            span {
+            .dot {
               height: 4px;
               width: 4px;
               background-color: var(--hover-border);

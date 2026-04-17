@@ -94,7 +94,7 @@ function renderProject(allProject = myProject) {
                   <span class="progress-bar"></span>
                 </div>
                 <p><span class="completed-phase">2</span> / <span class="all-phase">${project.totalPhase}</span></p>
-                <span></span>
+                <span class="dot"></span>
                 <p><span class="completed-phase">2</span> Completed</p>
               </div>
               ` : ''}
@@ -139,6 +139,8 @@ searchProject.addEventListener('keyup', () => {
   } else {
     document.querySelector('.main-head').style.display = 'grid';
     document.querySelector('.main-tab').style.display = 'flex';
+    document.querySelector('.all-my-project').click();
+    
   }
 })
 
@@ -194,6 +196,7 @@ function filerProject() {
     const ongoing = document.querySelector('.all-my-ongoing');
     const completed = document.querySelector('.all-my-completed');
     const hold = document.querySelector('.all-my-hold');
+    document.querySelector('.all-my-project').click();
     if (filterProject.value === 'all') {
       filterClick = 'all';
       renderProject(myProject)
@@ -227,6 +230,11 @@ function filerProject() {
       completed.addEventListener('click', () => {
         renderProject(projects.filter(p => p.projectType !== 'Public Project' && p.isComplete))
       })
+
+      searchProject.addEventListener('keyup', () => {
+        const searchResult = projects.filter(p => p.name.toLocaleLowerCase().includes(searchProject.value.toLocaleLowerCase().trim()))
+        renderProject(searchResult)
+      });
     } else if (filterClick === 'personal') {
       filterResult = projects.filter(p => p.projectType === 'Personal Project');
       renderProject(filterResult)
@@ -249,6 +257,11 @@ function filerProject() {
       completed.addEventListener('click', () => {
         renderProject(projects.filter(p => p.projectType === 'Personal Project' && p.isComplete))
       })
+
+      searchProject.addEventListener('keyup', () => {
+        const searchResult = projects.filter(p => p.projectType === 'Personal Project' && p.name.toLocaleLowerCase().includes(searchProject.value.toLocaleLowerCase().trim()))
+        renderProject(searchResult)
+      });
     } else if (filterClick === 'client') {
       filterResult = projects.filter(p => p.projectType === 'Client Project');
       renderProject(filterResult)
@@ -271,6 +284,11 @@ function filerProject() {
       completed.addEventListener('click', () => {
         renderProject(projects.filter(p => p.projectType === 'Client Project' && p.isComplete))
       })
+
+      searchProject.addEventListener('keyup', () => {
+        const searchResult = projects.filter(p => p.projectType === 'Client Project' && p.name.toLocaleLowerCase().includes(searchProject.value.toLocaleLowerCase().trim()))
+        renderProject(searchResult)
+      });
     }
   })
 }

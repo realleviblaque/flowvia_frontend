@@ -29,6 +29,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -62,6 +63,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -95,6 +97,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -128,6 +131,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -161,6 +165,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -194,6 +199,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -227,6 +233,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -260,6 +267,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -293,6 +301,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -326,6 +335,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -359,6 +369,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -392,6 +403,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -425,6 +437,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -458,6 +471,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -491,6 +505,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -524,6 +539,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -557,6 +573,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -590,6 +607,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -623,6 +641,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -656,6 +675,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -689,6 +709,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -722,6 +743,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -755,6 +777,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -788,6 +811,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -821,6 +845,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -854,6 +879,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -887,6 +913,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -920,6 +947,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -953,6 +981,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -986,6 +1015,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1019,6 +1049,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1052,6 +1083,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1085,6 +1117,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1118,6 +1151,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1151,6 +1185,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1184,6 +1219,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1217,6 +1253,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1250,6 +1287,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1283,6 +1321,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1316,6 +1355,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1349,6 +1389,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1382,6 +1423,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1415,6 +1457,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1448,6 +1491,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1481,6 +1525,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1514,6 +1559,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1547,6 +1593,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1580,6 +1627,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1613,6 +1661,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1646,6 +1695,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1679,6 +1729,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1712,6 +1763,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1745,6 +1797,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1778,6 +1831,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1811,6 +1865,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1844,6 +1899,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1877,6 +1933,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1910,6 +1967,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1943,6 +2001,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -1976,6 +2035,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2009,6 +2069,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2042,6 +2103,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2075,6 +2137,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2108,6 +2171,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2141,6 +2205,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2174,6 +2239,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2207,6 +2273,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2240,6 +2307,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2273,6 +2341,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2306,6 +2375,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2339,6 +2409,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2372,6 +2443,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2405,6 +2477,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2438,6 +2511,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2471,6 +2545,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2504,6 +2579,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2537,6 +2613,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2570,6 +2647,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2603,6 +2681,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2636,6 +2715,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2669,6 +2749,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2702,6 +2783,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2735,6 +2817,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2768,6 +2851,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2801,6 +2885,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2834,6 +2919,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2867,6 +2953,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2900,6 +2987,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2933,6 +3021,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2966,6 +3055,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -2999,6 +3089,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3032,6 +3123,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3065,6 +3157,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3098,6 +3191,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3131,6 +3225,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3164,6 +3259,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3197,6 +3293,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3230,6 +3327,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3263,6 +3361,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3296,6 +3395,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3329,6 +3429,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3362,6 +3463,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3395,6 +3497,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3428,6 +3531,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3461,6 +3565,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3494,6 +3599,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3527,6 +3633,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3560,6 +3667,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3593,6 +3701,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3626,6 +3735,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3659,6 +3769,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3692,6 +3803,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3725,6 +3837,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3758,6 +3871,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3791,6 +3905,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3824,6 +3939,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3857,6 +3973,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3890,6 +4007,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3923,6 +4041,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3956,6 +4075,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -3989,6 +4109,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4022,6 +4143,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4055,6 +4177,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4088,6 +4211,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4121,6 +4245,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4154,6 +4279,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4187,6 +4313,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4220,6 +4347,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4253,6 +4381,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4286,6 +4415,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4319,6 +4449,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4352,6 +4483,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4385,6 +4517,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4418,6 +4551,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4451,6 +4585,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4484,6 +4619,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4517,6 +4653,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4550,6 +4687,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4583,6 +4721,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4616,6 +4755,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4649,6 +4789,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4682,6 +4823,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4715,6 +4857,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4748,6 +4891,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4781,6 +4925,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4814,6 +4959,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4847,6 +4993,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4880,6 +5027,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4913,6 +5061,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4946,6 +5095,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -4979,6 +5129,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5012,6 +5163,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5045,6 +5197,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5078,6 +5231,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5111,6 +5265,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5144,6 +5299,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5177,6 +5333,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5210,6 +5367,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5243,6 +5401,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5276,6 +5435,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5309,6 +5469,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5342,6 +5503,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5375,6 +5537,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5408,6 +5571,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5441,6 +5605,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5474,6 +5639,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5507,6 +5673,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5540,6 +5707,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5573,6 +5741,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5606,6 +5775,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5639,6 +5809,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5672,6 +5843,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5705,6 +5877,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5738,6 +5911,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5771,6 +5945,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5804,6 +5979,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5837,6 +6013,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5870,6 +6047,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5903,6 +6081,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5936,6 +6115,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -5969,6 +6149,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6002,6 +6183,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6035,6 +6217,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6068,6 +6251,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6101,6 +6285,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6134,6 +6319,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6167,6 +6353,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6200,6 +6387,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6233,6 +6421,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6266,6 +6455,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6299,6 +6489,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6332,6 +6523,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6365,6 +6557,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6398,6 +6591,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6431,6 +6625,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6464,6 +6659,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6497,6 +6693,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6530,6 +6727,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6563,6 +6761,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6596,6 +6795,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6629,6 +6829,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6662,6 +6863,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6695,6 +6897,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6728,6 +6931,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6761,6 +6965,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6794,6 +6999,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6827,6 +7033,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6860,6 +7067,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6893,6 +7101,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6926,6 +7135,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6959,6 +7169,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -6992,6 +7203,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7025,6 +7237,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7058,6 +7271,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7091,6 +7305,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7124,6 +7339,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7157,6 +7373,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7190,6 +7407,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7223,6 +7441,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: false,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7256,6 +7475,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }, {
@@ -7289,6 +7509,7 @@ export let projects = [{
   deadline: '31st April, 2026',
   isPortfolio: true,
   linkToProject: '',
+  totalPhase: 8,
   projectType: 'Client Project',
   budget: '$800 - $2K'
 }];

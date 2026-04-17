@@ -55,7 +55,7 @@ function renderProject(allProject = myProject) {
           <div class="top">
             <div class="title-content">
               <p class="title">${project.name}</p>
-              <p class="portfolio-status ${project.isPortfolio ? '' : 'not-active'}">Portfolio: ${project.isPortfolio ? 'Ative' : 'Inactive'}</p>
+              <p class="portfolio-status ${project.isPortfolio ? '' : 'not-active'}">Portfolio: ${project.isPortfolio ? 'Active' : 'Inactive'}</p>
             </div>
             <div class="link-content">
               <p>Link to Project</p>
@@ -128,3 +128,73 @@ function updateProjectCountCard() {
   })
 }
 updateProjectCountCard();
+
+const searchProject = document.getElementById('search-project');
+searchProject.addEventListener('keyup', () => {
+  const searchResult = projects.filter(p => p.name.toLocaleLowerCase().includes(searchProject.value.toLocaleLowerCase().trim()))
+  renderProject(searchResult)
+  if (searchProject.value.trim()) {
+    document.querySelector('.main-head').style.display = 'none';
+    document.querySelector('.main-tab').style.display = 'none';
+  } else {
+    document.querySelector('.main-head').style.display = 'grid';
+    document.querySelector('.main-tab').style.display = 'flex';
+  }
+})
+
+function tabsCick() {
+  const myProject = projects.filter(p => p.projectType !== 'Public Project');
+  const ongoingProjects = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete)
+  const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
+
+  const all = document.querySelector('.all-my-project');
+  const ongoing = document.querySelector('.all-my-ongoing');
+  const completed = document.querySelector('.all-my-completed');
+  const hold = document.querySelector('.all-my-hold');
+
+  all.addEventListener('click', () => {
+    all.classList.add('tab-open')
+    ongoing.classList.remove('tab-open')
+    completed.classList.remove('tab-open')
+    hold.classList.remove('tab-open')
+    renderProject(myProject)
+  })
+  ongoing.addEventListener('click', () => {
+    ongoing.classList.add('tab-open')
+    all.classList.remove('tab-open')
+    completed.classList.remove('tab-open')
+    hold.classList.remove('tab-open')
+    renderProject(ongoingProjects)
+  })
+  completed.addEventListener('click', () => {
+    completed.classList.add('tab-open')
+    ongoing.classList.remove('tab-open')
+    all.classList.remove('tab-open')
+    hold.classList.remove('tab-open')
+    renderProject(completedProject)
+  })
+  hold.addEventListener('click', () => {
+    hold.classList.add('tab-open')
+    ongoing.classList.remove('tab-open')
+    completed.classList.remove('tab-open')
+    all.classList.remove('tab-open')
+  })
+}
+tabsCick();
+
+function filerProject() {
+  const filterProject = document.querySelector('.filter-project');
+  filterProject.addEventListener('change', () => {
+    const myProject = projects.filter(p => p.projectType !== 'Public Project');
+    const personalProjects = projects.filter(p => p.projectType === 'Personal Project')
+    const clientProject = projects.filter(p => p.projectType === 'Client Project')
+    if (filterProject.value === 'all') {
+      renderProject(myProject)
+    } else if (filterProject.value === 'personal') {
+      renderProject(personalProjects)
+    } else if (filterProject.value === 'client') {
+      renderProject(clientProject)
+    }
+  })
+}
+filerProject();

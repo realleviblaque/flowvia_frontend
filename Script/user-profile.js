@@ -246,7 +246,7 @@ openProject.addEventListener('click', () => {
   allProject.classList.remove('project-tab-in-view');
   finsihedProject.classList.remove('project-tab-in-view');
   allProjectCount.innerHTML = OpenProject.length;
-  projectType.innerHTML = 'Ongoing Projects';
+  projectType.innerHTML = 'Open Projects';
   renderAllProject(OpenProject);
 })
 finsihedProject.addEventListener('click', () => {

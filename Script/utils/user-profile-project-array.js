@@ -4,94 +4,72 @@ const completedProject = projects.filter(p => p.projectType !== 'Public Project'
 export function renderAllProject(complete = completedProject) {
   let viewHtml = '';
   complete.forEach((project) => {
-    viewHtml +=  `
+    viewHtml += `
       <div class="project-container">
-        <div class="project-right">
-          <img src="${project.img}">
+        <div class="left  ${project.projectType === 'Personal Project' ? '' : 'client-project-left'}">
+          <span class="project-type ${project.projectType === 'Personal Project' ? '' : project.projectType === 'Client Project' ? 'client-project-type' : 'public-project-type'}">${project.projectType === 'Personal Project' ? 'Personal' :project.projectType === 'Client Project' ? 'Client' : 'Public'}</span>
         </div>
-        <div class="project-left">
-          <div class="project-left-top">
-            <p class="project-title">${project.name}</p>
-            <button class="project-btn">View Project</button>
-          </div>
-          <div class="project-left-middle">
-            <div class="middle-top">
-              <p>Description</p>
+        <div class="middle">
+          <div class="top">
+            <div class="title-content">
+              <p class="title">${project.name}</p>
+              <p class="portfolio-status ${project.isPortfolio ? '' : 'not-active'}">Portfolio: ${project.isPortfolio ? 'Active' : 'Inactive'}</p>
             </div>
-            <div class="middle-description">
+            <div class="link-content">
+              <p>Link to Project</p>
+              ${project.isComplete ? `
+                <span></span>
+                <a href="${project.linkToProject}">Go to Project</a>
+                ` : ''}
+            </div>
+            <div class="description-content">
               <p>${project.description}</p>
             </div>
-            <div class="middle-top">
-              <p>Phases</p>
+          </div>
+          <div class="bottom">
+            <div class="project-info">
+              <div class="budget-info">
+                <p>Budget</p>
+                <p class="project-budget ${project.projectType === 'Personal Project' ? '' : 'budget-active'}">${project.projectType === 'Personal Project' ? 'Personal' : `${project.budget}`}</p>
+              </div>
+              <div class="duration-info">
+                <p>Duration</p>
+                <p class="project-duration">${project.duration ? `${project.duration}` : 'None'}</p>
+              </div>
+              <div class="status-info">
+                <p>Status</p>
+                <p class="project-status ${project.isComplete ? 'completed-status' : ''}">${project.projectType === 'Public Project' && !project.isComplete ? 'Open' :project.isComplete ? 'Completed' : 'In Progress'}</p>
+              </div>
+              ${project.projectType === 'Public Project' ? `
+                  <div class="type-info">
+                    <p>Project Type</p>
+                    <p class="project-client">${project.type}</p>
+                  </div>
+                ` : `
+                  <div class="client-info">
+                    <p>Client</p>
+                    <p class="project-client">-------</p>
+                  </div>
+                `}
             </div>
-            <div class="middle-phasws">
-              <div>
-                <span>1</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/check.svg">
-                </div>
+            <div class="phase-progress-wrap">
+              <p>Phases</p>
+              <div class="progress-bar-wrap">
+                <span class="progress-bar"></span>
               </div>
-              <div>
-                <span>2</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/check.svg">
-                </div>
-              </div>
-              <div>
-                <span>3</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/check.svg">
-                </div>
-              </div>
-              <div>
-                <span>4</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/check.svg">
-                </div>
-              </div>
-              <div>
-                <span>5</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/check.svg">
-                </div>
-              </div>
-              <div>
-                <span>6</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/x.svg">
-                </div>
-              </div>
-              <div>
-                <span>7</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/x.svg">
-                </div>
-              </div>
-              <div>
-                <span>8</span>
-                <div class="phases-list">
-                  <p>Starting the project</p>
-                  <img src="/Icons/bootstrap icon/x.svg">
-                </div>
-              </div>
+              <p><span class="completed-phase">2</span> / <span class="all-phase">${project.totalPhase}</span></p>
+              <span class="dot"></span>
+              <p><span class="completed-phase">2</span> Completed</p>
             </div>
           </div>
-          <div class="project-left-bottom">
-            <div class="project-bottom-top">
-              <p>Project Type: <span>${project.projectType}</span></p>
-              <p>Budget: <span>${project.budget}</span></p>
-            </div>
-            <div class="project-bottom-bottom">
-              <p>Created on: <span>March 20, 2026</span></p>
-              <p class="project-status ${project.isComplete ? 'project-complete' : ''}">${project.isComplete ? 'Completed' : 'Ongoing'}</p>
-            </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <p>Updatetd 2 days ago</p>
+          </div>
+          <div class="bottom">
+            <button class="view-project-btn">View Full Project</button>
+            <button class="edit-project-btn">Edit Project</button>
           </div>
         </div>
       </div>

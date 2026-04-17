@@ -19,6 +19,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -53,6 +55,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -87,6 +91,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -121,6 +127,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -155,6 +163,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -189,6 +199,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -223,6 +235,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -257,6 +271,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -291,6 +307,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -325,6 +343,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -359,6 +379,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -393,6 +415,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -427,6 +451,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -461,6 +487,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -495,6 +523,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -529,6 +559,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -563,6 +595,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -597,6 +631,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -631,6 +667,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -665,6 +703,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -699,6 +739,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -733,6 +775,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -767,6 +811,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -801,6 +847,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -835,6 +883,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -869,6 +919,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -903,6 +955,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -937,6 +991,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -971,6 +1027,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1005,6 +1063,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1039,6 +1099,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1073,6 +1135,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1107,6 +1171,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1141,6 +1207,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1175,6 +1243,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1209,6 +1279,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1243,6 +1315,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1277,6 +1351,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1311,6 +1387,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1345,6 +1423,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1379,6 +1459,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1413,6 +1495,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1447,6 +1531,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1481,6 +1567,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1515,6 +1603,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1549,6 +1639,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1583,6 +1675,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1617,6 +1711,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1651,6 +1747,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1685,6 +1783,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1719,6 +1819,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1753,6 +1855,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1787,6 +1891,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1821,6 +1927,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1855,6 +1963,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1889,6 +1999,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1923,6 +2035,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1957,6 +2071,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -1991,6 +2107,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2025,6 +2143,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2059,6 +2179,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2093,6 +2215,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2127,6 +2251,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2161,6 +2287,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2195,6 +2323,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2229,6 +2359,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2263,6 +2395,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2297,6 +2431,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2331,6 +2467,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2365,6 +2503,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2399,6 +2539,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2433,6 +2575,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2467,6 +2611,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2501,6 +2647,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2535,6 +2683,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2569,6 +2719,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2603,6 +2755,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2637,6 +2791,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2671,6 +2827,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2705,6 +2863,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2739,6 +2899,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2773,6 +2935,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2807,6 +2971,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2841,6 +3007,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2875,6 +3043,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2909,6 +3079,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2943,6 +3115,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -2977,6 +3151,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3011,6 +3187,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3045,6 +3223,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3079,6 +3259,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3113,6 +3295,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3147,6 +3331,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3181,6 +3367,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3215,6 +3403,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3249,6 +3439,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3283,6 +3475,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3317,6 +3511,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3351,6 +3547,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3385,6 +3583,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3419,6 +3619,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3453,6 +3655,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3487,6 +3691,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3521,6 +3727,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3555,6 +3763,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3589,6 +3799,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3623,6 +3835,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3657,6 +3871,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3691,6 +3907,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3725,6 +3943,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3759,6 +3979,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3793,6 +4015,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3827,6 +4051,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3861,6 +4087,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3895,6 +4123,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3929,6 +4159,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3963,6 +4195,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -3997,6 +4231,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4031,6 +4267,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4065,6 +4303,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4099,6 +4339,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4133,6 +4375,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4167,6 +4411,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4201,6 +4447,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4235,6 +4483,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4269,6 +4519,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4303,6 +4555,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4337,6 +4591,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4371,6 +4627,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4405,6 +4663,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4439,6 +4699,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4473,6 +4735,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4507,6 +4771,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4541,6 +4807,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4575,6 +4843,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4609,6 +4879,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4643,6 +4915,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4677,6 +4951,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4711,6 +4987,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4745,6 +5023,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4779,6 +5059,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4813,6 +5095,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4847,6 +5131,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4881,6 +5167,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4915,6 +5203,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4949,6 +5239,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -4983,6 +5275,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5017,6 +5311,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5051,6 +5347,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5085,6 +5383,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5119,6 +5419,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5153,6 +5455,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5187,6 +5491,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5221,6 +5527,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5255,6 +5563,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5289,6 +5599,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5323,6 +5635,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5357,6 +5671,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5391,6 +5707,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5425,6 +5743,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5459,6 +5779,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5493,6 +5815,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5527,6 +5851,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5561,6 +5887,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5595,6 +5923,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5629,6 +5959,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5663,6 +5995,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5697,6 +6031,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5731,6 +6067,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5765,6 +6103,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5799,6 +6139,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5833,6 +6175,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5867,6 +6211,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5901,6 +6247,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5935,6 +6283,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -5969,6 +6319,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6003,6 +6355,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6037,6 +6391,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6071,6 +6427,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6105,6 +6463,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6139,6 +6499,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6173,6 +6535,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6207,6 +6571,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6241,6 +6607,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6275,6 +6643,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6309,6 +6679,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6343,6 +6715,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6377,6 +6751,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6411,6 +6787,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6445,6 +6823,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6479,6 +6859,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6513,6 +6895,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6547,6 +6931,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6581,6 +6967,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6615,6 +7003,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6649,6 +7039,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6683,6 +7075,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6717,6 +7111,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6751,6 +7147,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6785,6 +7183,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6819,6 +7219,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6853,6 +7255,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6887,6 +7291,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6921,6 +7327,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6955,6 +7363,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -6989,6 +7399,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7023,6 +7435,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7057,6 +7471,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7091,6 +7507,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7125,6 +7543,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7159,6 +7579,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7193,6 +7615,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7227,6 +7651,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7261,6 +7687,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7295,6 +7723,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7329,6 +7759,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7363,6 +7795,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7397,6 +7831,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7431,6 +7867,8 @@ export let projects = [{
   isComplete: false,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7465,6 +7903,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),
@@ -7499,6 +7939,8 @@ export let projects = [{
   isComplete: true,
   deadline: '31st April, 2026',
   projectType: 'Public Project',
+  type: 'One-Time Project',
+  totalPhase: 8,
   budget: '$5K - $10K'
 }, {
   id: crypto.randomUUID(),

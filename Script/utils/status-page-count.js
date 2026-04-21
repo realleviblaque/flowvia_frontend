@@ -1,5 +1,7 @@
-import { completedProject, ongoingProjects, completeOpenProject, OpenProject } from "../../data/projects.js";
+import { completeOpenProject, OpenProject, projects } from "../../data/projects.js";
 
+const completedProject = projects.filter(p => p.projectType !== 'Public Project' && p.isComplete)
+const ongoingProjects = projects.filter(p => p.projectType !== 'Public Project' && !p.isComplete)
 export function updateStatusCards() {
   const active = document.querySelector('.acitve-project-count');
   const complete = document.querySelector('.complete-project-count');

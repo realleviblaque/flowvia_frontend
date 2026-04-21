@@ -13,7 +13,9 @@ export function renderAllProject(complete = completedProject) {
           <div class="top">
             <div class="title-content">
               <p class="title">${project.name}</p>
-              <p class="portfolio-status ${project.isPortfolio ? '' : 'not-active'}">Portfolio: ${project.isPortfolio ? 'Active' : 'Inactive'}</p>
+              ${project.projectType != 'Public Project' ? 
+                `<p class="portfolio-status ${project.isPortfolio ? '' : 'not-active'}">Portfolio: ${project.isPortfolio ? 'Active' : 'Inactive'}</p>` 
+                : ''}
             </div>
             <div class="link-content">
               <p>Link to Project</p>

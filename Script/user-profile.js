@@ -17,6 +17,7 @@ const sectionProject = document.querySelector('.project-section');
 const sectionActivity = document.querySelector('.activity-section');
 const portfolioSection = document.querySelector('.portfolio-section-gone')
 const reviewSection = document.querySelector('.reviews-section-gone')
+const aboutSection = document.querySelector('.about-section-gone')
 
 const activityBtn = document.querySelector('.activity-btn');
 const projectBtn = document.querySelector('.projects-btn');
@@ -29,6 +30,7 @@ projectBtn.addEventListener('click', () => {
   sectionProject.classList.add('project-section-show')
   portfolioSection.classList.remove('portfolio-section')
   reviewSection.classList.remove('reviews-section')
+  aboutSection.classList.remove('about-section')
   allProjectClick();
   activityBtn.classList.remove('act-click');
   portfolioBtn.classList.remove('port-click');
@@ -42,6 +44,7 @@ activityBtn.addEventListener('click', () => {
   sectionProject.classList.remove('project-section-show')
   portfolioSection.classList.remove('portfolio-section')
   reviewSection.classList.remove('reviews-section')
+  aboutSection.classList.remove('about-section')
   activityBtn.classList.add('act-click');
   projectBtn.classList.remove('proj-click')
   portfolioBtn.classList.remove('port-click');
@@ -53,6 +56,7 @@ portfolioBtn.addEventListener('click', () => {
   sectionProject.classList.remove('project-section-show')
   portfolioSection.classList.add('portfolio-section')
   reviewSection.classList.remove('reviews-section')
+  aboutSection.classList.remove('about-section')
   portfolioBtn.classList.add('port-click');
   projectBtn.classList.remove('proj-click')
   activityBtn.classList.remove('act-click');
@@ -61,6 +65,11 @@ portfolioBtn.addEventListener('click', () => {
   projectBtn.classList.remove('proj-click')
 });
 aboutBtn.addEventListener('click', () => {
+  sectionActivity.classList.add('activity-section-gone')
+  sectionProject.classList.remove('project-section-show')
+  portfolioSection.classList.remove('portfolio-section')
+  reviewSection.classList.remove('reviews-section')
+  aboutSection.classList.add('about-section')
   aboutBtn.classList.add('abt-click');
   portfolioBtn.classList.remove('port-click');
   projectBtn.classList.remove('proj-click')
@@ -72,6 +81,7 @@ reviewsBtn.addEventListener('click', () => {
   sectionActivity.classList.add('activity-section-gone')
   sectionProject.classList.remove('project-section-show')
   portfolioSection.classList.remove('portfolio-section')
+  aboutSection.classList.remove('about-section')
   reviewSection.classList.add('reviews-section')
   reviewsBtn.classList.add('rev-click');
   aboutBtn.classList.remove('abt-click');

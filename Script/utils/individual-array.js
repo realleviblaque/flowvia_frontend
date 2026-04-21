@@ -378,7 +378,7 @@ export function renderIndividual() {
     `
   })
 
-  document.querySelector('.individual-wrapper').innerHTML = viewHtml;
+  // document.querySelector('.individual-wrapper').innerHTML = viewHtml;
 
   function individualInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)

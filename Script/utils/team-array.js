@@ -298,7 +298,7 @@ export function renderTeam() {
   })
 
 
-  document.querySelector('.team-wrapper').innerHTML = viewHtml;
+ // document.querySelector('.team-wrapper').innerHTML = viewHtml;
 
   document.querySelectorAll('.team-name').forEach((text) => capitalizeName(text))
 

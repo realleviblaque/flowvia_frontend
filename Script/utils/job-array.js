@@ -330,7 +330,7 @@ export function renderJob() {
     `
   })
 
-  document.querySelector('.job-wrapper').innerHTML = viewHtml;
+  // document.querySelector('.job-wrapper').innerHTML = viewHtml;
 
   function jobInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)

@@ -553,38 +553,27 @@ main {
     justify-content: left;
     align-items: center;
     border-bottom: 2px solid var(--hover-border);
-    gap: 20px;
     height: 50px;
-    padding: 0px 20px;
-    background-color: var(--background-color);
+    padding: 0px 50px;
+    background-color: var(--bg);
     z-index: 99;
-    color: var(--text-color);
     div {
-      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 83%;
-      font-weight: bold;
-      font-size: 18px;
-      border-radius: 40px;
+      padding: 0 25px;
+      color: var(--secondary-text);
+      height: 100%;
       cursor: pointer;
     }
-    span {
-      width: 1px;
-      height: 50%;
-      background-color: var(--line-bg-color);
-    }
     .individual-tab {
-      transition: background-color 0.3s, color 0.3s;
-      background-color: var(--dark-bg-color);
-      color: var(--white-text-color);
+      border-bottom: 2px solid var(--accent-blue);
+      color: var(--accent-blue);
     }
     .teamInView,
     .jobInView {
-      transition: background-color 0.3s, color 0.3s;
-      background-color: var(--dark-bg-color);
-      color: var(--white-text-color);
+      border-bottom: 2px solid var(--accent-blue);
+      color: var(--accent-blue);
     }
   }
   .individualSectionGone {

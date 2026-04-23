@@ -142,13 +142,22 @@ jobTab.addEventListener('click', () => {
 })
 if (url.searchParams.has('teams')) {
   teamClick()
+  document.querySelector('.individual-filter-wrap').classList.add('individual-filter-gone');
+  document.querySelector('.team-filter-wrap').classList.remove('team-filter-gone');
+  document.querySelector('.job-filter-wrap').classList.add('job-filter-gone');
 } else if (url.searchParams.has('individuals')) {
   indidualClick()
+  document.querySelector('.individual-filter-wrap').classList.remove('individual-filter-gone');
+  document.querySelector('.team-filter-wrap').classList.add('team-filter-gone');
+  document.querySelector('.job-filter-wrap').classList.add('job-filter-gone');
 } else if (url.searchParams.has('jobs')) {
   jobClick()
+  document.querySelector('.individual-filter-wrap').classList.add('individual-filter-gone');
+  document.querySelector('.team-filter-wrap').classList.add('team-filter-gone');
+  document.querySelector('.job-filter-wrap').classList.remove('job-filter-gone');
 }
 
-function filterUser() {
+function indidualFilter() {
   const all = document.querySelector('.all-filter');
   const avaialbe = document.querySelector('.available-filter')
 
@@ -161,4 +170,148 @@ function filterUser() {
     avaialbe.classList.add('active-filter')
   })
 }
-filterUser()
+indidualFilter()
+function teamFilter() {
+  const all = document.querySelector('.all-team-filter');
+  const open = document.querySelector('.open-status-filter');
+  const busy = document.querySelector('.busy-status-filter');
+  const verified = document.querySelector('.verified-team-filter');
+
+  all.addEventListener('click', () => {
+    all.classList.add('active-filter')
+    open.classList.remove('active-filter')
+    busy.classList.remove('active-filter')
+    verified.classList.remove('active-filter')
+  })
+  open.addEventListener('click', () => {
+    open.classList.add('active-filter')
+    all.classList.remove('active-filter')
+    busy.classList.remove('active-filter')
+    verified.classList.remove('active-filter')
+  })
+  busy.addEventListener('click', () => {
+    busy.classList.add('active-filter')
+    open.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    verified.classList.remove('active-filter')
+  })
+  verified.addEventListener('click', () => {
+    verified.classList.add('active-filter')
+    open.classList.remove('active-filter')
+    busy.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+  })
+}
+teamFilter();
+function jobFilter() {
+  const all = document.querySelector('.all-job-filter')
+  const remote = document.querySelector('.remote-filter')
+  const deadline = document.querySelector('.deadline-filter')
+  const midSenior = document.querySelector('.mid-senior-filter')
+  const senior = document.querySelector('.senior-filter')
+  const mmidLevel = document.querySelector('.mid-level-filter')
+  const anyLevel = document.querySelector('.any-level-filter')
+  const longTerm = document.querySelector('.long-term-filter')
+  const oneTime = document.querySelector('.one-time-filter')
+
+  all.addEventListener('click', () => {
+    all.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  remote.addEventListener('click', () => {
+    remote.classList.add('active-filter')
+    all.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  deadline.addEventListener('click', () => {
+    deadline.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  midSenior.addEventListener('click', () => {
+    midSenior.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  senior.addEventListener('click', () => {
+    senior.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  mmidLevel.addEventListener('click', () => {
+    mmidLevel.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  anyLevel.addEventListener('click', () => {
+    anyLevel.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  longTerm.addEventListener('click', () => {
+    longTerm.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+    oneTime.classList.remove('active-filter')
+  })
+  oneTime.addEventListener('click', () => {
+    oneTime.classList.add('active-filter')
+    remote.classList.remove('active-filter')
+    deadline.classList.remove('active-filter')
+    midSenior.classList.remove('active-filter')
+    senior.classList.remove('active-filter')
+    mmidLevel.classList.remove('active-filter')
+    anyLevel.classList.remove('active-filter')
+    longTerm.classList.remove('active-filter')
+    all.classList.remove('active-filter')
+  })
+}
+jobFilter()

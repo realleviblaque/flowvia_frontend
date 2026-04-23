@@ -58,31 +58,36 @@ const jobHireContainer = document.querySelectorAll('.job-hire-message-container'
 const individualTab = document.querySelector('.individual-tab');
 const teamTab = document.querySelector('.team-tab');
 const jobTab = document.querySelector('.job-tab');
-
+const url = new URL(window.location.href);
 const individualSection = document.querySelector('.individual-tab-section');
 const teamSection = document.querySelector('.team-tab-section');
 const jobSection = document.querySelector('.job-tab-section');
 const searchInput = document.querySelector('.searc-input')
 
+
+individualTab.addEventListener('click', () => {
+  window.location.href = 'market-place.html?individuals';
+})
+teamTab.addEventListener('click', () => {
+  window.location.href = 'market-place.html?teams';
+})
+if (url.searchParams.has('teams')) {
+  teamClick()
+}
+
 function teamClick() {
-  if(teamSection.classList.contains('teamSectionView')) {
-    return;
-  }
-  if (individualTab.classList.contains('individual-tab') && individualSection.classList.contains('individual-tab-section') || jobTab.classList.contains('jobInView') && jobSection.classList.contains('jobSectionView') || individualHireContainer.classList.contains('indidual-hire-message-container-view') || jobHireContainer.classList.contains('job-hire-message-container-view')) {
-    teamTab.classList.add('teamInView')
-    individualTab.classList.remove('individual-tab')
-    jobTab.classList.remove('jobInView')
-    individualSection.classList.add('individualSectionGone')
-    jobSection.classList.remove('jobSectionView')
-    teamSection.classList.add('teamSectionView')
-    individualHireContainer.forEach(container => container.classList.remove('indidual-hire-message-container-view'))
-    individualTextInput.forEach(input => input.value = '')
-    count.forEach(counts => counts.textContent = 0)
-    jobHireContainer.forEach(container => container.classList.remove('job-hire-message-container-view'))
-    jobTextInput.forEach(input => input.value = '');
-    jobCount.forEach(count => count.textContent = 0);
-    searchInput.placeholder = 'Search Teams';
-  }
+  teamTab.classList.add('teamInView')
+  individualTab.classList.remove('individual-tab')
+  jobTab.classList.remove('jobInView')
+  individualSection.classList.add('individualSectionGone')
+  jobSection.classList.remove('jobSectionView')
+  teamSection.classList.add('teamSectionView')
+  individualHireContainer.forEach(container => container.classList.remove('indidual-hire-message-container-view'))
+  individualTextInput.forEach(input => input.value = '')
+  count.forEach(counts => counts.textContent = 0)
+  jobHireContainer.forEach(container => container.classList.remove('job-hire-message-container-view'))
+  jobTextInput.forEach(input => input.value = '');
+  jobCount.forEach(count => count.textContent = 0);
 }
 teamTab.addEventListener('click', () => {
   teamClick();
@@ -105,7 +110,6 @@ jobTab.addEventListener('click', () => {
     teaamHireContainer.forEach(container => container.classList.remove('team-hire-message-container-view'))
     teamTextInput.forEach(input => input.value = '');
     teamCount.forEach(teamCouts => teamCouts.textContent = 0);
-    searchInput.placeholder = 'Search Jobs';
   }
 })
 
@@ -126,7 +130,6 @@ individualTab.addEventListener('click', () => {
     jobHireContainer.forEach(container => container.classList.remove('job-hire-message-container-view'))
     jobTextInput.forEach(input => input.value = '');
     jobCount.forEach(count => count.textContent = 0);
-    searchInput.placeholder = 'Search Individuals';
   }
 })
 

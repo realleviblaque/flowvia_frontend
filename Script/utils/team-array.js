@@ -6,7 +6,7 @@ export let team = [{
   teamTotal: 8,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -16,7 +16,7 @@ export let team = [{
   teamTotal: 3,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -26,7 +26,7 @@ export let team = [{
   teamTotal: 5,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -36,7 +36,7 @@ export let team = [{
   teamTotal: 9,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -46,7 +46,7 @@ export let team = [{
   teamTotal: 8,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -56,7 +56,7 @@ export let team = [{
   teamTotal: 6,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -66,7 +66,7 @@ export let team = [{
   teamTotal: 2,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -76,7 +76,7 @@ export let team = [{
   teamTotal: 4,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -86,7 +86,7 @@ export let team = [{
   teamTotal: 7,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -96,7 +96,7 @@ export let team = [{
   teamTotal: 6,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -106,7 +106,7 @@ export let team = [{
   teamTotal: 12,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -116,7 +116,7 @@ export let team = [{
   teamTotal: 9,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -126,7 +126,7 @@ export let team = [{
   teamTotal: 2,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -136,7 +136,7 @@ export let team = [{
   teamTotal: 5,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -146,7 +146,7 @@ export let team = [{
   teamTotal: 7,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -156,7 +156,7 @@ export let team = [{
   teamTotal: 8,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -166,7 +166,7 @@ export let team = [{
   teamTotal: 3,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -176,7 +176,7 @@ export let team = [{
   teamTotal: 6,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -186,7 +186,7 @@ export let team = [{
   teamTotal: 2,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -196,7 +196,7 @@ export let team = [{
   teamTotal: 4,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -206,7 +206,7 @@ export let team = [{
   teamTotal: 4,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -216,7 +216,7 @@ export let team = [{
   teamTotal: 7,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -226,7 +226,7 @@ export let team = [{
   teamTotal: 6,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -236,7 +236,7 @@ export let team = [{
   teamTotal: 5,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -246,7 +246,7 @@ export let team = [{
   teamTotal: 9,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }, {
   id: crypto.randomUUID(),
@@ -256,7 +256,7 @@ export let team = [{
   teamTotal: 3,
   category: 'Full Stack Developer',
   teamPrinceRange: '$500 - $2k',
-  teamProjects: 300 + '+',
+  teamProjects: 300,
   teamBio: 'A Mobile App Developer, Website Developer, Full Stack Developer and a Forex Trader'
 }];
 const randomTeam = team.sort(() => Math.random() - 0.5)
@@ -265,40 +265,78 @@ export function renderTeam() {
   randomTeam.forEach((teams) => {
     viewHtml += `
       <div class="team-contianer">
-        <div class="team-profile">
-          <div class="pic">
-            <img src="${teams.teamProfile}">
-          </div>
-          <div class="names">
-            <div class="name">
-              <p class="team-name">${teams.teamName}</p>
-              <p class="team-username">${teams.teamUsername}</p>
-            </div>
-            <div class="members">
-              <p class="count">${teams.teamTotal} Members</p>
-            </div>
-          </div>
-          <div class="bookmark">
-            <img class="team-bookmark js-bookmark-${teams.id}" data-bookmark-id="${teams.id}" src="/Icons/bootstrap icon/bookmark.svg" loading="lazy">
+        <div class="top-cover">
+          <div class="bookmark-btn">
+            <img src="/Icons/bootstrap icon/bookmark.svg">
           </div>
         </div>
-        <div class="team-info">
-          <p class="team-bio">${teams.teamBio}</p>
-          <span>
-            <p class="user-price-range">Price Range: ${teams.teamPrinceRange}</p>
-            <p class="user-project">${teams.teamProjects} Projetcs</p>
-          </span>
-        </div>
-        <div class="team-action">
-          <button class="view-profile-btn">View Team</button>
-          <button class="contact-btn">Contact</button>
+        <div class="down">
+          <div class="top">
+            <div class="top-profile">
+              <img src="${teams.teamProfile}">
+              <div class="verified-badge">
+                <span></span>
+                <p>Verified</p>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="profile">
+              <p class="name">${teams.teamName}</p>
+              <div>
+                <p class="username">@${teams.teamUsername}</p>
+                <span></span>
+                <p class="title">${teams.category}</p>
+              </div>
+            </div>
+            <p class="bio">${teams.teamBio}</p>
+            <div class="skill-wrap">
+              <div>Branding</div>
+              <div>React</div>
+              <div>Figma</div>
+              <div>Motion</div>
+              <div>Webflow</div>
+            </div>
+            <div class="details">
+              <div>
+                <p class="count">401</p>
+                <div class="title">Following</div>
+              </div>
+              <div>
+                <p class="count">15.9K</p>
+                <div class="title">Followers</div>
+              </div>
+              <div>
+                <p class="count">${teams.teamTotal}</p>
+                <div class="title">Members</div>
+              </div>
+              <div>
+                <p class="count">${teams.teamProjects}+</p>
+                <div class="title">Projects</div>
+              </div>
+              <div>
+                <p class="status">Open</p>
+                <div class="title">Status</div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price-range">
+              <p class="text">Prince Range</p>
+              <p class="range">${teams.teamPrinceRange}</p>
+            </div>
+            <div class="button-wrap">
+              <button class="hire-btn">Hire Team</button>
+              <button class="view-profile-btn">View Prodile</button>
+            </div>
+          </div>
         </div>
       </div>
     `
   })
 
 
- // document.querySelector('.team-wrapper').innerHTML = viewHtml;
+ document.querySelector('.team-wrapper').innerHTML = viewHtml;
 
   document.querySelectorAll('.team-name').forEach((text) => capitalizeName(text))
 

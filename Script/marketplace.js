@@ -147,3 +147,18 @@ if (url.searchParams.has('teams')) {
 } else if (url.searchParams.has('jobs')) {
   jobClick()
 }
+
+function filterUser() {
+  const all = document.querySelector('.all-filter');
+  const avaialbe = document.querySelector('.available-filter')
+
+  all.addEventListener('click', () => {
+    avaialbe.classList.remove('active-filter')
+    all.classList.add('active-filter')
+  })
+  avaialbe.addEventListener('click', () => {
+    all.classList.remove('active-filter')
+    avaialbe.classList.add('active-filter')
+  })
+}
+filterUser()

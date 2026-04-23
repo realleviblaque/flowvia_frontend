@@ -273,7 +273,7 @@ export function renderTeam() {
         <div class="down">
           <div class="top">
             <div class="top-profile">
-              <img src="${teams.teamProfile}">
+              <img src="${teams.teamProfile}" loading="lazy">
               <div class="verified-badge">
                 <span></span>
                 <p>Verified</p>

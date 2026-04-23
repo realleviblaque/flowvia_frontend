@@ -347,7 +347,7 @@ export function renderIndividual() {
       <div class="individual-contianer">
         <div class="top">
           <div class="top-left">
-            <img src="${each.ProfileImg}">
+            <img src="${each.ProfileImg}" loading="lazy">
             ${each.isActive ? `<span class="active-badge"></span>` : ''}
           </div>
           <div class="top-middle">

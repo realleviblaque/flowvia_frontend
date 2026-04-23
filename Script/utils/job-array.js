@@ -265,72 +265,68 @@ export function renderJob() {
   randomJob.forEach((getJob) => {
     viewHtml += `
       <div class="job-contianer">
-        <div class="job-profile">
-          <div class="pic">
-            <img src="${getJob.jobImg}">
-          </div>
-          <div class="names">
-            <div class="name">
-              <p class="job-name">${getJob.jobTitle}</p>
-              <div class="job-client-info">
-                <p class="job-client">Client:</p>
-                <div class="job-client-container">
-                  <img class="job-client-profile" src="${getJob.clientPic}" loading="lazy">
-                  <p class="job-client-username">@<span>${getJob.clinetUsername}</span></p>
-                  <div class="job-account-badge ${checkAccountBadge(getJob)}" title="${getJob.clientAccountBadge} Account"></div>
+        <div class="left">
+          <div class="top">
+            <div class="img-cover">
+              <img src="${getJob.clientPic}">
+            </div>
+            <div class="job-title-wrap">
+              <p class="title">${getJob.jobTitle}</p>
+              <div class="job-user">
+                <p class="clinet-username">Client: @${getJob.clinetUsername}</p>
+                <div>
+                  <span></span>
+                  <p>Verified</p>
                 </div>
+                <p class="requirement">Requirement: ${getJob.skill}</p>
               </div>
             </div>
-            <div class="skills">
-              <p class="skill">${getJob.skill}</p>
-              <span class="location-tyype">${getJob.jobLocation}</span>
+          </div>
+          <div class="middle">
+            <p class="description">${getJob.bio}</p>
+            <div class="skills-wrap">
+              <div>Flutter</div>
+              <div>Dart</div>
+              <div>Mobile</div>
+              <div>iOS</div>
+              <div>Android</div>
             </div>
           </div>
-          <div class="bookmark">
-            <img class="job-bookmark js-bookmark-${getJob.id}" data-bookmark-id="${getJob.id}" src="/Icons/bootstrap icon/bookmark.svg" loading="lazy">
+          <div class="down">
+            <div>
+              <p class="text">Budget</p>
+              <p class="budget">${getJob.budget}</p>
+            </div>
+            <div>
+              <p class="text">Deadline</p>
+              <p class="deadline">${getJob.deadline}</p>
+            </div>
+            <div>
+              <p class="text">Project Type</p>
+              <p class="project-type">${getJob.projectType}</p>
+            </div>
+            <div>
+              <p class="text">Experience</p>
+              <p class="experience">Mid-Senior</p>
+            </div>
           </div>
         </div>
-        <div class="job-info">
-          <div class="description-wrap">
-            <p class="des-tag">Description</p>
-            <p class="job-description">${getJob.bio}</p>
+        <div class="right">
+          <div class="top">
+            <span class="location">${getJob.jobLocation}</span>
+            <span class="status">Under Discussion</span>
           </div>
-          <div class="requirement-wrap">
-            <p class="req-tag">Requirement</p>
-            <p class="job-requirement">${getJob.bio}</p>
-          </div>
-          <div class="pricing">
-            <div class="budget">
-              <p>Budget  <span>${getJob.budget}</span></p>
-            </div>
-            <div class="deadline">
-              <p>Deadline <span>${getJob.deadline}</span></p>
-            </div>
-            <div class="project-type">
-              <p>Project Type <span>${getJob.projectType}</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="job-bottom">
-          <div class="job-status">
-            <div class="status-box">Under Discussion</div>
-            <div class="job-post-date">4hrs ago</div>
-          </div>
-          <div class="job-action">
-            <div class="apply-count">
-              <p><span>33</span> People Applied</p>
-            </div>
-            <div class="action-btn">
-              <button class="view-profile-btn">View Job</button>
-              <button class="contact-btn">Apply</button>
-            </div>
-          </div>
+          <p class="applicant"><span class="applicant-count">33</span> people Applied</p>
+          <p class="posted-time">4hrs ago</p>
+          <button class="apply-btn">Apply Now</button>
+          <button class="view-job-btn">View Job</button>
+          <img class="bookmark-btn" src="/Icons/bootstrap icon/bookmark.svg">
         </div>
       </div>
     `
   })
 
-  // document.querySelector('.job-wrapper').innerHTML = viewHtml;
+  document.querySelector('.job-wrapper').innerHTML = viewHtml;
 
   function jobInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)

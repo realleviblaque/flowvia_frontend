@@ -150,3 +150,14 @@ document.querySelector('.btn-nav-click').addEventListener('click', () => {
 document.querySelector('.close-dialog').addEventListener('click', () => {
   document.querySelector('.dialog').close();
 })
+
+document.querySelector('.see-all-team-btn').addEventListener('click', () => {
+  window.location.href = 'market-place.html?teams';
+})
+
+document.querySelector('.see-all-individual-btn').addEventListener('click', () => {
+  window.location.href = 'market-place.html?individuals';
+})
+document.querySelector('.see-all-job-btn').addEventListener('click', () => {
+  window.location.href = 'market-place.html?jobs';
+})

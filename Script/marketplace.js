@@ -58,22 +58,11 @@ const jobHireContainer = document.querySelectorAll('.job-hire-message-container'
 const individualTab = document.querySelector('.individual-tab');
 const teamTab = document.querySelector('.team-tab');
 const jobTab = document.querySelector('.job-tab');
-const url = new URL(window.location.href);
 const individualSection = document.querySelector('.individual-tab-section');
 const teamSection = document.querySelector('.team-tab-section');
 const jobSection = document.querySelector('.job-tab-section');
 const searchInput = document.querySelector('.searc-input')
 
-
-individualTab.addEventListener('click', () => {
-  window.location.href = 'market-place.html?individuals';
-})
-teamTab.addEventListener('click', () => {
-  window.location.href = 'market-place.html?teams';
-})
-if (url.searchParams.has('teams')) {
-  teamClick()
-}
 
 function teamClick() {
   teamTab.classList.add('teamInView')
@@ -89,11 +78,8 @@ function teamClick() {
   jobTextInput.forEach(input => input.value = '');
   jobCount.forEach(count => count.textContent = 0);
 }
-teamTab.addEventListener('click', () => {
-  teamClick();
-})
 
-jobTab.addEventListener('click', () => {
+function jobClick() {
   if(jobSection.classList.contains('jobSectionView')) {
     return;
   }
@@ -111,9 +97,9 @@ jobTab.addEventListener('click', () => {
     teamTextInput.forEach(input => input.value = '');
     teamCount.forEach(teamCouts => teamCouts.textContent = 0);
   }
-})
+}
 
-individualTab.addEventListener('click', () => {
+function indidualClick() {
   if(!individualSection.classList.contains('individualSectionGone')) {
     return;
   }
@@ -131,7 +117,7 @@ individualTab.addEventListener('click', () => {
     jobTextInput.forEach(input => input.value = '');
     jobCount.forEach(count => count.textContent = 0);
   }
-})
+}
 
 
 document.querySelector('.btn-nav-click').addEventListener('click', () => {
@@ -142,11 +128,22 @@ document.querySelector('.close-dialog').addEventListener('click', () => {
   document.querySelector('.dialog').close();
 })
 
-window.addEventListener('load', () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const tab = urlParams.get('tab')
-  if (tab === 'team') {
-    teamTab.click();
-  }
-  history.replaceState({}, '', 'market-place.html');
+
+const url = new URL(window.location.href);
+
+individualTab.addEventListener('click', () => {
+  window.location.href = 'market-place.html?individuals';
 })
+teamTab.addEventListener('click', () => {
+  window.location.href = 'market-place.html?teams';
+})
+jobTab.addEventListener('click', () => {
+  window.location.href = 'market-place.html?jobs';
+})
+if (url.searchParams.has('teams')) {
+  teamClick()
+} else if (url.searchParams.has('individuals')) {
+  indidualClick()
+} else if (url.searchParams.has('jobs')) {
+  jobClick()
+}

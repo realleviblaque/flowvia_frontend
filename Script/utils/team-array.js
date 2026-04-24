@@ -338,7 +338,7 @@ export function renderTeam() {
 
  document.querySelector('.team-wrapper').innerHTML = viewHtml;
 
-  document.querySelectorAll('.team-name').forEach((text) => capitalizeName(text))
+  /* document.querySelectorAll('.team-name').forEach((text) => capitalizeName(text))
 
   function teamInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)
@@ -364,7 +364,7 @@ export function renderTeam() {
         }, 200);
       }
     })
-  })
+  }) */
 }
 
 export function capitalizeName(element) {

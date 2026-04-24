@@ -398,7 +398,7 @@ export function renderIndividual() {
 
   document.querySelector('.individual-wrapper').innerHTML = viewHtml;
 
-  function individualInput(id) {
+  /* function individualInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)
     return {bookmarkChange}
   }
@@ -423,6 +423,6 @@ export function renderIndividual() {
         }, 200);
       }
     })
-  })
+  }) */
   
 }

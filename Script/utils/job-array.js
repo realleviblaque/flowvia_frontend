@@ -328,7 +328,7 @@ export function renderJob() {
 
   document.querySelector('.job-wrapper').innerHTML = viewHtml;
 
-  function jobInput(id) {
+  /* function jobInput(id) {
     const bookmarkChange = document.querySelector(`.js-bookmark-${id}`)
     return {bookmarkChange}
   }
@@ -352,7 +352,7 @@ export function renderJob() {
         }, 200);
       }
     })
-  })
+  }) */
 }
 
 export function checkAccountBadge(job) {

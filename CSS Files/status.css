@@ -1,144 +1,212 @@
 :root {
-  --background-color: #f8fafc;
-  --dark-bg-color: rgb(32, 23, 66);
-  --btn-white-text-color: white;
-  --placeholder-color: rgb(32, 23, 66);
-  --text-color: rgb(32, 23, 66);
-  --border-bottom-right-left-top: 1px solid rgba(32, 23, 66, 0.3);
-  --border-bottom-small: 1px solid rgba(32, 23, 66, 0.2);
-  --main-border-color: rgb(32, 23, 66);
-  --main-btn-text-size: 17px;
-  --main-btn-bg-color: rgb(32, 23, 66);
-  --user-active-color: rgb(0, 216, 0);
-  --user-active-border-color: white;
-  --box-shadow-color: rgba(32, 23, 66, 0.5);
-  --notify-border-color: white;
+  --bg: #0a0b0e;
+  --sidebar-bg: #0f1014;
+  --cards: #13151a;
+  --element-bg: #1a1d24;
+  --element-bg-post-input: #2d333f;
+  --border: #1f2229;
+  --hover-border: #2a2e38;
+  --pry-text: #eceae4;
+  --secondary-text: #9a9dab;
+  --mutetd-tetx: #4a4e5c;
+  --accent-blue: #4f8fff;
+  --blue-bg: #0c1b38;
+  --blue-border: #1a3060;
+  --green: #22c55e;
+  --green-bg: #0a2318;
+  --green-border: #164030;
+  --amber: #f59e0b;
+  --amber-border: #3a2c0f;
+  --purple: #a78bfa;
+  --purple-bg: #1a1038;
+  --purple-border: #2e1d60;
+  --coral: #f97316;
+  --coral-bg: #1f0e04;
+  --coral-border: #3d1c04;
+  --pry-btn: #4f8fff;
+  --pry-btn-text: #ffffff;
+  --outline-btn-bg: #0c1b38;
+  --outline-btn-text: #4f8fff;
+  --outline-btn-border: #1a3060;
+  --ghost-btn-bg: transparent;
+  --ghost-btn-text: #9a9dab;
+  --ghost-btn-border: #2a2e38;
+  --get-verified-bg: #221908;
+  --get-verified-text: #f59e0b;
+  --get-verified-border: #3a2c0f;
+  --verfied-bg: #0c1b38;
+  --verfied-text: #4f8fff;
+  --verfied-border: #1a3060;
+  --self-badge-bg: #0c1b38;
+  --self-badge-text: #4f8fff;
+  --self-badge-border: #1a3060;
+  --team-badge-bg: #0a2318;
+  --team-badge-text: #22c55e;
+  --team-badge-border: #164030;
+  --client-badge-bg: #1a1038;
+  --client-badge-text: #a78bfa;
+  --client-badge-border: #2e1d60;
   --notify-bg-color: red;
-  --staus-count-bg-color: red;
-  --staus-count-color: white;
   --main-box-shadow-color: rgb(59, 131, 246);
-  --second-main-btn-bg-color: orangered;
-  --icon-filter-color: invert(0);
-  --second-icon: invert(100%);
-  --dialog-bg-color: rgb(32, 23, 66);
-  --dialog-border: 1px solid rgba(255, 255, 255, 0.7);
-  --white-text-color: white;
-  --main-dialog-border-color: white;
-  --green-btn-color: green;
-  --backdrop-bg-color: rgba(0, 0, 0, 0.6);
-  --option-checked-bg-color: rgb(32, 23, 66);
-  --post-head-bg-color: rgba(32, 23, 66, 0.1);
-  --post-username-color: rgba(0, 0, 0, 0.9);
-  --client-account-badge-bg-color: orangered;
-  --team-account-badge-bg-color: green;
-  --self-account-badge-bg-color: blue;
-  --body-deadline-color: rgba(255, 255, 255, 0.952);
-  --footer-active-bg-color: rgba(32, 23, 66, 0.3);
-  --line-bg-color: rgba(32, 23, 66, 0.4);
-  --post-head-display-bg-color: rgb(32, 23, 66, 0.1);
-  --suggesion-title-color: rgba(0, 0, 0, 0.8);
-  --suggestion-border:  1px solid rgba(32, 23, 66, 0.5);
-  --drop-info-box-shadow: rgba(0, 0, 0, 0.2);
-  --drop-info-post-cover: rgba(32, 23, 66, 0.2);
-  --border-06: rgba(0, 0, 0, 0.6);
-  --job-client-color: rgba(0, 0, 0, 0.6);
-  --create-view-apply-btn-bg: linear-gradient(0deg, rgb(32, 23, 66));
-  --view-opportunity-border: none;
-  --phase-count: 1px solid rgba(0, 0, 0, 0.8);
-  --container-boder:  1px solid rgba(0, 0, 0, 0.4);
-  --user-follow-color: red;
-  --icon-filter-color-reverse: invert(100%);
-  --activity-off-color: rgba(0, 0, 0, 0.7);
-  --phase-backgrounf-color: 1px solid rgba(26, 26, 26, 0.4);
-  --portfolio-border: 1px solid rgba(32, 23, 66, 0.6);
+  --staus-count-bg-color: rgba(255, 0, 0, 0.459);
+  --active-badge-bg: rgb(0, 216, 0);
+  --scroll-bar-bg: white;
+  --icon-filter: invert(100%)
 }
+
 body.dark-theme {
-  --background-color: rgb(32, 23, 66);;
-  --dark-bg-color: white;
-  --btn-white-text-color: white;
-  --placeholder-color: white;
-  --text-color: rgb(230, 234, 242);
-  --border-bottom-right-left-top: 1px solid rgba(255, 255, 255, 0.3);
-  --border-bottom-small: 1px solid rgba(255, 255, 255, 0.4);
-  --main-border-color: white;
-  --main-btn-text-size: 17px;
-  --main-btn-bg-color: white;
-  --user-active-color: rgb(0, 216, 0);
-  --user-active-border-color: rgb(32, 23, 66);
-  --box-shadow-color: rgba(255, 255, 255, 0.5);
-  --notify-border-color: rgb(32, 23, 66);
+  --bg: #f0f0ed;
+  --sidebar-bg: #ffffff;
+  --cards: #f7f7f5;
+  --element-bg: #eeede9;
+  --element-bg-post-input: #dbdbdb;
+  --border: #e2e1dc;
+  --hover-border: #d0cfc9;
+  --pry-text: #111214;
+  --secondary-text: #4a4d5c;
+  --mutetd-tetx: #9a9dab;
+  --accent-blue: #2563eb;
+  --blue-bg: #eff4ff;
+  --blue-border: #bfcffe;
+  --green: #16a34a;
+  --green-bg: #f0fdf4;
+  --green-border: #bbf7d0;
+  --amber: #b45309;
+  --amber-bg: #fffbeb;
+  --amber-border: #fde68a;
+  --purple: #7c3aed;
+  --purple-bg: #f5f3ff;
+  --purple-border: #ddd6fe;
+  --coral: #c2410c;
+  --coral-bg: #fff7ed;
+  --coral-border: #fed7aa;
+  --pry-btn: #2563eb;
+  --pry-btn-text: #ffffff;
+  --outline-btn-bg: #eff4ff;
+  --outline-btn-text: #2563eb;
+  --outline-btn-border: #bfcffe;
+  --ghost-btn-bg: transparent;
+  --ghost-btn-text: #4a4d5c;
+  --ghost-btn-border: #d0cfc9;
+  --get-verified-bg: #fffbeb;
+  --get-verified-text: #b45309;
+  --get-verified-border: #fde68a;
+  --verfied-bg: #eff4ff;
+  --verfied-text: #2563eb;
+  --verfied-border: #bfcffe;
+  --self-badge-bg: #eff4ff;
+  --self-badge-text: #2563eb;
+  --self-badge-border: #bfcffe;
+  --team-badge-bg: #f0fdf4;
+  --team-badge-text: #16a34a;
+  --team-badge-border: #bbf7d0;
+  --client-badge-bg: #f5f3ff;
+  --client-badge-text: #7c3aed;
+  --client-badge-border: #ddd6fe;
   --notify-bg-color: red;
-  --staus-count-bg-color: red;
-  --staus-count-color: white;
   --main-box-shadow-color: rgb(59, 131, 246);
-  --second-main-btn-bg-color: orangered;
-  --icon-filter-color: invert(100%);
-  --second-icon: invert(0);
-  --dialog-bg-color: rgb(32, 23, 66);
-  --dialog-border: 1px solid rgba(255, 255, 255, 0.7);
-  --white-text-color: rgb(32, 23, 66);
-  --main-dialog-border-color: white;
-  --green-btn-color: green;
-  --backdrop-bg-color: rgba(0, 0, 0, 0.6);
-  --option-checked-bg-color: white;
-  --post-head-bg-color: rgba(255, 255, 255, 0.1);
-  --post-username-color: rgba(255, 255, 255, 0.9);
-  --client-account-badge-bg-color: orangered;
-  --team-account-badge-bg-color: green;
-  --self-account-badge-bg-color: blue;
-  --body-deadline-color: rgba(255, 255, 255, 0.952);
-  --footer-active-bg-color: rgba(255, 255, 255, 0.3);
-  --line-bg-color: rgba(255, 255, 255, 0.4);
-  --post-head-display-bg-color: rgb(255, 255, 255, 0.1);
-  --suggesion-title-color: rgba(255, 255, 255, 0.8);
-  --suggestion-border:  1px solid rgba(255, 255, 255, 0.5);
-  --drop-info-box-shadow: rgba(255, 255, 255, 0.2);
-  --drop-info-post-cover: rgba(255, 255, 255, 0.2);
-  --border-06: rgba(255, 255, 255, 0.6);
-  --job-client-color: rgba(255, 255, 255, 1);
-  --create-view-apply-btn-bg: linear-gradient(135deg, #0055dd, #03758a);
-  --view-opportunity-border: 1px solid rgba(255, 255, 255, 0.8);
-  --phase-count: 1px solid rgba(255, 255, 255, 0.8);
-  --container-boder:  1px solid rgba(255, 255, 255, 0.4);
-  --user-follow-color: var(--text-color);
-  --icon-filter-color-reverse: invert(0);
-  --activity-off-color: rgba(255, 255, 255, 0.7);
-  --phase-backgrounf-color: 1px solid rgba(255, 255, 255, 0.4);
-  --portfolio-border: 1px solid rgba(255, 255, 255, 0.6);
+  --staus-count-bg-color: rgba(255, 0, 0, 0.459);
+  --active-badge-bg: rgb(0, 216, 0);
+  --scroll-bar-bg: black;
+  --icon-filter: invert(0%)
 }
 
 body {
-  height: 100vh;
+  color: var(--pry-text);
   margin: 0;
   padding: 0;
   font-family: Arial;
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color);
+  background-color: var(--bg);
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: var(--background-color);
+  background-color: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-bg-color);
+  background-color: var(--scroll-bar-bg);
   border-radius: 9px;
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--bg);
 }
+
+header {
+  color: var(--pry-text);
+  background-color: var(--bg);
+  height: 80px;
+  margin-left: 250px;
+  position: sticky;
+  top: 0;
+  background-color: var(-bg);
+  border-bottom: 2px solid var(--hover-border);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 100;
+  gap: 15px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    p {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--pry-text);
+      &:nth-child(2) {
+        font-size: 16px;
+        font-weight: normal;
+        color: var(--mutetd-tetx);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .post-job-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      height: 40px;
+      padding: 0 15px;
+      background-color: var(--pry-btn);
+      color: var(--pry-btn-text);
+      border: none;
+      font-size: 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      img {
+        filter: invert(100%);
+        width: 28px;
+      }
+    }
+  }
+}
+/* Navbar */
 .contetn-container {
   width: 245px;
   padding-right: 5px;
 }
 nav {
   position: fixed;
-  background-color: var(--background-color);
+  background-color: var(--sidebar-bg);
   bottom: 0;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0px 0px 5px 15px;
-  border-right: var(--border-bottom-right-left-top);
+  border-right: 2px solid var(--hover-border);
   z-index: 105;
   overflow-y: auto;
   .head-logo {
@@ -149,15 +217,15 @@ nav {
     position: sticky;
     top: 0;
     width: 250px;
+    background-color: var(--sidebar-bg);
     z-index: 100;
-    background-color: var(--background-color);
     .head-content {
       display: flex;
       justify-content: left;
       align-items: center;
       gap: 8px;
       text-decoration: none;
-      color: var(--text-color);
+      color: var(--pry-text);
     }
     img {
       width: 50px;
@@ -193,7 +261,7 @@ nav {
       a {
         text-decoration: none;
         padding: 18px 0px;
-        color: var(--text-color);
+        color: var(--mutetd-tetx);
         font-size: 18px;
         font-weight: bold;
         display: flex;
@@ -203,17 +271,17 @@ nav {
       }
       img {
         width: 20px;
-        filter: var(--icon-filter-color);
+        filter: invert(50%);
       }
       .notify-red {
-        height: 10px;
-        width: 10px;
+        height: 7px;
+        width: 7px;
         border-radius: 50%;
-        border: 2px solid var(--notify-border-color);
+        border: 2px solid var(--border);
         background-color: var(--notify-bg-color);
         position: absolute;
-        top: 15px;
-        right: 209px;
+        top: 17px;
+        right: 213px;
       }
     }
     .team-check {
@@ -238,7 +306,7 @@ nav {
         padding-left: 5px;
         img {
           margin-right: 10px;
-          filter: var(--icon-filter-color);
+          filter: invert(50%);
           width: 26px;
           cursor: pointer;
         }
@@ -292,7 +360,7 @@ nav {
                 font-size: 13px;
                 margin-right: 10px;
                 background-color: var(--staus-count-bg-color);
-                color: var(--staus-count-color);
+                color: var(--secondary-text);
                 padding: 3px 8px;
                 border-radius: 15px;
               }
@@ -304,6 +372,12 @@ nav {
     .pageview {
       background: rgba(59, 130, 236, 0.15);
       box-shadow: inset -3px 0px 3px 0.3px var(--main-box-shadow-color);
+      a {
+        color: var(--pry-text);
+      }
+      img {
+        filter: var(--icon-filter);
+      }
     }
     .pageview:hover {
       box-shadow: inset -3px 0px 3px 0.3px var(--main-box-shadow-color);
@@ -323,14 +397,14 @@ nav {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    border-top: var(--border-bottom-right-left-top);
-    background-color: var(--background-color);
+    border-top: 1px solid var(--hover-border);
     padding: 10px 0px 25px 0px;
+    background-color: var(--sidebar-bg);
     .btn-nav-click {
       padding: 17px 64px;
       font-weight: bold;
       font-size: 17px;
-      background: var(--create-view-apply-btn-bg);
+      background-color: var(--accent-blue);
       border: none;
       color: white;
       border-radius: 10px;
@@ -412,7 +486,7 @@ nav {
       cursor: pointer;
       img {
         width: 25px;
-        filter: invert(100%);
+        filter: var(--icon-filter);
       }
     }
     .dialog-head-text {
@@ -457,119 +531,214 @@ nav {
 }
 main {
   margin-left: 255px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  .work-status-container,
-  .hire-status-container {
-    display: none;
+  background-color: var(--bg);
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-right: 50px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .work-status-container {
+    display: flex;
     flex-direction: column;
-    position: relative;
-    &.work-status-container {
+    gap: 15px;
+    .work-top {
       display: flex;
-      border-bottom: var(--border-bottom-right-left-top);
-     .hide-hire {
-      position: absolute;
-      bottom: 5px;
-      right: 50px;
-      display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       gap: 8px;
-      color: var(--text-color);
-      img {
-        width: 20px;
-        cursor: pointer;
-        filter: var(--icon-filter-color);
+      span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--green);
       }
-      p {
-        padding: 0;
-        margin: 0;
-      }
-     }
-    }
-    .work-top,
-    .hire-top {
-      color: var(--text-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 80px;
-      font-weight: bold;
-      font-size: 30px;
-      text-transform: uppercase;
-    }
-    .work-cards,
-    .hire-cards {
-      padding: 0 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 20px;
-      .status {
-        height: 150px;
-        border-radius: 20px;
-        background-color: var(--background-color);
-        border: var(--suggestion-border);
+      div {
         display: flex;
-        overflow: hidden;
-        justify-content: space-between;
-        padding: 0px 10px;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
         p {
-          margin: 0;
-          padding: 0;
+          font-weight: bold;
+          font-size: 20px;
+          color: var(--pry-text);
         }
-        .head {
+        .note {
+          font-weight: normal;
+          font-size: 15px;
+          color: var(--mutetd-tetx);
+        }
+      }
+    }
+    .work-cards {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 15px;
+      .status {
+        height: 200px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+        border: 2px solid;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 0px;
+          .active-project-count,
+          .applied-job-count,
+          .bookmark-project-count,
+          .pending-request-count,
+          .completed-project-count {
+            font-size: 50px;
+            font-weight: bold;
+          }
+          span {
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+          }
+        }
+        .middle {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          border-bottom: 1px solid var(--hover-border);
+          padding-bottom: 15px;
+          .name {
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--pry-text);
+          }
+          .note {
+            font-size: 15px;
+            color: var(--mutetd-tetx);
+          }
+        }
+        .bottom {
           display: flex;
           justify-content: left;
           align-items: center;
-          gap: 10px;
-          font-weight: bold;
-          color: var(--text-color);
-          height: 100%;
-          font-size: 22px;
-          p {
-            margin-top: -15px;
-            margin-left: 10px;
-            margin-right: -180px;
-            white-space: nowrap;
-          }
-          span {
-            height: 120px;
-            width: 120px;
-            background-color: var(--post-head-bg-color);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 35px;
-          }
-        }
-        .stat-btn {
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: end;
-          button {
-            margin: 0px 5px 10px 0px;
-            border: none;
-            border-radius: 50px;
-            height: 38px;
-            width: 130px;
-            background-color: rgb(68, 32, 197);
-            font-weight: bold;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
+          padding: 10px 0;
+          .view-all-btn {
+            margin-left: auto;
+            padding: 5px 20px;
+            border-radius: 20px;
+            border: 1px solid;
+            font-size: 14px;
             cursor: pointer;
           }
         }
       }
-      &.work-cards {
-        padding-bottom: 60px;
+      .active-project-card {
+        background-color: var(--blue-bg);
+        border-color: var(--blue-border);
+        border-top: none;
+        box-shadow: inset 0px 4px 0 var(--accent-blue);
+        .top {
+          .active-project-count {
+            color: var(--accent-blue);
+          }
+          span {
+            background-color: var(--blue-border);
+          }
+        }
+        .bottom {
+          .view-all-btn {
+            border-color: var(--blue-border);
+            background-color: var(--blue-bg);
+            color: var(--accent-blue);
+          }
+        }
+      }
+      .applied-job-card {
+        background-color: var(--purple-bg);
+        border-color: var(--purple-border);
+        border-top: none;
+        box-shadow: inset 0px 4px 0 var(--purple);
+        .top {
+          .applied-job-count {
+            color: var(--purple);
+          }
+          span {
+            background-color: var(--purple-border);
+          }
+        }
+        .bottom {
+          .view-all-btn {
+            border-color: var(--purple-border);
+            background-color: var(--purple-bg);
+            color: var(--purple);
+          }
+        }
+      }
+      .bookmark-project-card {
+        background-color: var(--coral-bg);
+        border-color: var(--coral-border);
+        border-top: none;
+        box-shadow: inset 0px 4px 0 var(--coral);
+        .top {
+          .bookmark-project-count {
+            color: var(--coral);
+          }
+          span {
+            background-color: var(--coral-border);
+          }
+        }
+        .bottom {
+          .view-all-btn {
+            border-color: var(--coral-border);
+            background-color: var(--coral-bg);
+            color: var(--coral);
+          }
+        }
+      }
+      .pending-request-card {
+        background-color: var(--amber-bg);
+        border-color: var(--amber-border);
+        border-top: none;
+        box-shadow: inset 0px 4px 0 var(--amber);
+        .top {
+          .pending-request-count {
+            color: var(--amber);
+          }
+          span {
+            background-color: var(--amber-border);
+          }
+        }
+        .bottom {
+          .view-all-btn {
+            border-color: var(--amber-border);
+            background-color: var(--amber-bg);
+            color: var(--amber);
+          }
+        }
+      }
+      .completed-project-card {
+        background-color: var(--green-bg);
+        border-color: var(--green-border);
+        border-top: none;
+        box-shadow: inset 0px 4px 0 var(--green);
+        .top {
+          .completed-project-count {
+            color: var(--green);
+          }
+          span {
+            background-color: var(--green-border);
+          }
+        }
+        .bottom {
+          .view-all-btn {
+            border-color: var(--green-border);
+            background-color: var(--green-bg);
+            color: var(--green);
+          }
+        }
       }
     }
   }

@@ -134,7 +134,7 @@ body {
 header {
   color: var(--pry-text);
   margin-left: 250px;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 2px solid var(--hover-border);
   display: flex;
   justify-content: left;
@@ -153,11 +153,11 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 50px;
     gap: 20px;
     p {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 28px;
     }
     input {
       flex: 1;

@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="./../CSS Files/status.css">
 </head>
 <body class="dark-theme">
+  <header>
+    <div class="left">
+      <p>Status</p>
+      <p>Track your work - client jobs, public projects, and hiring posts</p>
+    </div>
+    <div class="right">
+      <button class="post-job-btn">
+        <img src="/Icons/bootstrap icon/plus.svg">
+        <p>Post a Job</p>
+      </button>
+    </div>
+  </header>
   <nav>
     <div class="contetn-container">
       <div class="head-logo">
@@ -81,52 +93,86 @@
   <main>
     <div class="work-status-container">
       <div class="work-top">
-        Flowvia Work Status
+        <span></span>
+        <div>
+          <p>Work Status</p>
+          <p class="note">Jobs you're doing - from clients who hired you directly ot via public listings</p>
+        </div>
       </div>
       <div class="work-cards">
-        <div class="status">
-          <div class="head">
-            <span class="acitve-project-count">22</span>
-            <p>Active Projects</p>
+        <div class="status active-project-card">
+          <div class="top">
+            <p class="active-project-count">22</p>
+            <span></span>
           </div>
-          <div class="stat-btn">
-            <button>View All</button>
+          <div class="middle">
+            <p class="name">Active Projects</p>
+            <p class="note">work you're currently delivering</p>
           </div>
-        </div>
-        <div class="status">
-          <div class="head">
-            <span>11</span>
-            <p>Applied Jobs</p>
-          </div>
-          <div class="stat-btn">
-            <button>View All</button>
+          <div class="bottom">
+            <button class="view-all-btn">
+              View All >
+            </button>
           </div>
         </div>
-        <div class="status">
-          <div class="head">
-            <span>6</span>
-            <p>Bookmarked Jobs</p>
+        <div class="status applied-job-card">
+          <div class="top">
+            <p class="applied-job-count">11</p>
+            <span></span>
           </div>
-          <div class="stat-btn">
-            <button>View All</button>
+          <div class="middle">
+            <p class="name">Applied Jobs</p>
+            <p class="note">Jobs you applied to - awaiting response or in review</p>
           </div>
-        </div>
-        <div class="status">
-          <div class="head">
-            <span class="complete-project-count">8</span>
-            <p>Completed Projects</p>
-          </div>
-          <div class="stat-btn">
-            <button>View All</button>
+          <div class="bottom">
+            <button class="view-all-btn">
+              View All >
+            </button>
           </div>
         </div>
-        <div class="status">
-          <div class="head">
-            <span>8</span>
-            <p>Pending Request</p>
+        <div class="status bookmark-project-card">
+          <div class="top">
+            <p class="bookmark-project-count">6</p>
+            <span></span>
           </div>
-          <div class="stat-btn">
-            <button>View All</button>
+          <div class="middle">
+            <p class="name">Bookmarked Jobs</p>
+            <p class="note">Jobs you saved to apply to later</p>
+          </div>
+          <div class="bottom">
+            <button class="view-all-btn">
+              View All >
+            </button>
+          </div>
+        </div>
+        <div class="status pending-request-card">
+          <div class="top">
+            <p class="pending-request-count">8</p>
+            <span></span>
+          </div>
+          <div class="middle">
+            <p class="name">Pending Request</p>
+            <p class="note">Direct hire requests from clients - awaiting on your response</p>
+          </div>
+          <div class="bottom">
+            <button class="view-all-btn">
+              View All >
+            </button>
+          </div>
+        </div>
+        <div class="status completed-project-card">
+          <div class="top">
+            <p class="completed-project-count">8</p>
+            <span></span>
+          </div>
+          <div class="middle">
+            <p class="name">Completed Projects</p>
+            <p class="note">Work you have successfully delivered</p>
+          </div>
+          <div class="bottom">
+            <button class="view-all-btn">
+              View All >
+            </button>
           </div>
         </div>
       </div>

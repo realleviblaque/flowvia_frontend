@@ -16,6 +16,7 @@
   --green-bg: #0a2318;
   --green-border: #164030;
   --amber: #f59e0b;
+  --amber-bg: #221908;
   --amber-border: #3a2c0f;
   --purple: #a78bfa;
   --purple-bg: #1a1038;
@@ -359,8 +360,8 @@ nav {
                 margin: 0;
                 font-size: 13px;
                 margin-right: 10px;
-                background-color: var(--staus-count-bg-color);
-                color: var(--secondary-text);
+                background-color: red;
+                color: var(--pry-text);
                 padding: 3px 8px;
                 border-radius: 15px;
               }
@@ -532,19 +533,22 @@ nav {
 main {
   margin-left: 255px;
   display: flex;
+  height: calc(100vh - 150px);
   flex-direction: column;
   background-color: var(--bg);
-  padding-left: 50px;
   padding-top: 30px;
   padding-right: 50px;
   p {
     margin: 0;
     padding: 0;
   }
-  .work-status-container {
+  .work-status-container,
+  .hire-status-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
+    padding-left: 50px;
     .work-top {
       display: flex;
       justify-content: left;
@@ -594,7 +598,12 @@ main {
           .applied-job-count,
           .bookmark-project-count,
           .pending-request-count,
-          .completed-project-count {
+          .completed-project-count,
+          .open-project-count,
+          .negotiation-count,
+          .taken-project-count,
+          .hire-pending-request-count,
+          .complete-open-project-count {
             font-size: 50px;
             font-weight: bold;
           }
@@ -635,13 +644,15 @@ main {
           }
         }
       }
-      .active-project-card {
+      .active-project-card,
+      .open-project-card {
         background-color: var(--blue-bg);
         border-color: var(--blue-border);
         border-top: none;
         box-shadow: inset 0px 4px 0 var(--accent-blue);
         .top {
-          .active-project-count {
+          .active-project-count,
+          .open-project-count {
             color: var(--accent-blue);
           }
           span {
@@ -656,13 +667,15 @@ main {
           }
         }
       }
-      .applied-job-card {
+      .applied-job-card,
+      .negotiation-card {
         background-color: var(--purple-bg);
         border-color: var(--purple-border);
         border-top: none;
         box-shadow: inset 0px 4px 0 var(--purple);
         .top {
-          .applied-job-count {
+          .applied-job-count,
+          .negotiation-count {
             color: var(--purple);
           }
           span {
@@ -677,13 +690,15 @@ main {
           }
         }
       }
-      .bookmark-project-card {
+      .bookmark-project-card,
+      .taken-project-card {
         background-color: var(--coral-bg);
         border-color: var(--coral-border);
         border-top: none;
         box-shadow: inset 0px 4px 0 var(--coral);
         .top {
-          .bookmark-project-count {
+          .bookmark-project-count,
+          .taken-project-count {
             color: var(--coral);
           }
           span {
@@ -698,13 +713,15 @@ main {
           }
         }
       }
-      .pending-request-card {
+      .pending-request-card,
+      .hire-pending-request-card {
         background-color: var(--amber-bg);
         border-color: var(--amber-border);
         border-top: none;
         box-shadow: inset 0px 4px 0 var(--amber);
         .top {
-          .pending-request-count {
+          .pending-request-count,
+          .hire-pending-request-count {
             color: var(--amber);
           }
           span {
@@ -719,13 +736,15 @@ main {
           }
         }
       }
-      .completed-project-card {
+      .completed-project-card,
+      .hire-completed-project-card {
         background-color: var(--green-bg);
         border-color: var(--green-border);
         border-top: none;
         box-shadow: inset 0px 4px 0 var(--green);
         .top {
-          .completed-project-count {
+          .completed-project-count,
+          .complete-open-project-count {
             color: var(--green);
           }
           span {
@@ -738,6 +757,17 @@ main {
             background-color: var(--green-bg);
             color: var(--green);
           }
+        }
+      }
+    }
+    &.work-status-container {
+      border-bottom: 2px solid var(--hover-border);
+    }
+    &.hire-status-container {
+      padding-top: 50px;
+      .work-top {
+        span {
+          background-color: var(--accent-blue);
         }
       }
     }

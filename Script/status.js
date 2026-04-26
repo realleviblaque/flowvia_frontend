@@ -1,11 +1,9 @@
 import {chnageTheme, clickTheme } from "./utils/changeTheme.js";
 import { statusCount } from "./utils/portfolio.js";
-import { checkHiredHire, checkHideStatus } from "./utils/hide-hire.js";
 import { updateStatusCards } from "./utils/status-page-count.js";
 chnageTheme();
 clickTheme();
 statusCount();
-checkHideStatus();
 updateStatusCards();
 
 const statusView = document.querySelector('.stat-click');
@@ -24,5 +22,3 @@ statusView.addEventListener('click', () => {
   }
   
 })
-
-document.querySelector('.hide-hire-btn').addEventListener('click', checkHiredHire)

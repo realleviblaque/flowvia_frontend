@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ProfilePageRightSidebar } from "./ProfilePageRightSidebar";
-import { Projects } from "../../data/ProfilePage/Projects";
+import { Projects } from "../../data/ProfilePage/projects";
 
 export function ProjectSection() {
   const [projectView, setProjectView] = useState('All')

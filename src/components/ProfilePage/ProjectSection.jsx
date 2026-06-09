@@ -14,7 +14,7 @@ export function ProjectSection() {
           <div className={projectView === 'Open' && 'current'} onClick={() => setProjectView('Open')}>Open <span>0</span></div>
           <div className={projectView === 'Completed' && 'current'} onClick={() => setProjectView('Completed')}>Completed <span>0</span></div>
           <button>
-            Go to Projects test
+            Go to Projects
           </button>
         </div>
         <div className="all-project-section">

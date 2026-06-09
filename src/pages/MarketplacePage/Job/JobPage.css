@@ -1,0 +1,213 @@
+.job-tab-section {
+  padding: 10px 20px 10px 30px;
+  .job-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 20px;
+    .job-contianer {
+      height: 210px;
+      background-color: var(--cards);
+      border-radius: 20px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: left;
+      .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+        .top {
+          display: flex;
+          justify-content: left;
+          align-items: start;
+          gap: 6px;
+          .img-cover {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 45px;
+              height: 45px;
+              border-radius: 8px;
+              object-fit: cover;
+            }
+          }
+          .job-title-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            .title {
+              font-weight: bold;
+              font-size: 20px;
+              color: var(--pry-text);
+            }
+            .job-user {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 6px;
+              .clinet-username {
+                font-size: 12px;
+                color: var(--mutetd-tetx);
+              }
+              div {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                font-size: 11px;
+                color: var(--accent-blue);
+                gap: 4px;
+                i {
+                  font-size: 10px;
+                }
+              }
+              .requirement {
+                font-size: 12px;
+                color: var(--mutetd-tetx);
+              }
+            }
+          }
+        }
+        .middle {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 15px;
+          .description {
+            font-size: 14px;
+            color: var(--secondary-text);
+            width: 850px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            overflow: hidden;
+            line-height: 18px;
+          }
+          .skills-wrap {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            div {
+              font-size: 14px;
+              color: var(--secondary-text);
+              background-color: var(--border);
+              border: 1px solid var(--hover-border);
+              padding: 6px 15px;
+              border-radius: 20px;
+            }
+          }
+        }
+        .down {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 5px;
+            .text {
+              text-transform: uppercase;
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+            }
+            .budget {
+              font-weight: bold;
+              font-size: 16px;
+              color: var(--green);
+            }
+            .deadline {
+              font-weight: bold;
+              font-size: 16px;
+              color: var(--coral);
+            }
+            .project-type,
+            .experience {
+              font-weight: bold;
+              font-size: 16px;
+              color: var(--pry-text);
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        width: 500px;
+        gap: 10px;
+        .top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          span {
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            border: 1px solid;
+          }
+          .location {
+            background-color: var(--blue-bg);
+            border-color: var(--blue-border);
+            color: var(--accent-blue);
+          }
+          .status {
+            background-color: var(--coral-bg);
+            border-color: var(--coral-border);
+            color: var(--coral);
+          }
+        }
+        .applicant {
+          font-size: 14px;
+          color: var(--mutetd-tetx);
+          .applicant-count {
+            font-weight: bold;
+            color: var(--secondary-text);
+          }
+        }
+        .posted-time {
+          font-size: 14px;
+          color: var(--mutetd-tetx);
+        }
+        button {
+          height: 42px;
+          width: 220px;
+          font-weight: bold;
+          border-radius: 10px;
+          cursor: pointer;
+          font-size: 15px;
+        }
+        .apply-btn {
+          background-color: var(--pry-btn);
+          color: var(--pry-btn-text);
+          border: none;
+        }
+        .view-job-btn {
+          background-color: var(--ghost-btn-bg);
+          border: 1px solid var(--ghost-btn-border);
+          color: var(--ghost-btn-text);
+        }
+        i {
+          font-size: 15px;
+          color: var(--secondary-text);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

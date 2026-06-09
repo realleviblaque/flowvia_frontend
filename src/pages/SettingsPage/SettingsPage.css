@@ -1,0 +1,13 @@
+.settings-page-main {
+  display: flex;
+  justify-content: left;
+}
+.settings-sidebar-content {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 35px 50px;
+  overflow: auto;
+  height: calc(100vh - 70px);
+}

@@ -1,0 +1,48 @@
+.notification-header {
+  color: var(--pry-text);
+  margin-left: 250px;
+  padding: 15px 50px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+    .txt {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--secondary-text);
+    }
+    p {
+      font-size: 14px;
+      color: var(--mutetd-tetx);
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      padding: 10px 20px;
+      border: 1px solid var(--hover-border);
+      background-color: var(--border);
+      border-radius: 10px;
+      outline: none;
+      font-size: 14px;
+      color: var(--secondary-text);
+      cursor: pointer;
+    }
+  }
+}

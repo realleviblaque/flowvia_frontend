@@ -1,0 +1,306 @@
+.client-section {
+  padding: 30px 50px;
+  .client-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    .client-wrap {
+      background-color: var(--cards);
+      min-height: 210px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      .top {
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        .left {
+          flex: 1;
+          display: flex;
+          justify-content: left;
+          align-items: start;
+          gap: 20px;
+          .profile {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .team-profile {
+              border-radius: 12px;
+            }
+          }
+          .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 8px;
+            .name {
+              font-size: 18px;
+              font-weight: bold;
+              color: var(--secondary-text);
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 6px;
+              i {
+                font-size: 14px;
+                color: var(--accent-blue);
+              }
+            }
+            .username-info {
+              margin-top: -8px;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 10px;
+              font-size: 14px;
+              color: var(--mutetd-tetx);
+              span {
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                background-color: var(--mutetd-tetx);
+              }
+              .online-stat {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--green);
+              }
+              .online {
+                color: var(--green);
+                font-weight: bold;
+              }
+            }
+            .profession-title {
+              font-size: 12px;
+              color: var(--secondary-text);
+              padding: 4px 14px;
+              border-radius: 20px;
+              background-color: var(--border);
+              border: 1px solid var(--hover-border);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 8px;
+              span {
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                background-color: var(--secondary-text);
+              }
+            }
+            .bio {
+              font-size: 14px;
+              color: var(--mutetd-tetx);
+              width: 700px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              line-clamp: 2;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+            }
+            .more-info {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 15px;
+              div {
+                padding: 4px 15px;
+                border: 1px solid;
+                border-radius: 8px;
+                font-size: 14px;
+                &.total-jobs {
+                  background-color: var(--green-bg);
+                  border-color: var(--green-border);
+                  color: var(--green);
+                }
+                &.total-paid {
+                  background-color: var(--blue-bg);
+                  border-color: var(--blue-border);
+                  color: var(--accent-blue);
+                }
+                &.last-work-with {
+                  background-color: var(--border);
+                  border-color: var(--hover-border);
+                  color: var(--secondary-text);
+                }
+              }
+            }
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: end;
+          gap: 12px;
+          button {
+            padding: 8px 30px;
+            border: 1px solid;
+            border-radius: 10px;
+            cursor: pointer;
+            &.request-btn {
+              background-color: var(--purple-bg);
+              color: var(--purple);
+              border-color: var(--purple-border);
+            }
+            &.message-btn {
+              background-color: var(--border);
+              border-color: var(--hover-border);
+              color: var(--secondary-text);
+            }
+            &.profile-btn {
+              background-color: var(--ghost-btn-bg);
+              border-color: var(--ghost-btn-border);
+              color: var(--ghost-btn-text);
+            }
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 10px 20px;
+        padding-bottom: 20px;
+        gap: 8px;
+        .up {
+          width: 100%;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 10px;
+          text-transform: uppercase;
+          font-size: 12px;
+          color: var(--mutetd-tetx);
+          span {
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: var(--mutetd-tetx);
+          }
+          i {
+            margin-left: auto;
+            font-size: 16px;
+            color: var(--mutetd-tetx);
+            cursor: pointer;
+          }
+        }
+        .client-job-history-wrapper {
+          display: none;
+          flex-direction: column;
+          gap: 8px;
+          width: 100%;
+          .job-histoy-wrap {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding: 12px 15px;
+            background-color: var(--border);
+            border: 1px solid var(--hover-border);
+            border-radius: 10px;
+            .left {
+              flex: 1;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 10px;
+              span {
+                width: 10px;
+                height: 10px;
+                background-color: var(--green);
+                border-radius: 50%;
+              }
+              .title {
+                font-weight: bold;
+                color: var(--secondary-text);
+                font-size: 16px;
+              }
+            }
+            .right {
+              display: flex;
+              justify-content: right;
+              align-items: center;
+              gap: 25px;
+              font-size: 14px;
+              .date {
+                color: var(--secondary-text);
+              }
+              .amount-paid {
+                color: var(--green);
+              }
+              .status {
+                padding: 3px 10px;
+                background-color: var(--green-bg);
+                border: 1px solid var(--green-border);
+                color: var(--green);
+                border-radius: 20px;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        .active-history {
+          display: flex;
+        }
+      }
+    }
+    .no-result {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      color: var(--secondary-text);
+    }
+  }
+  .empty-client-wrapper {
+    height: calc(100vh - 290px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4px;
+      .head-txt {
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--secondary-text);
+      }
+      p {
+        font-size: 16px;
+        color: var(--mutetd-tetx);
+      }
+      .exlore-btn {
+        border: none;
+        height: 50px;
+        width: 300px;
+        border-radius: 50px;
+        background-color: var(--pry-btn);
+        color: var(--pry-btn-text);
+        cursor: pointer;
+        transition: opacity 0.15s;
+        font-size: 15px;
+        opacity: 0.8;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

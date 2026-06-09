@@ -1,0 +1,126 @@
+.general-sidebar {
+  position: fixed;
+  background-color: var(--sidebar-bg);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0px 0px 5px 0px;
+  width: 65px;
+  border-right: 1px solid var(--border);
+  z-index: 105;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid var(--sidebar-bg);
+  }
+  .head-logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 65px;
+    background-color: var(--sidebar-bg);
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+    .head-content {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--pry-text);
+    }
+    img {
+      width: 50px;
+    }
+  }
+  .main-ul {
+    padding-bottom: 165px;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 0;
+    .nav-link {
+      position: relative;
+      list-style-type: none;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 0 13px;
+      height: 45px;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover,
+      &.active {
+        background-color: var(--blue-border);
+        color: var(--accent-blue);
+        .notify-red {
+          border: 2px solid var(--blue-border);
+        }
+        &.active {
+          font-weight: bold;
+        }
+        i {
+          color: var(--accent-blue);
+        }
+      }
+      i {
+        font-size: 15px;
+        color: var(--mutetd-tetx);
+      }
+      .notify-red {
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        border: 2px solid var(--border);
+        background-color: var(--notify-bg-color);
+        position: absolute;
+        top: 13px;
+        right: 11px;
+        background-color: red;
+      }
+    }
+    .team-check {
+      display: none;
+    }
+  }
+  .nav-bottom {
+    position: fixed;
+    bottom: 0px;
+    height: fit-content;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+    padding: 15px 0 20px 0;
+    background-color: var(--sidebar-bg);
+    .nav-profile {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--blue-border);
+        cursor: pointer;
+      }
+    }
+  }
+}

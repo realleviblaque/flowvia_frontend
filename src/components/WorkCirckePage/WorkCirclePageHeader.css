@@ -1,0 +1,55 @@
+.work-circle-header {
+  color: var(--pry-text);
+  margin-left: 250px;
+  padding: 15px 50px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+    .txt {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--secondary-text);
+    }
+    p {
+      font-size: 14px;
+      color: var(--mutetd-tetx);
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      height: 34px;
+      padding: 6px 15px;
+      width: 600px;
+      border: 1px solid var(--hover-border);
+      background-color: transparent;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+      color: var(--secondary-text);
+      &::placeholder {
+        color: var(--secondary-text);
+      }
+      &:focus {
+        border: 1px solid var(--mutetd-tetx);
+      }
+    }
+  }
+}

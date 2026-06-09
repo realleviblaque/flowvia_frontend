@@ -1,0 +1,11 @@
+.status-main {
+  display: flex;
+  height: calc(100vh - 150px);
+  flex-direction: column;
+  padding-top: 30px;
+  margin-left: 255px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

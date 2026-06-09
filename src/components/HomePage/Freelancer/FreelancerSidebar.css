@@ -1,0 +1,54 @@
+.sug-self-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .content-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    .left {
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+    .middle {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      .name {
+        font-weight: bold;
+        font-size: 17px;
+        color: var(--secondary-text);
+      }
+      .profession {
+        font-size: 14px;
+        color: var(--mutetd-tetx);
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        background-color: var(--self-badge-bg);
+        border: 1px solid var(--self-badge-border);
+        color: var(--self-badge-text);
+        padding: 7px 22px;
+        font-size: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.notification-filter-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 35px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--sidebar-bg);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    color: var(--mutetd-tetx);
+    margin-bottom: -2px;
+    cursor: pointer;
+    span {
+      padding: 2px 7px;
+      border-radius: 20px;
+      font-size: 10px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+    }
+    &.active-filter {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+      span {
+        background-color: var(--blue-bg);
+        border-color: var(--blue-border);
+      }
+    }
+  }
+}

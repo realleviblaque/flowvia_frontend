@@ -1,0 +1,88 @@
+.project-header {
+  color: var(--pry-text);
+  margin-left: 250px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+    gap: 20px;
+    p {
+      font-weight: bold;
+      font-size: 25px;
+      color: var(--secondary-text);
+    }
+    input {
+      flex: 1;
+      width: 0;
+      max-width: 1000px;
+      border: 1px solid var(--hover-border);
+      background-color: transparent;
+      height: 32px;
+      padding: 4px 15px;
+      outline: none;
+      border-radius: 8px;
+      color: var(--secondary-text);
+      font-size: 14px;
+      &::placeholder{
+        color: var(--secondary-text);
+      }
+      &:focus {
+        border: 1px solid var(--mutetd-tetx);
+      }
+    }
+  }
+  .right {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+    margin-right: 30px;
+    .filter-project {
+      border: 1px solid var(--border);
+      background-color: var(--sidebar-bg);
+      height: 40px;
+      padding: 4px 15px;
+      outline: none;
+      border-radius: 8px;
+      color: var(--secondary-text);
+      font-size: 14px;
+    }
+    .create-project-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      height: 40px;
+      padding: 0 15px;
+      background-color: var(--pry-btn);
+      color: var(--pry-btn-text);
+      border: none;
+      font-size: 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      i {
+        color: var(--pry-btn-text);
+        font-size: 13px;
+      }
+    }
+  }
+}

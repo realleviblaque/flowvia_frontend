@@ -1,0 +1,54 @@
+.sug-team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .content-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    .left {
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 32px;
+        width: 32px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+    .middle {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      .name {
+        font-weight: bold;
+        font-size: 17px;
+        color: var(--secondary-text);
+      }
+      .profession {
+        font-size: 14px;
+        color: var(--mutetd-tetx);
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        background-color: var(--team-badge-bg);
+        border: 1px solid var(--team-badge-border);
+        color: var(--team-badge-text);
+        padding: 7px 22px;
+        font-size: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

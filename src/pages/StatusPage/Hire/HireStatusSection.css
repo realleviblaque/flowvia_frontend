@@ -1,0 +1,261 @@
+.hire-status-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  .work-top {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--accent-blue);
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      p {
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--pry-text);
+      }
+      .note {
+        font-weight: normal;
+        font-size: 15px;
+        color: var(--mutetd-tetx);
+      }
+    }
+  }
+  .work-cards {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    .status {
+      height: 200px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 25px;
+      border: 1px solid;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0px;
+        .open-project-count,
+        .negotiation-count,
+        .taken-project-count,
+        .hire-pending-request-count,
+        .complete-open-project-count {
+          font-size: 50px;
+          font-weight: bold;
+        }
+        span {
+          height: 45px;
+          width: 45px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+      .middle {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        .name {
+          font-weight: bold;
+          font-size: 20px;
+          color: var(--pry-text);
+        }
+        .note {
+          font-size: 14px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 10px 0;
+        .view-all-btn {
+          margin-left: auto;
+          padding: 5px 15px;
+          border-radius: 20px;
+          border: 1px solid;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          i {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .open-project-card {
+      background-color: var(--blue-bg);
+      border-color: var(--blue-border);
+      border-top: none;
+      box-shadow: inset 0px 4px 0 var(--accent-blue);
+      .top {
+        .open-project-count {
+          color: var(--accent-blue);
+        }
+        span {
+          background-color: var(--blue-border);
+          i {
+            color: var(--accent-blue);
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid var(--blue-border);
+        .note {
+          color: var(--accent-blue);
+        }
+      }
+      .bottom {
+        .view-all-btn {
+          border-color: var(--blue-border);
+          background-color: var(--blue-bg);
+          color: var(--accent-blue);
+        }
+      }
+    }
+    .negotiation-card {
+      background-color: var(--purple-bg);
+      border-color: var(--purple-border);
+      border-top: none;
+      box-shadow: inset 0px 4px 0 var(--purple);
+      .top {
+        .negotiation-count {
+          color: var(--purple);
+        }
+        span {
+          background-color: var(--purple-border);
+          i {
+            color: var(--purple);
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid var(--purple-border);
+        .note {
+          color: var(--purple);
+        }
+      }
+      .bottom {
+        .view-all-btn {
+          border-color: var(--purple-border);
+          background-color: var(--purple-bg);
+          color: var(--purple);
+        }
+      }
+    }
+    .taken-project-card {
+      background-color: var(--coral-bg);
+      border-color: var(--coral-border);
+      border-top: none;
+      box-shadow: inset 0px 4px 0 var(--coral);
+      .top {
+        .taken-project-count {
+          color: var(--coral);
+        }
+        span {
+          background-color: var(--coral-border);
+          i {
+            color: var(--coral);
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid var(--coral-border);
+        .note {
+          color: var(--coral);
+        }
+      }
+      .bottom {
+        .view-all-btn {
+          border-color: var(--coral-border);
+          background-color: var(--coral-bg);
+          color: var(--coral);
+        }
+      }
+    }
+    .hire-pending-request-card {
+      background-color: var(--amber-bg);
+      border-color: var(--amber-border);
+      border-top: none;
+      box-shadow: inset 0px 4px 0 var(--amber);
+      .top {
+        .hire-pending-request-count {
+          color: var(--amber);
+        }
+        span {
+          background-color: var(--amber-border);
+          i {
+            color: var(--amber);
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid var(--amber-border);
+        .note {
+          color: var(--amber);
+        }
+      }
+      .bottom {
+        .view-all-btn {
+          border-color: var(--amber-border);
+          background-color: var(--amber-bg);
+          color: var(--amber);
+        }
+      }
+    }
+    .hire-completed-project-card {
+      background-color: var(--green-bg);
+      border-color: var(--green-border);
+      border-top: none;
+      box-shadow: inset 0px 4px 0 var(--green);
+      .top {
+        .complete-open-project-count {
+          color: var(--green);
+        }
+        span {
+          background-color: var(--green-border);
+          i {
+            color: var(--green);
+          }
+        }
+      }
+      .middle {
+        border-bottom: 1px solid var(--green-border);
+        .note {
+          color: var(--green);
+        }
+      }
+      .bottom {
+        .view-all-btn {
+          border-color: var(--green-border);
+          background-color: var(--green-bg);
+          color: var(--green);
+        }
+      }
+    }
+  }
+}

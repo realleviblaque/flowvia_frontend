@@ -1,0 +1,39 @@
+.work-circle-filter-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--mutetd-tetx);
+    padding: 12px 20px;
+    margin-bottom: -2px;
+    border-bottom: 2px solid var(--ghost-btn-bg);
+    cursor: pointer;
+    span {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: 10px;
+    }
+  }
+  .active {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    span {
+      background-color: var(--blue-bg);
+      border-color: var(--blue-border);
+    }
+  }
+}

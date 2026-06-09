@@ -1,0 +1,61 @@
+.status-header {
+  color: var(--pry-text);
+  background-color: var(--sidebar-bg);
+  height: 70px;
+  margin-left: 250px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 100;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+    p {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--secondary-text);
+      &:nth-child(2) {
+        font-size: 14px;
+        font-weight: normal;
+        color: var(--mutetd-tetx);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .post-job-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      height: 35px;
+      padding: 0 15px;
+      background-color: var(--pry-btn);
+      color: var(--pry-btn-text);
+      border: none;
+      font-size: 13px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      i {
+        color: var(--pry-btn-text);
+        font-size: 10px;
+      }
+    }
+  }
+}

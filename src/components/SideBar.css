@@ -1,0 +1,393 @@
+.main-sidebar {
+  position: fixed;
+  background-color: var(--sidebar-bg);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0px 0px 5px 0px;
+  border-right: 1px solid var(--border);
+  z-index: 105;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid var(--sidebar-bg);
+  }
+  .head-logo {
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+    padding-left: 15px;
+    .head-content {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--pry-text);
+    }
+    img {
+      width: 50px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 37px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .main-ul {
+    padding-bottom: 165px;
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 0;
+    .nav-link {
+      position: relative;
+      list-style-type: none;
+      padding-left: 8px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      width: 230px;
+      font-size: 14px;
+      height: 45px;
+      border-radius: 10px;
+      color: var(--secondary-text);
+      cursor: pointer;
+      &:hover,
+      &.active {
+        background-color: var(--blue-border);
+        color: var(--accent-blue);
+        .notify-red {
+          border: 2px solid var(--blue-border);
+        }
+        &.active {
+          font-weight: bold;
+        }
+        i {
+          color: var(--accent-blue);
+        }
+      }
+      i {
+        font-size: 14px;
+        color: var(--secondary-text);
+      }
+      .notify-red {
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        border: 2px solid var(--border);
+        background-color: var(--notify-bg-color);
+        position: absolute;
+        top: 13px;
+        right: 210px;
+      }
+    }
+    .team-check {
+      display: none;
+    }
+    /* Status */
+    .stat-in {
+      padding-bottom: 10px;
+    }
+    .stat {
+      padding-left: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+      width: 230px;
+      font-size: 14px;
+      border-radius: 10px;
+      color: var(--secondary-text);
+      cursor: pointer;
+      &:hover,
+      &.active {
+        background-color: var(--blue-border);
+        color: var(--accent-blue);
+        .status-nav-link {
+          color: var(--accent-blue);
+        }
+        .status-view {
+          .status-inlink {
+            color: var(--accent-blue);
+            font-weight: normal;
+          }
+        }
+        &.active {
+          font-weight: bold;
+        }
+        i {
+          color: var(--accent-blue);
+        }
+      }
+      .stat-text {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .status-nav-link {
+        flex: 1;
+        list-style-type: none;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        height: 45px;
+        border-radius: 10px;
+        color: var(--secondary-text);
+        cursor: pointer;
+        &:hover,
+        &.active {
+          background-color: var(--blue-border);
+          color: var(--accent-blue);
+          &.active {
+            font-weight: bold;
+          }
+        }
+        i {
+          margin-right: 0;
+        }
+      }
+      i {
+        width: 18px;
+        color: var(--secondary-text);
+        margin-right: 5px;
+      }
+      /* Status DropDown */
+      .status-view {
+        display: none;
+      }
+      .status-open {
+        display: flex;
+        background-color: transparent;
+        width: 200px;
+        border-radius: 8px;
+        padding: 0px 15px 0px 0px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        .client,
+        .team {
+          display: none;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          justify-content: center;
+          align-items: start;
+          padding: 0;
+          width: 100%;
+          .status-inlink {
+            list-style-type: none;
+            text-decoration: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 7px;
+            color: var(--secondary-text);
+            padding: 10px 0px;
+            padding-left: 8px;
+            margin-left: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid transparent;
+            &:hover {
+              border-color: var(--accent-blue);
+            }
+            p {
+              margin: 0;
+              font-size: 13px;
+              margin-right: 10px;
+              background-color: var(--staus-count-bg-color);
+              color: var(--secondary-text);
+              padding: 3px 8px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-bottom {
+    position: fixed;
+    bottom: 0px;
+    height: fit-content;
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+    padding: 25px 15px 10px 15px;
+    background-color: var(--sidebar-bg);
+    margin-right: 10px;
+    .nav-profile {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 37px;
+        height: 37px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--blue-border);
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        .name {
+          font-weight: bold;
+          color: var(--pry-text);
+          font-size: 16px;
+        }
+        .username {
+          font-size: 13px;
+          color: var(--mutetd-tetx);
+        }
+      }
+    }
+    .btn-nav-click {
+      margin-top: 6px;
+      height: 45px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      background-color: var(--blue-bg);
+      border: 2px solid var(--blue-border);
+      color:  var(--accent-blue);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      i {
+        color:  var(--accent-blue);
+        font-size: 10px;
+      }
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .logout-btn {
+      height: 45px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      background-color: var(--coral-bg);
+      border: 2px solid var(--coral-border);
+      color:  var(--coral);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      i {
+        color:  var(--coral);
+        font-size: 10px;
+      }
+    }
+  }
+  .dialog[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dialog {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: var(--dialog-bg-color);
+    color: white;
+    border: var(--dialog-border);
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .close-dialog {
+      position: absolute;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--main-dialog-border-color);
+      top: 12px;
+      right: 15px;
+      cursor: pointer;
+      img {
+        width: 25px;
+        filter: var(--icon-filter);
+      }
+    }
+    .dialog-head-text {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    span {
+      width: 200px;
+      height: 1px;
+      background-color: white;
+    }
+    .dialog-action {
+      margin-top: 20px;
+      width: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      button {
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 12px 0px;
+        flex: 1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:nth-child(1) {
+        background-color: var(--second-main-btn-bg-color);
+        color: white;
+      }
+      button:nth-child(3) {
+        background-color: var(--green-btn-color);
+        color: white;
+      }
+    }
+  }
+  .dialog::backdrop {
+    background-color: var(--backdrop-bg-color);
+    backdrop-filter: blur(1px);
+  }
+}

@@ -1,0 +1,135 @@
+.sug-job-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 15px;
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      .job-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--secondary-text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 320px;
+      }
+      .requirement {
+        font-size: 12px;
+        color: var(--secondary-text);
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+      .budget {
+        background-color: var(--green-bg);
+        border: 1px solid var(--green-border);
+        color: var(--green);
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .location {
+        background-color: var(--blue-bg);
+        border: 1px solid var(--blue-border);
+        color: var(--accent-blue);
+        padding: 4px 10px;
+        font-size: 12px;
+        border-radius: 20px
+      }
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      .bottom-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+        .client-text {
+          text-transform: uppercase;
+          color: var(--mutetd-tetx);
+          font-size: 11px;
+          font-weight: bold;
+        }
+        .client-details {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 6px;
+          .client-profile-pic {
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .client-name {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 8px;
+            .client-username {
+              font-size: 14px;
+              color: var(--secondary-text);
+            }
+            span {
+              height: 8px;
+              width: 8px;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+            .client-account-type {
+              background-color: var(--purple);
+            }
+            .team-account-type {
+              background-color: var(--green);
+            }
+            .self-account-type {
+              background-color: var(--accent-blue);
+            }
+          }
+        }
+      }
+      .bottom-right {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        button {
+          background-color: var(--blue-bg);
+          border: 1px solid var(--blue-border);
+          color: var(--accent-blue);
+          padding: 7px 22px;
+          font-size: 12px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

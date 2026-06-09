@@ -1,0 +1,141 @@
+:root {
+  --bg: #0a0b0e;
+  --sidebar-bg: #0f1014;
+  --cards: #13151a;
+  --element-bg: #1a1d24;
+  --element-bg-post-input: #2d333f;
+  --border: #1f2229;
+  --hover-border: #2a2e38;
+  --pry-text: #eceae4;
+  --secondary-text: #9a9dab;
+  --mutetd-tetx: #4a4e5c;
+  --accent-blue: #4f8fff;
+  --blue-bg: #0c1b38;
+  --blue-border: #1a3060;
+  --green: #22c55e;
+  --green-bg: #0a2318;
+  --green-border: #164030;
+  --amber: #f59e0b;
+  --amber-bg: #221908;
+  --amber-border: #3a2c0f;
+  --purple: #a78bfa;
+  --purple-bg: #1a1038;
+  --purple-border: #2e1d60;
+  --coral: #f97316;
+  --coral-bg: #1f0e04;
+  --coral-border: #3d1c04;
+  --pry-btn: #4f8fff;
+  --pry-btn-text: #ffffff;
+  --outline-btn-bg: #0c1b38;
+  --outline-btn-text: #4f8fff;
+  --outline-btn-border: #1a3060;
+  --ghost-btn-bg: transparent;
+  --ghost-btn-text: #9a9dab;
+  --ghost-btn-border: #2a2e38;
+  --get-verified-bg: #221908;
+  --get-verified-text: #f59e0b;
+  --get-verified-border: #3a2c0f;
+  --verfied-bg: #0c1b38;
+  --verfied-text: #4f8fff;
+  --verfied-border: #1a3060;
+  --self-badge-bg: #0c1b38;
+  --self-badge-text: #4f8fff;
+  --self-badge-border: #1a3060;
+  --team-badge-bg: #0a2318;
+  --team-badge-text: #22c55e;
+  --team-badge-border: #164030;
+  --client-badge-bg: #1a1038;
+  --client-badge-text: #a78bfa;
+  --client-badge-border: #2e1d60;
+  --notify-bg-color: red;
+  --main-box-shadow-color: rgb(59, 131, 246);
+  --staus-count-bg-color: rgba(255, 0, 0, 0.459);
+  --active-badge-bg: rgb(0, 216, 0);
+  --scroll-bar-bg: white;
+  --icon-filter: invert(100%);
+  --get-verified-btn-text: black;
+}
+body.dark-theme {
+  --bg: #f0f0ed;
+  --sidebar-bg: #ffffff;
+  --cards: #f7f7f5;
+  --element-bg: #eeede9;
+  --element-bg-post-input: #dbdbdb;
+  --border: #e2e1dc;
+  --hover-border: #d0cfc9;
+  --pry-text: #111214;
+  --secondary-text: #4a4d5c;
+  --mutetd-tetx: #9a9dab;
+  --accent-blue: #2563eb;
+  --blue-bg: #eff4ff;
+  --blue-border: #bfcffe;
+  --green: #16a34a;
+  --green-bg: #f0fdf4;
+  --green-border: #bbf7d0;
+  --amber: #b45309;
+  --amber-bg: #fffbeb;
+  --amber-border: #fde68a;
+  --purple: #7c3aed;
+  --purple-bg: #f5f3ff;
+  --purple-border: #ddd6fe;
+  --coral: #c2410c;
+  --coral-bg: #fff7ed;
+  --coral-border: #fed7aa;
+  --pry-btn: #2563eb;
+  --pry-btn-text: #ffffff;
+  --outline-btn-bg: #eff4ff;
+  --outline-btn-text: #2563eb;
+  --outline-btn-border: #bfcffe;
+  --ghost-btn-bg: transparent;
+  --ghost-btn-text: #4a4d5c;
+  --ghost-btn-border: #d0cfc9;
+  --get-verified-bg: #fffbeb;
+  --get-verified-text: #b45309;
+  --get-verified-border: #fde68a;
+  --verfied-bg: #eff4ff;
+  --verfied-text: #2563eb;
+  --verfied-border: #bfcffe;
+  --self-badge-bg: #eff4ff;
+  --self-badge-text: #2563eb;
+  --self-badge-border: #bfcffe;
+  --team-badge-bg: #f0fdf4;
+  --team-badge-text: #16a34a;
+  --team-badge-border: #bbf7d0;
+  --client-badge-bg: #f5f3ff;
+  --client-badge-text: #7c3aed;
+  --client-badge-border: #ddd6fe;
+  --notify-bg-color: red;
+  --main-box-shadow-color: rgb(59, 131, 246);
+  --staus-count-bg-color: rgba(255, 0, 0, 0.459);
+  --active-badge-bg: rgb(0, 216, 0);
+  --scroll-bar-bg: black;
+  --icon-filter: invert(0%)
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-bg);
+  border-radius: 9px;
+  border: 2px solid var(--bg);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  color: var(--pry-text);
+  background-color: var(--bg);
+}
+main {
+  background-color: var(--bg);
+  margin-left: 265px;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,188 @@
+.team-individual-tab-section {
+  color: var(--text-color);
+  padding: 10px 20px 10px 30px;
+  .individual-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px 20px;
+    .individual-contianer {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cards);
+      padding: 20px;
+      border-radius: 20px;
+      gap: 15px;
+      border: 1px solid var(--border);
+      .top {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        .top-left {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 65px;
+          position: relative;
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid var(--blue-border);
+          }
+          .active-badge {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--green);
+            border: 3px solid var(--element-bg);
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+          }
+        }
+        .top-middle {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+          .name {
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--pry-text);
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 4px;
+            i {
+              font-size: 14px;
+              color: var(--accent-blue);
+            }
+          }
+          .username {
+            font-size: 14px;
+            color: var(--mutetd-tetx);
+            margin-top: -2px;
+          }
+          div {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 4px;
+            gap: 6px;
+            .pro-title {
+              font-size: 12px;
+              padding: 3px 10px;
+              background-color: var(--blue-bg);
+              color: var(--accent-blue);
+              border: 1px solid var(--blue-border);
+              border-radius: 6px;
+            }
+            .available {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 6px;
+              font-size: 14px;
+              color: var(--green);
+              .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--green);
+              }
+            }
+          }
+        }
+        .top-right {
+          height: 100%;
+          i {
+            font-size: 16px;
+            color: var(--mutetd-tetx);
+            cursor: pointer;
+          }
+        }
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .bio {
+          font-size: 14px;
+          color: var(--mutetd-tetx);
+        }
+        .info {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 18px;
+          border-bottom: 1px solid var(--hover-border);
+          padding-bottom: 10px;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            .count {
+              font-size: 16px;
+              color: var(--secondary-text);
+              font-weight: bold;
+            }
+            .text {
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .botom-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .text {
+            text-transform: uppercase;
+            font-size: 13px;
+            color: var(--mutetd-tetx);
+          }
+          .range {
+            color: var(--green);
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+        .bottom-down {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          button {
+            flex: 1;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .hire-btn {
+            background-color: var(--pry-btn);
+            color: var(--pry-btn-text);
+          }
+          .view-profile-btn {
+            background-color: var(--ghost-btn-bg);
+            border: 1px solid var(--ghost-btn-border);
+            color: var(--secondary-text);
+          }
+        }
+      }
+    }
+  }
+}

@@ -50,6 +50,7 @@ import { TeamPortfolio } from './pages/TeamPage/Pages/Portfolio/TeamPortfolio'
 import { TeamOverview } from './pages/TeamPage/Pages/Overview/TeamOverview'
 import { TeamProfile } from './pages/TeamPage/Pages/Profile/TeamProfile'
 import { TeamSettings } from './pages/TeamPage/Pages/Settings/TeamSettings'
+import { TeamManagement } from './pages/TeamPage/Pages/Settings/Tabs/TeamManagement'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -106,7 +107,9 @@ function App() {
         <Route path='portfolio' element={<TeamPortfolio all={all} />} />
         <Route path='overview' element={<TeamOverview all={all} />} />
         <Route path='profile' element={<TeamProfile all={all} />} />
-        <Route path='settings' element={<TeamSettings all={all} />} />
+        <Route path='settings' element={<TeamSettings />}>
+          <Route path='' element={<TeamManagement all={all} />} />
+        </Route>
       </Route>
     </Routes>
   )

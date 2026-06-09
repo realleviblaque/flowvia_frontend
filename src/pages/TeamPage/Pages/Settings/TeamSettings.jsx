@@ -1,11 +1,10 @@
-import { GeneralSidebar } from "../../../../components/TeamPage/GeneralSidebar";
-import { TeamSidebar } from "../../../../components/TeamPage/TeamSidebar";
+import { Outlet } from "react-router-dom";
+import './TeamSettings.css'
 
-export function TeamSettings({all}) {
+export function TeamSettings() {
   return (
     <>
-      <GeneralSidebar notification={all} />
-      <TeamSidebar />
+      <Outlet />
     </>
   )
 }

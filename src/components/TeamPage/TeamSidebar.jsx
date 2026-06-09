@@ -105,7 +105,7 @@ export function TeamSidebar() {
         </div>
       </div>
       <NavLink to='/team/settings' className='settings-tab'>
-        <i className="fa-solid fa-plus"></i>
+        <i className="fa-solid fa-gear"></i>
         Settings
       </NavLink>
     </nav>

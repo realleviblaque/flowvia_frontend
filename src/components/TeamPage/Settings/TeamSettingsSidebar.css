@@ -1,0 +1,61 @@
+.team-settings-sidebar {
+  width: 230px;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  .team-side-cover {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    &.danger {
+      border: none;
+      div {
+        a {
+          color: red;
+          &:hover,
+          &.active {
+            color: red;
+            background-color: var(--coral-bg);
+          }
+        }
+      }
+    }
+    p {
+      font-size: 13px;
+      color: var(--mutetd-tetx);
+      text-transform: uppercase;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      a {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        padding: 12px 10px;
+        font-size: 14px;
+        color: var(--secondary-text);
+        i {
+          font-size: 13px;
+        }
+        &.active,
+        &:hover {
+          background-color: var(--blue-border);
+          border-radius: 8px;
+          color: var(--accent-blue);
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

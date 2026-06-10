@@ -7,7 +7,7 @@ export function TeamSettingsSidebar() {
       <div className="team-side-cover">
         <p>TEAM</p>
         <div>
-          <NavLink to='/team/settings'>
+          <NavLink to='/team/settings' end>
             <i className="fa-solid fa-users"></i>
             Team Management
           </NavLink>

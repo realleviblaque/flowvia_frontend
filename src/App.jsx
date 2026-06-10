@@ -50,7 +50,10 @@ import { TeamPortfolio } from './pages/TeamPage/Pages/Portfolio/TeamPortfolio'
 import { TeamOverview } from './pages/TeamPage/Pages/Overview/TeamOverview'
 import { TeamProfile } from './pages/TeamPage/Pages/Profile/TeamProfile'
 import { TeamSettings } from './pages/TeamPage/Pages/Settings/TeamSettings'
-import { TeamManagement } from './pages/TeamPage/Pages/Settings/Tabs/TeamManagement'
+import { TeamManagement } from './pages/TeamPage/Pages/Settings/Tabs/Team Management/TeamManagement'
+import { RolesManagement } from './pages/TeamPage/Pages/Settings/Tabs/Roles Management/RolesManagement'
+import { MembersRoles } from './pages/TeamPage/Pages/Settings/Tabs/Members Roles/MembersRoles'
+import { InviteMembers } from './pages/TeamPage/Pages/Settings/Tabs/Invite Members/InviteMembers'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -109,6 +112,9 @@ function App() {
         <Route path='profile' element={<TeamProfile all={all} />} />
         <Route path='settings' element={<TeamSettings />}>
           <Route path='' element={<TeamManagement all={all} />} />
+          <Route path='roles' element={<RolesManagement all={all} />} />
+          <Route path='members' element={<MembersRoles all={all} />} />
+          <Route path='invites' element={<InviteMembers all={all} />} />
         </Route>
       </Route>
     </Routes>

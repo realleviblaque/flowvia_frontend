@@ -54,6 +54,7 @@ import { TeamManagement } from './pages/TeamPage/Pages/Settings/Tabs/Team Manage
 import { RolesManagement } from './pages/TeamPage/Pages/Settings/Tabs/Roles Management/RolesManagement'
 import { MembersRoles } from './pages/TeamPage/Pages/Settings/Tabs/Members Roles/MembersRoles'
 import { InviteMembers } from './pages/TeamPage/Pages/Settings/Tabs/Invite Members/InviteMembers'
+import { StatusManagement } from './pages/TeamPage/Pages/Settings/Tabs/Status Management/StatusManagement'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -115,6 +116,7 @@ function App() {
           <Route path='roles' element={<RolesManagement all={all} />} />
           <Route path='members' element={<MembersRoles all={all} />} />
           <Route path='invites' element={<InviteMembers all={all} />} />
+          <Route path='status' element={<StatusManagement all={all} />} />
         </Route>
       </Route>
     </Routes>

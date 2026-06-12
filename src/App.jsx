@@ -55,6 +55,8 @@ import { RolesManagement } from './pages/TeamPage/Pages/Settings/Tabs/Roles Mana
 import { MembersRoles } from './pages/TeamPage/Pages/Settings/Tabs/Members Roles/MembersRoles'
 import { InviteMembers } from './pages/TeamPage/Pages/Settings/Tabs/Invite Members/InviteMembers'
 import { StatusManagement } from './pages/TeamPage/Pages/Settings/Tabs/Status Management/StatusManagement'
+import { ProfessionalDetails } from './pages/TeamPage/Pages/Settings/Tabs/Professional Details/ProfessionalDetails'
+import { PricingAvailability } from './pages/TeamPage/Pages/Settings/Tabs/Profile Availability/PricingAvailability'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -117,6 +119,8 @@ function App() {
           <Route path='members' element={<MembersRoles all={all} />} />
           <Route path='invites' element={<InviteMembers all={all} />} />
           <Route path='status' element={<StatusManagement all={all} />} />
+          <Route path='professional_details' element={<ProfessionalDetails all={all} />} />
+          <Route path='pricing' element={<PricingAvailability all={all} />} />
         </Route>
       </Route>
     </Routes>

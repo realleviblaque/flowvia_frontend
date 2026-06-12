@@ -18,7 +18,7 @@ export function PricingTab({all}) {
             <div className="pricing-tab-content">
               <div className="top-part">
                 <p className="head-txt">Pricing & Availability</p>
-                <p className="txt">Controls how you appear in the marketplace and what recruiters se about your rates and status.</p>
+                <p className="txt">Controls how you appear in the marketplace and what recruiters see about your rates and status.</p>
               </div>
               <div className="content">
                 <div className="status-div">

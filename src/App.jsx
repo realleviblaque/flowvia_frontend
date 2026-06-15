@@ -56,7 +56,11 @@ import { MembersRoles } from './pages/TeamPage/Pages/Settings/Tabs/Members Roles
 import { InviteMembers } from './pages/TeamPage/Pages/Settings/Tabs/Invite Members/InviteMembers'
 import { StatusManagement } from './pages/TeamPage/Pages/Settings/Tabs/Status Management/StatusManagement'
 import { ProfessionalDetails } from './pages/TeamPage/Pages/Settings/Tabs/Professional Details/ProfessionalDetails'
-import { PricingAvailability } from './pages/TeamPage/Pages/Settings/Tabs/Profile Availability/PricingAvailability'
+import { PricingAvailability } from './pages/TeamPage/Pages/Settings/Tabs/Pricing Availability/PricingAvailability'
+import { Verification } from './pages/TeamPage/Pages/Settings/Tabs/Verification/Verification'
+import { SubscriptionBilling } from './pages/TeamPage/Pages/Settings/Tabs/Subscription Billing/SubscriptionBilling'
+import { PaymentMethods } from './pages/TeamPage/Pages/Settings/Tabs/Payment Methods/PaymentMethods'
+import { PayoutSettings } from './pages/TeamPage/Pages/Settings/Tabs/Payout Settings/PayoutSettings'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -121,6 +125,10 @@ function App() {
           <Route path='status' element={<StatusManagement all={all} />} />
           <Route path='professional_details' element={<ProfessionalDetails all={all} />} />
           <Route path='pricing' element={<PricingAvailability all={all} />} />
+          <Route path='verification' element={<Verification all={all} />} />
+          <Route path='subscription' element={<SubscriptionBilling all={all} />} />
+          <Route path='payment' element={<PaymentMethods all={all} />} />
+          <Route path='payout' element={<PayoutSettings all={all} />} />
         </Route>
       </Route>
     </Routes>

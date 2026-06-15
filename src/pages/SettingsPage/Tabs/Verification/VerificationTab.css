@@ -46,7 +46,6 @@
       font-size: 14px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
       .head {
         display: flex;
         justify-content: space-between;
@@ -68,9 +67,9 @@
         justify-content: left;
         align-items: center;
         gap: 20px;
-        padding: 0 0 20px 0;
-        border-bottom: 1px solid var(--border);
-        &:nth-child(5) {
+        padding: 20px 0;
+        border-top: 1px solid var(--border);
+        &:nth-child(2) {
           border: none;
         }
         .left {

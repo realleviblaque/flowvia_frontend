@@ -88,12 +88,20 @@
           color: var(--mutetd-tetx);
         }
         span {
-          height: 3px;
-          width: 3px;
+          height: 2px;
+          width: 2px;
           background-color: var(--mutetd-tetx);
           border-radius: 50%;
         }
+        .phone {
+          display: none;
+        }
         .category {
+          font-size: 13px;
+          color: var(--mutetd-tetx);
+        }
+        .date {
+          display: none;
           font-size: 13px;
           color: var(--mutetd-tetx);
         }
@@ -118,6 +126,7 @@
     p {
       font-size: 15px;
       color: var(--secondary-text);
+      line-height: 20px;
     }
     .body-image {
       height: 200px;
@@ -246,6 +255,12 @@
           font-size: 14px;
         }
       }
+      .liked {
+        color: red;
+        i {
+          color: red;
+        }
+      }
     }
     .save-post {
       display: flex;
@@ -266,4 +281,203 @@
       }
     }
   }
+}
+
+@media (max-width: 767.99px) {
+  .post-container {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: 20px 15px;
+    background-color: transparent;
+    gap: 10px;
+    .post-header {
+      .left {
+        .post-user-profile {
+          padding: 1px;
+        }
+      }
+      .middle {
+        gap: 1px;
+        .post-info-top {
+          .name {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--pry-text);
+          }
+          .badge {
+            height: 0;
+            padding: 8px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            border-radius: 20px;
+          }
+          .client-account-type {
+            background-color: var(--client-badge-bg);
+            border: 1px solid var(--client-badge-border);
+            color: var(--client-badge-text);
+          }
+          .team-account-type {
+            background-color: var(--team-badge-bg);
+            border: 1px solid var(--team-badge-border);
+            color: var(--team-badge-text);
+          }
+          .self-account-type {
+            background-color: var(--self-badge-bg);
+            border: 1px solid var(--self-badge-border);
+            color: var(--self-badge-text);
+          }
+          span {
+            display: none;
+          }
+          .post-time {
+            display: none;
+          }
+        }
+        .post-info-bottom {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 8px;
+          .username {
+            font-size: 12px;
+            color: var(--mutetd-tetx);
+          }
+          .category {
+            font-size: 12px;
+          }
+          .phone {
+            display: block;
+          }
+          .date {
+            font-size: 12px;
+            display: block;
+          }
+        }
+      }
+      .post-option {
+        i {
+          color: var(--mutetd-tetx);
+        }
+      }
+    }
+    .post-body {
+      p {
+        font-size: 15px;
+        color: var(--secondary-text);
+        line-height: 20px;
+      }
+      .body-image {
+        height: 450px;
+        min-height: 200px;
+      }
+    }
+    .post-project {
+      border: 1px solid var(--border);
+      .project-cover {
+        height: 110px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        span {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .project-details {
+        .title {
+          font-size: 16px;
+        }
+        .description {
+          font-size: 14px;
+          color: var(--mutetd-tetx);
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          overflow: hidden;
+        }
+        .details {
+          font-size: 13px;
+          span {
+            height: 2px;
+            width: 2px;
+          }
+        }
+        .action {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: stretch;
+          gap: 10px;
+          .left-action-project {
+            justify-content: space-between;
+            gap: 0px;
+            font-size: 12px;
+            div {
+              padding: 4px 15px;
+              border-radius: 8px;
+            }
+            .budget {
+              background-color: var(--green-bg);
+              border: 1px solid var(--green-border);
+              color: var(--green);
+            }
+            .deadline {
+              background-color: var(--coral-bg);
+              border: 1px solid var(--coral-border);
+              color: var(--coral);
+            }
+          }
+          .right-action-project {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              flex: 1;
+              padding: 11px 0;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+    .footer-post {
+      padding: 0 10px;
+      padding-top: 15px;
+      .react-wrap {
+        div {
+          gap: 5px;
+          color: var(--mutetd-tetx);
+          i {
+            color: var(--mutetd-tetx);
+            font-size: 14px;
+          }
+        }
+      }
+      .save-post {
+        div {
+          gap: 5px;
+          color: var(--mutetd-tetx);
+          i {
+            color: var(--mutetd-tetx);
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

@@ -19,6 +19,8 @@ export function HomePagePost({post}) {
             <p className="username">@{post.username}</p>
             <span></span>
             <p className="category">Flowvia Company</p>
+            <span className='phone'></span>
+            <p className="date">2hr ago</p>
           </div>
         </div>
         <div className="post-option">
@@ -38,7 +40,7 @@ export function HomePagePost({post}) {
       {post.postProject && (
         <div className="post-project">
           <div className="project-cover" style={post.postProject.image && {background: `linear-gradient(rgba(0,0,0,0.3)), url('${post.postProject.image}') center no-repeat`, backgroundSize: 'cover'}}>
-            {!post.postProject.image && (post.postProject.title)}
+            {!post.postProject.image && <span>{post.postProject.title}</span>}
           </div>
           <div className="project-details">
             <p className="title">{post.postProject.title}</p>
@@ -75,7 +77,7 @@ export function HomePagePost({post}) {
             <p className="comment-count">{post.comment}</p>
           </div>
           <div>
-            <i className="fa-solid fa-share"></i>
+            <i className="fa-solid fa-share-alt"></i>
             <p className="share-count">{post.share}</p>
           </div>
         </div>

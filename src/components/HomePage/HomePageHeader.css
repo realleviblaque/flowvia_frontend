@@ -47,4 +47,103 @@
       cursor: pointer;
     }
   }
+  .phone-size {
+    display: none;
+    justify-content: left;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px;
+    .name {
+      flex: 1;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--pry-text);
+      span {
+        color: var(--accent-blue);
+      }
+    }
+    .right-side {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 6px;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        i {
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          font-size: 15px;
+          color: var(--secondary-text);
+          border: 1px solid var(--border);
+          background-color: var(--cards);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          height: 33px;
+          width: 33px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid var(--blue-border);
+          padding: 2px;
+        }
+        &.hanburger {
+          i {
+            height: 35px;
+            width: 35px;
+            border-radius: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 24px;
+          }
+        }
+        .notification {
+          width: 7px;
+          height: 7px;
+          background-color: red;
+          border-radius: 50%;
+          position: absolute;
+          top: 8px;
+          right: 5px;
+        }
+        .message {
+          font-size: 10px;
+          padding: 1px 5px;
+          background-color: var(--pry-btn);
+          color: var(--pry-btn-text);
+          position: absolute;
+          border-radius: 20px;
+          top: 3px;
+          right: 2px;
+          border: 2px solid var(--cards);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.99px) {
+  .home-header {
+    margin-left: 0px;
+    .left {
+      display: none;
+    }
+    .phone-size {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

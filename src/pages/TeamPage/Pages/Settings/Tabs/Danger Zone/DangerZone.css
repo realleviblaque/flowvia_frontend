@@ -1,0 +1,60 @@
+.danger-zone-contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  overflow: auto;
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    .hd-txt {
+      font-size: 25px;
+      font-weight: bold;
+      color: red;
+    }
+    .txt {
+      font-size: 15px;
+      color: red;
+    }
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .content {
+      padding: 20px;
+      background-color: rgb(29, 2, 2);
+      border: 1px solid var(--coral-border);
+      border-radius: 20px;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+      .hd-txt {
+        font-size: 18px;
+        font-weight: bold;
+        color: red;
+      }
+      .txt {
+        margin-top: -15px;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        color: red;
+        word-spacing: 1.3px;
+        line-height: 20.3px;
+      }
+      button {
+        padding: 13px 25px;
+        background-color: transparent;
+        color: red;
+        border: 1px solid var(--coral-border);
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}

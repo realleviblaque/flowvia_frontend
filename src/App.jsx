@@ -61,6 +61,9 @@ import { Verification } from './pages/TeamPage/Pages/Settings/Tabs/Verification/
 import { SubscriptionBilling } from './pages/TeamPage/Pages/Settings/Tabs/Subscription Billing/SubscriptionBilling'
 import { PaymentMethods } from './pages/TeamPage/Pages/Settings/Tabs/Payment Methods/PaymentMethods'
 import { PayoutSettings } from './pages/TeamPage/Pages/Settings/Tabs/Payout Settings/PayoutSettings'
+import { TeamVisibility } from './pages/TeamPage/Pages/Settings/Tabs/Team Visibility/TeamVisibility'
+import { Notification } from './pages/TeamPage/Pages/Settings/Tabs/Notification/Notification'
+import { DangerZone } from './pages/TeamPage/Pages/Settings/Tabs/Danger Zone/DangerZone'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -129,6 +132,9 @@ function App() {
           <Route path='subscription' element={<SubscriptionBilling all={all} />} />
           <Route path='payment' element={<PaymentMethods all={all} />} />
           <Route path='payout' element={<PayoutSettings all={all} />} />
+          <Route path='visibility' element={<TeamVisibility all={all} />} />
+          <Route path='notifications' element={<Notification all={all} />} />
+          <Route path='danger' element={<DangerZone all={all} />} />
         </Route>
       </Route>
     </Routes>

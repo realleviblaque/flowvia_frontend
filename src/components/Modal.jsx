@@ -46,7 +46,7 @@ export function Modal({dialog, handleDialogClose}) {
             <i className="fa-solid fa-gear"></i>
             Settings
           </NavLink>
-          <NavLink to='/projects'>
+          <NavLink to='/help'>
             <i className="fa-regular fa-message"></i>
             Help & Support
           </NavLink>

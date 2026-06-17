@@ -1,6 +1,6 @@
 import './HomePageHeader.css'
 
-export function HomePAgeHeader() {
+export function HomePAgeHeader({handleDialogOpen}) {
   return (
     <header className='home-header'>
       <div className="left">
@@ -24,7 +24,7 @@ export function HomePAgeHeader() {
           <span>
             <img src="/profile.png" />
           </span>
-          <span className='hanburger'>
+          <span className='hanburger' onClick={handleDialogOpen}>
             <i className="fa-solid fa-bars"></i>
           </span>
         </div>

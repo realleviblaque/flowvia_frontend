@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { HomePAgeHeader } from "../../components/HomePage/HomepageHeader";
 import { RightSideBar } from "../../components/HomePage/RightSIdeBar";
 import { SideBar } from "../../components/Sidebar";
@@ -6,16 +6,25 @@ import { posts } from "../../data/HomePage/posts";
 import './HomePage.css'
 import { HomePagePost } from "./HomePagePost";
 import { BottomBar } from "../../components/BottomBar";
+import { Modal } from "../../components/Modal";
 
 const homePosts = posts.sort(() => Math.random() - 0.5)
 
 export function HomePage({all}) {
   const [tabsClick, setTabsClick] = useState('all')
+  const dialog = useRef(null)
+  const handleDialogOpen = () => {
+    dialog.current.showModal();
+  }
+  const handleDialogClose = () => {
+    dialog.current.close();
+  }
   return (
     <>
       <SideBar notification={all} />
       
-      <HomePAgeHeader />
+      <HomePAgeHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="home-main">
         <div className="home-content">
           <div className="home-top-options">

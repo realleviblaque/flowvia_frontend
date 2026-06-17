@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import './BottomBar.css'
 
-export function BottomBar() {
+export function BottomBar({hadnlePlusDialogOpen}) {
   return (
     <div className="bottom-bar">
       <NavLink to='/'>
@@ -12,7 +12,7 @@ export function BottomBar() {
         <i className="fa-solid fa-briefcase"></i>
         Marketplace
       </NavLink>
-      <div><i className="fa-solid fa-plus"></i></div>
+      <div onClick={hadnlePlusDialogOpen}><i className="fa-solid fa-plus"></i></div>
       <NavLink to='/status'>
         <i className="fa-solid fa-chart-line"></i>
         Status

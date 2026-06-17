@@ -7,17 +7,25 @@ import './HomePage.css'
 import { HomePagePost } from "./HomePagePost";
 import { BottomBar } from "../../components/BottomBar";
 import { Modal } from "../../components/Modal";
+import { PlusModal } from "../../components/PlusModal";
 
 const homePosts = posts.sort(() => Math.random() - 0.5)
 
 export function HomePage({all}) {
   const [tabsClick, setTabsClick] = useState('all')
   const dialog = useRef(null)
+  const plusDialog = useRef(null);
   const handleDialogOpen = () => {
     dialog.current.showModal();
   }
   const handleDialogClose = () => {
     dialog.current.close();
+  }
+  const hadnlePlusDialogOpen = () => {
+    plusDialog.current.showModal();
+  }
+  const hadnlePlusDialogClose = () => {
+    plusDialog.current.close();
   }
   return (
     <>
@@ -80,7 +88,8 @@ export function HomePage({all}) {
 
         <RightSideBar />
       </main>
-      <BottomBar />
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

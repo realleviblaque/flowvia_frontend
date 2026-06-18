@@ -46,6 +46,11 @@
     .main-head {
       top: 0;
       padding: 0;
+      .freelancer-tab,
+      .team-tab,
+      .job-tab {
+        flex: 1;
+      }
     }
   }
 }

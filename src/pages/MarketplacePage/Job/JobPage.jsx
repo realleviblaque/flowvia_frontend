@@ -1,12 +1,13 @@
 import { SideBar } from '../../../components/Sidebar'
-import { MarketplaceNavbar } from '../../../components/MrketplacePage/MarketplaceNavbar'
-import { MarketplacePageHeader } from '../../../components/MrketplacePage/MarketplacePageHeader'
+import { MarketplaceNavbar } from '../../../components/MarketplacePage/MarketplaceNavbar'
+import { MarketplacePageHeader } from '../../../components/MarketplacePage/MarketplacePageHeader'
 import { Jobs } from '../../../data/MarketplacePage/job'
 import './JobPage.css'
 import { MobileHeader } from '../../../components/MobileHeader'
 import { Modal } from '../../../components/Modal'
 import { BottomBar } from '../../../components/BottomBar'
 import { PlusModal } from '../../../components/PlusModal'
+import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
 
 const jobs = Jobs.sort(() => Math.random() - 0.5)
 
@@ -20,6 +21,7 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
+        <MarketplaceFilter />
         <section className="job-tab-section">
           <div className="job-wrapper">
             {jobs.map((job) => {

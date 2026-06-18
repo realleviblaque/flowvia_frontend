@@ -1,0 +1,65 @@
+.marketplace-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  .search {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 42px;
+    border: 1px solid var(--border);
+    background-color: var(--cards);
+    padding: 0 10px;
+    border-radius: 10px;
+    gap: 6px;
+    i {
+      font-size: 13px;
+      color: var(--mutetd-tetx);
+    }
+    input {
+      height: 100%;
+      flex: 1;
+      font-size: 15px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: var(--secondary-text);
+      &::placeholder {
+        color: var(--mutetd-tetx);
+      }
+    }
+  }
+  .filter {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    gap: 8px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    span {
+      flex-shrink: 0;
+      padding: 5px 18px;
+      background-color: var(--cards);
+      border: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--secondary-text);
+      border-radius: 20px;
+      cursor: pointer;
+      &.active {
+        background-color: var(--blue-bg);
+        border-color: var(--blue-border);
+        color: var(--accent-blue);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .marketplace-filter {
+    display: none;
+  }
+}

@@ -1,12 +1,13 @@
 import { SideBar } from '../../../components/Sidebar'
-import { MarketplaceNavbar } from '../../../components/MrketplacePage/MarketplaceNavbar'
-import { MarketplacePageHeader } from '../../../components/MrketplacePage/MarketplacePageHeader'
+import { MarketplaceNavbar } from '../../../components/MarketplacePage/MarketplaceNavbar'
+import { MarketplacePageHeader } from '../../../components/MarketplacePage/MarketplacePageHeader'
 import { Teams } from '../../../data/MarketplacePage/teams'
 import './TeamsPage.css'
 import { BottomBar } from '../../../components/BottomBar'
 import { PlusModal } from '../../../components/PlusModal'
 import { Modal } from '../../../components/Modal'
 import { MobileHeader } from '../../../components/MobileHeader'
+import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
 
 const teams = Teams.sort(() => Math.random() - 0.5)
 
@@ -20,6 +21,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
+        <MarketplaceFilter />
         <section className="team-tab-section">
           <div className="team-wrapper">
             {teams.map((team) => {

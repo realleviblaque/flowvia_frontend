@@ -217,6 +217,9 @@
     padding: 0;
     flex: 1;
     overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .job-wrapper {
       grid-template-columns: 1fr;
       gap: 10px;

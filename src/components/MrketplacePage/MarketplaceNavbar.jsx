@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom'
-import './MarketplaceNavbar.css'
 
 export function MarketplaceNavbar() {
   return (

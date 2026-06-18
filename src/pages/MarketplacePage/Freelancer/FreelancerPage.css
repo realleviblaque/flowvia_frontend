@@ -186,3 +186,172 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+ .individual-tab-section {
+    padding: 0;
+    flex: 1;
+    overflow: auto;
+    .individual-wrapper {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px 15px;
+      .individual-contianer {
+        padding: 15px;
+        .top {
+          .top-left {
+            width: fit-content;
+            img {
+              width: 50px;
+              height: 50px;
+              padding: 2px;
+              border-radius: 50%;
+              object-fit: cover;
+              border: 1px solid var(--blue-border);
+            }
+            .active-badge {
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: var(--green);
+              border: 3px solid var(--element-bg);
+              position: absolute;
+              bottom: 2px;
+              right: 2px;
+            }
+          }
+          .top-middle {
+            align-items: stretch;
+            .name {
+              font-size: 16px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              gap: 4px;
+              i {
+                font-size: 12px;
+                color: var(--accent-blue);
+              }
+            }
+            .username {
+              font-size: 12px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            div {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              margin-top: 4px;
+              gap: 6px;
+              .pro-title {
+                font-size: 11px;
+                padding: 2px 10px;
+                border-radius: 20px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 90px;
+              }
+              .available {
+                margin-left: auto;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 6px;
+                font-size: 12px;
+                color: var(--green);
+                .dot {
+                  width: 6px;
+                  height: 6px;
+                  border-radius: 50%;
+                  background-color: var(--green);
+                }
+              }
+            }
+          }
+          .top-right {
+            height: fit-content;
+            margin-bottom: 0;
+            align-self: flex-start;
+            i {
+              font-size: 15px;
+              color: var(--mutetd-tetx);
+              cursor: pointer;
+            }
+          }
+        }
+        .middle {
+          gap: 12px;
+          .bio {
+            font-size: 13px;
+            color: var(--mutetd-tetx);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+          }
+          .info {
+            gap: 18px;
+            padding-bottom: 8px;
+            div {
+              .count {
+                font-size: 13px;
+              }
+              .text {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+        .bottom {
+          .botom-top {
+            .text {
+              text-transform: uppercase;
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+            }
+            .range {
+              color: var(--green);
+              font-size: 12px;
+              font-weight: bold;
+            }
+          }
+          .bottom-down {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            button {
+              flex: 1;
+              height: 35px;
+              border-radius: 8px;
+              border: none;
+              font-size: 12px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            .hire-btn {
+              background-color: var(--pry-btn);
+              color: var(--pry-btn-text);
+            }
+            .view-profile-btn {
+              background-color: var(--ghost-btn-bg);
+              border: 1px solid var(--ghost-btn-border);
+              color: var(--secondary-text);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

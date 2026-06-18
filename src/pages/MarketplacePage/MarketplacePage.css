@@ -4,4 +4,56 @@
     margin: 0;
     padding: 0;
   }
+  .main-head {
+    position: sticky;
+    top: 111px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    height: 45px;
+    padding: 0px 50px;
+    background-color: var(--sidebar-bg);
+    z-index: 99;
+    .freelancer-tab,
+    .team-tab,
+    .job-tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 0 25px;
+      color: var(--secondary-text);
+      border-bottom: 2px solid transparent;
+      height: 100%;
+      font-size: 14px;
+      margin-bottom: -1px;
+      cursor: pointer;
+    }
+    .active {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+    }
+  }
+}
+
+@media (max-width: 767.99px) {
+  .marketplace-main {
+    margin-left: 0;
+    height: calc(100vh - 127px);
+    display: flex;
+    flex-direction: column;
+    .main-head {
+      top: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

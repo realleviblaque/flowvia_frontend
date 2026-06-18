@@ -3,16 +3,21 @@ import { MarketplaceNavbar } from '../../../components/MrketplacePage/Marketplac
 import { MarketplacePageHeader } from '../../../components/MrketplacePage/MarketplacePageHeader'
 import { Freelancers } from '../../../data/MarketplacePage/freelancer'
 import './FreelancerPage.css'
+import { MobileHeader } from '../../../components/MobileHeader'
+import { Modal } from '../../../components/Modal'
+import { BottomBar } from '../../../components/BottomBar'
+import { PlusModal } from '../../../components/PlusModal'
 
 const freelancers = Freelancers.sort(() => Math.random() - 0.5)
 
-export function FreelancerPage({all}) {
+export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose, plusDialog, hadnlePlusDialogOpen, hadnlePlusDialogClose}) {
   return (
     <>
       <SideBar notification={all} />
 
       <MarketplacePageHeader type='freelancer' />
-      
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
         <section className="individual-tab-section">
@@ -75,6 +80,8 @@ export function FreelancerPage({all}) {
           </div>
         </section>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

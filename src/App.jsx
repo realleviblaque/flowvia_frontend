@@ -88,9 +88,9 @@ function App() {
       <Route path='/status' element={<StatusPage all={all} />} />
       <Route path='/projects' element={<ProjectPage all={all} />} />
       <Route path='/marketplace' element={<MarketplacePage />}>
-        <Route path='' element={<FreelancerPage all={all} />} />
-        <Route path='teams' element={<TeamsPage all={all} />} />
-        <Route path='jobs' element={<JobPage all={all} />} />
+        <Route path='' element={<FreelancerPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+        <Route path='teams' element={<TeamsPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+        <Route path='jobs' element={<JobPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       </Route>
       <Route path='/messages' element={<MessagePage all={all} />} />
       <Route path='/work-circle' element={<WorkCirclePage />}>

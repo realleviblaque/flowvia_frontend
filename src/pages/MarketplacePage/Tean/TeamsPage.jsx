@@ -3,16 +3,21 @@ import { MarketplaceNavbar } from '../../../components/MrketplacePage/Marketplac
 import { MarketplacePageHeader } from '../../../components/MrketplacePage/MarketplacePageHeader'
 import { Teams } from '../../../data/MarketplacePage/teams'
 import './TeamsPage.css'
+import { BottomBar } from '../../../components/BottomBar'
+import { PlusModal } from '../../../components/PlusModal'
+import { Modal } from '../../../components/Modal'
+import { MobileHeader } from '../../../components/MobileHeader'
 
 const teams = Teams.sort(() => Math.random() - 0.5)
 
-export function TeamsPage({all}) {
+export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plusDialog, hadnlePlusDialogOpen, hadnlePlusDialogClose}) {
   return (
     <>
       <SideBar notification={all} />
 
       <MarketplacePageHeader type='team' />
-      
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
         <section className="team-tab-section">
@@ -77,7 +82,7 @@ export function TeamsPage({all}) {
                     </div>
                     <div className="bottom">
                       <div className="price-range">
-                        <p className="text">Prince Range</p>
+                        <p className="text">Price Range</p>
                         <p className="range">{team.teamPrinceRange}</p>
                       </div>
                       <div className="button-wrap">
@@ -92,6 +97,8 @@ export function TeamsPage({all}) {
           </div>
         </section>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

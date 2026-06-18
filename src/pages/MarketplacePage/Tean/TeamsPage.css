@@ -218,3 +218,177 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+ .team-tab-section {
+    padding: 0;
+    flex: 1;
+    overflow: auto;
+    .team-wrapper {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px 15px;
+      .team-contianer {
+        .top-cover {
+          height: 70px;
+          .bookmark-btn {
+            height: 30px;
+            width: 30px;
+            i {
+              font-size: 12px;
+            }
+          } 
+        }
+        .down {
+          padding: 15px;
+          .top {
+            margin-top: -20px;
+            .top-profile {
+              img {
+                height: 55px;
+                width: 55px;
+                border-radius: 15px;
+                object-fit: cover;
+                padding: 3px;
+                background-color: var(--element-bg);
+                border: 2px solid var(--blue-border);
+                margin-top: -15px;
+              }
+              .verified-badge {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px 14px;
+                background-color: var(--blue-bg);
+                border: 1px solid var(--blue-border);
+                color: var(--accent-blue);
+                border-radius: 20px;
+                font-size: 12px;
+                gap: 8px;
+                margin-top: 5px;
+                i {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .middle {
+            margin-top: -5px;
+            gap: 8px;
+            .profile {
+              justify-content: start;
+              align-items: stretch;
+              .name {
+                font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                i {
+                  font-size: 13px;
+                }
+              }
+              div {
+                font-size: 12px;
+                .username {
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  max-width: 150px;
+                }
+                .title {
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  max-width: 140px;
+                }
+                span {
+                  width: 2px;
+                  height: 2px;
+                }
+              }
+            }
+            .bio {
+              font-size: 13px;
+              color: var(--mutetd-tetx);
+              line-height: 17px;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              line-clamp: 2;
+              overflow: hidden;
+            }
+            .skill-wrap {
+              margin-top: 0;
+              div {
+                padding: 3px 14px;
+                font-size: 12px;
+              }
+            }
+            .details {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 15px;
+              padding: 10px;
+              div {
+                .count,
+                .status {
+                  font-size: 14px;
+                  color: var(--secondary-text);
+                  font-weight: bold;
+                  &.status {
+                    color: var(--green);
+                  }
+                }
+                .title {
+                  font-size: 12px;
+                  color: var(--mutetd-tetx);
+                }
+              }
+            }
+          }
+          .bottom {
+            .price-range {
+              .text {
+                font-size: 12px;
+              }
+              .range {
+                color: var(--green);
+                font-size: 12px;
+                font-weight: bold;
+              }
+            }
+            .button-wrap {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 25px;
+              button {
+                height: 35px;
+                border-radius: 8px;
+                font-size: 12px;
+              }
+              .hire-btn {
+                background-color: var(--pry-btn);
+                color: var(--pry-btn-text);
+              }
+              .view-profile-btn {
+                background-color: var(--ghost-btn-bg);
+                border: 1px solid var(--ghost-btn-border);
+                color: var(--secondary-text);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

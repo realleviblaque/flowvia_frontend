@@ -3,16 +3,21 @@ import { MarketplaceNavbar } from '../../../components/MrketplacePage/Marketplac
 import { MarketplacePageHeader } from '../../../components/MrketplacePage/MarketplacePageHeader'
 import { Jobs } from '../../../data/MarketplacePage/job'
 import './JobPage.css'
+import { MobileHeader } from '../../../components/MobileHeader'
+import { Modal } from '../../../components/Modal'
+import { BottomBar } from '../../../components/BottomBar'
+import { PlusModal } from '../../../components/PlusModal'
 
 const jobs = Jobs.sort(() => Math.random() - 0.5)
 
-export function JobPage({all}) {
+export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusDialog, hadnlePlusDialogOpen, hadnlePlusDialogClose}) {
   return (
     <>
       <SideBar notification={all} />
 
       <MarketplacePageHeader type='job' />
-      
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
         <section className="job-tab-section">
@@ -83,6 +88,8 @@ export function JobPage({all}) {
           </div>
         </section>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

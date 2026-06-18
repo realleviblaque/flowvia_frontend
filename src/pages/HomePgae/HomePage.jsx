@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import { HomePAgeHeader } from "../../components/HomePage/HomepageHeader";
 import { RightSideBar } from "../../components/HomePage/RightSIdeBar";
 import { SideBar } from "../../components/Sidebar";
@@ -8,30 +8,18 @@ import { HomePagePost } from "./HomePagePost";
 import { BottomBar } from "../../components/BottomBar";
 import { Modal } from "../../components/Modal";
 import { PlusModal } from "../../components/PlusModal";
+import { MobileHeader } from "../../components/MobileHeader";
 
 const homePosts = posts.sort(() => Math.random() - 0.5)
 
-export function HomePage({all}) {
+export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const [tabsClick, setTabsClick] = useState('all')
-  const dialog = useRef(null)
-  const plusDialog = useRef(null);
-  const handleDialogOpen = () => {
-    dialog.current.showModal();
-  }
-  const handleDialogClose = () => {
-    dialog.current.close();
-  }
-  const hadnlePlusDialogOpen = () => {
-    plusDialog.current.showModal();
-  }
-  const hadnlePlusDialogClose = () => {
-    plusDialog.current.close();
-  }
   return (
     <>
       <SideBar notification={all} />
       
-      <HomePAgeHeader handleDialogOpen={handleDialogOpen} />
+      <HomePAgeHeader />
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="home-main">
         <div className="home-content">

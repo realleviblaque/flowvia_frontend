@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { useRef } from 'react'
 import { HomePage } from './pages/HomePgae/HomePage'
 import { StatusPage } from './pages/StatusPage/StatusPage'
 import './App.css'
@@ -67,9 +68,23 @@ import { DangerZone } from './pages/TeamPage/Pages/Settings/Tabs/Danger Zone/Dan
 
 function App() {
   const {all} = notificationCount(Notifications)
+  const dialog = useRef(null)
+  const plusDialog = useRef(null);
+  const handleDialogOpen = () => {
+    dialog.current.showModal();
+  }
+  const handleDialogClose = () => {
+    dialog.current.close();
+  }
+  const hadnlePlusDialogOpen = () => {
+    plusDialog.current.showModal();
+  }
+  const hadnlePlusDialogClose = () => {
+    plusDialog.current.close();
+  }
   return (
     <Routes>
-      <Route path='/' element={<HomePage all={all} />} />
+      <Route path='/' element={<HomePage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       <Route path='/status' element={<StatusPage all={all} />} />
       <Route path='/projects' element={<ProjectPage all={all} />} />
       <Route path='/marketplace' element={<MarketplacePage />}>

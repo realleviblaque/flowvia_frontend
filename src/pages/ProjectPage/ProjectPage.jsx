@@ -1,20 +1,28 @@
+import { useState } from "react";
+import { BottomBar } from "../../components/BottomBar";
+import { MobileHeader } from "../../components/MobileHeader";
+import { Modal } from "../../components/Modal";
+import { PlusModal } from "../../components/PlusModal";
 import { ProjectPageHeader } from "../../components/ProjectPage/ProjectPageHeader";
 import { SideBar } from "../../components/Sidebar";
 import { Projects } from "../../data/ProjectPage/Projects";
 import './ProjectPage.css'
 
-export function ProjectPage({all}) {
+export function ProjectPage({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
+  const isMobile = window.innerWidth < 768;
+  const [projectNavFilter, setProjectNavFilter] = useState('All')
   return (
     <>
       <SideBar notification={all} />
 
       <ProjectPageHeader />
-
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="project-main">
         <div className="project-main-head">
           <div>
             <p className="total-project-count">29</p>
-            <p>TOTAL PROJECTS</p>
+            <p>TOTAL {isMobile ? '' : 'PROJECTS'}</p>
             <p className="total-project-increase">3 this month</p>
           </div>
           <div>
@@ -34,19 +42,19 @@ export function ProjectPage({all}) {
           </div>
         </div>
         <div className="main-tab">
-          <div className="all-my-project tab-open">
+          <div className={projectNavFilter === 'All' ? 'tab-open' : ''} onClick={() => setProjectNavFilter('All')}>
             <p>All Projects</p>
             <span className="total-project-count">24</span>
           </div>
-          <div className="all-my-ongoing">
+          <div className={projectNavFilter === 'Ongoing' ? 'tab-open' : ''} onClick={() => setProjectNavFilter('Ongoing')}>
             <p>Ongoing</p>
             <span className="ongoing-project-count">8</span>
           </div>
-          <div className="all-my-completed">
+          <div className={projectNavFilter === 'Completed' ? 'tab-open' : ''} onClick={() => setProjectNavFilter('Completed')}>
             <p>Completed</p>
             <span className="completed-project-count">14</span>
           </div>
-          <div className="all-my-hold">
+          <div className={projectNavFilter === 'Hold' ? 'tab-open' : ''} onClick={() => setProjectNavFilter('Hold')}>
             <p>On Hold</p>
             <span className="hold-project-count">2</span>
           </div>
@@ -63,7 +71,7 @@ export function ProjectPage({all}) {
                     <div className="top">
                       <div className="title-content">
                         <p className="title">{project.name}</p>
-                        <p className={`portfolio-status ${project.isPortfolio ? '' : 'not-active'}`}>Portfolio: {project.isPortfolio ? 'Active' : 'Inactive'}</p>
+                        <p className={`portfolio-status ${project.isPortfolio ? '' : 'not-active'}`}>{isMobile ? <span className={!project.isPortfolio ? 'not' : ''}></span> : 'Portfolio:'} {project.isPortfolio ? 'Active' : 'Inactive'}</p>
                       </div>
                       <div className="link-content">
                         <p>Link to Project</p>
@@ -103,9 +111,17 @@ export function ProjectPage({all}) {
                           <div className="progress-bar-wrap">
                             <span className="progress-bar"></span>
                           </div>
-                          <p><span className="completed-phase">2</span> / <span className="all-phase">{project.totalPhase}</span></p>
-                          <span className="dot"></span>
-                          <p><span className="completed-phase">2</span> Completed</p>
+                          {isMobile ? (
+                            <div className="mobile-phase">
+                              <p>Phase 2/{project.totalPhase} <span className="dot"></span> 2 Completed</p>
+                            </div>
+                          ) : (
+                            <>
+                              <p><span className="completed-phase">2</span> / <span className="all-phase">{project.totalPhase}</span></p>
+                              <span className="dot"></span>
+                              <p><span className="completed-phase">2</span> Completed</p>
+                            </>
+                          )}
                         </div>
                       )}
                     </div>
@@ -125,6 +141,8 @@ export function ProjectPage({all}) {
           })}
         </div>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

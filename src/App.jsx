@@ -86,7 +86,7 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       <Route path='/status' element={<StatusPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-      <Route path='/projects' element={<ProjectPage all={all} />} />
+      <Route path='/projects' element={<ProjectPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       <Route path='/marketplace' element={<MarketplacePage />}>
         <Route path='' element={<FreelancerPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
         <Route path='teams' element={<TeamsPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />

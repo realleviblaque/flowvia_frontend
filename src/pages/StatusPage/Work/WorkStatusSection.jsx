@@ -1,6 +1,7 @@
 import './WorkStatusSection.css'
 
 export function WorkStatusSection() {
+  const isMobile = window.innerWidth < 768;
   return (
     <div className="work-status-container">
       <div className="work-top">
@@ -20,7 +21,7 @@ export function WorkStatusSection() {
           </div>
           <div className="middle">
             <p className="name">Active Projects</p>
-            <p className="note">work you're currently delivering</p>
+            <p className="note">{isMobile ? 'Currently delivering' : "work you're currently delivering"}</p>
           </div>
           <div className="bottom">
             <button className="view-all-btn">
@@ -37,7 +38,7 @@ export function WorkStatusSection() {
           </div>
           <div className="middle">
             <p className="name">Applied Jobs</p>
-            <p className="note">Jobs you applied to - awaiting response or in review</p>
+            <p className="note">{isMobile ? 'Awaiting response' : 'Jobs you applied to - awaiting response or in review'}</p>
           </div>
           <div className="bottom">
             <button className="view-all-btn">
@@ -53,8 +54,8 @@ export function WorkStatusSection() {
             </span>
           </div>
           <div className="middle">
-            <p className="name">Bookmarked Jobs</p>
-            <p className="note">Jobs you saved to apply to later</p>
+            <p className="name">{isMobile ? 'Bookmarked' : 'Bookmarked Jobs'}</p>
+            <p className="note">{isMobile ? 'Saved to apply later' : 'Jobs you saved to apply to later'}</p>
           </div>
           <div className="bottom">
             <button className="view-all-btn">
@@ -70,8 +71,8 @@ export function WorkStatusSection() {
             </span>
           </div>
           <div className="middle">
-            <p className="name">Pending Request</p>
-            <p className="note">Direct hire requests from clients - awaiting on your response</p>
+            <p className="name">{isMobile ? 'Hire' : 'Pending'} Request</p>
+            <p className="note">{isMobile ? 'Direct from clients' : 'Direct hire requests from clients - awaiting on your response'}</p>
           </div>
           <div className="bottom">
             <button className="view-all-btn">
@@ -87,8 +88,8 @@ export function WorkStatusSection() {
             </span>
           </div>
           <div className="middle">
-            <p className="name">Completed Projects</p>
-            <p className="note">Work you have successfully delivered</p>
+            <p className="name">{isMobile ? 'Completed' : 'Completed Projects'}</p>
+            <p className="note">{isMobile ? 'Fully' : 'Work you have successfully'} delivered</p>
           </div>
           <div className="bottom">
             <button className="view-all-btn">

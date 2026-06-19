@@ -88,6 +88,19 @@
     }
   }
 }
+.status-plus-menu {
+  height: fit-content;
+  padding-bottom: 25px;
+  .job {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    .i {
+      background-color: var(--purple-bg);
+      border-color: var(--purple-border);
+      color: var(--purple);
+    }
+  }
+}
 .phone-plus-menu::backdrop {
   background: linear-gradient(rgba(0,0,0,0.8))
 }

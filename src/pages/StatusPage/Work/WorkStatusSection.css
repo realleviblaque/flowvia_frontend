@@ -260,3 +260,97 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .work-status-container {
+    margin-top: 0;
+    padding: 20px 15px;
+    gap: 15px;
+    .work-top {
+      gap: 10px;
+      div {
+        flex: 1;
+        align-items: stretch;
+        justify-content: unset;
+        p {
+          font-size: 18px;
+        }
+        .note {
+          display: none;
+        }
+      }
+    }
+    .work-cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      .status {
+        height: fit-content;
+        border-radius: 15px;
+        padding: 10px 15px;
+        .top {
+          justify-content: left;
+          .active-project-count,
+          .applied-job-count,
+          .bookmark-project-count,
+          .pending-request-count,
+          .completed-project-count {
+            font-size: 35px;
+          }
+          span {
+            display: none;
+          }
+        }
+        .middle {
+          padding-bottom: 10px;
+          gap: 3px;
+          .name {
+            font-size: 16px;
+          }
+          .note {
+            font-size: 12px;
+          }
+        }
+        .bottom {
+          padding: 10px 0;
+          padding-bottom: 0;
+          .view-all-btn {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            i {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      .active-project-card {
+        box-shadow: inset 0px 2px 0 var(--accent-blue);
+      }
+      .applied-job-card {
+        box-shadow: inset 0px 2px 0 var(--purple);
+      }
+      .bookmark-project-card {
+        box-shadow: inset 0px 2px 0 var(--coral);
+      }
+      .pending-request-card {
+        box-shadow: inset 0px 2px 0 var(--amber);
+      }
+      .completed-project-card {
+        box-shadow: inset 0px 2px 0 var(--green);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

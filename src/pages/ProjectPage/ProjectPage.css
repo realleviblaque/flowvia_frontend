@@ -412,15 +412,31 @@
           font-size: 10px;
           padding: 2px 7px;
         }
-      }
-      .tab-open {
-        border: 1px solid var(--blue-border);
-        color: var(--accent-blue);
-        background-color: var(--blue-bg);
-        span {
-          background-color: var(--blue-border);
+        &.tab-open {
+          border: 1px solid var(--blue-border);
           color: var(--accent-blue);
+          background-color: var(--blue-bg);
+          span {
+            background-color: var(--blue-border);
+            color: var(--accent-blue);
+          }
         }
+      }
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: auto;
+        flex-shrink: 0;
+        padding: 6px 15px;
+        gap: 0;
+        font-size: 12px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        background-color: var(--cards);
+        color: var(--secondary-text);
+        width: auto;
+        white-space: nowrap;
       }
     }
     .project-content {

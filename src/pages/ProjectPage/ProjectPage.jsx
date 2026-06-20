@@ -58,6 +58,13 @@ export function ProjectPage({all, handleDialogOpen, handleDialogClose, dialog, h
             <p>On Hold</p>
             <span className="hold-project-count">2</span>
           </div>
+          {isMobile && (
+            <select className="filter-project" style={{display: 'block'}}>
+              <option value="all">All Projects</option>
+              <option value="personal">Personal Projects</option>
+              <option value="client">Client Projects</option>
+            </select>
+          )}
         </div>
         <div className="project-content">
           {Projects.map((project) => {

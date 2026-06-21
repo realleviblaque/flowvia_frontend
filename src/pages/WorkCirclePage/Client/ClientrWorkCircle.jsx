@@ -9,19 +9,27 @@ import { MobileHeader } from "../../../components/MobileHeader";
 import { Modal } from "../../../components/Modal";
 import { BottomBar } from "../../../components/BottomBar";
 import { PlusModal } from "../../../components/PlusModal";
+import { useState } from "react";
 
 export function ClientrWorkCircle({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const {Freelancers, Clients} = useOutletContext();
   const navigate = useNavigate();
+    const isMobile = window.innerWidth < 768;
+    const [openSearch2, setOpenSearch2] = useState(false)
   return (
       <>
         <SideBar notification={all} />
         <WorkCirclePageHeader />
-        <MobileHeader handleDialogOpen={handleDialogOpen} />
+        <MobileHeader handleDialogOpen={handleDialogOpen} setOpenSearch2={setOpenSearch2} openSearch2={openSearch2} />
         <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
         <main className="work-circle-main">
           <WorkCirclePageNavBar freelancer={Freelancers} client={Clients} />
           <section className="client-section">
+          {isMobile && (
+            <div className={`search-circle ${openSearch2 && 'open'}`}>
+              <input type="text" placeholder="Search your circle..." />
+            </div>
+          )}
             {Clients.length === 0 && (
               <div className="empty-client-wrapper">
               <div>

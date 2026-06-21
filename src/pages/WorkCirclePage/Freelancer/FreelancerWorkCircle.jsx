@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 import { useNavigate, useOutletContext } from "react-router-dom"
 import { SideBar } from "../../../components/Sidebar"
 import { WorkCirclePageHeader } from "../../../components/WorkCirckePage/WorkCirckePageHeader"
@@ -13,15 +13,22 @@ import { PlusModal } from "../../../components/PlusModal"
 export function FreelancerWorkCircle({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const {Freelancers, Clients} = useOutletContext();
   const navigate = useNavigate();
+  const isMobile = window.innerWidth < 768;
+  const [openSearch, setOpenSearch] = useState(false)
   return (
     <>
       <SideBar notification={all} />
       <WorkCirclePageHeader />
-      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <MobileHeader handleDialogOpen={handleDialogOpen} setOpenSearch={setOpenSearch} openSearch={openSearch} />
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="work-circle-main">
         <WorkCirclePageNavBar freelancer={Freelancers} client={Clients} />
         <section className="freelancers-section">
+          {isMobile && (
+            <div className={`search-circle ${openSearch && 'open'}`}>
+              <input type="text" placeholder="Search your circle..." />
+            </div>
+          )}
           {Freelancers.length === 0 && (
             <div className="empty-freelancer-wrapper">
               <div>

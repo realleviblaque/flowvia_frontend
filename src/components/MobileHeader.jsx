@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import './MobileHeader.css'
 
-export function MobileHeader({handleDialogOpen}) {
+export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOpenSearch2, openSearch2}) {
   const location = useLocation();
   return (
     <header className='mobile-home-header'>
@@ -40,7 +40,14 @@ export function MobileHeader({handleDialogOpen}) {
             </span>
           )}
           {location.pathname.startsWith('/work-circle') && (
-            <span>
+            <span onClick={() => {
+              location.pathname === '/work-circle' && (
+                setOpenSearch(!openSearch)
+              )
+              location.pathname === '/work-circle/clients' && (
+                setOpenSearch2(!openSearch2)
+              )
+            }}>
               <i className="fa-solid fa-search"></i>
             </span>
           )}

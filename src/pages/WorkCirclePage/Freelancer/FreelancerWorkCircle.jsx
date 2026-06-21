@@ -5,15 +5,21 @@ import { WorkCirclePageHeader } from "../../../components/WorkCirckePage/WorkCir
 import { WorkCirclePageNavBar } from "../../../components/WorkCirckePage/WorkCirclePageNavBar"
 import './FreelancerWorkCircle.css'
 import { FreelancerWrap } from "./FreelancerWrap"
+import { MobileHeader } from "../../../components/MobileHeader"
+import { Modal } from "../../../components/Modal"
+import { BottomBar } from "../../../components/BottomBar"
+import { PlusModal } from "../../../components/PlusModal"
 
-export function FreelancerWorkCircle({all}) {
+export function FreelancerWorkCircle({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const {Freelancers, Clients} = useOutletContext();
   const navigate = useNavigate();
   return (
     <>
       <SideBar notification={all} />
       <WorkCirclePageHeader />
-      <main>
+      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
+      <main className="work-circle-main">
         <WorkCirclePageNavBar freelancer={Freelancers} client={Clients} />
         <section className="freelancers-section">
           {Freelancers.length === 0 && (
@@ -40,6 +46,8 @@ export function FreelancerWorkCircle({all}) {
           </div>
         </section>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

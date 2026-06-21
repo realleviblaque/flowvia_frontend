@@ -37,3 +37,21 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .work-circle-filter-container {
+    top: 0;
+    padding-left: 0;
+    a {
+      flex: 1;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

@@ -5,25 +5,31 @@ import './ClientrWorkCircle.css'
 import { Fragment } from "react/jsx-runtime";
 import { ClientWrap } from "./ClientWrap";
 import { useNavigate, useOutletContext } from "react-router-dom";
+import { MobileHeader } from "../../../components/MobileHeader";
+import { Modal } from "../../../components/Modal";
+import { BottomBar } from "../../../components/BottomBar";
+import { PlusModal } from "../../../components/PlusModal";
 
-export function ClientrWorkCircle({all}) {
+export function ClientrWorkCircle({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const {Freelancers, Clients} = useOutletContext();
   const navigate = useNavigate();
   return (
       <>
         <SideBar notification={all} />
         <WorkCirclePageHeader />
-        <main>
+        <MobileHeader handleDialogOpen={handleDialogOpen} />
+        <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
+        <main className="work-circle-main">
           <WorkCirclePageNavBar freelancer={Freelancers} client={Clients} />
           <section className="client-section">
             {Clients.length === 0 && (
               <div className="empty-client-wrapper">
               <div>
-                <p class="head-txt">Work Circle Empty</p>
+                <p className="head-txt">Work Circle Empty</p>
                 <p>You have not work with any Client - click the button below to explore the <strong>Marketplace</strong></p>
               </div>
               <div>
-                <button class="exlore-btn client-explore-btn" onClick={() => {
+                <button className="exlore-btn client-explore-btn" onClick={() => {
                   navigate('/marketplace/jobs')
                 }}>Explore Marketplace</button>
               </div>
@@ -40,6 +46,8 @@ export function ClientrWorkCircle({all}) {
             </div>
           </section>
         </main>
+        <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+        <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
       </>
     )
 }

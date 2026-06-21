@@ -94,8 +94,8 @@ function App() {
       </Route>
       <Route path='/messages' element={<MessagePage all={all} />} />
       <Route path='/work-circle' element={<WorkCirclePage />}>
-        <Route path='' element={<FreelancerWorkCircle all={all} />} />
-        <Route path='clients' element={<ClientrWorkCircle all={all} />} />
+        <Route path='' element={<FreelancerWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+        <Route path='clients' element={<ClientrWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       </Route>
       <Route path='/notification' element={<NotificationPage all={all} />} />
       <Route path='/profile' element={<ProfilePage all={all} />}  />

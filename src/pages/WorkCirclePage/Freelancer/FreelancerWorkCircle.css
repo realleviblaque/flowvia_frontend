@@ -294,3 +294,191 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .freelancers-section {
+    padding: 20px 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .freelancers-wrapper {
+      gap: 10px;
+      .freelancer-wrap {
+        min-height: 210px;
+        border-radius: 15px;
+        .top {
+          padding: 15px;
+          align-items: stretch;
+          position: relative;
+          .left {
+            gap: 15px;
+            align-items: stretch;
+            margin-bottom: 35px;
+            .profile {
+              img {
+                width: 50px;
+                height: 50px;
+              }
+              .team-profile {
+                border-radius: 10px;
+              }
+            }
+            .details {
+              align-items: stretch;
+              .name {
+                font-size: 16px;
+                i {
+                  font-size: 13px;
+                }
+              }
+              .username-info {
+                font-size: 12px;
+              }
+              .profession-title {
+                margin-top: -3px;
+                font-size: 11px;
+                padding: 4px 15px;
+                align-self: self-start;
+              }
+              .bio {
+                font-size: 13px;
+                color: var(--mutetd-tetx);
+                width: auto;
+                display: unset;
+                -webkit-box-orient: unset;
+                line-clamp: unset;
+                -webkit-line-clamp: unset;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 290px;
+              }
+              .more-info {
+                gap: 5px;
+                div {
+                  white-space: nowrap;
+                  padding: 3px 12px;
+                  border-radius: 20px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .right {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            left: 0;
+            display: flex;
+            flex-direction: unset;
+            justify-content: right;
+            align-items: center;
+            gap: 10px;
+            button {
+              padding: 6px 20px;
+              font-size: 12px;
+              border-radius: 6px;
+            }
+          }
+        }
+        .bottom {
+          align-items: stretch;
+          padding: 6px 15px;
+          padding-bottom: 20px;
+          gap: 8px;
+          .up {
+            width: unset;
+            gap: 8;
+            font-size: 11px;
+            i {
+              margin-left: auto;
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+              cursor: pointer;
+            }
+          }
+          .job-history-wrapper {
+            gap: 8px;
+            width: unset;
+            .job-histoy-wrap {
+              padding: 10px 12px;
+              border-radius: 7px;
+              display: flex;
+              flex-direction: column;
+              justify-content: unset;
+              align-items: unset;
+              position: relative;
+              .left {
+                margin-left: 20px;
+                gap: 0;
+                span {
+                  width: 10px;
+                  flex-shrink: 0;
+                  height: 10px;
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  top: 0;
+                  bottom: 0;
+                  place-self: center;
+                  left: 12px;
+                }
+                .title {
+                  flex: 1;
+                  font-size: 15px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+              }
+              .right {
+                margin-left: 25px;
+                justify-content: left;
+                gap: 0;
+                font-size: 11px;
+                .date {
+                  flex: 1;
+                }
+                .amount-paid {
+                  flex: 1;
+                }
+                .status {
+                  padding: 3px 15px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .empty-freelancer-wrapper {
+      height: unset;
+      flex: 1;
+      div {
+        .head-txt {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+        .exlore-btn {
+          height: 38px;
+          width: 180px;
+          border-radius: 50px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

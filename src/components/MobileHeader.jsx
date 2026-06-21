@@ -39,6 +39,11 @@ export function MobileHeader({handleDialogOpen}) {
               <i className="fa-solid fa-search"></i>
             </span>
           )}
+          {location.pathname.startsWith('/work-circle') && (
+            <span>
+              <i className="fa-solid fa-search"></i>
+            </span>
+          )}
           <span>
             <i className="fa-regular fa-bell"></i>
             <div className='notification'></div>

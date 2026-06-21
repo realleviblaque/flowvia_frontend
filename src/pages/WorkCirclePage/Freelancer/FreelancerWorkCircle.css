@@ -351,7 +351,7 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
-                width: 290px;
+                max-width: 280px;
               }
               .more-info {
                 gap: 5px;
@@ -359,7 +359,7 @@
                   white-space: nowrap;
                   padding: 3px 12px;
                   border-radius: 20px;
-                  font-size: 12px;
+                  font-size: 11px;
                 }
               }
             }
@@ -375,7 +375,7 @@
             align-items: center;
             gap: 10px;
             button {
-              padding: 6px 20px;
+              padding: 6px 18px;
               font-size: 12px;
               border-radius: 6px;
             }

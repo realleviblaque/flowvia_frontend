@@ -361,7 +361,7 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
-                width: 290px;
+                max-width: 280px;
               }
               .more-info {
                 gap: 5px;

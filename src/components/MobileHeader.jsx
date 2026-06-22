@@ -1,8 +1,9 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './MobileHeader.css'
 
 export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOpenSearch2, openSearch2}) {
   const location = useLocation();
+  const navigate = useNavigate();
   return (
     <header className='mobile-home-header'>
       <div className="phone-size">
@@ -51,7 +52,9 @@ export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOp
               <i className="fa-solid fa-search"></i>
             </span>
           )}
-          <span>
+          <span onClick={() => {
+            navigate('/notification')
+          }}>
             <i className="fa-regular fa-bell"></i>
             <div className='notification'></div>
           </span>

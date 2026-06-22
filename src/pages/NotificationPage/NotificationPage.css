@@ -218,3 +218,173 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .notification-main-page {
+    height: calc(100vh - 127px);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .notfication-container {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    height: unset;
+    gap: 1px;
+    .notification-content {
+      padding: 0;
+      flex: 1;
+      height: unset;
+      overflow: unset;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      .notification-wrap {
+        gap: 0;
+        .notification-date {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 0;
+          background-color: var(--sidebar-bg);
+          padding: 8px 15px;
+          border-bottom: 1px solid var(--border);
+          position: sticky;
+          top: 48px;
+          z-index: 10;
+          p {
+            font-size: 11px;
+            color: var(--mutetd-tetx);
+          }
+          span {
+            display: none;
+          }
+        }
+        .wrapper {
+          gap: 0;
+          .notification-wrapper {
+            border-top: 1px solid var(--border);
+            border-bottom: 0;
+            position: relative;
+            &:nth-child(1) {
+              border: none;
+            }
+            &.new-notification {
+              border-radius: 0;
+              background-color: var(--cards);
+              border: 1px solid var(--border);
+              &:nth-child(1) {
+                border: none;
+              }
+            }
+            .profile {
+              align-items: center;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+              .team-profile {
+                border-radius: 8px;
+              }
+            }
+            .right {
+              flex: 1;
+              margin-top: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: stretch;
+              gap: 10px;
+              .top {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                flex-wrap: unset;
+                gap: 3px;
+                .name {
+                  font-size: 13px;
+                  text-transform: lowercase;
+                  color: var(--mutetd-tetx);
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  line-clamp: 2;
+                  overflow: hidden;
+                  span {
+                    font-size: 14px;
+                    color: var(--pry-text);
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              .middle {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                .info {
+                  flex: 1;
+                  align-items: stretch;
+                  width: unset;
+                  border-radius: 10px;
+                  gap: 2px;
+                  .title {
+                    font-size: 14px;
+                  }
+                  div {
+                    font-size: 12px;
+                    span {
+                      width: 2px;
+                      height: 2px;
+                      margin: 0 5px;
+                      background-color: var(--secondary-text);
+                    }
+                  }
+                  .review-txt {
+                    font-size: 12px;
+                  }
+                  .review-stars {
+                    i {
+                      font-size: 9px;
+                      color: var(--pry-text);
+                    }
+                  }
+                }
+              }
+              .bottom {
+                margin-top: 15px;
+                button {
+                  border-radius: 6px;
+                }
+              }
+            }
+            .time {
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              align-items: start;
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+              bottom: 52px;
+              left: 73px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

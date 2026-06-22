@@ -1,6 +1,7 @@
 import formatBudet from "../../utils/formatBudget";
 
 export function NotificationPageContent({content}) {
+  const isMobile = window.innerWidth < 768;
   return (
     content.type === 'hire request' ? (
       <div className={`notification-wrapper ${!content.read && 'new-notification'}`}>
@@ -9,9 +10,15 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">sent you a hire request for</p>
-            <p className="title">{content.title}</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> sent you a hire request for <span>{content.title}</span></p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">sent you a hire request for</p>
+                <p className="title">{content.title}</p>
+              </>
+            )}
           </div>
           <div className="middle">
             <div className="info">
@@ -41,9 +48,15 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">sent you a message:</p>
-            <p className="message-wrap">"<span className="message">{content.details.text}</span>"</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> sent you a message: "{content.details.text}"</p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">sent you a message:</p>
+                <p className="message-wrap">"<span className="message">{content.details.text}</span>"</p>
+              </>
+            )}
           </div>
           <div className="bottom">
             <button className="reply-btn">Reply</button>
@@ -63,9 +76,15 @@ export function NotificationPageContent({content}) {
             </div>
             <div className="right">
               <div className="top">
-                <p className="name">{content.sender.name}</p>
-                <p className="notifi-content">from your work circle posted a new job:</p>
-                <p className="title">"{content.details.title}"</p>
+                {isMobile ? (
+                  <p className="name"><span>{content.sender.name}</span> from your work circle posted a new job: "<span>{content.details.title}</span>"</p>
+                ) : (
+                  <>
+                    <p className="name">{content.sender.name}</p>
+                    <p className="notifi-content">from your work circle posted a new job:</p>
+                    <p className="title">"{content.details.title}"</p>
+                  </>
+                )}
               </div>
               <div className="bottom">
                 <button className="apply-btn">Apply</button>
@@ -84,9 +103,15 @@ export function NotificationPageContent({content}) {
             </div>
             <div className="right">
               <div className="top">
-                <p className="name">{content.sender.name}</p>
-                <p className="notifi-content">from your work circle sent you a rehire request:</p>
-                <p className="work-message-wrap">"<span className="work-message">{content.details.message}</span>"</p>
+                {isMobile ? (
+                  <p className="name"><span>{content.sender.name}</span> from your work circle sent you a rehire request: "{content.details.message}"</p>
+                ) : (
+                  <>
+                    <p className="name">{content.sender.name}</p>
+                    <p className="notifi-content">from your work circle sent you a rehire request:</p>
+                    <p className="work-message-wrap">"<span className="work-message">{content.details.message}</span>"</p>
+                  </>
+                )}
               </div>
               <div className="bottom">
                 <button className="accept-btn">Accept Request</button>
@@ -105,8 +130,14 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">started following you</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> started following you</p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">started following you</p>
+              </>
+            )}
           </div>
           <div className="bottom">
             <button className="follow-back-btn">Follow Back</button>
@@ -124,10 +155,16 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">left you a {content.details.star}-star review for the</p>
-            <p className="title">{content.details.title}</p>
-            <p className="notifi-content">project</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> left you a {content.details.star}-star review for the <span>{content.details.title}</span> project</p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">left you a {content.details.star}-star review for the</p>
+                <p className="title">{content.details.title}</p>
+                <p className="notifi-content">project</p>
+              </>
+            )}
           </div>
           <div className="middle">
             <div className="info">
@@ -198,9 +235,15 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">mentioned you in a post:</p>
-            <p className="post-wrap">"<span className="post">{content.details.text}</span>"</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> mentioned you in a post: "{content.details.text}"</p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">mentioned you in a post:</p>
+                <p className="post-wrap">"<span className="post">{content.details.text}</span>"</p>
+              </>
+            )}
           </div>
           <div className="bottom">
             <button className="view-btn">View Post</button>
@@ -217,12 +260,18 @@ export function NotificationPageContent({content}) {
         </div>
         <div className="right">
           <div className="top">
-            <p className="name">{content.sender.name}</p>
-            <p className="notifi-content">marked</p>
-            <p className="project-about1">{content.details.about}</p>
-            <p className="notifi-content">as complete on the</p>
-            <p className="title">{content.details.title}</p>
-            <p className="notifi-content">project</p>
+            {isMobile ? (
+              <p className="name"><span>{content.sender.name}</span> marked <span>{content.details.about}</span> as complete on the <span>{content.details.title}</span> project</p>
+            ) : (
+              <>
+                <p className="name">{content.sender.name}</p>
+                <p className="notifi-content">marked</p>
+                <p className="project-about1">{content.details.about}</p>
+                <p className="notifi-content">as complete on the</p>
+                <p className="title">{content.details.title}</p>
+                <p className="notifi-content">project</p>
+              </>
+            )}
           </div>
           <div className="bottom">
             <button className="approve-btn">Approve</button>

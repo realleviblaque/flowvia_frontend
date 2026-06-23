@@ -532,7 +532,7 @@
               font-size: 11px;
               color: var(--secondary-text);
               &::selection {
-                background-color: rgb(68, 32, 197);
+                background-color: var(--mutetd-tetx);
               }
             }
           }

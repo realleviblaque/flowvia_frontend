@@ -7,7 +7,7 @@ export function MobileHeader2() {
   return (
     <header className="mobile-home-header2">
       <div className="left">
-        <span onClick={() => navigate(-1)}>
+        <span onClick={() => navigate(-1)} className={location.pathname === '/profile' && 'profile'}>
           <i className="fa-solid fa-chevron-left"></i>
         </span>
         {location.pathname === '/notification' && (
@@ -23,6 +23,16 @@ export function MobileHeader2() {
       <div className="right">
         {location.pathname === '/notification' && <span className='mark'>Mark all read</span>}
         {location.pathname === '/messages' && <span><i className="fa-solid fa-pencil"></i></span>}
+        {location.pathname === '/profile' && (
+          <>
+            <span className='profile'>
+              <i className="fa-solid fa-pencil"></i>
+            </span>
+            <span className='profile'>
+              <i className="fa-solid fa-ellipsis-h"></i>
+            </span>
+          </>
+        )}
       </div>
     </header>
   )

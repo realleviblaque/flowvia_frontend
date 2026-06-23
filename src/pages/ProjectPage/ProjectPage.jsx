@@ -85,7 +85,7 @@ export function ProjectPage({all, handleDialogOpen, handleDialogClose, dialog, h
                         {project.isComplete && (
                           <>
                             <span></span>
-                            <a href={`${project.linkToProject}`}>Go to Project</a>
+                            <a href={project.linkToProject}>Go to Project</a>
                           </>
                         )}
                       </div>

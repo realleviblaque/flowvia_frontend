@@ -26,7 +26,7 @@ export function ReviewsSection() {
                   <div className="middle">
                     <p className="name">{review.sender.name}</p>
                     <div className="user-info">
-                      <p>@{review.sender.username}</p>
+                      <p className="username">@{review.sender.username}</p>
                       <span></span>
                       <p>{review.sender.accountTYpe}</p>
                       <span></span>

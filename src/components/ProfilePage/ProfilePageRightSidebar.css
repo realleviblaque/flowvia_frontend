@@ -184,3 +184,9 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .acivity-sidebar {
+    display: none;
+  }
+}

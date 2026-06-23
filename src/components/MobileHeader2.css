@@ -33,6 +33,11 @@
         align-items: center;
         color: var(--mutetd);
       }
+      &.profile {
+        i {
+          background-color: unset;
+        }
+      }
     }
     p {
       font-size: 20px;
@@ -41,6 +46,10 @@
     }
   }
   .right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
     .mark {
       font-size: 12px;
       color: var(--accent-blue);
@@ -63,6 +72,29 @@
         justify-content: center;
         align-items: center;
         color: var(--accent-blue);
+      }
+    }
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      i {
+        font-size: 14px;
+        height: 35px;
+        width: 35px;
+        border: 1px solid var(--border);
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--pry-text);
+      }
+      &:nth-child(1) {
+        i {
+          font-size: 12px;
+        }
       }
     }
   }

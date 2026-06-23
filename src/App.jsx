@@ -98,7 +98,7 @@ function App() {
         <Route path='clients' element={<ClientrWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       </Route>
       <Route path='/notification' element={<NotificationPage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
-      <Route path='/profile' element={<ProfilePage all={all} />}  />
+      <Route path='/profile' element={<ProfilePage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />}  />
       <Route path='/settings' element={<SettingsPage />}>
         <Route path='' element={<ProfileTab all={all} />} />
         <Route path='account-infomation' element={<AccountTab all={all} />} />

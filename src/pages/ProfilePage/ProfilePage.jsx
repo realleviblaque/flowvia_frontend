@@ -6,14 +6,18 @@ import { ProfilePosts } from "../../data/ProfilePage/posts";
 import './ProfilePage.css'
 import { ProjectSection } from "../../components/ProfilePage/ProjectSection";
 import { ReviewsSection } from "../../components/ProfilePage/ReviewsSection";
+import { MobileHeader2 } from "../../components/MobileHeader2";
+import { BottomBar } from "../../components/BottomBar";
+import { PlusModal } from "../../components/PlusModal";
 
-export function ProfilePage({all}) {
+export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const [viewingSection, setViewingSection] = useState('Activity')
   return (
     <> 
       <SideBar notification={all} />
+      <MobileHeader2 />
       <main>
-        <div className="container">
+        <div className="profile-page-container">
           <div className="profile-top-container">
             <div className="cover-pic-wrap">
               <button className="edit-cover-btn">
@@ -139,6 +143,10 @@ export function ProfilePage({all}) {
                       <div className="post-input-btn">
                         Share an update...
                       </div>
+                      <div className="phone-options">
+                        <i className="fa-solid fa-image"></i>
+                        <i className="fa-solid fa-pencil"></i>
+                      </div>
                     </div>
                     <div className="bottom-post">
                       <div className="left-image-btn">
@@ -167,6 +175,8 @@ export function ProfilePage({all}) {
                                 <p className="username">@{post.username}</p>
                                 <span></span>
                                 <p className="category">Flowvia Company</p>
+                                <span className='phone'></span>
+                                <p className="date">2hr ago</p>
                               </div>
                             </div>
                             <div className="post-option">
@@ -255,33 +265,33 @@ export function ProfilePage({all}) {
               <section className="portfolio-section">
                 <div className="main-portfolio-wrap">
                   <div className="portfolio-project-bottom">
-                    <div className="portfolio-wrapper">
-                      <div className="portfolio-content">
-                        <p className="count all-count"><span className="js-all-count">280</span><span className="js-all-plus">+</span></p>
-                        <span className="view-portfolio-btn">View Portfolio</span>
+                    <div className="cards">
+                      <div>
+                        <p className="txt">200+</p>
+                        <button>View Portfolio</button>
                       </div>
-                      <p className="content-text">All Projects</p>
+                      <p className="head-txt">All Projects</p>
                     </div>
-                    <div className="portfolio-wrapper">
-                      <div className="portfolio-content">
-                        <p className="count client-count"><span className="js-client-count">80</span><span className="js-client-plus">+</span></p>
-                        <span className="view-portfolio-btn">View Portfolio</span>
+                    <div className="cards">
+                      <div>
+                        <p className="txt">100+</p>
+                        <button>View Portfolio</button>
                       </div>
-                      <p className="content-text">Client Projects</p>
+                      <p className="head-txt">Client Projects</p>
                     </div>
-                    <div className="portfolio-wrapper">
-                      <div className="portfolio-content">
-                        <p className="count personal-count"><span className="js-personal-count">150</span><span className="js-personal-plus">+</span></p>
-                        <span className="view-portfolio-btn">View Portfolio</span>
+                    <div className="cards">
+                      <div>
+                        <p className="txt">80+</p>
+                        <button>View Portfolio</button>
                       </div>
-                      <p className="content-text">Personal Projects</p>
+                      <p className="head-txt">Team Projects</p>
                     </div>
-                    <div className="portfolio-wrapper">
-                      <div className="portfolio-content">
-                        <p className="count ongoing-count"><span className="js-ongoing-count">50</span><span className="js-ongoing-plus">+</span></p>
-                        <span className="view-portfolio-btn">View Portfolio</span>
+                    <div className="cards">
+                      <div>
+                        <p className="txt">20+</p>
+                        <button>View Portfolio</button>
                       </div>
-                      <p className="content-text">Ongoing Projects</p>
+                      <p className="head-txt">Ongoing Projects</p>
                     </div>
                   </div>
                 </div>
@@ -477,6 +487,8 @@ export function ProfilePage({all}) {
           </div>
         </div>
       </main>
+      <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
+      <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )
 }

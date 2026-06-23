@@ -1,12 +1,13 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './Modal.css'
 
 export function Modal({dialog, handleDialogClose}) {
+  const navigate = useNavigate();
   return (
     <dialog className="phone-menu-content" ref={dialog}>
       <div className="top">
         <i className="fa-solid fa-x" onClick={handleDialogClose}></i>
-        <div className="profile">
+        <div className="profile" onClick={() => navigate('/profile')}>
           <img src="/profile.png" />
           <div>
             <p className="name">Levi Blaque</p>

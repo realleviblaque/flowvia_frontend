@@ -5,14 +5,15 @@ import { Projects } from "../../data/ProfilePage/projects";
 export function ProjectSection() {
   const [projectView, setProjectView] = useState('All')
   const allCount = Projects.length;
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <div className="main-project-wrap">
         <div className="project-tab">
-          <div className={projectView === 'All' && 'current'} onClick={() => setProjectView('All')}>All <span>{allCount}</span></div>
-          <div className={projectView === 'Ongoing' && 'current'} onClick={() => setProjectView('Ongoing')}>Ongoing <span>0</span></div>
-          <div className={projectView === 'Open' && 'current'} onClick={() => setProjectView('Open')}>Open <span>0</span></div>
-          <div className={projectView === 'Completed' && 'current'} onClick={() => setProjectView('Completed')}>Completed <span>0</span></div>
+          <div className={projectView === 'All' ? 'current' : ''} onClick={() => setProjectView('All')}>All <span>{allCount}</span></div>
+          <div className={projectView === 'Ongoing' ? 'current' : ''} onClick={() => setProjectView('Ongoing')}>Ongoing <span>0</span></div>
+          <div className={projectView === 'Open' ? 'current' : ''} onClick={() => setProjectView('Open')}>Open <span>0</span></div>
+          <div className={projectView === 'Completed' ? 'current' : ''} onClick={() => setProjectView('Completed')}>Completed <span>0</span></div>
           <button>
             Go to Projects
           </button>
@@ -21,7 +22,7 @@ export function ProjectSection() {
           <div className="project-wrapper">
             {Projects.slice().reverse().map((project) => {
               return (
-                <div className="project-container">
+                <div className="project-container" key={project.id}>
                   <div className={`left ${project.projectType === 'Client Project' && 'client-project-left'} ${project.projectType === 'Public Project' && 'public-project-left'}`}>
                     <span className={`project-type ${project.projectType === 'Client Project' && 'client-project-type'} ${project.projectType === 'Public Project' &&'public-project-type'}`}>
                       {project.projectType === 'Personal Project' && 'Personal'}
@@ -34,7 +35,7 @@ export function ProjectSection() {
                       <div className="title-content">
                         <p className="title">{project.name}</p>
                         {project.projectType !== 'Public Project' && (
-                          <p className={`portfolio-status ${project.isPortfolio ? '' : 'not-active'}`}>Portfolio: {project.isPortfolio ? 'Active' : 'Inactive'}</p>
+                          <p className={`portfolio-status ${project.isPortfolio ? '' : 'not-active'}`}>{isMobile ? <span className={!project.isPortfolio ? 'not' : ''}></span> : 'Portfolio:'} {project.isPortfolio ? 'Active' : 'Inactive'}</p>
                         )}
                       </div>
                       <div className="link-content">
@@ -83,15 +84,25 @@ export function ProjectSection() {
                           </div>
                         )}
                       </div>
-                      <div className="phase-progress-wrap">
-                        <p>Phases</p>
-                        <div className="progress-bar-wrap">
-                          <span className="progress-bar"></span>
+                      {project.totalPhase && (
+                        <div className="phase-progress-wrap">
+                          <p>Phases</p>
+                          <div className="progress-bar-wrap">
+                            <span className="progress-bar"></span>
+                          </div>
+                          {isMobile ? (
+                            <div className="mobile-phase">
+                              <p>Phase 2/{project.totalPhase} <span className="dot"></span> 2 Completed</p>
+                            </div>
+                          ) : (
+                            <>
+                              <p><span className="completed-phase">2</span> / <span className="all-phase">{project.totalPhase}</span></p>
+                              <span className="dot"></span>
+                              <p><span className="completed-phase">2</span> Completed</p>
+                            </>
+                          )}
                         </div>
-                        <p><span className="completed-phase">2</span> / <span className="all-phase">{project.totalPhase}</span></p>
-                        <span className="dot"></span>
-                        <p><span className="completed-phase">2</span> Completed</p>
-                      </div>
+                      )}
                     </div>
                   </div>
                   <div className="right">

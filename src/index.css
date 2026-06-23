@@ -145,4 +145,7 @@ main {
       outline: none;
     }
   }
+  main {
+    margin-left: 0;
+  }
 }

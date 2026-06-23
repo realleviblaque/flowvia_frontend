@@ -1,12 +1,17 @@
+import { useState } from 'react'
 import { Messages } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
 
-export function MessagePageSidebar() {
+export function MessagePageSidebar({setChatOpen}) {
+  const [filterMessage, setFilterMessage] = useState('All')
+  const handleClick = () => {
+    setChatOpen(true);
+  }
   return (
     <div className="chat-list-container">
       <div className="chat-list">
         <div className="search-wrap">
-          <div>
+          <div className='message-head'>
             <p className="txt-head">Messages</p>
             <i className="fa-solid fa-plus"></i>
           </div>
@@ -15,13 +20,13 @@ export function MessagePageSidebar() {
           </div>
         </div>
         <div className="filter-container">
-          <div className="all-msg-btn active-msg">
+          <div className={filterMessage === 'All' ? 'active-msg' : ''} onClick={() => setFilterMessage('All')}>
             All
           </div>
-          <div className="unread-msg-btn">
+          <div className={filterMessage === 'Unread' ? 'active-msg' : ''} onClick={() => setFilterMessage('Unread')}>
             Unread (<span className="unread-count">0</span>)
           </div>
-          <div className="request-msg-btn">
+          <div className={filterMessage === 'Request' ? 'active-msg' : ''} onClick={() => setFilterMessage('Request')}>
             Request (<span>0</span>)
           </div>
         </div>
@@ -31,8 +36,8 @@ export function MessagePageSidebar() {
           )}
           {Messages.reverse().map((message) => {
             return (
-              <div key={message.id} className="chat-list-wrap">
-                <div className="profile">
+              <div key={message.id} className="chat-list-wrap" onClick={handleClick}>
+                <div className={`profile ${message.accountType === 'Team' && 'team'}`}>
                   <img src={message.profile} className={`${message.accountType === 'Team' && 'team-profile'}`} />
                   {message.isActive && (<span className="active-badge"></span>)}
                 </div>

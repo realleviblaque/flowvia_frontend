@@ -58,7 +58,9 @@ export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOp
             <i className="fa-regular fa-bell"></i>
             <div className='notification'></div>
           </span>
-          <span>
+          <span onClick={() => {
+            navigate('/messages')
+          }}>
             <i className="fa-regular fa-message"></i>
             <div className="message">6</div>
           </span>

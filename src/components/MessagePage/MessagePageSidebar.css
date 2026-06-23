@@ -112,9 +112,6 @@
               border-color: var(--cards);
             }
           }
-          .active-badge {
-            border-color: var(--cards);
-          }
         }
         &.active {
           border-left: 2px solid var(--accent-blue);
@@ -123,9 +120,6 @@
             .active-badge {
               border-color: var(--element-bg-post-input);
             }
-          }
-          .active-badge {
-            border-color: var(--element-bg-post-input);
           }
         }
         .profile {
@@ -140,10 +134,9 @@
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
-            border: var(--profile-image-border);
           }
           .team-profile {
-            border-radius: 6px;
+            border-radius: 8px;
           }
           .active-badge {
             height: 9px;
@@ -211,4 +204,166 @@
       }
     }
   } 
+}
+
+@media (max-width: 767.99px) {
+  .chat-list-container {
+    height: unset;
+    flex: 1;
+    width: unset;
+    border: none;
+    overflow: unset;
+    .chat-list {
+      .search-wrap {
+        background-color: var(--bg);
+        padding: 10px 15px;
+        .message-head {
+          display: none;
+        }
+        div {
+          width: unset;
+          input {
+            height: 32px;
+            padding: 5px 15px;
+            font-size: 13px;
+            border: 1px solid var(--border);
+            background-color: var(--cards);
+            color: var(--secondary-text);
+            &::placeholder {
+              color: var(--mutetd-tetx);
+              font-size: 14px;
+            }
+            &:focus {
+              border: 1px solid var(--hover-border);
+            }
+          }
+        }
+      }
+      .filter-container {
+        padding: 10px 15px;
+        height: unset;
+        top: 65px;
+        z-index: 9;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        div {
+          height: unset;
+          padding: 7px 18px;
+          border: 1px solid var(--border);
+          margin-bottom: 0;
+          font-size: 12px;
+          color: var(--mutetd-tetx);
+          background-color: var(--cards);
+          border-radius: 20px;
+        }
+        .active-msg {
+          border-color: var(--blue-border);
+          color: var(--accent-blue);
+          background-color: var(--blue-bg);
+        }
+      }
+      .chat-list-cover {
+        padding: 0;
+        gap: 0;
+        .chat-list-wrap {
+          width: unset;
+          height: unset;
+          border-radius: 0;
+          padding: 15px;
+          border-top: 1px solid var(--border);
+          &:nth-child(1) {
+            border: none;
+          }
+          &:hover {
+            background-color: transparent;
+            .profile {
+              .active-badge {
+                border-color: var(--sidebar-bg);
+              }
+            }
+          }
+          &.active {
+            border-left: unset;
+            background-color: transparent;
+            .profile {
+              .active-badge {
+                border-color: var(--cards);
+              }
+            }
+          }
+          &:active {
+            background-color: var(--cards);
+          }
+          .profile {
+            img {
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+            }
+            .team-profile {
+              border-radius: 6px;
+            }
+            .active-badge {
+              height: 8px;
+              width: 8px;
+              border-radius: 50%;
+              background-color: var(--active-badge-bg);
+              position: absolute;
+              bottom: 2px;
+              right: 5px;
+              border: 3px solid var(--sidebar-bg);
+            }
+            &.team {
+              .active-badge {
+                bottom: -1px;
+                right: 3px;
+              }
+            }
+          }
+          .sender-info {
+            align-items: stretch;
+            .name {
+              width: unset;
+              font-size: 15px;
+              i {
+                font-size: 12px;
+              }
+            }
+            .message {
+              white-space: unset;
+              text-overflow: unset;
+              width: unset;
+              color: var(--mutetd-tetx);
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              overflow: hidden;
+              font-size: 14px;
+            }
+          }
+          .message-count {
+            span {
+              padding: 4px 8px;
+              background-color: var(--accent-blue);
+              color: white;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

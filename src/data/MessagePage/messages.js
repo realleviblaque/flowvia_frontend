@@ -6,7 +6,8 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '1d'
+  time: '1d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -14,7 +15,8 @@ export const Messages = [{
   accountType: 'Team',
   isActive: false,
   lastMsg: "That's cool!",
-  time: '25m'
+  time: '25m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -23,7 +25,8 @@ export const Messages = [{
   isActive: false,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '12m'
+  time: '12m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -31,7 +34,8 @@ export const Messages = [{
   accountType: 'Client',
   isActive: true,
   lastMsg: 'Good Morning Levi!',
-  time: '2d'
+  time: '2d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -40,7 +44,8 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '50m'
+  time: '50m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -49,7 +54,8 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '1h'
+  time: '1h',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -57,7 +63,8 @@ export const Messages = [{
   accountType: 'Team',
   isActive: false,
   lastMsg: 'Good Morning Levi!',
-  time: '3d'
+  time: '3d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -66,7 +73,8 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'Good Morning Levi!',
   unread: 150,
-  time: '2h'
+  time: '2h',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -75,7 +83,8 @@ export const Messages = [{
   isActive: false,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '1d'
+  time: '1d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -83,7 +92,8 @@ export const Messages = [{
   accountType: 'Team',
   isActive: true,
   lastMsg: "That's cool!",
-  time: '25m'
+  time: '25m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -92,7 +102,8 @@ export const Messages = [{
   isActive: false,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '12m'
+  time: '12m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -100,7 +111,8 @@ export const Messages = [{
   accountType: 'Client',
   isActive: false,
   lastMsg: 'Good Morning Levi!',
-  time: '2d'
+  time: '2d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -109,7 +121,8 @@ export const Messages = [{
   isActive: false,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '50m'
+  time: '50m',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -118,7 +131,8 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'Good Morning Levi!',
   unread: 2,
-  time: '1h'
+  time: '1h',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -126,7 +140,8 @@ export const Messages = [{
   accountType: 'Team',
   isActive: false,
   lastMsg: 'Good Morning Levi!',
-  time: '3d'
+  time: '3d',
+  isOpen: false
 }, {
   id: crypto.randomUUID(),
   profile: 'profile.png',
@@ -135,5 +150,6 @@ export const Messages = [{
   isActive: true,
   lastMsg: 'I am fine, thanks for checking up on me',
   unread: 150,
-  time: '2h'
+  time: '2h',
+  isOpen: false
 }];

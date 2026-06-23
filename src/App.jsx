@@ -92,12 +92,12 @@ function App() {
         <Route path='teams' element={<TeamsPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
         <Route path='jobs' element={<JobPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       </Route>
-      <Route path='/messages' element={<MessagePage all={all} />} />
+      <Route path='/messages' element={<MessagePage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
       <Route path='/work-circle' element={<WorkCirclePage />}>
         <Route path='' element={<FreelancerWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
         <Route path='clients' element={<ClientrWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
       </Route>
-      <Route path='/notification' element={<NotificationPage all={all} plusDialog={plusDialog} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} dialog={dialog} />} />
+      <Route path='/notification' element={<NotificationPage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
       <Route path='/profile' element={<ProfilePage all={all} />}  />
       <Route path='/settings' element={<SettingsPage />}>
         <Route path='' element={<ProfileTab all={all} />} />

@@ -7,18 +7,16 @@ import { SideBar } from "../../components/Sidebar";
 import { Notifications } from "../../data/NotificationPage/notifications";
 import './NotificationPage.css'
 import { getNotificationDate } from "../../utils/getNotificationDate";
-import { Modal } from "../../components/Modal";
 import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
 import { MobileHeader2 } from "../../components/MobileHeader2";
 
-export function NotificationPage({all, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
+export function NotificationPage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   return (
     <>
       <SideBar notification={all} />
       <NotificationPageHeader />
       <MobileHeader2 />
-      <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="notification-main-page">  
         <NotificationPageFilter notification={Notifications} />
         <div className="notfication-container">

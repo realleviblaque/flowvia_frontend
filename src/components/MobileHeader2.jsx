@@ -21,7 +21,8 @@ export function MobileHeader2() {
         )}
       </div>
       <div className="right">
-        <span className='mark'>Mark all read</span>
+        {location.pathname === '/notification' && <span className='mark'>Mark all read</span>}
+        {location.pathname === '/messages' && <span><i className="fa-solid fa-pencil"></i></span>}
       </div>
     </header>
   )

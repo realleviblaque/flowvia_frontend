@@ -47,6 +47,24 @@
       cursor: pointer;
       letter-spacing: 1px;
     }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      i {
+        font-size: 12px;
+        height: 35px;
+        width: 35px;
+        border: 1px solid var(--border);
+        background-color: var(--cards);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--accent-blue);
+      }
+    }
   }
 }
 

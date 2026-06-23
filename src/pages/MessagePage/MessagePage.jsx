@@ -101,6 +101,15 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   }
 
   const [chatOpen, setChatOpen] = useState(false)
+  
+  useEffect(() => {
+    if (chatOpen) {
+      messagesEndRef.current?.scrollTo({
+        top: messagesEndRef.current.scrollHeight,
+        behavior: 'auto'
+      })
+    }
+  }, [chatOpen])
 
   const isMobile = window.innerWidth < 768;
   return (

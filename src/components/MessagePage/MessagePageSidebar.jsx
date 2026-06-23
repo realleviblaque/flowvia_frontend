@@ -34,7 +34,7 @@ export function MessagePageSidebar({setChatOpen}) {
           {Messages.length === 0 && (
             <h1>No Message Test</h1>
           )}
-          {Messages.reverse().map((message) => {
+          {Messages.slice().reverse().map((message) => {
             return (
               <div key={message.id} className="chat-list-wrap" onClick={handleClick}>
                 <div className={`profile ${message.accountType === 'Team' && 'team'}`}>

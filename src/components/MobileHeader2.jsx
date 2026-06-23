@@ -7,7 +7,7 @@ export function MobileHeader2() {
   return (
     <header className="mobile-home-header2">
       <div className="left">
-        <span onClick={() => navigate(-1)} className={location.pathname === '/profile' && 'profile'}>
+        <span onClick={() => navigate(-1)} className={location.pathname === '/profile' ? 'profile' : ''}>
           <i className="fa-solid fa-chevron-left"></i>
         </span>
         {location.pathname === '/notification' && (

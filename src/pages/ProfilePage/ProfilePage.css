@@ -1655,20 +1655,25 @@
     }
     .profile-details {
       margin-top: 10px;
-      padding-left: 15px;
+      padding-left: 10px;
       .profile-name-wrap {
         gap: 8px;
+        flex-wrap: wrap;
         .name {
-          font-size: 20px;
+          font-size: 18px;
           i {
             font-size: 14px;
           }
         }
+        .account-badge {
+          padding: 3px 10px;
+        }
         .verified-wrap {
-          padding: 4px 12px;
+          padding: 3px 10px;
         }
       }
       .profile-username-category {
+        gap: 6px;
         span {
           width: 2px;
           height: 2px;
@@ -1690,12 +1695,12 @@
         }
       }
       .follow-details-count {
-        gap: 14px;
+        gap: 10px;
         div {
-          font-size: 13px;
+          font-size: 12px;
           color: var(--mutetd-tetx);
           span {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
@@ -1813,7 +1818,7 @@
             border: none;
             border-bottom: 1px solid var(--border);
             border-radius: 0;
-            padding: 20px 15px;
+            padding: 20px 10px;
             background-color: transparent;
             gap: 10px;
             .post-header {
@@ -1833,30 +1838,6 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     max-width: 190px;
-                  }
-                  .badge {
-                    height: 0;
-                    padding: 8px 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 11px;
-                    border-radius: 20px;
-                  }
-                  .client-account-type {
-                    background-color: var(--client-badge-bg);
-                    border: 1px solid var(--client-badge-border);
-                    color: var(--client-badge-text);
-                  }
-                  .team-account-type {
-                    background-color: var(--team-badge-bg);
-                    border: 1px solid var(--team-badge-border);
-                    color: var(--team-badge-text);
-                  }
-                  .self-account-type {
-                    background-color: var(--self-badge-bg);
-                    border: 1px solid var(--self-badge-border);
-                    color: var(--self-badge-text);
                   }
                   span {
                     display: none;
@@ -1883,7 +1864,7 @@
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
-                    max-width: 100px;
+                    max-width: 70px;
                   }
                   .phone {
                     display: block;
@@ -2408,7 +2389,7 @@
             background-color: unset;
             border: none;
             border-radius: 0;
-            padding: 20px;
+            padding: 20px 10px;
             border-top: 1px solid var(--border);
             &:nth-child(1) {
               border: none;
@@ -2426,7 +2407,7 @@
                   .username {
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    max-width: 70px;
+                    max-width: 60px;
                   }
                 }
               }

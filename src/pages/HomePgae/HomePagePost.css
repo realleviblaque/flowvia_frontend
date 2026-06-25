@@ -288,7 +288,7 @@
     border: none;
     border-bottom: 1px solid var(--border);
     border-radius: 0;
-    padding: 20px 15px;
+    padding: 20px 10px;
     background-color: transparent;
     gap: 10px;
     .post-header {
@@ -318,21 +318,6 @@
             font-size: 11px;
             border-radius: 20px;
           }
-          .client-account-type {
-            background-color: var(--client-badge-bg);
-            border: 1px solid var(--client-badge-border);
-            color: var(--client-badge-text);
-          }
-          .team-account-type {
-            background-color: var(--team-badge-bg);
-            border: 1px solid var(--team-badge-border);
-            color: var(--team-badge-text);
-          }
-          .self-account-type {
-            background-color: var(--self-badge-bg);
-            border: 1px solid var(--self-badge-border);
-            color: var(--self-badge-text);
-          }
           span {
             display: none;
           }
@@ -358,7 +343,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            max-width: 100px;
+            max-width: 70px;
           }
           .phone {
             display: block;

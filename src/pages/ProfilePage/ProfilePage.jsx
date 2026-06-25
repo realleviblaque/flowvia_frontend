@@ -237,7 +237,7 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                                 <p className="comment-count">{post.comment}</p>
                               </div>
                               <div>
-                                <i className="fa-solid fa-share"></i>
+                                <i className="fa-solid fa-share-alt"></i>
                                 <p className="share-count">{post.share}</p>
                               </div>
                             </div>

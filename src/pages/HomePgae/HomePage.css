@@ -162,6 +162,9 @@
     height: calc(100vh - 127px);
     .home-content {
       padding: 0px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .home-top-options {
         border-bottom: 1px solid var(--border);
         padding: 10px;

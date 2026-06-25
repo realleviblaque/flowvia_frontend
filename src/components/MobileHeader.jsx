@@ -64,11 +64,8 @@ export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOp
             <i className="fa-regular fa-message"></i>
             <div className="message">6</div>
           </span>
-          <span onClick={() => navigate('/profile')}>
+          <span onClick={handleDialogOpen}>
             <img src="/profile.png" />
-          </span>
-          <span className='hanburger' onClick={handleDialogOpen}>
-            <i className="fa-solid fa-bars"></i>
           </span>
         </div>
       </div>

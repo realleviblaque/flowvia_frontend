@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ProfilePageNavBar } from "../../components/ProfilePage/ProfilePageNavBar";
 import { ProfilePageRightSidebar } from "../../components/ProfilePage/ProfilePageRightSidebar";
 import { SideBar } from "../../components/Sidebar";
@@ -12,12 +12,46 @@ import { PlusModal } from "../../components/PlusModal";
 
 export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const [viewingSection, setViewingSection] = useState('Activity')
+  const scrollRef = useRef(null);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const container = scrollRef.current;
+    if (!container) return;
+
+    if (container.scrollTop > 505) {
+      el.style.borderTop = 'none';
+      requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: 'auto', block: 'start' })
+      })
+    }
+  }, [viewingSection])
+
+  const handleTabClick = (tab) => {
+    const container = scrollRef.current;
+    const section = sectionRef.current;
+    
+    if (!container || !section) return;
+
+    if (tab === viewingSection && container.scrollTop > 520) {
+      container.scrollTo({
+        top: section.offsetTop - 61,
+        behavior: 'smooth'
+      })
+      return;
+    }
+
+    setViewingSection(tab)
+  }
   return (
     <> 
       <SideBar notification={all} />
       <MobileHeader2 />
       <main>
-        <div className="profile-page-container">
+        <div className="profile-page-container" ref={scrollRef}>
           <div className="profile-top-container">
             <div className="cover-pic-wrap">
               <button className="edit-cover-btn">
@@ -129,8 +163,8 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               </div>
             </div>
           </div>
-          <div className="profile-bottom">
-            <ProfilePageNavBar viewingSection={viewingSection} setViewingSection={setViewingSection} />
+          <div className="profile-bottom" ref={sectionRef}>
+            <ProfilePageNavBar viewingSection={viewingSection} handleTabClick={handleTabClick} />
 
             {viewingSection === 'Activity' && (
               <section className="activity-section">

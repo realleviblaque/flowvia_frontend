@@ -1654,8 +1654,8 @@
     }
     }
     .profile-details {
+      padding: 0 10px;
       margin-top: 10px;
-      padding-left: 10px;
       .profile-name-wrap {
         gap: 8px;
         flex-wrap: wrap;
@@ -1756,11 +1756,12 @@
       padding: 10px;
       height: unset;
       font-size: 14px;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid transparent;
+      box-shadow: 0 -1px 0 var(--border);
       border-bottom: 1px solid var(--border);
       color: var(--secondary-text);
       background-color: var(--bg);
-      top: -1px;
+      top: 0px;
       gap: 10px;
       overflow: auto;
       &::-webkit-scrollbar {
@@ -2008,7 +2009,7 @@
           height: unset;
           width: auto;
           padding: 10px 15px;
-          top: 59px;
+          top: 60px;
           z-index: 10;
           gap: 10px;
           display: flex;
@@ -2258,7 +2259,7 @@
     }
     .about-section {
       .main-about-wrap {
-        padding: 15px;
+        padding: 15px 10px;
         gap: 15px;
         .bio-part,
         .about-part,
@@ -2364,7 +2365,7 @@
           padding: 12px;
           background-color: var(--bg);
           position: sticky;
-          top: 59px;
+          top: 60px;
           overflow: auto;
           border-bottom: 1px solid var(--border);
           &::-webkit-scrollbar {

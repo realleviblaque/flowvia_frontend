@@ -1,19 +1,19 @@
-export function ProfilePageNavBar({viewingSection, setViewingSection}) {
+export function ProfilePageNavBar({viewingSection, handleTabClick}) {
   return (
     <div className="button-options">
-      <div className={viewingSection === 'Activity' ? 'current-click' : ''} onClick={() => setViewingSection('Activity')}>
+      <div className={viewingSection === 'Activity' ? 'current-click' : ''} onClick={() => handleTabClick('Activity')}>
         Activity
       </div>
-      <div className={viewingSection === 'Projects' ? 'current-click' : ''} onClick={() => setViewingSection('Projects')}>
+      <div className={viewingSection === 'Projects' ? 'current-click' : ''} onClick={() => handleTabClick('Projects')}>
         Projects
       </div>
-      <div className={viewingSection === 'Portfolio' ? 'current-click' : ''} onClick={() => setViewingSection('Portfolio')}>
+      <div className={viewingSection === 'Portfolio' ? 'current-click' : ''} onClick={() => handleTabClick('Portfolio')}>
         Portfolio
       </div>
-      <div className={viewingSection === 'About' ? 'current-click' : ''} onClick={() => setViewingSection('About')}>
+      <div className={viewingSection === 'About' ? 'current-click' : ''} onClick={() => handleTabClick('About')}>
         About
       </div>
-      <div className={viewingSection === 'Reviews' ? 'current-click' : ''} onClick={() => setViewingSection('Reviews')}>
+      <div className={viewingSection === 'Reviews' ? 'current-click' : ''} onClick={() => handleTabClick('Reviews')}>
         Reviews
       </div>
     </div>

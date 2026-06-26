@@ -76,6 +76,7 @@
       align-items: center;
       cursor: pointer;
       display: none;
+      cursor: pointer;
       &.open-send-search {
         display: flex;
       }
@@ -98,6 +99,7 @@
         margin-right: 20px;
         font-size: 12px;
         color: var(--mutetd-tetx);
+        cursor: pointer;
       }
       .history {
         display: flex;

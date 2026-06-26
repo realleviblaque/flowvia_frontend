@@ -1781,6 +1781,8 @@
       }
     }
     .activity-section {
+      display: flex;
+      flex-direction: column;
       .main-post-wrap {
         padding: 0;
         .post-container-input {

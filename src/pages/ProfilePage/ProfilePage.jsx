@@ -221,20 +221,16 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                             <p className="body-text">
                               {post.postText}
                             </p>
-                            {post.postProject 
-                              ? '' 
-                              :  post.postImg 
-                              ?
-                                <div className="body-image">
-                                  <img src={`${post.postImg}`} />
-                                </div>
-                              : ''
-                            }
+                            {post.postProject ? '' : post.postImg && (
+                              <div className="body-image">
+                                <img src={post.postImg} />
+                              </div>
+                            )}
                           </div>
                           {post.postProject && (
                             <div className="post-project">
                               <div className="project-cover" style={post.postProject.image && {background: `linear-gradient(rgba(0,0,0,0.3)), url('${post.postProject.image}') center no-repeat`, backgroundSize: 'cover'}}>
-                                {!post.postProject.image && (post.postProject.title)}
+                                {!post.postProject.image && <span>{post.postProject.title}</span>}
                               </div>
                               <div className="project-details">
                                 <p className="title">{post.postProject.title}</p>

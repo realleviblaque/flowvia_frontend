@@ -9,17 +9,20 @@ import { BottomBar } from "../../components/BottomBar";
 import { Modal } from "../../components/Modal";
 import { PlusModal } from "../../components/PlusModal";
 import { MobileHeader } from "../../components/MobileHeader";
+import { HomePageSearch } from "./HomePageSearch";
 
 const homePosts = posts.sort(() => Math.random() - 0.5)
 
 export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
-  const [tabsClick, setTabsClick] = useState('all')
+  const [tabsClick, setTabsClick] = useState('all');
+  const [openHomeSearch, setOpenHomeSearch] = useState(false)
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
       
       <HomePAgeHeader />
-      <MobileHeader handleDialogOpen={handleDialogOpen} />
+      <MobileHeader handleDialogOpen={handleDialogOpen} setOpenHomeSearch={setOpenHomeSearch} />
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="home-main">
         <div className="home-content">
@@ -78,6 +81,7 @@ export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadn
       </main>
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
+      {isMobile && <HomePageSearch openHomeSearch={openHomeSearch} setOpenHomeSearch={setOpenHomeSearch} />}
     </>
   )
 }

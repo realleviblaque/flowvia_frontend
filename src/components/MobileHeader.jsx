@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import './MobileHeader.css'
 
-export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOpenSearch2, openSearch2}) {
+export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOpenSearch2, openSearch2, setOpenHomeSearch}) {
   const location = useLocation();
   const navigate = useNavigate();
   return (
@@ -36,7 +36,7 @@ export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOp
         )}
         <div className="right-side">
           {location.pathname === '/' && (
-            <span>
+            <span onClick={() => setOpenHomeSearch(true)}>
               <i className="fa-solid fa-search"></i>
             </span>
           )}

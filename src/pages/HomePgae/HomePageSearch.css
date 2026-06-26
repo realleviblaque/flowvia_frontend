@@ -1,0 +1,127 @@
+.home-search {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.15s;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.search-open {
+    transform: translateX(0);
+  }
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    span {
+      i {
+        color: var(--secondary-text);
+        font-size: 16px;
+      }
+    }
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+      background-color: var(--cards);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      i {
+        font-size: 12px;
+        color: var(--mutetd-tetx);
+      }
+      input {
+        appearance: none;
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        color: var(--secondary-text);
+        font-size: 14px;
+        outline: none;
+        border: none;
+        &::placeholder {
+          color: var(--mutetd-tetx);
+        }
+        &::-webkit-search-cancel-button {
+          appearance: none;
+          -webkit-appearance: none;
+        }
+      }
+      .cancel {
+        cursor: pointer;
+        display: none;
+        &.open-cancel {
+          display: block;
+        }
+      }
+    }
+    .send-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      display: none;
+      &.open-send-search {
+        display: flex;
+      }
+      i {
+        font-size: 18px;
+        color: var(--secondary-text);
+        transform: rotate(10deg);
+      }
+    }
+  }
+  .search-content-down-container {
+    display: flex;
+    flex-direction: column;
+    .history-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .top {
+        align-self: flex-end;
+        margin-right: 20px;
+        font-size: 12px;
+        color: var(--mutetd-tetx);
+      }
+      .history {
+        display: flex;
+        flex-direction: column;
+        .history-seach {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 15px;
+          p {
+            flex: 1;
+            font-size: 14px;
+            color: var(--mutetd-tetx);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          i {
+            font-size: 11px;
+            color: var(--mutetd-tetx);
+          }
+        }
+      }
+    }
+  }
+}

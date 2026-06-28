@@ -65,6 +65,7 @@ import { PayoutSettings } from './pages/TeamPage/Pages/Settings/Tabs/Payout Sett
 import { TeamVisibility } from './pages/TeamPage/Pages/Settings/Tabs/Team Visibility/TeamVisibility'
 import { Notification } from './pages/TeamPage/Pages/Settings/Tabs/Notification/Notification'
 import { DangerZone } from './pages/TeamPage/Pages/Settings/Tabs/Danger Zone/DangerZone'
+import { MobileSettingsPage } from './pages/MobileSettingsPage/MobileSettingsPage'
 
 function App() {
   const {all} = notificationCount(Notifications)
@@ -82,6 +83,7 @@ function App() {
   const hadnlePlusDialogClose = () => {
     plusDialog.current.close();
   }
+  const isMobile = window.innerWidth < 768;
   return (
     <Routes>
       <Route path='/' element={<HomePage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
@@ -99,29 +101,33 @@ function App() {
       </Route>
       <Route path='/notification' element={<NotificationPage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
       <Route path='/profile' element={<ProfilePage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />}  />
-      <Route path='/settings' element={<SettingsPage />}>
-        <Route path='' element={<ProfileTab all={all} />} />
-        <Route path='account-infomation' element={<AccountTab all={all} />} />
-        <Route path='appearance' element={<AppearanceTab all={all} />} />
-        <Route path='professional-details' element={<ProfessionalTab all={all} />} />
-        <Route path='pricing-availability' element={<PricingTab all={all} />} />
-        <Route path='push-notification' element={<PushNotificationTab all={all} />} />
-        <Route path='email-notification' element={<EmailNotificationTab all={all} />} />
-        <Route path='marketplace-alerts' element={<MarketAlertTab all={all} />} />
-        <Route path='profile-visibility' element={<ProfileVisibilityTab all={all} />} />
-        <Route path='online-status' element={<OnlineTab all={all} />} /> 
-        <Route path='blocked-users' element={<BlockedTab all={all} />} /> 
-        <Route path='password' element={<PasswordTab all={all} />} /> 
-        <Route path='two-factor-auth' element={<TwoFactorTab all={all} />} /> 
-        <Route path='login-sessions' element={<LoginSessionTab all={all} />} /> 
-        <Route path='verification' element={<VerificationTab all={all} />} /> 
-        <Route path='subscription-billing' element={<SubscriptionTab all={all} />} /> 
-        <Route path='payment' element={<PaymentTab all={all} />} /> 
-        <Route path='payout' element={<PayoutTab all={all} />} /> 
-        <Route path='saved-post' element={<SavedPostTab all={all} />} /> 
-        <Route path='deactivate-account' element={<DeactivateTab all={all} />} /> 
-        <Route path='delete-account' element={<DeleteTab all={all} />} /> 
-      </Route> 
+      {isMobile ? (
+        <Route path='/settings' element={<MobileSettingsPage />} />
+      ) : (
+        <Route path='/settings' element={<SettingsPage />}>
+          <Route path='' element={<ProfileTab all={all} />} />
+          <Route path='account-infomation' element={<AccountTab all={all} />} />
+          <Route path='appearance' element={<AppearanceTab all={all} />} />
+          <Route path='professional-details' element={<ProfessionalTab all={all} />} />
+          <Route path='pricing-availability' element={<PricingTab all={all} />} />
+          <Route path='push-notification' element={<PushNotificationTab all={all} />} />
+          <Route path='email-notification' element={<EmailNotificationTab all={all} />} />
+          <Route path='marketplace-alerts' element={<MarketAlertTab all={all} />} />
+          <Route path='profile-visibility' element={<ProfileVisibilityTab all={all} />} />
+          <Route path='online-status' element={<OnlineTab all={all} />} /> 
+          <Route path='blocked-users' element={<BlockedTab all={all} />} /> 
+          <Route path='password' element={<PasswordTab all={all} />} /> 
+          <Route path='two-factor-auth' element={<TwoFactorTab all={all} />} /> 
+          <Route path='login-sessions' element={<LoginSessionTab all={all} />} /> 
+          <Route path='verification' element={<VerificationTab all={all} />} /> 
+          <Route path='subscription-billing' element={<SubscriptionTab all={all} />} /> 
+          <Route path='payment' element={<PaymentTab all={all} />} /> 
+          <Route path='payout' element={<PayoutTab all={all} />} /> 
+          <Route path='saved-post' element={<SavedPostTab all={all} />} /> 
+          <Route path='deactivate-account' element={<DeactivateTab all={all} />} /> 
+          <Route path='delete-account' element={<DeleteTab all={all} />} /> 
+        </Route> 
+      )}
       <Route path='/team' element={<TeamPage />}>
         <Route path='' element={<TeamChat all={all} />} />
         <Route path='projects' element={<TeamProject all={all} />} />

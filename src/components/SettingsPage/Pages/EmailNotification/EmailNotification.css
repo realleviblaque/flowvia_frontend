@@ -1,0 +1,123 @@
+.email-notificationcontent {
+  padding: 20px;
+  background-color: var(--cards);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .feed-content {
+    display: flex;
+    flex-direction: column;
+    .feed {
+      padding: 14px 0;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border-bottom: 1px solid var(--hover-border);
+      .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        .head-txt {
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--pry-text);
+        }
+        .txt {
+          font-size: 14px;
+          color: var(--mutetd-tetx);
+          word-spacing: 3px;
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          appearance: none;
+          -webkit-appearance: none;
+          outline: none;
+          display: inline-block;
+          position: relative;
+          width: 50px;
+          height: 27px;
+          background-color: var(--ghost-btn-bg);
+          border: 1px solid var(--hover-border);
+          transition: background-color 0.3s;
+          margin: 0;
+          border-radius: 20px;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-color: white;
+            transition: transform 0.3s;
+          }
+          &:checked {
+            background-color: var(--accent-blue);
+            &::after {
+              transform: translateX(23px);
+            }
+          }
+        }
+      }
+    }
+  }
+  .action-btn {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    button {
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      &.save-btn {
+        background-color: var(--pry-btn);
+        color: var(--pry-btn-text);
+      }
+    }
+  }
+}
+
+@media (max-width: 767.99px) {
+ .email-notificationcontent {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    .feed-content {
+      .feed {
+        border-bottom: 1px solid var(--border);
+        .left {
+          .head-txt {
+            font-size: 14px;
+          }
+          .txt {
+            font-size: 12px;
+            word-spacing: 2px;
+          }
+        }
+      }
+    }
+    .action-btn {
+      justify-content: right;
+      gap: 10px;
+      button {
+        padding: 12px 20px;
+      }
+    }
+  } 
+}

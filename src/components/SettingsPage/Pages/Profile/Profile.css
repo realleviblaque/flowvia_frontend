@@ -379,9 +379,9 @@
           }
           .action-btn {
             margin-top: 5px;
+            justify-content: right;
             button {
-              flex: 1;
-              padding: 11px 0;
+              padding: 11px 25px;
               border-radius: 8px;
               font-size: 14px;
             }

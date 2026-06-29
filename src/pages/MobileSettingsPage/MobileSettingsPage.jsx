@@ -1,7 +1,17 @@
 import { useState } from 'react'
 import { MobileHeader2 } from '../../components/MobileHeader2'
 import './MobileSettingsPage.css'
-import { Profile } from '../../components/SettingsPage/Pages/Profile';
+import { Profile } from '../../components/SettingsPage/Pages/Profile/Profile';
+import { AccountInfo } from '../../components/SettingsPage/Pages/AccountInfo/AccountInfo';
+import { Appearance } from '../../components/SettingsPage/Pages/Appearance/Appearance';
+import { Professional } from '../../components/SettingsPage/Pages/Professional/Professional';
+import { Pricing } from '../../components/SettingsPage/Pages/Pricing/Pricing';
+import { PushNotification } from '../../components/SettingsPage/Pages/PushNotification/PushNotification';
+import { EmailNotification } from '../../components/SettingsPage/Pages/EmailNotification/EmailNotification';
+import { MarketNotification } from '../../components/SettingsPage/Pages/MarketNotification/MarketAlertNotification';
+import { ProfileVisibility } from '../../components/SettingsPage/Pages/ProfileVisibility/ProfileVisibility';
+import { OnlineStatus } from '../../components/SettingsPage/Pages/OnlineStatus/OnlineStatus';
+import { Block } from '../../components/SettingsPage/Pages/Block/Bloack';
 
 export function MobileSettingsPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,7 +101,7 @@ export function MobileSettingsPage() {
               </span>
               <span onClick={() => {
                 setIsOpen(true)
-                setCurretSettings('PrBlocked Usersofile')
+                setCurretSettings('Blocked Users')
               }}>
                 <i className="fa-solid fa-ban"></i> Blocked Users
               </span>
@@ -185,6 +195,16 @@ export function MobileSettingsPage() {
           </div>
           <div className="mobile-settings-content-part">
             {currentSettings === 'Profile' && (<Profile />)}
+            {currentSettings === 'Account Information' && (<AccountInfo />)}
+            {currentSettings === 'Appearance' && (<Appearance />)}
+            {currentSettings === 'Professional Details' && (<Professional />)}
+            {currentSettings === 'Pricing & Availability' && (<Pricing />)}
+            {currentSettings === 'Push Notifications' && (<PushNotification />)}
+            {currentSettings === 'Email Notifications' && (<EmailNotification />)}
+            {currentSettings === 'Marketplace Alerts' && (<MarketNotification />)}
+            {currentSettings === 'Profile Visibility' && (<ProfileVisibility />)}
+            {currentSettings === 'Online Status' && (<OnlineStatus />)}
+            {currentSettings === 'Blocked Users' && (<Block />)}
           </div>
         </div>
       </main>

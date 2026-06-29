@@ -1,7 +1,7 @@
 import { SideBar } from "../../../../components/Sidebar";
 import { SettingsPageSidebar } from "../../../../components/SettingsPage/SettingsPageSIdebar";
 import './ProfileTab.css'
-import { Profile } from "../../../../components/SettingsPage/Pages/Profile";
+import { Profile } from "../../../../components/SettingsPage/Pages/Profile/Profile";
 
 export function ProfileTab({all}) {
   return (

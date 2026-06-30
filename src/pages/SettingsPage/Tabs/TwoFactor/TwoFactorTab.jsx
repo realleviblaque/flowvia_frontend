@@ -2,6 +2,7 @@ import { SideBar } from "../../../../components/Sidebar";
 import { SettingsContentHeader } from "../../../../components/SettingsPage/SettingsContentHeader";
 import { SettingsPageSidebar } from "../../../../components/SettingsPage/SettingsPageSIdebar";
 import './TwoFactorTab.css'
+import { Two2Factor } from "../../../../components/SettingsPage/Pages/2Factor/2Factor";
 
 export function TwoFactorTab({all}) {
   return (
@@ -17,28 +18,7 @@ export function TwoFactorTab({all}) {
                 <p className="head-txt">Two-Factor Authentication</p>
                 <p className="txt">Add a extra layer of security. You'll be asked for a code each time you log in.</p>
               </div>
-              <div className="content">
-                <div className="head">
-                  <div className="left">
-                    <p className="head-txt">Enable Two-Factor Authentication</p>
-                    <p className="txt">Once enabled, you'll need your authenticator app to log in. Strongly recommended.</p>
-                  </div>
-                  <div className="right">
-                    <input type="checkbox" />
-                  </div>
-                </div>
-                <div className="two-card">
-                  <p className="head-txt">Supported Authenticator Apps</p>
-                  <p className="txt">Google Authenticator</p>
-                </div>
-                <div className="backup">
-                  <p className="txt">Backup Email (Optional)</p>
-                  <input type="text" placeholder="Recovery email if you lose access to your authenticator" />
-                </div>
-                <div className="action-btn">
-                  <button className="save-btn">Enable 2FA</button>
-                </div>
-              </div>
+              <Two2Factor />
             </div>
           </div>
         </div>

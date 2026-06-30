@@ -2,6 +2,7 @@ import { SideBar } from "../../../../components/Sidebar";
 import { SettingsContentHeader } from "../../../../components/SettingsPage/SettingsContentHeader";
 import { SettingsPageSidebar } from "../../../../components/SettingsPage/SettingsPageSIdebar";
 import './DeactivateTab.css'
+import { Deactivate } from "../../../../components/SettingsPage/Pages/Deactivate/Deactivate";
 
 export function DeactivateTab({all}) {
   return (
@@ -17,13 +18,7 @@ export function DeactivateTab({all}) {
                 <p className="head-txt">Deactivate Account</p>
                 <p className="txt">Temporary - your account will be hidden but not deleted. You can reactivate at any time.</p>
               </div>
-              <div className="content">
-                <p className="head-txt">What happens when you deactivate?</p>
-                <p className="txt">Your profile is hidden from the marketplace and search results. <br /> Active projects and messages are paused - not deleted. <br />Your Work Circle, portfolio, and reviews are all preserved. <br />Log back in at any time to reactivate - everything stays intact.</p>
-                <p className="hd-txt">Confirm Your Password to Continue</p>
-                <input type="password" placeholder="Enter current password" />
-                <button>Deactivate My Account</button>
-              </div>
+              <Deactivate />
             </div>
           </div>
         </div>

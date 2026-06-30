@@ -37,59 +37,5 @@
         word-spacing: 3px;
       }
     }
-    .content {
-      padding: 20px;
-      background-color: var(--amber-bg);
-      border: 1px solid var(--amber-border);
-      border-radius: 20px;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: start;
-      .head-txt {
-        font-size: 18px;
-        font-weight: bold;
-        color: var(--amber);
-      }
-      .txt {
-        margin-top: -15px;
-        font-size: 13px;
-        letter-spacing: 1.3px;
-        color: var(--amber);
-        word-spacing: 1.3px;
-        line-height: 20.3px;
-      }
-      .hd-txt {
-        font-size: 12px;
-        text-transform: uppercase;
-        color: var(--amber);
-        letter-spacing: 1.3px;
-      }
-      input {
-        height: 40px;
-        padding: 4px 15px;
-        background-color: var(--cards);
-        border: 1px solid var(--amber-border);
-        outline: none;
-        width: 500px;
-        border-radius: 10px;
-        color: var(--amber);
-        font-size: 16px;
-        &::placeholder {
-          color: var(--mutetd-tetx);
-        }
-      }
-      button {
-        padding: 13px 25px;
-        background-color: var(--amber);
-        color: black;
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        font-size: 15px;
-        cursor: pointer;
-      }
-    }
   }
 }

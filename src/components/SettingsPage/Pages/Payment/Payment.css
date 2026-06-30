@@ -1,0 +1,246 @@
+.payment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .top-part {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2px;
+    .head-txt {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--pry-text);
+    }
+    .txt {
+      font-size: 14px;
+      color: var(--mutetd-tetx);
+      word-spacing: 3px;
+    }
+  }
+  .content {
+    padding: 15px 20px;
+    background-color: var(--cards);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid var(--border);
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--pry-text);
+      }
+      button {
+        padding: 9px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        color: var(--accent-blue);
+        background-color: var(--blue-bg);
+        border: 1px solid var(--blue-border);
+        font-size: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--border);
+      border: 1px solid var(--hover-border);
+      padding: 15px;
+      border-radius: 10px;
+      .left {
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
+        i {
+          font-size: 30px;
+          color: var(--accent-blue);
+        }
+        .building {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 6px;
+          font-size: 14px;
+          background-color: transparent;
+          border: 1px solid var(--hover-border);
+          color: var(--mutetd-tetx);
+          padding: 10px;
+          border-radius: 8px;
+          i {
+            font-size: 12px;
+            color: var(--mutetd-tetx);
+          }
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 2px;
+          .head-txt {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--pry-text);
+          }
+          div {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--mutetd-tetx);
+            span {
+              width: 2px;
+              height: 2px;
+              background-color: var(--mutetd-tetx);
+              border-radius: 50%;
+            }
+            .txt {
+              color: var(--green);
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        button {
+          padding: 6px 15px;
+          font-size: 13px;
+          background-color: transparent;
+          border: 1px solid var(--hover-border);
+          color: var(--mutetd-tetx);
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        .connect-btn {
+          background-color: var(--blue-bg);
+          border-color: var(--blue-border);
+          color: var(--accent-blue);
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    .down {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: var(--border);
+      font-size: 14px;
+      color: var(--mutetd-tetx);
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.99px) {
+  .payment-content {
+    gap: 15px;
+    padding: 15px;
+    .top-part {
+      .head-txt {
+        font-size: 18px;
+      }
+      .txt {
+        font-size: 13px;
+      }
+    }
+    .content {
+      padding: 15px;
+      background-color: transparent;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      gap: 15px;
+      .top {
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid var(--border);
+        p {
+          font-size: 16px;
+        }
+        button {
+          padding: 7px 14px;
+          gap: 4px;
+          font-size: 12px;
+        }
+      }
+      .cards {
+        background-color: var(--cards);
+        border: 1px solid var(--border);
+        &.save-card {
+          position: relative;
+          padding: 20px 15px;
+          .right {
+            flex-direction: column;
+            position: absolute;
+            justify-content: unset;
+            align-items: end;
+            top: 6px;
+            right: 15px;
+            gap: 5px;
+          }
+        }
+        .left {
+          gap: 10px;
+          .building {
+            border: 1px solid var(--border);
+          }
+          .info {
+            .head-txt {
+              font-size: 14px;
+            }
+            div {
+              font-size: 11px;
+            }
+          }
+        }
+        .right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          button {
+            padding: 6px 14px;
+            font-size: 11px;
+          }
+          .connect-btn {
+            padding: 8px 15px;
+            font-size: 13px;
+          }
+        }
+      }
+      .down {
+        padding: 15px;
+        background-color: var(--cards);
+        font-size: 12px;
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,16 @@ import { MarketNotification } from '../../components/SettingsPage/Pages/MarketNo
 import { ProfileVisibility } from '../../components/SettingsPage/Pages/ProfileVisibility/ProfileVisibility';
 import { OnlineStatus } from '../../components/SettingsPage/Pages/OnlineStatus/OnlineStatus';
 import { Block } from '../../components/SettingsPage/Pages/Block/Bloack';
+import { Password } from '../../components/SettingsPage/Pages/Password/Password';
+import { Two2Factor } from '../../components/SettingsPage/Pages/2Factor/2Factor';
+import { LoginSession } from '../../components/SettingsPage/Pages/Login/LoginSession';
+import { Verification } from '../../components/SettingsPage/Pages/Verification/Verification';
+import { Subscription } from '../../components/SettingsPage/Pages/Subscription/Subscription';
+import { Payment } from '../../components/SettingsPage/Pages/Payment/Payment';
+import { Payout } from '../../components/SettingsPage/Pages/Payout/Payout';
+import { Saved } from '../../components/SettingsPage/Pages/Saved/Saved';
+import { Deactivate } from '../../components/SettingsPage/Pages/Deactivate/Deactivate';
+import { Delete } from '../../components/SettingsPage/Pages/Delete/Delete';
 
 export function MobileSettingsPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -205,6 +215,16 @@ export function MobileSettingsPage() {
             {currentSettings === 'Profile Visibility' && (<ProfileVisibility />)}
             {currentSettings === 'Online Status' && (<OnlineStatus />)}
             {currentSettings === 'Blocked Users' && (<Block />)}
+            {currentSettings === 'Password' && (<Password />)}
+            {currentSettings === 'Two-Factor Auth' && (<Two2Factor />)}
+            {currentSettings === 'Login Sessions' && (<LoginSession />)}
+            {currentSettings === 'Verification' && (<Verification />)}
+            {currentSettings === 'Subscription & Billing' && (<Subscription />)}
+            {currentSettings === 'Payment Methods' && (<Payment />)}
+            {currentSettings === 'Payout Settings' && (<Payout />)}
+            {currentSettings === 'Saved Post' && (<Saved />)}
+            {currentSettings === 'Deactivate Account' && (<Deactivate />)}
+            {currentSettings === 'Delete Account' && (<Delete />)}
           </div>
         </div>
       </main>

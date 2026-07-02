@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MobileHeader2 } from '../../components/MobileHeader2'
 import './MobileSettingsPage.css'
 import { Profile } from '../../components/SettingsPage/Pages/Profile/Profile';
@@ -26,6 +26,14 @@ import { Delete } from '../../components/SettingsPage/Pages/Delete/Delete';
 export function MobileSettingsPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSettings, setCurretSettings] = useState('Profile')
+  const contentRef = useRef(null)
+
+  useEffect(() => {
+    contentRef.current?.scrollTo({
+      top: contentRef.current.scrollHeight,
+      behavior: 'auto'
+    })
+  }, [currentSettings])
   return (
     <>
       <MobileHeader2 />
@@ -203,7 +211,7 @@ export function MobileSettingsPage() {
             <i className="fa-solid fa-chevron-left" onClick={() => setIsOpen(false)}></i>
             <p>{currentSettings}</p>
           </div>
-          <div className="mobile-settings-content-part">
+          <div className="mobile-settings-content-part" ref={contentRef}>
             {currentSettings === 'Profile' && (<Profile />)}
             {currentSettings === 'Account Information' && (<AccountInfo />)}
             {currentSettings === 'Appearance' && (<Appearance />)}

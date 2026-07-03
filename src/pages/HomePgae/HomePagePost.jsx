@@ -1,7 +1,76 @@
+import { useState } from 'react'
 import { checkAccountType } from '../../utils/checkAccountType'
 import './HomePagePost.css'
+import dayjs from 'dayjs';
 
-export function HomePagePost({post}) {
+export function HomePagePost({post, savePosts, setSavePosts}) {
+  const [liked, setLiked] = useState(false);
+  const isBookmarked = savePosts.some(item => item.postId === post.id);
+
+  const handleLikeClick = (post) => {
+    if (liked) {
+      post.likes -= 1;
+      setLiked(false)
+    } else {
+      post.likes += 1;
+      setLiked(true)
+    }
+  }
+
+  const handleBookmark = (post) => {
+    const exists = savePosts.some(prev => prev.postId === post.id);
+    if (exists) {
+      setSavePosts(prev => prev.filter(saved => saved.postId !== post.id));
+    } else {
+      const bookmark = {
+        id: crypto.randomUUID(),
+        createdAt: dayjs().toISOString(),
+        postId: post.id,
+        user: {
+          name: post.user,
+          username: post.username,
+          profile: post.userImg,
+          accountType: post.accountType
+        },
+      };
+
+      if (post.postText) {
+        bookmark.post = {
+          id: crypto.randomUUID(),
+          text: post.postText,
+        };
+      }
+
+      if (post.postImg) {
+        bookmark.post = {
+          id: crypto.randomUUID(),
+          image: post.postImg,
+        };
+      }
+      if (post.postText && post.postImg) {
+        bookmark.post = {
+          id: crypto.randomUUID(),
+          text: post.postText,
+          image: post.postImg,
+        };
+      }
+
+      if (post.postProject) {
+        bookmark.job = {
+          title: post.postProject.title,
+          minBud: post.postProject.minBud,
+          maxBud: post.postProject.maxBud,
+          type: 'Remote',
+          deadline: post.postProject.deadline
+        }
+      }
+
+      setSavePosts(prev => [
+        bookmark,
+        ...prev
+      ])
+    }
+  }
   return (
     <div className="post-container">
       <div className="post-header">
@@ -56,7 +125,7 @@ export function HomePagePost({post}) {
             </div>
             <div className="action">
               <div className="left-action-project">
-                <div className="budget">{post.postProject.budget}</div>
+                <div className="budget">${post.postProject.minBud} - ${post.postProject.maxBud}K</div>
                 <div className="deadline">{post.postProject.deadline}</div>
               </div>
               <div className="right-action-project">
@@ -68,8 +137,8 @@ export function HomePagePost({post}) {
       )}
       <div className="footer-post">
         <div className="react-wrap">
-          <div>
-            <i className="fa-regular fa-heart"></i>
+          <div className={liked ? 'liked' : ''} onClick={() => handleLikeClick(post)}>
+            <i className={`fa-${liked ? 'solid' : 'regular'} fa-heart`}></i>
             <p className="like-count">{post.likes}</p>
           </div>
           <div>
@@ -82,9 +151,8 @@ export function HomePagePost({post}) {
           </div>
         </div>
         <div className="save-post">
-          <div>
-            <i className="fa-regular fa-bookmark"></i>
-            <p className="save-count">{post.save}</p>
+          <div className={isBookmarked ? 'bookmarked' : ''} onClick={() => handleBookmark(post)}>
+            <i className={`fa-${isBookmarked ? 'solid' : 'regular'} fa-bookmark`}></i>
           </div>
         </div>
       </div>

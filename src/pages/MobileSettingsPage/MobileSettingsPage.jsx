@@ -23,7 +23,7 @@ import { Saved } from '../../components/SettingsPage/Pages/Saved/Saved';
 import { Deactivate } from '../../components/SettingsPage/Pages/Deactivate/Deactivate';
 import { Delete } from '../../components/SettingsPage/Pages/Delete/Delete';
 
-export function MobileSettingsPage() {
+export function MobileSettingsPage({savePosts}) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSettings, setCurretSettings] = useState('Profile')
   const contentRef = useRef(null)
@@ -230,7 +230,7 @@ export function MobileSettingsPage() {
             {currentSettings === 'Subscription & Billing' && (<Subscription />)}
             {currentSettings === 'Payment Methods' && (<Payment />)}
             {currentSettings === 'Payout Settings' && (<Payout />)}
-            {currentSettings === 'Saved Post' && (<Saved />)}
+            {currentSettings === 'Saved Post' && (<Saved savePosts={savePosts} />)}
             {currentSettings === 'Deactivate Account' && (<Deactivate />)}
             {currentSettings === 'Delete Account' && (<Delete />)}
           </div>

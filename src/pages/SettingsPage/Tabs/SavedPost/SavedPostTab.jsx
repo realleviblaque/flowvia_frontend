@@ -4,7 +4,7 @@ import { SettingsPageSidebar } from "../../../../components/SettingsPage/Setting
 import './SavedPostTab.css'
 import { Saved } from "../../../../components/SettingsPage/Pages/Saved/Saved";
 
-export function SavedPostTab({all}) {
+export function SavedPostTab({all, savePosts}) {
   return (
     <>
       <SideBar notification={all} />
@@ -18,7 +18,7 @@ export function SavedPostTab({all}) {
                 <p className="head-txt">Saved Posts</p>
                 <p className="txt">Posts you've bookmarked from the feed. Tap the bookmark icon on any post to save it here.</p>
               </div>
-              <Saved />
+              <Saved savePosts={savePosts} />
             </div>
           </div>
         </div>

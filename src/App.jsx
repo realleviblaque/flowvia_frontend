@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { HomePage } from './pages/HomePgae/HomePage'
 import { StatusPage } from './pages/StatusPage/StatusPage'
 import './App.css'
@@ -66,8 +66,111 @@ import { TeamVisibility } from './pages/TeamPage/Pages/Settings/Tabs/Team Visibi
 import { Notification } from './pages/TeamPage/Pages/Settings/Tabs/Notification/Notification'
 import { DangerZone } from './pages/TeamPage/Pages/Settings/Tabs/Danger Zone/DangerZone'
 import { MobileSettingsPage } from './pages/MobileSettingsPage/MobileSettingsPage'
+import { useState } from 'react'
+import dayjs from 'dayjs'
 
 function App() {
+  const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    postId: crypto.randomUUID(),
+    post: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
+    },
+    user: {
+      name: 'Amara Osei',
+      username: 'amaraosei',
+      profile: '/profile.png',
+      accountType: 'Freelancer'
+    },
+    hastags: [{
+      id: crypto.randomUUID(),
+      tags: 'Figma'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'DesignSystem'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'shipping'
+    }],
+    project: {
+      title: 'FinDash Design System',
+      projectType: 'Client Project',
+      category: 'UI Design',
+      phase: 'Phase 3',
+      totalPhase: 4
+    }
+  }, {
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    postId: crypto.randomUUID(),
+    post: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
+    },
+    user: {
+      name: 'Apex Build Co.',
+      username: 'apexbuild',
+      profile: '/profile.png',
+      accountType: 'Recruiter'
+    },
+    job: {
+      title: 'React Developer - Fintech Platform',
+      minBud: 3,
+      maxBud: 8,
+      type: 'Remote',
+      deadline: 'June 20, 2026'
+    }
+  }, {
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    postId: crypto.randomUUID(),
+    post: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
+    },
+    user: {
+      name: 'Tunde Nwosu',
+      username: 'tundenwosu',
+      profile: '/profile.png',
+      accountType: 'Freelancer'
+    },
+    hastags: [{
+      id: crypto.randomUUID(),
+      tags: 'freelance'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'nigeria'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'devlife'
+    }]
+  }, {
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    postId: crypto.randomUUID(),
+    post: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
+      image: '/profile.png'
+    },
+    user: {
+      name: 'Zara Tanaka',
+      username: 'zaratanaka',
+      profile: '/profile.png',
+      accountType: 'Team'
+    },
+    hastags: [{
+      id: crypto.randomUUID(),
+      tags: 'freelance'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'react'
+    }, {
+      id: crypto.randomUUID(),
+      tags: 'growthmindset'
+    }]
+  }])
+  useEffect(() => {
+    localStorage.setItem('savePosts', JSON.stringify(savePosts))
+  }, [savePosts])
   const {all} = notificationCount(Notifications)
   const dialog = useRef(null)
   const plusDialog = useRef(null);
@@ -86,23 +189,126 @@ function App() {
   const isMobile = window.innerWidth < 768;
   return (
     <Routes>
-      <Route path='/' element={<HomePage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-      <Route path='/status' element={<StatusPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-      <Route path='/projects' element={<ProjectPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+      <Route path='/' element={
+        <HomePage 
+          all={all} 
+          dialog={dialog} 
+          plusDialog={plusDialog} 
+          handleDialogOpen={handleDialogOpen} 
+          handleDialogClose={handleDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          savePosts={savePosts}
+          setSavePosts={setSavePosts}
+        />
+      } />
+      <Route path='/status' element={
+        <StatusPage 
+          all={all} 
+          dialog={dialog} 
+          plusDialog={plusDialog} 
+          handleDialogOpen={handleDialogOpen} 
+          handleDialogClose={handleDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+        />
+      } />
+      <Route path='/projects' element={
+        <ProjectPage 
+          all={all} 
+          dialog={dialog} 
+          plusDialog={plusDialog} 
+          handleDialogOpen={handleDialogOpen} 
+          handleDialogClose={handleDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+        />
+      } />
       <Route path='/marketplace' element={<MarketplacePage />}>
-        <Route path='' element={<FreelancerPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-        <Route path='teams' element={<TeamsPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-        <Route path='jobs' element={<JobPage all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+        <Route path='' element={
+          <FreelancerPage 
+            all={all} 
+            dialog={dialog} 
+            plusDialog={plusDialog} 
+            handleDialogOpen={handleDialogOpen} 
+            handleDialogClose={handleDialogClose} 
+            hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+            hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          />
+        } />
+        <Route path='teams' element={
+          <TeamsPage 
+            all={all} 
+            dialog={dialog} 
+            plusDialog={plusDialog} 
+            handleDialogOpen={handleDialogOpen} 
+            handleDialogClose={handleDialogClose} 
+            hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+            hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          />
+        } />
+        <Route path='jobs' element={
+          <JobPage 
+            all={all} 
+            dialog={dialog} 
+            plusDialog={plusDialog} 
+            handleDialogOpen={handleDialogOpen} 
+            handleDialogClose={handleDialogClose} 
+            hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+            hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          />
+        } />
       </Route>
-      <Route path='/messages' element={<MessagePage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
+      <Route path='/messages' element={
+        <MessagePage 
+          all={all} 
+          plusDialog={plusDialog} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+        />
+      } />
       <Route path='/work-circle' element={<WorkCirclePage />}>
-        <Route path='' element={<FreelancerWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
-        <Route path='clients' element={<ClientrWorkCircle all={all} dialog={dialog} plusDialog={plusDialog} handleDialogOpen={handleDialogOpen} handleDialogClose={handleDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} hadnlePlusDialogClose={hadnlePlusDialogClose} />} />
+        <Route path='' element={
+          <FreelancerWorkCircle 
+            all={all} 
+            dialog={dialog} 
+            plusDialog={plusDialog} 
+            handleDialogOpen={handleDialogOpen} 
+            handleDialogClose={handleDialogClose} 
+            hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+            hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          />
+        } />
+        <Route path='clients' element=
+          {<ClientrWorkCircle 
+            all={all} 
+            dialog={dialog} 
+            plusDialog={plusDialog} 
+            handleDialogOpen={handleDialogOpen} 
+            handleDialogClose={handleDialogClose} 
+            hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+            hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          />
+        } />
       </Route>
-      <Route path='/notification' element={<NotificationPage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />} />
-      <Route path='/profile' element={<ProfilePage all={all} plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} hadnlePlusDialogOpen={hadnlePlusDialogOpen} />}  />
+      <Route path='/notification' element={
+        <NotificationPage 
+          all={all} 
+          plusDialog={plusDialog} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+        />
+      } />
+      <Route path='/profile' element={
+        <ProfilePage 
+          all={all} 
+          plusDialog={plusDialog} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+        />
+      }  />
       {isMobile ? (
-        <Route path='/settings' element={<MobileSettingsPage />} />
+        <Route path='/settings' element={<MobileSettingsPage savePosts={savePosts} />} />
       ) : (
         <Route path='/settings' element={<SettingsPage />}>
           <Route path='' element={<ProfileTab all={all} />} />
@@ -123,7 +329,7 @@ function App() {
           <Route path='subscription-billing' element={<SubscriptionTab all={all} />} /> 
           <Route path='payment' element={<PaymentTab all={all} />} /> 
           <Route path='payout' element={<PayoutTab all={all} />} /> 
-          <Route path='saved-post' element={<SavedPostTab all={all} />} /> 
+          <Route path='saved-post' element={<SavedPostTab all={all} savePosts={savePosts} />} /> 
           <Route path='deactivate-account' element={<DeactivateTab all={all} />} /> 
           <Route path='delete-account' element={<DeleteTab all={all} />} /> 
         </Route> 

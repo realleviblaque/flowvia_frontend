@@ -7,18 +7,16 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postTime: '09:45 AM',
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '/profile.png',
   postProject: {
     title: 'Nest.js, React.js & PHP Dev Needed ',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    budget: '$400 - $2k',
+    minBud: 400,
+    maxBud: 2,
     deadline: 'June 20, 2026',
   },
-  likes: 312,
-  liked: false,
-  comment: 23,
-  share: 15,
-  save: 23
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
   id: crypto.randomUUID(),
   userImg: '/profile.png',
@@ -29,11 +27,9 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
   postImg: '/profile.png',
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
   id: crypto.randomUUID(),
   userImg: '/profile.png',
@@ -43,20 +39,18 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postTime: '09:45 AM',
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '/profile.png',
   postProject: {
     title: 'Full Stack Developer Needed',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    budget: '$400 - $2k',
+    minBud: 400,
+    maxBud: 2,
     deadline: 'June 20, 2026',
   },
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
-  id: '1d',
+  id: crypto.randomUUID,
   userImg: '/profile.png',
   user: 'Levi Blaque',
   username: 'realleviblaque',
@@ -65,11 +59,9 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
   postImg: '',
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
   id: crypto.randomUUID(),
   userImg: '/profile.png',
@@ -79,19 +71,17 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postTime: '09:45 AM',
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '/profile.png',
   postProject: {
     title: 'Full Stack Developer Needed',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
     image: '/profile.png',
-    budget: '$400 - $2k',
+    minBud: 400,
+    maxBud: 2,
     deadline: 'June 20, 2026',
   },
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
   id: crypto.randomUUID(),
   userImg: '/profile.png',
@@ -101,19 +91,17 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postTime: '09:45 AM',
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '',
   postProject: {
     title: 'Full Stack Developer Needed',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
     image: '/profile.png',
-    budget: '$400 - $2k',
+    minBud: 400,
+    maxBud: 2,
     deadline: 'June 20, 2026',
   },
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }, {
   id: crypto.randomUUID(),
   userImg: '/profile.png',
@@ -123,16 +111,18 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postTime: '09:45 AM',
   postDate: 'Febuary 02, 2026',
   postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '/profile.png',
   postProject: {
     title: 'React Native Developer Needed',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    budget: '$400 - $2k',
+    minBud: 400,
+    maxBud: 2,
     deadline: 'June 20, 2026',
   },
-  likes: 213,
-  liked: false,
-  comment: 34,
-  share: 8,
-  save: 33
+  likes: 0,
+  comment: 0,
+  share: 0
 }];
+
+export function savePosts() {
+  localStorage.setItem('post', JSON.stringify(posts))
+}

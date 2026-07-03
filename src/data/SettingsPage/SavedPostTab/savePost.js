@@ -1,10 +1,10 @@
 import dayjs from 'dayjs'
 
-export const SavePost = [{
+export const SavePost = JSON.parse(localStorage.getItem('savePost')) || [{
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  postId: crypto.randomUUID(),
   post: {
-    id: crypto.randomUUID(),
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
   },
   user: {
@@ -33,8 +33,8 @@ export const SavePost = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  postId: crypto.randomUUID(),
   post: {
-    id: crypto.randomUUID(),
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
   },
   user: {
@@ -53,8 +53,8 @@ export const SavePost = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  postId: crypto.randomUUID(),
   post: {
-    id: crypto.randomUUID(),
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
   },
   user: {
@@ -76,8 +76,8 @@ export const SavePost = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  postId: crypto.randomUUID(),
   post: {
-    id: crypto.randomUUID(),
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla delectus blanditiis reiciendis vero deserunt debitis',
     image: '/profile.png'
   },
@@ -98,3 +98,7 @@ export const SavePost = [{
     tags: 'growthmindset'
   }]
 }]
+
+export function saveAllPost() {
+  localStorage.setItem('savePost', JSON.stringify(SavePost));
+}

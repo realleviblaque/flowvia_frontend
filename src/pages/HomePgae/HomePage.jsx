@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { HomePAgeHeader } from "../../components/HomePage/HomepageHeader";
 import { RightSideBar } from "../../components/HomePage/RightSIdeBar";
 import { SideBar } from "../../components/Sidebar";
@@ -11,12 +11,51 @@ import { PlusModal } from "../../components/PlusModal";
 import { MobileHeader } from "../../components/MobileHeader";
 import { HomePageSearch } from "./HomePageSearch";
 
-const homePosts = posts.sort(() => Math.random() - 0.5)
-
-export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
+export function HomePage({
+    all, 
+    handleDialogOpen, 
+    handleDialogClose, 
+    dialog, 
+    hadnlePlusDialogOpen, 
+    hadnlePlusDialogClose, 
+    plusDialog, 
+    savePosts, 
+    setSavePosts,
+  }) {
+  const [allPost, setAllPost] = useState(() => shuffe(posts))
   const [tabsClick, setTabsClick] = useState('all');
   const [openHomeSearch, setOpenHomeSearch] = useState(false)
+  const containerRef = useRef(null)
   const isMobile = window.innerWidth < 768;
+  function shuffe(arr) {
+    return [...arr].sort(() => Math.random() - 0.5)
+  }
+  const handleFilterClick = (tab) => {
+    if (tab === tabsClick) {
+      setAllPost(prev => shuffe(prev))
+      return;
+    }
+
+    setTabsClick(tab);
+    setAllPost(
+      tab === 'all'
+      ? shuffe(posts)
+      : tab === 'project'
+      ? shuffe(posts.filter(p => p.postProject))
+      : shuffe(posts.filter(p => p.accountType.toLowerCase() === tab))
+    )
+
+    if (tabsClick === tab) {
+      setAllPost(allPost.sort(() => Math.random() - 0.5))  
+    }
+  }
+
+  useEffect(() => {
+    containerRef.current?.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [allPost])
   return (
     <>
       <SideBar notification={all} />
@@ -25,23 +64,23 @@ export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadn
       <MobileHeader handleDialogOpen={handleDialogOpen} setOpenHomeSearch={setOpenHomeSearch} />
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="home-main">
-        <div className="home-content">
+        <div className="home-content" ref={containerRef}>
           <div className="home-top-options">
             <div className={`all-post ${tabsClick === 'all' && 'current-post'}`} onClick={() => {
-              setTabsClick('all')
-              }}>All</div>
+              handleFilterClick('all')
+            }}>All</div>
             <div className={`self-post ${tabsClick === 'freelancer' && 'current-post'}`} onClick={() => {
-              setTabsClick('freelancer')
-              }}>Freelancers</div>
+              handleFilterClick('freelancer')
+            }}>Freelancers</div>
             <div className={`teams-post ${tabsClick === 'team' && 'current-post'}`} onClick={() => {
-              setTabsClick('team')
-              }}>Teams</div>
+              handleFilterClick('team')
+            }}>Teams</div>
             <div className={`client-post  ${tabsClick === 'recruiter' && 'current-post'}`} onClick={() => {
-              setTabsClick('recruiter')
-              }}>Recruiter</div>
+              handleFilterClick('recruiter')
+            }}>Recruiters</div>
             <div className={`projects-post ${tabsClick === 'project' && 'current-post'}`} onClick={() => {
-              setTabsClick('project')
-              }}>Projects</div>
+              handleFilterClick('project')
+            }}>Projects</div>
           </div>
           <div className="post-container-input">
             <div className="top-post">
@@ -67,10 +106,10 @@ export function HomePage({all, handleDialogOpen, handleDialogClose, dialog, hadn
           </div>
 
           <div className="content">
-            {homePosts.map((post) => {
+            {allPost.map((post) => {
               return (
                 <Fragment key={post.id}>
-                  <HomePagePost post={post} />
+                  <HomePagePost post={post} savePosts={savePosts} setSavePosts={setSavePosts} />
                 </Fragment>
               )
             })}

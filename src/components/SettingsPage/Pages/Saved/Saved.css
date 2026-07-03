@@ -5,7 +5,7 @@
   .saved-post-container {
     background-color: var(--cards);
     border: 1px solid var(--border);
-    height: fit-content;
+    height: 350px;
     color: var(--pry-text);
     border-radius: 15px;
     font-size: 14px;
@@ -248,6 +248,7 @@
     grid-template-columns: unset;
     gap: 15px;
     .saved-post-container {
+      height: fit-content;
       background-color: transparent;
       border: none;
       border-radius: 0;

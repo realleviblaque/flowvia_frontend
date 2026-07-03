@@ -1,10 +1,9 @@
-import { SavePost } from "../../../../data/SettingsPage/SavedPostTab/savePost"
 import './Saved.css'
 
-export function Saved() {
+export function Saved({savePosts}) {
   return (
     <div className="save-post-content">
-      {SavePost.map((post) => {
+      {savePosts.map((post) => {
         return (
           <div key={post.id} className="saved-post-container">
             <div className="top">
@@ -23,7 +22,9 @@ export function Saved() {
               <i className="fa-solid fa-bookmark"></i>
             </div>
             <div className="middle">
-              <p className="text">{post.post.text}</p>
+              {post.post.text && (
+                <p className="text">{post.post.text}</p>
+              )}
               {post.post.image && (
                 <img src={post.post.image} className="post-img" />
               )}

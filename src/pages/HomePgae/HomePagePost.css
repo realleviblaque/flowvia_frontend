@@ -236,7 +236,7 @@
     align-items: center;
     padding: 0 15px;
     padding-top: 15px;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--hover-border);
     .react-wrap {
       display: flex;
       justify-content: left;
@@ -277,6 +277,11 @@
         i {
           color: var(--secondary-text);
           font-size: 13px;
+        }
+        &.bookmarked {
+          i {
+            color: var(--pry-text);
+          }
         }
       }
     }
@@ -451,6 +456,7 @@
     .footer-post {
       padding: 0 10px;
       padding-top: 15px;
+      border-color: var(--border);
       .react-wrap {
         div {
           gap: 5px;

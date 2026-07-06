@@ -72,12 +72,12 @@ export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
     }
   }
   return (
-    <div className="post-container" onClick={() => handlePostView(post)}>
+    <div className="post-container">
       <div className="post-header">
         <div className="left">
           <img className="post-user-profile" src={post.userImg} />
         </div>
-        <div className="middle">
+        <div className="middle" onClick={() => handlePostView(post)}>
           <div className="post-info-top">
             <p className="name">{post.user}</p>
             <div className={`badge ${checkAccountType(post)}`}>{post.accountType}</div>
@@ -97,7 +97,7 @@ export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
         </div>
       </div>
       <div className="post-body">
-        <p className="body-text">
+        <p className="body-text" onClick={() => handlePostView(post)}>
           {post.postText}
         </p>
         {post.postProject ? '' : post.postImg && (
@@ -141,9 +141,9 @@ export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
             <i className={`fa-${liked ? 'solid' : 'regular'} fa-heart`}></i>
             <p className="like-count">{post.likes}</p>
           </div>
-          <div>
+          <div onClick={() => handlePostView(post)}>
             <i className="fa-regular fa-comment"></i>
-            <p className="comment-count">{post.comment}</p>
+            <p className="comment-count">{post.comments.length}</p>
           </div>
           <div>
             <i className="fa-solid fa-share-alt"></i>

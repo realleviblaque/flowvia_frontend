@@ -2,12 +2,14 @@ import { SideBar } from "../../components/Sidebar";
 import { useNavigate, useParams } from "react-router-dom";
 import { posts } from "../../data/HomePage/posts";
 import { checkAccountType } from "../../utils/checkAccountType";
-import { Fragment, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import dayjs from "dayjs";
 import './FullPost.css'
 import { RightSideBar } from "../../components/HomePage/RightSIdeBar";
+import { PostComment } from "./PostComment";
 
 export function FullPost({all, savePosts, setSavePosts}) {
+  /*
   const [comments, setComments] = useState([{
     id: crypto.randomUUID(),
     user: {
@@ -20,36 +22,43 @@ export function FullPost({all, savePosts, setSavePosts}) {
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
+    likes: 0,
   }, {
     id: crypto.randomUUID(),
     user: {
       profile: '/profile.png',
       name: 'Levi Blaque',
-      username: 'realleviblaque',
+      username: 'levieteam',
       accountType: 'Team'
     },
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
     date: '4h',
-    img: '/profile.png'
+    img: '/profile.png',
+    likes: 0,
   }, {
     id: crypto.randomUUID(),
     user: {
       profile: '/profile.png',
       name: 'Levi Blaque',
-      username: 'realleviblaque',
+      username: 'leecruiter',
       accountType: 'Recruiter'
     },
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
+    likes: 0,
   }]);
-  setComments
+  */
+  
   const { username, id } = useParams();
   const post = posts?.find(p => p.id === id && p.username === username);
   const [liked, setLiked] = useState(false);
   const isBookmarked = savePosts.some(item => item.postId === post?.id);
   const navigate = useNavigate();
+  const commentRef = useRef(null)
+  const [commentValue, setCommentValue] = useState('')
+  const [reply, setReply] = useState('')
 
   const handleLikeClick = (post) => {
     if (liked) {
@@ -60,7 +69,6 @@ export function FullPost({all, savePosts, setSavePosts}) {
       setLiked(true)
     }
   }
-
   const handleBookmark = (post) => {
     const exists = savePosts.some(prev => prev.postId === post.id);
     if (exists) {
@@ -115,6 +123,47 @@ export function FullPost({all, savePosts, setSavePosts}) {
       ])
     }
   }
+  const handleComment = (e) => {
+    const value = e.target.value;
+    setCommentValue(value)
+  }
+  const handleCommentInput = () => {
+    const input = commentRef.current;
+    input.style.height = '18px'
+    input.style.height = (input.scrollHeight) + 'px'
+    if (input.scrollHeight > 200) {
+      input.style.height = '200px';
+    }
+  }
+  const handleCommentSend = (comment) => {
+    if (commentValue.trim()) {
+      const newComment = {
+        id: crypto.randomUUID(),
+        createdAt: dayjs().toISOString(),
+        user: {
+          profile: '/profile.png',
+          name: 'Levi Blaque',
+          username: 'realleviblaque',
+          accountType: 'Freelancer'
+        },
+        text: commentValue.trim(),
+        date: '4h',
+        likes: 0,
+      }
+
+      /* setComments((prev) => [
+        newComment,
+        ...prev
+      ]) */
+      comment.unshift(newComment);
+
+      setCommentValue('')
+      commentRef.current.style.height = '28px'
+    }
+  }
+  const handleReply = (e) => {
+    setReply(e.user.username)
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -122,7 +171,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
         <i className="fa-solid fa-chevron-left" onClick={() => navigate(-1)}></i>
         <p>Posts</p>
       </header>
-      <main className={`full-post-main ${!post && 'no-post'}`}>
+      <main className={`full-post-main ${!post && 'no-post'} ${reply.trim() !== '' ? 'add-new' : ''}`}>
         {!post && (
           <div>
             <i className="fa-solid fa-exclamation-triangle"></i>
@@ -205,7 +254,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
                     </div>
                     <div>
                       <i className="fa-regular fa-comment"></i>
-                      <p className="comment-count">{comments.length}</p>
+                      <p className="comment-count">{post.comments.length}</p>
                     </div>
                     <div>
                       <i className="fa-solid fa-share-alt"></i>
@@ -218,61 +267,38 @@ export function FullPost({all, savePosts, setSavePosts}) {
                     </div>
                   </div>
                 </div>
-                <div className="downside">
-                  <div className={`comment-container ${comments.length === 0 && 'no-comment'}`}>
-                    {comments.length === 0 && (
+                <div className={`downside ${reply.trim() !== '' ? 'add-new' : ''}`}>
+                  <div className={`comment-container ${post.comments.length === 0 && 'no-comment'}`}>
+                    {post.comments.length === 0 && (
                       <div>
                         <i className="fa-solid fa-comment-slash"></i>
                         <p>No comments yet. Be the first to comment!</p>
                       </div>
                     )}
-                    {comments.length > 0 && (
-                      comments.map((comment) => {
+                    {post.comments.length > 0 && (
+                      post.comments.map((comment) => {
                         return (
-                          <div className="comment-wrapper" key={comment.id}>
-                            <div className="comment-left">
-                              <img src={comment.user.profile} />
-                            </div>
-                            <div className="comment-right">
-                              <div className="comment-top">
-                                <div className="middle">
-                                  <p className="name">{comment.user.name}</p>
-                                  <div className={`badge ${checkAccountType(comment.user)}`}>{comment.user.accountType}</div>
-                                  <span></span>
-                                  <p className="post-time">{comment.date}</p>
-                                </div>
-                                <div className="post-option">
-                                  <i className="fa-solid fa-ellipsis-v"></i>
-                                </div>
-                              </div>
-                              <div className="comment-bottom">
-                                {comment.img && (
-                                <img src={comment.img} />
-                                )}
-                                <p className="text">{comment.text}</p>
-                              </div>
-                              <div className="comment-action">
-                                <div className="left">
-                                  <p className="reply">Reply</p>
-                                  <span>
-                                    <i className="fa-solid fa-heart"></i>
-                                    <p>11</p>
-                                  </span>
-                                </div>
-                                <div className="right">
-                                  <i className="fa-regular fa-heart"></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <Fragment key={comment.id}>
+                            <PostComment comment={comment} handleReply={handleReply} />
+                          </Fragment>
                         )
                       })
                     )}
                   </div>
                   <div className="comment-input-wrap">
-                    <i className="fa-solid fa-image"></i>
-                    <textarea placeholder="Write a comment..."></textarea>
-                    <i className="fa-solid fa-paper-plane"></i>
+                    <div className="top">
+                      {reply.trim() === '' ? '' : (
+                        <div className="reply-cover">
+                          <p>Replying to <span>@{reply.trim()}</span></p>
+                          <i className="fa-solid fa-x" onClick={() => setReply('')}></i>
+                        </div>
+                      )}
+                    </div>
+                    <div className="bottom">
+                      <i className="fa-solid fa-image"></i>
+                      <textarea placeholder="Write a comment..." ref={commentRef} value={commentValue} onChange={handleComment} onInput={handleCommentInput} ></textarea>
+                      <i className={`fa-solid fa-paper-plane ${commentValue.trim() && 'active'}`} onClick={() => handleCommentSend(post.comments)}></i>
+                    </div>
                   </div>
                 </div>
               </div>

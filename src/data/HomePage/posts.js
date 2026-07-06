@@ -50,7 +50,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   comment: 0,
   share: 0
 }, {
-  id: crypto.randomUUID,
+  id: crypto.randomUUID(),
   userImg: '/profile.png',
   user: 'Levi Blaque',
   username: 'realleviblaque',

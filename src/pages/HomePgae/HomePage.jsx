@@ -21,6 +21,7 @@ export function HomePage({
     plusDialog, 
     savePosts, 
     setSavePosts,
+    handlePostView
   }) {
   const [allPost, setAllPost] = useState(() => shuffe(posts))
   const [tabsClick, setTabsClick] = useState('all');
@@ -109,7 +110,7 @@ export function HomePage({
             {allPost.map((post) => {
               return (
                 <Fragment key={post.id}>
-                  <HomePagePost post={post} savePosts={savePosts} setSavePosts={setSavePosts} />
+                  <HomePagePost post={post} savePosts={savePosts} setSavePosts={setSavePosts} handlePostView={handlePostView} />
                 </Fragment>
               )
             })}

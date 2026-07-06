@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { HomePage } from './pages/HomePgae/HomePage'
 import { StatusPage } from './pages/StatusPage/StatusPage'
@@ -68,6 +68,7 @@ import { DangerZone } from './pages/TeamPage/Pages/Settings/Tabs/Danger Zone/Dan
 import { MobileSettingsPage } from './pages/MobileSettingsPage/MobileSettingsPage'
 import { useState } from 'react'
 import dayjs from 'dayjs'
+import { FullPost } from './pages/ViewPost/FullPost'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -171,6 +172,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem('savePosts', JSON.stringify(savePosts))
   }, [savePosts])
+  const navigate = useNavigate()
   const {all} = notificationCount(Notifications)
   const dialog = useRef(null)
   const plusDialog = useRef(null);
@@ -186,6 +188,10 @@ function App() {
   const hadnlePlusDialogClose = () => {
     plusDialog.current.close();
   }
+  const handlePostView = (post) => {
+    const {id, username} = post;
+    navigate(`/post/${username}/${id}`)
+  }
   const isMobile = window.innerWidth < 768;
   return (
     <Routes>
@@ -200,8 +206,10 @@ function App() {
           hadnlePlusDialogClose={hadnlePlusDialogClose} 
           savePosts={savePosts}
           setSavePosts={setSavePosts}
+          handlePostView={handlePostView}
         />
       } />
+      <Route path='/post/:username/:id' element={<FullPost all={all} savePosts={savePosts} setSavePosts={setSavePosts} />} />
       <Route path='/status' element={
         <StatusPage 
           all={all} 

@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  cursor: pointer;
   .post-header {
     display: flex;
     justify-content: left;
@@ -127,6 +128,11 @@
       font-size: 15px;
       color: var(--secondary-text);
       line-height: 20px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 8;
+      line-clamp: 8;
+      overflow: hidden;
     }
     .body-image {
       height: 200px;

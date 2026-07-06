@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { checkAccountType } from '../../utils/checkAccountType'
 import './HomePagePost.css'
 import dayjs from 'dayjs';
 
-export function HomePagePost({post, savePosts, setSavePosts}) {
+export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
   const [liked, setLiked] = useState(false);
   const isBookmarked = savePosts.some(item => item.postId === post.id);
 
@@ -72,7 +72,7 @@ export function HomePagePost({post, savePosts, setSavePosts}) {
     }
   }
   return (
-    <div className="post-container">
+    <div className="post-container" onClick={() => handlePostView(post)}>
       <div className="post-header">
         <div className="left">
           <img className="post-user-profile" src={post.userImg} />

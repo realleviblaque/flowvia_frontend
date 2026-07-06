@@ -19,7 +19,7 @@ export function SideBar({notification}) {
             </Link>
           </div>
           <ul className="main-ul">
-            <NavLink className='nav-link' to='/'>
+            <NavLink className={`nav-link ${statusActive('/post' ,location.pathname) ? 'active' : ''}`} to='/'>
               <i className='fa-solid fa-house'></i>
               Home
             </NavLink>

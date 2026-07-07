@@ -69,6 +69,7 @@ import { MobileSettingsPage } from './pages/MobileSettingsPage/MobileSettingsPag
 import { useState } from 'react'
 import dayjs from 'dayjs'
 import { FullPost } from './pages/ViewPost/FullPost'
+import { UserProfile } from './pages/User Profile/UserProfile'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -315,6 +316,14 @@ function App() {
           hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
         />
       }  />
+      <Route path='/user/:username' element={
+        <UserProfile
+          all={all}
+          plusDialog={plusDialog}
+          hadnlePlusDialogOpen={hadnlePlusDialogOpen} 
+          hadnlePlusDialogClose={hadnlePlusDialogClose} 
+        />
+      } />
       {isMobile ? (
         <Route path='/settings' element={<MobileSettingsPage savePosts={savePosts} />} />
       ) : (

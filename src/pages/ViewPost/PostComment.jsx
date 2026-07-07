@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { checkAccountType } from "../../utils/checkAccountType";
+import { useNavigate } from "react-router-dom";
 
 export function PostComment({comment, handleReply}) {
   const [liked, setLiked] = useState(false);
+  const navigate = useNavigate();
   const handleCommentLike = (com) => {
     if (liked) {
       com.likes -= 1;
@@ -14,7 +16,7 @@ export function PostComment({comment, handleReply}) {
   }
   return (
     <div className="comment-wrapper">
-      <div className="comment-left">
+      <div className="comment-left"  onClick={() => navigate(`/user/${comment.user.username}`)}>
         <img src={comment.user.profile} />
       </div>
       <div className="comment-right">

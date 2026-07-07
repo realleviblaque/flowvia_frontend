@@ -35,6 +35,10 @@ export function AccountInfo() {
       </div>
       <div className="info-wrap">
         <div className="wrap">
+          <p className="head-txt">Additional Title</p>
+          <input type="text" placeholder='Enter your additional title...' />
+        </div>
+        <div className="wrap">
           <p className="head-txt">Country</p>
           <div className="country">Nigeria</div>
         </div>

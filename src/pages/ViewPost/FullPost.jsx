@@ -184,7 +184,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
               <div className="post-view-container">
                 <div className="upside">
                   <div className="post-header">
-                    <div className="left">
+                    <div className="left" onClick={() => navigate(`/user/${post.username}`)}>
                       <img className="post-user-profile" src={post.userImg} />
                     </div>
                     <div className="middle">

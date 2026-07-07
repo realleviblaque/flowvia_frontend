@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { checkAccountType } from '../../utils/checkAccountType'
 import './HomePagePost.css'
 import dayjs from 'dayjs';
+import { useNavigate } from 'react-router-dom';
 
 export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
   const [liked, setLiked] = useState(false);
   const isBookmarked = savePosts.some(item => item.postId === post.id);
+  const naviagte = useNavigate();
 
   const handleLikeClick = (post) => {
     if (liked) {
@@ -74,7 +76,7 @@ export function HomePagePost({post, savePosts, setSavePosts, handlePostView}) {
   return (
     <div className="post-container">
       <div className="post-header">
-        <div className="left">
+        <div className="left" onClick={() => naviagte(`/user/${post.username}`)}>
           <img className="post-user-profile" src={post.userImg} />
         </div>
         <div className="middle" onClick={() => handlePostView(post)}>

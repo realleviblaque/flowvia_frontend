@@ -18,6 +18,13 @@
       font-size: 13px;
       color: var(--mutetd-tetx);
     }
+    .cancel {
+      font-size: 12px;
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
     input {
       height: 100%;
       flex: 1;
@@ -26,6 +33,9 @@
       outline: none;
       border: none;
       color: var(--secondary-text);
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
       &::placeholder {
         color: var(--mutetd-tetx);
       }

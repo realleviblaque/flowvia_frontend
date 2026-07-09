@@ -1,12 +1,45 @@
+import { useSearchParams } from 'react-router-dom'
 import './MarketplacePageHeader.css'
+import { useEffect, useState } from 'react';
 
 export function MarketplacePageHeader({type}) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get('search') || '')
+  useEffect(() => {
+    const inputSet = () => {
+      setSearch(searchParams.get('search') || '')
+    }
+    inputSet();
+  }, [searchParams])
+  const handleInput = (e) => {
+    setSearch(e.target.value)
+  }
+  const handleKeydown = (e) => {
+    if (search.trim()) {
+      if (e.key === 'Enter') {
+        handleSearch();
+      }
+    }
+    if (e.key === 'Escape') {
+      setSearch('')
+      setSearchParams({
+        search: ''
+      })
+    }
+  }
+  const handleSearch = () => {
+    if (search.trim()) {
+      setSearchParams({
+        search: search.trim()
+      })
+    }
+  }
   return (
     <header className='marketplace-header'>
       <div className="top">
         <p>Marketplace</p>
-        <input type="text" placeholder="Search talent, teams or jobs..." id="search-input" />
-        <button className="search-btn">Search</button>
+        <input type="text" placeholder="Search talent, teams or jobs..." id="search-input" value={search} onInput={(e) => handleInput(e)} onKeyDown={(e) => handleKeydown(e)} />
+        <button className="search-btn" onClick={handleSearch}>Search</button>
       </div>
       <div className="bottom">
         {type === 'freelancer' && (

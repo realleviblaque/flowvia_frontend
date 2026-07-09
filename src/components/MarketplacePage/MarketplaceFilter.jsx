@@ -1,13 +1,50 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import './MarketplaceFilter.css'
+import { useEffect, useState } from 'react';
 
 export function MarketplaceFilter() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get('search') || '')
   const location = useLocation();
+  useEffect(() => {
+    const inputSet = () => {
+      setSearch(searchParams.get('search') || '')
+    }
+    inputSet();
+  }, [searchParams])
+  const handleInput = (e) => {
+    setSearch(e.target.value)
+  }
+  const handleKeydown = (e) => {
+    if (search.trim()) {
+      if (e.key === 'Enter') {
+        handleSearch();
+      }
+    }
+    if (e.key === 'Escape') {
+      setSearch('')
+    }
+  }
+  const handleSearch = () => {
+    if (search.trim()) {
+      setSearchParams({
+        search: search.trim()
+      })
+    }
+  }
+  const handleCancle = () => {
+    setSearch('')
+    setSearchParams({
+      search: ''
+    })
+
+  }
   return (
     <div className="marketplace-filter">
       <div className="search">
         <i className="fa-solid fa-search"></i>
-        <input type="search" placeholder={`Search ${location.pathname === '/marketplace' ? 'freelancers' :location.pathname === '/marketplace/teams' ? 'teams' :location.pathname === '/marketplace/jobs' ? 'jobs' : ''}, ${location.pathname === '/marketplace/jobs' ? 'opportunities' : 'skills'}...`} />
+        <input type="search" placeholder={`Search ${location.pathname === '/marketplace' ? 'freelancers' :location.pathname === '/marketplace/teams' ? 'teams' :location.pathname === '/marketplace/jobs' ? 'jobs' : ''}, ${location.pathname === '/marketplace/jobs' ? 'opportunities' : 'skills'}...`} value={search} onInput={(e) => handleInput(e)} onKeyDown={(e) => handleKeydown(e)} />
+        <i className={`fa-solid fa-x cancel ${search && 'show'}`} onClick={handleCancle}></i>
       </div>
       <div className="filter">
         {location.pathname === '/marketplace' && (

@@ -1,5 +1,15 @@
 .team-tab-section {
   padding: 10px 20px 10px 30px;
+  .not-found-wrapper {
+    height: calc(100vh - 280px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 16px;
+      color: var(--pry-text);
+    }
+  }
   .team-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

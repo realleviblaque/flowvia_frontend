@@ -10,6 +10,7 @@ import { Modal } from "../../components/Modal";
 import { PlusModal } from "../../components/PlusModal";
 import { MobileHeader } from "../../components/MobileHeader";
 import { HomePageSearch } from "./HomePageSearch";
+import { useNavigate } from "react-router-dom";
 
 export function HomePage({
     all, 
@@ -27,6 +28,7 @@ export function HomePage({
   const [tabsClick, setTabsClick] = useState('all');
   const [openHomeSearch, setOpenHomeSearch] = useState(false)
   const containerRef = useRef(null)
+  const navigate = useNavigate();
   const isMobile = window.innerWidth < 768;
   function shuffe(arr) {
     return [...arr].sort(() => Math.random() - 0.5)
@@ -57,6 +59,9 @@ export function HomePage({
       behavior: 'smooth'
     })
   }, [allPost])
+  const goToCreatePost = () => {
+    navigate('/create/post')
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -88,20 +93,20 @@ export function HomePage({
               <div className="prof-wrap">
                 <img src="/profile.png" />
               </div>
-              <div className="post-input-btn">
+              <div className="post-input-btn" onClick={goToCreatePost}>
                 Share an update...
               </div>
               <div className="phone-options">
-                <i className="fa-solid fa-image"></i>
-                <i className="fa-solid fa-pencil"></i>
+                <i className="fa-solid fa-image" onClick={goToCreatePost}></i>
+                <i className="fa-solid fa-pencil" onClick={goToCreatePost}></i>
               </div>
             </div>
             <div className="bottom-post">
-              <div className="left-image-btn">
+              <div className="left-image-btn" onClick={goToCreatePost}>
                 <i className="fa-solid fa-image"></i>
               </div>
               <div className="right-post-btn">
-                <button>Post</button>
+                <button onClick={goToCreatePost}>Post</button>
               </div>
             </div>
           </div>

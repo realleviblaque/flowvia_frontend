@@ -131,6 +131,9 @@ body {
   color: var(--pry-text);
   background-color: var(--bg);
 }
+textarea {
+  font-family: Arial;
+}
 main {
   background-color: var(--bg);
   margin-left: 265px;

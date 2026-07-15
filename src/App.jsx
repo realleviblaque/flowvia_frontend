@@ -70,6 +70,7 @@ import { useState } from 'react'
 import dayjs from 'dayjs'
 import { FullPost } from './pages/ViewPost/FullPost'
 import { UserProfile } from './pages/User Profile/UserProfile'
+import { CreatePost } from './pages/CreatePost/CreatePost'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -210,6 +211,7 @@ function App() {
           handlePostView={handlePostView}
         />
       } />
+      <Route path='/create/post' element={<CreatePost all={all} />} />
       <Route path='/post/:username/:id' element={<FullPost all={all} savePosts={savePosts} setSavePosts={setSavePosts} />} />
       <Route path='/status' element={
         <StatusPage 

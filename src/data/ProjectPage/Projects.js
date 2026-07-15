@@ -1,4 +1,4 @@
-export let Projects = [{
+export const Projects = [{
   id: crypto.randomUUID(),
   img: '../src/images/file_0000000076d061f4aa69bd6aa79bafc0.png',
   name: 'Building E-Commerce Website Landing Page',

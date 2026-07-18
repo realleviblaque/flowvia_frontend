@@ -126,8 +126,6 @@ export function CreatePost({all}) {
       if (projectOpportunity.length > 0) {
         newPost.postOpportunity = [...projectOpportunity]
       }
-
-      console.log(newPost)
       setText('');
       setAttachPost('')
       setTags([]);

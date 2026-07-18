@@ -3,6 +3,7 @@ import { SideBar } from "../../components/Sidebar";
 import './CreatePost.css'
 import { useNavigate } from "react-router-dom";
 import { Projects } from "../../data/ProjectPage/Projects";
+import dayjs from 'dayjs';
 
 export function CreatePost({all}) {
   const [text, setText] = useState('');
@@ -96,6 +97,47 @@ export function CreatePost({all}) {
     }])
     opportunityDialogRef.current.close();
   }
+  const handlePostNow = () => {
+    if (postNow) {
+      const newPost = {
+        id: crypto.randomUUID(),
+        createdAt: dayjs().toISOString(),
+        audience,
+        sender: {
+          id: crypto.randomUUID(),
+          name: 'Levi Blaque',
+          username: 'realleviblaque',
+          profileImg: '/profile.png',
+          accountType: 'Freelancer'
+        },
+        comment: [],
+        likes: [],
+        share: [],
+      }
+      if (text.trim()) {
+        newPost.text = text.trim()
+      }
+      if (tags.length > 0) {
+        newPost.tags = [...tags]
+      }
+      if (projectMIlestone.length > 0) {
+        newPost.postMilestone = [...projectMIlestone]
+      }
+      if (projectOpportunity.length > 0) {
+        newPost.postOpportunity = [...projectOpportunity]
+      }
+
+      console.log(newPost)
+      setText('');
+      setAttachPost('')
+      setTags([]);
+      setTag('');
+      setProjectMilestone([]);
+      setProjectOpportunity([]);
+      setPostNow(false)
+      setIsDrafting(false)
+    }
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -113,12 +155,12 @@ export function CreatePost({all}) {
           {isMobile ? (
             <>
               <p className="draft">Draft</p>
-              <button className={`m-post ${postNow && 'm-post-now'}`}>Post</button>
+              <button className={`m-post ${postNow && 'm-post-now'}`} onClick={handlePostNow}>Post</button>
             </>
           ) : (
             <>
               <button className="draft">{isDrafting ? 'Save' : 'View'} Draft</button>
-              <button className={`post ${postNow && 'post-now'}`}><i className="fa-solid fa-paper-plane"></i> Post Now</button>
+              <button className={`post ${postNow && 'post-now'}`}  onClick={handlePostNow}><i className="fa-solid fa-paper-plane"></i> Post Now</button>
             </>
           )}
         </div>

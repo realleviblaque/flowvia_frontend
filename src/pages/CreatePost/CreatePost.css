@@ -398,7 +398,7 @@
         }
       }
       .project-opportunity {
-        height: fit-content;
+        min-height: 283px;
         background-color: var(--cards);
         border: 1px solid var(--blue-border);
         border-radius: 20px;
@@ -997,6 +997,7 @@
           }
         }
         .project-opportunity {
+          min-height: 253px;
           .top-side {
             height: 100px;
             p {

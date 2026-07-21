@@ -31,6 +31,7 @@ export function CreatePost({all}) {
   const tooltipRef2 = useRef(null)
   const [pos1, setPos1] = useState({top: 0, left: 0, right: 0})
   const [pos2, setPos2] = useState({top: 0, left: 0, right: 0})
+  const confirmRef = useRef(null)
   useEffect(() => {
     const handleMilstoneSearch = () => {
       if (milestoneSearch.trim()) {
@@ -195,15 +196,22 @@ export function CreatePost({all}) {
       setShowLink(false)
     }, 2000);
   }
+  const handleGoBackFeed = () => {
+    if (postNow) {
+      confirmRef.current.showModal();
+    } else {
+      navigate('/')
+    }
+  }
   return (
     <>
       <SideBar notification={all} />
       <header className="create-post-header">
         <div className="left">
           {isMobile ? (
-            <i className="fa-solid fa-chevron-left back" onClick={() => navigate('/')}></i>
+            <i className="fa-solid fa-chevron-left back" onClick={handleGoBackFeed}></i>
           ) : (
-            <button onClick={() => navigate('/')}><i className="fa-solid fa-chevron-left"></i> Back to Feed</button>
+            <button onClick={handleGoBackFeed}><i className="fa-solid fa-chevron-left"></i> Back to Feed</button>
           )}
           <span></span>
           <p>Create Post</p>
@@ -588,6 +596,16 @@ export function CreatePost({all}) {
               )
             })
           )}
+        </div>
+      </dialog>
+      <dialog className="confirm-go-back" ref={confirmRef}>
+        <div className="top">
+          <p className="hd-txt">Save Post? <i className="fa-solid fa-x" onClick={() => confirmRef.current.close()}></i></p>
+          <p className="txt">You can save this to send later from your Drafts.</p>
+        </div>
+        <div className="action">
+          <button onClick={() => navigate('/')}>Delete</button>
+          <button>Save</button>
         </div>
       </dialog>
     </>

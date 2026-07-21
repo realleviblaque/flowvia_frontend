@@ -20,7 +20,32 @@ export function CreatePost({all}) {
   const projectDialogRef = useRef(null);
   const opportunityDialogRef = useRef(null);
   const [postNow, setPostNow] = useState(false);
-  const [isDrafting, setIsDrafting] = useState(false)
+  const [isDrafting, setIsDrafting] = useState(false);
+  const [milestoneSearch, setMilestoneSearch] = useState('');
+  const [opportunitySearch, setOpportunitySearch] = useState('');
+  const [allProjectMilestone, setAllProjectMilestone] = useState(Projects)
+  const [allProjectOpportunity, setAllProjectOpportunity] = useState(Projects)
+  useEffect(() => {
+    const handleMilstoneSearch = () => {
+      if (milestoneSearch.trim()) {
+        const searchResult = Projects.filter(p => p.name.toLowerCase().includes(milestoneSearch.trim().toLowerCase()));
+        setAllProjectMilestone(searchResult)
+      } else {
+        setAllProjectMilestone(Projects)
+      }
+    }
+    const handleOpportunitySearch = () => {
+      if (opportunitySearch.trim()) {
+        const searchResult = Projects.filter(p => p.name.toLowerCase().includes(opportunitySearch.trim().toLowerCase()));
+        setAllProjectOpportunity(searchResult)
+      } else {
+        setAllProjectOpportunity(Projects)
+      }
+    }
+
+    handleMilstoneSearch();
+    handleOpportunitySearch();
+  })
   useEffect(() => {
     function handleChange() {
       if (attachPost === 'milestone') {
@@ -89,6 +114,7 @@ export function CreatePost({all}) {
       title: project.name
     }])
     projectDialogRef.current.close();
+    setMilestoneSearch('')
   }
   const handleOpportunotyClick = (project) => {
     setProjectOpportunity([{
@@ -96,6 +122,7 @@ export function CreatePost({all}) {
       title: project.name
     }])
     opportunityDialogRef.current.close();
+    setOpportunitySearch('')
   }
   const handlePostNow = () => {
     if (postNow) {
@@ -432,32 +459,43 @@ export function CreatePost({all}) {
         </div>
         <div className="middle">
           <i className="fa-solid fa-search"></i>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search..." value={milestoneSearch} onInput={(e) => setMilestoneSearch(e.target.value)} />
         </div>
         <div className="bottom">
-          {Projects.map((project) => {
-            return (
-              project.projectType !== 'Public Project' && (
-                <div key={project.id} className="project-container" onClick={handleProjectClick}>
-                  <div className="left">
-                    <p>{project.projectType === 'Personal Project' ? 'Personal' : 'Client'}</p>
-                  </div>
-                  <div className="right">
-                    <p className="title">{project.name}</p>
-                    <div className="preogress-details">
-                      <div className="progress-bar">
-                        <span className="bar"></span>
-                      </div>
-                      <div className="count-phase">
-                        <p className="phase-count">Phase 2 / {project.totalPhase} complete</p>
-                        <p className="percent-count">40%</p>
+          {allProjectMilestone.length === 0 && (
+            <>
+              <div className="not-found">
+                <p>
+                  {milestoneSearch.trim() ? `No result found for "${milestoneSearch.trim()}"` : 'No Available Job'}
+                </p>
+              </div>
+            </>
+          )}
+          {allProjectMilestone.length > 0 && (
+            allProjectMilestone.map((project) => {
+              return (
+                project.projectType !== 'Public Project' && (
+                  <div key={project.id} className="project-container" onClick={handleProjectClick}>
+                    <div className="left">
+                      <p>{project.projectType === 'Personal Project' ? 'Personal' : 'Client'}</p>
+                    </div>
+                    <div className="right">
+                      <p className="title">{project.name}</p>
+                      <div className="preogress-details">
+                        <div className="progress-bar">
+                          <span className="bar"></span>
+                        </div>
+                        <div className="count-phase">
+                          <p className="phase-count">Phase 2 / {project.totalPhase} complete</p>
+                          <p className="percent-count">40%</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                )
               )
-            )
-          })}
+            })
+          )}
         </div>
       </dialog>
       <dialog className="opportunity-dialog" ref={opportunityDialogRef}>
@@ -474,27 +512,38 @@ export function CreatePost({all}) {
         </div>
         <div className="middle">
           <i className="fa-solid fa-search"></i>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search..." value={opportunitySearch} onInput={(e) => setOpportunitySearch(e.target.value)} />
         </div>
         <div className="bottom">
-          {Projects.map((project) => {
-            return (
-              project.projectType !== 'Public Project' && (
-                <div key={project.id} className="project-container" onClick={handleOpportunotyClick}>
-                  <div className="left">
-                    
-                  </div>
-                  <div className="right">
-                    <p className="title">{project.name}</p>
-                    <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero nam voluptatum quae illo alias! Ipsa, deleniti voluptatum numquam expedita quaerat excepturi! Nisi id repudiandae consectetur mollitia blanditiis, quisquam assumenda!</p>
-                    <div className="extra-info">
-                      <p className="details">Remote <span></span> Long-Term Contract</p>
+          {allProjectOpportunity.length === 0 && (
+            <>
+              <div className="not-found">
+                <p>
+                  {opportunitySearch.trim() ? `No result found for "${opportunitySearch.trim()}"` : 'No Available Job'}
+                </p>
+              </div>
+            </>
+          )}
+          {allProjectOpportunity.length > 0 && (
+            allProjectOpportunity.map((project) => {
+              return (
+                project.projectType !== 'Public Project' && (
+                  <div key={project.id} className="project-container" onClick={handleOpportunotyClick}>
+                    <div className="left">
+                      
+                    </div>
+                    <div className="right">
+                      <p className="title">{project.name}</p>
+                      <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero nam voluptatum quae illo alias! Ipsa, deleniti voluptatum numquam expedita quaerat excepturi! Nisi id repudiandae consectetur mollitia blanditiis, quisquam assumenda!</p>
+                      <div className="extra-info">
+                        <p className="details">Remote <span></span> Long-Term Contract</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )
               )
-            )
-          })}
+            })
+          )}
         </div>
       </dialog>
     </>

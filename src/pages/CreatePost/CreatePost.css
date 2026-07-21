@@ -910,6 +910,17 @@
         }
       }
     }
+    .not-found {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 70px;
+      p {
+        font-size: 14px;
+        color: var(--secondary-text);
+      }
+    }
   }
 }
 .project-milestone-dialog[open] {
@@ -1047,6 +1058,17 @@
             }
           }
         }
+      }
+    }
+    .not-found {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 70px;
+      p {
+        font-size: 14px;
+        color: var(--secondary-text);
       }
     }
   }

@@ -565,6 +565,36 @@
             background-color: var(--blue-bg);
             color: var(--accent-blue);
           }
+          .coming-soon {
+            flex-shrink: 0;
+            background-color: var(--coral-bg);
+            border: 1px solid var(--coral-border);
+            color: var(--coral);
+            height: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 0.2s, transform 0.2s;
+            pointer-events: none;
+            font-size: 11px;
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: -8px;
+              left: 40px;
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-top: 8px solid var(--coral-border);
+            }
+            &.show {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
         }
       }
       .right {

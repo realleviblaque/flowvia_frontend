@@ -25,6 +25,12 @@ export function CreatePost({all}) {
   const [opportunitySearch, setOpportunitySearch] = useState('');
   const [allProjectMilestone, setAllProjectMilestone] = useState(Projects)
   const [allProjectOpportunity, setAllProjectOpportunity] = useState(Projects)
+  const [showTag, setShowTag] = useState(false)
+  const [showLink, setShowLink] = useState(false)
+  const tooltipRef1 = useRef(null)
+  const tooltipRef2 = useRef(null)
+  const [pos1, setPos1] = useState({top: 0, left: 0, right: 0})
+  const [pos2, setPos2] = useState({top: 0, left: 0, right: 0})
   useEffect(() => {
     const handleMilstoneSearch = () => {
       if (milestoneSearch.trim()) {
@@ -162,6 +168,32 @@ export function CreatePost({all}) {
       setPostNow(false)
       setIsDrafting(false)
     }
+  }
+  const handleShowTag = () => {
+    const rect = tooltipRef1.current.getBoundingClientRect();
+    setPos1({
+      top: rect.bottom + window.scrollY - 68,
+      left: rect.left + window.scrollX - 10,
+      right: rect.right + window.scrollX
+    })
+    setShowTag(true);
+    setShowLink(false)
+    setTimeout(() => {
+      setShowTag(false)
+    }, 2000);
+  }
+  const handleShowLink = () => {
+    const rect = tooltipRef2.current.getBoundingClientRect();
+    setPos2({
+      top: rect.bottom + window.scrollY - 68,
+      left: rect.left + window.scrollX - 10,
+      right: rect.right + window.scrollX
+    })
+    setShowLink(true);
+    setShowTag(false)
+    setTimeout(() => {
+      setShowLink(false)
+    }, 2000);
   }
   return (
     <>
@@ -321,13 +353,25 @@ export function CreatePost({all}) {
                 <i className="fa-solid fa-laptop"></i>
                 <p>Opportunity</p>
               </div>
-              <div>
+              <div ref={tooltipRef1} onClick={handleShowTag}>
                 <i className="fa-regular fa-user"></i>
                 <p>Tag People</p>
+                <span className={`coming-soon ${showTag && 'show'}`} style={{
+                  position: 'fixed',
+                  top: `${pos1.top}px`,
+                  left: `${pos1.left}px`,
+                  right: `${pos1.right}px`
+                }}>Coming Soon!</span>
               </div>
-              <div>
+              <div ref={tooltipRef2} onClick={handleShowLink}>
                 <i className="fa-solid fa-link"></i>
                 <p>Link</p>
+                <span className={`coming-soon ${showLink && 'show'}`} style={{
+                  position: 'fixed',
+                  top: `${pos2.top}px`,
+                  left: `${pos2.left}px`,
+                  right: `${pos2.right}px`
+                }}>Coming Soon!</span>
               </div>
             </div>
             <div className="right">

@@ -209,7 +209,7 @@ export function CreatePost({all}) {
                 <div className="bottom-side">
                   <div className="title-details">
                     <p className="title">Flowvia - Collaoration Marketplace</p>
-                    <p className="details">Personal Project <span></span> Started Jan 10, 2025</p>
+                    <p className="details">Personal Project <span></span> Started March 1, 2026</p>
                   </div>
                   <div className="preogress-details">
                     <div className="progress-bar">
@@ -310,7 +310,70 @@ export function CreatePost({all}) {
         </div>
         {!isMobile && (
           <div className="post-prev-display-container">
-
+            <div className="card">
+              <div className="top">
+                Audience
+              </div>
+              <div className="bottom">
+                <div className="audi" onClick={() => setAudience('Everyone')}>
+                  <input 
+                    type="radio" 
+                    name="audi-check"
+                    value='Everyone'
+                    checked={audience === 'Everyone'} 
+                    onChange={() => setAudience('Everyone')}
+                  />
+                  <div>
+                    <p className="hd-txt">Everyone</p>
+                    <p className="txt">Visible to all Flowvia users and public</p>
+                  </div>
+                </div>
+                <div className="audi" onClick={() => setAudience('Followers')}>
+                  <input 
+                    type="radio" 
+                    name="audi-check"
+                    value='Followers'
+                    checked={audience === 'Followers'} 
+                    onChange={() => setAudience('Followers')}
+                  />
+                  <div>
+                    <p className="hd-txt">Followers only</p>
+                    <p className="txt">Only people who follow you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="top">
+                Attach to Post
+              </div>
+              <div className="bottom">
+                <div className="types">
+                  <i className="fa-solid fa-table-cells-large left"></i>
+                  <span>
+                    <p className="hd-txt">Project Milestone</p>
+                    <p className="txt">Attach progress from a project</p>
+                  </span>
+                  {projectMIlestone.length > 0 && (<i className="fa-solid fa-circle-check check"></i>)}
+                </div>
+                <div className="types">
+                  <i className="fa-regular fa-image left"></i>
+                  <span>
+                    <p className="hd-txt">Image / Screenshot</p>
+                    <p className="txt">Share a visual from your work</p>
+                  </span>
+                  {attachPost === 'image' && (<i className="fa-solid fa-circle-check check"></i>)}
+                </div>
+                <div className="types">
+                  <i className="fa-solid fa-laptop left"></i>
+                  <span>
+                    <p className="hd-txt">Job Opportunity</p>
+                    <p className="txt">Embed a job post in your update</p>
+                  </span>
+                  {projectOpportunity.length > 0 && (<i className="fa-solid fa-circle-check check"></i>)}
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </main>

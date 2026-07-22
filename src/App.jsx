@@ -71,6 +71,17 @@ import dayjs from 'dayjs'
 import { FullPost } from './pages/ViewPost/FullPost'
 import { UserProfile } from './pages/User Profile/UserProfile'
 import { CreatePost } from './pages/CreatePost/CreatePost'
+import { ActiveProject } from './pages/StatusPage/Work/ActiveProject'
+import { AppliedJob } from './pages/StatusPage/Work/AppliedJob'
+import { BookmarkJob } from './pages/StatusPage/Work/BookmarkJob'
+import { PendingRequest } from './pages/StatusPage/Work/PendingRequest'
+import { CompletedProject } from './pages/StatusPage/Work/CompletedProject'
+import { OpenProject } from './pages/StatusPage/Hire/OpenProject'
+import { InNegotiation } from './pages/StatusPage/Hire/InNegotiation'
+import { TakenProject } from './pages/StatusPage/Hire/TakenProject'
+import { HirePendingRequest } from './pages/StatusPage/Hire/HirePendingRequest'
+import { HireCompletedProject } from './pages/StatusPage/Hire/HireCompletedProject'
+import { CreateJob } from './pages/StatusPage/CreateJob'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -224,6 +235,17 @@ function App() {
           hadnlePlusDialogClose={hadnlePlusDialogClose} 
         />
       } />
+      <Route path='/status/work/active' element={<ActiveProject />} />
+      <Route path='/status/work/applied' element={<AppliedJob />} />
+      <Route path='/status/work/bookmark' element={<BookmarkJob />} />
+      <Route path='/status/work/pending' element={<PendingRequest />} />
+      <Route path='/status/work/completed' element={<CompletedProject />} />
+      <Route path='/status/hire/open' element={<OpenProject />} />
+      <Route path='/status/hire/negotiation' element={<InNegotiation />} />
+      <Route path='/status/hire/taken' element={<TakenProject />} />
+      <Route path='/status/hire/pending' element={<HirePendingRequest />} />
+      <Route path='/status/hire/completed' element={<HireCompletedProject />} />
+      <Route path='/status/create/job' element={<CreateJob />} />
       <Route path='/projects' element={
         <ProjectPage 
           all={all} 

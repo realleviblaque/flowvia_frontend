@@ -166,6 +166,7 @@
           font-size: 15px;
           color: var(--secondary-text);
           line-height: 20px;
+          white-space: pre-wrap;
         }
         .body-image {
           height: 200px;

@@ -134,6 +134,7 @@
       line-clamp: 8;
       overflow: hidden;
       cursor: pointer;
+      white-space: pre-wrap;
     }
     .body-image {
       height: 200px;

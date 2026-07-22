@@ -4,6 +4,7 @@ import './CreatePost.css'
 import { useNavigate } from "react-router-dom";
 import { Projects } from "../../data/ProjectPage/Projects";
 import dayjs from 'dayjs';
+import { posts, savePosts } from "../../data/HomePage/posts";
 
 export function CreatePost({all}) {
   const [text, setText] = useState('');
@@ -168,6 +169,9 @@ export function CreatePost({all}) {
       setProjectOpportunity([]);
       setPostNow(false)
       setIsDrafting(false)
+      posts.push(newPost)
+      savePosts()
+      navigate('/')
     }
   }
   const handleShowTag = () => {

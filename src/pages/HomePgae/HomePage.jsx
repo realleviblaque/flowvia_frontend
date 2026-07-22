@@ -44,8 +44,8 @@ export function HomePage({
       tab === 'all'
       ? shuffe(posts)
       : tab === 'project'
-      ? shuffe(posts.filter(p => p.postProject))
-      : shuffe(posts.filter(p => p.accountType.toLowerCase() === tab))
+      ? shuffe(posts.filter(p => p.postOpportunity || p.postMilestone))
+      : shuffe(posts.filter(p => p.sender.accountType.toLowerCase() === tab))
     )
 
     if (tabsClick === tab) {

@@ -2,14 +2,16 @@ import dayjs from "dayjs";
 
 export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Recruiter',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  comments: [{
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    profileImg: '/profile.png',
+    accountType: 'Freelancer'
+  },
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
@@ -22,55 +24,104 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
-  }, {
+    likes: [],
+  }],
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  postMilestone: [],
+  postOpportunity: [{
+    id: crypto.randomUUID(),
+    title: 'Nest.js, React.js & PHP Dev Needed ',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
+    image: '/profile.png',
+    minBud: 400,
+    maxBud: 2000,
+    deadline: 'June 20, 2026',
+    location: 'remote',
+    projectType: 'Long Term Contract'
+  }],
+  likes: [],
+  share: 0,
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    profileImg: '/profile.png',
+    accountType: 'Freelancer'
+  },
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
       profile: '/profile.png',
       name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
+      username: 'realleviblaque',
+      accountType: 'Freelancer'
     },
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
+    likes: [],
   }],
-  postProject: {
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  postImage: '/profile.png',
+  likes: [],
+  share: [],
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Lee Cruiter',
+    username: 'leecruiter',
+    profileImg: '/profile.png',
+    accountType: 'Recruiter'
+  },
+  comment: [{
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    user: {
+      profile: '/profile.png',
+      name: 'Levi Blaque',
+      username: 'realleviblaque',
+      accountType: 'Freelancer'
+    },
+    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
+    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
+    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
+    date: '4h',
+    likes: [],
+  }],
+  postOpportunity: [{
+    id: crypto.randomUUID(),
     title: 'Nest.js, React.js & PHP Dev Needed ',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
     minBud: 400,
-    maxBud: 2,
+    maxBud: 2000,
     deadline: 'June 20, 2026',
+    location: 'remote',
+    projectType: 'Long Term Contract'
+  }],
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  likes: [],
+  share: [],
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    profileImg: '/profile.png',
+    accountType: 'Recruiter'
   },
-  likes: 0,
-  share: 0
-}, {
-  id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Team',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '/profile.png',
-  comments: [{
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
@@ -83,47 +134,23 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
+    likes: [],
   }],
-  likes: 0,
-  share: 0
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod tot Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod tot',
+  likes: [],
+  share: [],
 }, {
   id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Freelancer',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  comments: [{
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levite Team',
+    username: 'levite',
+    profileImg: '/profile.png',
+    accountType: 'Team'
+  },
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
@@ -136,55 +163,92 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
-  }, {
+    likes: [],
+  }],
+  postImage: '/profile.png',
+  likes: [],
+  share: [],
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    profileImg: '/profile.png',
+    accountType: 'Freelancer'
+  },
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
       profile: '/profile.png',
       name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
+      username: 'realleviblaque',
+      accountType: 'Freelancer'
     },
     text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
+    likes: [],
   }],
-  postProject: {
-    title: 'Full Stack Developer Needed',
+  postImage: '/profile.png',
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  likes: [],
+  share: [],
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    profileImg: '/profile.png',
+    accountType: 'Team'
+  },
+  comment: [{
+    id: crypto.randomUUID(),
+    createdAt: dayjs().toISOString(),
+    user: {
+      profile: '/profile.png',
+      name: 'Levi Blaque',
+      username: 'realleviblaque',
+      accountType: 'Freelancer'
+    },
+    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
+    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
+    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
+    date: '4h',
+    likes: [],
+  }],
+  postOpportunity: [{
+    id: crypto.randomUUID(),
+    title: 'Nest.js, React.js & PHP Dev Needed ',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
     minBud: 400,
-    maxBud: 2,
+    maxBud: 2000,
     deadline: 'June 20, 2026',
-  },
-  likes: 0,
-  share: 0
+    location: 'remote',
+    projectType: 'Long Term Contract'
+  }],
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  likes: [],
+  share: [],
 }, {
   id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Recruiter',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  postImg: '',
-  comments: [{
+  createdAt: dayjs().toISOString(),
+  audience: 'Everyone',
+  sender: {
+    id: crypto.randomUUID(),
+    name: 'Chinoso Chimuanya',
+    username: 'realchinosochimuanaya',
+    profileImg: '/profile.png',
+    accountType: 'Freelancer'
+  },
+  comment: [{
     id: crypto.randomUUID(),
     createdAt: dayjs().toISOString(),
     user: {
@@ -197,219 +261,12 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
     Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
     Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
     date: '4h',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
+    likes: [],
   }],
-  likes: 0,
-  share: 0
-}, {
-  id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Freelancer',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  comments: [{
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'realleviblaque',
-      accountType: 'Freelancer'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }],
-  postProject: {
-    title: 'Full Stack Developer Needed',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    image: '/profile.png',
-    minBud: 400,
-    maxBud: 2,
-    deadline: 'June 20, 2026',
-  },
-  likes: 0,
-  share: 0
-}, {
-  id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Levi Blaque',
-  username: 'realleviblaque',
-  accountType: 'Team',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  comments: [{
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'realleviblaque',
-      accountType: 'Freelancer'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }],
-  postProject: {
-    title: 'Full Stack Developer Needed',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    image: '/profile.png',
-    minBud: 400,
-    maxBud: 2,
-    deadline: 'June 20, 2026',
-  },
-  likes: 0,
-  share: 0
-}, {
-  id: crypto.randomUUID(),
-  userImg: '/profile.png',
-  user: 'Chinoso Chimuanya',
-  username: 'realchinosochimuanaya',
-  accountType: 'Freelancer',
-  postTime: '09:45 AM',
-  postDate: 'Febuary 02, 2026',
-  postText: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-  comments: [{
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'realleviblaque',
-      accountType: 'Freelancer'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'levite',
-      accountType: 'Team'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem re`,
-    date: '4h',
-    img: '/profile.png',
-    likes: 0,
-  }, {
-    id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
-    user: {
-      profile: '/profile.png',
-      name: 'Levi Blaque',
-      username: 'leecruiter',
-      accountType: 'Recruiter'
-    },
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eveniet dolor. Neque eius, alias placeat labore minima temporibus consequuntur accusantium. Exercitationem soluta earum quidem rerum repellendus nemo necessitatibus. Provident, libero!
-    Provident odio asperiores, ea adipisci consequatur totam libero ratione, similique explicabo autem veniam? Eveniet dolorem ipsam harum sed assumenda fugiat rem odio, veritatis dolore id quaerat expedita numquam ut voluptatibus.
-    Autem culpa deserunt quod aliquam natus quis nostrum iste veniam pariatur esse vel, optio sapiente obcaecati aut, quia, fugiat illum voluptatibus deleniti dolore ratione tenetur! Tempora molestiae odit neque molestias?`,
-    date: '4h',
-    likes: 0,
-  }],
-  postProject: {
-    title: 'React Native Developer Needed',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam!',
-    minBud: 400,
-    maxBud: 2,
-    deadline: 'June 20, 2026',
-  },
-  likes: 0,
-  share: 0
+  text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
+  postImage: '/profile.png',
+  likes: [],
+  share: [],
 }];
 
 export function savePosts() {

@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import './FullPost.css'
 import { RightSideBar } from "../../components/HomePage/RightSIdeBar";
 import { PostComment } from "./PostComment";
+import formatBudet from "../../utils/formatBudget";
 
 export function FullPost({all, savePosts, setSavePosts}) {
   /*
@@ -52,7 +53,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
   */
   
   const { username, id } = useParams();
-  const post = posts?.find(p => p.id === id && p.username === username);
+  const post = posts?.find(p => p.sender.id === id && p.sender.username === username);
   const [liked, setLiked] = useState(false);
   const isBookmarked = savePosts.some(item => item.postId === post?.id);
   const navigate = useNavigate();
@@ -62,10 +63,12 @@ export function FullPost({all, savePosts, setSavePosts}) {
 
   const handleLikeClick = (post) => {
     if (liked) {
-      post.likes -= 1;
+      post.likes = post.likes.filter(p => p.name !== 'Levi Blaque');
       setLiked(false)
     } else {
-      post.likes += 1;
+      post.likes.push({
+        name: 'Levi Blaque'
+      });
       setLiked(true)
     }
   }
@@ -79,41 +82,42 @@ export function FullPost({all, savePosts, setSavePosts}) {
         createdAt: dayjs().toISOString(),
         postId: post.id,
         user: {
-          name: post.user,
-          username: post.username,
-          profile: post.userImg,
-          accountType: post.accountType
+          name: post.sender.name,
+          username: post.sender.username,
+          profile: post.sender.profileImg,
+          accountType: post.sender.accountType
         },
       };
 
-      if (post.postText) {
+      if (post.text) {
         bookmark.post = {
           id: crypto.randomUUID(),
-          text: post.postText,
+          text: post.text,
         };
       }
 
-      if (post.postImg) {
+      if (post.postImage) {
         bookmark.post = {
           id: crypto.randomUUID(),
-          image: post.postImg,
+          image: post.postImage,
         };
       }
-      if (post.postText && post.postImg) {
+      if (post.text && post.postImage) {
         bookmark.post = {
           id: crypto.randomUUID(),
-          text: post.postText,
-          image: post.postImg,
+          text: post.text,
+          image: post.postImage,
         };
       }
 
-      if (post.postProject) {
+      if (post.postOpportunity) {
+        const [{title, minBud, maxBud, location, deadline}] = post.postOpportunity
         bookmark.job = {
-          title: post.postProject.title,
-          minBud: post.postProject.minBud,
-          maxBud: post.postProject.maxBud,
-          type: 'Remote',
-          deadline: post.postProject.deadline
+          title: title,
+          minBud: minBud,
+          maxBud: maxBud,
+          type: location,
+          deadline: deadline
         }
       }
 
@@ -148,7 +152,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
         },
         text: commentValue.trim(),
         date: '4h',
-        likes: 0,
+        likes: [],
       }
 
       /* setComments((prev) => [
@@ -184,22 +188,22 @@ export function FullPost({all, savePosts, setSavePosts}) {
               <div className="post-view-container">
                 <div className="upside">
                   <div className="post-header">
-                    <div className="left" onClick={() => navigate(`/user/${post.username}`)}>
-                      <img className="post-user-profile" src={post.userImg} />
+                    <div className="left" onClick={() => navigate(`/user/${post.sender.username}`)}>
+                      <img className="post-user-profile" src={post.sender.profileImg} />
                     </div>
                     <div className="middle">
                       <div className="post-info-top">
-                        <p className="name">{post.user}</p>
-                        <div className={`badge ${checkAccountType(post)}`}>{post.accountType}</div>
+                        <p className="name">{post.sender.name}</p>
+                        <div className={`badge ${checkAccountType(post.sender)}`}>{post.sender.accountType}</div>
                         <span></span>
-                        <p className="post-time">{post.postDate}</p>
+                        <p className="post-time">{dayjs(post.createdAt).format('h')}</p>
                       </div>
                       <div className="post-info-bottom">
-                        <p className="username">@{post.username}</p>
+                        <p className="username">@{post.sender.username}</p>
                         <span></span>
                         <p className="category">Flowvia Company</p>
                         <span className='phone'></span>
-                        <p className="date">2hr ago</p>
+                        <p className="date">{dayjs(post.createdAt).format('h')}</p>
                       </div>
                     </div>
                     <div className="post-option">
@@ -207,54 +211,60 @@ export function FullPost({all, savePosts, setSavePosts}) {
                     </div>
                   </div>
                   <div className="post-body">
-                    <p className="body-text">
-                      {post.postText}
-                    </p>
-                    {post.postProject ? '' : post.postImg && (
+                    {post.text && (
+                      <p className="body-text">
+                        {post.text}
+                      </p>
+                    )}
+                    {post.postImage && (
                       <div className="body-image">
-                        <img src={post.postImg} />
+                        <img src={post.postImage} />
                       </div>
                     )}
                   </div>
-                  {post.postProject && (
-                    <div className="post-project">
-                      <div className="project-cover" style={post.postProject.image && {background: `linear-gradient(rgba(0,0,0,0.3)), url('${post.postProject.image}') center no-repeat`, backgroundSize: 'cover'}}>
-                        {!post.postProject.image && <span>{post.postProject.title}</span>}
-                      </div>
-                      <div className="project-details">
-                        <p className="title">{post.postProject.title}</p>
-                        <p className="description">{post.postProject.description}</p>
-                        <div className="details">
-                          <div>
-                            Remote
+                  {post.postOpportunity && (
+                    post.postOpportunity.map((project) => {
+                      return (
+                        <div className="post-project" key={project.id}>
+                          <div className="project-cover" style={project.image && {background: `linear-gradient(rgba(0,0,0,0.3)), url('${project.image}') center no-repeat`, backgroundSize: 'cover'}}>
+                            {!project.image && <span>{project.title}</span>}
                           </div>
-                          <span></span>
-                          <div>
-                            Long-Term Contract
+                          <div className="project-details">
+                            <p className="title">{project.title}</p>
+                            <p className="description">{project.description}</p>
+                            <div className="details">
+                              <div>
+                                {project.location}
+                              </div>
+                              <span></span>
+                              <div>
+                                {project.projectType}
+                              </div>
+                            </div>
+                            <div className="action">
+                              <div className="left-action-project">
+                                <div className="budget">${formatBudet(project.minBud)} - ${formatBudet(project.maxBud)}</div>
+                                <div className="deadline">{project.deadline}</div>
+                              </div>
+                              <div className="right-action-project">
+                                <button className="opportunity-btn">View Opportunity</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div className="action">
-                          <div className="left-action-project">
-                            <div className="budget">${post.postProject.minBud} - ${post.postProject.maxBud}K</div>
-                            <div className="deadline">{post.postProject.deadline}</div>
-                          </div>
-                          <div className="right-action-project">
-                            <button className="opportunity-btn">View Opportunity</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      )
+                    })
                   )}
                 </div>
                 <div className="footer-post">
                   <div className="react-wrap">
                     <div className={liked ? 'liked' : ''} onClick={() => handleLikeClick(post)}>
                       <i className={`fa-${liked ? 'solid' : 'regular'} fa-heart`}></i>
-                      <p className="like-count">{post.likes}</p>
+                      <p className="like-count">{post.likes.length}</p>
                     </div>
                     <div>
                       <i className="fa-regular fa-comment"></i>
-                      <p className="comment-count">{post.comments.length}</p>
+                      <p className="comment-count">{post.comment.length}</p>
                     </div>
                     <div>
                       <i className="fa-solid fa-share-alt"></i>
@@ -268,15 +278,15 @@ export function FullPost({all, savePosts, setSavePosts}) {
                   </div>
                 </div>
                 <div className={`downside ${reply.trim() !== '' ? 'add-new' : ''}`}>
-                  <div className={`comment-container ${post.comments.length === 0 && 'no-comment'}`}>
-                    {post.comments.length === 0 && (
+                  <div className={`comment-container ${post.comment.length === 0 && 'no-comment'}`}>
+                    {post.comment.length === 0 && (
                       <div>
                         <i className="fa-solid fa-comment-slash"></i>
                         <p>No comments yet. Be the first to comment!</p>
                       </div>
                     )}
-                    {post.comments.length > 0 && (
-                      post.comments.map((comment) => {
+                    {post.comment.length > 0 && (
+                      post.comment.map((comment) => {
                         return (
                           <Fragment key={comment.id}>
                             <PostComment comment={comment} handleReply={handleReply} />
@@ -297,7 +307,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
                     <div className="bottom">
                       <i className="fa-solid fa-image"></i>
                       <textarea placeholder="Write a comment..." ref={commentRef} value={commentValue} onChange={handleComment} onInput={handleCommentInput} ></textarea>
-                      <i className={`fa-solid fa-paper-plane ${commentValue.trim() && 'active'}`} onClick={() => handleCommentSend(post.comments)}></i>
+                      <i className={`fa-solid fa-paper-plane ${commentValue.trim() && 'active'}`} onClick={() => handleCommentSend(post.comment)}></i>
                     </div>
                   </div>
                 </div>

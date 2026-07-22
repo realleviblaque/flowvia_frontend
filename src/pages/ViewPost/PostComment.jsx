@@ -7,10 +7,12 @@ export function PostComment({comment, handleReply}) {
   const navigate = useNavigate();
   const handleCommentLike = (com) => {
     if (liked) {
-      com.likes -= 1;
+      com.likes = com.likes.filter(p => p.name !== 'Levi Blaque');
       setLiked(false)
     } else {
-      com.likes += 1;
+      com.likes.push({
+        name: 'Levi Blaque'
+      });
       setLiked(true)
     }
   }
@@ -40,10 +42,10 @@ export function PostComment({comment, handleReply}) {
         <div className="comment-action">
           <div className="left">
             <p className={`like ${liked && 'liked'}`} onClick={() => handleCommentLike(comment)}>Like</p>
-            {comment.likes === 0 ? '' : (
+            {comment.likes.length === 0 ? '' : (
               <span>
                 <i className="fa-solid fa-heart"></i>
-                <p>{comment.likes}</p>
+                <p>{comment.likes.length}</p>
               </span>
             )}
             <div className="line"></div>

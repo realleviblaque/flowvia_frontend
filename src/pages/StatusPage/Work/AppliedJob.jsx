@@ -1,9 +1,11 @@
 import { SideBar } from "../../../components/Sidebar";
+import { StatusSectionHeader } from "../../../components/StatusPage/StatusSectionsHeader";
 
-export function AppliedJob() {
+export function AppliedJob({all}) {
   return (
     <>
-      <SideBar />
+      <SideBar notification={all} />
+      <StatusSectionHeader />
     </>
   )
 }

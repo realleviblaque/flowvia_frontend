@@ -1,9 +1,11 @@
 import { SideBar } from "../../../components/Sidebar";
+import { StatusSectionHeader } from "../../../components/StatusPage/StatusSectionsHeader";
 
-export function OpenProject() {
+export function OpenProject({all}) {
   return (
     <>
-      <SideBar />
+      <SideBar notification={all} />
+      <StatusSectionHeader />
     </>
   )
 }

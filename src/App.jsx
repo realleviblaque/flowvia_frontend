@@ -235,16 +235,16 @@ function App() {
           hadnlePlusDialogClose={hadnlePlusDialogClose} 
         />
       } />
-      <Route path='/status/work/active' element={<ActiveProject />} />
-      <Route path='/status/work/applied' element={<AppliedJob />} />
-      <Route path='/status/work/bookmark' element={<BookmarkJob />} />
-      <Route path='/status/work/pending' element={<PendingRequest />} />
-      <Route path='/status/work/completed' element={<CompletedProject />} />
-      <Route path='/status/hire/open' element={<OpenProject />} />
-      <Route path='/status/hire/negotiation' element={<InNegotiation />} />
-      <Route path='/status/hire/taken' element={<TakenProject />} />
-      <Route path='/status/hire/pending' element={<HirePendingRequest />} />
-      <Route path='/status/hire/completed' element={<HireCompletedProject />} />
+      <Route path='/status/work/active' element={<ActiveProject all={all} />} />
+      <Route path='/status/work/applied' element={<AppliedJob all={all} />} />
+      <Route path='/status/work/bookmark' element={<BookmarkJob all={all} />} />
+      <Route path='/status/work/pending' element={<PendingRequest all={all} />} />
+      <Route path='/status/work/completed' element={<CompletedProject all={all} />} />
+      <Route path='/status/hire/open' element={<OpenProject all={all} />} />
+      <Route path='/status/hire/negotiation' element={<InNegotiation all={all} />} />
+      <Route path='/status/hire/taken' element={<TakenProject all={all} />} />
+      <Route path='/status/hire/pending' element={<HirePendingRequest all={all} />} />
+      <Route path='/status/hire/completed' element={<HireCompletedProject all={all} />} />
       <Route path='/status/create/job' element={<CreateJob />} />
       <Route path='/projects' element={
         <ProjectPage 

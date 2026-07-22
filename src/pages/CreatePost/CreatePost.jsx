@@ -147,7 +147,7 @@ export function CreatePost({all}) {
         },
         comment: [],
         likes: [],
-        share: [],
+        share: 0,
       }
       if (text.trim()) {
         newPost.text = text.trim()

@@ -70,7 +70,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
   postImage: '/profile.png',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -109,7 +109,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   }],
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -138,7 +138,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   }],
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod tot Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod tot',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -167,7 +167,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   }],
   postImage: '/profile.png',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -197,7 +197,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   postImage: '/profile.png',
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -236,7 +236,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   }],
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
   likes: [],
-  share: [],
+  share: 0,
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
@@ -266,7 +266,7 @@ export const posts = /* JSON.parse(localStorage.getItem('post')) || */ [{
   text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quaerat similique possimus a ut maiores cupiditate nisi quidem! Aut, molestiae. Aliquam eveniet tempore sapiente nihil libero recusandae voluptates quod totam',
   postImage: '/profile.png',
   likes: [],
-  share: [],
+  share: 0,
 }];
 
 export function savePosts() {

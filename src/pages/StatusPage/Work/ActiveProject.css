@@ -31,6 +31,11 @@
         font-weight: bold;
         color: var(--accent-blue);
       }
+      .paused {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--coral);
+      }
       .value {
         font-size: 25px;
         font-weight: bold;
@@ -124,6 +129,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      height: 400px;
+      i {
+        font-size: 40px;
+        color: var(--mutetd-tetx);
+      }
+      p {
+        font-size: 16px;
+        color: var(--mutetd-tetx);
+      }
+    }
     .wrapper {
       height: fit-content;
       border: 1px solid var(--blue-border);
@@ -175,6 +196,21 @@
                     width: 6px;
                     height: 6px;
                     background-color: var(--green);
+                    border-radius: 50%;
+                  }
+                }
+                &.paused {
+                  background-color: var(--coral-bg);
+                  color: var(--coral);
+                  border-color: var(--coral-border);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 5px;
+                  span {
+                    width: 6px;
+                    height: 6px;
+                    background-color: var(--coral);
                     border-radius: 50%;
                   }
                 }
@@ -474,6 +510,9 @@
           text-align: center;
         }
         .active {
+          font-size: 16px;
+        }
+        .paused {
           font-size: 16px;
         }
         .value {

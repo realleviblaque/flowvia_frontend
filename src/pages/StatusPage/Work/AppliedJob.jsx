@@ -1,8 +1,53 @@
+import { useEffect, useState } from "react";
 import { SideBar } from "../../../components/Sidebar";
 import { StatusSectionHeader } from "../../../components/StatusPage/StatusSectionsHeader";
 import './AppliedJob.css'
+import { appliedJob } from "../../../data/StatusPage/appliedJob";
+import dayjs from "dayjs";
+import formatCount from "../../../utils/formatCount";
 
 export function AppliedJob({all}) {
+  const [projects, setProjects] = useState(appliedJob);
+  const [filter, setFilter] = useState('All')
+  const [search, setSearch] = useState('')
+  const pendingCount = appliedJob.filter(p => p.status === 'Pending').length;
+  const reviewtCount = appliedJob.filter(p => p.status === 'In Review').length;
+  const acceptedCOunt = appliedJob.filter(p => p.status === 'Accepted').length;
+  const declinedCount = appliedJob.filter(p => p.status === 'Declined').length;
+  const handleFilter = (prop) => {
+    setFilter(prop)
+    setProjects(
+      prop === 'All'
+      ? appliedJob
+      : appliedJob.filter(p => p.status === prop)
+    )
+  }
+  useEffect(() => {
+    const handleSearch = () => {
+      if (search.trim()) {
+        setProjects(
+          filter === 'All'
+          ? appliedJob.filter(
+            p => p.client.name.toLowerCase().includes(search.toLowerCase().trim())
+            || p.client.username.toLowerCase().includes(search.toLowerCase().trim())
+            || p.details.name.toLowerCase().includes(search.toLowerCase().trim())
+          )
+          : appliedJob.filter(p => p.status === filter).filter(
+            p => p.client.name.toLowerCase().includes(search.toLowerCase().trim())
+            || p.client.username.toLowerCase().includes(search.toLowerCase().trim())
+            || p.details.name.toLowerCase().includes(search.toLowerCase().trim())
+          )
+        )
+      } else {
+        setProjects(
+          filter === 'All'
+          ? appliedJob
+          : appliedJob.filter(p => p.status === filter)
+        )
+      }
+    }
+    handleSearch();
+  }, [search, filter])
   const isMobile = window.innerWidth < 768;
   return (
     <>
@@ -11,106 +56,39 @@ export function AppliedJob({all}) {
       <main className="status-applied-job-main">
         <div className="top-side">
           <div>
-              <p className="application">5</p>
+              <p className="application">{appliedJob.length}</p>
               <p className="txt">Application</p>
           </div>
           <div>
-            <p className="pending">2</p>
-            <p className="txt">Pending Review</p>
+            <p className="pending">{pendingCount}</p>
+            <p className="txt">Pending {isMobile ? '' : 'Review'}</p>
           </div>
           <div>
-            <p className="review">3</p>
+            <p className="review">{reviewtCount}</p>
             <p className="txt">In Review</p>
           </div>
           <div>
-            <p className="avg-applicant">12</p>
+            <p className="avg-applicant">{acceptedCOunt}</p>
             <p className="txt">Accepted</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (5)</div>
-            <div>Pending (2)</div>
-            <div>In Review (3)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            <div className={filter === 'All' ? 'active' : ''} onClick={() => handleFilter('All')}>All ({appliedJob.length})</div>
+            <div className={filter === 'Pending' ? 'active' : ''} onClick={() => handleFilter('Pending')}>Pending ({pendingCount})</div>
+            <div className={filter === 'In Review' ? 'active' : ''} onClick={() => handleFilter('In Review')}>In Review ({reviewtCount})</div>
+            <div className={filter === 'Accepted' ? 'active' : ''} onClick={() => handleFilter('Accepted')}>Accepted ({acceptedCOunt})</div>
+            <div className={filter === 'Declined' ? 'active' : ''} onClick={() => handleFilter('Declined')}>Declined ({declinedCount})</div>
           </div>
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search applications..." />
+              <input type="text" placeholder="Search applications..." value={search} onInput={(e) => setSearch(e.target.value)} />
             </div>
           </div>
         </div>
         <div className="projects-container">
-          <div className="wrapper">
-            <div className="top">
-              <div className="up">
-                <div className="first-top">
-                  <div className="left">
-                    <div className="review">In Review</div>
-                  </div>
-                  <div className="right">
-                    Applied 3 days ago
-                  </div>
-                </div>
-                <p className="title">React Developer needed - SaaS Dashboard</p>
-                <p className="description">Full-time contact position building a SaaS analyics dashboard with custom charts, real-time data, and an admin portal.</p>
-              </div>
-              <div className="middle">
-                <div className="client-wrap">
-                  <div className="left">
-                    <img src='/profile.png'/>
-                    <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <i className="fa-solid fa-chevron-right"></i>
-                  </div>
-                </div>
-                <div className="project-info-wrap">
-                  <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
-                  </div>
-                  <div>
-                    <p className="txt">Type</p>
-                    <p className="deadline">Full-time</p>
-                  </div>
-                  <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
-                  </div>
-                  <div>
-                    <p className="txt">Applicants</p>
-                    <p className="days">12</p>
-                  </div>
-                </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
-                </div>
-              </div>
-            </div>
-            <div className="bottom">
-              <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
-                {isMobile ? (
-                  <i className="fa-regular fa-message"></i>                  
-                ) : (
-                    <button>Message Client</button>
-                )}
-              </div>
-              <div className="right">
-                <button>Withdraw</button>
-              </div>
-            </div>
-          </div>
-          {/* {projects.length === 0 && (
+          {projects.length === 0 && (
             <div className="empty-state">
               <i className="fa-solid fa-inbox"></i>
               <p>
@@ -120,22 +98,18 @@ export function AppliedJob({all}) {
                 }
               </p>
             </div>
-          )} */}
-          {/* {projects.map((project) => {
-            const totalPhase = project.phases.length;
-            const completedPhase = project.phases.filter(p => p.isComplete).length;
-            const progress = (completedPhase / totalPhase) * 100;
+          )}
+          {projects.map((project) => {
             return (
               <div className="wrapper" key={project.id}>
                 <div className="top">
                   <div className="up">
                     <div className="first-top">
                       <div className="left">
-                        <div className="project-type">{project.createdFrom}</div>
-                        {project.isPaused ? (<div className="paused"><span></span> Paused</div>) : (<div className="active"><span></span> Active</div>)}
+                        <div className={project.status === 'In Review' ? 'review': project.status === 'Pending' ? 'pending' :project.status === 'Accepted' ? 'accepted' : project.status === 'Declined' ? 'declined' : ''}>{project.status}</div>
                       </div>
                       <div className="right">
-                        Started {dayjs(project.createdAt).format('MMM d')}
+                        Applied {dayjs(project.createdAt).format('d')} days ago
                       </div>
                     </div>
                     <p className="title">{project.details.name}</p>
@@ -147,7 +121,17 @@ export function AppliedJob({all}) {
                         <img src={project.client.image}/>
                         <div>
                           <p className="name">{project.client.name}</p>
-                          <p className="user-details">@{project.client.username} <span></span> {project.client.accountType}</p>
+                          {isMobile ? (
+                            <div className="m-client">
+                              <p className="username">@{project.client.username}</p>
+                              <span></span>
+                              <p className="account-type">{project.client.accountType}</p>
+                              <span></span>
+                              <p className="title">{project.client.title}</p>
+                            </div>
+                          ) : (
+                            <p className="user-details">@{project.client.username} <span></span> {project.client.accountType} <span></span> {project.client.title}</p>
+                          )}
                         </div>
                       </div>
                       <div className="right">
@@ -157,61 +141,48 @@ export function AppliedJob({all}) {
                     <div className="project-info-wrap">
                       <div>
                         <p className="txt">Budget</p>
-                        <p className="budget">${formatCount(project.info.budget)}</p>
+                        <p className="budget">${formatCount(project.info.minBuget)}-${formatCount(project.info.maxBudget)}</p>
+                      </div>
+                      <div>
+                        <p className="txt">Type</p>
+                        <p className="type">{project.info.type}</p>
                       </div>
                       <div>
                         <p className="txt">Deadline</p>
                         <p className="deadline">{dayjs(project.info.deadline).format('MMM d')}</p>
                       </div>
                       <div>
-                        <p className="txt">Days Left</p>
-                        <p className="days">{project.info.daysLeft}</p>
-                      </div>
-                      <div>
-                        <p className="txt">Tasks</p>
-                        <p className="task">{project.info.completedTask}/{project.info.totalTask}</p>
+                        <p className="txt">Applicants</p>
+                        <p className="applicant">{project.info.applicant}</p>
                       </div>
                     </div>
-                    <div className="phase-wrap">
-                      {project.phases.map((phase) => {
-                        return (
-                          <div className={phase.isComplete ? 'completed' : ''} key={phase.id}>
-                            <span></span>
-                            {isMobile ? (
-                              <p>{phase.name}</p>
-                            ) : phase.name}
-                          </div>
-                        )
-                      })}
-                    </div>
-                    <div className="progress-wrap">
-                      <div className="top-up">
-                        <p className="progress-count">Progress <span></span> Phase {completedPhase}/{totalPhase}</p>
-                        <p className="progress-percent">{progress}%</p>
-                      </div>
-                      <div className="progress-bar">
-                        <span className="bar" style={{width: `${progress}%`}}></span>
-                      </div>
+                    <div className="skills-wrap">
+                      {project.skills && (
+                        project.skills.map((skill) => {
+                          return (
+                            <span key={skill.id}>{skill.name}</span>
+                          )
+                        })
+                      )}
                     </div>
                   </div>
                 </div>
                 <div className="bottom">
                   <div className="left">
-                    <button>View {isMobile ? '' : 'Peoject'}</button>
+                    <button>View Job {isMobile ? '' : 'Post'}</button>
                     {isMobile ? (
                       <i className="fa-regular fa-message"></i>                  
                     ) : (
                         <button>Message Client</button>
                     )}
-                    <button>Mark {isMobile ? '' : 'Delivered'}</button>
                   </div>
                   <div className="right">
-                    <button>Pause</button>
+                    <button>Withdraw</button>
                   </div>
                 </div>
               </div>
             )
-          })} */}
+          })}
         </div>
       </main>
     </>

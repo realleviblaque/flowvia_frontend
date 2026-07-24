@@ -1,4 +1,4 @@
-.status-applied-job-main {
+.status-bookmark-job-main {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 71px);
@@ -447,7 +447,7 @@
 }
 
 @media (max-width: 767.99px) {
-  .status-applied-job-main {
+  .status-bookmark-job-main {
     height: calc(100vh - 61px);
     &::-webkit-scrollbar {
       display: none;

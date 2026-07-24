@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SideBar } from "../../../components/Sidebar";
 import { StatusSectionHeader } from "../../../components/StatusPage/StatusSectionsHeader";
-import { activeProject } from "../../../data/Status/activeProject";
+import { activeProject } from "../../../data/StatusPage/activeProject";
 import './ActiveProject.css'
 import formatCount from "../../../utils/formatCount";
 import dayjs from "dayjs";

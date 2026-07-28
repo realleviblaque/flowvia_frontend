@@ -11,29 +11,27 @@ export function BookmarkJob({all}) {
       <main className="status-bookmark-job-main">
         <div className="top-side">
           <div>
-              <p className="application">0</p>
-              <p className="txt">Application</p>
+              <p className="bookmark">8</p>
+              <p className="txt">Bookmarked</p>
           </div>
           <div>
-            <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
+            <p className="closing">3</p>
+            <p className="txt">Closing {isMobile ? '' : 'Soon'}</p>
           </div>
           <div>
-            <p className="review">0</p>
-            <p className="txt">In Review</p>
+            <p className="open">5</p>
+            <p className="txt">Still Open</p>
           </div>
           <div>
-            <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
+            <p className="avg-budget">$4.5K</p>
+            <p className="txt">Avg. Budget</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            <div className='active'>All (8)</div>
+            <div>Closing Soon</div>
+            <div>Remote</div>
           </div>
           <div className="right">
             <div className="search-wrap">
@@ -48,65 +46,49 @@ export function BookmarkJob({all}) {
               <div className="up">
                 <div className="first-top">
                   <div className="left">
-                    <div className='review'>Review</div>
+                    <div className='status'><span></span> Open</div>
+                    <div className="closing">Close Apr 10</div>
                   </div>
                   <div className="right">
-                    Applied 3 days ago
+                    <i className="fa-solid fa-x"></i>
                   </div>
                 </div>
-                <p className="title">React Developer needed - SaaS Dashboard</p>
+                <p className="title">Senior Frontend Developer - Fintech</p>
+                <div className="client-details">
+                  <img src="/profile.png" />
+                  <p className="name">Apex Build Co.</p>
+                  <span></span>
+                  <p className="username">@apexbuild</p>
+                </div>
                 <p className="description">Full-time contact position building a SaaS analyics dashboard with custom charts, real-time data, and an admin portal.</p>
-              </div>
-              <div className="middle">
-                <div className="client-wrap">
-                  <div className="left">
-                    <img src='/profile.png'/>
-                    <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
-                    </div>
+                <div className="projects-details">
+                  <div className="details">
+                    <p className="project-type">Long-Term Contract</p>
+                    <span></span>
+                    <p className="location">Remote</p>
+                    <span></span>
+                    <p className="budget">$2K-$4K</p>
                   </div>
-                  <div className="right">
-                    <i className="fa-solid fa-chevron-right"></i>
+                  <div className="skills-wrap">
+                    <span></span>
+                    <p>React</p>
+                    <span></span>
+                    <p>TypeScript</p>
+                    <span></span>
+                    <p>D3.js</p>
                   </div>
-                </div>
-                <div className="project-info-wrap">
-                  <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
-                  </div>
-                  <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
-                  </div>
-                  <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
-                  </div>
-                  <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
-                  </div>
-                </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
                 </div>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
+                <button>Apply {isMobile ? '' : 'Now'}</button>
                 <button>View Job {isMobile ? '' : 'Post'}</button>
                 {isMobile ? (
                   <i className="fa-regular fa-message"></i>                  
                 ) : (
                     <button>Message Client</button>
                 )}
-              </div>
-              <div className="right">
-                <button>Withdraw</button>
               </div>
             </div>
           </div>

@@ -143,7 +143,7 @@ export function BookmarkJob({all}) {
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search applications..." value={search} onInput={e => setSearch(e.target.value)} />
+              <input type="text" placeholder="Search bookmarks..." value={search} onInput={e => setSearch(e.target.value)} />
             </div>
           </div>
         </div>

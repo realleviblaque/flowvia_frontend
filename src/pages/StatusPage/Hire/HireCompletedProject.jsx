@@ -38,7 +38,7 @@ export function HireCompletedProject({all}) {
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search applications..." />
+              <input type="text" placeholder="Search completed..." />
             </div>
           </div>
         </div>

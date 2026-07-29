@@ -34,7 +34,7 @@ export function PendingRequest({all}) {
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search request..." />
+              <input type="text" placeholder="Search requests..." />
             </div>
           </div>
         </div>

@@ -11,34 +11,30 @@ export function PendingRequest({all}) {
       <main className="status-pemding-request-main">
         <div className="top-side">
           <div>
-              <p className="application">0</p>
-              <p className="txt">Application</p>
+              <p className="pending">0</p>
+              <p className="txt">Pending</p>
           </div>
           <div>
-            <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
+            <p className="expiring">0</p>
+            <p className="txt">Expiring Soon</p>
           </div>
           <div>
-            <p className="review">0</p>
-            <p className="txt">In Review</p>
+            <p className="expired">0</p>
+            <p className="txt">Expired</p>
           </div>
           <div>
-            <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
+            <p className="total">0</p>
+            <p className="txt">Total Offered</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            
           </div>
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search applications..." />
+              <input type="text" placeholder="Search request..." />
             </div>
           </div>
         </div>
@@ -48,22 +44,22 @@ export function PendingRequest({all}) {
               <div className="up">
                 <div className="first-top">
                   <div className="left">
-                    <div className='review'>Review</div>
+                    <div className='status'>Expires in 4d</div>
                   </div>
                   <div className="right">
-                    Applied 3 days ago
+                    Sent 1 day ago
                   </div>
                 </div>
-                <p className="title">React Developer needed - SaaS Dashboard</p>
-                <p className="description">Full-time contact position building a SaaS analyics dashboard with custom charts, real-time data, and an admin portal.</p>
+                <p className="title">Direct Hire - Full Stack for MVP Build</p>
+                <p className="description">Brand new product, need a full-stack developer to build the entire MVP from scratch. React fronted, Node.js, PostgreSQL. 3-month engagement.</p>
               </div>
               <div className="middle">
                 <div className="client-wrap">
                   <div className="left">
                     <img src='/profile.png'/>
                     <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
+                      <p className="name">Nadia James</p>
+                      <p className="user-details">@nadiajames <span></span> Startup Founder <span></span> New Client</p>
                     </div>
                   </div>
                   <div className="right">
@@ -72,41 +68,35 @@ export function PendingRequest({all}) {
                 </div>
                 <div className="project-info-wrap">
                   <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
+                    <p className="txt">Offered</p>
+                    <p className="offered">$4.2K</p>
+                  </div>
+                  <div>
+                    <p className="txt">Duration</p>
+                    <p className="duration">3 months</p>
                   </div>
                   <div>
                     <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
+                    <p className="type">Remote</p>
                   </div>
                   <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
+                    <p className="txt">Expires</p>
+                    <p className="expires">4 days</p>
                   </div>
-                  <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
-                  </div>
-                </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
                 </div>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
+                <button>Accept {isMobile ? '' : 'Offer'}</button>
                 {isMobile ? (
                   <i className="fa-regular fa-message"></i>                  
                 ) : (
-                    <button>Message Client</button>
+                    <button>Message</button>
                 )}
               </div>
               <div className="right">
-                <button>Withdraw</button>
+                <button>Decline</button>
               </div>
             </div>
           </div>

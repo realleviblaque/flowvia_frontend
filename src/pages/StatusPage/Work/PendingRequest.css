@@ -26,22 +26,22 @@
         text-transform: uppercase;
         color: var(--mutetd-tetx);
       }
-      .application {
+      .pending {
         font-size: 25px;
         font-weight: bold;
         color: var(--pry-text);
       }
-      .pending {
+      .expiring {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--amber);
+      }
+      .expired {
         font-size: 25px;
         font-weight: bold;
         color: var(--coral);
       }
-      .review {
-        font-size: 25px;
-        font-weight: bold;
-        color: var(--accent-blue);
-      }
-      .avg-applicant {
+      .total {
         font-size: 25px;
         font-weight: bold;
         color: var(--green);
@@ -65,26 +65,6 @@
     z-index: 99;
     .left {
       flex: 1;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      gap: 10px;
-      div {
-        white-space: nowrap;
-        padding: 6px 17px;
-        background-color: var(--cards);
-        border: 1px solid var(--border);
-        font-size: 13px;
-        border-radius: 20px;
-        color: var(--mutetd-tetx);
-        letter-spacing: 0.4px;
-        cursor: pointer;
-        &.active {
-          background-color: var(--blue-bg);
-          border-color: var(--blue-border);
-          color: var(--accent-blue);
-        }
-      }
     }
     .right {
       display: flex;
@@ -173,23 +153,18 @@
                 border-radius: 20px;
                 border: 1px solid;
                 font-size: 12px;
-                text-transform: uppercase;
-                &.review {
-                  background-color: var(--purple-bg);
-                  color: var(--purple);
-                  border-color: var(--purple-border);
+                &.status {
+                  background-color: var(--border);
+                  color: var(--secondary-text);
+                  border-color: var(--hover-border);
                 }
-                &.accepted {
-                  background-color: var(--green-bg);
-                  color: var(--green);
-                  border-color: var(--green-border);
-                }
-                &.pending {
+                .der2d {
                   background-color: var(--amber-bg);
                   color: var(--amber);
                   border-color: var(--amber-border);
                 }
-                &.declined {
+                &.dday,
+                &.expired {
                   background-color: var(--coral-bg);
                   color: var(--coral);
                   border-color: var(--coral-border);
@@ -341,21 +316,23 @@
                 text-transform: uppercase;
                 color: var(--mutetd-tetx);
               }
-              .budget {
+              .offered {
                 font-size: 18px;
                 color: var(--green);
                 font-weight: bold;
               }
-              .deadline {
-                font-size: 18px;
-                color: var(--amber);
-                font-weight: bold;
-              }
+              .duration,
               .type,
-              .applicant {
+              .expires {
                 font-size: 18px;
                 color: var(--pry-text);
                 font-weight: bold;
+              }
+              .reminder2 {
+                color: var(--amber);
+              }
+              .dday {
+                color: var(--coral);
               }
             }
           }
@@ -397,19 +374,14 @@
             cursor: pointer;
             font-size: 13px;
             &:nth-child(1) {
-              background-color: var(--blue-bg);
-              color: var(--accent-blue);
-              border-color: var(--blue-border);
+              background-color: var(--green-bg);
+              color: var(--green);
+              border-color: var(--green-border);
             }
             &:nth-child(2) {
               background-color: var(--cards);
               color: var(--mutetd-tetx);
               border-color: var(--hover-border);
-            }
-            &:nth-child(3) {
-              background-color: var(--green-bg);
-              color: var(--green);
-              border-color: var(--green-border);
             }
           }
           i {
@@ -460,16 +432,16 @@
           font-size: 11px;
           text-align: center;
         }
-        .application {
-          font-size: 16px;
-        }
         .pending {
           font-size: 16px;
         }
-        .review {
+        .expiring {
           font-size: 16px;
         }
-        .avg-applicant {
+        .expired {
+          font-size: 16px;
+        }
+        .total {
           font-size: 16px;
         }
         .days {
@@ -485,18 +457,7 @@
       gap: 15px;
       padding: 10px;
       .left {
-        flex: unset;
-        overflow: auto;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-        span {
-          flex-shrink: 0;
-        }
-        div {
-          padding: 5px 14px;
-          font-size: 11px;
-        }
+        display: none;
       }
       .right {
         justify-content: left;
@@ -559,21 +520,17 @@
                 .txt {
                   font-size: 10px;
                 }
-                .budget {
+                .offered {
                   font-size: 16px;
                 }
-                .deadline {
+                .duration {
                   font-size: 16px;
                 }
-                .applicant {
+                .expires {
                   font-size: 16px;
                 }
                 .type {
                   font-size: 16px;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  max-width: 135px;
                 }
               }
             }

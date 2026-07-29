@@ -26,10 +26,11 @@ export function BookmarkJob({all}) {
     const today = dayjs();
     let closing = 0;
     let open = 0;
-    bookmarkJob.forEach(p => {
+    bookmarks.forEach(p => {
       const daysLeft = p.deadline.diff(today, 'day');
       if (daysLeft <= 10 && daysLeft >= 0) {
         closing ++;
+        open ++;
       } else if (daysLeft > 10) {
         open ++;
       }
@@ -106,6 +107,10 @@ export function BookmarkJob({all}) {
     }
     handleSearch();
   }, [search, filter])
+  const handleBookmarkRemove = (id) => {
+    const newBoomark = bookmarks.filter(p => p.id !== id)
+    setBookmarks(newBoomark)
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -113,7 +118,7 @@ export function BookmarkJob({all}) {
       <main className="status-bookmark-job-main">
         <div className="top-side">
           <div>
-              <p className="bookmark">{bookmarkJob.length}</p>
+              <p className="bookmark">{bookmarks.length}</p>
               <p className="txt">Bookmarked</p>
           </div>
           <div>
@@ -131,7 +136,7 @@ export function BookmarkJob({all}) {
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>All ({bookmarkJob.length})</div>
+            <div className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>All</div>
             <div className={filter === 'closing' ? 'active' : ''} onClick={() => setFilter('closing')}>Closing Soon</div>
             <div className={filter === 'remote' ? 'active' : ''} onClick={() => setFilter('remote')}>Remote</div>
           </div>
@@ -188,7 +193,7 @@ export function BookmarkJob({all}) {
                         )}
                       </div>
                       <div className="right">
-                        <i className="fa-solid fa-x"></i>
+                        <i className="fa-solid fa-x" onClick={() => handleBookmarkRemove(bookmark.id)}></i>
                       </div>
                     </div>
                     <p className="title">{bookmark.details.name}</p>

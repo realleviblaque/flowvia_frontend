@@ -5,10 +5,12 @@ import './PendingRequest.css'
 import { workPendingRequest } from "../../../data/StatusPage/workPendingRequest";
 import formatCount from "../../../utils/formatCount";
 import dayjs from "dayjs";
+import { statusTimeAgo } from "../../../utils/statusTimeAgo";
 
 export function PendingRequest({all}) {
   const [requests, setRequests] = useState(workPendingRequest);
   const [search, setSearch] = useState('')
+  const [, forceUpdate] = useState(0)
   setRequests
   let total = 0;
   let expiring = 0;
@@ -41,6 +43,12 @@ export function PendingRequest({all}) {
     }
     handleSearch();
   }, [search])
+  useEffect(() => {
+    const timer = setInterval(() => {
+      forceUpdate(prev => prev + 1)
+    }, 60000);
+    return () => clearInterval(timer)
+  }, [])
   const isMobile = window.innerWidth < 768;
   return (
     <>
@@ -109,13 +117,6 @@ export function PendingRequest({all}) {
             if (daysLeft <= 0) {
               expired = true;
             }
-            const timeAgo = (data) => {
-              const diff = dayjs().diff(data);
-              if (diff < 1000 * 60) return 'just now';
-              if (diff < 1000 * 60 * 60) return `${Math.floor(diff / (1000 * 60))}m ago`;
-              if (diff < 1000 * 60 * 60 * 24) return `${Math.floor(diff / (1000 * 60 * 60))}h ago`;
-              return `${Math.floor(diff / (1000 * 60 * 60 * 24))}d ago`;
-            }
             return (
               <div className="wrapper" key={request.id}>
                 <div className="top">
@@ -125,7 +126,7 @@ export function PendingRequest({all}) {
                         <div className={`${open && 'status'} ${expiring2 && 're2d'} ${expiring1 && 'dday'} ${expired && 'expired'}`}>{expired ? 'Expired' : `Expires in ${daysLeft}d`}</div>
                       </div>
                       <div className="right">
-                        Sent {timeAgo(request.createdAt)}
+                        Sent {statusTimeAgo(request.createdAt)}
                       </div>
                     </div>
                     <p className="title">{request.details.name}</p>

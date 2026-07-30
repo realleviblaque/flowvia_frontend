@@ -1,8 +1,46 @@
+import { useEffect, useState } from "react";
 import { SideBar } from "../../../components/Sidebar";
 import { StatusSectionHeader } from "../../../components/StatusPage/StatusSectionsHeader";
 import './PendingRequest.css'
+import { workPendingRequest } from "../../../data/StatusPage/workPendingRequest";
+import formatCount from "../../../utils/formatCount";
+import dayjs from "dayjs";
 
 export function PendingRequest({all}) {
+  const [requests, setRequests] = useState(workPendingRequest);
+  const [search, setSearch] = useState('')
+  setRequests
+  let total = 0;
+  let expiring = 0;
+  let expired = 0;
+  requests.forEach(p => {
+    total += p.info.budget
+    const expirationDays = 5;
+    const createdAt = dayjs(p.createdAt);
+    const daysElapsed = dayjs().diff(createdAt, 'day');
+    const daysLeft = expirationDays - daysElapsed;
+    if (daysLeft <= 2 && daysLeft > 0) {
+      expiring ++;
+    } else if (daysLeft <= 0) {
+      expired ++;
+    }
+  })
+  useEffect(() => {
+    const handleSearch = () => {
+      if (search.trim()) {
+        setRequests(
+          workPendingRequest.filter(p => 
+            p.details.name.toLowerCase().includes(search.toLowerCase().trim())
+            || p.client.name.toLowerCase().includes(search.toLowerCase().trim())
+            || p.client.username.toLowerCase().includes(search.toLowerCase().trim())
+          )
+        )
+      } else {
+        setRequests(workPendingRequest)
+      }
+    }
+    handleSearch();
+  }, [search])
   const isMobile = window.innerWidth < 768;
   return (
     <>
@@ -11,19 +49,19 @@ export function PendingRequest({all}) {
       <main className="status-pemding-request-main">
         <div className="top-side">
           <div>
-              <p className="pending">0</p>
+              <p className="pending">{requests.length - expired}</p>
               <p className="txt">Pending</p>
           </div>
           <div>
-            <p className="expiring">0</p>
+            <p className="expiring">{expiring}</p>
             <p className="txt">Expiring Soon</p>
           </div>
           <div>
-            <p className="expired">0</p>
+            <p className="expired">{expired}</p>
             <p className="txt">Expired</p>
           </div>
           <div>
-            <p className="total">0</p>
+            <p className="total">${formatCount(total)}</p>
             <p className="txt">Total Offered</p>
           </div>
         </div>
@@ -34,72 +72,114 @@ export function PendingRequest({all}) {
           <div className="right">
             <div className="search-wrap">
               <i className="fa-solid fa-search"></i>
-              <input type="text" placeholder="Search requests..." />
+              <input type="text" placeholder="Search requests..." value={search} onInput={e => setSearch(e.target.value)} />
             </div>
           </div>
         </div>
         <div className="projects-container">
-          <div className="wrapper">
-            <div className="top">
-              <div className="up">
-                <div className="first-top">
-                  <div className="left">
-                    <div className='status'>Expires in 4d</div>
+          {requests.length === 0 && (
+            <div className="empty-state">
+              <i className="fa-solid fa-inbox"></i>
+              <p>
+                {search.trim()
+                  ? `No projects found for "${search.trim()}"`
+                  : 'No projects found'
+                }
+              </p>
+            </div>
+          )}
+          {requests.map((request) => {
+            const expirationDays = 5;
+            const createdAt = dayjs(request.createdAt);
+            const daysElapsed = dayjs().diff(createdAt, 'day');
+            const daysLeft = expirationDays - daysElapsed;
+            let open = false;
+            let expiring2 = false;
+            let expiring1 = false;
+            let expired = false;
+            if (daysLeft > 0) {
+              open = true;
+            } 
+            if (daysLeft <= 2 && daysLeft > 0) {
+              expiring2 = true
+            }
+            if (daysLeft <= 1 && daysLeft > 0) {
+              expiring1 = true
+            }
+            if (daysLeft <= 0) {
+              expired = true;
+            }
+            const timeAgo = (data) => {
+              const diff = dayjs().diff(data);
+              if (diff < 1000 * 60) return 'just now';
+              if (diff < 1000 * 60 * 60) return `${Math.floor(diff / (1000 * 60))}m ago`;
+              if (diff < 1000 * 60 * 60 * 24) return `${Math.floor(diff / (1000 * 60 * 60))}h ago`;
+              return `${Math.floor(diff / (1000 * 60 * 60 * 24))}d ago`;
+            }
+            return (
+              <div className="wrapper" key={request.id}>
+                <div className="top">
+                  <div className="up">
+                    <div className="first-top">
+                      <div className="left">
+                        <div className={`${open && 'status'} ${expiring2 && 're2d'} ${expiring1 && 'dday'} ${expired && 'expired'}`}>{expired ? 'Expired' : `Expires in ${daysLeft}d`}</div>
+                      </div>
+                      <div className="right">
+                        Sent {timeAgo(request.createdAt)}
+                      </div>
+                    </div>
+                    <p className="title">{request.details.name}</p>
+                    <p className="description">{request.details.description}</p>
                   </div>
-                  <div className="right">
-                    Sent 1 day ago
-                  </div>
-                </div>
-                <p className="title">Direct Hire - Full Stack for MVP Build</p>
-                <p className="description">Brand new product, need a full-stack developer to build the entire MVP from scratch. React fronted, Node.js, PostgreSQL. 3-month engagement.</p>
-              </div>
-              <div className="middle">
-                <div className="client-wrap">
-                  <div className="left">
-                    <img src='/profile.png'/>
-                    <div>
-                      <p className="name">Nadia James</p>
-                      <p className="user-details">@nadiajames <span></span> Startup Founder <span></span> New Client</p>
+                  <div className="middle">
+                    <div className="client-wrap">
+                      <div className="left">
+                        <img src={request.client.image} />
+                        <div>
+                          <p className="name">{request.client.name}</p>
+                          <p className="user-details">@{request.client.username} <span></span> {request.client.title} <span></span> {request.workBefore > 0 ? `${request.workBefore} job${request.workBefore > 0 && request.workBefore <= 1 ? '' : 's'} worked together` : 'New Client'}</p>
+                        </div>
+                      </div>
+                      <div className="right">
+                        <i className="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                    <div className="project-info-wrap">
+                      <div>
+                        <p className="txt">Offered</p>
+                        <p className="offered">${formatCount(request.info.budget)}</p>
+                      </div>
+                      <div>
+                        <p className="txt">Duration</p>
+                        <p className="duration">{request.info.duration}</p>
+                      </div>
+                      <div>
+                        <p className="txt">Type</p>
+                        <p className="type">{request.info.type}</p>
+                      </div>
+                      <div>
+                        <p className="txt">Expires</p>
+                        <p className={`expires ${expiring2 && 'reminder2'} ${expiring1 && 'dday'} ${expired && 'expired'}`}>{daysLeft > 0 && daysLeft <= 1 ? `${daysLeft} day` : expired ? 'Expired' : `${daysLeft} days`}</p>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div className="bottom">
+                  <div className="left">
+                    <button>Accept {isMobile ? '' : 'Offer'}</button>
+                    {isMobile ? (
+                      <i className="fa-regular fa-message"></i>                  
+                    ) : (
+                        <button>Message</button>
+                    )}
+                  </div>
                   <div className="right">
-                    <i className="fa-solid fa-chevron-right"></i>
-                  </div>
-                </div>
-                <div className="project-info-wrap">
-                  <div>
-                    <p className="txt">Offered</p>
-                    <p className="offered">$4.2K</p>
-                  </div>
-                  <div>
-                    <p className="txt">Duration</p>
-                    <p className="duration">3 months</p>
-                  </div>
-                  <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Remote</p>
-                  </div>
-                  <div>
-                    <p className="txt">Expires</p>
-                    <p className="expires">4 days</p>
+                    <button>Decline</button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="bottom">
-              <div className="left">
-                <button>Accept {isMobile ? '' : 'Offer'}</button>
-                {isMobile ? (
-                  <i className="fa-regular fa-message"></i>                  
-                ) : (
-                    <button>Message</button>
-                )}
-              </div>
-              <div className="right">
-                <button>Decline</button>
-              </div>
-            </div>
-          </div>
+            )
+            })}
         </div>
       </main>
     </>

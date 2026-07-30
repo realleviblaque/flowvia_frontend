@@ -5,6 +5,7 @@ import './AppliedJob.css'
 import { appliedJob } from "../../../data/StatusPage/appliedJob";
 import dayjs from "dayjs";
 import formatCount from "../../../utils/formatCount";
+import { statusTimeAgo } from "../../../utils/statusTimeAgo";
 
 export function AppliedJob({all}) {
   const [projects, setProjects] = useState(appliedJob);
@@ -109,7 +110,7 @@ export function AppliedJob({all}) {
                         <div className={project.status === 'In Review' ? 'review': project.status === 'Pending' ? 'pending' :project.status === 'Accepted' ? 'accepted' : project.status === 'Declined' ? 'declined' : ''}>{project.status}</div>
                       </div>
                       <div className="right">
-                        Applied {dayjs(project.createdAt).format('d')} days ago
+                        Applied {statusTimeAgo(project.createdAt)}
                       </div>
                     </div>
                     <p className="title">{project.details.name}</p>

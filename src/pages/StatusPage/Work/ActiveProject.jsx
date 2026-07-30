@@ -5,6 +5,7 @@ import { activeProject } from "../../../data/StatusPage/activeProject";
 import './ActiveProject.css'
 import formatCount from "../../../utils/formatCount";
 import dayjs from "dayjs";
+import { formatDate } from "../../../utils/formatDate";
 
 export function ActiveProject({all}) {
   const [projects, setProjects] = useState(activeProject);
@@ -234,7 +235,7 @@ export function ActiveProject({all}) {
                         {project.isPaused ? (<div className="paused"><span></span> Paused</div>) : (<div className="active"><span></span> Active</div>)}
                       </div>
                       <div className="right">
-                        Started {dayjs(project.createdAt).format('MMM d')}
+                        Started {formatDate(project.createdAt)}
                       </div>
                     </div>
                     <p className="title">{project.details.name}</p>

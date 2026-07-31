@@ -12,28 +12,27 @@ export function CompletedProject({all}) {
         <div className="top-side">
           <div>
               <p className="application">0</p>
-              <p className="txt">Application</p>
+              <p className="txt">Completed</p>
           </div>
           <div>
             <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
+            <p className="txt">Total Earned</p>
           </div>
           <div>
             <p className="review">0</p>
-            <p className="txt">In Review</p>
+            <p className="txt">Avg. Rating Received</p>
           </div>
           <div>
             <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
+            <p className="txt">Repeat Clients</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            <div className='active'>All</div>
+            <div>This year</div>
+            <div>5 Star</div>
+            <div>Repeat Clients</div>
           </div>
           <div className="right">
             <div className="search-wrap">
@@ -48,10 +47,10 @@ export function CompletedProject({all}) {
               <div className="up">
                 <div className="first-top">
                   <div className="left">
-                    <div className='review'>Review</div>
+                    <div className='completed'><i className="fa-solid fa-check"></i> Completed</div>
                   </div>
                   <div className="right">
-                    Applied 3 days ago
+                    Completed Mar 12, 2025
                   </div>
                 </div>
                 <p className="title">React Developer needed - SaaS Dashboard</p>
@@ -63,7 +62,7 @@ export function CompletedProject({all}) {
                     <img src='/profile.png'/>
                     <div>
                       <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
+                      <p className="user-details">@zaratanaka <span></span> Reccruiter</p>
                     </div>
                   </div>
                   <div className="right">
@@ -72,41 +71,41 @@ export function CompletedProject({all}) {
                 </div>
                 <div className="project-info-wrap">
                   <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
+                    <p className="txt">Earned</p>
+                    <p className="earned">$8.4K</p>
                   </div>
                   <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
+                    <p className="txt">Duration</p>
+                    <p className="duration">3 months</p>
                   </div>
                   <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
+                    <p className="txt">Rating</p>
+                    <p className="rating"><i className="fa-solid fa-star"></i> 5.0</p>
                   </div>
                   <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
+                    <p className="txt">Repeat Client</p>
+                    <p className="repeat">Yes</p>
                   </div>
                 </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
+                <div className="no-review">
+                  <div className="left">
+                    <i className="fa-regular fa-star"></i>
+                    <p>No review received yet. Nudge the client - reviews boost your profile ranking and build trust with future clients.</p>
+                  </div>
+                  <div className="right">
+                    <button>Request Review</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
+                <button>View {isMobile ? '' : 'Project'}</button>
                 {isMobile ? (
                   <i className="fa-regular fa-message"></i>                  
                 ) : (
                     <button>Message Client</button>
                 )}
-              </div>
-              <div className="right">
-                <button>Withdraw</button>
               </div>
             </div>
           </div>

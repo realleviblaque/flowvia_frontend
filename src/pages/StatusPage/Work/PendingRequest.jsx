@@ -62,7 +62,7 @@ export function PendingRequest({all}) {
           </div>
           <div>
             <p className="expiring">{expiring}</p>
-            <p className="txt">Expiring Soon</p>
+            <p className="txt">Expiring {isMobile ? '' : 'Soon'}</p>
           </div>
           <div>
             <p className="expired">{expired}</p>
@@ -70,7 +70,7 @@ export function PendingRequest({all}) {
           </div>
           <div>
             <p className="total">${formatCount(total)}</p>
-            <p className="txt">Total Offered</p>
+            <p className="txt">Total {isMobile ? '' : 'Offered'}</p>
           </div>
         </div>
         <div className="nav-wrap">

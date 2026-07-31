@@ -45,7 +45,7 @@ export function StatusSectionHeader() {
             {location.pathname === '/status/work/completed' && (
               <>
                 <p className="hd">Completed Projects</p>
-                <p className="txt">Work you have successfully delivered</p>
+                <p className="txt">Projects you completed for clients - your delivered work history</p>
               </>
             )}
             {location.pathname === '/status/hire/open' && (

@@ -26,25 +26,25 @@
         text-transform: uppercase;
         color: var(--mutetd-tetx);
       }
-      .application {
+      .completed,
+      .total {
         font-size: 25px;
         font-weight: bold;
-        color: var(--pry-text);
+        color: var(--green);
       }
-      .pending {
-        font-size: 25px;
-        font-weight: bold;
-        color: var(--coral);
-      }
-      .review {
+      .repeat {
         font-size: 25px;
         font-weight: bold;
         color: var(--accent-blue);
       }
-      .avg-applicant {
+      .avg-review {
         font-size: 25px;
         font-weight: bold;
-        color: var(--green);
+        color: var(--amber);
+        i {
+          font-size: 10px;
+          margin-left: -5px;
+        }
       }
       .days {
         font-size: 25px;
@@ -457,19 +457,20 @@
           font-size: 11px;
           text-align: center;
         }
-        .application {
+        .completed {
           font-size: 16px;
         }
-        .pending {
+        .total {
           font-size: 16px;
         }
-        .review {
+        .avg-review {
           font-size: 16px;
+          i {
+            font-size: 8px;
+            margin-left: -2px;
+          }
         }
-        .avg-applicant {
-          font-size: 16px;
-        }
-        .days {
+        .repeat {
           font-size: 16px;
         }
       }

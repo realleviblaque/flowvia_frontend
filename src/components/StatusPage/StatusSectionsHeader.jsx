@@ -89,7 +89,7 @@ export function StatusSectionHeader() {
                   <button className='draft'>
                     <i className="fa-solid fa-pencil"></i>
                     Drafts
-                    <span>2</span>
+                    <span>0</span>
                   </button>
               )}
               {isMobile ? (

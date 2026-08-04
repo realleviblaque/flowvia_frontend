@@ -314,7 +314,7 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         <p className="txt">80+</p>
                         <button>View Portfolio</button>
                       </div>
-                      <p className="head-txt">Team Projects</p>
+                      <p className="head-txt">Public Projects</p>
                     </div>
                     <div className="cards">
                       <div>

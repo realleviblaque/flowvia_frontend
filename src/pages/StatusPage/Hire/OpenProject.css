@@ -194,6 +194,21 @@
                     background-color: var(--green);
                   }
                 }
+                &.closed {
+                  background-color: var(--coral-bg);
+                  color: var(--coral);
+                  border-color: var(--coral-border);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 5px;
+                  span {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: var(--coral);
+                  }
+                }
               }
             }
             .right {
@@ -491,6 +506,12 @@
                 div {
                   padding: 4px 13px;
                   font-size: 11px;
+                  &.type {
+                    white-space: nowrap;
+                    max-width: 72px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                  }
                 }
               }
               .right {

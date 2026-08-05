@@ -9,31 +9,9 @@ export function InNegotiation({all}) {
       <SideBar notification={all} />
       <StatusSectionHeader />
       <main className="status-in-negotiation-main">
-        <div className="top-side">
-          <div>
-              <p className="application">0</p>
-              <p className="txt">Application</p>
-          </div>
-          <div>
-            <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
-          </div>
-          <div>
-            <p className="review">0</p>
-            <p className="txt">In Review</p>
-          </div>
-          <div>
-            <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
-          </div>
-        </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            
           </div>
           <div className="right">
             <div className="search-wrap">
@@ -48,10 +26,10 @@ export function InNegotiation({all}) {
               <div className="up">
                 <div className="first-top">
                   <div className="left">
-                    <div className='review'>Review</div>
+                    <div className='short'>Shortlisted</div>
                   </div>
                   <div className="right">
-                    Applied 3 days ago
+                    Started 3 days ago
                   </div>
                 </div>
                 <p className="title">React Developer needed - SaaS Dashboard</p>
@@ -61,52 +39,52 @@ export function InNegotiation({all}) {
                 <div className="client-wrap">
                   <div className="left">
                     <img src='/profile.png'/>
-                    <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
-                    </div>
                   </div>
                   <div className="right">
-                    <i className="fa-solid fa-chevron-right"></i>
+                    <p className="name">Zara Tanaka</p>
+                    <p className="user-details">@zaratanaka <span></span> Reccruiter</p>
+                    <p className="title">Frontend Dev</p>
+                    <p className="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, iure. Eaque odit ipsam iste modi dicta necessitatibus tempore perspiciatis est molestiae iure a fugiat sed reiciendis, aut amet velit. Dolorum!</p>
+                    <div className="job-done">12 jobs done</div>
                   </div>
                 </div>
-                <div className="project-info-wrap">
-                  <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
-                  </div>
-                  <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
-                  </div>
-                  <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
-                  </div>
-                  <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
-                  </div>
+                <div className="thier-message">
+                  <p className="hd-txt">Their Message</p>
+                  <span>
+                    <p className="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A iusto esse recusandae reiciendis, animi temporibus rem cupiditate aliquam officia repellendus culpa nulla nostrum quidem repudiandae nisi eius. Officiis, accusantium eaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem ipsam saepe impedit dolore dignissimos non, eveniet natus blanditiis voluptas doloribus voluptatem distinctio veniam eius fugiat sequi consequuntur atque molestiae!</p>
+                  </span>
                 </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
+                <div className="negotiation">
+                  <p className="hd-txt">Negotiation</p>
+                  <div className="wrap">
+                    <div>
+                      <p className="txt">Their Ask</p>
+                      <p className="hd">$1.8K / project</p>
+                    </div>
+                    <div>
+                      <p className="txt">Your Budget</p>
+                      <p className="hd">$500-$2K</p>
+                    </div>
+                    <div>
+                      <p className="txt">Status</p>
+                      <p className="hd">Within Range <i className="fa-solid fa-check"></i></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
+                <button>Hire {isMobile ? '' : 'Now'}</button>
                 {isMobile ? (
                   <i className="fa-regular fa-message"></i>                  
                 ) : (
-                    <button>Message Client</button>
+                    <button>Message</button>
                 )}
+                <button>{isMobile ? '' : 'View'} Profile</button>
               </div>
               <div className="right">
-                <button>Withdraw</button>
+                <button>Decline</button>
               </div>
             </div>
           </div>

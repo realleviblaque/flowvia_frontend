@@ -297,6 +297,18 @@
                     }
                   }
                 }
+                &.not-within {
+                  border-color: var(--coral-border);
+                  .txt {
+                    color: var(--coral);
+                  }
+                  .hd {
+                    color: var(--coral);
+                    i {
+                      font-size: 12px;
+                    }
+                  }
+                }
               }
             }
           }

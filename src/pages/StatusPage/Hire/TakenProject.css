@@ -26,22 +26,17 @@
         text-transform: uppercase;
         color: var(--mutetd-tetx);
       }
-      .application {
+      .progress {
         font-size: 25px;
         font-weight: bold;
         color: var(--pry-text);
       }
-      .pending {
+      .active {
         font-size: 25px;
         font-weight: bold;
         color: var(--coral);
       }
-      .review {
-        font-size: 25px;
-        font-weight: bold;
-        color: var(--accent-blue);
-      }
-      .avg-applicant {
+      .value {
         font-size: 25px;
         font-weight: bold;
         color: var(--green);
@@ -65,26 +60,6 @@
     z-index: 99;
     .left {
       flex: 1;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      gap: 10px;
-      div {
-        white-space: nowrap;
-        padding: 6px 17px;
-        background-color: var(--cards);
-        border: 1px solid var(--border);
-        font-size: 13px;
-        border-radius: 20px;
-        color: var(--mutetd-tetx);
-        letter-spacing: 0.4px;
-        cursor: pointer;
-        &.active {
-          background-color: var(--blue-bg);
-          border-color: var(--blue-border);
-          color: var(--accent-blue);
-        }
-      }
     }
     .right {
       display: flex;
@@ -174,25 +149,20 @@
                 border: 1px solid;
                 font-size: 12px;
                 text-transform: uppercase;
-                &.review {
-                  background-color: var(--purple-bg);
-                  color: var(--purple);
-                  border-color: var(--purple-border);
-                }
-                &.accepted {
+                &.active {
                   background-color: var(--green-bg);
                   color: var(--green);
                   border-color: var(--green-border);
-                }
-                &.pending {
-                  background-color: var(--amber-bg);
-                  color: var(--amber);
-                  border-color: var(--amber-border);
-                }
-                &.declined {
-                  background-color: var(--coral-bg);
-                  color: var(--coral);
-                  border-color: var(--coral-border);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 6px;
+                  span {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: var(--green);
+                  }
                 }
               }
             }
@@ -359,19 +329,40 @@
               }
             }
           }
-          .skills-wrap {
+          .progress-wrap {
             display: flex;
-            justify-content: left;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 6px;
-            span {
-              padding: 6px 15px;
-              border-radius: 20px;
+            flex-direction: column;
+            gap: 5px;
+            .top-up {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .txt {
+                font-size: 12px;
+                color: var(--mutetd-tetx);
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 10px;
+                letter-spacing: 0.3px;
+              }
+              .percent {
+                font-size: 12px;
+                color: var(--secondary-text);
+              }
+            }
+            .progress-bar {
+              height: 5px;
               background-color: var(--border);
-              color: var(--secondary-text);
-              font-size: 12px;
-              border: 1px solid var(--hover-border);
+              border-radius: 20px;
+              overflow: hidden;
+              display: flex;
+              justify-content: left;
+              align-items: stretch;
+              .bar {
+                background-color: var(--green);
+                border-radius: 20px;
+              }
             }
           }
         }
@@ -460,16 +451,13 @@
           font-size: 11px;
           text-align: center;
         }
-        .application {
+        .progress {
           font-size: 16px;
         }
-        .pending {
+        .active {
           font-size: 16px;
         }
-        .review {
-          font-size: 16px;
-        }
-        .avg-applicant {
+        .value {
           font-size: 16px;
         }
         .days {
@@ -485,18 +473,7 @@
       gap: 15px;
       padding: 10px;
       .left {
-        flex: unset;
-        overflow: auto;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-        span {
-          flex-shrink: 0;
-        }
-        div {
-          padding: 5px 14px;
-          font-size: 11px;
-        }
+        display: none;
       }
       .right {
         justify-content: left;
@@ -519,6 +496,12 @@
                 div {
                   padding: 4px 13px;
                   font-size: 11px;
+                  &.active {
+                    span {
+                      width: 6px;
+                      height: 6px;
+                    }
+                  }
                 }
               }
               .right {

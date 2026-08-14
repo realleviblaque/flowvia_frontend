@@ -465,10 +465,7 @@ export function CreatePost({all}) {
           Choose Audience
         </div>
         <div className="down-side">
-          <div className="audience-wrap" onClick={() => {
-            setAudience('Everyone');
-            setProjectMilestone([]);
-          }}>
+          <div className="audience-wrap" onClick={() => setAudience('Everyone')}>
             <div className="left">
               <p className="hd">Everyone</p>
               <p className="hd-txt">Visible to all Flowvia users and public</p>

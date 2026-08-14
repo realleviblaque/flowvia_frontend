@@ -1,0 +1,122 @@
+.select-drop-down {
+  width: 300px;
+  background-color: var(--cards);
+  border: 1px solid var(--border);
+  color: var(--secondary-text);
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  p {
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  i {
+    font-size: 12px;
+  }
+}
+.select-drop-options {
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 300px;
+  max-height: 300px;
+  background-color: var(--cards);
+  border: 1px solid var(--border);
+  color: var(--secondary-text);
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: auto;
+  flex-direction: column;
+  gap: 3px;
+  div {
+    flex-shrink: 0;
+    background-color: var(--cards);
+    color: var(--secondary-text);
+    padding: 12px 8px;
+    padding-right: 0;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    i {
+      font-size: 12px;
+    }
+    &:hover,
+    &.active {
+      background-color: var(--blue-border);
+      color: var(--accent-blue);
+    }
+  }
+  &.open {
+    display: flex;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-text);
+  }
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
+.empty-option {
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 14px;
+  }
+  &.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .select-drop-down {
+    width: 110px;
+    font-size: 12px;
+    padding: 10px;
+    gap: 6px;
+    i {
+      font-size: 10px;
+    }
+  }
+  .select-drop-options {
+    top: 52px;
+    width: 110px;
+    font-size: 12px;
+    padding: 10px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    div {
+      padding: 9px 5px;
+      border-radius: 7px;
+      i {
+        font-size: 10px;
+      }
+    }
+  }
+  .empty-option {
+    height: 25px;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

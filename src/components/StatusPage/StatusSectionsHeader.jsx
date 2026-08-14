@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import './StatusSectionHeader.css'
+import { SelectOption } from './SelectOptions';
 
 export function StatusSectionHeader() {
   const navigate = useNavigate();
@@ -105,17 +106,7 @@ export function StatusSectionHeader() {
             </>
           )}
           {location.pathname === '/status/hire/pending' && (
-            <select className='pending-select'>
-              <option value="">React Developer</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer heehher</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer</option>
-              <option value="">React Developer </option>
-            </select>
+            <SelectOption />
           )}
       </div>
     </header>

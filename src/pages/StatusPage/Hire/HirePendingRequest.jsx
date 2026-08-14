@@ -11,29 +11,28 @@ export function HirePendingRequest({all}) {
       <main className="status-hire-pending-request-main">
         <div className="top-side">
           <div>
-              <p className="application">0</p>
-              <p className="txt">Application</p>
+              <p className="applicant">7</p>
+              <p className="txt">{isMobile ? '' : 'Total '}Applicants</p>
           </div>
           <div>
-            <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
+            <p className="not-rev">4</p>
+            <p className="txt">{isMobile ? 'Not Rev.' : 'Not Reviewed'}</p>
           </div>
           <div>
-            <p className="review">0</p>
-            <p className="txt">In Review</p>
+            <p className="shortlisted">2</p>
+            <p className="txt">Shortlisted</p>
           </div>
           <div>
-            <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
+            <p className="discussion">1</p>
+            <p className="txt">{isMobile ? '' : 'In '}Discussion</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            <div className='active'>All</div>
+            <div>New</div>
+            <div>Shortlisted</div>
+            <div>Reviewed</div>
           </div>
           <div className="right">
             <div className="search-wrap">
@@ -47,66 +46,45 @@ export function HirePendingRequest({all}) {
             <div className="top">
               <div className="up">
                 <div className="first-top">
-                  <div className="left">
-                    <div className='review'>Review</div>
-                  </div>
-                  <div className="right">
-                    Applied 3 days ago
-                  </div>
-                </div>
-                <p className="title">React Developer needed - SaaS Dashboard</p>
-                <p className="description">Full-time contact position building a SaaS analyics dashboard with custom charts, real-time data, and an admin portal.</p>
-              </div>
-              <div className="middle">
-                <div className="client-wrap">
-                  <div className="left">
-                    <img src='/profile.png'/>
-                    <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
+                  <div className="client">
+                    <div className="left-side">
+                      <img src="/profile.png" />
+                    </div>
+                    <div className="right-side">
+                      <div className="name-info">
+                        <p className="name">Zara Tanaka</p>
+                        <div className='new'>New</div>
+                      </div>
+                      <p className="username">@zaratanaka</p>
+                      <div className="title">Frontend Dev</div>
+                      <p className="bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit maxime earum eveniet excepturi vel quisquam odio inventore sint pariatur sapiente esse eaque, facere magnam laborum consequatur minus fugiat perspiciatis.</p>
+                      <div className="details">
+                        <div>
+                          12 jobs done
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="right">
-                    <i className="fa-solid fa-chevron-right"></i>
+                    {isMobile ? '' : 'Applied '}3 days ago
                   </div>
                 </div>
-                <div className="project-info-wrap">
-                  <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
-                  </div>
-                  <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
-                  </div>
-                  <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
-                  </div>
-                  <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
-                  </div>
-                </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
-                </div>
+              </div>
+              <div className="middle">
+                <p className="txt">Cover Message</p>
+                <span>
+                  <p className="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cupiditate similique eligendi adipisci sapiente delectus, doloribus atque molestias eos asperiores animi maiores doloremque odio officia corporis neque tenetur? Exercitationem, architecto.</p>
+                </span>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
-                {isMobile ? (
-                  <i className="fa-regular fa-message"></i>                  
-                ) : (
-                    <button>Message Client</button>
-                )}
+                <button className="shortlist">Shortlist</button>
+                {/* <button className="start">Start Discussion</button> */}
+                <button className="review">Review</button>
               </div>
               <div className="right">
-                <button>Withdraw</button>
+                <button>Decline</button>
               </div>
             </div>
           </div>

@@ -104,6 +104,19 @@ export function StatusSectionHeader() {
               )}
             </>
           )}
+          {location.pathname === '/status/hire/pending' && (
+            <select className='pending-select'>
+              <option value="">React Developer</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer heehher</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer</option>
+              <option value="">React Developer </option>
+            </select>
+          )}
       </div>
     </header>
   )

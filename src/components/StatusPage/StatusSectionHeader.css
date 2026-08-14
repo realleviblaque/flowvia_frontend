@@ -129,6 +129,47 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .pending-select,
+    .pending-select::picker(select) {
+      appearance: base-select;
+      width: 300px;
+      background-color: var(--cards);
+      border: 1px solid var(--border);
+      color: var(--secondary-text);
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 8px;
+    }
+    .pending-select::picker(select) {
+      margin-top: 10px;
+      padding: 10px 5px;
+      padding-right: 10px;
+      max-height: 300px;
+      overflow: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--secondary-text) transparent;
+    }
+    .pending-select option {
+      background-color: var(--cards);
+      color: var(--secondary-text);
+      padding: 10px 5px;
+      padding-right: 0;
+      border-radius: 8px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 3px;
+      &::checkmark {
+        margin-right: 6px;
+      }
+    }
+    .pending-select option:hover {
+      background-color: var(--blue-border);
+      color: var(--accent-blue);
+    }
   }
 }
 
@@ -149,6 +190,26 @@
         }
         .txt {
           display: none;
+        }
+      }
+    }
+    .right {
+      .pending-select,
+      .pending-select::picker(select) {
+        width: 130px;
+        font-size: 12px;
+      }
+      .pending-select::picker(select) {
+        scrollbar-width: none;
+        padding-right: 5px;
+      }
+      .pending-select option {
+        background-color: var(--cards);
+        color: var(--secondary-text);
+        padding: 5px 5px;
+        padding-bottom: 0;
+        &::checkmark {
+          margin-right: 4px;
         }
       }
     }

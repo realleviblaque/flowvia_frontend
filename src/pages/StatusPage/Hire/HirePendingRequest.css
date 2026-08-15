@@ -209,10 +209,10 @@
                       color: var(--secondary-text);
                       border-color: var(--hover-border);
                     }
-                    &.declined {
-                      background-color: var(--coral-bg);
-                      color: var(--coral);
-                      border-color: var(--coral-border);
+                    &.discussion {
+                      background-color: var(--purple-bg);
+                      color: var(--purple);
+                      border-color: var(--purple-border);
                     }
                   }
                 }
@@ -313,7 +313,8 @@
             cursor: pointer;
             font-size: 13px;
             &.shortlist,
-            &.start {
+            &.start,
+            &.message {
               background-color: var(--blue-bg);
               color: var(--accent-blue);
               border-color: var(--blue-border);
@@ -322,6 +323,11 @@
               background-color: var(--green-bg);
               color: var(--green);
               border-color: var(--green-border);
+            }
+            &.reviewed {
+              background-color: var(--border);
+              color: var(--secondary-text);
+              border-color: var(--hover-border);
             }
           }
         }

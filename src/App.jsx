@@ -205,6 +205,7 @@ function App() {
     const {id, username} = post;
     navigate(`/post/${username}/${id}`)
   }
+  const [selectedId, setSelectedId] = useState(null);
   const isMobile = window.innerWidth < 768;
   return (
     <Routes>
@@ -243,7 +244,7 @@ function App() {
       <Route path='/status/hire/open' element={<OpenProject all={all} />} />
       <Route path='/status/hire/negotiation' element={<InNegotiation all={all} />} />
       <Route path='/status/hire/taken' element={<TakenProject all={all} />} />
-      <Route path='/status/hire/pending' element={<HirePendingRequest all={all} />} />
+      <Route path='/status/hire/pending' element={<HirePendingRequest all={all} selectedId={selectedId} setSelectedId={setSelectedId} />} />
       <Route path='/status/hire/completed' element={<HireCompletedProject all={all} />} />
       <Route path='/status/create/job' element={<CreateJob />} />
       <Route path='/projects' element={

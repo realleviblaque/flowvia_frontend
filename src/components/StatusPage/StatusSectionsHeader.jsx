@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import './StatusSectionHeader.css'
 import { SelectOption } from './SelectOptions';
 
-export function StatusSectionHeader() {
+export function StatusSectionHeader({selectedId, setSelectedId}) {
   const navigate = useNavigate();
   const location = useLocation();
   const isMobile = window.innerWidth < 768;
@@ -106,7 +106,7 @@ export function StatusSectionHeader() {
             </>
           )}
           {location.pathname === '/status/hire/pending' && (
-            <SelectOption />
+            <SelectOption selectedId={selectedId} setSelectedId={setSelectedId} />
           )}
       </div>
     </header>

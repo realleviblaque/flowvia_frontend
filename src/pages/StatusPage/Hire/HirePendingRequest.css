@@ -365,19 +365,16 @@
           font-size: 11px;
           text-align: center;
         }
-        .application {
+        .applicant {
           font-size: 16px;
         }
-        .pending {
+        .not-rev {
           font-size: 16px;
         }
-        .review {
+        .shortlisted {
           font-size: 16px;
         }
-        .avg-applicant {
-          font-size: 16px;
-        }
-        .days {
+        .discussion {
           font-size: 16px;
         }
       }

@@ -113,15 +113,15 @@ export function CompletedProject({all}) {
           </div>
           <div>
             <p className="total">${formatCount(total)}</p>
-            <p className="txt">Total Earned</p>
+            <p className="txt">{isMobile ? '' : 'Total '}Earned</p>
           </div>
           <div>
             <p className="avg-review">{avgRating.toFixed(1)} <i className="fa-solid fa-star"></i></p>
-            <p className="txt">Avg. Rating Received</p>
+            <p className="txt">Avg. Rating{isMobile ? '' : ' Received'}</p>
           </div>
           <div>
             <p className="repeat">{repeat}</p>
-            <p className="txt">Repeat Clients</p>
+            <p className="txt">{isMobile ? 'Repeated' : 'Repeat Clients'}</p>
           </div>
         </div>
         <div className="nav-wrap">

@@ -1,7 +1,26 @@
 import { useNavigate } from 'react-router-dom';
 import './WorkStatusSection.css'
+import { activeProject } from '../../../data/StatusPage/activeProject';
+import { appliedJob } from '../../../data/StatusPage/appliedJob';
+import { bookmarkJob } from '../../../data/StatusPage/bookmarkJob';
+import dayjs from '../../../lib/dayjs';
+import { workPendingRequest } from '../../../data/StatusPage/workPendingRequest';
+import { workCompletedProject } from '../../../data/StatusPage/workCompletedProject';
 
 export function WorkStatusSection() {
+  const active = activeProject.filter(p => !p.isPaused).length;
+  const applied = appliedJob.length;
+  const bookmark = bookmarkJob.length;
+  const request = workPendingRequest.length;
+  const completed = workCompletedProject.length;
+  let expired = 0;
+  workPendingRequest.forEach(p => {
+    const expirationDays = 5;
+    const createdAt = dayjs(p.createdAt);
+    const daysElapsed = dayjs().diff(createdAt, 'day');
+    const daysLeft = expirationDays - daysElapsed;
+    if (daysLeft <= 0) expired ++;
+  })
   const isMobile = window.innerWidth < 768;
   const navigate = useNavigate();
   return (
@@ -16,7 +35,7 @@ export function WorkStatusSection() {
       <div className="work-cards">
         <div className="status active-project-card">
           <div className="top">
-            <p className="active-project-count">22</p>
+            <p className="active-project-count">{active}</p>
             <span>
               <i className="fa-solid fa-table-cells-large"></i>
             </span>
@@ -33,7 +52,7 @@ export function WorkStatusSection() {
         </div>
         <div className="status applied-job-card">
           <div className="top">
-            <p className="applied-job-count">11</p>
+            <p className="applied-job-count">{applied}</p>
             <span>
               <i className="fa-solid fa-display"></i>
             </span>
@@ -50,7 +69,7 @@ export function WorkStatusSection() {
         </div>
         <div className="status bookmark-project-card">
           <div className="top">
-            <p className="bookmark-project-count">6</p>
+            <p className="bookmark-project-count">{bookmark}</p>
             <span>
               <i className="fa-regular fa-bookmark"></i>
             </span>
@@ -67,7 +86,7 @@ export function WorkStatusSection() {
         </div>
         <div className="status pending-request-card">
           <div className="top">
-            <p className="pending-request-count">8</p>
+            <p className="pending-request-count">{request - expired}</p>
             <span>
               <i className="fa-solid fa-arrow-up"></i>
             </span>
@@ -84,7 +103,7 @@ export function WorkStatusSection() {
         </div>
         <div className="status completed-project-card">
           <div className="top">
-            <p className="completed-project-count">8</p>
+            <p className="completed-project-count">{completed}</p>
             <span>
               <i className="fa-regular fa-square-check"></i>
             </span>

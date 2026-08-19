@@ -26,25 +26,25 @@
         text-transform: uppercase;
         color: var(--mutetd-tetx);
       }
-      .application {
+      .completed,
+      .total {
         font-size: 25px;
         font-weight: bold;
-        color: var(--pry-text);
+        color: var(--green);
       }
-      .pending {
-        font-size: 25px;
-        font-weight: bold;
-        color: var(--coral);
-      }
-      .review {
+      .repeat {
         font-size: 25px;
         font-weight: bold;
         color: var(--accent-blue);
       }
-      .avg-applicant {
+      .avg-review {
         font-size: 25px;
         font-weight: bold;
-        color: var(--green);
+        color: var(--amber);
+        i {
+          font-size: 10px;
+          margin-left: -5px;
+        }
       }
       .days {
         font-size: 25px;
@@ -142,7 +142,7 @@
     }
     .wrapper {
       height: fit-content;
-      border: 1px solid var(--blue-border);
+      border: 1px solid var(--hover-border);
       border-radius: 20px;
       background-color: var(--cards);
       display: flex;
@@ -174,25 +174,13 @@
                 border: 1px solid;
                 font-size: 12px;
                 text-transform: uppercase;
-                &.review {
-                  background-color: var(--purple-bg);
-                  color: var(--purple);
-                  border-color: var(--purple-border);
+                i {
+                  font-size: 11px;
                 }
-                &.accepted {
+                &.completed {
                   background-color: var(--green-bg);
                   color: var(--green);
                   border-color: var(--green-border);
-                }
-                &.pending {
-                  background-color: var(--amber-bg);
-                  color: var(--amber);
-                  border-color: var(--amber-border);
-                }
-                &.declined {
-                  background-color: var(--coral-bg);
-                  color: var(--coral);
-                  border-color: var(--coral-border);
                 }
               }
             }
@@ -341,37 +329,66 @@
                 text-transform: uppercase;
                 color: var(--mutetd-tetx);
               }
-              .budget {
+              .earned,
+              .repeat {
                 font-size: 18px;
                 color: var(--green);
                 font-weight: bold;
               }
-              .deadline {
+              .rating {
                 font-size: 18px;
                 color: var(--amber);
                 font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                i {
+                  font-size: 10px;
+                }
               }
-              .type,
-              .applicant {
+              .duration {
                 font-size: 18px;
                 color: var(--pry-text);
                 font-weight: bold;
               }
             }
           }
-          .skills-wrap {
+          .no-review {
             display: flex;
             justify-content: left;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 6px;
-            span {
-              padding: 6px 15px;
-              border-radius: 20px;
-              background-color: var(--border);
-              color: var(--secondary-text);
-              font-size: 12px;
-              border: 1px solid var(--hover-border);
+            padding: 10px 15px;
+            background-color: var(--amber-bg);
+            border: 1px solid var(--amber-border);
+            color: var(--amber);
+            border-radius: 10px;
+            .left {
+              flex: 1;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 10px;
+              i {
+                font-size: 12px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+            .right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              button {
+                padding: 10px 20px;
+                background-color: transparent;
+                border: 1px solid var(--amber-border);
+                color: var(--amber);
+                font-size: 13px;
+                border-radius: 7px;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -379,7 +396,7 @@
       .bottom {
         flex-shrink: 0;
         height: 50px;
-        background-color: var(--border);
+        border-top: 1px solid var(--border);
         display: flex;
         justify-content: left;
         align-items: center;
@@ -397,47 +414,32 @@
             cursor: pointer;
             font-size: 13px;
             &:nth-child(1) {
+              background-color: var(--green-bg);
+              color: var(--green);
+              border-color: var(--green-border);
+            }
+            &:nth-child(2) {
               background-color: var(--blue-bg);
               color: var(--accent-blue);
               border-color: var(--blue-border);
             }
-            &:nth-child(2) {
-              background-color: var(--cards);
-              color: var(--mutetd-tetx);
-              border-color: var(--hover-border);
-            }
             &:nth-child(3) {
-              background-color: var(--green-bg);
-              color: var(--green);
-              border-color: var(--green-border);
+              background-color: var(--border);
+              color: var(--secondary-text);
+              border-color: var(--hover-border);
             }
           }
           i {
             height: 30px;
             width: 30px;
             border-radius: 50%;
-            background-color: var(--cards);
+            background-color: var(--border);
             border: 1px solid var(--hover-border);
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 12px;
-            color: var(--mutetd-tetx);
-            cursor: pointer;
-          }
-        }
-        .right {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          button {
-            padding: 7px 12px;
-            background-color: transparent;
-            border: 1px solid var(--hover-border);
-            color: var(--mutetd-tetx);
-            font-size: 13px;
-            border-radius: 7px;
-            font-weight: bold;
+            color: var(--secondary-text);
             cursor: pointer;
           }
         }
@@ -460,19 +462,20 @@
           font-size: 11px;
           text-align: center;
         }
-        .application {
+        .completed {
           font-size: 16px;
         }
-        .pending {
+        .total {
           font-size: 16px;
         }
-        .review {
+        .avg-review {
           font-size: 16px;
+          i {
+            font-size: 8px;
+            margin-left: -2px;
+          }
         }
-        .avg-applicant {
-          font-size: 16px;
-        }
-        .days {
+        .repeat {
           font-size: 16px;
         }
       }
@@ -559,59 +562,44 @@
                 .txt {
                   font-size: 10px;
                 }
-                .budget {
+                .earned,
+                .repeat {
                   font-size: 16px;
                 }
-                .deadline {
+                .duration {
                   font-size: 16px;
                 }
-                .applicant {
+                .rating {
                   font-size: 16px;
-                }
-                .type {
-                  font-size: 16px;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  max-width: 135px;
                 }
               }
             }
-            .phase-wrap {
-              div {
-                gap: 3px;
-                font-size: 11px;
+            .no-review {
+              display: flex;
+              flex-direction: column;
+              justify-content: unset;
+              align-items: unset;
+              gap: 6px;
+              .left {
+                align-items: start;
+                i {
+                  font-size: 10px;
+                  margin-top: 2px;
+                }
                 p {
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  max-width: 45px;
-                  text-align: center;
-                }
-                span {
-                  width: 7px;
-                  height: 7px;
+                  font-size: 12px;
                 }
               }
-            }
-            .progress-wrap {
-              gap: 3px;
-              .top-up {
-                .progress-count {
-                  font-size: 11px;
-                  span {
-                    width: 2px;
-                    height: 2px;
-                    border-radius: 50%;
-                    background-color: var(--mutetd-tetx);
-                  }
+              .right {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                button {
+                  flex: 1;
+                  padding: 8px 0;
+                  font-size: 12px;
+                  border-radius: 5px;
                 }
-                .progress-percent {
-                  font-size: 11px;
-                }
-              }
-              .progress-bar {
-                height: 4px;
               }
             }
           }
@@ -622,13 +610,6 @@
             gap: 7px;
             button {
               padding: 6px 17px;
-              border-radius: 20px;
-            }
-          }
-          .right {
-            button {
-              padding: 6px 17px;
-              font-size: 12px;
               border-radius: 20px;
             }
           }

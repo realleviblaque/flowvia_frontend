@@ -11,29 +11,28 @@ export function HireCompletedProject({all}) {
       <main className="status-hire-completed-project-main">
         <div className="top-side">
           <div>
-              <p className="application">0</p>
-              <p className="txt">Application</p>
+              <p className="completed">0</p>
+              <p className="txt">Completed</p>
           </div>
           <div>
-            <p className="pending">0</p>
-            <p className="txt">Pending Review</p>
+            <p className="total">0</p>
+            <p className="txt">{isMobile ? '' : 'Total '}Paid Out</p>
           </div>
           <div>
-            <p className="review">0</p>
-            <p className="txt">In Review</p>
+            <p className="avg-review">0</p>
+            <p className="txt">Avg. Rating{isMobile ? '' : ' Given'}</p>
           </div>
           <div>
-            <p className="avg-applicant">0</p>
-            <p className="txt">Accepted</p>
+            <p className="repeat">0</p>
+            <p className="txt">{isMobile ? 'Repeated' : 'Repeat Freelancer'}</p>
           </div>
         </div>
         <div className="nav-wrap">
           <div className="left">
-            <div className='active'>All (0)</div>
-            <div>Pending (0)</div>
-            <div>In Review (0)</div>
-            <div>Accepted (0)</div>
-            <div>Declined (0)</div>
+            <div className='active'>All</div>
+            <div>This year</div>
+            <div>5 Star</div>
+            <div>Repeat Clients</div>
           </div>
           <div className="right">
             <div className="search-wrap">
@@ -48,22 +47,22 @@ export function HireCompletedProject({all}) {
               <div className="up">
                 <div className="first-top">
                   <div className="left">
-                    <div className='review'>Review</div>
+                    <div className='completed'><i className="fa-solid fa-check"></i> Completed</div>
                   </div>
                   <div className="right">
-                    Applied 3 days ago
+                    Completed Jan 28 2025
                   </div>
                 </div>
                 <p className="title">React Developer needed - SaaS Dashboard</p>
-                <p className="description">Full-time contact position building a SaaS analyics dashboard with custom charts, real-time data, and an admin portal.</p>
+                <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi obcaecati minima in, modi ea, numquam vel amet delectus dolorum odio temporibus accusantium, quia architecto necessitatibus. Laudantium magni ullam quidem labore!</p>
               </div>
               <div className="middle">
                 <div className="client-wrap">
                   <div className="left">
-                    <img src='/profile.png'/>
+                    <img src='/profile.png' />
                     <div>
-                      <p className="name">Zara Tanaka</p>
-                      <p className="user-details">@zaratanaka <span></span> Reccruiter <span></span> Editech Startuo</p>
+                      <p className="name">Levi Blaque</p>
+                      <p className="user-details">@realleviblaque <span></span> Freelancer</p>
                     </div>
                   </div>
                   <div className="right">
@@ -72,41 +71,33 @@ export function HireCompletedProject({all}) {
                 </div>
                 <div className="project-info-wrap">
                   <div>
-                    <p className="txt">Budget</p>
-                    <p className="budget">$2K-$5K</p>
+                    <p className="txt">Paid</p>
+                    <p className="earned">$3.5K</p>
                   </div>
                   <div>
-                    <p className="txt">Type</p>
-                    <p className="type">Full-time</p>
+                    <p className="txt">Duration</p>
+                    <p className="duration">3 weeks</p>
                   </div>
                   <div>
-                    <p className="txt">Deadline</p>
-                    <p className="deadline">May 15</p>
+                    <p className="txt">Rating</p>
+                    <p className="rating"><i className="fa-solid fa-star"></i> 5.0</p>
                   </div>
                   <div>
-                    <p className="txt">Applicants</p>
-                    <p className="applicant">12</p>
+                    <p className="txt">Repeat Frelancer</p>
+                    <p className="repeat">Yes</p>
                   </div>
-                </div>
-                <div className="skills-wrap">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>Rest APIs</span>
                 </div>
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <button>View Job {isMobile ? '' : 'Post'}</button>
+                <button>Rehire</button>
+                <button>View {isMobile ? '' : 'Project'}</button>
                 {isMobile ? (
                   <i className="fa-regular fa-message"></i>                  
                 ) : (
-                    <button>Message Client</button>
+                    <button>Message</button>
                 )}
-              </div>
-              <div className="right">
-                <button>Withdraw</button>
               </div>
             </div>
           </div>

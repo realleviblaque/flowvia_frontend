@@ -11,7 +11,7 @@ export function HireStatusSection() {
   const taken = takenProjects.filter(p => !p.isCompleted).length;
   const completed = hireCompletedProjects.length;
   let pending = 0;
-  openProjects.filter(p => p.jobType === 'Public').forEach(p => {
+  openProjects.forEach(p => {
     pending += p.applicant.length;
   })
   const isMobile = window.innerWidth < 768;

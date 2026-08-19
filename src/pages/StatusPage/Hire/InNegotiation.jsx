@@ -101,7 +101,7 @@ export function InNegotiation({all}) {
                           <p className="txt">Your Budget</p>
                           <p className="hd">${formatCount(negotiation.projects.budget.min)}-${formatCount(negotiation.projects.budget.max)}</p>
                         </div>
-                        <div className={!isWithin && 'not-within'}>
+                        <div className={!isWithin ? 'not-within' : ''}>
                           <p className="txt">Status</p>
                           <p className="hd">{isWithin ? (
                             <>

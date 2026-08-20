@@ -20,6 +20,13 @@ export function MarketplacePageHeader({type}) {
         handleSearch();
       }
     }
+    if (!search.trim()) {
+      if (e.key === 'Enter') {
+        setSearchParams({
+          search: ''
+        })
+      }
+    }
     if (e.key === 'Escape') {
       setSearch('')
       setSearchParams({
@@ -31,6 +38,11 @@ export function MarketplacePageHeader({type}) {
     if (search.trim()) {
       setSearchParams({
         search: search.trim()
+      })
+    }
+    if (!search.trim()) {
+      setSearchParams({
+        search: ''
       })
     }
   }

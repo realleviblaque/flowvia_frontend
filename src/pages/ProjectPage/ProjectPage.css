@@ -423,6 +423,7 @@
         gap: 10px;
         padding: 0;
         overflow: auto;
+        cursor: unset;
         &::-webkit-scrollbar {
           display: none;
         }
@@ -436,6 +437,7 @@
           border: 1px solid var(--border);
           background-color: var(--cards);
           color: var(--secondary-text);
+          cursor: pointer;
           &.tab-open {
             border: 1px solid var(--blue-border);
             color: var(--accent-blue);

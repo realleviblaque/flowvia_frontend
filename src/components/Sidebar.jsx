@@ -2,10 +2,29 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import logo from '../assets/logo/logo.png'
 import './SideBar.css'
+import { activeProject } from '../data/StatusPage/activeProject';
+import { appliedJob } from '../data/StatusPage/appliedJob';
+import { bookmarkJob } from '../data/StatusPage/bookmarkJob';
+import { workPendingRequest } from '../data/StatusPage/workPendingRequest';
+import { workCompletedProject } from '../data/StatusPage/workCompletedProject';
+import dayjs from '../lib/dayjs';
 
 const statusActive = (path, current) => current.startsWith(path);
 
 export function SideBar({notification}) {
+  const active = activeProject.filter(p => !p.isPaused).length;
+  const applied = appliedJob.length;
+  const bookmark = bookmarkJob.length;
+  const request = workPendingRequest.length;
+  const completed = workCompletedProject.length;
+  let expired = 0;
+  workPendingRequest.forEach(p => {
+    const expirationDays = 5;
+    const createdAt = dayjs(p.createdAt);
+    const daysElapsed = dayjs().diff(createdAt, 'day');
+    const daysLeft = expirationDays - daysElapsed;
+    if (daysLeft <= 0) expired ++;
+  })
   const location = useLocation();
   const [viewStatus, setViewStatus] = useState(false)
   return (
@@ -51,11 +70,11 @@ export function SideBar({notification}) {
                   <NavLink className='status-inlink' href="">Pending Request <p>11</p></NavLink>
                 </ul>
                 <ul className="self">
-                  <NavLink className='status-inlink' href="">Active Projects <p className="active-status-project">22</p></NavLink>
-                  <NavLink className='status-inlink' href="">Applied Jobs <p>11</p></NavLink>
-                  <NavLink className='status-inlink' href="">Bookmarked Jobs<p>6</p></NavLink>
-                  <NavLink className='status-inlink' href="">Completed Projects<p className="completet-status-project">8</p></NavLink>
-                  <NavLink className='status-inlink' href="">Pending Request<p>8</p></NavLink>
+                  <NavLink className='status-inlink' to="/status/work/active">Active Projects <p className="active-status-project">{active}</p></NavLink>
+                  <NavLink className='status-inlink' to="/status/work/applied">Applied Jobs <p>{applied}</p></NavLink>
+                  <NavLink className='status-inlink' to="/status/work/bookmark">Bookmarked Jobs<p>{bookmark}</p></NavLink>
+                  <NavLink className='status-inlink' to="/status/work/pending">Pending Request<p>{request - expired}</p></NavLink>
+                  <NavLink className='status-inlink' to="/status/work/completed">Completed Projects<p className="completet-status-project">{completed}</p></NavLink>
                 </ul>
               </div>
             </div>

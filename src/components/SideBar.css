@@ -214,7 +214,8 @@
             justify-content: space-between;
             align-items: center;
             border: 1px solid transparent;
-            &:hover {
+            &:hover,
+            &.active {
               border-color: var(--accent-blue);
             }
             p {

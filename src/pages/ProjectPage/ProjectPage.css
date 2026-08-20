@@ -80,13 +80,6 @@
       height: 100%;
       padding: 0 25px;
       cursor: pointer;
-      span {
-        background-color: var(--border);
-        color: var(--mutetd-tetx);
-        font-size: 11px;
-        padding: 2px 9px;
-        border-radius: 10px;
-      }
     }
     .tab-open {
       border-bottom: 3px solid var(--accent-blue);
@@ -102,6 +95,22 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      height: 400px;
+      i {
+        font-size: 40px;
+        color: var(--mutetd-tetx);
+      }
+      p {
+        font-size: 16px;
+        color: var(--mutetd-tetx);
+      }
+    }
     .project-container {
       height: 200px;
       width: 100%;
@@ -120,6 +129,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          filter: brightness(70%);
+        }
         .project-type {
           position: absolute;
           bottom: 20px;
@@ -256,6 +271,9 @@
               .completed-status {
                 color: var(--green);
               }
+              .onhold-status {
+                color: var(--coral);
+              }
               .budget-active {
                 color: var(--green);
               }
@@ -296,7 +314,7 @@
               .progress-bar {
                 background-color: var(--green);
                 height: 100%;
-                width: 38%;
+                width: unset;
                 border-radius: 20px;
               }
             }
@@ -392,51 +410,80 @@
     .main-tab {
       top: 0;
       height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: stretch;
       padding: 10px;
       gap: 10px;
-      overflow: auto;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      div {
-        flex-shrink: 0;
-        height: fit-content;
-        padding: 5px 15px;
-        gap: 8px;
-        font-size: 12px;
-        border-radius: 20px;
-        border: 1px solid var(--border);
-        background-color: var(--cards);
-        color: var(--secondary-text);
-        span {
-          font-size: 10px;
-          padding: 2px 7px;
+      .top-side {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          display: none;
         }
-        &.tab-open {
-          border: 1px solid var(--blue-border);
-          color: var(--accent-blue);
-          background-color: var(--blue-bg);
-          span {
-            background-color: var(--blue-border);
+        div {
+          flex-shrink: 0;
+          height: fit-content;
+          padding: 5px 15px;
+          gap: 8px;
+          font-size: 12px;
+          border-radius: 20px;
+          border: 1px solid var(--border);
+          background-color: var(--cards);
+          color: var(--secondary-text);
+          &.tab-open {
+            border: 1px solid var(--blue-border);
             color: var(--accent-blue);
+            background-color: var(--blue-bg);
           }
         }
+        select {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: auto;
+          flex-shrink: 0;
+          padding: 6px 15px;
+          gap: 0;
+          font-size: 12px;
+          border-radius: 20px;
+          border: 1px solid var(--border);
+          background-color: var(--cards);
+          color: var(--secondary-text);
+          width: auto;
+          white-space: nowrap;
+        }
       }
-      select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        width: auto;
-        flex-shrink: 0;
-        padding: 6px 15px;
-        gap: 0;
-        font-size: 12px;
-        border-radius: 20px;
-        border: 1px solid var(--border);
+      .search-wrap {
         background-color: var(--cards);
-        color: var(--secondary-text);
-        width: auto;
-        white-space: nowrap;
+        border: 1px solid var(--border);
+        display: flex;
+        justify-content: left;
+        align-items: stretch;
+        gap: 8px;
+        padding: 0 10px;
+        height: 42px;
+        border-radius: 8px;
+        i {
+          font-size: 13px;
+          color: var(--mutetd-tetx);
+          align-self: center;
+        }
+        input {
+          all: unset;
+          flex: 1;
+          font-size: 14px;
+          background-color: transparent;
+          color: var(--secondary-text);
+          &::placeholder {
+            color: var(--mutetd-tetx);
+          }
+        }
       }
     }
     .project-content {

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Projects } from "../../data/ProjectPage/Projects";
 import dayjs from 'dayjs';
 import { posts, savePosts } from "../../data/HomePage/posts";
+import { openProjects } from "../../data/StatusPage/openProject";
 
 export function CreatePost({all}) {
   const [text, setText] = useState('');
@@ -25,7 +26,7 @@ export function CreatePost({all}) {
   const [milestoneSearch, setMilestoneSearch] = useState('');
   const [opportunitySearch, setOpportunitySearch] = useState('');
   const [allProjectMilestone, setAllProjectMilestone] = useState(Projects)
-  const [allProjectOpportunity, setAllProjectOpportunity] = useState(Projects)
+  const [allProjectOpportunity, setAllProjectOpportunity] = useState(openProjects.filter(p => p.jobType = 'Public'))
   const [showTag, setShowTag] = useState(false)
   const [showLink, setShowLink] = useState(false)
   const tooltipRef1 = useRef(null)
@@ -36,7 +37,7 @@ export function CreatePost({all}) {
   useEffect(() => {
     const handleMilstoneSearch = () => {
       if (milestoneSearch.trim()) {
-        const searchResult = Projects.filter(p => p.name.toLowerCase().includes(milestoneSearch.trim().toLowerCase()));
+        const searchResult = Projects.filter(p => p.details.title.toLowerCase().includes(milestoneSearch.trim().toLowerCase()));
         setAllProjectMilestone(searchResult)
       } else {
         setAllProjectMilestone(Projects)
@@ -44,10 +45,10 @@ export function CreatePost({all}) {
     }
     const handleOpportunitySearch = () => {
       if (opportunitySearch.trim()) {
-        const searchResult = Projects.filter(p => p.name.toLowerCase().includes(opportunitySearch.trim().toLowerCase()));
+        const searchResult = openProjects.filter(p => p.details.name.toLowerCase().includes(opportunitySearch.trim().toLowerCase()));
         setAllProjectOpportunity(searchResult)
       } else {
-        setAllProjectOpportunity(Projects)
+        setAllProjectOpportunity(openProjects)
       }
     }
 
@@ -526,26 +527,25 @@ export function CreatePost({all}) {
           )}
           {allProjectMilestone.length > 0 && (
             allProjectMilestone.map((project) => {
+              const progress = (project.phases.completed / project.phases.total) * 100;
               return (
-                project.projectType !== 'Public Project' && (
-                  <div key={project.id} className="project-container" onClick={handleProjectClick}>
-                    <div className="left">
-                      <p>{project.projectType === 'Personal Project' ? 'Personal' : 'Client'}</p>
-                    </div>
-                    <div className="right">
-                      <p className="title">{project.name}</p>
-                      <div className="preogress-details">
-                        <div className="progress-bar">
-                          <span className="bar"></span>
-                        </div>
-                        <div className="count-phase">
-                          <p className="phase-count">Phase 2 / {project.totalPhase} complete</p>
-                          <p className="percent-count">40%</p>
-                        </div>
+                <div key={project.id} className="project-container" onClick={handleProjectClick}>
+                  <div className="left">
+                    <p>{project.projectType}</p>
+                  </div>
+                  <div className="right">
+                    <p className="title">{project.details.title}</p>
+                    <div className="preogress-details">
+                      <div className="progress-bar">
+                        <span className="bar" style={{width: `${progress}%`}}></span>
+                      </div>
+                      <div className="count-phase">
+                        <p className="phase-count">Phase {project.phases.completed} / {project.phases.total} complete</p>
+                        <p className="percent-count">{Math.round(progress)}%</p>
                       </div>
                     </div>
                   </div>
-                )
+                </div>
               )
             })
           )}
@@ -580,20 +580,18 @@ export function CreatePost({all}) {
           {allProjectOpportunity.length > 0 && (
             allProjectOpportunity.map((project) => {
               return (
-                project.projectType !== 'Public Project' && (
-                  <div key={project.id} className="project-container" onClick={handleOpportunotyClick}>
-                    <div className="left">
-                      
-                    </div>
-                    <div className="right">
-                      <p className="title">{project.name}</p>
-                      <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero nam voluptatum quae illo alias! Ipsa, deleniti voluptatum numquam expedita quaerat excepturi! Nisi id repudiandae consectetur mollitia blanditiis, quisquam assumenda!</p>
-                      <div className="extra-info">
-                        <p className="details">Remote <span></span> Long-Term Contract</p>
-                      </div>
+                <div key={project.id} className="project-container" onClick={handleOpportunotyClick}>
+                  <div className="left">
+                    
+                  </div>
+                  <div className="right">
+                    <p className="title">{project.details.name}</p>
+                    <p className="description">{project.details.description}</p>
+                    <div className="extra-info">
+                      <p className="details">{project.info.location} <span></span> {project.info.type}</p>
                     </div>
                   </div>
-                )
+                </div>
               )
             })
           )}

@@ -287,7 +287,7 @@ export function ActiveProject({all}) {
                     <div className="progress-wrap">
                       <div className="top-up">
                         <p className="progress-count">Progress <span></span> Phase {completedPhase}/{totalPhase}</p>
-                        <p className="progress-percent">{progress}%</p>
+                        <p className="progress-percent">{Math.round(progress)}%</p>
                       </div>
                       <div className="progress-bar">
                         <span className="bar" style={{width: `${progress}%`}}></span>

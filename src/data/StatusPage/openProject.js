@@ -14,6 +14,7 @@ export const openProjects = [{
     minBudget: 500,
     maxBudget: 2000,
     type: 'Part-time',
+    location: 'Remote',
     deadline: 'Nov 12',
     applicant: 7
   },
@@ -152,6 +153,7 @@ export const openProjects = [{
     minBudget: 500,
     maxBudget: 2000,
     type: 'Part-time',
+    location: 'Remote',
     deadline: 'Nov 12',
     applicant: 7
   },
@@ -334,6 +336,7 @@ export const openProjects = [{
     minBudget: 500,
     maxBudget: 2000,
     type: 'Part-time',
+    location: 'Remote',
     deadline: 'Nov 12',
     applicant: 7
   },
@@ -604,6 +607,7 @@ export const openProjects = [{
     minBudget: 500,
     maxBudget: 2000,
     type: 'Part-time',
+    location: 'Remote',
     deadline: 'Nov 12',
     applicant: 7
   },
@@ -720,6 +724,7 @@ export const openProjects = [{
     minBudget: 500,
     maxBudget: 2000,
     type: 'Long-Term Contract',
+    location: 'Remote',
     deadline: 'Nov 12',
     applicant: 7
   },

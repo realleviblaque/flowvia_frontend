@@ -105,6 +105,20 @@
                 background-color: var(--green);
               }
             }
+            .busy {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 6px;
+              font-size: 14px;
+              color: var(--coral);
+              .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--coral);
+              }
+            }
           }
         }
         .top-right {
@@ -123,6 +137,11 @@
         .bio {
           font-size: 14px;
           color: var(--mutetd-tetx);
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          overflow: hidden;
         }
         .info {
           display: flex;

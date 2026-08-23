@@ -59,10 +59,27 @@
       color: var(--secondary-text);
       border-radius: 20px;
       cursor: pointer;
+      i {
+        font-size: 12px;
+      }
       &.active {
         background-color: var(--blue-bg);
         border-color: var(--blue-border);
         color: var(--accent-blue);
+      }
+    }
+    select {
+      margin-left: auto;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--border);
+      background-color: var(--cards);
+      color: var(--secondary-text);
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
       }
     }
   }

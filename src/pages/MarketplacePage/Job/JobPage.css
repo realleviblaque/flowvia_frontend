@@ -43,7 +43,7 @@
             img {
               width: 45px;
               height: 45px;
-              border-radius: 8px;
+              border-radius: 50%;
               object-fit: cover;
             }
           }
@@ -176,10 +176,20 @@
             border-color: var(--blue-border);
             color: var(--accent-blue);
           }
-          .status {
+          .open {
+            background-color: var(--green-bg);
+            border-color: var(--green-border);
+            color: var(--green);
+          }
+          .taken {
             background-color: var(--coral-bg);
             border-color: var(--coral-border);
             color: var(--coral);
+          }
+          .discussion {
+            background-color: var(--amber-bg);
+            border-color: var(--amber-border);
+            color: var(--amber);
           }
         }
         .applicant {
@@ -258,8 +268,6 @@
               img {
                 width: 40px;
                 height: 40px;
-                border-radius: 8px;
-                object-fit: cover;
               }
             }
             .job-title-wrap {

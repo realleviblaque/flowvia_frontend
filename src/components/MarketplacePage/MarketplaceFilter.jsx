@@ -2,7 +2,7 @@ import { useLocation, useSearchParams } from 'react-router-dom'
 import './MarketplaceFilter.css'
 import { useEffect, useState } from 'react';
 
-export function MarketplaceFilter({freelancersFilter, setFreelancersFilter, teamsFilter, setTeamsFilter, jobsFilter, setJobsFilter, setJobsStatusFilter}) {
+export function MarketplaceFilter({freelancersFilter, setFreelancersFilter, teamsFilter, setTeamsFilter, jobsFilter, setJobsFilter, jobsStatusFilter, setJobsStatusFilter}) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get('search') || '')
   const location = useLocation();
@@ -90,7 +90,7 @@ export function MarketplaceFilter({freelancersFilter, setFreelancersFilter, team
             <span className={jobsFilter === 'any-level' ? 'active' : ''} onClick={() => setJobsFilter('any-level')}>Any Level</span>
             <span className={jobsFilter === 'long-term' ? 'active' : ''} onClick={() => setJobsFilter('long-term')}>Long Term Contract</span>
             <span className={jobsFilter === 'one-time' ? 'active' : ''} onClick={() => setJobsFilter('one-time')}>One-Time Project</span>
-            <select onChange={e => setJobsStatusFilter(e.target.value)}>
+            <select value={jobsStatusFilter} onChange={e => setJobsStatusFilter(e.target.value)}>
               <option value="open">Open</option>
               <option value="under-discussion">Under Discussion</option>
               <option value="taken">Taken</option>

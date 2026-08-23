@@ -554,12 +554,12 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
     <>
       <SideBar notification={all} />
 
-      <MarketplacePageHeader jobsFilter={jobsFilter} setJobsFilter={setJobsFilter} setJobsStatusFilter={setJobsStatusFilter} />
+      <MarketplacePageHeader jobsFilter={jobsFilter} setJobsFilter={setJobsFilter} jobsStatusFilter={jobsStatusFilter} setJobsStatusFilter={setJobsStatusFilter} />
       <MobileHeader handleDialogOpen={handleDialogOpen} />
       <Modal dialog={dialog} handleDialogClose={handleDialogClose} />
       <main className="marketplace-main">
         <MarketplaceNavbar />
-        <MarketplaceFilter jobsFilter={jobsFilter} setJobsFilter={setJobsFilter} setJobsStatusFilter={setJobsStatusFilter} />
+        <MarketplaceFilter jobsFilter={jobsFilter} setJobsFilter={setJobsFilter} jobsStatusFilter={jobsStatusFilter} setJobsStatusFilter={setJobsStatusFilter} />
         <section className="job-tab-section">
           {jobs.length === 0 ? (
             <div className='not-found-wrapper'>

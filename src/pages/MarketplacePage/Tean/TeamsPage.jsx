@@ -8,7 +8,7 @@ import { PlusModal } from '../../../components/PlusModal'
 import { Modal } from '../../../components/Modal'
 import { MobileHeader } from '../../../components/MobileHeader'
 import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useOutletContext, useSearchParams } from 'react-router-dom'
 import formatCount from '../../../utils/formatCount'
 
@@ -18,6 +18,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
   const [teams, setTeams] = useState(team)
   const [searchParams] = useSearchParams();
   const {teamsFilter, setTeamsFilter} = useOutletContext();
+  const hireDialogRef = useRef(null)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleFilter = () => {
@@ -103,6 +104,13 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
     }
     handleSearch();
   }, [search, teamsFilter])
+  const handleHireDialogOpen = () => {
+    hireDialogRef.current.showModal();
+  }
+  const handleHireDialogClose = () => {
+    hireDialogRef.current.close();
+  }
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
@@ -191,7 +199,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                             <p className="range">{`$${formatCount(team.rates.perProject.min)} - $${formatCount(team.rates.perProject.max)}`}</p>
                           </div>
                           <div className="button-wrap">
-                            <button className="hire-btn">Hire Team</button>
+                            <button className="hire-btn" onClick={handleHireDialogOpen}>Hire Team</button>
                             <button className="view-profile-btn">View Prodile</button>
                           </div>
                         </div>
@@ -203,6 +211,58 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
           )}
         </section>
       </main>
+      <dialog className='team-hire-dialog' ref={hireDialogRef}>
+        <div className="top">
+          <div className="left">
+            <i className="fa-regular fa-user"></i>
+            <div>
+              <p className="hd-txt">Send Hire Request</p>
+              <p className="txt">Direct hire <span></span> Marketplace</p>
+            </div>
+          </div>
+          <div className="right">
+            <i className="fa-solid fa-x" onClick={handleHireDialogClose}></i>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="user-wrap">
+            <p className="txt">Sending Hire Request To:</p>
+            <div className="wrap">
+              <img src="/profile.png" />
+              <div className='info'>
+                <div className="name-wrap">
+                  <p className="name">Levi Blaque</p>
+                  <i className="fa-regular fa-check-circle"></i>
+                </div>
+                {isMobile ? (
+                  <>
+                    <div className="user-info">
+                      <p className="username">@realleviblaque</p>
+                      <span></span>
+                      <p className="title">Founder/Full-Stack Developer</p>
+                    </div>
+                  </>
+                ) : <p className="user-info">@realleviblaque <span></span> Founder/Full-Stack Developer</p>}
+                <p className="price-range">Mem{isMobile ? '' : 'bers'}: 5 <span className="dot"></span> Price{isMobile ? '' : ' Range'}: $300 - $800 <span className="dot"></span> 20+ Pro{isMobile ? '' : 'jects'}</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-area">
+            <p className="txt">Your Message <span className='needed'>*</span></p>
+            <textarea placeholder='Enter your message...'></textarea>
+            <p className="counts">0 / 500</p>
+            <p className="txt">Link a Project - <span>Optional</span></p>
+            <div className='project-wrap'>
+              <p className="text">Select a project to link to...</p>
+              <i className="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div className="actions">
+            <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
+            <button className='send'><i className="fa-solid fa-paper-plane"></i> Send Hire Request</button>
+          </div>
+        </div>
+      </dialog>
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>

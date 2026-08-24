@@ -9,7 +9,7 @@ import { BottomBar } from '../../../components/BottomBar'
 import { PlusModal } from '../../../components/PlusModal'
 import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
 import { useOutletContext, useSearchParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import formatCount from '../../../utils/formatCount'
 
 const freelancer = [...Freelancers].sort(() => Math.random() - 0.5)
@@ -18,6 +18,7 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
   const [freelancers, setFreelancers] = useState(freelancer)
   const [searchParams] = useSearchParams();
   const {freelancersFilter, setFreelancersFilter} = useOutletContext();
+  const hireDialogRef = useRef(null)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleFilter = () => {
@@ -98,6 +99,13 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
     }
     handleSearch();
   }, [search, freelancersFilter])
+  const handleHireDialogOpen = () => {
+    hireDialogRef.current.showModal();
+  }
+  const handleHireDialogClose = () => {
+    hireDialogRef.current.close();
+  }
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
@@ -168,7 +176,7 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
                           <p className="range">{`$${formatCount(freelancer.rates.perProject.min)} - $${formatCount(freelancer.rates.perProject.max)}`}</p>
                         </div>
                         <div className="bottom-down">
-                          <button className="hire-btn">Hire</button>
+                          <button className="hire-btn" onClick={handleHireDialogOpen}>Hire</button>
                           <button className="view-profile-btn">View Profile</button>
                         </div>
                       </div>
@@ -179,8 +187,61 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
           )}
         </section>
       </main>
+      <dialog className='hire-dialog' ref={hireDialogRef}>
+        <div className="top">
+          <div className="left">
+            <i className="fa-regular fa-user"></i>
+            <div>
+              <p className="hd-txt">Send Hire Request</p>
+              <p className="txt">Direct hire <span></span> Marketplace</p>
+            </div>
+          </div>
+          <div className="right">
+            <i className="fa-solid fa-x" onClick={handleHireDialogClose}></i>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="user-wrap">
+            <p className="txt">Sending Hire Request To:</p>
+            <div className="wrap">
+              <img src="/profile.png" />
+              <div className='info'>
+                <div className="name-wrap">
+                  <p className="name">Levi Blaque</p>
+                  <i className="fa-regular fa-check-circle"></i>
+                </div>
+                {isMobile ? (
+                  <>
+                    <div className="user-info">
+                      <p className="username">@realleviblaque</p>
+                      <span></span>
+                      <p className="title">Founder/Full-Stack Developer</p>
+                    </div>
+                  </>
+                ) : <p className="user-info">@realleviblaque <span></span> Founder/Full-Stack Developer</p>}
+                <p className="price-range">Price Range: <span>$300 - $800</span></p>
+              </div>
+            </div>
+          </div>
+          <div className="text-area">
+            <p className="txt">Your Message <span className='needed'>*</span></p>
+            <textarea placeholder='Enter your message...'></textarea>
+            <p className="counts">0 / 500</p>
+            <p className="txt">Link a Project - <span>Optional</span></p>
+            <div className='project-wrap'>
+              <p className="text">Select a project to link to...</p>
+              <i className="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div className="actions">
+            <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
+            <button className='send'><i className="fa-solid fa-paper-plane"></i> Send Hire Request</button>
+          </div>
+        </div>
+      </dialog>
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
+
     </>
   )
 }

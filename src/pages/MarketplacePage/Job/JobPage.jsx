@@ -8,7 +8,7 @@ import { Modal } from '../../../components/Modal'
 import { BottomBar } from '../../../components/BottomBar'
 import { PlusModal } from '../../../components/PlusModal'
 import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useOutletContext, useSearchParams } from 'react-router-dom'
 import formatCount from '../../../utils/formatCount'
 import { statusTimeAgo } from '../../../utils/statusTimeAgo'
@@ -19,6 +19,7 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
   const [jobs, setJobs] = useState(job)
   const [searchParams] = useSearchParams();
   const {jobsFilter, setJobsFilter, jobsStatusFilter, setJobsStatusFilter} = useOutletContext();
+  const applyDialogRef = useRef(null)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleStatusFilter = () => {
@@ -550,6 +551,12 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
     }
     handleSearch();
   }, [search, jobsFilter, jobsStatusFilter])
+  const handleApplyDialogOpen = () => {
+    applyDialogRef.current.showModal();
+  }
+  const handleApplyDialogClose = () => {
+    applyDialogRef.current.close();
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -630,7 +637,7 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
                         </div>
                         <p className="applicant"><span className="applicant-count">{job.info.totalApplied}</span> people Applied</p>
                         <p className="posted-time">{statusTimeAgo(job.createdAt)}</p>
-                        <button className="apply-btn">Apply Now</button>
+                        <button className="apply-btn" onClick={handleApplyDialogOpen}>Apply Now</button>
                         <button className="view-job-btn">View Job</button>
                         <i className="fa-regular fa-bookmark"></i>
                       </div>
@@ -641,6 +648,44 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
           )}
         </section>
       </main>
+      <dialog className='job-apply-dialog' ref={applyDialogRef}>
+        <div className="top">
+          <div className="left">
+            <i className="fa-regular fa-user"></i>
+            <div>
+              <p className="hd-txt">Apply For Job</p>
+              <p className="txt">Job Application <span></span> Marketplace</p>
+            </div>
+          </div>
+          <div className="right">
+            <i className="fa-solid fa-x" onClick={handleApplyDialogClose}></i>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="user-wrap">
+            <p className="txt">Job Application</p>
+            <div className="wrap">
+              <img src="/profile.png" />
+              <div className='info'>
+                <div className="name-wrap">
+                  <p className="name">Backend Developer Needed</p>
+                </div>
+                <p className="user-info">Requirement: Backend Developer</p>
+                <p className="price-range">Budget: <span>$300 - $800</span> <span className="dot"></span> Remote</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-area">
+            <p className="txt">Your Message <span className='needed'>*</span></p>
+            <textarea placeholder='Enter your message...'></textarea>
+            <p className="counts">0 / 500</p>
+          </div>
+          <div className="actions">
+            <button className='cancel' onClick={handleApplyDialogClose}>Cancel</button>
+            <button className='send'><i className="fa-solid fa-paper-plane"></i> Submit Application</button>
+          </div>
+        </div>
+      </dialog>
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>

@@ -1,8 +1,13 @@
 import { useState } from "react"
 import { openProjects } from "../../data/StatusPage/openProject"
 
-export function ProjectSelector({isOpen, isRendered, setIsRendered}) {
-  const [projects, ] = useState(openProjects.filter(p => p.jobType === 'Public'))
+export function ProjectSelector({isOpen, isRendered, setIsRendered, setIsOpen, onSelectProject, setSelectHeadText}) {
+  const [projects, ] = useState(openProjects.filter(p => p.jobType === 'Public'));
+  const handleSelectProject = (project) => {
+    onSelectProject(project);
+    setSelectHeadText(project.details.name)
+    setIsOpen(false);
+  }
   return (
     <div className={`project-selector ${isOpen && 'open'}`} style={{display: isRendered ? 'flex' : 'none'}} onTransitionEnd={() => {
       if (!isOpen) setIsRendered(false)
@@ -12,8 +17,8 @@ export function ProjectSelector({isOpen, isRendered, setIsRendered}) {
       )}
       {projects.map((project) => {
         return (
-          <div className="projects" key={project.id}>
-            <div className="left">
+          <div className="projects" key={project.id} onClick={() => handleSelectProject(project)}>
+            <div className="left"> 
               
             </div>
             <div className="right">

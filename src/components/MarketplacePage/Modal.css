@@ -207,6 +207,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        gap: 10px;
         height: 40px;
         border: 1px solid var(--hover-border);
         background-color: var(--border);
@@ -218,6 +219,9 @@
           flex: 1;
           color: var(--secondary-text);
           font-size: 15px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
         i {
           font-size: 12px;

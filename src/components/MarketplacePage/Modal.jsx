@@ -6,9 +6,12 @@ import { ProjectSelector } from "./ProjectSelector";
 const isMobile = window.innerWidth < 768;
 
 function FreelancerDialog({hireDialogRef, freelancerHireData}) {
+  const [freelancerSelectedProject, setFreelancerSelectedProject] = useState([])
   const [value, setValue] = useState('')
+  const [selectHeadText, setSelectHeadText] = useState('Select a project to link to...');
   const [isOpen, setIsOpen] = useState(false)
   const [isRendered, setIsRendered] = useState(false)
+  console.log(freelancerSelectedProject)
   const handleIsOpen = () => {
     if (!isOpen) {
       setIsRendered(true);
@@ -19,6 +22,8 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
   }
   const handleHireDialogClose = () => {
     setValue('')
+    setSelectHeadText('Select a project to link to...')
+    setFreelancerSelectedProject([])
     hireDialogRef.current.close();
     setIsOpen(false)
     setIsRendered(false)
@@ -66,10 +71,10 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
           <p className="counts">{value.length} / 500</p>
           <p className="txt project-txt">Link a Project - <span>Optional</span></p>
           <div className='project-wrap' onClick={handleIsOpen}>
-            <p className="text">Select a project to link to...</p>
+            <p className="text">{selectHeadText}</p>
             <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
-          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} />}
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setFreelancerSelectedProject} setSelectHeadText={setSelectHeadText} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
@@ -80,9 +85,12 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
   )
 }
 function TeamDialog({hireDialogRef, teamHireData}) {
+  const [teamSelectedProject, setTeamSelectedProject] = useState([])
   const [value, setValue] = useState('')
+  const [selectHeadText, setSelectHeadText] = useState('Select a project to link to...');
   const [isOpen, setIsOpen] = useState(false)
   const [isRendered, setIsRendered] = useState(false)
+  console.log(teamSelectedProject)
   const handleIsOpen = () => {
     if (!isOpen) {
       setIsRendered(true);
@@ -93,6 +101,8 @@ function TeamDialog({hireDialogRef, teamHireData}) {
   }
   const handleHireDialogClose = () => {
     setValue('')
+    setSelectHeadText('Select a project to link to...');
+    setTeamSelectedProject([])
     hireDialogRef.current.close();
     setIsOpen(false)
     setIsRendered(false)
@@ -140,10 +150,10 @@ function TeamDialog({hireDialogRef, teamHireData}) {
           <p className="counts">{value.length} / 500</p>
           <p className="txt project-txt">Link a Project - <span>Optional</span></p>
           <div className='project-wrap' onClick={handleIsOpen}>
-            <p className="text">Select a project to link to...</p>
+            <p className="text">{selectHeadText}</p>
             <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
-          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} />}
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setTeamSelectedProject} setSelectHeadText={setSelectHeadText} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>

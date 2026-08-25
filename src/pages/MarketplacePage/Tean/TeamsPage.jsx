@@ -11,6 +11,7 @@ import { MarketplaceFilter } from '../../../components/MarketplacePage/Marketpla
 import { useEffect, useRef, useState } from 'react'
 import { useOutletContext, useSearchParams } from 'react-router-dom'
 import formatCount from '../../../utils/formatCount'
+import { TeamDialog } from '../../../components/MarketplacePage/Modal'
 
 const team = [...Teams].sort(() => Math.random() - 0.5)
 
@@ -19,20 +20,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
   const [searchParams] = useSearchParams();
   const {teamsFilter, setTeamsFilter} = useOutletContext();
   const hireDialogRef = useRef(null)
-  const [teamHireData, setTeamHireData] = useState({/* 
-    id: crypto.randomUUID(),
-    image: '/profile.png',
-    name: 'Levi Blaque',
-    username: 'realleviblaque',
-    title: 'Full-Stack Developer',
-    member: 5,
-    projects: 10,
-    isVerified: true,
-    priceRange: {
-      min: 500,
-      max: 3000
-    } */
-  })
+  const [teamHireData, setTeamHireData] = useState({})
   const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
   useEffect(() => {
@@ -145,10 +133,6 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
     })
     setShowHireDialog(true)
   }
-  const handleHireDialogClose = () => {
-    hireDialogRef.current.close();
-  }
-  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
@@ -249,58 +233,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
           )}
         </section>
       </main>
-      <dialog className='team-hire-dialog' ref={hireDialogRef}>
-        <div className="top">
-          <div className="left">
-            <i className="fa-regular fa-user"></i>
-            <div>
-              <p className="hd-txt">Send Hire Request</p>
-              <p className="txt">Direct hire <span></span> Marketplace</p>
-            </div>
-          </div>
-          <div className="right">
-            <i className="fa-solid fa-x" onClick={handleHireDialogClose}></i>
-          </div>
-        </div>
-        <div className="bottom">
-          <div className="user-wrap">
-            <p className="txt">Sending Hire Request To:</p>
-            <div className="wrap">
-              <img src={teamHireData.image} />
-              <div className='info'>
-                <div className="name-wrap">
-                  <p className="name">{teamHireData.name}</p>
-                  {teamHireData.isVerified && <i className="fa-regular fa-check-circle"></i>}
-                </div>
-                {isMobile ? (
-                  <>
-                    <div className="user-info">
-                      <p className="username">@{teamHireData.username}</p>
-                      <span></span>
-                      <p className="title">{teamHireData.title}</p>
-                    </div>
-                  </>
-                ) : <p className="user-info">@{teamHireData.username} <span></span> {teamHireData.title}</p>}
-                <p className="price-range">Mem{isMobile ? '' : 'bers'}: {teamHireData.member} <span className="dot"></span> Price{isMobile ? '' : ' Range'}: ${formatCount(teamHireData.priceRange?.min)} - ${formatCount(teamHireData.priceRange?.max)} <span className="dot"></span> {teamHireData.projects}+ Pro{isMobile ? '' : 'jects'}</p>
-              </div>
-            </div>
-          </div>
-          <div className="text-area">
-            <p className="txt">Your Message <span className='needed'>*</span></p>
-            <textarea placeholder='Enter your message...'></textarea>
-            <p className="counts">0 / 500</p>
-            <p className="txt">Link a Project - <span>Optional</span></p>
-            <div className='project-wrap'>
-              <p className="text">Select a project to link to...</p>
-              <i className="fa-solid fa-chevron-down"></i>
-            </div>
-          </div>
-          <div className="actions">
-            <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
-            <button className='send'><i className="fa-solid fa-paper-plane"></i> Send Hire Request</button>
-          </div>
-        </div>
-      </dialog>
+      <TeamDialog hireDialogRef={hireDialogRef} teamHireData={teamHireData} />
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>

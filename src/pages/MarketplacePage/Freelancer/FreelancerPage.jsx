@@ -11,6 +11,7 @@ import { MarketplaceFilter } from '../../../components/MarketplacePage/Marketpla
 import { useOutletContext, useSearchParams } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import formatCount from '../../../utils/formatCount'
+import { FreelancerDialog } from '../../../components/MarketplacePage/Modal'
 
 const freelancer = [...Freelancers].sort(() => Math.random() - 0.5)
 
@@ -125,10 +126,6 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
     })
     setShowHireDialog(true)
   }
-  const handleHireDialogClose = () => {
-    hireDialogRef.current.close();
-  }
-  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
@@ -210,58 +207,7 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
           )}
         </section>
       </main>
-      <dialog className='hire-dialog' ref={hireDialogRef}>
-        <div className="top">
-          <div className="left">
-            <i className="fa-regular fa-user"></i>
-            <div>
-              <p className="hd-txt">Send Hire Request</p>
-              <p className="txt">Direct hire <span></span> Marketplace</p>
-            </div>
-          </div>
-          <div className="right">
-            <i className="fa-solid fa-x" onClick={handleHireDialogClose}></i>
-          </div>
-        </div>
-        <div className="bottom">
-          <div className="user-wrap">
-            <p className="txt">Sending Hire Request To:</p>
-            <div className="wrap">
-              <img src={freelancerHireData.image} />
-              <div className='info'>
-                <div className="name-wrap">
-                  <p className="name">{freelancerHireData.name}</p>
-                  {freelancerHireData.isVerified && <i className="fa-regular fa-check-circle"></i>}
-                </div>
-                {isMobile ? (
-                  <>
-                    <div className="user-info">
-                      <p className="username">@{freelancerHireData.username}</p>
-                      <span></span>
-                      <p className="title">{freelancerHireData.title}</p>
-                    </div>
-                  </>
-                ) : <p className="user-info">@{freelancerHireData.username} <span></span> {freelancerHireData.title}</p>}
-                <p className="price-range">Price Range: <span>${formatCount(freelancerHireData.priceRange?.min)} - ${formatCount(freelancerHireData.priceRange?.max)}</span></p>
-              </div>
-            </div>
-          </div>
-          <div className="text-area">
-            <p className="txt">Your Message <span className='needed'>*</span></p>
-            <textarea placeholder='Enter your message...'></textarea>
-            <p className="counts">0 / 500</p>
-            <p className="txt">Link a Project - <span>Optional</span></p>
-            <div className='project-wrap'>
-              <p className="text">Select a project to link to...</p>
-              <i className="fa-solid fa-chevron-down"></i>
-            </div>
-          </div>
-          <div className="actions">
-            <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
-            <button className='send'><i className="fa-solid fa-paper-plane"></i> Send Hire Request</button>
-          </div>
-        </div>
-      </dialog>
+      <FreelancerDialog hireDialogRef={hireDialogRef} freelancerHireData={freelancerHireData} />
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
 

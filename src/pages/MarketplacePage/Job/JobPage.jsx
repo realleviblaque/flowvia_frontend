@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useOutletContext, useSearchParams } from 'react-router-dom'
 import formatCount from '../../../utils/formatCount'
 import { statusTimeAgo } from '../../../utils/statusTimeAgo'
+import { JobDialog } from '../../../components/MarketplacePage/Modal'
 
 const job = [...Jobs].sort(() => Math.random() - 0.5)
 
@@ -577,9 +578,6 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
     })
     setShowHireDialog(true)
   }
-  const handleApplyDialogClose = () => {
-    applyDialogRef.current.close();
-  }
   return (
     <>
       <SideBar notification={all} />
@@ -671,44 +669,7 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
           )}
         </section>
       </main>
-      <dialog className='job-apply-dialog' ref={applyDialogRef}>
-        <div className="top">
-          <div className="left">
-            <i className="fa-regular fa-user"></i>
-            <div>
-              <p className="hd-txt">Apply For Job</p>
-              <p className="txt">Job Application <span></span> Marketplace</p>
-            </div>
-          </div>
-          <div className="right">
-            <i className="fa-solid fa-x" onClick={handleApplyDialogClose}></i>
-          </div>
-        </div>
-        <div className="bottom">
-          <div className="user-wrap">
-            <p className="txt">Job Application</p>
-            <div className="wrap">
-              <img src={jobHireData.image} />
-              <div className='info'>
-                <div className="name-wrap">
-                  <p className="name">{jobHireData.title}</p>
-                </div>
-                <p className="user-info">Requirement: {jobHireData.requirement}</p>
-                <p className="price-range">Budget: <span>${formatCount(jobHireData.budget?.min)} - ${formatCount(jobHireData.budget?.max)}</span> <span className="dot"></span> {jobHireData.location}</p>
-              </div>
-            </div>
-          </div>
-          <div className="text-area">
-            <p className="txt">Your Message <span className='needed'>*</span></p>
-            <textarea placeholder='Enter your message...'></textarea>
-            <p className="counts">0 / 500</p>
-          </div>
-          <div className="actions">
-            <button className='cancel' onClick={handleApplyDialogClose}>Cancel</button>
-            <button className='send'><i className="fa-solid fa-paper-plane"></i> Submit Application</button>
-          </div>
-        </div>
-      </dialog>
+      <JobDialog applyDialogRef={applyDialogRef} jobHireData={jobHireData} />
       <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>

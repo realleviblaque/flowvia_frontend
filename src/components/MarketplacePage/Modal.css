@@ -160,6 +160,7 @@
     .text-area {
       display: flex;
       flex-direction: column;
+      position: relative;
       gap: 10px;
       padding: 15px 30px;
       border-bottom: 1px solid var(--border);
@@ -212,6 +213,7 @@
         padding: 4px 15px;
         border-radius: 10px;
         cursor: pointer;
+        z-index: 10;
         .text {
           flex: 1;
           color: var(--secondary-text);
@@ -220,6 +222,95 @@
         i {
           font-size: 12px;
           color: var(--secondary-text);
+        }
+      }
+      .project-selector {
+        transform: translateY(22%);
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.3s;
+        position: absolute;
+        bottom: 70px;
+        right: 30px;
+        left: 30px;
+        height: 360px;
+        background-color: var(--border);
+        border: 1px solid var(--hover-border);
+        color: var(--secondary-text);
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 10px;
+        padding: 20px;
+        z-index: 9;
+        &.open {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .empty {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+        .projects {
+          padding: 5px 0;
+          height: 45px;
+          display: flex;
+          gap: 10px;
+          cursor: pointer;
+          .left {
+            flex-shrink: 0;
+            width: 50px;
+            background-color: var(--blue-border);
+            border-radius: 6px;
+          }
+          .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .title {
+              flex-shrink: 0;
+              font-size: 16px;
+              font-weight: bold;
+              color: var(--pry-text);
+              max-width: 440px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            .description {
+              margin-top: -3px;
+              flex-shrink: 0;
+              font-size: 12px;
+              color: var(--mutetd-tetx);
+              max-width: 440px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            .extra-info {
+              margin-top: -2px;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              .details {
+                flex: 1;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 10px;
+                font-size: 12px;
+                color: var(--secondary-text);
+                span {
+                  width: 2px;
+                  height: 2px;
+                  border-radius: 50%;
+                  background-color: var(--secondary-text);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -396,6 +487,9 @@
             font-size: 14px;
           }
         }
+        .project-txt {
+          margin-top: auto;
+        }
         .project-wrap {
           height: 32px;
           padding: 4px 12px;
@@ -405,6 +499,29 @@
           }
           i {
             font-size: 10px;
+          }
+        }
+        .project-selector {
+          bottom: 62px;
+          right: 12px;
+          left: 12px;
+          height: 370px;
+          padding: 15px;
+          z-index: 9;
+          .projects {
+            gap: 8px;
+            .left {
+              width: 45px;
+            }
+            .right {
+              .title {
+                font-size: 16px;
+                max-width: 250px;
+              }
+              .description {
+                max-width: 250px;
+              }
+            }
           }
         }
       }

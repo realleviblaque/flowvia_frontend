@@ -1,14 +1,27 @@
 import { useState } from "react";
 import formatCount from "../../utils/formatCount";
 import './Modal.css'
+import { ProjectSelector } from "./ProjectSelector";
 
 const isMobile = window.innerWidth < 768;
 
 function FreelancerDialog({hireDialogRef, freelancerHireData}) {
   const [value, setValue] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
+  const [isRendered, setIsRendered] = useState(false)
+  const handleIsOpen = () => {
+    if (!isOpen) {
+      setIsRendered(true);
+      setTimeout(() => setIsOpen(true), 0);
+    } else {
+      setIsOpen(false)
+    }
+  }
   const handleHireDialogClose = () => {
     setValue('')
     hireDialogRef.current.close();
+    setIsOpen(false)
+    setIsRendered(false)
   }
   return (
     <dialog className='marketplace-dialog hire-dialog' ref={hireDialogRef}>
@@ -51,11 +64,12 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
           <p className="txt">Your Message <span className='needed'>*</span></p>
           <textarea placeholder='Enter your message...' value={value} onChange={e => setValue(e.target.value)} maxLength={500}></textarea>
           <p className="counts">{value.length} / 500</p>
-          <p className="txt">Link a Project - <span>Optional</span></p>
-          <div className='project-wrap'>
+          <p className="txt project-txt">Link a Project - <span>Optional</span></p>
+          <div className='project-wrap' onClick={handleIsOpen}>
             <p className="text">Select a project to link to...</p>
-            <i className="fa-solid fa-chevron-down"></i>
+            <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
@@ -67,9 +81,21 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
 }
 function TeamDialog({hireDialogRef, teamHireData}) {
   const [value, setValue] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
+  const [isRendered, setIsRendered] = useState(false)
+  const handleIsOpen = () => {
+    if (!isOpen) {
+      setIsRendered(true);
+      setTimeout(() => setIsOpen(true), 0);
+    } else {
+      setIsOpen(false)
+    }
+  }
   const handleHireDialogClose = () => {
     setValue('')
     hireDialogRef.current.close();
+    setIsOpen(false)
+    setIsRendered(false)
   }
   return (
     <dialog className='marketplace-dialog team-hire-dialog' ref={hireDialogRef}>
@@ -112,11 +138,12 @@ function TeamDialog({hireDialogRef, teamHireData}) {
           <p className="txt">Your Message <span className='needed'>*</span></p>
           <textarea placeholder='Enter your message...' value={value} onChange={e => setValue(e.target.value)} maxLength={500}></textarea>
           <p className="counts">{value.length} / 500</p>
-          <p className="txt">Link a Project - <span>Optional</span></p>
-          <div className='project-wrap'>
+          <p className="txt project-txt">Link a Project - <span>Optional</span></p>
+          <div className='project-wrap' onClick={handleIsOpen}>
             <p className="text">Select a project to link to...</p>
-            <i className="fa-solid fa-chevron-down"></i>
+            <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>

@@ -1,10 +1,13 @@
+import { useState } from "react";
 import formatCount from "../../utils/formatCount";
 import './Modal.css'
 
 const isMobile = window.innerWidth < 768;
 
 function FreelancerDialog({hireDialogRef, freelancerHireData}) {
+  const [value, setValue] = useState('')
   const handleHireDialogClose = () => {
+    setValue('')
     hireDialogRef.current.close();
   }
   return (
@@ -46,8 +49,8 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
         </div>
         <div className="text-area">
           <p className="txt">Your Message <span className='needed'>*</span></p>
-          <textarea placeholder='Enter your message...'></textarea>
-          <p className="counts">0 / 500</p>
+          <textarea placeholder='Enter your message...' value={value} onChange={e => setValue(e.target.value)} maxLength={500}></textarea>
+          <p className="counts">{value.length} / 500</p>
           <p className="txt">Link a Project - <span>Optional</span></p>
           <div className='project-wrap'>
             <p className="text">Select a project to link to...</p>
@@ -63,7 +66,9 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
   )
 }
 function TeamDialog({hireDialogRef, teamHireData}) {
+  const [value, setValue] = useState('')
   const handleHireDialogClose = () => {
+    setValue('')
     hireDialogRef.current.close();
   }
   return (
@@ -105,8 +110,8 @@ function TeamDialog({hireDialogRef, teamHireData}) {
         </div>
         <div className="text-area">
           <p className="txt">Your Message <span className='needed'>*</span></p>
-          <textarea placeholder='Enter your message...'></textarea>
-          <p className="counts">0 / 500</p>
+          <textarea placeholder='Enter your message...' value={value} onChange={e => setValue(e.target.value)} maxLength={500}></textarea>
+          <p className="counts">{value.length} / 500</p>
           <p className="txt">Link a Project - <span>Optional</span></p>
           <div className='project-wrap'>
             <p className="text">Select a project to link to...</p>
@@ -122,7 +127,9 @@ function TeamDialog({hireDialogRef, teamHireData}) {
   )
 }
 function JobDialog({applyDialogRef, jobHireData}) {
+  const [value, setValue] = useState('')
   const handleApplyDialogClose = () => {
+    setValue('')
     applyDialogRef.current.close();
   }
   return (
@@ -155,8 +162,8 @@ function JobDialog({applyDialogRef, jobHireData}) {
         </div>
         <div className="text-area">
           <p className="txt">Your Message <span className='needed'>*</span></p>
-          <textarea placeholder='Enter your message...'></textarea>
-          <p className="counts">0 / 500</p>
+          <textarea placeholder='Enter your message...' value={value} onChange={e => setValue(e.target.value)} maxLength={500}></textarea>
+          <p className="counts">{value.length} / 500</p>
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleApplyDialogClose}>Cancel</button>

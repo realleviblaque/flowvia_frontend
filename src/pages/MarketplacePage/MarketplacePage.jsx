@@ -6,7 +6,7 @@ export function MarketplacePage() {
   const [freelancersFilter, setFreelancersFilter] = useState('all');
   const [teamsFilter, setTeamsFilter] = useState('all');
   const [jobsFilter, setJobsFilter] = useState('all');
-  const [jobsStatusFilter, setJobsStatusFilter] = useState('open')
+  const [jobsStatusFilter, setJobsStatusFilter] = useState('all')
   
   // this resets everything back to default once we navigate to another page or once the url changes
   const location = useLocation();
@@ -15,7 +15,7 @@ export function MarketplacePage() {
       setFreelancersFilter('all')
       setTeamsFilter('all')
       setJobsFilter('all')
-      setJobsStatusFilter('open')
+      setJobsStatusFilter('all')
     }
     hadleReset()
   }, [location.pathname])

@@ -84,6 +84,7 @@ export function MarketplacePageHeader({freelancersFilter, setFreelancersFilter, 
             <div className={jobsFilter === 'long-term' ? 'active' : ''} onClick={() => setJobsFilter('long-term')}>Long Term Contract</div>
             <div className={jobsFilter === 'one-time' ? 'active' : ''} onClick={() => setJobsFilter('one-time')}>One-Time Project</div>
             <select value={jobsStatusFilter} onChange={e => setJobsStatusFilter(e.target.value)}>
+              <option value="all">All</option>
               <option value="open">Open</option>
               <option value="under-discussion">Under Discussion</option>
               <option value="taken">Taken</option>

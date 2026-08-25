@@ -27,6 +27,9 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
   useEffect(() => {
     const handleStatusFilter = () => {
       switch (jobsStatusFilter) {
+        case 'all':
+          setJobs(job)
+          break;
         case 'open':
           setJobs(job.filter(p => p.status === 'Open'))
           break;
@@ -48,7 +51,43 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
       const open = job.filter(p => p.status === 'Open');
       const discussion = job.filter(p => p.status === 'Under Discussion');
       const taken = job.filter(p => p.status === 'Taken');
-      if (jobsStatusFilter === 'open') {
+      if (jobsStatusFilter === 'all') {
+        switch (jobsFilter) {
+          case 'all':
+            setJobs(job)
+            break;
+          case 'remote':
+            setJobs(job.filter(p => p.info.location === 'Remote'))
+            break;
+          case 'on-site':
+            setJobs(job.filter(p => p.info.location === 'On-Site'))
+            break;
+          case 'deadline-open':
+            setJobs(job.filter(p => p.info.deadline === ''))
+            break;
+          case 'mid-senior':
+            setJobs(job.filter(p => p.info.experience === 'Mid-Senior'))
+            break;
+          case 'senior':
+            setJobs(job.filter(p => p.info.experience === 'Senior'))
+            break;
+          case 'mid-level':
+            setJobs(job.filter(p => p.info.experience === 'Mid-Level'))
+            break;
+          case 'any-level':
+            setJobs(job.filter(p => p.info.experience === 'Any Level'))
+            break;
+          case 'long-term':
+            setJobs(job.filter(p => p.info.projectType === 'Long Term Contract'))
+            break;
+          case 'one-time':
+            setJobs(job.filter(p => p.info.projectType === 'One-Time Project'))
+            break;
+          default:
+            setJobs(job)
+            break;
+        }
+      } else if (jobsStatusFilter === 'open') {
         switch (jobsFilter) {
           case 'all':
             setJobs(open)
@@ -166,7 +205,98 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
       const discussion = job.filter(p => p.status === 'Under Discussion');
       const taken = job.filter(p => p.status === 'Taken');
       if (search) {
-        if (jobsStatusFilter === 'open') {
+        if (jobsStatusFilter === 'all') {
+          switch (jobsFilter) {
+            case 'all':
+              setJobs(job.filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'remote':
+              setJobs(job.filter(p => p.info.location === 'Remote').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'on-site':
+              setJobs(job.filter(p => p.info.location === 'On-Site').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'deadline-open':
+              setJobs(job.filter(p => p.info.deadline === '').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'mid-senior':
+              setJobs(job.filter(p => p.info.experience === 'Mid-Senior').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'senior':
+              setJobs(job.filter(p => p.info.experience === 'Senior').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'mid-level':
+              setJobs(job.filter(p => p.info.experience === 'Mid-Level').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'any-level':
+              setJobs(job.filter(p => p.info.experience === 'Any Level').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'long-term':
+              setJobs(job.filter(p => p.info.projectType === 'Long Term Contract').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            case 'one-time':
+              setJobs(job.filter(p => p.info.projectType === 'One-Time Project').filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+            default:
+              setJobs(job.filter(p => 
+                p.clients.username.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.title.toLowerCase().includes(search.toLowerCase()) 
+                || p.details.description.toLowerCase().includes(search.toLowerCase()) 
+                || p.skills.some(p => p.name.toLowerCase().includes(search.toLowerCase()))
+              ))
+              break;
+          }
+        } else if (jobsStatusFilter === 'open') {
           switch (jobsFilter) {
             case 'all':
               setJobs(open.filter(p => 
@@ -441,7 +571,43 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
           }
         }
       } else {
-        if (jobsStatusFilter === 'open') {
+        if (jobsStatusFilter === 'all') {
+          switch (jobsFilter) {
+            case 'all':
+              setJobs(job)
+              break;
+            case 'remote':
+              setJobs(job.filter(p => p.info.location === 'Remote'))
+              break;
+            case 'on-site':
+              setJobs(job.filter(p => p.info.location === 'On-Site'))
+              break;
+            case 'deadline-open':
+              setJobs(job.filter(p => p.info.deadline === ''))
+              break;
+            case 'mid-senior':
+              setJobs(job.filter(p => p.info.experience === 'Mid-Senior'))
+              break;
+            case 'senior':
+              setJobs(job.filter(p => p.info.experience === 'Senior'))
+              break;
+            case 'mid-level':
+              setJobs(job.filter(p => p.info.experience === 'Mid-Level'))
+              break;
+            case 'any-level':
+              setJobs(job.filter(p => p.info.experience === 'Any Level'))
+              break;
+            case 'long-term':
+              setJobs(job.filter(p => p.info.projectType === 'Long Term Contract'))
+              break;
+            case 'one-time':
+              setJobs(job.filter(p => p.info.projectType === 'One-Time Project'))
+              break;
+            default:
+              setJobs(job)
+              break;
+          }
+        } else if (jobsStatusFilter === 'open') {
           switch (jobsFilter) {
             case 'all':
               setJobs(open)

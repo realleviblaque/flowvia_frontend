@@ -330,6 +330,7 @@
         align-items: center;
         gap: 10px;
         img {
+          flex-shrink: 0;
           height: 50px;
           width: 50px;
           border-radius: 50%;
@@ -349,6 +350,10 @@
               font-size: 18px;
               font-weight: bold;
               color: var(--pry-text);
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              max-width: 450px;
             }
             i {
               font-size: 14px;
@@ -699,7 +704,6 @@
           border-radius: 10px;
           gap: 8px;
           img {
-            flex-shrink: 0;
             height: 45px;
             width: 45px;
           }
@@ -707,6 +711,7 @@
             .name-wrap {
               .name {
                 font-size: 16px;
+                max-width: 250px;
               }
               i {
                 font-size: 12px;

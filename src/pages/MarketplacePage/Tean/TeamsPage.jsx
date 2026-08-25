@@ -19,6 +19,21 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
   const [searchParams] = useSearchParams();
   const {teamsFilter, setTeamsFilter} = useOutletContext();
   const hireDialogRef = useRef(null)
+  const [teamHireData, setTeamHireData] = useState({/* 
+    id: crypto.randomUUID(),
+    image: '/profile.png',
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    title: 'Full-Stack Developer',
+    member: 5,
+    projects: 10,
+    isVerified: true,
+    priceRange: {
+      min: 500,
+      max: 3000
+    } */
+  })
+  const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleFilter = () => {
@@ -104,8 +119,31 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
     }
     handleSearch();
   }, [search, teamsFilter])
-  const handleHireDialogOpen = () => {
-    hireDialogRef.current.showModal();
+  useEffect(() => {
+    const handleHireDialogDisplay = () => {
+      if (teamHireData && showHireDialog) {
+        hireDialogRef.current.showModal();
+        setShowHireDialog(false)
+      }
+    }
+    handleHireDialogDisplay();
+  }, [teamHireData, showHireDialog])
+  const handleHireDialogOpen = (team) => {
+    setTeamHireData({
+      id: team.id,
+      image: team.profile.image,
+      name: team.profile.name,
+      username: team.profile.username,
+      title: team.profile.title,
+      member: team.profile.counts.member,
+      projects: team.profile.counts.project,
+      isVerified: team.info.isVerified,
+      priceRange: {
+        min: team.rates.perProject.min,
+        max: team.rates.perProject.max
+      }
+    })
+    setShowHireDialog(true)
   }
   const handleHireDialogClose = () => {
     hireDialogRef.current.close();
@@ -199,7 +237,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                             <p className="range">{`$${formatCount(team.rates.perProject.min)} - $${formatCount(team.rates.perProject.max)}`}</p>
                           </div>
                           <div className="button-wrap">
-                            <button className="hire-btn" onClick={handleHireDialogOpen}>Hire Team</button>
+                            <button className="hire-btn" onClick={() => handleHireDialogOpen(team)}>Hire Team</button>
                             <button className="view-profile-btn">View Prodile</button>
                           </div>
                         </div>
@@ -228,22 +266,22 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
           <div className="user-wrap">
             <p className="txt">Sending Hire Request To:</p>
             <div className="wrap">
-              <img src="/profile.png" />
+              <img src={teamHireData.image} />
               <div className='info'>
                 <div className="name-wrap">
-                  <p className="name">Levi Blaque</p>
-                  <i className="fa-regular fa-check-circle"></i>
+                  <p className="name">{teamHireData.name}</p>
+                  {teamHireData.isVerified && <i className="fa-regular fa-check-circle"></i>}
                 </div>
                 {isMobile ? (
                   <>
                     <div className="user-info">
-                      <p className="username">@realleviblaque</p>
+                      <p className="username">@{teamHireData.username}</p>
                       <span></span>
-                      <p className="title">Founder/Full-Stack Developer</p>
+                      <p className="title">{teamHireData.title}</p>
                     </div>
                   </>
-                ) : <p className="user-info">@realleviblaque <span></span> Founder/Full-Stack Developer</p>}
-                <p className="price-range">Mem{isMobile ? '' : 'bers'}: 5 <span className="dot"></span> Price{isMobile ? '' : ' Range'}: $300 - $800 <span className="dot"></span> 20+ Pro{isMobile ? '' : 'jects'}</p>
+                ) : <p className="user-info">@{teamHireData.username} <span></span> {teamHireData.title}</p>}
+                <p className="price-range">Mem{isMobile ? '' : 'bers'}: {teamHireData.member} <span className="dot"></span> Price{isMobile ? '' : ' Range'}: ${formatCount(teamHireData.priceRange?.min)} - ${formatCount(teamHireData.priceRange?.max)} <span className="dot"></span> {teamHireData.projects}+ Pro{isMobile ? '' : 'jects'}</p>
               </div>
             </div>
           </div>

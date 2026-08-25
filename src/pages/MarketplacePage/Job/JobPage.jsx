@@ -20,6 +20,8 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
   const [searchParams] = useSearchParams();
   const {jobsFilter, setJobsFilter, jobsStatusFilter, setJobsStatusFilter} = useOutletContext();
   const applyDialogRef = useRef(null)
+  const [jobHireData, setJobHireData] = useState({})
+  const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleStatusFilter = () => {
@@ -551,8 +553,29 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
     }
     handleSearch();
   }, [search, jobsFilter, jobsStatusFilter])
-  const handleApplyDialogOpen = () => {
-    applyDialogRef.current.showModal();
+  useEffect(() => {
+    const handleApplyDialogDisplay = () => {
+      if (jobHireData && showHireDialog) {
+        applyDialogRef.current.showModal();
+        setShowHireDialog(false)
+      }
+    }
+    handleApplyDialogDisplay();
+  }, [jobHireData, showHireDialog])
+  const handleApplyDialogOpen = (job) => {
+    setJobHireData({
+      id: job.id,
+      createdBy: job.createdBy,
+      image: job.clients.image,
+      title: job.details.title,
+      requirement: job.details.requirement,
+      location: job.info.location,
+      budget: {
+        min: job.info.budget.min,
+        max: job.info.budget.max
+      }
+    })
+    setShowHireDialog(true)
   }
   const handleApplyDialogClose = () => {
     applyDialogRef.current.close();
@@ -637,7 +660,7 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
                         </div>
                         <p className="applicant"><span className="applicant-count">{job.info.totalApplied}</span> people Applied</p>
                         <p className="posted-time">{statusTimeAgo(job.createdAt)}</p>
-                        <button className="apply-btn" onClick={handleApplyDialogOpen}>Apply Now</button>
+                        <button className="apply-btn" onClick={() => handleApplyDialogOpen(job)}>Apply Now</button>
                         <button className="view-job-btn">View Job</button>
                         <i className="fa-regular fa-bookmark"></i>
                       </div>
@@ -665,13 +688,13 @@ export function JobPage({all, handleDialogOpen, dialog, handleDialogClose, plusD
           <div className="user-wrap">
             <p className="txt">Job Application</p>
             <div className="wrap">
-              <img src="/profile.png" />
+              <img src={jobHireData.image} />
               <div className='info'>
                 <div className="name-wrap">
-                  <p className="name">Backend Developer Needed</p>
+                  <p className="name">{jobHireData.title}</p>
                 </div>
-                <p className="user-info">Requirement: Backend Developer</p>
-                <p className="price-range">Budget: <span>$300 - $800</span> <span className="dot"></span> Remote</p>
+                <p className="user-info">Requirement: {jobHireData.requirement}</p>
+                <p className="price-range">Budget: <span>${formatCount(jobHireData.budget?.min)} - ${formatCount(jobHireData.budget?.max)}</span> <span className="dot"></span> {jobHireData.location}</p>
               </div>
             </div>
           </div>

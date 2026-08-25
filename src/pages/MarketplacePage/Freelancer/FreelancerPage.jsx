@@ -19,6 +19,8 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
   const [searchParams] = useSearchParams();
   const {freelancersFilter, setFreelancersFilter} = useOutletContext();
   const hireDialogRef = useRef(null)
+  const [freelancerHireData, setFreelancerHireData] = useState({})
+  const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
   useEffect(() => {
     const handleFilter = () => {
@@ -99,8 +101,29 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
     }
     handleSearch();
   }, [search, freelancersFilter])
-  const handleHireDialogOpen = () => {
-    hireDialogRef.current.showModal();
+  useEffect(() => {
+    const handleHireDialogDisplay = () => {
+      if (freelancerHireData && showHireDialog) {
+        hireDialogRef.current.showModal();
+        setShowHireDialog(false)
+      }
+    }
+    handleHireDialogDisplay();
+  }, [freelancerHireData, showHireDialog])
+  const handleHireDialogOpen = (freelancer) => {
+    setFreelancerHireData({
+      id: freelancer.id,
+      image: freelancer.profile.image,
+      name: freelancer.profile.name,
+      username: freelancer.profile.username,
+      title: freelancer.profile.title,
+      isVerified: freelancer.info.isVerified,
+      priceRange: {
+        min: freelancer.rates.perProject.min,
+        max: freelancer.rates.perProject.max
+      }
+    })
+    setShowHireDialog(true)
   }
   const handleHireDialogClose = () => {
     hireDialogRef.current.close();
@@ -173,10 +196,10 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
                       <div className="bottom">
                         <div className="botom-top">
                           <p className="text">PRICE RANGE</p>
-                          <p className="range">{`$${formatCount(freelancer.rates.perProject.min)} - $${formatCount(freelancer.rates.perProject.max)}`}</p>
+                          <p className="range">${formatCount(freelancer.rates.perProject.min)} - ${formatCount(freelancer.rates.perProject.max)}</p>
                         </div>
                         <div className="bottom-down">
-                          <button className="hire-btn" onClick={handleHireDialogOpen}>Hire</button>
+                          <button className="hire-btn" onClick={() => handleHireDialogOpen(freelancer)}>Hire</button>
                           <button className="view-profile-btn">View Profile</button>
                         </div>
                       </div>
@@ -204,22 +227,22 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
           <div className="user-wrap">
             <p className="txt">Sending Hire Request To:</p>
             <div className="wrap">
-              <img src="/profile.png" />
+              <img src={freelancerHireData.image} />
               <div className='info'>
                 <div className="name-wrap">
-                  <p className="name">Levi Blaque</p>
-                  <i className="fa-regular fa-check-circle"></i>
+                  <p className="name">{freelancerHireData.name}</p>
+                  {freelancerHireData.isVerified && <i className="fa-regular fa-check-circle"></i>}
                 </div>
                 {isMobile ? (
                   <>
                     <div className="user-info">
-                      <p className="username">@realleviblaque</p>
+                      <p className="username">@{freelancerHireData.username}</p>
                       <span></span>
-                      <p className="title">Founder/Full-Stack Developer</p>
+                      <p className="title">{freelancerHireData.title}</p>
                     </div>
                   </>
-                ) : <p className="user-info">@realleviblaque <span></span> Founder/Full-Stack Developer</p>}
-                <p className="price-range">Price Range: <span>$300 - $800</span></p>
+                ) : <p className="user-info">@{freelancerHireData.username} <span></span> {freelancerHireData.title}</p>}
+                <p className="price-range">Price Range: <span>${formatCount(freelancerHireData.priceRange?.min)} - ${formatCount(freelancerHireData.priceRange?.max)}</span></p>
               </div>
             </div>
           </div>

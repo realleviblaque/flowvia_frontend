@@ -245,9 +245,13 @@
         border-radius: 10px;
         padding: 20px;
         z-index: 9;
+        overflow: auto;
         &.open {
           transform: translateY(0);
           opacity: 1;
+        }
+        &::-webkit-scrollbar {
+          background-color: transparent;
         }
         .empty {
           flex: 1;
@@ -256,12 +260,51 @@
           align-items: center;
           font-size: 14px;
         }
+        .projects-search {
+          position: sticky;
+          top: 0;
+          flex-shrink: 0;
+          background-color: var(--hover-border);
+          border: 1px solid var(--element-bg-post-input);
+          border-radius: 8px;
+          height: 45px;
+          display: flex;
+          justify-content: left;
+          align-items: center; 
+          padding: 0 10px;
+          input {
+            height: 100%;
+            flex: 1;
+            background-color: transparent;
+            color: var(--secondary-text);
+            border: none;
+            outline: none;
+            font-size: 14px;
+            &::placeholder {
+              color: var(--secondary-text);
+            }
+          }
+          i {
+            font-size: 12px;
+            color: var(--secondary-text);
+            cursor: pointer;
+          }
+        }
+        .line {
+          flex-shrink: 0;
+          position: sticky;
+          top: 66px;
+          height: 1px;
+          background-color: var(--hover-border);
+          margin: 10px 0;
+        }
         .projects {
-          padding: 5px 0;
+          padding: 10px 8px;
           height: 45px;
           display: flex;
           gap: 10px;
           cursor: pointer;
+          border-radius: 10px;
           .left {
             flex-shrink: 0;
             width: 50px;
@@ -278,7 +321,7 @@
               font-size: 16px;
               font-weight: bold;
               color: var(--pry-text);
-              max-width: 440px;
+              max-width: 414px;
               white-space: nowrap;
               text-overflow: ellipsis;
               overflow: hidden;
@@ -288,7 +331,7 @@
               flex-shrink: 0;
               font-size: 12px;
               color: var(--mutetd-tetx);
-              max-width: 440px;
+              max-width: 414px;
               white-space: nowrap;
               text-overflow: ellipsis;
               overflow: hidden;
@@ -311,6 +354,26 @@
                   height: 2px;
                   border-radius: 50%;
                   background-color: var(--secondary-text);
+                }
+              }
+            }
+          }
+          &:hover,
+          &.active {
+            background-color: var(--accent-blue);
+            .right {
+              .title {
+                color: var(--blue-bg);
+              }
+              .description {
+                color: var(--blue-border);
+              }
+              .extra-info {
+                .details {
+                  color: var(--blue-bg);
+                  span {
+                    background-color: var(--blue-bg);
+                  }
                 }
               }
             }
@@ -512,6 +575,18 @@
           height: 370px;
           padding: 15px;
           z-index: 9;
+          .projects-search {
+            height: 40px;
+            input {
+              font-size: 13px;
+            }
+            i {
+              font-size: 10px;
+            }
+          }
+          .line {
+            top: 56px;
+          }
           .projects {
             gap: 8px;
             .left {
@@ -520,10 +595,10 @@
             .right {
               .title {
                 font-size: 16px;
-                max-width: 250px;
+                max-width: 234px;
               }
               .description {
-                max-width: 250px;
+                max-width: 234px;
               }
             }
           }

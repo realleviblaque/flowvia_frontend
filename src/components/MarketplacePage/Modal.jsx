@@ -11,6 +11,8 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
   const [selectHeadText, setSelectHeadText] = useState('Select a project to link to...');
   const [isOpen, setIsOpen] = useState(false)
   const [isRendered, setIsRendered] = useState(false)
+  const [search, setSearch] = useState('');
+  const [selectedId, setSelectedId] = useState(null)
   console.log(freelancerSelectedProject)
   const handleIsOpen = () => {
     if (!isOpen) {
@@ -27,6 +29,8 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
     hireDialogRef.current.close();
     setIsOpen(false)
     setIsRendered(false)
+    setSearch('')
+    setSelectedId(null)
   }
   return (
     <dialog className='marketplace-dialog hire-dialog' ref={hireDialogRef}>
@@ -74,7 +78,7 @@ function FreelancerDialog({hireDialogRef, freelancerHireData}) {
             <p className="text">{selectHeadText}</p>
             <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
-          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setFreelancerSelectedProject} setSelectHeadText={setSelectHeadText} />}
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setFreelancerSelectedProject} setSelectHeadText={setSelectHeadText} search={search} setSearch={setSearch} selectedId={selectedId} setSelectedId={setSelectedId} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>
@@ -90,6 +94,8 @@ function TeamDialog({hireDialogRef, teamHireData}) {
   const [selectHeadText, setSelectHeadText] = useState('Select a project to link to...');
   const [isOpen, setIsOpen] = useState(false)
   const [isRendered, setIsRendered] = useState(false)
+  const [search, setSearch] = useState('');
+  const [selectedId, setSelectedId] = useState(null)
   console.log(teamSelectedProject)
   const handleIsOpen = () => {
     if (!isOpen) {
@@ -106,6 +112,8 @@ function TeamDialog({hireDialogRef, teamHireData}) {
     hireDialogRef.current.close();
     setIsOpen(false)
     setIsRendered(false)
+    setSearch('')
+    setSelectedId(null)
   }
   return (
     <dialog className='marketplace-dialog team-hire-dialog' ref={hireDialogRef}>
@@ -153,7 +161,7 @@ function TeamDialog({hireDialogRef, teamHireData}) {
             <p className="text">{selectHeadText}</p>
             <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
           </div>
-          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setTeamSelectedProject} setSelectHeadText={setSelectHeadText} />}
+          {<ProjectSelector isOpen={isOpen} setIsRendered={setIsRendered} isRendered={isRendered} setIsOpen={setIsOpen} onSelectProject={setTeamSelectedProject} setSelectHeadText={setSelectHeadText} search={search} setSearch={setSearch} selectedId={selectedId} setSelectedId={setSelectedId} />}
         </div>
         <div className="actions">
           <button className='cancel' onClick={handleHireDialogClose}>Cancel</button>

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Jobs } from "../../../data/MarketplacePage/job";
 import { checkAccountType } from "../../../utils/checkAccountType";
 import './JobSidebar.css'
+import formatCount from "../../../utils/formatCount";
 
 const allJobs = Jobs.sort(() => Math.random() - 0.5)
 
@@ -23,22 +24,22 @@ export function JobSidebar() {
             i <= 2 && (
               <div key={job.id} className="content-wrapper">
                 <div className="top">
-                  <p className="job-title">{job.jobTitle}</p>
-                  <p className="requirement">Requirement: Figma Designer</p>
+                  <p className="job-title">{job.details.title}</p>
+                  <p className="requirement">Requirement: {job.details.requirement}</p>
                 </div>
                 <div className="middle">
-                  <div className="budget">{job.budget}</div>
-                  <div className="location">{job.jobLocation}</div>
+                  <div className="budget">${formatCount(job.info.budget.min)} - ${formatCount(job.info.budget.max)}</div>
+                  <div className="location">{job.info.location}</div>
                 </div>
                 <div className="bottom">
                   <div className="bottom-left">
                     <div className="client-details">
                       <div className="client-profile-pic">
-                        <img src={`${job.clientPic}`} />
+                        <img src={job.clients.image} />
                       </div>
                       <div className="client-name">
-                        <p className="client-username">@{job.clinetUsername}</p>
-                        <span className={`${checkAccountType(job)}`} title={`${job.accountType} Account`}></span>
+                        <p className="client-username">@{job.clients.username}</p>
+                        <span className={checkAccountType('Freelancer')} title={`${'Freelancer'} Account`}></span>
                       </div>
                     </div>
                   </div>

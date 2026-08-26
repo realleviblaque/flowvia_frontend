@@ -1,9 +1,9 @@
 export function checkAccountType(account) {
-  if (account.accountType === 'Recruiter') {
+  if (account === 'Recruiter') {
     return 'client-account-type';
-  } else if (account.accountType === 'Team') {
+  } else if (account === 'Team') {
     return 'team-account-type';
-  } else if (account.accountType === 'Freelancer') {
+  } else if (account === 'Freelancer') {
     return 'self-account-type'
   }
 }

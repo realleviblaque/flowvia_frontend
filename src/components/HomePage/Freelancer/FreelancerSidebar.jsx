@@ -22,11 +22,11 @@ export function FreelancerSidebar() {
             i <= 4 && (
               <div key={freelancer.id} className="content-wrapper">
                 <div className="left">
-                  <img src={freelancer.ProfileImg} />
+                  <img src={freelancer.profile.image} />
                 </div>
                 <div className="middle">
-                  <p className="name">{freelancer.name}</p>
-                  <p className="profession">Full Stack Developer</p>
+                  <p className="name">{freelancer.profile.name}</p>
+                  <p className="profession">{freelancer.profile.title}</p>
                 </div>
                 <div className="right">
                   <button>Follow</button>

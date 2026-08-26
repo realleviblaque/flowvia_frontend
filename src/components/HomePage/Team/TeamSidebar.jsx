@@ -22,11 +22,11 @@ export function TeamSidebar() {
             i <= 4 && (
               <div key={team.id} className="content-wrapper">
                 <div className="left">
-                  <img src={team.teamProfile} />
+                  <img src={team.profile.image} />
                 </div>
                 <div className="middle">
-                  <p className="name team-name">{team.teamName}</p>
-                  <p className="profession">Full Stack Developer</p>
+                  <p className="name team-name">{team.profile.name}</p>
+                  <p className="profession">{team.profile.title}</p>
                 </div>
                 <div className="right">
                   <button>Follow</button>

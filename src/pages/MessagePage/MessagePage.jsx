@@ -10,15 +10,20 @@ import dayjs from "../../lib/dayjs";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
-  const [chatMessages, setChatMessages] = useState(null)
+  const [selectedChat, setSelectedChat] = useState(null)
+  const [lists, setLists] = useState(ChatLists)
+  const [filter, setFilter] = useState('All')
   const [selectedId, setSelectedId] = useState(null)
+  const [message, setMessage] = useState('')
+  const messageInput = useRef(null)
+  const messagesEndRef = useRef(null)
+  const [chatOpen, setChatOpen] = useState(false)
   useEffect(() => {
     const handleClickedChat = () => {
-      setChatMessages(ChatLists.find(chat => chat.id === selectedId))
+      setSelectedChat(ChatLists.find(chat => chat.id === selectedId))
     }
     handleClickedChat();
   }, [selectedId])
-  const messagesEndRef = useRef(null)
   const handleScrollTop = () => {
     const chat = messagesEndRef.current;
     if (!chat) return;
@@ -26,7 +31,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   }
   useLayoutEffect(() => {
     handleScrollTop();
-  }, [chatMessages])
+  }, [selectedChat])
   /* useEffect(() => {
     const containerElem = messagesEndRef.current;
     if (containerElem) {
@@ -35,54 +40,91 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
         behavior: 'smooth'
       })
     }
-  }, [chatMessages?.messages]) */
+  }, [selectedChat?.messages]) */
 
-  const [inputValue, setInputValue] = useState('')
-  const [isInputEmpty, setIsInputEmpty] = useState(true)
-  const messageInput = useRef(null)
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setInputValue(value)
-    setIsInputEmpty(value.trim() === '')
-  }
   /* const sendMessage = () => {
-    if (inputValue.trim()) {
+    if (message.trim()) {
       const newMessage = {
         id: crypto.randomUUID(),
         sender: 'me',
-        text: inputValue.trim(),
+        text: message.trim(),
         timestamp: new Date().toISOString(),
         isRead: false
       }
 
-      setChatMessages({...chatMessages, messages: [...chatMessages.messages, newMessage]})
-      setInputValue('')
+      setSelectedChat({...selectedChat, messages: [...selectedChat.messages, newMessage]})
+      setMessage('')
       setIsInputEmpty(true)
       messageInput.current.style.height = isMobile ? '18px' : '24px';
     }
   } */
-
-  const [chatOpen, setChatOpen] = useState(false)
   const handleMobileChatClose = () => {
     setChatOpen(false)
     setSelectedId(null)
-    chatMessages(null) 
+    selectedChat(null) 
   }
-
+  const sendMessage = () => {
+    if (message.trim()) {
+      const chat = ChatLists.find(chat => chat.id === selectedId);
+      if (!chat) return;
+      const newMessage = {
+        id: crypto.randomUUID(),
+        createdAt: dayjs().toISOString(),
+        updatedAt: null,
+        details: {
+          sender: 'sender',
+          text: message.trim(),
+          isSeen: false
+        }
+      }
+      chat.messages.push(newMessage)
+      const chatIndex = ChatLists.indexOf(chat);
+      ChatLists.splice(chatIndex, 1);
+      ChatLists.unshift(chat)
+      setSelectedChat({
+        ...chat,
+        messages: [...chat.messages]
+      })
+      if (filter === 'All') {
+        setLists([...ChatLists])
+      } else if (filter === 'Unread') {
+         setLists([...ChatLists].filter(list => list.messages.some(msg => msg.details.isRead === false)))
+      } else if (filter === 'Request') {
+         setLists([...ChatLists].filter(list => list.type === 'Request'))
+      }
+      setFilter('All')
+      setMessage('')
+      if (isMobile) {
+        messageInput.current.style.height = '18px'
+      } else {
+        messageInput.current.style.height = '24px';
+      }
+    }
+  }
   const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
       <MobileHeader2 />
       <main className="message-main">
-        <MessagePageSidebar setChatOpen={setChatOpen} selectedId={selectedId} setSelectedId={setSelectedId} handleScrollTop={handleScrollTop} />
-        {!isMobile && !chatMessages && (
+        <MessagePageSidebar 
+          setChatOpen={setChatOpen} 
+          selectedId={selectedId} 
+          setSelectedId={setSelectedId} 
+          handleScrollTop={handleScrollTop} 
+          setSelectedChat={setSelectedChat} 
+          lists={lists}
+          setLists={setLists}
+          filter={filter}
+          setFilter={setFilter}
+        />
+        {!isMobile && !selectedChat && (
           <div className="no-selected-message-wrap">
             <i className="fa-solid fa-envelope-open-text"></i>
             <p>Select a chat to start messaging</p>
           </div>
         )}
-        {chatMessages && (
+        {selectedChat && (
           <div className={`chat-message-container ${chatOpen && 'chat-open'}`}>
             <div className="message-top">
               <div className="top-left">
@@ -91,21 +133,21 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                     <i className="fa-solid fa-chevron-left"></i>
                   </span>
                 )}
-                <div className={`profile ${chatMessages.user.accountType === 'Team' ? 'team' : ''}`}>
-                  <img src={chatMessages.user.image} className={chatMessages.user.accountType === 'Team' ? 'team-profile' : ''} />
-                  {chatMessages.user.isOnline && <span className="active-badge"></span>}
+                <div className={`profile ${selectedChat.user.accountType === 'Team' ? 'team' : ''}`}>
+                  <img src={selectedChat.user.image} className={selectedChat.user.accountType === 'Team' ? 'team-profile' : ''} />
+                  {selectedChat.user.isOnline && <span className="active-badge"></span>}
                 </div>
                 <div className="user-info">
                   <div className="name-wrap">
-                    <p className="name">{chatMessages.user.name}</p>
-                    {chatMessages.user.isVerified && <i className="fa-regular fa-check-circle"></i>}
+                    <p className="name">{selectedChat.user.name}</p>
+                    {selectedChat.user.isVerified && <i className="fa-regular fa-check-circle"></i>}
                   </div>
                   <div>
                     {!isMobile && (
                       <>
-                        <p className="username">@{chatMessages.user.username}</p>
+                        <p className="username">@{selectedChat.user.username}</p>
                         <span></span>
-                        <p className="category">{chatMessages.user.title}</p>
+                        <p className="category">{selectedChat.user.title}</p>
                       </>
                     )}
                   </div>
@@ -134,13 +176,13 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
             </div>
             <div className="chat-message-middle">
               <div className="chat-message" ref={messagesEndRef}>
-                {chatMessages.messages.length === 0 && (
+                {selectedChat.messages.length === 0 && (
                   <div className="empty-message">
                     <i className="fa-solid fa-comment-dots"></i>
                     <p>No messages yet <br /> Start the conversation and send the first message.</p>
                   </div>
                 )}
-                {chatMessages.messages.map((message) => {
+                {selectedChat.messages.map((message) => {
                   return (
                     <Fragment key={message.id}>
                       {message.details.sender == 'user' && (
@@ -185,19 +227,24 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                     <i className="fa-solid fa-plus"></i>
                   </span>
                   <div className="message-input">
-                    <textarea placeholder="Type a message..." value={inputValue} ref={messageInput} onChange={handleInputChange} onInput={() => {
+                    <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
                       const input = messageInput.current;
                       input.style.height = '18px'
                       input.style.height = (input.scrollHeight) + 'px'
                       if (input.scrollHeight > 200) {
                         input.style.height = '200px'
                       }
-                    }} />
+                    }} onKeyDown={e => {
+                        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                          e.preventDefault();
+                          sendMessage();
+                        }
+                      }} />
                   </div>
                   <span>
                     <i className="fa-solid fa-image"></i>
                   </span>
-                  <span className="send" /* onClick={sendMessage} */>
+                  <span className="send" onClick={sendMessage}>
                     <i className="fa-solid fa-paper-plane"></i>
                   </span>
                 </div>
@@ -205,12 +252,17 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                 <div className="send-msg-input-wrap">
                   <div className="wrap">
                     <div className="top">
-                      <textarea placeholder="Type a message..." value={inputValue} ref={messageInput} onChange={handleInputChange} onInput={() => {
+                      <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
                         const input = messageInput.current;
                         input.style.height = '27px'
                         input.style.height = (input.scrollHeight - 10) + 'px'
                         if (input.scrollHeight > 250) {
                           input.style.height = '250px'
+                        }
+                      }} onKeyDown={e => {
+                        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                          e.preventDefault();
+                          sendMessage();
                         }
                       }}></textarea>
                     </div>
@@ -218,7 +270,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       <i className="fa-solid fa-paperclip"></i>
                       <i className="fa-regular fa-image"></i>
                       <i className="fa-solid fa-table-cells-large"></i>
-                      <button className={`send-btn ${isInputEmpty ? '' : 'show-btn'}`} /* onClick={sendMessage} */>Send <i className="fa-solid fa-paper-plane"></i></button>
+                      <button onClick={sendMessage}>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>
                   </div>
                 </div>

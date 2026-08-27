@@ -3,19 +3,27 @@ import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
 import { statusTimeAgo } from '../../utils/statusTimeAgo'
 
-export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop}) {
-  const [lists, setLists] = useState(ChatLists)
-  const [unReadLists, setUnReadLists] = useState(ChatLists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length)
-  const [requestLists, setRequestLists] = useState(ChatLists.filter(list => list.type === 'Request').length)
-  const [filter, setFilter] = useState('All')
+export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter}) {
+  const unReadLists = lists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length;
+  const requestLists = lists.filter(list => list.type === 'Request').length
   const [search, setSearch] = useState('')
   const handleClick = (list) => {
+    const chat = ChatLists.find(chat => chat.id === list.id);
+    if (!chat) return;
+    chat.messages.forEach((message) => {
+      if (!message.details.isRead) {
+        message.details.isRead = true;
+      }
+    })
     if (selectedId === list.id) {
       handleScrollTop();
     }
     setSelectedId(list.id)
     setChatOpen(true);
-    console.log(selectedId)
+    setSelectedChat({
+      ...chat,
+      messages: [...chat.messages]
+    })
   }
   useEffect(() => {
     const handleSearch = () => {
@@ -24,22 +32,12 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
           list.user.name.toLowerCase().includes(search.toLowerCase().trim())
           || list.user.username.toLowerCase().toLowerCase().includes(search.toLowerCase().trim())
         ))
-        setUnReadLists(ChatLists.filter(list => 
-          list.user.name.toLowerCase().includes(search.toLowerCase().trim())
-          || list.user.username.toLowerCase().toLowerCase().includes(search.toLowerCase().trim())
-        ).filter(list => list.messages.some(msg => msg.details.isRead === false)).length);
-        setRequestLists(ChatLists.filter(list => 
-          list.user.name.toLowerCase().includes(search.toLowerCase().trim())
-          || list.user.username.toLowerCase().toLowerCase().includes(search.toLowerCase().trim())
-        ).filter(list => list.type === 'Request').length)
       } else {
         setLists(ChatLists)
-        setUnReadLists(ChatLists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length)
-        setRequestLists(ChatLists.filter(list => list.type === 'Request').length)
       }
     }
     handleSearch();
-  }, [search])
+  }, [search, setLists])
   useEffect(() => {
     const handleFilter = () => {
       if (search) {
@@ -70,7 +68,7 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
       }
     }
     handleFilter();
-  }, [filter,search])
+  }, [filter,search, setLists])
   return (
     <div className="chat-list-container">
       <div className="chat-list">
@@ -103,11 +101,25 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
                   <p>We couldn't find any conversations matching "{search.trim()}"</p>
                 </>
               ) : (
-                <>
-                  <i className="fa-regular fa-comment"></i>
-                  <p>Start a conversation and your chat will appear here</p>
-                  <button>Start a conversation</button>
-                </>
+                filter === 'All' ? (
+                  <>
+                    <i className="fa-regular fa-comment"></i>
+                    <p>Start a conversation and your chat will appear here</p>
+                    <button>Start a conversation</button>
+                  </>
+                ) : filter === 'Unread' ? (
+                  <>
+                    <i className="fa-regular fa-comment"></i>
+                    <p>You have no unread message</p>
+                    <button onClick={() => setFilter('All')}>Return to All</button>
+                  </>
+                ) : filter === 'Request' ? (
+                  <>
+                    <i className="fa-regular fa-comment"></i>
+                    <p>You have no message request</p>
+                    <button onClick={() => setFilter('All')}>Return to All</button>
+                  </>
+                ) : ''
               )}
             </div>
           )}

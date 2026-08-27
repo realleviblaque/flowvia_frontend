@@ -1,6 +1,6 @@
 .chat-list-container {
   overflow: auto;
-  width: 410px;
+  width: 370px;
   height: 100vh;
   border-right: 1px solid var(--border);
   display: flex;
@@ -8,9 +8,15 @@
   background-color: var(--sidebar-bg);
   &::-webkit-scrollbar {
     background-color: transparent;
+    width: 6px;
   }
   &::-webkit-scrollbar-thumb {
-    border: 2px solid var(--sidebar-bg);
+    border: 1px solid transparent;
+    background-color: var(--mutetd-tetx);
+    transition: background-color 0.3s ease;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-text);
   }
   .chat-list {
     flex: 1;
@@ -95,38 +101,21 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      padding: 15px 15px;
+      padding: 15px 9px;
       gap: 10px;
       .chat-list-wrap {
-        width: 375px;
         height: 60px;
         border-radius: 10px;
         display: flex;
         justify-content: left;
-        gap: 4px;
+        gap: 6px;
+        padding: 0 6px;
         cursor: pointer;
-        &:hover {
-          background-color: var(--cards);
-          .profile {
-            .active-badge {
-              border-color: var(--cards);
-            }
-          }
-        }
-        &.active {
-          border-left: 2px solid var(--accent-blue);
-          background-color: var(--cards);
-          .profile {
-            .active-badge {
-              border-color: var(--element-bg-post-input);
-            }
-          }
-        }
+        transition: all 0.2s;
         .profile {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 60px;
           position: relative;
           img {
             width: 45px;
@@ -134,6 +123,8 @@
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
+            padding: 2px;
+            border: 1px solid var(--blue-border);
           }
           .team-profile {
             border-radius: 8px;
@@ -142,63 +133,135 @@
             height: 9px;
             width: 9px;
             border-radius: 50%;
-            background-color: var(--active-badge-bg);
+            background-color: var(--green);
             position: absolute;
             bottom: 6px;
-            right: 4px;
+            right: 2px;
             border: 3px solid var(--sidebar-bg);
+            transition: all 0.2s;
+          }
+          &.team {
+            .active-badge {
+              height: 9px;
+              width: 9px;
+              border-radius: 50%;
+              background-color: var(--active-badge-bg);
+              position: absolute;
+              bottom: 3px;
+              right: -2px;
+              border: 3px solid var(--sidebar-bg);
+            }
           }
         }
         .sender-info {
-          flex: 1;
+          min-width: 245px;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: start;
-          .name {
-            width: 100%;
-            font-weight: bold;
-            font-size: 16px;
+          align-items: stretch;
+          .name-wrap {
             display: flex;
             justify-content: left;
             align-items: center;
-            gap: 4px;
-            color: var(--secondary-text);
+            gap: 2px;
+            .name {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              width: unset;
+              max-width: 150px;
+              font-weight: bold;
+              font-size: 16px;
+              color: var(--secondary-text);
+              transition: all 0.2s;
+            }
             i {
               font-size: 13px;
               color: var(--accent-blue);
+              margin-right: 10px;
+              transition: all 0.2s;
             }
             span {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
               margin-left: auto;
-              font-weight: normal;
               font-size: 12px;
-              margin-right: 8px;
               color: var(--mutetd-tetx);
+              transition: all 0.2s;
             }
           }
           .message {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: 270px;
             color: var(--mutetd-tetx);
             font-size: 14px;
+            transition: all 0.2s;
           }
         }
-        .message-count {
+        .message-count,
+        .message-read {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 4px;
           span {
             padding: 4px 8px;
-            background-color: var(--main-box-shadow-color);
+            background-color: var(--accent-blue);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: var(--pry-text);
             border-radius: 20px;
             font-size: 14px;
+            transition: all 0.2s;
+          }
+          i {
+            color: var(--accent-blue);
+            font-size: 16px;
+            transition: all 0.2s;
+          }
+        }
+        &:hover,
+        &.active {
+          background-color: var(--accent-blue);
+          .profile {
+            .active-badge {
+              background-color: var(--green);
+              border: 3px solid var(--blue-border);
+            }
+            &.team {
+              .active-badge {
+                background-color: var(--green);
+                border: 3px solid var(--blue-border);
+              }
+            }
+          }
+          .sender-info {
+            .name-wrap {
+              .name {
+                color: var(--blue-bg);
+              }
+              i {
+                color: var(--blue-bg);
+              }
+              span {
+                color: var(--blue-border);
+              }
+            }
+            .message {
+              color: var(--blue-border);
+            }
+          }
+          .message-count,
+          .message-read {
+            span {
+              background-color: var(--blue-bg);
+              color: var(--accent-blue);
+            }
+            i {
+              color: var(--blue-bg);
+            }
           }
         }
       }
@@ -326,23 +389,16 @@
           }
           .sender-info {
             align-items: stretch;
-            .name {
-              width: unset;
-              font-size: 15px;
+            .name-wrap {
+              .name {
+                max-width: 150px;
+                font-size: 15px;
+              }
               i {
                 font-size: 12px;
               }
             }
             .message {
-              white-space: unset;
-              text-overflow: unset;
-              width: unset;
-              color: var(--mutetd-tetx);
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: 2;
-              line-clamp: 2;
-              overflow: hidden;
               font-size: 14px;
             }
           }

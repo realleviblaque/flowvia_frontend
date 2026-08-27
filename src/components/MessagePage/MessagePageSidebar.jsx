@@ -1,11 +1,18 @@
 import { useState } from 'react'
-import { Messages } from '../../data/MessagePage/messages'
+import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
+import { statusTimeAgo } from '../../utils/statusTimeAgo'
 
-export function MessagePageSidebar({setChatOpen}) {
+export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop}) {
+  const [lists, setLists] = useState(ChatLists)
   const [filterMessage, setFilterMessage] = useState('All')
-  const handleClick = () => {
+  const handleClick = (list) => {
+    if (selectedId === list.id) {
+      handleScrollTop();
+    }
+    setSelectedId(list.id)
     setChatOpen(true);
+    console.log(selectedId)
   }
   return (
     <div className="chat-list-container">
@@ -31,24 +38,37 @@ export function MessagePageSidebar({setChatOpen}) {
           </div>
         </div>
         <div className="chat-list-cover">
-          {Messages.length === 0 && (
+          {lists.length === 0 && (
             <h1>No Message Test</h1>
           )}
-          {Messages.map((message) => {
+          {lists.map((list) => {
+            const lastMessage = list.messages[list.messages.length - 1];
+            const lastSent = lastMessage.createdAt;
             return (
-              <div key={message.id} className="chat-list-wrap" onClick={handleClick}>
-                <div className={`profile ${message.accountType === 'Team' && 'team'}`}>
-                  <img src={message.profile} className={`${message.accountType === 'Team' && 'team-profile'}`} />
-                  {message.isActive && (<span className="active-badge"></span>)}
+              <div key={list.id} className={`chat-list-wrap ${selectedId === list.id ? 'active' : ''}`} onClick={() => handleClick(list)}>
+                <div className={`profile ${list.user.accountType === 'Team' ? 'team' : ''}`}>
+                  <img src={list.user.image} className={list.user.accountType === 'Team' ? 'team-profile' : ''} />
+                  {list.user.isOnline && <span className="active-badge"></span>}
                 </div>
                 <div className="sender-info">
-                  <p className="name">{message.name} <i className="fa-regular fa-check-circle"></i> {!message.unread && (<span className="time">{message.time}</span>)}</p>
-                  <p className="message">{message.lastMsg}</p>
-                </div>
-                {message.unread && (
-                  <div className="message-count">
-                    <span>{message.unread}</span>
+                  <div className="name-wrap">
+                    <p className="name">{list.user.name}</p>
+                    {list.user.isVerified && <i className="fa-regular fa-check-circle"></i>}
+                    <span className="time">{statusTimeAgo(lastSent)}</span>
                   </div>
+                  <p className="message">{lastMessage.details.text}</p>
+                </div>
+                {lastMessage.details.sender === 'sender' && (
+                  <div className="message-read">
+                    <i className={`fa-${lastMessage.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i>
+                  </div>
+                )}
+                {lastMessage.details.sender === 'user' && (
+                  !lastMessage.details.isRead && (
+                    <div className="message-count">
+                      <span>{list.messages.filter(m => m.details.sender === 'user').filter(m => !m.details.isRead).length}</span>
+                    </div>
+                  )
                 )}
               </div>
             )

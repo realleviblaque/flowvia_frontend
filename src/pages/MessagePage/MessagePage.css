@@ -3,6 +3,22 @@
   flex: 1;
   display: flex;
   margin-left: 265px;
+  .no-selected-message-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    i {
+      font-size: 50px;
+      color: var(--mutetd-tetx);
+    }
+    p {
+      font-size: 20px;
+      color: var(--mutetd-tetx);
+    }
+  }
 }
 .chat-message-container {
   flex: 1;
@@ -21,37 +37,70 @@
     .top-left {
       display: flex;
       justify-content: center;
-      gap: 2px;
+      gap: 4px;
       .profile {
-        width: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         img {
-          width: 40px;
-          height: 40px;
+          width: 45px;
+          height: 45px;
           border-radius: 50%;
-          padding: 2px;
-          border: 1px solid var(--blue-border);
           object-fit: cover;
           object-position: center;
+          padding: 2px;
+          border: 1px solid var(--blue-border);
+        }
+        .team-profile {
+          border-radius: 8px;
+        }
+        .active-badge {
+          height: 9px;
+          width: 9px;
+          border-radius: 50%;
+          background-color: var(--green);
+          position: absolute;
+          bottom: 2px;
+          right: 1px;
+          border: 3px solid var(--sidebar-bg);
+        }
+        &.team {
+          .active-badge {
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            background-color: var(--active-badge-bg);
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            border: 3px solid var(--sidebar-bg);
+          }
         }
       }
       .user-info {
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: stretch;
         flex-direction: column;
-        .name {
-          font-weight: bold;
-          font-size: 18px;
+        .name-wrap {
           display: flex;
           justify-content: left;
           align-items: center;
-          gap: 6px;
+          gap: 4px;
+          .name {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: unset;
+            font-weight: bold;
+            font-size: 16px;
+            color: var(--pry-text);
+          }
           i {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--accent-blue);
+            margin-right: 10px;
           }
         }
         div {
@@ -120,11 +169,23 @@
     .chat-message {
       min-height: 0;
       flex: 1;
-      overflow-y: scroll;
+      overflow: auto;
       padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 15px;
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 6px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border: 1px solid transparent;
+        background-color: var(--mutetd-tetx);
+        transition: background-color 0.3s ease;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: var(--secondary-text);
+      }
       .receive-msg-wrap {
         flex-shrink: 0;
         min-height: 30px;
@@ -422,23 +483,37 @@
           cursor: pointer;
         }
         .profile {
-          width: 45px;
           img {
-            width: 35px;
-            height: 35px;
-            object-position: unset;
+            width: 32px;
+            height: 32px;
+          }
+          .team-profile {
+            border-radius: 6px;
+          }
+          .active-badge {
+            width: 7px;
+            height: 7px;
+            bottom: 1px;
+            right: 2px;
+          }
+          &.team {
+            .active-badge {
+              width: 7px;
+              height: 7px;
+              bottom: -2px;
+              right: 0px;
+            }
           }
         }
         .user-info {
-          align-items: stretch;
           flex: 1;
-          .name {
-            font-size: 15px;
-            color: var(--pry-text);
-            gap: 4px;
+          .name-wrap {
+            .name {
+              max-width: 150px;
+              font-size: 15px;
+            }
             i {
               font-size: 12px;
-              color: var(--accent-blue);
             }
           }
           div {

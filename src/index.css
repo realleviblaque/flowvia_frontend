@@ -117,7 +117,7 @@ body.dark-theme {
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-bar-bg);
-  border-radius: 9px;
+  border-radius: 10px;
   border: 2px solid var(--bg);
 }
 p {

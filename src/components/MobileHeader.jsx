@@ -1,7 +1,9 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import './MobileHeader.css'
+import { ChatLists } from '../data/MessagePage/messages';
 
 export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOpenSearch2, openSearch2, setOpenHomeSearch}) {
+  const unReadLists = ChatLists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length
   const location = useLocation();
   const navigate = useNavigate();
   return (
@@ -62,7 +64,7 @@ export function MobileHeader({handleDialogOpen, setOpenSearch, openSearch, setOp
             navigate('/messages')
           }}>
             <i className="fa-regular fa-message"></i>
-            <div className="message">6</div>
+            <div className="message">{unReadLists}</div>
           </span>
           <span onClick={handleDialogOpen}>
             <img src="/profile.png" />

@@ -179,59 +179,50 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               </div>
             </div>
             <div className="chat-message-bottom">
-              <div className="message-bottom-cover">
-                {isMobile ? (
-                  <>
-                    <span>
-                      <i className="fa-solid fa-plus"></i>
-                    </span>
-                    <div className="message-input">
+              {isMobile ? (
+                <div className="message-bottom-cover">
+                  <span>
+                    <i className="fa-solid fa-plus"></i>
+                  </span>
+                  <div className="message-input">
+                    <textarea placeholder="Type a message..." value={inputValue} ref={messageInput} onChange={handleInputChange} onInput={() => {
+                      const input = messageInput.current;
+                      input.style.height = '18px'
+                      input.style.height = (input.scrollHeight) + 'px'
+                      if (input.scrollHeight > 200) {
+                        input.style.height = '200px'
+                      }
+                    }} />
+                  </div>
+                  <span>
+                    <i className="fa-solid fa-image"></i>
+                  </span>
+                  <span className="send" /* onClick={sendMessage} */>
+                    <i className="fa-solid fa-paper-plane"></i>
+                  </span>
+                </div>
+              ) : (
+                <div className="send-msg-input-wrap">
+                  <div className="wrap">
+                    <div className="top">
                       <textarea placeholder="Type a message..." value={inputValue} ref={messageInput} onChange={handleInputChange} onInput={() => {
                         const input = messageInput.current;
-                        input.style.height = '18px'
-                        input.style.height = (input.scrollHeight) + 'px'
-                        if (input.scrollHeight > 200) {
-                          input.style.height = '200px'
+                        input.style.height = '27px'
+                        input.style.height = (input.scrollHeight - 10) + 'px'
+                        if (input.scrollHeight > 250) {
+                          input.style.height = '250px'
                         }
-                      }} />
-                    </div>
-                    <span>
-                      <i className="fa-solid fa-image"></i>
-                    </span>
-                    <span className="send" /* onClick={sendMessage} */>
-                      <i className="fa-solid fa-paper-plane"></i>
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <div className="preview-Container">
-
+                      }}></textarea>
                     </div>
                     <div className="bottom">
-                      <div className="tools">
-                        <div className="files">
-                          <i className="fa-solid fa-plus"></i>
-                          <input type="file" id="file-input" hidden />
-                        </div>
-                      </div>
-                      <div className="message-wrap">
-                        <textarea id="message-input" placeholder="Type a message..." value={inputValue} ref={messageInput} onChange={handleInputChange} onInput={() => {
-                          const input = messageInput.current;
-                          input.style.height = '30px'
-                          input.style.height = (input.scrollHeight - 10) + 'px'
-                          if (input.scrollHeight > 250) {
-                            input.style.height = '250px'
-                          }
-                        }}></textarea>
-                        <div className={`send-btn ${isInputEmpty ? '' : 'show-btn'}`} /* onClick={sendMessage} */>
-                          <p>Send</p>
-                          <i className="fa-solid fa-paper-plane"></i>
-                        </div>
-                      </div>
+                      <i className="fa-solid fa-paperclip"></i>
+                      <i className="fa-regular fa-image"></i>
+                      <i className="fa-solid fa-table-cells-large"></i>
+                      <button className={`send-btn ${isInputEmpty ? '' : 'show-btn'}`} /* onClick={sendMessage} */>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>
-                  </>
-                )}
-              </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}

@@ -360,7 +360,7 @@ export const ChatLists = [{
     details: {
       sender: 'sender',
       text: 'Hi, goodday, would you mind to work with me on a project? i would love us to collaborate on a project and work on it together..',
-      isRead: false
+      isSeen: false
     }
   }]
 }, {
@@ -914,7 +914,7 @@ export const ChatLists = [{
     details: {
       sender: 'sender',
       text: 'Hi, goodday, would you mind to work with me on a project? i would love us to collaborate on a project and work on it together..',
-      isRead: false
+      isSeen: false
     }
   }]
 }, {
@@ -1067,4 +1067,18 @@ export const ChatLists = [{
       }
     }
   }
+}, {
+  id: crypto.randomUUID(),
+  type: 'Direct',
+  user: {
+    id: crypto.randomUUID(),
+    image: '/profile.png',
+    name: 'Dorris Annah',
+    username: 'doranah',
+    title: 'Full Stack Developer',
+    accountType: 'Freelancer',
+    isOnline: true,
+    isVerified: true
+  },
+  messages: []
 }]

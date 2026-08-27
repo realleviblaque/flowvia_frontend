@@ -54,16 +54,16 @@
           height: 35px;
           padding: 5px 12px;
           font-size: 14px;
-          background-color: transparent;
-          border: 1px solid var(--hover-border);
-          color: var(--pry-text);
+          background-color: var(--cards);
+          border: 1px solid var(--border);
+          color: var(--secondary-text);
           border-radius: 10px;
           outline: none;
           &::placeholder {
             color: var(--mutetd-tetx);
           }
           &:focus {
-            border: 1px solid var(--mutetd-tetx);
+            border: 1px solid var(--hover-border);
           }
         }
       }
@@ -95,6 +95,40 @@
       .active-msg {
         border-color: var(--accent-blue);
         color: var(--accent-blue);
+      }
+    }
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      height: 400px;
+      i {
+        font-size: 40px;
+        color: var(--mutetd-tetx);
+      }
+      p {
+        font-size: 15px;
+        color: var(--secondary-text);
+        text-align: center;
+        padding: 0 18px;
+      }
+      button {
+        margin-top: 5px;
+        height: 40px;
+        padding: 0 30px;
+        background-color: var(--pry-btn);
+        border: none;
+        color: var(--pry-btn-text);
+        font-size: 14px;
+        border-radius: 30px;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
     .chat-list-cover {

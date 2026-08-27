@@ -135,7 +135,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
             <div className="chat-message-middle">
               <div className="chat-message" ref={messagesEndRef}>
                 {chatMessages.messages.length === 0 && (
-                  <h1>Nothing</h1>
+                  <div className="empty-message">
+                    <i className="fa-solid fa-comment-dots"></i>
+                    <p>No messages yet <br /> Start the conversation and send the first message.</p>
+                  </div>
                 )}
                 {chatMessages.messages.map((message) => {
                   return (

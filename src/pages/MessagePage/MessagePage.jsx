@@ -19,6 +19,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const messagesEndRef = useRef(null)
   const [chatOpen, setChatOpen] = useState(false)
   const [draftText, setDraftText] = useState({})
+  const chatContainerRef = useRef(null)
   const isMobile = window.innerWidth < 768;
   useLayoutEffect(() => {
     const handleMsgDraftUpdate = () => {
@@ -71,6 +72,23 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   useLayoutEffect(() => {
     handleScrollTop();
   }, [selectedChat])
+  /* useEffect(() => {
+    if (!isMobile) return;
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    const updateChatHeight = () => {
+      if (!chatContainerRef.current) return;
+      chatContainerRef.current.style.height = `${viewport.height}px`;
+      chatContainerRef.current.style.top = `${viewport.offsetTop}px`
+    }
+    updateChatHeight();
+    viewport.addEventListener('resize', updateChatHeight)
+    viewport.addEventListener('scroll', updateChatHeight)
+    return () => {
+      viewport.removeEventListener('resize', updateChatHeight)
+      viewport.removeEventListener('scroll', updateChatHeight)
+    }
+  }, [isMobile]) */
   const handleMobileChatClose = () => {
     window.history.back();
     if (message.trim()) {
@@ -147,7 +165,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
           </div>
         )}
         {selectedChat && (
-          <div className={`chat-message-container ${chatOpen && 'chat-open'}`}>
+          <div className={`chat-message-container ${chatOpen ? 'chat-open' : ''}`} ref={chatContainerRef}>
             <div className="message-top">
               <div className="top-left">
                 {isMobile && (

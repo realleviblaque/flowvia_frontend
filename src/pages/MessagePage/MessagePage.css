@@ -166,14 +166,15 @@
   }
   .chat-message-middle {
     min-height: 0;
-    flex: 1;
+    flex: 1 1 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     .chat-message {
-      flex: 1;
+      flex: 1 1 0;
       min-height: 0;
       overflow: auto;
+      overflow-x: hidden;
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -404,6 +405,9 @@
   .chat-message-container {
     position: fixed;
     inset: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg);
     z-index: 999;
     overflow: hidden;

@@ -76,11 +76,36 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     if (!isMobile) return;
     const viewport = window.visualViewport;
     if (!viewport) return;
-    const updateChatHeight = () => {
-      if (!chatContainerRef.current) return;
-      chatContainerRef.current.style.height = `${viewport.height}px`;
-      chatContainerRef.current.style.top = `${viewport.offsetTop}px`;
-    }
+    const isNearBottom = () => {
+  const chat = messagesEndRef.current;
+
+  if (!chat) return false;
+
+  const distanceFromBottom =
+    chat.scrollHeight -
+    chat.scrollTop -
+    chat.clientHeight;
+
+  return distanceFromBottom < 100;
+};
+
+const updateChatHeight = () => {
+  if (!chatContainerRef.current) return;
+
+  const wasNearBottom = isNearBottom();
+
+  chatContainerRef.current.style.height =
+    `${viewport.height}px`;
+
+  chatContainerRef.current.style.top =
+    `${viewport.offsetTop}px`;
+
+  if (wasNearBottom) {
+    requestAnimationFrame(() => {
+      handleScrollTop();
+    });
+  }
+};
     updateChatHeight();
     viewport.addEventListener('resize', updateChatHeight)
     viewport.addEventListener('scroll', updateChatHeight)

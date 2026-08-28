@@ -315,7 +315,9 @@
     flex: 1;
     width: unset;
     border: none;
-    overflow: unset;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .chat-list {
       .search-wrap {
         background-color: var(--bg);

@@ -80,9 +80,6 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       if (!chatContainerRef.current) return;
       chatContainerRef.current.style.height = `${viewport.height}px`;
       chatContainerRef.current.style.top = `${viewport.offsetTop}px`;
-      requestAnimationFrame(() => {
-        handleScrollTop();
-      })
     }
     updateChatHeight();
     viewport.addEventListener('resize', updateChatHeight)
@@ -92,11 +89,6 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       viewport.removeEventListener('scroll', updateChatHeight)
     }
   }, [isMobile])
-  const handleInputFocus = () => {
-    requestAnimationFrame(() => {
-      handleScrollTop();
-    })
-  }
   const handleMobileChatClose = () => {
     window.history.back();
     if (message.trim()) {
@@ -275,7 +267,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                     <span>
                       <i className="fa-solid fa-plus"></i>
                     </span>
-                    <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onFocus={handleInputFocus} onInput={() => {
+                    <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
                       const input = messageInput.current;
                       input.style.height = '18px'
                       input.style.height = (input.scrollHeight) + 'px'

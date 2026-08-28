@@ -715,7 +715,7 @@
     }
   }
   .project-section {
-    /* min-height: 100vh; */
+    /* min-height: 100dvh; */
     display: flex;
     .main-project-wrap {
       flex: 1;
@@ -1537,7 +1537,7 @@
 
 @media (max-width: 767.99px) {
   .user-profile-page-container {
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     display: flex;
     flex-direction: column;
     overflow: auto;

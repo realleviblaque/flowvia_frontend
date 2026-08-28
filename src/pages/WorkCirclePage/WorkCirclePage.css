@@ -1,7 +1,7 @@
 @media (max-width: 767.99px) {
   .work-circle-main {
     margin: 0;
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     display: flex;
     flex-direction: column;
     overflow: auto;

@@ -25,11 +25,12 @@
 }
 .chat-message-container {
   flex: 1;
-  height: 100vh;
+  height: 100dvh;
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   .message-top {
+    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -294,6 +295,7 @@
     }
   }
   .send-msg-input-wrap {
+    flex-shrink: 0;
     height: auto;
     border-top: 1px solid var(--border);
     padding: 14px;
@@ -422,8 +424,6 @@
       padding: 12px 10px;
       border-bottom: 1px solid var(--border);
       background-color: var(--sidebar-bg);
-      position: sticky;
-      top: 0;
       .top-left {
         flex: 1;
         display: flex;
@@ -613,6 +613,7 @@
       }
     }
     .chat-message-bottom {
+      flex-shrink: 0;
       padding: 6px;
       background-color: unset;
       border-top: unset;

@@ -14,7 +14,7 @@
   .status-main {
     margin-left: 0;
     padding-top: 0;
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     overflow: auto;
     &::-webkit-scrollbar {
       display: none;

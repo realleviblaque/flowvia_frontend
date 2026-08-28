@@ -732,7 +732,7 @@
     }
   }
   .project-section {
-    /* min-height: 100vh; */
+    /* min-height: 100dvh; */
     display: flex;
     .main-project-wrap {
       flex: 1;

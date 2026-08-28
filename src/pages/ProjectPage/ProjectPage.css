@@ -372,7 +372,7 @@
   .project-main {
     margin-top: 0;
     margin-left: 0;
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     overflow: auto;
     .project-main-head {
       padding: 0;

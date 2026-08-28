@@ -159,7 +159,7 @@
   .home-main {
     left: 0;
     margin-left: 0;
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     .home-content {
       padding: 0px;
       &::-webkit-scrollbar {

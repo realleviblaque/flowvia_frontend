@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
 import { statusTimeAgo } from '../../utils/statusTimeAgo'
@@ -37,7 +37,7 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
       setDraftText(prev => ({...prev, [selectedId]: message}))
     }
   }
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleSearch = () => {
       if (search) {
         setLists(ChatLists.filter(list => 
@@ -50,7 +50,7 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
     }
     handleSearch();
   }, [search, setLists])
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleFilter = () => {
       if (search) {
         if (filter === 'All') {

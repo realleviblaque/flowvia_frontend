@@ -348,11 +348,9 @@ const updateChatHeight = () => {
           </div>
         )}
       </main>
-      {!chatOpen && (
-        <BottomBar
+      <BottomBar
           hadnlePlusDialogOpen={hadnlePlusDialogOpen}
-        />
-      )
+      />
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )

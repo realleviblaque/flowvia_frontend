@@ -233,6 +233,10 @@
             color: var(--mutetd-tetx);
             font-size: 14px;
             transition: all 0.2s;
+            span {
+              color: var(--accent-blue);
+              transition: all 0.2s;
+            }
           }
         }
         .message-count,
@@ -284,6 +288,9 @@
             }
             .message {
               color: var(--blue-border);
+              span {
+                color: white;
+              }
             }
           }
           .message-count,
@@ -451,6 +458,9 @@
               }
               .message {
                 color: var(--mutetd-tetx);
+                span {
+                  color: var(--accent-blue);
+                }
               }
             }
             .message-count,

@@ -3,21 +3,19 @@ import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
 import { statusTimeAgo } from '../../utils/statusTimeAgo'
 
-export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter}) {
+export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter, message, draftText, setDraftText}) {
   const unReadLists = lists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length;
   const requestLists = lists.filter(list => list.type === 'Request').length
   const [search, setSearch] = useState('')
   const handleClick = (list) => {
     const chat = ChatLists.find(chat => chat.id === list.id);
     if (!chat) return;
+    
     chat.messages.forEach((message) => {
       if (!message.details.isRead) {
         message.details.isRead = true;
       }
     })
-    if (selectedId === list.id) {
-      handleScrollTop();
-    }
     setSelectedId(list.id)
     requestAnimationFrame(() => setChatOpen(true))
     setSelectedChat({
@@ -30,6 +28,13 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
         '',
         window.location.href
       )
+    }
+    if (selectedId === list.id) {
+      handleScrollTop();
+      return;
+    }
+    if (message.trim()) {
+      setDraftText(prev => ({...prev, [selectedId]: message}))
     }
   }
   useEffect(() => {
@@ -145,7 +150,9 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
                     {list.user.isVerified && <i className="fa-regular fa-check-circle"></i>}
                     {lastMessage && <span className="time">{statusTimeAgo(lastSent)}</span>}
                   </div>
-                  <p className="message">{lastMessage?.details.text || 'New'}</p>
+                  {draftText[list.id]?.trim() ? (
+                    <p className="message"><span>Draft:</span> {draftText[list.id]}</p>
+                  ) : <p className="message">{lastMessage?.details.text || 'New'}</p>}
                 </div>
                 {lastMessage?.details.sender === 'sender' && (
                   <div className="message-read">

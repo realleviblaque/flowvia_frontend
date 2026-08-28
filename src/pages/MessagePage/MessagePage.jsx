@@ -18,21 +18,51 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const messageInput = useRef(null)
   const messagesEndRef = useRef(null)
   const [chatOpen, setChatOpen] = useState(false)
-  useEffect(() => {
-    const handleClickedChat = () => {
-      setSelectedChat(ChatLists.find(chat => chat.id === selectedId))
+  const [draftText, setDraftText] = useState({})
+  const isMobile = window.innerWidth < 768;
+  useLayoutEffect(() => {
+    const handleMsgDraftUpdate = () => {
+      if (draftText[selectedId]) {
+        setMessage(draftText[selectedId]);
+      } else {
+        setMessage('')
+      }
     }
-    handleClickedChat();
+    handleMsgDraftUpdate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedId])
+  useEffect(() => {
+    if (isMobile) return;
+    const handleDraftDelete = () => {
+      if (draftText[selectedId]) {
+        setDraftText(prev => {
+          const newDraft = {...prev}
+          delete newDraft[selectedId]
+          return newDraft;
+        })
+      }
+    }
+    handleDraftDelete();
+    ;
+  }, [draftText, selectedId, isMobile])
   useEffect(() => {
     const handlePopState = () => {
       setChatOpen(false);
+      if (message.trim()) {
+        setDraftText(prev => ({...prev, [selectedId]: message}))
+      } else {
+        setDraftText(prev => {
+          const newDraft = {...prev}
+          delete newDraft[selectedId]
+          return newDraft;
+        })
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => {
       window.removeEventListener('popstate', handlePopState)
     }
-  }, [])
+  }, [selectedId, message])
   const handleScrollTop = () => {
     const chat = messagesEndRef.current;
     if (!chat) return;
@@ -43,6 +73,15 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   }, [selectedChat])
   const handleMobileChatClose = () => {
     window.history.back();
+    if (message.trim()) {
+      setDraftText(prev => ({...prev, [selectedId]: message}))
+    } else {
+      setDraftText(prev => {
+        const newDraft = {...prev}
+        delete newDraft[selectedId]
+        return newDraft;
+      })
+    }
   }
   const sendMessage = () => {
     if (message.trim()) {
@@ -82,7 +121,6 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       }
     }
   }
-  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
@@ -98,6 +136,9 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
           setLists={setLists}
           filter={filter}
           setFilter={setFilter}
+          message={message}
+          draftText={draftText}
+          setDraftText={setDraftText}
         />
         {!isMobile && !selectedChat && (
           <div className="no-selected-message-wrap">

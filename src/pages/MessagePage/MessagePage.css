@@ -395,7 +395,7 @@
     height: calc(100dvh - 127px);
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     &::-webkit-scrollbar {

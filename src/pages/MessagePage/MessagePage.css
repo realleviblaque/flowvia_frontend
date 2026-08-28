@@ -389,7 +389,7 @@
 
 @media (max-width: 767.99px) {
   .message-main {
-    height: calc(100vh - 127px);
+    height: calc(100dvh - 127px);
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -401,7 +401,7 @@
   }
   .chat-message-container {
     position: fixed;
-    height: 100dvh;
+    height: unset;
     flex: unset;
     top: 0;
     bottom: 0;

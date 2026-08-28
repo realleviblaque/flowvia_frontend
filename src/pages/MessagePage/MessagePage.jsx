@@ -79,7 +79,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     const updateChatHeight = () => {
       if (!chatContainerRef.current) return;
       chatContainerRef.current.style.height = `${viewport.height}px`;
-      chatContainerRef.current.style.top = `${viewport.offsetTop}px`
+      chatContainerRef.current.style.top = `${viewport.offsetTop}px`;
+      requestAnimationFrame(() => {
+        handleScrollTop();
+      })
     }
     updateChatHeight();
     viewport.addEventListener('resize', updateChatHeight)

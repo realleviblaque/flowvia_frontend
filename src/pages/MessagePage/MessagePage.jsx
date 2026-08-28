@@ -86,7 +86,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     chat.scrollTop -
     chat.clientHeight;
 
-  return distanceFromBottom < 70;
+  return distanceFromBottom < 100;
 };
 
 const updateChatHeight = () => {

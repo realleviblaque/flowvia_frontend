@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import './BottomBar.css'
 
-export function BottomBar({hadnlePlusDialogOpen}) {
+export function BottomBar({hadnlePlusDialogOpen, chatOpen}) {
   return (
-    <div className="bottom-bar">
+    <div className={`bottom-bar ${chatOpen ? 'chat-open' : ''}`}>
       <NavLink to='/'>
         <i className="fa-solid fa-house"></i>
         Home

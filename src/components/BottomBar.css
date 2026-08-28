@@ -10,10 +10,6 @@
   justify-content: space-around;
   align-items: center;
   z-index: 100;
-  &.chat-open {
-    visibility: hidden;
-    pointer-events: none;
-  }
   a {
     display: flex;
     flex-direction: column;
@@ -51,6 +47,9 @@
 @media (max-width: 767.99px) {
   .bottom-bar {
     display: flex;
+    &.chat-open {
+      display: none;
+    }
   }
 }
 

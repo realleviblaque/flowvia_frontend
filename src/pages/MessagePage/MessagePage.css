@@ -403,9 +403,7 @@
     &.chat-open {
       overflow: hidden;
       touch-action: none;
-      .chat-list-container,
-      .bottom-bar {
-        opacity: 0;
+      .chat-list-container {
         visibility: hidden;
         pointer-events: none;
       }

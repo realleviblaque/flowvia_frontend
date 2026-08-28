@@ -179,7 +179,7 @@
               height: 9px;
               width: 9px;
               border-radius: 50%;
-              background-color: var(--active-badge-bg);
+              background-color: var(--green);
               position: absolute;
               bottom: 3px;
               right: -2px;
@@ -262,12 +262,10 @@
           background-color: var(--accent-blue);
           .profile {
             .active-badge {
-              background-color: var(--green);
               border: 3px solid var(--blue-border);
             }
             &.team {
               .active-badge {
-                background-color: var(--green);
                 border: 3px solid var(--blue-border);
               }
             }
@@ -374,26 +372,6 @@
           &:nth-child(1) {
             border: none;
           }
-          &:hover {
-            background-color: transparent;
-            .profile {
-              .active-badge {
-                border-color: var(--sidebar-bg);
-              }
-            }
-          }
-          &.active {
-            border-left: unset;
-            background-color: transparent;
-            .profile {
-              .active-badge {
-                border-color: var(--cards);
-              }
-            }
-          }
-          &:active {
-            background-color: var(--cards);
-          }
           .profile {
             img {
               width: 44px;
@@ -443,6 +421,47 @@
               background-color: var(--accent-blue);
               color: white;
               font-size: 12px;
+            }
+          }
+          &:hover,
+          &.active {
+            background-color: unset;
+            .profile {
+              .active-badge {
+                border-color: var(--sidebar-bg);
+              }
+              &.team {
+                .active-badge {
+                  background-color: var(--green);
+                  border-color: var(--sidebar-bg);
+                }
+              }
+            }
+            .sender-info {
+              .name-wrap {
+                .name {
+                  color: var(--secondary-text);
+                }
+                i {
+                  color: var(--accent-blue);
+                }
+                span {
+                  color: var(--mutetd-tetx);
+                }
+              }
+              .message {
+                color: var(--mutetd-tetx);
+              }
+            }
+            .message-count,
+            .message-read {
+              span {
+                background-color: var(--accent-blue);
+                color: var(--pry-text);
+              }
+              i {
+                color: var(--accent-blue);
+              }
             }
           }
         }

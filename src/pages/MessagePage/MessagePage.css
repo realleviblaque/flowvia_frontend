@@ -371,10 +371,15 @@
           font-weight: bold;
           color: var(--pry-btn-text);
           cursor: pointer;
+          opacity: 0.5;
+          transition: opacity 0.3s;
           i {
             font-size: 12px;
             color: var(--pry-btn-text);
             transform: rotate(40deg);
+          }
+          &.active {
+            opacity: 1;
           }
         }
       }
@@ -620,39 +625,31 @@
         padding: 4px;
         border-radius: unset;
         border: unset;
-        span {
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          border: 1px solid var(--border);
-          background-color: var(--cards);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 15px;
-          color: var(--mutetd-tetx);
-          cursor: pointer;
-          margin-bottom: 2px;
-          &.send {
-            background-color: var(--accent-blue);
-            color: white;
-            font-size: 12px;
-            i {
-              transform: rotate(45deg);
-              margin-right: 4px;
-            }
-          }
-        }
         .message-input {
           flex: 1;
           display: flex;
           justify-content: left;
           align-items: center;
-          min-height: 30px;
+          min-height: 40px;
           background-color: var(--cards);
           border: 1px solid var(--border);
-          padding: 4px 12px;
-          border-radius: 20px;
+          padding: 5px 6px;
+          border-radius: 30px;
+          gap: 6px;
+          &:focus-within {
+            border-color: var(--blue-border);
+          }
+          span {
+            width: 34px;
+            height: 40px;
+            border-radius: 50%;
+            place-self: end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: var(--secondary-text);
+          }
           textarea {
             flex: 1;
             background-color: transparent;
@@ -663,11 +660,31 @@
             resize: none;
             height: 18px;
             padding: 0;
+            transition: flex 0.2s;
             &::placeholder {
               color: var(--mutetd-tetx);
             }
             &::-webkit-scrollbar {
               display: none;
+            }
+          }
+          .send {
+            width: 40px;
+            background-color: var(--accent-blue);
+            color: white;
+            font-size: 13px;
+            transform: scale(0);
+            opacity: 0;
+            visibility: hidden;
+            transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+            i {
+              transform: rotate(15deg);
+              margin-right: 4px;
+            }
+            &.ready {
+              transform: scale(1);
+              opacity: 1;
+              visibility: visible;
             }
           }
         }

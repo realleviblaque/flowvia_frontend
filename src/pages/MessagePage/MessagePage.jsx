@@ -24,6 +24,15 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     }
     handleClickedChat();
   }, [selectedId])
+  useEffect(() => {
+    const handlePopState = () => {
+      setChatOpen(false);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
   const handleScrollTop = () => {
     const chat = messagesEndRef.current;
     if (!chat) return;
@@ -32,36 +41,8 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   useLayoutEffect(() => {
     handleScrollTop();
   }, [selectedChat])
-  /* useEffect(() => {
-    const containerElem = messagesEndRef.current;
-    if (containerElem) {
-      containerElem.scrollTo({
-        top: containerElem.scrollHeight,
-        behavior: 'smooth'
-      })
-    }
-  }, [selectedChat?.messages]) */
-
-  /* const sendMessage = () => {
-    if (message.trim()) {
-      const newMessage = {
-        id: crypto.randomUUID(),
-        sender: 'me',
-        text: message.trim(),
-        timestamp: new Date().toISOString(),
-        isRead: false
-      }
-
-      setSelectedChat({...selectedChat, messages: [...selectedChat.messages, newMessage]})
-      setMessage('')
-      setIsInputEmpty(true)
-      messageInput.current.style.height = isMobile ? '18px' : '24px';
-    }
-  } */
   const handleMobileChatClose = () => {
-    setChatOpen(false)
-    setSelectedId(null)
-    selectedChat(null) 
+    window.history.back();
   }
   const sendMessage = () => {
     if (message.trim()) {
@@ -223,10 +204,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
             <div className="chat-message-bottom">
               {isMobile ? (
                 <div className="message-bottom-cover">
-                  <span>
-                    <i className="fa-solid fa-plus"></i>
-                  </span>
                   <div className="message-input">
+                    <span>
+                      <i className="fa-solid fa-plus"></i>
+                    </span>
                     <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
                       const input = messageInput.current;
                       input.style.height = '18px'
@@ -240,13 +221,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                           sendMessage();
                         }
                       }} />
+                    <span className={`send ${message.trim() && 'ready'}`} onClick={sendMessage}>
+                      <i className="fa-solid fa-paper-plane"></i>
+                    </span>
                   </div>
-                  <span>
-                    <i className="fa-solid fa-image"></i>
-                  </span>
-                  <span className="send" onClick={sendMessage}>
-                    <i className="fa-solid fa-paper-plane"></i>
-                  </span>
                 </div>
               ) : (
                 <div className="send-msg-input-wrap">
@@ -270,7 +248,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       <i className="fa-solid fa-paperclip"></i>
                       <i className="fa-regular fa-image"></i>
                       <i className="fa-solid fa-table-cells-large"></i>
-                      <button onClick={sendMessage}>Send <i className="fa-solid fa-paper-plane"></i></button>
+                      <button onClick={sendMessage} className={message.trim() && 'active'}>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>
                   </div>
                 </div>

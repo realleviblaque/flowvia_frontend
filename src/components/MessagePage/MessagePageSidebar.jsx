@@ -19,11 +19,18 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
       handleScrollTop();
     }
     setSelectedId(list.id)
-    setChatOpen(true);
+    requestAnimationFrame(() => setChatOpen(true))
     setSelectedChat({
       ...chat,
       messages: [...chat.messages]
     })
+    if (window.innerWidth < 768) {
+      window.history.pushState(
+        {chatOpen: true},
+        '',
+        window.location.href
+      )
+    }
   }
   useEffect(() => {
     const handleSearch = () => {

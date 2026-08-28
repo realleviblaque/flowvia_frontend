@@ -89,6 +89,13 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       viewport.removeEventListener('scroll', updateChatHeight)
     }
   }, [isMobile])
+  useEffect(() => {
+    if (!isMobile) return;
+    document.body.style.overflow = chatOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    }
+  }, [chatOpen, isMobile])
   const handleMobileChatClose = () => {
     window.history.back();
     if (message.trim()) {
@@ -143,7 +150,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     <>
       <SideBar notification={all} />
       <MobileHeader2 />
-      <main className="message-main">
+      <main className={`message-main ${chatOpen ? 'chat-open' : ''}`}>
         <MessagePageSidebar 
           setChatOpen={setChatOpen} 
           selectedId={selectedId} 

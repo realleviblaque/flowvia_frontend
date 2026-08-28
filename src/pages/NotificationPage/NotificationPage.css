@@ -6,8 +6,7 @@
   gap: 1px;
   .notification-content {
     padding: 30px 50px;
-    flex: 1;
-    height: calc(100% - 60px);
+    flex: 1 - 60px;
     overflow: auto;
     display: flex;
     flex-direction: column;

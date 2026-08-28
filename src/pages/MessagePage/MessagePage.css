@@ -404,8 +404,7 @@
       overflow: hidden;
       touch-action: none;
       .chat-list-container {
-        visibility: hidden;
-        pointer-events: none;
+        display: none;
       }
     }
   }

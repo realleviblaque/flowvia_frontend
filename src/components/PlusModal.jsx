@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import './PlusModal.css'
 
-export function PlusModal({plusDialog, hadnlePlusDialogClose) {
+export function PlusModal({plusDialog, hadnlePlusDialogClose}) {
   const location = useLocation();
   return (
     <dialog className={`phone-plus-menu ${location.pathname === '/status' && 'status-plus-menu'}`} ref={plusDialog}>

@@ -9,5 +9,5 @@
   align-items: start;
   padding: 35px 50px;
   overflow: auto;
-  height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
 }

@@ -121,7 +121,7 @@
 }
 .create-post-main {
   display: flex;
-  height: calc(100vh - 61px);
+  height: calc(100dvh - 61px);
   .create-post-container {
     flex: 1;
     display: flex;

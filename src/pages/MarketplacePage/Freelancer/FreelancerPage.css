@@ -2,7 +2,7 @@
   color: var(--text-color);
   padding: 10px 20px 10px 30px;
   .not-found-wrapper {
-    height: calc(100vh - 280px);
+    height: calc(100dvh - 280px);
     display: flex;
     justify-content: center;
     align-items: center;

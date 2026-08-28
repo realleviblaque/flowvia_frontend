@@ -4,9 +4,9 @@
   padding: 0px;
   margin: 0;
   margin-left: 266px;
-  height: calc(100vh - 114px);
+  height: calc(100dvh - 114px);
   &.add-new {
-    height: calc(100vh - 134px);
+    height: calc(100dvh - 134px);
   }
   p {
     padding: 0;
@@ -616,9 +616,9 @@
     flex-direction: column;
     justify-content: unset;
     margin: 0;
-    height: calc(100vh - 61px);
+    height: calc(100dvh - 61px);
     &.add-new {
-      height: calc(100vh - 61px);
+      height: calc(100dvh - 61px);
     }
     .post-view-container {
       &::-webkit-scrollbar {

@@ -1,7 +1,7 @@
 .status-in-negotiation-main {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 71px);
+  height: calc(100dvh - 71px);
   overflow: auto;
   .nav-wrap {
     position: sticky;
@@ -386,7 +386,7 @@
 
 @media (max-width: 767.99px) {
   .status-in-negotiation-main {
-    height: calc(100vh - 61px);
+    height: calc(100dvh - 61px);
     &::-webkit-scrollbar {
       display: none;
     }

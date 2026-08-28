@@ -255,7 +255,7 @@
     }
   }
   .empty-freelancer-wrapper {
-    height: calc(100vh - 290px);
+    height: calc(100dvh - 290px);
     display: flex;
     flex-direction: column;
     justify-content: center;

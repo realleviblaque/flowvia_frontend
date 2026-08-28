@@ -1,7 +1,7 @@
 .status-taken-project-main {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 71px);
+  height: calc(100dvh - 71px);
   overflow: auto;
   .top-side {
     flex-shrink: 0;
@@ -439,7 +439,7 @@
 
 @media (max-width: 767.99px) {
   .status-taken-project-main {
-    height: calc(100vh - 61px);
+    height: calc(100dvh - 61px);
     &::-webkit-scrollbar {
       display: none;
     }

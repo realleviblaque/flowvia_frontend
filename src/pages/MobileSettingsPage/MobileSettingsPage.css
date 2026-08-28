@@ -2,7 +2,7 @@
   .settings-sidebar {
     width: auto;
     flex: 1;   
-    height: calc(100vh - 61px);
+    height: calc(100dvh - 61px);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 .acivity-sidebar {
   width: 410px;
-  height: calc(100vh - 37px);
+  height: calc(100dvh - 37px);
   margin-left: auto;
   display: flex;
   flex-direction: column;

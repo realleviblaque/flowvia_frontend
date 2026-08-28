@@ -1,6 +1,6 @@
 .status-main {
   display: flex;
-  height: calc(100vh - 150px);
+  height: calc(100dvh - 150px);
   flex-direction: column;
   padding-top: 30px;
   margin-left: 255px;

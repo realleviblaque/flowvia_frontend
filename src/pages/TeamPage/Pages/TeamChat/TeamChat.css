@@ -79,7 +79,7 @@
   }
 }
 .chat-page {
-  height: calc(100vh - 71px);
+  height: calc(100dvh - 71px);
   display: flex;
   justify-content: left;
   align-items: center;

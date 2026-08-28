@@ -111,7 +111,7 @@
   }
 }
 .status-container {
-  height: calc(100vh - 160px);
+  height: calc(100dvh - 160px);
   padding: 30px;
   display: flex;
   flex-direction: column;

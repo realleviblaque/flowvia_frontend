@@ -55,5 +55,5 @@
 .team-settings-container {
   display: flex;
   justify-content: left;
-  height: calc(100vh - 71px);
+  height: calc(100dvh - 71px);
 }

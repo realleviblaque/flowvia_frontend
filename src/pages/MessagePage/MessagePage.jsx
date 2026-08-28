@@ -72,7 +72,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   useLayoutEffect(() => {
     handleScrollTop();
   }, [selectedChat])
-  /* useEffect(() => {
+  useEffect(() => {
     if (!isMobile) return;
     const viewport = window.visualViewport;
     if (!viewport) return;
@@ -88,7 +88,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       viewport.removeEventListener('resize', updateChatHeight)
       viewport.removeEventListener('scroll', updateChatHeight)
     }
-  }, [isMobile]) */
+  }, [isMobile])
   const handleMobileChatClose = () => {
     window.history.back();
     if (message.trim()) {

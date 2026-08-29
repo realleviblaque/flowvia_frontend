@@ -77,35 +77,30 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     const viewport = window.visualViewport;
     if (!viewport) return;
     const isNearBottom = () => {
-  const chat = messagesEndRef.current;
+      const chat = messagesEndRef.current;
+      if (!chat) return false;
+      const distanceFromBottom =
+        chat.scrollHeight -
+        chat.scrollTop -
+        chat.clientHeight;
+      return distanceFromBottom < 100;
+    };
+    const updateChatHeight = () => {
+      if (!chatContainerRef.current) return;
+      const wasNearBottom = isNearBottom();
+      
+      chatContainerRef.current.style.height =
+        `${viewport.height}px`;
 
-  if (!chat) return false;
+      chatContainerRef.current.style.top =
+        `${viewport.offsetTop}px`;
 
-  const distanceFromBottom =
-    chat.scrollHeight -
-    chat.scrollTop -
-    chat.clientHeight;
-
-  return distanceFromBottom < 100;
-};
-
-const updateChatHeight = () => {
-  if (!chatContainerRef.current) return;
-
-  const wasNearBottom = isNearBottom();
-
-  chatContainerRef.current.style.height =
-    `${viewport.height}px`;
-
-  chatContainerRef.current.style.top =
-    `${viewport.offsetTop}px`;
-
-  if (wasNearBottom) {
-    requestAnimationFrame(() => {
-      handleScrollTop();
-    });
-  }
-};
+      if (wasNearBottom) {
+        requestAnimationFrame(() => {
+          handleScrollTop();
+        });
+      }
+    };
     updateChatHeight();
     viewport.addEventListener('resize', updateChatHeight)
     viewport.addEventListener('scroll', updateChatHeight)
@@ -347,11 +342,8 @@ const updateChatHeight = () => {
             </div>
           </div>
         )}
-      </main>{!chatOpen && (
-  <BottomBar
-    hadnlePlusDialogOpen={hadnlePlusDialogOpen}
-  />
-)}
+      </main>
+      {!chatOpen && <BottomBar hadnlePlusDialogOpen={hadnlePlusDialogOpen} />}
       <PlusModal plusDialog={plusDialog} hadnlePlusDialogClose={hadnlePlusDialogClose} />
     </>
   )

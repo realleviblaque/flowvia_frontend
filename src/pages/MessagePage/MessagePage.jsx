@@ -20,6 +20,8 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const [chatOpen, setChatOpen] = useState(false)
   const [draftText, setDraftText] = useState({})
   const chatContainerRef = useRef(null)
+  const [plusMediaOpen, setPlusMediaOpen] = useState(false)
+  const [chatMenuOpen, setChatMenuOpen] = useState(false)
   const isMobile = window.innerWidth < 768;
   useLayoutEffect(() => {
     const handleMsgDraftUpdate = () => {
@@ -88,7 +90,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     const updateChatHeight = () => {
       if (!chatContainerRef.current) return;
       const wasNearBottom = isNearBottom();
-      
+
       chatContainerRef.current.style.height =
         `${viewport.height}px`;
 
@@ -116,6 +118,32 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       document.body.style.overflow = '';
     }
   }, [chatOpen, isMobile])
+  useEffect(() => {
+    const modal = document.querySelector('.plus-media-modal')
+    const chatMenu = document.querySelector('.chat-menu')
+    const plusIcon = document.querySelector('.plus-button')
+    const menuIcon = document.querySelector('.menu-modal')
+    const handleClosePlusMedia = (e) => {
+      if (plusMediaOpen && modal && !modal.contains(e.target) && !plusIcon.contains(e.target)) {
+        setPlusMediaOpen(false)
+      }
+      if (chatMenuOpen && chatMenu && !chatMenu.contains(e.target)  && !menuIcon.contains(e.target)) {
+        setChatMenuOpen(false)
+      }
+    }
+    document.addEventListener('click', handleClosePlusMedia)
+    return () => document.removeEventListener('click', handleClosePlusMedia)
+  }, [plusMediaOpen, chatMenuOpen])
+  const handlePlusModal = (e) => {
+    if (chatMenuOpen) return;
+    e.preventDefault();
+    setPlusMediaOpen(!plusMediaOpen)
+  }
+  const handleChatMenu = (e) => {
+    if (plusMediaOpen) return;
+    e.preventDefault();
+    setChatMenuOpen(!chatMenuOpen)
+  }
   const handleMobileChatClose = () => {
     window.history.back();
     if (message.trim()) {
@@ -222,7 +250,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               </div>
               <div className="top-right">
                 {isMobile ? (
-                  <span>
+                  <span className="menu-modal" onClick={handleChatMenu}>
                     <i className="fa-solid fa-ellipsis-h"></i>
                   </span>
                 ) : (
@@ -234,11 +262,34 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       <i className="fa-solid fa-plus"></i>
                       <p>Hire</p>
                     </div>
-                    <div className="more-action" title="Menu">
+                    <div className="more-action menu-modal" title="Menu" onClick={handleChatMenu}>
                       <i className="fa-solid fa-ellipsis-v"></i>
                     </div>
                   </>
                 )}
+                <div className={`chat-menu ${chatMenuOpen ? 'open' : ''}`}>
+                  {isMobile ? (
+                    <>
+                      <p>View profile</p>
+                      <p>Hire</p>
+                      <p>Serach messages</p>
+                      <p>Mute notifications</p>
+                      <p>Clear chat</p>
+                      <p>Report user</p>
+                      <p>Block user</p>
+                      <p>Settings</p>
+                    </>
+                  ) : (
+                    <>
+                      <p>Serach messages</p>
+                      <p>Mute notifications</p>
+                      <p>Clear chat</p>
+                      <p>Report user</p>
+                      <p>Block user</p>
+                      <p>Settings</p>
+                    </>
+                  )}
+                </div>
               </div>
             </div>
             <div className="chat-message-middle">
@@ -291,9 +342,27 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               {isMobile ? (
                 <div className="message-bottom-cover">
                   <div className="message-input">
-                    <span>
+                    <span onClick={handlePlusModal} className="plus-button">
                       <i className="fa-solid fa-plus"></i>
                     </span>
+                    <div className={`plus-media-modal ${plusMediaOpen ? 'open' : ''}`}>
+                      <div>
+                        <i className="fa-regular fa-camera"></i>
+                        <p>Camera</p>
+                      </div>
+                      <div>
+                        <i className="fa-regular fa-image"></i>
+                        <p>Photos</p>
+                      </div>
+                      <div>
+                        <i className="fa-solid fa-paperclip"></i>
+                        <p>Files</p>
+                      </div>
+                      <div>
+                        <i className="fa-regular fa-folder"></i>
+                        <p>Projects</p>
+                      </div>
+                    </div>
                     <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
                       const input = messageInput.current;
                       input.style.height = '18px'

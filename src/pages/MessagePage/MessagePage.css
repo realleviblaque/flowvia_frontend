@@ -133,6 +133,7 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      position: relative;
       .view-profile,
       .hire-btn,
       .more-action {
@@ -159,6 +160,40 @@
           width: 40px;
           i {
             font-size: 12px;
+          }
+        }
+      }
+      .chat-menu {
+        position: absolute;
+        right: -5px;
+        top: 53px;
+        height: fit-content;
+        width: 220px;
+        transform-origin: top right;
+        transform: scale(0, 0);
+        transition: transform 00.3s;
+        background-color: var(--cards);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        &.open {
+          transform: scale(1, 1);
+        }
+        p {
+          height: 45px;
+          font-size: 16px;
+          color: var(--secondary-text);
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          padding: 0 15px;
+          cursor: pointer;
+          &:hover {
+            background-color: var(--blue-border);
+            color: var(--accent-blue);
           }
         }
       }
@@ -518,6 +553,15 @@
           background-color: var(--cards);
           cursor: pointer;
         }
+        .chat-menu {
+          top: 47px;
+          p {
+            &:hover {
+              background-color: transparent;
+              color: var(--secondary-text);
+            }
+          }
+        }
       }
     }
     .chat-message-middle {
@@ -651,6 +695,7 @@
           padding: 5px 6px;
           border-radius: 30px;
           gap: 6px;
+          position: relative;
           &:focus-within {
             border-color: var(--blue-border);
           }
@@ -664,6 +709,49 @@
             align-items: center;
             font-size: 18px;
             color: var(--secondary-text);
+          }
+          .plus-media-modal {
+            position: absolute;
+            height: 250px;
+            width: 220px;
+            bottom: 0;
+            left: 0;
+            border-radius: 15px;
+            background-color: var(--cards);
+            border: 1px solid var(--border);
+            z-index: 9;
+            transform-origin: bottom left;
+            transform: scale(0, 0);
+            transition: transform 00.3s;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            &.open {
+              transform: scale(1, 1);
+            }
+            div {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 10px;
+              padding: 4px 10px;
+              flex: 1;
+              i {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                font-size: 18px;
+                background-color: var(--border);
+                color: var(--secondary-text);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              p {
+                font-size: 18px;
+                color: var(--secondary-text);
+              }
+            }
           }
           textarea {
             flex: 1;

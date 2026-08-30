@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FreelancerWorkHistory, WorkHistorySetup } from "../WorkHistory"
-import dayjs from "../../../lib/dayjs"
 import formatCount from "../../../utils/formatCount"
+import { formatLastSeen } from "../../../utils/formatLastSeen"
 
 export function FreelancerWrap({freelancer}) {
   const [isHistoryShow, setIsHistoryShow] = useState(false)
@@ -31,7 +31,7 @@ export function FreelancerWrap({freelancer}) {
                     <p className="online">Online</p>
                   </>
                 :
-                  <p>{dayjs(freelancer.profile.info.lastSeenAt).fromNow()}</p>
+                  <p>{formatLastSeen(freelancer.profile.info.lastSeenAt)}</p>
               }
             </div>
             <p className="profession-title">{freelancer.profile.title}r</p>

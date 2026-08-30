@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ClientWorkHistory, WorkHistorySetup } from "../WorkHistory";
-import dayjs from "../../../lib/dayjs";
 import formatCount from "../../../utils/formatCount";
+import { formatLastSeen } from "../../../utils/formatLastSeen";
 
 export function ClientWrap({client}) {
   const [isHistoryShow, setIsHistoryShow] = useState(false)
@@ -31,7 +31,7 @@ export function ClientWrap({client}) {
                     <p className="online">Online</p>
                   </>
                 :
-                  <p>{dayjs(client.lastActive).fromNow()}</p>
+                  <p>{formatLastSeen(client.profile.info.lastSeenAt)}</p>
               }
             </div>
             <p className="profession-title">{client.profile.accountType}<span></span>{client.profile.title}</p>

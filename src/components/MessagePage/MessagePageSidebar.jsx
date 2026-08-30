@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from 'react'
 import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
-import { statusTimeAgo } from '../../utils/statusTimeAgo'
+import dayjs from '../../lib/dayjs';
 
 export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter, message, draftText, setDraftText}) {
   const unReadLists = lists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length;
@@ -148,7 +148,7 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
                   <div className="name-wrap">
                     <p className="name">{list.user.name}</p>
                     {list.user.isVerified && <i className="fa-regular fa-check-circle"></i>}
-                    {lastMessage && <span className="time">{statusTimeAgo(lastSent)}</span>}
+                    {lastMessage && <span className="time">{dayjs(lastSent).format('h:mm A')}</span>}
                   </div>
                   {draftText[list.id]?.trim() ? (
                     <p className="message"><span>Draft:</span> {draftText[list.id]}</p>

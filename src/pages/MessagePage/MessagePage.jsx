@@ -7,6 +7,7 @@ import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
 import { ChatLists } from "../../data/MessagePage/messages";
 import dayjs from "../../lib/dayjs";
+import { getNotificationDate } from "../../utils/getNotificationDate";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
@@ -301,9 +302,16 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                     <p>No messages yet <br /> Start the conversation and send the first message.</p>
                   </div>
                 )}
-                {selectedChat.messages.map((message) => {
+                {selectedChat.messages.map((message, index) => {
+                  const previousMessage = selectedChat.messages[index - 1];
+                  const shouldShowDate = !previousMessage || !dayjs(message.createdAt).isSame(dayjs(previousMessage.createdAt), 'day')
                   return (
                     <Fragment key={message.id}>
+                      {shouldShowDate && (
+                        <div className="message-date">
+                          <span>{getNotificationDate(message.createdAt)}</span>
+                        </div>
+                      )}
                       {message.details.sender == 'user' && (
                         isMobile ? (
                           <div className="receive-wrap">

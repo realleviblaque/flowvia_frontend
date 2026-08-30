@@ -15,7 +15,7 @@ export const ChatLists = [{
   },
   messages: [{
     id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
+    createdAt: dayjs().subtract(10, 'day').toISOString(),
     updatedAt: null,
     details: {
       sender: 'sender',
@@ -24,7 +24,7 @@ export const ChatLists = [{
     }
   }, {
     id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
+    createdAt: dayjs().subtract(3, 'day').toISOString(),
     updatedAt: null,
     details: {
       sender: 'user',
@@ -33,7 +33,7 @@ export const ChatLists = [{
     }
   }, {
     id: crypto.randomUUID(),
-    createdAt: dayjs().toISOString(),
+    createdAt: dayjs().subtract(1, 'day').toISOString(),
     updatedAt: null,
     details: {
       sender: 'sender',

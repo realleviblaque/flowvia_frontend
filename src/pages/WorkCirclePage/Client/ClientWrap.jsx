@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ClientWorkHistory, WorkHistorySetup } from "../WorkHistory";
-import formatBudet from "../../../utils/formatBudget";
+import dayjs from "../../../lib/dayjs";
+import formatCount from "../../../utils/formatCount";
 
 export function ClientWrap({client}) {
   const [isHistoryShow, setIsHistoryShow] = useState(false)
@@ -9,35 +10,38 @@ export function ClientWrap({client}) {
   }
   const {amount, date, jobTotal} = WorkHistorySetup(client)
   return (
-    <div key={client.id} className="client-wrap">
+    <div className="client-wrap">
       <div className="top">
         <div className="left">
           <div className="profile">
-            <img src={client.profileImg} className={client.accountType === 'Team' ? 'team-profile' : ''} />
+            <img src={client.profile.image} className={client.profile.accountType === 'Team' ? 'team-profile' : ''} />
           </div>
           <div className="details">
-            <p className="name">{client.name} <i className="fa-regular fa-check-circle"></i></p>
+            <div className="name-wrap">
+              <p className="name">{client.profile.name}</p>
+              {client.profile.info.isVerified && <i className="fa-regular fa-check-circle"></i>}
+            </div>
             <div className="username-info">
-              <p className="username">@{client.username}</p>
+              <p className="username">@{client.profile.username}</p>
               <span></span>
-              {client.isActive 
+              {client.profile.info.isOnline 
                 ?
                   <>
                     <div className="online-stat"></div>
                     <p className="online">Online</p>
                   </>
                 :
-                  <p>{client.lastActive} ago</p>
+                  <p>{dayjs(client.lastActive).fromNow()}</p>
               }
             </div>
-            <p className="profession-title">{client.accountType}<span></span>{client.professionTitle}</p>
-            <p className="bio">{client.bio}</p>
+            <p className="profession-title">{client.profile.accountType}<span></span>{client.profile.title}</p>
+            <p className="bio">{client.profile.bio}</p>
             <div className="more-info">
               <div className="total-jobs">
                 {jobTotal} job{jobTotal === 1 ? '' : 's'} together
               </div>
               <div className="total-paid">
-                <span>${formatBudet(amount)} earned</span>
+                <span>${formatCount(amount)} earned</span>
               </div>
               <div className="last-work-with">
                 Last: {date}

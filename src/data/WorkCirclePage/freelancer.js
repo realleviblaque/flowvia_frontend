@@ -1,85 +1,133 @@
+import dayjs from "../../lib/dayjs";
+
 export const Freelancers = [{
   id: crypto.randomUUID(),
-  profileImg: '/profile.png',
-  name: 'Levi Blaque',
-  username: 'realleviblaque',
-  isActive: true,
-  lastActive: 'now',
-  accountType: 'Freelancer',
-  professionTitle: 'Full Stack Developer',
-  bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
-  workHistory: [{
+  createdAt: dayjs().toISOString(),
+  profile: {
+    id: crypto.randomUUID(),
+    image: '/profile.png',
+    name: 'Levi Blaque',
+    username: 'realleviblaque',
+    accountType: 'Freelancer',
+    title: 'Full Stack Developer',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
+    info: {
+      isOnline: true,
+      lastSeenAt: dayjs().toISOString(),
+      isVerified: true
+    }
+  },
+  history: [{
     id: crypto.randomUUID(),
     title: 'Analytics Dashboard Design',
-    date: 'Sep 2025',
+    createdAt: dayjs().toISOString(),
+    amount: 5000
+  }, {
+    id: crypto.randomUUID(),
+    title: 'E-Commerce Rebuild - Frontend',
+    createdAt: dayjs().subtract(2, 'month').toISOString(),
+    amount: 6800,
+  }]
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  profile: {
+    id: crypto.randomUUID(),
+    image: '/profile.png',
+    name: 'DevConect',
+    username: 'devconnectofficial',
+    accountType: 'Team',
+    title: 'Full Stack Team',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
+    info: {
+      isOnline: true,
+      lastSeenAt: dayjs().toISOString(),
+      isVerified: true
+    }
+  },
+  history: [{
+    id: crypto.randomUUID(),
+    title: 'Analytics Dashboard Design',
+    createdAt: dayjs().toISOString(),
+    amount: 7200
+  }, {
+    id: crypto.randomUUID(),
+    title: 'E-Commerce Rebuild - Frontend',
+    createdAt: dayjs().subtract(1, 'month').toISOString(),
+    amount: 8600,
+  }]
+}, {
+  id: crypto.randomUUID(),
+  createdAt: dayjs().toISOString(),
+  profile: {
+    id: crypto.randomUUID(),
+    image: '/profile.png',
+    name: 'David Kelechikwu Okaofor',
+    username: 'davidkele',
+    accountType: 'Freelancer',
+    title: 'UI/UX Designer',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
+    info: {
+      isOnline: false,
+      lastSeenAt: dayjs().toISOString(),
+      isVerified: false
+    }
+  },
+  history: [{
+    id: crypto.randomUUID(),
+    title: 'E-Commerce Rebuild - Frontend',
+    createdAt: dayjs().subtract(4, 'month').toISOString(),
     amount: 800,
-  }, {
-    id: crypto.randomUUID(),
-    title: 'E-Commerce Rebuild - Frontend',
-    date: 'Nov 2025',
-    amount: 4000,
-  }, {
-    id: crypto.randomUUID(),
-    title: 'Flowvia - UI Design System',
-    date: 'Mar 2026',
-    amount: 1200,
   }]
 }, {
   id: crypto.randomUUID(),
-  profileImg: '/profile.png',
-  name: 'DevConect',
-  username: 'devconnectofficial',
-  isActive: true,
-  lastActive: 'now',
-  accountType: 'Team',
-  professionTitle: 'Full Stack Developer',
-  bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
-  workHistory: [{
+  createdAt: dayjs().toISOString(),
+  profile: {
     id: crypto.randomUUID(),
-    title: 'FinTeh Website',
-    date: 'Dec 2025',
-    amount: 6000,
-  }, {
-    id: crypto.randomUUID(),
-    title: 'E-Commerce Rebuild',
-    date: 'Feb 2026',
-    amount: 8000,
-  }]
-}, {
-  id: crypto.randomUUID(),
-  profileImg: '/profile.png',
-  name: 'Oback Drake',
-  username: 'obackdreck09',
-  isActive: false,
-  lastActive: '3h',
-  accountType: 'Freelancer',
-  professionTitle: 'Backend Engineer',
-  bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
-  workHistory: [{
+    image: '/profile.png',
+    name: 'Delight Restar',
+    username: 'delightrestar',
+    accountType: 'Recruiter',
+    title: 'Delightful Recruiter',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
+    info: {
+      isOnline: true,
+      lastSeenAt: dayjs().toISOString(),
+      isVerified: true
+    }
+  },
+  history: [{
     id: crypto.randomUUID(),
     title: 'Analytics Dashboard Design',
-    date: 'Sep 2025',
-    amount: 1500,
+    createdAt: dayjs().toISOString(),
+    amount: 8000
   }, {
     id: crypto.randomUUID(),
     title: 'E-Commerce Rebuild - Frontend',
-    date: 'Apri 2026',
-    amount: 2100,
+    createdAt: dayjs().subtract(2, 'month').toISOString(),
+    amount: 11200,
   }]
 }, {
   id: crypto.randomUUID(),
-  profileImg: '/profile.png',
-  name: 'Levi Team',
-  username: 'realleviteam',
-  isActive: true,
-  lastActive: 'now',
-  accountType: 'Team',
-  professionTitle: 'Full Stack Developer',
-  bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
-  workHistory: [{
+  createdAt: dayjs().toISOString(),
+  profile: {
     id: crypto.randomUUID(),
-    title: 'Trading Dashboard Design',
-    date: 'May 2026',
-    amount: 3600,
+    image: '/profile.png',
+    name: 'Taiwo Musa Ibrahim',
+    username: 'taiwoibro',
+    accountType: 'Freelancer',
+    title: 'Backend Developer',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas unde accusantium, veniam assumenda minus excepturi lor',
+    info: {
+      isOnline: true,
+      lastSeenAt: dayjs().toISOString(),
+      isVerified: false
+    }
+  },
+  history: [{
+    id: crypto.randomUUID(),
+    title: 'E-Commerce Rebuild - Frontend',
+    createdAt: dayjs().subtract(2, 'month').toISOString(),
+    amount: 6400,
   }]
-}];
+}]

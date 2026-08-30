@@ -1,8 +1,9 @@
-import formatBudet from "../../utils/formatBudget"
+import dayjs from "../../lib/dayjs"
+import formatCount from "../../utils/formatCount"
 
 export function FreelancerWorkHistory({freelancer}) {
   return (
-    freelancer.workHistory.map((history) => {
+    freelancer.history.map((history) => {
       return (
         <div key={history.id} className="job-histoy-wrap">
           <div className="left">
@@ -10,8 +11,8 @@ export function FreelancerWorkHistory({freelancer}) {
             <p className="title">{history.title}</p>
           </div>
           <div className="right">
-            <p className="date">{history.date}</p>
-            <p className="amount-paid">${formatBudet(history.amount)}</p>
+            <p className="date">{dayjs(history.createdAt).format('MMM YYYY')}</p>
+            <p className="amount-paid">${formatCount(history.amount)}</p>
             <span className="status">Completed</span>
           </div>
         </div>
@@ -21,7 +22,7 @@ export function FreelancerWorkHistory({freelancer}) {
 }
 export function ClientWorkHistory({client}) {
   return (
-    client.workHistory.map((history) => {
+    client.history.map((history) => {
       return (
         <div key={history.id} className="job-histoy-wrap">
           <div className="left">
@@ -29,8 +30,8 @@ export function ClientWorkHistory({client}) {
             <p className="title">{history.title}</p>
           </div>
           <div className="right">
-            <p className="date">{history.date}</p>
-            <p className="amount-paid">${formatBudet(history.amount)}</p>
+            <p className="date">{dayjs(history.createdAt).format('MMM YYYY')}</p>
+            <p className="amount-paid">${formatCount(history.amount)}</p>
             <span className="status">Completed</span>
           </div>
         </div>
@@ -41,11 +42,10 @@ export function ClientWorkHistory({client}) {
 
 
 export function WorkHistorySetup(workType) {
-  const index = workType.workHistory.length;
   let amount = 0;
   let jobTotal = 0;
-  const date = workType.workHistory[index - 1].date;
-  workType.workHistory.forEach((f) => {
+  const date = dayjs(workType.history[0].createdAt).format('MMM YYYY'); // the last history will be the first to display so we will use .unshift() to add the new history
+  workType.history.forEach((f) => {
     jobTotal++;
     amount += f.amount;
   })

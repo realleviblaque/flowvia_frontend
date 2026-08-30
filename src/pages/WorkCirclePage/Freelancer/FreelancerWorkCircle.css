@@ -43,14 +43,16 @@
             justify-content: start;
             align-items: start;
             gap: 8px;
-            .name {
-              font-size: 18px;
-              font-weight: bold;
-              color: var(--secondary-text);
+            .name-wrap {
               display: flex;
               justify-content: left;
               align-items: center;
               gap: 6px;
+              .name {
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--secondary-text);
+              }
               i {
                 font-size: 14px;
                 color: var(--accent-blue);
@@ -326,8 +328,14 @@
             }
             .details {
               align-items: stretch;
-              .name {
-                font-size: 16px;
+              .name-wrap {
+                .name {
+                  font-size: 16px;
+                  max-width: 230px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
                 i {
                   font-size: 13px;
                 }
@@ -486,7 +494,6 @@
       align-items: center;
       input {
         flex: 1;
-        max-width: 300px;
         background-color: var(--cards);
         border: 1px solid var(--border);
         height: 34px;

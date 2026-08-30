@@ -1,6 +1,7 @@
 import { useState } from "react"
-import formatBudet from "../../../utils/formatBudget"
 import { FreelancerWorkHistory, WorkHistorySetup } from "../WorkHistory"
+import dayjs from "../../../lib/dayjs"
+import formatCount from "../../../utils/formatCount"
 
 export function FreelancerWrap({freelancer}) {
   const [isHistoryShow, setIsHistoryShow] = useState(false)
@@ -9,35 +10,38 @@ export function FreelancerWrap({freelancer}) {
   }
   const {amount, jobTotal, date} = WorkHistorySetup(freelancer);
   return (
-    <div key={freelancer.id} className="freelancer-wrap">
+    <div className="freelancer-wrap">
       <div className="top">
         <div className="left">
           <div className="profile">
-            <img src={freelancer.profileImg} className={freelancer.accountType === 'Team' ? 'team-profile' : ''} />
+            <img src={freelancer.profile.image} className={freelancer.profile.accountType === 'Team' ? 'team-profile' : ''} />
           </div>
           <div className="details">
-            <p className="name">{freelancer.name} <i className="fa-regular fa-check-circle"></i></p>
+            <div className="name-wrap">
+              <p className="name">{freelancer.profile.name}</p>
+              {freelancer.profile.info.isVerified && <i className="fa-regular fa-check-circle"></i>}
+            </div>
             <div className="username-info">
-              <p className="username">@{freelancer.username}</p>
+              <p className="username">@{freelancer.profile.username}</p>
               <span></span>
-              {freelancer.isActive 
+              {freelancer.profile.info.isOnline 
                 ?
                   <>
                     <div className="online-stat"></div>
                     <p className="online">Online</p>
                   </>
                 :
-                  <p>{freelancer.lastActive} ago</p>
+                  <p>{dayjs(freelancer.profile.info.lastSeenAt).fromNow()}</p>
               }
             </div>
-            <p className="profession-title">{freelancer.professionTitle}r</p>
-            <p className="bio">{freelancer.bio}</p>
+            <p className="profession-title">{freelancer.profile.title}r</p>
+            <p className="bio">{freelancer.profile.bio}</p>
             <div className="more-info">
               <div className="total-jobs">
                 {jobTotal} job{jobTotal === 1 ? '' : 's'} done
               </div>
               <div className="total-paid">
-                <span>${formatBudet(amount)} paid</span>
+                <span>${formatCount(amount)} paid</span>
               </div>
               <div className="last-work-with">
                 Last: {date}

@@ -47,11 +47,11 @@ export function FreelancerWorkCircle({all, handleDialogOpen, handleDialogClose, 
               <input type="text" placeholder="Search your circle..." value={search} onChange={e => setSearch(e.target.value)} />
             </div>
           )}
-          {freelancers.length === 0 && (
+          {freelancers.length === 0 && !search.trim() && (
             <div className="empty-freelancer-wrapper">
               <div>
-                <p class="head-txt">Work Circle Empty</p>
-                <p>You have not work with any Freelancer - click the button below to explore the <strong>Marketplace</strong></p>
+                <p class="head-txt">Your Work Circle is Empty</p>
+                <p>You haven't worked with any freelancers. Explore the <strong>Marketplace</strong> to discover freelancers you can work with.</p>
               </div>
               <div>
                 <button class="exlore-btn freelan-explore-btn" onClick={() => {
@@ -59,7 +59,18 @@ export function FreelancerWorkCircle({all, handleDialogOpen, handleDialogClose, 
                 }}>Explore Marketplace</button>
               </div>
             </div>
-            )}
+          )}
+          {freelancers.length === 0 && search.trim() && (
+            <div className="empty-freelancer-wrapper">
+              <div>
+                <p class="head-txt">No Freelancers Found</p>
+                <p>We couldn't find any freelancers matching "<strong>{search.trim()}</strong>". Try a different keyword or clear your search.,</p>
+              </div>
+              <div>
+                <button class="exlore-btn freelan-explore-btn" onClick={() => setSearch('')}>Clear Search</button>
+              </div>
+            </div>
+          )}
           <div className="freelancers-wrapper">
             {freelancers.map((freelancer) => {
               return (

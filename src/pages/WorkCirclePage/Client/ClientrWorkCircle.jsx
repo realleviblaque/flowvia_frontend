@@ -9,7 +9,7 @@ import { MobileHeader } from "../../../components/MobileHeader";
 import { Modal } from "../../../components/Modal";
 import { BottomBar } from "../../../components/BottomBar";
 import { PlusModal } from "../../../components/PlusModal";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Clients } from "../../../data/WorkCirclePage/client";
 import { Freelancers } from "../../../data/WorkCirclePage/freelancer";
 
@@ -19,7 +19,7 @@ export function ClientrWorkCircle({all, handleDialogOpen, handleDialogClose, dia
   const navigate = useNavigate();
   const isMobile = window.innerWidth < 768;
   const [openSearch2, setOpenSearch2] = useState(false)
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleSearch = () => {
       if (search.trim) {
         setClients(Clients.filter(p => 
@@ -48,19 +48,30 @@ export function ClientrWorkCircle({all, handleDialogOpen, handleDialogClose, dia
               <input type="text" placeholder="Search your circle..." value={search} onChange={e => setSearch(e.target.value)} />
             </div>
           )}
-            {clients.length === 0 && (
-              <div className="empty-client-wrapper">
+          {clients.length === 0 && !search.trim() && (
+            <div className="empty-client-wrapper">
+            <div>
+              <p class="head-txt">Your Work Circle is Empty</p>
+              <p>You haven't worked with any clients. Explore the <strong>Marketplace</strong> to discover clients you can work with.</p>
+            </div>
+            <div>
+              <button className="exlore-btn client-explore-btn" onClick={() => {
+                navigate('/marketplace/jobs')
+              }}>Explore Marketplace</button>
+            </div>
+            </div>
+          )}
+          {clients.length === 0 && search.trim() && (
+            <div className="empty-client-wrapper">
               <div>
-                <p className="head-txt">Work Circle Empty</p>
-                <p>You have not work with any Client - click the button below to explore the <strong>Marketplace</strong></p>
+                <p class="head-txt">No Clients Found</p>
+                <p>We couldn't find any clients matching "<strong>{search.trim()}</strong>". Try a different keyword or clear your search.</p>
               </div>
               <div>
-                <button className="exlore-btn client-explore-btn" onClick={() => {
-                  navigate('/marketplace/jobs')
-                }}>Explore Marketplace</button>
+                <button class="exlore-btn freelan-explore-btn" onClick={() => setSearch('')}>Clear Search</button>
               </div>
-              </div>
-            )}
+            </div>
+          )}
             <div className="client-wrapper">
               {clients.map((client) => {
                 return (

@@ -192,6 +192,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       } else {
         messageInput.current.style.height = '24px';
       }
+      messageInput.current.focus();
     }
   }
   return (

@@ -2,7 +2,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { GeneralSidebar } from "../../../../components/TeamPage/GeneralSidebar";
 import { TeamSidebar } from "../../../../components/TeamPage/TeamSidebar";
 import { TeamChats } from "../../../../data/TeamPage/TeamChat/TeamChats";
-import { getNotificationDate } from '../../../../utils/getNotificationDate'
+import { formatLastSentDate } from "../../../../utils/formatLastSentData";
 import './TeamChat.css'
 import { ChatWrap } from "./ChatWrap";
 
@@ -66,7 +66,7 @@ export function TeamChat({all}) {
                   <div key={TeamChat.id} className="messages-wrap">
                     <div className="date">
                       <span></span>
-                      {getNotificationDate(TeamChat.createdAt)}
+                      {formatLastSentDate(TeamChat.createdAt)}
                       <span></span>
                     </div>
                     <div className="chats-wrap">

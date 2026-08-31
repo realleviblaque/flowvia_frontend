@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
-export function getNotificationDate(dateString) {
-  const date = dayjs(dateString);
+export function formatLastSentDate(dates) {
+  const date = dayjs(dates);
   const today = dayjs();
 
   if (date.isSame(today, 'day')) {

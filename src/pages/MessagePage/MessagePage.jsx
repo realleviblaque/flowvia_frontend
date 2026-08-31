@@ -7,7 +7,7 @@ import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
 import { ChatLists } from "../../data/MessagePage/messages";
 import dayjs from "../../lib/dayjs";
-import { getNotificationDate } from "../../utils/getNotificationDate";
+import { formatLastSentDate } from "../../utils/formatLastSentData";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
@@ -309,7 +309,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                     <Fragment key={message.id}>
                       {shouldShowDate && (
                         <div className="message-date">
-                          <span>{getNotificationDate(message.createdAt)}</span>
+                          <span>{formatLastSentDate(message.createdAt)}</span>
                         </div>
                       )}
                       {message.details.sender == 'user' && (

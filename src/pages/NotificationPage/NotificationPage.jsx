@@ -6,10 +6,11 @@ import { NotificationRightSidebar } from "../../components/NotificationPage/Noti
 import { SideBar } from "../../components/Sidebar";
 import { Notifications } from "../../data/NotificationPage/notifications";
 import './NotificationPage.css'
-import { getNotificationDate } from "../../utils/getNotificationDate";
+import { formatLastSentDate } from "../../utils/formatLastSentData";
 import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
 import { MobileHeader2 } from "../../components/MobileHeader2";
+import dayjs from "dayjs";
 
 export function NotificationPage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   return (
@@ -21,15 +22,17 @@ export function NotificationPage({all, hadnlePlusDialogOpen, hadnlePlusDialogClo
         <NotificationPageFilter notification={Notifications} />
         <div className="notfication-container">
           <div className="notification-content">
-            {Notifications.slice().reverse().map((notification) => {
+            {Notifications.slice().reverse().map((notification, index) => {
+              const previousMessage = Notifications[index - 1];
+              const shouldShowDate = !previousMessage || !dayjs(notification.createdAt).isSame(dayjs(previousMessage.createdAt), 'day')
               return (
                 <div key={notification.id} className="notification-wrap">
                   <div className="notification-date">
-                    <p>{getNotificationDate(notification.createdAt)}</p>
+                    <p>{formatLastSentDate(notification.createdAt)}</p>
                     <span></span>
                   </div>
                   <div className="wrapper">
-                    {notification.contents.slice().reverse().map((content) => {
+                    {notification.contents.slice().reverse().map((content, index) => {
                       return (
                         <Fragment key={content.id}>
                           <NotificationPageContent content={content} />

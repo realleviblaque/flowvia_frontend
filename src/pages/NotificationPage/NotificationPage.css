@@ -2,10 +2,11 @@
   display: flex;
   justify-content: left;
   align-items: start;
-  height: calc(100dvh - 122px);
+  height: calc(100dvh - 110px);
   gap: 1px;
   .notification-content {
     padding: 30px 50px;
+    height: calc(100dvh - 170px);
     flex: 1 - 60px;
     overflow: auto;
     display: flex;

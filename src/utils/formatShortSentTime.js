@@ -10,7 +10,7 @@ export const formatShortSentTime = (date) => {
   const months = now.diff(time, 'month')
   const years = now.diff(time, 'year')
 
-  if (seconds < 60) return 'just now';
+  if (seconds < 60) return `${seconds}s`;
   if (minutes < 60) return `${minutes}m`;
   if (hours < 24) return `${hours}h`;
   if (days < 30) return `${days}d`;

@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { notificationCount } from '../../utils/notification-count'
 import './NotificationPageFilter.css'
 
-export function NotificationPageFilter({notification}) {
-  const [filter, setFilter] = useState('All')
-  const {all, hire, work, project, mention, review} = notificationCount(notification);
+export function NotificationPageFilter({notification, filter, setFilter}) {
+  const all = notification.length;
+  const hire = notification.filter(n => n.category === 'hiring').length;
+  const work = notification.filter(n => n.category === 'work_circle').length;
+  const project = notification.filter(n => n.category === 'projects').length;
+  const review = notification.filter(n => n.category === 'reviews').length;
   return (
     <div className="notification-filter-container">
       <div className={filter === 'All' ? 'active-filter' : ''} onClick={() => setFilter('All')}>
@@ -22,10 +23,6 @@ export function NotificationPageFilter({notification}) {
       <div className={filter === 'Project' ? 'active-filter' : ''} onClick={() => setFilter('Project')}>
         Projects
         <span className="project-count">{project}</span>
-      </div>
-      <div className={filter === 'Mention' ? 'active-filter' : ''} onClick={() => setFilter('Mention')}>
-        Mentions
-        <span className="mention-count">{mention}</span>
       </div>
       <div className={filter === 'Reviews' ? 'active-filter' : ''} onClick={() => setFilter('Reviews')}>
         Reviews

@@ -1,8 +1,11 @@
-import { notificationCount } from '../../utils/notification-count'
 import './NotificationRightSidebar.css'
 
 export function NotificationRightSidebar({notification}) {
-  const {all, hire, work, project, review} = notificationCount(notification)
+  const all = notification.filter(n => !n.readAt).length;
+  const hire = notification.filter(n => n.category === 'hiring').length;
+  const work = notification.filter(n => n.category === 'work_circle').length;
+  const project = notification.filter(n => n.category === 'projects').length;
+  const review = notification.filter(n => n.category === 'reviews').length;
   return (
     <div className="right-sidebar">
       <div className="summary-container">

@@ -13,7 +13,6 @@ import { WorkCirclePage } from './pages/WorkCirclePage/WorkCirclePage'
 import { FreelancerWorkCircle } from './pages/WorkCirclePage/Freelancer/FreelancerWorkCircle'
 import { ClientrWorkCircle } from './pages/WorkCirclePage/Client/ClientrWorkCircle'
 import { NotificationPage } from './pages/NotificationPage/NotificationPage'
-import { notificationCount } from './utils/notification-count'
 import { Notifications } from './data/NotificationPage/notifications'
 import { ProfilePage } from './pages/ProfilePage/ProfilePage'
 import { SettingsPage } from './pages/SettingsPage/SettingsPage'
@@ -186,7 +185,7 @@ function App() {
     localStorage.setItem('savePosts', JSON.stringify(savePosts))
   }, [savePosts])
   const navigate = useNavigate()
-  const {all} = notificationCount(Notifications)
+  const all = Notifications.filter(n => !n.readAt).length;
   const dialog = useRef(null)
   const plusDialog = useRef(null);
   const handleDialogOpen = () => {

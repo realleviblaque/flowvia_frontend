@@ -8,7 +8,7 @@ import { Modal } from '../../../components/Modal'
 import { BottomBar } from '../../../components/BottomBar'
 import { PlusModal } from '../../../components/PlusModal'
 import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
-import { useOutletContext, useSearchParams } from 'react-router-dom'
+import { useNavigate, useOutletContext, useSearchParams } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import formatCount from '../../../utils/formatCount'
 import { FreelancerDialog } from '../../../components/MarketplacePage/Modal'
@@ -23,6 +23,7 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
   const [freelancerHireData, setFreelancerHireData] = useState({})
   const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
+  const navigate = useNavigate();
   useEffect(() => {
     const handleFilter = () => {
       switch (freelancersFilter) {
@@ -197,7 +198,7 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
                         </div>
                         <div className="bottom-down">
                           <button className="hire-btn" onClick={() => handleHireDialogOpen(freelancer)}>Hire</button>
-                          <button className="view-profile-btn">View Profile</button>
+                          <button className="view-profile-btn" onClick={() => navigate(`/user/${freelancer.profile.username}`)}>View Profile</button>
                         </div>
                       </div>
                     </div>

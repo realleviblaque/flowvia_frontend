@@ -25,7 +25,7 @@ export function PostComment({comment, handleReply}) {
         <div className="comment-top">
           <div className="middle">
             <p className="name">{comment.user.name}</p>
-            <div className={`badge ${checkAccountType(comment.user)}`}>{comment.user.accountType}</div>
+            <div className={`badge ${checkAccountType(comment.user.accountType)}`}>{comment.user.accountType}</div>
             <span></span>
             <p className="post-time">{comment.date}</p>
           </div>

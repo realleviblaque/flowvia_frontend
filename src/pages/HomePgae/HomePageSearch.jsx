@@ -18,24 +18,25 @@ export function HomePageSearch({openHomeSearch, setOpenHomeSearch}) {
     setSearch(e.target.value);
   }
   const handleKeydown = (e) => {
-    if (search.trim()) {
-      if (e.key === 'Enter') {
-        handleSearch();
-      }
-      if (e.key === 'Escape') {
-        setSearch('')
-      }
+    if (!search.trim()) return;
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+    if (e.key === 'Escape') {
+      setSearch('')
     }
   }
   const handleSearch = () => {
-    if (search.trim()) {
-      navigate(`/marketplace?search=${search.trim()}`);
-      setHistory([{
-        id: crypto.randomUUID(),
-        search: search
-      }, ...history])
-      setSearch('');
+    const trimmedSearch = search.trim();
+    if (!trimmedSearch) return;
+    const newHistory = {
+      id: crypto.randomUUID(),
+      search: trimmedSearch
     }
+    const updatedHistory = [newHistory, ...history]
+    localStorage.setItem('searchHistory', JSON.stringify(updatedHistory))
+    navigate(`/marketplace?search=${encodeURIComponent(trimmedSearch)}`);
+    setSearch('');
   }
   const deleteHistory = (id) => {
     setHistory(prev => prev.filter(search => search.id != id))

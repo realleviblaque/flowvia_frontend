@@ -800,7 +800,7 @@ export const Users = [{
   profile: {
     image: '/profile.png',
     name: 'Levi Blaque', // team name
-    username: 'realleviblaque',
+    username: 'levite',
     bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae perferendis quasi nisi molestias nobis ea minus, earum voluptatum consectetur consequatur deleniti quos suscipit iste ipsum doloribus, neque magni quia ipsa.',
     title: 'Full-Stack Developer',
     website: 'leviblaque.dev',

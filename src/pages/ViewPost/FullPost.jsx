@@ -194,7 +194,7 @@ export function FullPost({all, savePosts, setSavePosts}) {
                     <div className="middle">
                       <div className="post-info-top">
                         <p className="name">{post.sender.name}</p>
-                        <div className={`badge ${checkAccountType(post.sender)}`}>{post.sender.accountType}</div>
+                        <div className={`badge ${checkAccountType(post.sender.accountType)}`}>{post.sender.accountType}</div>
                         <span></span>
                         <p className="post-time">{dayjs(post.createdAt).format('h')}</p>
                       </div>

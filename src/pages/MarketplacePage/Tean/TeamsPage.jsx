@@ -9,7 +9,7 @@ import { Modal } from '../../../components/Modal'
 import { MobileHeader } from '../../../components/MobileHeader'
 import { MarketplaceFilter } from '../../../components/MarketplacePage/MarketplaceFilter'
 import { useEffect, useRef, useState } from 'react'
-import { useOutletContext, useSearchParams } from 'react-router-dom'
+import { useNavigate, useOutletContext, useSearchParams } from 'react-router-dom'
 import formatCount from '../../../utils/formatCount'
 import { TeamDialog } from '../../../components/MarketplacePage/Modal'
 
@@ -23,6 +23,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
   const [teamHireData, setTeamHireData] = useState({})
   const [showHireDialog, setShowHireDialog] = useState(false)
   const search = searchParams.get('search');
+  const navigate = useNavigate();
   useEffect(() => {
     const handleFilter = () => {
       switch (teamsFilter) {
@@ -222,7 +223,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                           </div>
                           <div className="button-wrap">
                             <button className="hire-btn" onClick={() => handleHireDialogOpen(team)}>Hire Team</button>
-                            <button className="view-profile-btn">View Prodile</button>
+                            <button className="view-profile-btn" onClick={() => navigate(`/user/${team.profile.username}`)}>View Profile</button>
                           </div>
                         </div>
                       </div>

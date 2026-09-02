@@ -56,35 +56,28 @@ export function NotificationRightSidebar({notification}) {
               <p className="txt">Hire Request</p>
               <p>When someone wants to hire you</p>
             </span>
-            <input type="checkbox" />
+            <input type="checkbox" defaultChecked />
           </div>
           <div>
             <span>
               <p className="txt">Messages</p>
               <p>New Direct messages and Message requests</p>
             </span>
-            <input type="checkbox" />
+            <input type="checkbox" defaultChecked />
           </div>
           <div>
             <span>
               <p className="txt">Work Circle</p>
               <p>Rehire Request and New job upadtes</p>
             </span>
-            <input type="checkbox" />
+            <input type="checkbox" defaultChecked />
           </div>
           <div>
             <span>
               <p className="txt">Project Updates</p>
               <p>Milestones, completions</p>
             </span>
-            <input type="checkbox" />
-          </div>
-          <div>
-            <span>
-              <p className="txt">Mentions</p>
-              <p>When tagged in a posts</p>
-            </span>
-            <input type="checkbox" />
+            <input type="checkbox" defaultChecked />
           </div>
         </div>
       </div>

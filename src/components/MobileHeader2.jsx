@@ -1,7 +1,15 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import './MobileHeader2.css'
+import dayjs from '../lib/dayjs';
 
-export function MobileHeader2() {
+export function MobileHeader2({setNotifications}) {
+  const handleMarkAllRead = () => {
+    const now = dayjs().toISOString();
+    setNotifications((prev) => prev.map((notification) => ({
+      ...notification,
+      readAt: notification.readAt ?? now
+    })))
+  }
   const navigate = useNavigate();
   const location = useLocation();
   return (
@@ -21,7 +29,7 @@ export function MobileHeader2() {
         )}
       </div>
       <div className="right">
-        {location.pathname === '/notification' && <span className='mark'>Mark all read</span>}
+        {location.pathname === '/notification' && <span className='mark' onClick={handleMarkAllRead}>Mark all read</span>}
         {location.pathname === '/messages' && <span><i className="fa-solid fa-pencil"></i></span>}
         {location.pathname === '/profile' && (
           <>

@@ -35,7 +35,7 @@ export function NotificationPage({all, hadnlePlusDialogOpen, hadnlePlusDialogClo
     <>
       <SideBar notification={all} />
       <NotificationPageHeader setNotifications={setNotifications} />
-      <MobileHeader2 />
+      <MobileHeader2 setNotifications={setNotifications} />
       <main className="notification-main-page">  
         <NotificationPageFilter notification={notifications} filter={filter} setFilter={setFilter} />
         <div className="notfication-container">
@@ -51,9 +51,7 @@ export function NotificationPage({all, hadnlePlusDialogOpen, hadnlePlusDialogClo
                       <span></span>
                     </div>
                   )}
-                  <div className="notification-wrap">
-                    <NotificationPageContent notification={notification} />
-                  </div>
+                  <NotificationPageContent notification={notification} />
                 </Fragment>
               )
             })}

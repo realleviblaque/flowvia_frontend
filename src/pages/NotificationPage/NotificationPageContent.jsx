@@ -1,6 +1,7 @@
 import dayjs from "../../lib/dayjs";
 import formatBudet from "../../utils/formatBudget";
 import { formatDate } from "../../utils/formatDate";
+import { formatShortSentTime } from "../../utils/formatShortSentTime";
 import { statusTimeAgo } from "../../utils/statusTimeAgo";
 
 export function NotificationPageContent({notification}) {
@@ -29,7 +30,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -55,7 +56,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -81,7 +82,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -107,7 +108,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -132,7 +133,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -159,7 +160,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -186,7 +187,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -225,7 +226,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -252,7 +253,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -278,7 +279,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -304,7 +305,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -331,7 +332,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -358,7 +359,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -383,7 +384,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -408,7 +409,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -433,7 +434,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -458,7 +459,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -483,7 +484,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -508,7 +509,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -588,7 +589,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -619,7 +620,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -644,7 +645,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -669,7 +670,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -696,7 +697,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -722,7 +723,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -749,7 +750,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -783,7 +784,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -806,7 +807,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -832,7 +833,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -858,7 +859,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -884,7 +885,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -907,7 +908,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -941,7 +942,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -975,7 +976,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1009,7 +1010,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1033,7 +1034,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1054,7 +1055,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1075,7 +1076,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1096,7 +1097,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1120,7 +1121,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1140,19 +1141,17 @@ export function NotificationPageContent({notification}) {
               )}
             </div>
             <div className="middle">
-              <div className="info">
+              <div className="info info2">
                 <div>
-                  <p>Device:</p>
-                  <p>{notification.metadata.device}</p>
+                  <p>Device: {notification.metadata.device}</p>
                   <span></span>
-                   <p>Location:</p>
-                  <p>{notification.metadata.location}</p>
+                   <p>Location: {notification.metadata.location}</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1173,7 +1172,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1201,7 +1200,7 @@ export function NotificationPageContent({notification}) {
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}
@@ -1221,19 +1220,17 @@ export function NotificationPageContent({notification}) {
               )}
             </div>
             <div className="middle">
-              <div className="info">
+              <div className="info info2">
                 <div>
-                  <p>Start time:</p>
-                  <p>{dayjs(notification.metadata.startTime).fromNow()}</p>
+                  <p>Start time: {dayjs(notification.metadata.startTime).fromNow()}</p>
                   <span></span>
-                  <p>Duration:</p>
-                  <p>{notification.metadata.estimatedDuration}</p>
+                  <p>Duration: {notification.metadata.estimatedDuration}</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="time">
-            {statusTimeAgo(notification.createdAt)}
+            {isMobile ? formatShortSentTime(notification.createdAt) : statusTimeAgo(notification.createdAt)}
           </div>
         </div>
       )}

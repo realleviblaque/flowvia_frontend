@@ -86,6 +86,18 @@ export function CreatePost({all}) {
 
     validatePost();
   }, [text, tags, projectMIlestone, projectOpportunity])
+  useEffect(() => {
+    if (!postNow) return;
+    window.history.pushState(null, '', window.location.href);
+    const handlePopState = () => {
+      window.history.pushState(null, '', window.location.href);
+      confirmRef.current?.showModal();
+    }
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [postNow])
   const handleInput = (e) => {
     const el = e.target;
     el.style.height = 'auto';

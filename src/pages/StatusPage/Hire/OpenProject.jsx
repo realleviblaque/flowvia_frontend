@@ -5,6 +5,7 @@ import './OpenProject.css'
 import { openProjects } from "../../../data/StatusPage/openProject";
 import { statusTimeAgo } from "../../../utils/statusTimeAgo";
 import formatCount from "../../../utils/formatCount";
+import { formatDate } from "../../../utils/formatDate";
 
 export function OpenProject({all}) {
   const [projects, setProjects] = useState(openProjects);
@@ -179,7 +180,7 @@ export function OpenProject({all}) {
                       </div>
                       <div>
                         <p className="txt">Deadline</p>
-                        <p className="deadline">{project.info.deadline}</p>
+                        <p className="deadline">{formatDate(project.info.deadline)}</p>
                       </div>
                       <div>
                         <p className="txt">Applicants</p>

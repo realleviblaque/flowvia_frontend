@@ -15,7 +15,7 @@ export const openProjects = [{
     maxBudget: 2000,
     type: 'Part-time',
     location: 'Remote',
-    deadline: 'Nov 12',
+    deadline: dayjs().add(3, 'month').subtract(18, 'day').toISOString(),
     applicant: 7
   },
   skills: [{
@@ -154,7 +154,7 @@ export const openProjects = [{
     maxBudget: 2000,
     type: 'Part-time',
     location: 'Remote',
-    deadline: 'Nov 12',
+    deadline: dayjs().add(3, 'month').subtract(18, 'day').toISOString(),
     applicant: 7
   },
   skills: [{
@@ -337,7 +337,7 @@ export const openProjects = [{
     maxBudget: 2000,
     type: 'Part-time',
     location: 'Remote',
-    deadline: 'Nov 12',
+    deadline: dayjs().add(3, 'month').subtract(18, 'day').toISOString(),
     applicant: 7
   },
   skills: [{
@@ -608,7 +608,7 @@ export const openProjects = [{
     maxBudget: 2000,
     type: 'Part-time',
     location: 'Remote',
-    deadline: 'Nov 12',
+    deadline: dayjs().add(3, 'month').subtract(18, 'day').toISOString(),
     applicant: 7
   },
   skills: [{
@@ -725,7 +725,7 @@ export const openProjects = [{
     maxBudget: 2000,
     type: 'Long-Term Contract',
     location: 'Remote',
-    deadline: 'Nov 12',
+    deadline: dayjs().add(3, 'month').subtract(18, 'day').toISOString(),
     applicant: 7
   },
   skills: [{

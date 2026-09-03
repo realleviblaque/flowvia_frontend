@@ -3,9 +3,10 @@ import { SideBar } from "../../components/Sidebar";
 import './CreatePost.css'
 import { useNavigate } from "react-router-dom";
 import { Projects } from "../../data/ProjectPage/Projects";
-import dayjs from 'dayjs';
+import dayjs from '../../lib/dayjs';
 import { posts, savePosts } from "../../data/HomePage/posts";
 import { openProjects } from "../../data/StatusPage/openProject";
+import formatCount from "../../utils/formatCount";
 
 export function CreatePost({all}) {
   const [text, setText] = useState('');
@@ -16,8 +17,8 @@ export function CreatePost({all}) {
   const navigate = useNavigate();
   const [isAueOpen, setIsAueOpen] = useState(false);
   const [audience, setAudience] = useState('Everyone')
-  const [projectMIlestone, setProjectMilestone] = useState([]);
-  const [projectOpportunity, setProjectOpportunity] = useState([]);
+  const [projectMIlestone, setProjectMilestone] = useState(null);
+  const [projectOpportunity, setProjectOpportunity] = useState(null);
   const audienceDialogRef = useRef(null);
   const projectDialogRef = useRef(null);
   const opportunityDialogRef = useRef(null);
@@ -59,14 +60,14 @@ export function CreatePost({all}) {
     function handleChange() {
       if (attachPost === 'milestone') {
         projectDialogRef.current.showModal();
-        setProjectOpportunity([]);
+        setProjectOpportunity(null);
       } else {
         projectDialogRef.current.close();
       }
 
       if (attachPost === 'opportunity') {
         opportunityDialogRef.current.showModal();
-        setProjectMilestone([])
+        setProjectMilestone(null)
       } else {
         opportunityDialogRef.current.close();
       }
@@ -75,7 +76,7 @@ export function CreatePost({all}) {
   }, [attachPost])
   useEffect(() => {
     function validatePost() {
-      if (text.trim() || tags.length > 0 || projectMIlestone.length > 0 || projectOpportunity.length > 0) {
+      if (text.trim() || tags.length > 0 || projectMIlestone || projectOpportunity) {
         setPostNow(true);
         setIsDrafting(true);
       } else {
@@ -130,18 +131,57 @@ export function CreatePost({all}) {
     audienceDialogRef.current.close();
   }
   const handleProjectClick = (project) => {
-    setProjectMilestone([{
+    setProjectMilestone({
       id: project.id,
-      title: project.name
-    }])
+      title: project.details.title,
+      projectType: project.projectType,
+      startedAt: project.createdAt,
+      phases: [{
+        id: crypto.randomUUID(),
+        name: 'Design',
+        isCompleted: true
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Frontend',
+        isCompleted: true
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Frontend',
+        isCompleted: true
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Backend',
+        isCompleted: true
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Hosting',
+        isCompleted: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'QA',
+        isCompleted: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Launch',
+        isCompleted: false
+      }]
+    })
     projectDialogRef.current.close();
     setMilestoneSearch('')
   }
   const handleOpportunotyClick = (project) => {
-    setProjectOpportunity([{
+    setProjectOpportunity({
       id: project.id,
-      title: project.name
-    }])
+      title: project.details.name,
+      description: project.details.description,
+      location: project.info.location,
+      projectType: project.info.type,
+      budget: {
+        min: project.info.minBudget,
+        max: project.info.maxBudget
+      },
+      deadline: project.info.deadline
+    })
     opportunityDialogRef.current.close();
     setOpportunitySearch('')
   }
@@ -276,7 +316,7 @@ export function CreatePost({all}) {
                 </div>
               </div>
             )}
-            {attachPost === 'milestone' && projectMIlestone.length !== 0 && (
+            {attachPost === 'milestone' && projectMIlestone && (
               <div className="project-milestone">
                 <div className="top-side">
                   <div className="left">
@@ -286,65 +326,53 @@ export function CreatePost({all}) {
                   <div className="right">
                     <i className="fa-solid fa-x" onClick={() => {
                       setAttachPost('');
-                      setProjectMilestone([]);
+                      setProjectMilestone(null);
                     }}></i>
                   </div>
                 </div>
                 <div className="bottom-side">
                   <div className="title-details">
-                    <p className="title">Flowvia - Collaoration Marketplace</p>
-                    <p className="details">Personal Project <span></span> Started March 1, 2026</p>
+                    <p className="title">{projectMIlestone.title}</p>
+                    <p className="details">{projectMIlestone.projectType} Project <span></span> Started {dayjs(projectMIlestone.startedAt).format('MMMM D, YYYY')}</p>
                   </div>
                   <div className="preogress-details">
                     <div className="progress-bar">
                       <span className="bar"></span>
                     </div>
                     <div className="count-phase">
-                      <p className="phase-count">Phase 2 / 5 complete</p>
-                      <p className="percent-count">40%</p>
+                      <p className="phase-count">Phase {projectMIlestone.phases.filter(p => p.isCompleted).length} / {projectMIlestone.phases.length} complete</p>
+                      <p className="percent-count">{Math.round((projectMIlestone.phases.filter(p => p.isCompleted).length / projectMIlestone.phases.length) * 100)}%</p>
                     </div>
                   </div>
                   <div className="phase-wrap">
-                    <div className="completed">
-                      <span></span>
-                      <p>Design</p>
-                    </div>
-                    <div className="completed">
-                      <span></span>
-                      <p>Frontend</p>
-                    </div>
-                    <div>
-                      <span></span>
-                      <p>Backend</p>
-                    </div>
-                    <div>
-                      <span></span>
-                      <p>QA</p>
-                    </div>
-                    <div>
-                      <span></span>
-                      <p>Launch</p>
-                    </div>
+                    {projectMIlestone.phases.map((phase) => {
+                      return (
+                      <div className={phase.isCompleted ? 'completed' : ''} key={phase.id}>
+                        <span></span>
+                        <p>{phase.name}</p>
+                      </div>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
             )}
-            {attachPost === 'opportunity' && projectOpportunity.length !== 0 && (
+            {attachPost === 'opportunity' && projectOpportunity && (
               <div className="project-opportunity">
                 <div className="top-side">
                   {/* <p>Full Stack Developer Needed</p> */}
                   <img src="/profile.png" />
                 </div>
                 <div className="down-side">
-                  <p className="title">Full Stack Developer Needed</p>
-                  <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque odit nesciunt non rerum fugiat dicta saepe distinctio molestiae nulla, sunt recusandae consequatur facilis. Ex deserunt doloremque neque temporibus sapiente.</p>
-                  <p className="details">Remote <span></span> Long-Term Contract</p>
+                  <p className="title">{projectOpportunity.title}</p>
+                  <p className="description">{projectOpportunity.description}</p>
+                  <p className="details">{projectOpportunity.location} <span></span> {projectOpportunity.projectType}</p>
                   <div className="info">
                     <span className="price">
-                      $400 - $2K
+                      ${formatCount(projectOpportunity.budget.min)} - ${formatCount(projectOpportunity.budget.max)}
                     </span>
                     <span className="deadline">
-                      June 20, 2026
+                      {dayjs(projectOpportunity.deadline).format('MMMM D, YYYY')}
                     </span>
                   </div>
                 </div>
@@ -450,7 +478,7 @@ export function CreatePost({all}) {
                     <p className="hd-txt">Project Milestone</p>
                     <p className="txt">Attach progress from a project</p>
                   </span>
-                  {projectMIlestone.length > 0 && (<i className="fa-solid fa-circle-check check"></i>)}
+                  {projectMIlestone && (<i className="fa-solid fa-circle-check check"></i>)}
                 </div>
                 <div className="types">
                   <i className="fa-regular fa-image left"></i>
@@ -466,7 +494,7 @@ export function CreatePost({all}) {
                     <p className="hd-txt">Job Opportunity</p>
                     <p className="txt">Embed a job post in your update</p>
                   </span>
-                  {projectOpportunity.length > 0 && (<i className="fa-solid fa-circle-check check"></i>)}
+                  {projectOpportunity && (<i className="fa-solid fa-circle-check check"></i>)}
                 </div>
               </div>
             </div>
@@ -519,7 +547,7 @@ export function CreatePost({all}) {
           <div className="right">
             <i className="fa-solid fa-x" onClick={() => {
               setAttachPost('');
-              setProjectMilestone([]);
+              setProjectMilestone(null);
             }}></i>
           </div>
         </div>
@@ -541,7 +569,7 @@ export function CreatePost({all}) {
             allProjectMilestone.map((project) => {
               const progress = (project.phases.completed / project.phases.total) * 100;
               return (
-                <div key={project.id} className="project-container" onClick={handleProjectClick}>
+                <div key={project.id} className="project-container" onClick={() => handleProjectClick(project)}>
                   <div className="left">
                     <p>{project.projectType}</p>
                   </div>
@@ -571,7 +599,7 @@ export function CreatePost({all}) {
           <div className="right">
             <i className="fa-solid fa-x" onClick={() => {
               setAttachPost('');
-              setProjectOpportunity([]);
+              setProjectOpportunity(null);
             }}></i>
           </div>
         </div>
@@ -592,7 +620,7 @@ export function CreatePost({all}) {
           {allProjectOpportunity.length > 0 && (
             allProjectOpportunity.map((project) => {
               return (
-                <div key={project.id} className="project-container" onClick={handleOpportunotyClick}>
+                <div key={project.id} className="project-container" onClick={() => handleOpportunotyClick(project)}>
                   <div className="left">
                     
                   </div>

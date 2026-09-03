@@ -142,12 +142,17 @@ main {
     margin: 0;
   }
 }
-@media (max-width: 767.99px) {
-  * {
-    &:focus {
-      outline: none;
-    }
+* {
+  &:focus {
+    outline: 1px solid var(--border);
   }
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+@media (max-width: 767.99px) {
   main {
     margin-left: 0;
   }

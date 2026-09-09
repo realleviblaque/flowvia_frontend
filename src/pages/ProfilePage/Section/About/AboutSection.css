@@ -1,0 +1,393 @@
+.about-section {
+  display: flex;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .main-about-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 20px;
+    .bio-part,
+    .professioal-part,
+    .professioal-part,
+    .skills-part,
+    .links-part {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: var(--cards);
+      border: 1px solid var(--border);
+      min-height: 60px;
+      border-radius: 15px;
+      padding: 25px 22px;
+      .top {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        p {
+          font-size: 20px;
+          color: var(--pry-text);
+          font-weight: bold;
+        }
+        button {
+          margin-left: auto;
+          border: 1px solid var(--blue-border);
+          background-color: var(--blue-bg);
+          color: var(--accent-blue);
+          padding: 6px 20px;
+          border-radius: 8px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+      &.bio-part {
+        .bottom {
+          display: flex;
+          justify-content: left;
+          p {
+            font-size: 16px;
+            color: var(--secondary-text);
+            line-height: 22px;
+          }
+        }
+      }
+      &.professioal-part {
+        .bottom {
+          display: flex;
+          justify-content: left;
+          align-items: start;
+          .right,
+          .left {
+            flex: 1;
+            div {
+              padding: 15px 0;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              border-bottom: 1px solid var(--border);
+              gap: 12px;
+              .left-side {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                width: 38px;
+                background-color: var(--border);
+                border-radius: 8px;
+                i {
+                  font-size: 14px;
+                }
+
+                &.user {
+                  background-color: var(--blue-bg);
+                  color: var(--accent-blue);
+                }
+                &.hour {
+                  background-color: var(--amber-bg);
+                  color: var(--amber);
+                }
+                &.work {
+                  background-color: var(--coral-bg);
+                  color: var(--coral);
+                }
+                &.location {
+                  background-color: var(--green-bg);
+                  color: var(--green);
+                }
+                &.avail {
+                  background-color: var(--green-bg);
+                  color: var(--green);
+                }
+                &.busy {
+                  background-color: var(--coral-bg);
+                  color: var(--coral);
+                }
+                &.project {
+                  background-color: var(--purple-bg);
+                  color: var(--purple);
+                }
+                &.member {
+                  background-color: var(--blue-bg);
+                  color: var(--accent-blue);
+                }
+                &.website {
+                  background-color: var(--border);
+                  color: var(--secondary-text);
+                }
+              }
+              .right-side {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 3px;
+                .hd-txt {
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  color: var(--mutetd-tetx);
+                }
+                .txt {
+                  font-weight: bold;
+                  color: var(--pry-text);
+                  font-size: 16px;
+                  &.work-type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 6px;
+                    span {
+                      width: 2px;
+                      height: 2px;
+                      background-color: var(--pry-text);
+                    }
+                  }
+                }
+                &.web {
+                  .txt {
+                    color: var(--accent-blue);
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            &.right {
+              border-left: 1px solid var(--border);
+              div {
+                padding-left: 25px;
+              }
+            }
+          }
+        }
+      }
+      &.skills-part {
+        .bottom {
+          display: flex;
+          .empty-skills {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: var(--secondary-text);
+            margin-top: -15px;
+          }
+          .skill-wrap {
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 10px;
+            span {
+              padding: 5px 15px;
+              background-color: var(--blue-bg);
+              border: 1px solid var(--blue-border);
+              color: var(--accent-blue);
+              font-size: 14px;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+      &.links-part {
+        .bottom {
+          display: flex;
+          .empty-links {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: var(--secondary-text);
+            margin-top: -15px;
+          }
+          .links-wrap {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            div {
+              height: 65px;
+              background-color: var(--border);
+              border: 1px solid var(--hover-border);
+              border-radius: 12px;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 12px;
+              padding: 0 15px;
+              span {
+                &:nth-child(1) {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 35px;
+                  width: 35px;
+                  border-radius: 7px;
+                  i {
+                    font-size: 15px;
+                  }
+                  &.linkedin {
+                    background-color: var(--accent-blue);
+                    color: var(--pry-text);
+                  }
+                  &.snapchat {
+                    background-color: var(--amber-border);
+                    color: var(--pry-text);
+                  }
+                  &.telegram,
+                  &.discord {
+                    background-color: var(--accent-blue);
+                    color: var(--pry-text);
+                  }
+                  &.x,
+                  &.tiktok,
+                  &.github  {
+                    background-color: var(--cards);
+                    color: var(--pry-text);
+                  }
+                  &.web {
+                    background-color: var(--green-bg);
+                    border: 1px solid var(--green-border);
+                    color: var(--green);
+                  }
+                }
+                &:nth-child(2) {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: start;
+                  justify-content: center;
+                  gap: 3px;
+                  .hd-txt {
+                    font-size: 13px;
+                    color: var(--secondary-text);
+                    font-weight: normal;
+                  }
+                  p {
+                    font-size: 16px;
+                    color: var(--pry-text);
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.99px) {
+  .about-section {
+    .main-about-wrap {
+      padding: 15px 10px;
+      gap: 15px;
+      .bio-part,
+      .about-part,
+      .professioal-part,
+      .professioal-part,
+      .skills-part,
+      .links-part {
+        gap: 8px;
+        border-radius: 12px;
+        padding: 15px 20px;
+        .top {
+          p {
+            font-size: 15px;
+          }
+          button {
+            padding: 4px 18px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: unset;
+          }
+        }
+        &.bio-part,
+        &.about-part {
+          .bottom {
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        &.professioal-part {
+          .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: unset;
+            .right,
+            .left {
+              div {
+                padding: 12px 0;
+              }
+              &.right {
+                border-left: unset;
+                div {
+                  padding-left: 0;
+                  border: none;
+                  border-top: 1px solid var(--border);
+                  &:nth-child(1) {
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.skills-part {
+          .bottom {
+            .empty-skills {
+              font-size: 14px;
+              color: var(--secondary-text);
+              margin-top: 0px;
+            }
+            .skill-wrap {
+              gap: 8px;
+              span {
+                padding: 4px 15px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        &.links-part {
+          .bottom {
+            .empty-links {
+              font-size: 14px;
+              color: var(--secondary-text);
+              margin-top: 0px;
+            }
+            .links-wrap {
+              grid-template-columns: 1fr;
+              gap: 10px;
+              div {
+                border-radius: 10px;
+                span {
+                  &:nth-child(2) {
+                    flex: 1;
+                    align-items: stretch;
+                    justify-content: unset;
+                    gap: 3px;
+                    .hd-txt {
+                      font-size: 12px;
+                    }
+                    p {
+                      font-size: 15px;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

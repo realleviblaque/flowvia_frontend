@@ -33,7 +33,6 @@
       width: 100%;
       p {
         &:nth-child(1) {
-          font-weight: bold;
           font-size: 16px;
           color: var(--secondary-text);
         }
@@ -47,10 +46,34 @@
   }
   .skills-container {
     display: flex;
+    height: fit-content;
+    .no-skills {
+      flex: 1;
+      height: 100px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      p {
+        font-size: 16px;
+        color: var(--secondary-text);
+      }
+      button {
+        padding: 10px 50px;
+        font-size: 13px;
+        border: 1px solid var(--hover-border);
+        background-color: var(--border);
+        color: var(--secondary-text);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
     .skill-wrap-fill {
       display: flex;
       justify-content: left;
-      align-items: center;
+      align-items: start;
       flex-wrap: wrap;
       gap: 10px;
       span {
@@ -66,6 +89,24 @@
       }
     }
   }
+  .no-reviews {
+    flex: 1;
+    height: 150px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    p:nth-child(1) {
+      font-size: 17px;
+      color: var(--secondary-text);
+    }
+    p:nth-child(2) {
+      font-size: 14px;
+      color: var(--secondary-text);
+    }
+  }
   .reviews-wrap {
     width: 100%;
     display: flex;
@@ -74,12 +115,18 @@
     align-items: start;
     gap: 8px;
     .reviews-container {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
       gap: 6px;
+      &:nth-child(1) {
+        border-top: none;
+        padding-top: 0;
+      }
       .top-review {
         display: flex;
         justify-content: left;
@@ -143,6 +190,29 @@
       background-color: var(--hover-border);
     }
   }
+  .no-links {
+    flex: 1;
+    height: 150px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    p {
+      font-size: 16px;
+      color: var(--secondary-text);
+    }
+    button {
+      padding: 10px 50px;
+      font-size: 13px;
+      border: 1px solid var(--hover-border);
+      background-color: var(--border);
+      color: var(--secondary-text);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
   .link-content {
     width: 100%;
     display: flex;
@@ -150,6 +220,7 @@
     justify-content: center;
     align-items: start;
     gap: 8px;
+    height: fit-content;
     .link-wrap {
       height: 40px;
       width: 100%;

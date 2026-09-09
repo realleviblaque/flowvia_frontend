@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ProfilePageRightSidebar } from "./ProfilePageRightSidebar";
 import { Reviews } from "../../data/ProfilePage/reviews";
+import { generateStars } from "../../utils/generateStars";
 
 export function ReviewsSection() {
   const [viewReviews, setViewReviews] = useState('All')
@@ -34,51 +35,7 @@ export function ReviewsSection() {
                     </div>
                   </div>
                   <div className="right">
-                    {review.stars === 1 && (
-                      <>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                      </>
-                    )}
-                    {review.stars === 2 && (
-                      <>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                      </>
-                    )}
-                    {review.stars === 3 && (
-                      <>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                      </>
-                    )}
-                    {review.stars === 4 && (
-                      <>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
-                      </>
-                    )}
-                    {review.stars === 5 && (
-                      <>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                      </>
-                    )}
+                    {generateStars(review.stars)}
                   </div>
                 </div>
                 <div className="middle-review">

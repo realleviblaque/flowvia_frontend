@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { SideBar } from "../../components/Sidebar";
 import './CreatePost.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Projects } from "../../data/ProjectPage/Projects";
 import dayjs from '../../lib/dayjs';
 import { posts, savePosts } from "../../data/HomePage/posts";
@@ -34,6 +34,8 @@ export function CreatePost({all}) {
   const tooltipRef2 = useRef(null)
   const [pos1, setPos1] = useState({top: 0, left: 0, right: 0})
   const [pos2, setPos2] = useState({top: 0, left: 0, right: 0})
+  const [searchParams] = useSearchParams();
+  const from = searchParams.get('f')
   const confirmRef = useRef(null)
   useEffect(() => {
     const handleMilstoneSearch = () => {
@@ -254,8 +256,16 @@ export function CreatePost({all}) {
     }, 2000);
   }
   const handleGoBackFeed = () => {
-    if (postNow) {
-      confirmRef.current.showModal();
+    if (postNow) return confirmRef.current.showModal();
+    if (from === 'profile') {
+      navigate('/profile')
+    } else {
+      navigate('/')
+    }
+  }
+  const handleDelete = () => {
+    if (from === 'profile') {
+      navigate('/profile')
     } else {
       navigate('/')
     }
@@ -643,7 +653,7 @@ export function CreatePost({all}) {
           <p className="txt">You can save this to send later from your Drafts.</p>
         </div>
         <div className="action">
-          <button onClick={() => navigate('/')}>Delete</button>
+          <button onClick={handleDelete}>Delete</button>
           <button>Save</button>
         </div>
       </dialog>

@@ -1,0 +1,407 @@
+.reviews-section {
+  display: flex;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .main-portfolio-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .review-project-top {
+      height: 70px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+      padding-left: 40px;
+      background-color: var(--bg);
+      position: sticky;
+      top: 35px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        padding: 6px 15px;
+        background-color: var(--cards);
+        border: 1px solid var(--border);
+        color: var(--mutetd-tetx);
+        border-radius: 20px;
+        cursor: pointer;
+        span {
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &.current {
+          background-color: var(--amber-bg);
+          border-color: var(--amber-border);
+          color: var(--amber);
+        }
+      } 
+    }
+    .review-project-container {
+      flex: 1;
+      padding: 0px 40px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .empty-reviews {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: var(--secondary-text);
+      }
+      .reviews-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        min-height: 200px;
+        background-color: var(--cards);
+        border: 1px solid var(--border);
+        border-radius: 30px;
+        padding: 20px;
+        .top-review {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 12px;
+          .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+              border-radius: 50%;
+              cursor: pointer;
+              &.team-profile {
+                border-radius: 9px;
+              }
+            }
+          }
+          .middle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            .name {
+              font-size: 16px;
+              color: var(--pry-text);
+              font-weight: bold;
+            }
+            .user-info {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 8px;
+              font-size: 14px;
+              color: var(--mutetd-tetx);
+              span {
+                width: 2px;
+                height: 2px;
+                background-color: var(--mutetd-tetx);
+                border-radius: 50%;
+              }
+            }
+          }
+          .right {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 3px;
+            i {
+              font-size: 14px;
+              color: var(--amber);
+            }
+          }
+        }
+        .middle-review {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+          gap: 16px;
+          .project-info {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 6px;
+            background-color: var(--border);
+            border: 1px solid var(--hover-border);
+            color: var(--secondary-text);
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 6px;
+          }
+          .review-msg {
+            font-size: 16px;
+            color: var(--secondary-text);
+            line-height: 22px;
+            white-space: pre-wrap;
+          }
+        }
+        .bottom-review {
+          border-top: 1px solid var(--border);
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-top: 10px;
+          .up {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            .reply-btn {
+              font-size: 14px;
+              color: var(--accent-blue);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              cursor: pointer;
+              i {
+                font-size: 10px;
+              }
+            }
+          }
+          .reply-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 15px 20px;
+            background-color: var(--border);
+            border: 1px solid var(--hover-border);
+            border-radius: 15px;
+            box-shadow: -2px 0 0 var(--accent-blue);
+            .hd-txt {
+              font-size: 12px;
+              color: var(--accent-blue);
+            }
+            .date {
+              font-size: 12px;
+              color: var(--secondary-text);
+              margin-left: auto;
+              margin-top: -19px;
+            }
+            .reply-msg {
+              font-size: 16px;
+              color: var(--secondary-text);
+              line-height: 21px;
+              white-space: pre-wrap;
+            }
+          }
+          .reply-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px 20px;
+            background-color: var(--element-bg);
+            border: 1px solid var(--hover-border);
+            border-radius: 15px;
+            box-shadow: -1.5px 0 0 var(--accent-blue);
+            .hd-txt {
+              font-size: 14px;
+              color: var(--accent-blue);
+            }
+            textarea {
+              background-color: var(--border);
+              border: 1px solid var(--hover-border);
+              resize: none;
+              height: 60px;
+              border-radius: 10px;
+              padding: 10px;
+              font-size: 15px;
+              color: var(--secondary-text);
+              &::placeholder {
+                color: var(--mutetd-tetx);
+              }
+              &::-webkit-scrollbar {
+                display: none;
+              }
+            }
+            .count {
+              font-size: 12px;
+              color: var(--secondary-text);
+              margin-right: auto;
+              margin-bottom: -25px;
+            }
+            button {
+              margin-left: auto;
+              padding: 8px 25px;
+              background-color: var(--pry-btn);
+              color: var(--pry-btn-text);
+              border: none;
+              border-radius: 20px;
+              font-size: 14px;
+              cursor: pointer;
+              opacity: 0;
+              visibility: hidden;
+              transform: scale(0);
+              transition: all 0.3s;
+              &.open {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.99px) {
+  .reviews-section {
+    .main-portfolio-wrap {
+      width: 0;
+      .review-project-top {
+        height: unset;
+        gap: 10px;
+        padding: 12px;
+        background-color: var(--bg);
+        position: sticky;
+        top: 60px;
+        overflow: auto;
+        border-bottom: 1px solid var(--border);
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        div {
+          white-space: nowrap;
+          font-size: 12px;
+          padding: 5px 15px;
+          span {
+            font-size: 11px;
+          }
+        } 
+      }
+      .review-project-container {
+        padding: 0;
+        padding-bottom: 10px;
+        gap: 0;
+        min-height: 528px;
+        .empty-reviews {
+          font-size: 16px;
+          color: var(--secondary-text);
+        }
+        .reviews-container {
+          gap: 10px;
+          min-height: 200px;
+          background-color: unset;
+          border: none;
+          border-radius: 0;
+          padding: 20px 10px;
+          border-top: 1px solid var(--border);
+          &:nth-child(1) {
+            border: none;
+          }
+          .top-review {
+            gap: 10px;
+            .left {
+              img {
+                cursor: unset;
+              }
+            }
+            .middle {
+              .name {
+                font-size: 15px;
+              }
+              .user-info {
+                font-size: 12px;
+                color: var(--mutetd-tetx);
+                white-space: nowrap;
+                .username {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 60px;
+                }
+              }
+            }
+            .right {
+              i {
+                font-size: 10px;
+                color: var(--amber);
+              }
+            }
+          }
+          .middle-review {
+            align-items: stretch;
+            justify-content: unset;
+            gap: 5px;
+            .project-info {
+              align-self: flex-start;
+              gap: 6px;
+              font-size: 12px;
+              padding: 6px 10px;
+              background-color: var(--cards);
+              border-color: var(--border);
+            }
+            .review-msg {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+          .bottom-review {
+            gap: 0;
+            .up {
+              .reply-btn {
+                font-size: 12px;
+                i {
+                  font-size: 8px;
+                }
+              }
+            }
+            .reply-container {
+              border-radius: 12px;
+              box-shadow: -1.4px 0 0 var(--accent-blue);
+              background-color: var(--cards);
+              border-color: var(--border);
+              .hd-txt {
+                font-size: 11px;
+              }
+              .reply-msg {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+            .reply-wrap {
+              margin-top: 8px;
+              border-radius: 12px;
+              box-shadow: -1.4px 0 0 var(--accent-blue);
+              background-color: var(--cards);
+              border-color: var(--border);;
+              gap: 10px;
+              .hd-txt {
+                font-size: 11px;
+              }
+              textarea {
+                height: 50px;
+                border-radius: 10px;
+                font-size: 14px;
+              }
+              .count {
+                font-size: 12px;
+                color: var(--secondary-text);
+                margin-right: auto;
+                margin-bottom: -25px;
+              }
+              button {
+                padding: 6px 20px;
+                font-size: 13px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 export const Reviews = [{
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: null,
   sender: {
     id: crypto.randomUUID(),
     name: 'Apex Build Co.',
@@ -19,6 +20,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: null,
   sender: {
     id: crypto.randomUUID(),
     name: 'Remi Marthin',
@@ -35,6 +37,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: null,
   sender: {
     id: crypto.randomUUID(),
     name: 'Zanra Tanka',
@@ -51,6 +54,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: dayjs().toISOString(),
   sender: {
     id: crypto.randomUUID(),
     name: 'Amara Osei',
@@ -68,6 +72,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: dayjs().toISOString(),
   sender: {
     id: crypto.randomUUID(),
     name: 'Levi Blaque',
@@ -85,6 +90,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: null,
   sender: {
     id: crypto.randomUUID(),
     name: 'DevConnect',
@@ -101,6 +107,7 @@ export const Reviews = [{
 }, {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
+  updatedAt: dayjs().toISOString(),
   sender: {
     id: crypto.randomUUID(),
     name: 'Apex Build Co.',

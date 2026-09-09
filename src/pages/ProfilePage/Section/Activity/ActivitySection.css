@@ -1,0 +1,656 @@
+.activity-section {
+  display: flex;
+  .main-post-wrap {
+    padding: 30px 30px 10px 30px;
+    .post-container-input {
+      margin-top: 5px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 15px;
+      background-color: var(--cards);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .top-post {
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        .prof-wrap {
+          flex-shrink: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: var(--cards);
+          border: 1px solid var(--blue-border);
+          cursor: pointer;
+          padding: 2px;
+          img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          p {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--blue-bg);
+            border-radius: 50%;
+            font-size: 15px;
+            color: var(--accent-blue);
+          }
+        }
+        .post-input-btn {
+          flex: 1;
+          height: 40px;
+          background-color: var(--border);
+          border-radius: 8px;
+          display: flex;
+          justify-content: left;
+          align-items: start;
+          padding: 12px 0px 0px 15px;
+          font-size: 14px;
+          color: var(--secondary-text);
+          cursor: text;
+        }
+        .phone-options {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38px;
+            width: 38px;
+            background-color: var(--cards);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--secondary-text);
+            border: 1px solid var(--border);
+            &:nth-child(2) {
+              background-color: var(--pry-btn);
+              color: var(--pry-btn-text);
+            }
+          }
+        }
+      }
+      .bottom-post {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-image-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 30px;
+          background-color: var(--border);
+          border-radius: 5px;
+          cursor: pointer;
+          i {
+            font-size: 15px;
+            color: var(--secondary-text);
+          }
+        }
+        .right-post-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          button {
+            padding: 8px 22px;
+            background-color: var(--pry-btn);
+            color: var(--pry-btn-text);
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .activity-container {
+      margin: 20px 0;
+      width: 1030px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .empty-posts {
+        height: 500px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 40px;
+          color: var(--secondary-text);
+        }
+        p:nth-child(2) {
+          font-size: 30px;
+          color: var(--secondary-text);
+          font-weight: bold;
+        }
+        p:nth-child(3) {
+          font-size: 16px;
+          color: var(--secondary-text);
+        }
+        button {
+          margin-top: 10px;
+          padding: 12px 100px;
+          font-size: 14px;
+          background-color: var(--blue-bg);
+          border: 1px solid var(--blue-border);
+          color: var(--accent-blue);
+          border-radius: 20px;
+          cursor: pointer;
+        }
+      }
+      .post-container {
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: 15px;
+        padding: 15px 20px;
+        background-color: var(--element-bg);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .post-header {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          gap: 12px;
+          .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            .post-user-profile {
+              width: 35px;
+              height: 35px;
+              object-fit: cover;
+              border-radius: 50%;
+              cursor: pointer;
+              border: 2px solid var(--blue-border);
+            }
+          }
+          .middle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 3px;
+            .post-info-top {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 8px;
+              .name {
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--pry-text);
+              }
+              span {
+                height: 3px;
+                width: 3px;
+                background-color: var(--mutetd-tetx);
+                border-radius: 50%;
+              }
+              .post-time {
+                font-size: 12px;
+                color: var(--mutetd-tetx);
+              }
+            }
+            .post-info-bottom {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 8px;
+              .username {
+                font-size: 13px;
+                color: var(--mutetd-tetx);
+              }
+              span {
+                height: 2px;
+                width: 2px;
+                background-color: var(--mutetd-tetx);
+                border-radius: 50%;
+              }
+              .phone {
+                display: none;
+              }
+              .category {
+                font-size: 13px;
+                color: var(--mutetd-tetx);
+              }
+              .date {
+                display: none;
+                font-size: 13px;
+                color: var(--mutetd-tetx);
+              }
+            }
+          }
+          .post-option {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              color: var(--secondary-text);
+              cursor: pointer;
+            }
+          }
+        }
+        .post-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 15px;
+          p {
+            font-size: 15px;
+            color: var(--secondary-text);
+            line-height: 20px;
+          }
+          .body-image {
+            height: 200px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .post-project {
+          border: 1px solid var(--hover-border);
+          height: 300px;
+          border-radius: 15px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          .project-cover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--purple-bg);
+            height: 130px;
+            color: var(--mutetd-tetx);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+          }
+          .project-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 13px;
+            .title {
+              font-size: 18px;
+              font-weight: bold;
+              color: var(--pry-text);
+            }
+            .description {
+              font-size: 14px;
+              color: var(--mutetd-tetx);
+            }
+            .details {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 15px;
+              font-size: 14px;
+              color: var(--secondary-text);
+              span {
+                height: 3px;
+                width: 3px;
+                background-color: var(--mutetd-tetx);
+                border-radius: 50%;
+              }
+            }
+            .action {
+              margin-top: auto;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .left-action-project {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 15px;
+                font-size: 14px;
+                font-weight: bold;
+                div {
+                  padding: 5px 20px;
+                  border-radius: 8px;
+                }
+                .budget {
+                  background-color: var(--green-bg);
+                  border: 1px solid var(--green-border);
+                  color: var(--green);
+                }
+                .deadline {
+                  background-color: var(--coral-bg);
+                  border: 1px solid var(--coral-border);
+                  color: var(--coral);
+                }
+              }
+              .right-action-project {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                  padding: 10px 30px;
+                  background-color: var(--pry-btn);
+                  border-radius: 8px;
+                  color: var(--pry-btn-text);
+                  border: none;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .footer-post {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px;
+          padding-top: 15px;
+          border-top: 1px solid var(--border);
+          .react-wrap {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 20px;
+            font-size: 12px;
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 6px;
+              color: var(--secondary-text);
+              cursor: pointer;
+              i {
+                color: var(--secondary-text);
+                font-size: 14px;
+              }
+            }
+            .liked {
+              color: red;
+              i {
+                color: red;
+              }
+            }
+          }
+          .save-post {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 6px;
+              color: var(--secondary-text);
+              cursor: pointer;
+              i {
+                color: var(--secondary-text);
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.99px) {
+  .activity-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 590px;
+    .main-post-wrap {
+      padding: 0;
+      .post-container-input {
+        margin-top: 0;
+        padding: 12px 15px;
+        border: none;
+        border-bottom: 1px solid var(--border);
+        border-radius: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .top-post {
+          .post-input-btn {
+            height: auto;
+            padding: 13px;
+            border-radius: 30px;
+            background-color: var(--cards);
+            border: 1px solid var(--border);
+            color: var(--mutetd-tetx);
+          }
+          .phone-options {
+            display: flex;
+          }
+        }
+        .bottom-post {
+          display: none;
+        }
+      }
+      .activity-container {
+        margin: 20px 0;
+        margin-top: 0;
+        width: auto;
+        gap: 10px;
+        .empty-posts {
+          i {
+            font-size: 25px;
+          }
+          p:nth-child(2) {
+            font-size: 20px;
+          }
+          p:nth-child(3) {
+            font-size: 14px;
+          }
+          button {
+            margin-top: 10px;
+            padding: 9px 80px;
+            font-size: 13px;
+          }
+        }
+        .post-container {
+          border: none;
+          border-bottom: 1px solid var(--border);
+          border-radius: 0;
+          padding: 20px 10px;
+          background-color: transparent;
+          gap: 10px;
+          .post-header {
+            .left {
+              .post-user-profile {
+                padding: 1px;
+              }
+            }
+            .middle {
+              gap: 1px;
+              .post-info-top {
+                .name {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: var(--pry-text);
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 190px;
+                }
+                span {
+                  display: none;
+                }
+                .post-time {
+                  display: none;
+                }
+              }
+              .post-info-bottom {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 8px;
+                .username {
+                  font-size: 12px;
+                  color: var(--mutetd-tetx);
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  max-width: 100px;
+                }
+                .category {
+                  font-size: 12px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  max-width: 70px;
+                }
+                .phone {
+                  display: block;
+                }
+                .date {
+                  font-size: 12px;
+                  display: block;
+                  white-space: nowrap;
+                }
+              }
+            }
+            .post-option {
+              i {
+                color: var(--mutetd-tetx);
+              }
+            }
+          }
+          .post-body {
+            p {
+              font-size: 15px;
+              color: var(--secondary-text);
+              line-height: 20px;
+            }
+            .body-image {
+              height: 450px;
+              min-height: 200px;
+            }
+          }
+          .post-project {
+            border: 1px solid var(--border);
+            .project-cover {
+              height: 110px;
+              font-size: 12px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0 15px;
+              span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+            .project-details {
+              .title {
+                font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              .description {
+                font-size: 14px;
+                color: var(--mutetd-tetx);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                overflow: hidden;
+              }
+              .details {
+                font-size: 13px;
+                span {
+                  height: 2px;
+                  width: 2px;
+                }
+              }
+              .action {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: stretch;
+                gap: 10px;
+                .left-action-project {
+                  justify-content: space-between;
+                  gap: 0px;
+                  font-size: 12px;
+                  div {
+                    padding: 4px 15px;
+                    border-radius: 8px;
+                  }
+                  .budget {
+                    background-color: var(--green-bg);
+                    border: 1px solid var(--green-border);
+                    color: var(--green);
+                  }
+                  .deadline {
+                    background-color: var(--coral-bg);
+                    border: 1px solid var(--coral-border);
+                    color: var(--coral);
+                  }
+                }
+                .right-action-project {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  button {
+                    flex: 1;
+                    padding: 11px 0;
+                    border-radius: 6px;
+                  }
+                }
+              }
+            }
+          }
+          .footer-post {
+            padding: 0 10px;
+            padding-top: 15px;
+            .react-wrap {
+              div {
+                gap: 5px;
+                color: var(--mutetd-tetx);
+                i {
+                  color: var(--mutetd-tetx);
+                  font-size: 14px;
+                }
+              }
+            }
+            .save-post {
+              div {
+                gap: 5px;
+                color: var(--mutetd-tetx);
+                i {
+                  color: var(--mutetd-tetx);
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

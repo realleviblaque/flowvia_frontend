@@ -147,6 +147,11 @@ main {
     outline: 1px solid var(--border);
   }
 }
+input {
+  &:focus {
+    outline: none;
+  }
+}
 button {
   &:focus {
     outline: none;

@@ -81,6 +81,8 @@ import { TakenProject } from './pages/StatusPage/Hire/TakenProject'
 import { HirePendingRequest } from './pages/StatusPage/Hire/HirePendingRequest'
 import { HireCompletedProject } from './pages/StatusPage/Hire/HireCompletedProject'
 import { CreateJob } from './pages/StatusPage/CreateJob'
+import { Login } from './Auth/Login/Login'
+import { Signup } from './Auth/Signup/Signup'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -222,6 +224,8 @@ function App() {
           handlePostView={handlePostView}
         />
       } />
+      <Route path='/signup' element={<Signup />} />
+      <Route path='/login' element={<Login />} />
       <Route path='/create/post' element={<CreatePost all={all} />} />
       <Route path='/post/:username/:id' element={<FullPost all={all} savePosts={savePosts} setSavePosts={setSavePosts} />} />
       <Route path='/status' element={

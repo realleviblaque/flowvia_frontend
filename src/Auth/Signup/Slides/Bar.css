@@ -1,0 +1,22 @@
+.slides-bar {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--border);
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+  .bar {
+    border-radius: 20px;
+    &.free {
+      background-color: var(--accent-blue);
+    }
+    &.recru {
+      background-color: var(--purple);
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.slide5-container {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: left;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  &.open {
+    transform: translateX(0);
+  }
+  .slide5-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 200px;
+    gap: 20px;
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .txt {
+        font-size: 14px;
+        color: var(--mutetd-tetx);
+        letter-spacing: 2px;
+        &:nth-child(3) {
+          letter-spacing: 1px;
+          font-size: 16px;
+        }
+      }
+      .hd-txt {
+        font-size: 35px;
+        font-weight: bold;
+        color: var(--pry-text);
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 50px;
+      .left {
+        flex: 1;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .txt {
+            margin-top: 10px;
+            font-size: 16px;
+            color: var(--secondary-text);
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            textarea {
+              height: 150px;
+              background-color: var(--cards);
+              border: 1px solid var(--border);
+              color: var(--secondary-text);
+              padding: 15px;
+              border-radius: 10px;
+              font-size: 16px;
+              resize: none;
+              &::placeholder {
+                color: var(--mutetd-tetx);
+              }
+              &:focus {
+                border-color: var(--blue-border);
+              }
+            }
+            .count {
+              display: flex;
+              justify-content: right;
+              align-items: center;
+              p {
+                font-size: 14px;
+                color: var(--mutetd-tetx);
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: 10px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+      button {
+        height: 45px;
+        padding: 0 30px;
+        background-color: var(--cards);
+        border: 1px solid var(--border);
+        color: var(--secondary-text);
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        i {
+          font-size: 12px;
+        }
+        &.free {
+          background-color: var(--pry-btn);
+          color: var(--pry-btn-text);
+          border: none;
+        }
+        &.recru {
+          background-color: var(--purple-bg);
+          color: var(--purple);
+          border-color: var(--purple-border);
+        }
+      }
+    }
+  }
+}

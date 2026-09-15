@@ -132,7 +132,7 @@ export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
                 {imagePreview ? (
                   <>
                     <button onClick={handleImageRemove}>Remove Photo</button>
-                    <button className='upload' onClick={handleContinue}> Continue <i className="fa-solid fa-arrow-right"></i></button>
+                    <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}> Continue <i className="fa-solid fa-arrow-right"></i></button>
                   </>
                 ) : (
                   <>
@@ -146,7 +146,6 @@ export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
         </div>
         <div className="bottom">
           <button onClick={() => setSlideOpen(accountType === 'Freelancer' ? 5 : 3)}><i className="fa-solid fa-arrow-left"></i> Back</button>
-          <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
     </div>

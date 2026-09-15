@@ -1,6 +1,6 @@
 .signup-container {
   background-color: var(--bg);
-  height: 100dvb;
+  height: 100dvh;
   display: flex;
   .left {
     flex: 1;
@@ -282,7 +282,6 @@
         p {
           font-size: 14px;
           text-transform: uppercase;
-          color: var(--mutetd-tetx);
           color: var(--secondary-text);
         }
         input {
@@ -370,7 +369,7 @@
           left: 4px;
         }
       }
-      .singup {
+      .signup {
         height: 45px;
         background-color: var(--pry-btn);
         border: none;
@@ -421,7 +420,7 @@
           }
         }
       }
-      .signup {
+      .login {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -439,4 +438,88 @@
       }
     }
   }
+}
+
+@media (max-width: 767.99px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .left {
+      display: none;
+    }
+    .right {
+      flex: 1;
+      padding: 30px;
+      .bottom {
+        .hd-txt {
+          font-size: 30px;
+        }
+        .txt {
+          margin-top: -10px;
+          line-height: 20px;
+        }
+        .i-am {
+          .i-txt {
+            font-size: 13px;
+          }
+          .types {
+            gap: 20px;
+            div {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              border-radius: 40px;
+              border-color: var(--hover-border);
+              i {
+                display: none;
+              }
+              .type {
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: normal;
+              }
+              .type-txt {
+                display: none;
+              }
+            }
+          }
+        }
+        .name-wrap {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 10px;
+        }
+        .remember {
+          p {
+            font-size: 14px;
+          }
+        }
+        .signup {
+          height: 50px;
+          border-radius: 30px;
+          font-size: 15px;
+        }
+        .option {
+          button {
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

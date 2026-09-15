@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './bar'
 import './Slide5.css'
 
-export function Slide5({slideOpen, accountType, setSlideOpen, user, setUser}) {
+export function Slide5({slideOpen, accountType, setSlideOpen, setUser}) {
   const [bio, setBio] = useState('')
   const inputRef = useRef(null)
   const formRef = useRef(null)
@@ -24,11 +24,10 @@ export function Slide5({slideOpen, accountType, setSlideOpen, user, setUser}) {
         inputRef.current?.focus()
         return
       };
-      const newUser = {
-        ...user,
+      setUser(prev => ({
+        ...prev,
         bio
-      }
-      setUser(newUser)
+      }))
       setSlideOpen( accountType === 'Freelancer' ? 6 : 4)
     } else {
       formRef?.current?.reportValidity();

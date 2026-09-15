@@ -93,11 +93,10 @@ export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
   }
   const handleContinue = () => {
     if (formRef.current.checkValidity()) {
-      const newUser = {
-        ...user,
+      setUser(prev => ({
+        ...prev,
         title
-      }
-      setUser(newUser)
+      }))
       setSlideOpen(2)
     } else {
       formRef.current.reportValidity()

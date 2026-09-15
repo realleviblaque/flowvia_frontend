@@ -19,11 +19,10 @@ export function Slide2({slideOpen, accountType, setSlideOpen, user, setUser}) {
   }, [slideOpen])
   const name = accountType === 'Freelancer' ? [user.firstName, user.lastName].map(n => n?.[0]?.toUpperCase()).join('') : user.companyName?.split(' ').map(w => w[0]?.toUpperCase()).slice(0, 2).join('')
   const handleContinue = () => {
-    const newUser = {
-      ...user,
+    setUser(prev => ({
+      ...prev,
       website
-    }
-    setUser(newUser)
+    }))
     setSlideOpen(3)
   }
   return (

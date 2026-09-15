@@ -153,7 +153,7 @@ export function Signup() {
                 <input type="checkbox" required />
                 <p>I agree to Flowvia's <span>Terms of Service</span> and <span>Privacy Policy</span>.</p>
               </div>
-              <button type="submit" className='singup' onClick={handleSend}>Create Account <i className="fa-solid fa-arrow-right"></i></button>
+              <button type="submit" className='signup' onClick={handleSend}>Create Account <i className="fa-solid fa-arrow-right"></i></button>
             </form>
             <div className='or-continue'>
               <span></span>
@@ -164,7 +164,7 @@ export function Signup() {
               <button><i className="fa-brands fa-google"></i> Google</button>
               <button><i className="fa-brands fa-github"></i> Github</button>
             </div>
-            <div className='signup'>
+            <div className='login'>
               <p>Already have an account?</p>
               <span onClick={() => navigate('/login')}>Login</span>
             </div>
@@ -172,11 +172,11 @@ export function Signup() {
         </div>
       </div>
       <Slide1 accountType={accountType} slideOpen={slideOpen} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
-      <Slide2 slideOpen={slideOpen} accountType={accountType} user={user} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide3 slideOpen={slideOpen} accountType={accountType} user={user} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide4 slideOpen={slideOpen} accountType={accountType} user={user} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide5 slideOpen={slideOpen} accountType={accountType} user={user} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide6 slideOpen={slideOpen} accountType={accountType} user={user} setSlideOpen={setSlideOpen} setUser={setUser} />
+      <Slide2 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
+      <Slide3 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
+      <Slide4 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
+      <Slide5 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
+      <Slide6 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
       <Slide7 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} />
     </>
   )

@@ -5,12 +5,27 @@ import { generateStars } from '../../utils/generateStars';
 import formatCount from '../../utils/formatCount';
 
 export function Login() {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
   const [showPass, setShowPass] = useState(false);
   const passRef = useRef(null)
+  const formRef = useRef(null)
   const navigate = useNavigate();
   const handleShowPass = () => {
     setShowPass(prev => !prev);
     passRef.current.focus()
+  }
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (formRef.current.checkValidity()) {
+      const user = {
+        username,
+        password
+      }
+      console.log(user)
+    } else {
+      formRef.current.reportValidity()
+    }
   }
   return (
     <div className="login-container">
@@ -73,10 +88,10 @@ export function Login() {
         <div className="bottom">
           <p className="hd-txt">Welcome back</p>
           <p className="txt">Login to track your work, collaborate and manage projects</p>
-          <form>
+          <form ref={formRef}>
             <div className="input-wrap">
               <p>Email or Username</p>
-              <input type="text" placeholder="example@gmail.com or @example" required />
+              <input type="text" placeholder="example@gmail.com or @example" value={username} onChange={e => setUsername(e.target.value)} required />
             </div>
             <div className="input-wrap">
               <div className="top">
@@ -84,7 +99,7 @@ export function Login() {
                 <p className="forget">Forget Password?</p>
               </div>
               <div className="password">
-                <input type={showPass ? 'text' : 'password'} placeholder="Your password" ref={passRef} required />
+                <input type={showPass ? 'text' : 'password'} placeholder="Your password" value={password} onChange={e => setPassword(e.target.value)} ref={passRef} required />
                 <i className={`fa-regular fa-eye${showPass ? '-slash' : ''}`} onClick={handleShowPass}></i>
               </div>
             </div>
@@ -92,7 +107,7 @@ export function Login() {
               <input type="checkbox" required />
               <p>Keep me logged in</p>
             </div>
-            <button type='submit' className='login'>Login <i className="fa-solid fa-arrow-right"></i></button>
+            <button type='submit' onClick={handleLogin} className='login'>Login <i className="fa-solid fa-arrow-right"></i></button>
           </form>
           <div className='or-continue'>
             <span></span>

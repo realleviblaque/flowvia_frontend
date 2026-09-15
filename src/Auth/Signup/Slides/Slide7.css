@@ -156,3 +156,47 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .slide7-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .slide7-view {
+      padding: 30px;
+      justify-content: center;
+      .top {
+        .hd-txt {
+          font-size: 25px;
+          text-align: center;
+        }
+        .txt {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .bottom {
+        margin-top: 0;
+        margin: 30px 0;
+        button {
+          height: 50px;
+          flex: 1;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

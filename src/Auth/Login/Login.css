@@ -1,6 +1,6 @@
 .login-container {
   background-color: var(--bg);
-  height: 100dvb;
+  height: 100dvh;
   display: flex;
   .left {
     flex: 1;
@@ -450,4 +450,53 @@
       }
     }
   }
+}
+
+@media (max-width: 767.99px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .left {
+      display: none;
+    }
+    .right {
+      flex: 1;
+      padding: 30px;
+      .bottom {
+        .hd-txt {
+          font-size: 30px;
+        }
+        .txt {
+          margin-top: -10px;
+          line-height: 20px;
+        }
+        .remember {
+          p {
+            font-size: 14px;
+          }
+        }
+        .login {
+          height: 50px;
+          border-radius: 30px;
+        }
+        .option {
+          button {
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

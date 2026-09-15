@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './bar'
 import './Slide4.css'
 
-export function Slide4({slideOpen, accountType, setSlideOpen, user, setUser}) {
+export function Slide4({slideOpen, accountType, setSlideOpen, setUser}) {
   const [perHour, setPerHour] = useState({
     min: '',
     max: ''
@@ -34,11 +34,10 @@ export function Slide4({slideOpen, accountType, setSlideOpen, user, setUser}) {
   }, [slideOpen])
   const handleContinue = () => {
     if (formRef.current.checkValidity()) {
-      const newUser = {
-        ...user,
+      setUser(prev => ({
+        ...prev,
         pricing: {perHour, perProject} 
-      }
-      setUser(newUser)
+      }))
       setSlideOpen(5)
     } else {
       formRef.current.reportValidity();

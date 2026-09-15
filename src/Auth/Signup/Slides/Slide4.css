@@ -153,3 +153,102 @@
     }
   }
 }
+
+@media (max-width: 767.99px) {
+  .slide4-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .slide4-view {
+      padding: 30px;
+      justify-content: start;
+      .top {
+        .txt {
+          font-size: 13px;
+          &:nth-child(3) {
+            margin-top: -5px;
+            font-size: 14px;
+          }
+        }
+        .hd-txt {
+          font-size: 28px;
+        }
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        .left {
+          height: fit-content;
+          gap: 15px;
+          .wrap {
+            .txt {
+              font-size: 15px;
+            }
+            form {
+              display: flex;
+            }
+            .hour-range-box,
+            .project-range-box {
+              margin-top: 5px;
+              margin-bottom: 10px;
+              padding-right: unset;
+              gap: 20px;
+              .box {
+                flex: 1;
+                p {
+                  font-size: 16px;
+                }
+                input {
+                  width: 0;
+                  height: 40px;
+                  padding: 0 10px;
+                  border-radius: 30px;
+                  font-size: 16px;
+                }
+              }
+              span {
+                font-size: 20px;
+                color: var(--mutetd-tetx);
+              }
+            }
+            .tips-cover {
+              margin-top: 20px;
+              margin-right: 0;
+              p {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 0;
+        margin: 30px 0;
+        button {
+          flex: 1;
+          border-radius: 30px;
+          cursor: pointer;
+          white-space: nowrap;
+          &:nth-child(2) {
+            flex: 3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}

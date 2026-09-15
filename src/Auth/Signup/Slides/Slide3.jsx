@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './bar'
 import './Slide3.css'
 
-export function Slide3({slideOpen, accountType, setSlideOpen, user, setUser}) {
+export function Slide3({slideOpen, accountType, setSlideOpen, setUser}) {
   const [seletedSkills, setSelectedSkills] = useState([])
   const [skillInput, setSkillInput] = useState('')
   const [showError, setShowError] = useState(false)
@@ -62,10 +62,55 @@ export function Slide3({slideOpen, accountType, setSlideOpen, user, setUser}) {
     const handleReset = () => {
       setSelectedSkills([])
       setSkillInput('')
-      setSkills(prev => prev.map(s => ({
-        ...s,
+      setSkills([{
+        id: crypto.randomUUID(),
+        name: 'Frontend',
         isAdded: false
-      })))
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Backend',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'UI Design',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Mobile Dev',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'DevOps',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Marketing',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Copywritting',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Data Science',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'QA Testing',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Product Design',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'SEO',
+        isAdded: false
+      }, {
+        id: crypto.randomUUID(),
+        name: 'Video Editing',
+        isAdded: false
+      }])
     }
     handleReset();
   }, [accountType])
@@ -134,11 +179,10 @@ export function Slide3({slideOpen, accountType, setSlideOpen, user, setUser}) {
       inputRef?.current?.focus()
       return;
     }
-    const newUser = {
-      ...user,
+    setUser(prev => ({
+      ...prev,
       skills: seletedSkills
-    }
-    setUser(newUser)
+    }))
     setSlideOpen(4)
     setShowError(false)
   }

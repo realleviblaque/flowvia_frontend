@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { SlidesSidebar } from "../SlidesSidebar";
 import './Slide1.css'
-import { Bar } from "./bar";
+import { Bar } from "./Bar";
 
 export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
   const [title, setTitle] = useState('')

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { SlidesSidebar } from '../SlidesSidebar'
-import { Bar } from './bar'
+import { Bar } from './Bar'
 import './Slide4.css'
 
 export function Slide4({slideOpen, accountType, setSlideOpen, setUser}) {

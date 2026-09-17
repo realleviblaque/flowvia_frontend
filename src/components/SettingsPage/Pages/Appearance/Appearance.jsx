@@ -1,12 +1,12 @@
-import { useState } from "react"
 import './Appearance.css'
+import { useTheme } from "../../../../context/useTheme";
 
 export function Appearance() {
-  const [isDarkTheme, setIsDarkTheme] = useState(true)
+  const {theme, setTheme} = useTheme();
   return (
     <div className="appearance-content">
       <div className="up">
-        <div className={`dark ${isDarkTheme ? 'active' : ''}`} onClick={() => setIsDarkTheme(true)}>
+        <div className={`dark ${theme === 'dark' ? 'active' : ''}`} onClick={() => setTheme('dark')}>
           <div className="up">
             <div className="left">
               <span></span>
@@ -20,7 +20,7 @@ export function Appearance() {
             Dark (Actuve)
           </div>
         </div>
-        <div className={`light ${isDarkTheme ? '' : 'active'}`}  onClick={() => setIsDarkTheme(false)}>
+        <div className={`light ${theme === 'light' ? 'active' : ''}`} onClick={() => setTheme('light')}>
           <div className="up">
             <div className="left">
               <span></span>

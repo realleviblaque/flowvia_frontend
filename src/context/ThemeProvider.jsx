@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { ThemeContext } from "./ThemeContext";
 
 export const ThemeProvider = ({children}) => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
   useEffect(() => {
-    document.body.classList.toggle('light-theme', theme === 'light');
+    document.documentElement.classList.toggle('light-theme', theme === 'light');
     localStorage.setItem('theme', theme)
   }, [theme])
   return (

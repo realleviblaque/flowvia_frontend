@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/flowvia-favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        background: #0a0b0e;
+      }
+      html.light-theme {
+        background: #f0f0ed;
+      }
+      body {
+        background: transparent;
+      }
+    </style>
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme')
+      }
+    </script>
     <title>Flowvia</title>
   </head>
   <body>

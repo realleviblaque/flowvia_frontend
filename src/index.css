@@ -55,7 +55,7 @@
   --icon-filter: invert(100%);
   --get-verified-btn-text: black;
 }
-body.dark-theme {
+body.light-theme {
   --bg: #f0f0ed;
   --sidebar-bg: #ffffff;
   --cards: #f7f7f5;

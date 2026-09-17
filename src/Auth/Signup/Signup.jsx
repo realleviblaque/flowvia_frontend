@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Signup.css'
 import { Slide1 } from "./Slides/Slide1";
@@ -23,6 +23,28 @@ export function Signup() {
   const passRef = useRef(null)
   const formRef = useRef(null)
   const navigate = useNavigate();
+  useEffect(() => {
+    window.history.replaceState({
+      signup: true,
+      slide: 0,
+    }, "", window.location.pathname)
+    const handlePopState = (event) => {
+      if (event.state?.signup) {
+        setSlideOpen(event.state.slide)
+      }
+    }
+    window.addEventListener('popstate', handlePopState)
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+  const goToSlide = (slide) => {
+    setSlideOpen(slide);
+    window.history.pushState({
+      signup: true,
+      slide: slide,
+    }, "", window.location.pathname)
+  }
   const handleShowPass = () => {
     setShowPass(prev => !prev);
     passRef.current.focus()
@@ -39,7 +61,7 @@ export function Signup() {
         password
       }
       setUser(newUser)
-      setSlideOpen(1)
+      goToSlide(1)
     } else {
       formRef.current.reportValidity()
     }
@@ -171,13 +193,13 @@ export function Signup() {
           </div>
         </div>
       </div>
-      <Slide1 accountType={accountType} slideOpen={slideOpen} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
-      <Slide2 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
-      <Slide3 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide4 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide5 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} setUser={setUser} />
-      <Slide6 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} setUser={setUser} />
-      <Slide7 slideOpen={slideOpen} accountType={accountType} setSlideOpen={setSlideOpen} user={user} />
+      <Slide1 accountType={accountType} slideOpen={slideOpen} goToSlide={goToSlide} user={user} setUser={setUser} />
+      <Slide2 slideOpen={slideOpen} accountType={accountType} goToSlide={goToSlide} user={user} setUser={setUser} />
+      <Slide3 slideOpen={slideOpen} accountType={accountType} goToSlide={goToSlide} setUser={setUser} />
+      <Slide4 slideOpen={slideOpen} accountType={accountType} goToSlide={goToSlide} setUser={setUser} />
+      <Slide5 slideOpen={slideOpen} accountType={accountType} goToSlide={goToSlide} setUser={setUser} />
+      <Slide6 slideOpen={slideOpen} accountType={accountType} goToSlide={goToSlide} user={user} setUser={setUser} />
+      <Slide7 slideOpen={slideOpen} accountType={accountType} user={user} />
     </>
   )
 }

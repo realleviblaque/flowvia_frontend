@@ -1,6 +1,6 @@
 import './Slide7.css'
 
-export function Slide7({slideOpen, accountType, setSlideOpen, user}) {
+export function Slide7({slideOpen, accountType, user}) {
   return (
     <div className={`slide7-container ${accountType === 'Freelancer' && slideOpen >= 7 ? 'open' :accountType === 'Recruiter' && slideOpen >= 5 ? 'open' : ''}`}>
       <div className="slide7-view">
@@ -46,7 +46,7 @@ export function Slide7({slideOpen, accountType, setSlideOpen, user}) {
         <div className="bottom">
           <button 
             className={accountType === 'Freelancer' ? 'free' : 'recru'} 
-            onClick={() => setSlideOpen(accountType === 'Freelancer' ? 6 : 4)}
+            onClick={() => window.history.back()}
           > Go to Home <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>

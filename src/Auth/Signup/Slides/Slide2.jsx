@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './Bar'
 import './Slide2.css'
 
-export function Slide2({slideOpen, accountType, setSlideOpen, user, setUser}) {
+export function Slide2({slideOpen, accountType, goToSlide, user, setUser}) {
   const [website, setWebsite] = useState('')
   const inputRef = useRef(null)
   useEffect(() => {
@@ -23,7 +23,7 @@ export function Slide2({slideOpen, accountType, setSlideOpen, user, setUser}) {
       ...prev,
       website
     }))
-    setSlideOpen(3)
+    goToSlide(3)
   }
   return (
     <div className={`slide2-container ${slideOpen >= 2 ? 'open' : ''}`}>
@@ -39,7 +39,9 @@ export function Slide2({slideOpen, accountType, setSlideOpen, user, setUser}) {
           <div className="left">
             <div className="wrap">
               <p className="txt">WEBSITE (Optional)</p>
-              <input type="text" placeholder="hhtps://yourwebsite.com" ref={inputRef} onChange={e => setWebsite(e.target.value)} value={website} />
+              <input type="text" placeholder="hhtps://yourwebsite.com" ref={inputRef} onChange={e => setWebsite(e.target.value)} value={website} onKeyDown={e => {
+                if (e.key === 'Enter') handleContinue();
+              }} />
             </div>
           </div>
           <div className="live-review">
@@ -89,7 +91,7 @@ export function Slide2({slideOpen, accountType, setSlideOpen, user, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(1)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
           <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>

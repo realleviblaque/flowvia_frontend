@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './Bar'
 import './Slide4.css'
 
-export function Slide4({slideOpen, accountType, setSlideOpen, setUser}) {
+export function Slide4({slideOpen, accountType, goToSlide, setUser}) {
   const [perHour, setPerHour] = useState({
     min: '',
     max: ''
@@ -38,7 +38,7 @@ export function Slide4({slideOpen, accountType, setSlideOpen, setUser}) {
         ...prev,
         pricing: {perHour, perProject} 
       }))
-      setSlideOpen(5)
+      goToSlide(5)
     } else {
       formRef.current.reportValidity();
     }
@@ -89,7 +89,7 @@ export function Slide4({slideOpen, accountType, setSlideOpen, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(3)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
           <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>

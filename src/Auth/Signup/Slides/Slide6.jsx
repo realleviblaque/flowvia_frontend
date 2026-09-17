@@ -4,7 +4,7 @@ import { Bar } from './Bar'
 import './Slide6.css'
 import api from '../../../api/axios'
 
-export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
+export function Slide6({slideOpen, accountType, goToSlide, user, setUser}) {
   const [imagePreview, setImagePreview] = useState('')
   const inputRef = useRef(null)
   useEffect(() => {
@@ -70,7 +70,7 @@ export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
       ...prev,
       profilePicture: ''
     }))
-    setSlideOpen( accountType === 'Freelancer' ? 7 : 5)
+    goToSlide(accountType === 'Freelancer' ? 7 : 5)
   }
   const handleContinue = async () => {
     try {
@@ -101,7 +101,7 @@ export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
         }
       }
       setUser(updatedUser)
-      setSlideOpen( accountType === 'Freelancer' ? 7 : 5)
+      goToSlide(accountType === 'Freelancer' ? 7 : 5)
     } catch (error) {
       console.error(error)
     }
@@ -145,7 +145,7 @@ export function Slide6({slideOpen, accountType, setSlideOpen, user, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(accountType === 'Freelancer' ? 5 : 3)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
         </div>
       </div>
     </div>

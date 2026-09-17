@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './Bar'
 import './Slide3.css'
 
-export function Slide3({slideOpen, accountType, setSlideOpen, setUser}) {
+export function Slide3({slideOpen, accountType, goToSlide, setUser}) {
   const [seletedSkills, setSelectedSkills] = useState([])
   const [skillInput, setSkillInput] = useState('')
   const [showError, setShowError] = useState(false)
@@ -183,7 +183,7 @@ export function Slide3({slideOpen, accountType, setSlideOpen, setUser}) {
       ...prev,
       skills: seletedSkills
     }))
-    setSlideOpen(4)
+    goToSlide(4)
     setShowError(false)
   }
   return (
@@ -212,7 +212,7 @@ export function Slide3({slideOpen, accountType, setSlideOpen, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(2)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
           <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>

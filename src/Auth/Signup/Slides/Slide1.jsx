@@ -3,7 +3,7 @@ import { SlidesSidebar } from "../SlidesSidebar";
 import './Slide1.css'
 import { Bar } from "./Bar";
 
-export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
+export function Slide1({accountType, slideOpen, goToSlide, user, setUser}) {
   const [title, setTitle] = useState('')
   const inputRef = useRef(null)
   const formRef = useRef(null)
@@ -97,7 +97,7 @@ export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
         ...prev,
         title
       }))
-      setSlideOpen(2)
+      goToSlide(2)
     } else {
       formRef.current.reportValidity()
     }
@@ -116,7 +116,10 @@ export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
           <div className="left">
             <div className="wrap">
               <p className="txt">YOUR TITLE</p>
-              <form ref={formRef}>
+              <form ref={formRef} onSubmit={e => {
+                e.preventDefault();
+                handleContinue()
+              }}>
                 <input type="text" placeholder="Type your professional title" ref={inputRef} maxLength={25} onChange={e => {
                   setTitle(e.target.value);
                   setSugsId(null)
@@ -190,7 +193,7 @@ export function Slide1({accountType, slideOpen, setSlideOpen, user, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(0)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
           <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>

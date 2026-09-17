@@ -3,7 +3,7 @@ import { SlidesSidebar } from '../SlidesSidebar'
 import { Bar } from './Bar'
 import './Slide5.css'
 
-export function Slide5({slideOpen, accountType, setSlideOpen, setUser}) {
+export function Slide5({slideOpen, accountType, goToSlide, setUser}) {
   const [bio, setBio] = useState('')
   const inputRef = useRef(null)
   const formRef = useRef(null)
@@ -28,7 +28,7 @@ export function Slide5({slideOpen, accountType, setSlideOpen, setUser}) {
         ...prev,
         bio
       }))
-      setSlideOpen( accountType === 'Freelancer' ? 6 : 4)
+      goToSlide(accountType === 'Freelancer' ? 6 : 4)
     } else {
       formRef?.current?.reportValidity();
     }
@@ -65,7 +65,7 @@ export function Slide5({slideOpen, accountType, setSlideOpen, setUser}) {
           </div>
         </div>
         <div className="bottom">
-          <button onClick={() => setSlideOpen(accountType === 'Freelancer' ? 4 : 2)}><i className="fa-solid fa-arrow-left"></i> Back</button>
+          <button onClick={() => window.history.back()}><i className="fa-solid fa-arrow-left"></i> Back</button>
           <button className={accountType === 'Freelancer' ? 'free' : 'recru'} onClick={handleContinue}>Continue <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>

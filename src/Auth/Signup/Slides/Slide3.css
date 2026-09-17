@@ -176,8 +176,13 @@
           height: fit-content;
           gap: 15px;
           .wrap {
-            .txt2 {
+            .txt {
               font-size: 14px;
+              white-space: nowrap;
+              .error {
+                font-size: 13px;
+                margin-left: 10px;
+              }
             }
             form {
               display: flex;

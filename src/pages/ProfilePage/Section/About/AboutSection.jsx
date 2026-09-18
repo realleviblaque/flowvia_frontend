@@ -3,15 +3,18 @@ import { ProfilePageRightSidebar } from "../../../../components/ProfilePage/Prof
 import { user } from "../../../../data/ProfilePage/user";
 import formatCount from "../../../../utils/formatCount";
 import './AboutSection.css'
+import { useNavigate } from "react-router-dom";
 
 export function AboutSection() {
+  const navigate = useNavigate();
+  const isMobile = window.innerWidth < 768;
   return (
     <section className="about-section">
       <div className="main-about-wrap">
         <div className="bio-part">
           <div className="top">
             <p>Bio</p>
-            <button>Edit</button>
+            <button onClick={() => navigate(isMobile ? '/settings?p=p' : '/settings')}>Edit</button>
           </div>
           <div className="bottom">
             <p>{user.bio}</p>
@@ -20,7 +23,7 @@ export function AboutSection() {
         <div className="professioal-part">
           <div className="top">
             <p>Professional Details</p>
-            <button>Edit</button>
+            <button onClick={() => navigate(isMobile ? '/settings' : '/settings')}>Edit</button>
           </div>
           <div className="bottom">
             <div className="left">
@@ -104,7 +107,7 @@ export function AboutSection() {
         <div className="skills-part">
           <div className="top">
             <p>Skills</p>
-            <button>Edit</button>
+            <button onClick={() => navigate(isMobile ? '/settings?p=pd' : '/settings/professional-details')}>Edit</button>
           </div>
           <div className="bottom">
             {user.skills.length === 0 && (
@@ -124,7 +127,7 @@ export function AboutSection() {
         <div className="links-part">
           <div className="top">
             <p>Links & Contact</p>
-            <button>Edit</button>
+            <button onClick={() => navigate(isMobile ? '/settings?p=p' : '/settings')}>Edit</button>
           </div>
           <div className="bottom">
             {user.links.length === 0 

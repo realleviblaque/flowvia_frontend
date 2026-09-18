@@ -2,8 +2,10 @@ import { Fragment } from 'react'
 import { user } from '../../data/ProfilePage/user'
 import './ProfilePageRightSidebar.css'
 import { generateStars } from '../../utils/generateStars';
+import { useNavigate } from 'react-router-dom';
 
 export function ProfilePageRightSidebar() {
+  const naviagate = useNavigate();
   let linkCount = 0;
   return (
     <div className="acivity-sidebar">
@@ -16,7 +18,7 @@ export function ProfilePageRightSidebar() {
           {user.skills.length === 0 && (
             <div className='no-skills'>
               <p>You have not added any skills yet</p>
-              <button>Add Skills</button>
+              <button onClick={() => naviagate('/settings/professional-details')}>Add Skills</button>
             </div>
           )}
           <div className="skill-wrap-fill">
@@ -72,7 +74,7 @@ export function ProfilePageRightSidebar() {
         {user.links.length === 0 && (
           <div className="no-links">
             <p>You have not added any links yet</p>
-            <button>Add Links</button>
+            <button onClick={() => naviagate('/settings')}>Add Links</button>
           </div>
         )}
         <div className="link-content">

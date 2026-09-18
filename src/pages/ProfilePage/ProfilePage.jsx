@@ -13,13 +13,15 @@ import { ProjectSection } from "./Section/Projects/ProjectSection";
 import { PortfolioSection } from "./Section/Portfolio/PortfolioSection";
 import { AboutSection } from "./Section/About/AboutSection";
 import { ReviewSection } from "./Section/Review/ReviewSection";
+import { useNavigate } from "react-router-dom";
 
 export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const [viewingSection, setViewingSection] = useState('Activity')
+  const [openMoreMenu, setOpenMoreMenu] = useState(false)
   const scrollRef = useRef(null);
   const sectionRef = useRef(null);
-  const name = user.firstName.slice(0, 1) + user.lastName.slice(0, 1)
-
+  const name = user.firstName.slice(0, 1) + user.lastName.slice(0, 1);
+  const navigate = useNavigate();
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -34,7 +36,6 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       })
     }
   }, [viewingSection])
-
   const handleTabClick = (tab) => {
     const container = scrollRef.current;
     const section = sectionRef.current;
@@ -51,36 +52,78 @@ export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
 
     setViewingSection(tab)
   }
+  const copyToClipboard = async (link) => {
+    try {
+      await navigator.clipboard.writeText(link);
+      setOpenMoreMenu(false)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
+  const handleShareClick = async () => {
+    const profileUrl = `${window.location.origin}/user/${user.username}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: `${user.username} on Flowvia!`,
+          text: `Check out ${user.username}'s profile on Flowvia.`,
+          url: profileUrl,
+        })
+        setOpenMoreMenu(false)
+        return;
+      }
+      await navigator.clipboard.writeText(profileUrl);
+      setOpenMoreMenu(false);
+    } catch (error) {
+      if (error.name !== 'AbortError') {
+        console.error('Failed to share profile:', error)
+      }
+    }
+  }
   return (
     <> 
       <SideBar notification={all} />
-      <MobileHeader2 />
+      <MobileHeader2 copyToClipboard={copyToClipboard} openMoreMenu={openMoreMenu} setOpenMoreMenu={setOpenMoreMenu} handleShareClick={handleShareClick} user={user} />
       <main>
         <div className="profile-page-container" ref={scrollRef}>
           <div className="profile-top-container">
             <div className="cover-pic-wrap">
-              {user?.cover && <img src="/profile.png" />}
+              {user?.cover && <img src={user.cover} />}
               <button className="edit-cover-btn">
                 <i className="fa-solid fa-pencil"></i>
-                <span>Edit cover</span>
+                <span onClick={() => navigate('/profile/cover')}>Edit cover</span>
               </button>
             </div>
             <div className="profle-action-wrap">
               <div className={`profile-img ${user?.image ? '' : 'no-image'}`}>
-                {user?.image ? <img className="pic" src="/profile.png" /> : <div className="name-Profiler">{name.toUpperCase()}</div>}
+                {user?.image ? <img className="pic" src={user.image} /> : <div className="name-Profiler">{name.toUpperCase()}</div>}
                 <span className="active"></span>
               </div>
               <div className="profile-action">
-                <button className="edit-profile">
+                <button className="edit-profile" onClick={() => navigate('/settings?p')}>
                   <i className="fa-solid fa-pencil"></i>
                   <span>Edit Profile</span>
                 </button>
-                <button className="share-profile">
+                <button className="share-profile" onClick={handleShareClick}>
                   <span>Share</span>
                 </button>
-                <button className="more-profile">
+                <button className="more-profile" onClick={() => setOpenMoreMenu(prev => !prev)}>
                   <i className="fa-solid fa-ellipsis-v"></i>
                 </button>
+                <div className={`more-options ${openMoreMenu ? 'open' : ''}`}>
+                  <div onClick={() => navigate('/create/post/drafts')}>
+                    <p>Drafts</p>
+                    <i className="fa-solid fa-file-alt"></i>
+                  </div>
+                  <div onClick={() => copyToClipboard(`${window.location.origin}/user/${user.username}`)}>
+                    <p>Copy profile link</p>
+                    <i className="fa-solid fa-link"></i>
+                  </div>
+                  <div onClick={() => copyToClipboard(`${window.location.origin}/user/${user.username}/porfolio`)}>
+                    <p>Copy portfolio link</p>
+                    <i className="fa-solid fa-link"></i>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="profile-details">

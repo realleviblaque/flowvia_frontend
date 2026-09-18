@@ -22,11 +22,22 @@ import { Payout } from '../../components/SettingsPage/Pages/Payout/Payout';
 import { Saved } from '../../components/SettingsPage/Pages/Saved/Saved';
 import { Deactivate } from '../../components/SettingsPage/Pages/Deactivate/Deactivate';
 import { Delete } from '../../components/SettingsPage/Pages/Delete/Delete';
+import { useSearchParams } from 'react-router-dom';
 
 export function MobileSettingsPage({savePosts}) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSettings, setCurretSettings] = useState('Profile')
   const contentRef = useRef(null)
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    const handleOpenProfile = () => {
+      if (searchParams.has('p')) {
+        setIsOpen(true)
+        setCurretSettings('Profile')
+      }
+    }
+    handleOpenProfile();
+  }, [searchParams])
 
   useEffect(() => {
     contentRef.current?.scrollTo({

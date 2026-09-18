@@ -4,6 +4,7 @@ import { Projects } from '../../../../data/ProfilePage/projects';
 
 import './ProjectSection.css'
 import { statusTimeAgo } from '../../../../utils/statusTimeAgo';
+import { useNavigate } from 'react-router-dom';
 
 export function ProjectSection() {
   const [projects, setProjects] = useState([])
@@ -12,6 +13,7 @@ export function ProjectSection() {
   ongoing = projects.filter(p => !p.isComplete).length,
   open = projects.filter(p => p.projectType === 'Public Project').length,
   completed = projects.filter(p => p.isComplete).length
+  const naviage = useNavigate();
   useEffect(() => {
     const handleFilter = () => {
       switch (filter) {
@@ -44,7 +46,7 @@ export function ProjectSection() {
             <div className={filter === 'Ongoing' ? 'current' : ''} onClick={() => setFilter('Ongoing')}>Ongoing <span>{ongoing}</span></div>
             <div className={filter === 'Open' ? 'current' : ''} onClick={() => setFilter('Open')}>Open <span>{open}</span></div>
             <div className={filter === 'Completed' ? 'current' : ''} onClick={() => setFilter('Completed')}>Completed <span>{completed}</span></div>
-            <button>
+            <button onClick={() => naviage('/projects')}>
               Go to Projects
             </button>
           </div>

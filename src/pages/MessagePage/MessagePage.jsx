@@ -8,6 +8,7 @@ import { PlusModal } from "../../components/PlusModal";
 import { ChatLists } from "../../data/MessagePage/messages";
 import dayjs from "../../lib/dayjs";
 import { formatLastSentDate } from "../../utils/formatLastSentData";
+import { useNavigate } from "react-router-dom";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
@@ -23,6 +24,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const chatContainerRef = useRef(null)
   const [plusMediaOpen, setPlusMediaOpen] = useState(false)
   const [chatMenuOpen, setChatMenuOpen] = useState(false)
+  const navigate = useNavigate()
   const isMobile = window.innerWidth < 768;
   useLayoutEffect(() => {
     const handleMsgDraftUpdate = () => {
@@ -257,7 +259,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                   </span>
                 ) : (
                   <>
-                    <div className="view-profile" title="View Profile">
+                    <div className="view-profile" title="View Profile" onClick={() => navigate(`/user/${selectedChat.user.username}`)}>
                       View Profile
                     </div>
                     <div className="hire-btn" title="Hire Now">
@@ -272,7 +274,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                 <div className={`chat-menu ${chatMenuOpen ? 'open' : ''}`}>
                   {isMobile ? (
                     <>
-                      <p>View profile</p>
+                      <p onClick={() => navigate(`/user/${selectedChat.user.username}`)}>View profile</p>
                       <p>Hire</p>
                       <p>Serach messages</p>
                       <p>Mute notifications</p>

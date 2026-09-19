@@ -9,6 +9,7 @@ import { ChatLists } from "../../data/MessagePage/messages";
 import dayjs from "../../lib/dayjs";
 import { formatLastSentDate } from "../../utils/formatLastSentData";
 import { useNavigate } from "react-router-dom";
+import { AttachmentPreview } from "./AttachmentPreview";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
@@ -25,6 +26,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const [plusMediaOpen, setPlusMediaOpen] = useState(false)
   const [chatMenuOpen, setChatMenuOpen] = useState(false)
   const navigate = useNavigate()
+  const [selectedFiles, setSelectedFiles] = useState([])
+  const cameraInputRef = useRef(null)
+  const photoInputRef = useRef(null)
+  const filesInputRef = useRef(null)
   const isMobile = window.innerWidth < 768;
   useLayoutEffect(() => {
     const handleMsgDraftUpdate = () => {
@@ -198,6 +203,29 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       messageInput.current.focus();
     }
   }
+  const handleFilesSelected = (e) => {
+    const files = Array.from(e.target.files || []);
+
+    if (!files.length) return;
+
+    setSelectedFiles((prev) => [...prev, ...files]);
+    e.target.value = ''
+  };
+  const handleRemoveFile = (index) => {
+    setSelectedFiles((prev) => prev.filter((_, fileIndex) => fileIndex !== index))
+  }
+  const handleCameraClick = () => {
+    cameraInputRef.current?.click();
+    setPlusMediaOpen(false)
+  }
+  const handlePhotoClick = () => {
+    photoInputRef.current?.click();
+    setPlusMediaOpen(false)
+  }
+  const handleFilesClick = () => {
+    filesInputRef.current?.click();
+    setPlusMediaOpen(false)
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -337,12 +365,25 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         )
                       )}
                       {message.details.sender === 'sender' && (
-                        <div className="send-msg-wrap">
-                          <span className="text-wrap">
-                            <p className="send-msg-text">{message.details.text}</p>
-                            <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
-                          </span>
-                        </div>
+                        <>
+                          {!message.details.image && (
+                            <div className="send-msg-wrap">
+                              <span className="text-wrap">
+                                <p className="send-msg-text">{message.details.text}</p>
+                                <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
+                              </span>
+                            </div>
+                          )}
+                          {message.details.image && (
+                            <div className="send-image-msg-wrap">
+                              <img src={message.details.image} />
+                              <span className="text-wrap">
+                                <p className="send-msg-text">{message.details.text}</p>
+                                <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
+                              </span>
+                            </div>
+                          )}
+                        </>
                       )}
                     </Fragment>
                   )
@@ -353,19 +394,70 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               {isMobile ? (
                 <div className="message-bottom-cover">
                   <div className="message-input">
-                    <span onClick={handlePlusModal} className="plus-button">
-                      <i className="fa-solid fa-plus"></i>
-                    </span>
+                    {selectedFiles.length > 0 && (
+                      <div className="media-cover">
+                        {selectedFiles.map((file, index) => {
+                          return (
+                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveFile(index)} />
+                          )
+                        })}
+                      </div>
+                    )}
+                    <div className="input-cover-area">
+                      <span onClick={handlePlusModal} className="plus-button">
+                        <i className="fa-solid fa-plus"></i>
+                      </span>
+                      <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
+                        const input = messageInput.current;
+                        input.style.height = '18px'
+                        input.style.height = (input.scrollHeight) + 'px'
+                        if (input.scrollHeight > 200) {
+                          input.style.height = '200px'
+                        }
+                      }} onKeyDown={e => {
+                          if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                            e.preventDefault();
+                            sendMessage();
+                          }
+                        }} />
+                      <span className={`send ${message.trim() && 'ready'} ${selectedFiles.length > 0 && 'ready'}`} onClick={sendMessage}>
+                        <i className="fa-solid fa-paper-plane"></i>
+                      </span>
+                    </div>
+                  </div>
                     <div className={`plus-media-modal ${plusMediaOpen ? 'open' : ''}`}>
-                      <div>
+                      <div onClick={handleCameraClick}>
+                        <input 
+                          ref={cameraInputRef}
+                          type="file"
+                          accept="image/*,video/*"
+                          capture="environmet"
+                          hidden 
+                          onChange={handleFilesSelected}
+                        />
                         <i className="fa-regular fa-camera"></i>
                         <p>Camera</p>
                       </div>
-                      <div>
+                      <div onClick={handlePhotoClick}>
+                        <input 
+                          ref={photoInputRef}
+                          type="file"
+                          accept="image/*,video/*"
+                          multiple
+                          hidden 
+                          onChange={handleFilesSelected}
+                        />
                         <i className="fa-regular fa-image"></i>
                         <p>Photos</p>
                       </div>
-                      <div>
+                      <div onClick={handleFilesClick}>
+                        <input 
+                          ref={filesInputRef}
+                          type="file"
+                          multiple
+                          hidden 
+                          onChange={handleFilesSelected}
+                        />
                         <i className="fa-solid fa-paperclip"></i>
                         <p>Files</p>
                       </div>
@@ -374,23 +466,6 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         <p>Projects</p>
                       </div>
                     </div>
-                    <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
-                      const input = messageInput.current;
-                      input.style.height = '18px'
-                      input.style.height = (input.scrollHeight) + 'px'
-                      if (input.scrollHeight > 200) {
-                        input.style.height = '200px'
-                      }
-                    }} onKeyDown={e => {
-                        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-                          e.preventDefault();
-                          sendMessage();
-                        }
-                      }} />
-                    <span className={`send ${message.trim() && 'ready'}`} onClick={sendMessage}>
-                      <i className="fa-solid fa-paper-plane"></i>
-                    </span>
-                  </div>
                 </div>
               ) : (
                 <div className="send-msg-input-wrap">

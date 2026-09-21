@@ -1,7 +1,7 @@
 import dayjs from "../../lib/dayjs";
 
 export const ChatLists = [{
-  id: crypto.randomUUID(),
+  id: 'hiell1948',
   type: 'Direct',
   user: {
     id: crypto.randomUUID(),

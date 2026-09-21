@@ -8,11 +8,12 @@ import { PlusModal } from "../../components/PlusModal";
 import { ChatLists } from "../../data/MessagePage/messages";
 import dayjs from "../../lib/dayjs";
 import { formatLastSentDate } from "../../utils/formatLastSentData";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { AttachmentPreview } from "./AttachmentPreview";
 
 
 export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedChat, setSelectedChat] = useState(null)
   const [lists, setLists] = useState(ChatLists)
   const [filter, setFilter] = useState('All')
@@ -30,7 +31,45 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const cameraInputRef = useRef(null)
   const photoInputRef = useRef(null)
   const filesInputRef = useRef(null)
+  const chatId = searchParams.get('chat')
+  const messageRef = useRef(message);
+  const selectedIdRef = useRef(selectedId)
   const isMobile = window.innerWidth < 768;
+  useLayoutEffect(() => {
+    const handleDisplayChat = () => {
+      if (!chatId) {
+        setSelectedChat(null)
+        setSelectedId(null)
+        setChatOpen(false)
+        return;
+      }
+      const chat = ChatLists.find(chat => chat.id === chatId);
+      if (chat) {
+        chat.messages.forEach((message) => {
+          if (!message.details.isRead) {
+            message.details.isRead = true;
+          }
+        })
+        setSelectedId(chatId)
+        requestAnimationFrame(() => setChatOpen(true))
+        setSelectedChat({
+          ...chat,
+          messages: [...chat.messages]
+        })
+      } else {
+        setSelectedChat(null)
+        setSelectedId(null)
+        setChatOpen(false)
+      }
+    }
+    handleDisplayChat();
+  }, [chatId])
+  useEffect(() => {
+    messageRef.current = message
+  }, [message])
+  useEffect(() => {
+    selectedIdRef.current = selectedId;
+  }, [selectedId])
   useLayoutEffect(() => {
     const handleMsgDraftUpdate = () => {
       if (draftText[selectedId]) {
@@ -57,8 +96,9 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     ;
   }, [draftText, selectedId, isMobile])
   useEffect(() => {
-    const handlePopState = () => {
-      setChatOpen(false);
+    const handleBackBrowser = () => {
+      const message = messageRef.current;
+      const selectedId = selectedIdRef.current;
       if (message.trim()) {
         setDraftText(prev => ({...prev, [selectedId]: message}))
       } else {
@@ -69,11 +109,17 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
         })
       }
     };
-    window.addEventListener('popstate', handlePopState);
+    handleBackBrowser();
+  }, [chatId])
+  useEffect(() => {
+    const handlePopState = () => {
+      console.log('POPSTATE FIRED')
+    }
+    window.addEventListener('popstate', handlePopState)
     return () => {
       window.removeEventListener('popstate', handlePopState)
     }
-  }, [selectedId, message])
+  }, [])
   const handleScrollTop = () => {
     const chat = messagesEndRef.current;
     if (!chat) return;
@@ -152,8 +198,9 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     e.preventDefault();
     setChatMenuOpen(!chatMenuOpen)
   }
-  const handleMobileChatClose = () => {
+  const handleBack = () => {
     window.history.back();
+    //setChatOpen(false)
     if (message.trim()) {
       setDraftText(prev => ({...prev, [selectedId]: message}))
     } else {
@@ -244,6 +291,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
           message={message}
           draftText={draftText}
           setDraftText={setDraftText}
+          setSearchParams={setSearchParams}
         />
         {!isMobile && !selectedChat && (
           <div className="no-selected-message-wrap">
@@ -256,7 +304,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
             <div className="message-top">
               <div className="top-left">
                 {isMobile && (
-                  <span className="back" onClick={handleMobileChatClose}>
+                  <span className="back" onClick={handleBack}>
                     <i className="fa-solid fa-chevron-left"></i>
                   </span>
                 )}
@@ -486,8 +534,23 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       }}></textarea>
                     </div>
                     <div className="bottom">
-                      <i className="fa-solid fa-paperclip"></i>
-                      <i className="fa-regular fa-image"></i>
+                      <input 
+                        ref={filesInputRef}
+                        type="file"
+                        multiple
+                        hidden 
+                        onChange={handleFilesSelected}
+                      />
+                      <input 
+                        ref={photoInputRef}
+                        type="file"
+                        accept="image/*,video/*"
+                        multiple
+                        hidden 
+                        onChange={handleFilesSelected}
+                      />
+                      <i className="fa-solid fa-paperclip" onClick={handleFilesClick}></i>
+                      <i className="fa-regular fa-image" onClick={handlePhotoClick}></i>
                       <i className="fa-solid fa-table-cells-large"></i>
                       <button onClick={sendMessage} className={message.trim() && 'active'}>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>

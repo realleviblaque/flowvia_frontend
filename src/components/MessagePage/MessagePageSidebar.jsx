@@ -3,11 +3,14 @@ import { ChatLists } from '../../data/MessagePage/messages'
 import './MessagePageSidebar.css'
 import dayjs from '../../lib/dayjs';
 
-export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter, message, draftText, setDraftText}) {
+export function MessagePageSidebar({setSearchParams, setChatOpen, selectedId, setSelectedId, handleScrollTop, setSelectedChat, lists, setLists, filter, setFilter, message, draftText, setDraftText}) {
   const unReadLists = lists.filter(list => list.messages.some(msg => msg.details.isRead === false)).length;
   const requestLists = lists.filter(list => list.type === 'Request').length
   const [search, setSearch] = useState('')
   const handleClick = (list) => {
+    setSearchParams({
+      chat: list.id
+    })
     const chat = ChatLists.find(chat => chat.id === list.id);
     if (!chat) return;
     
@@ -22,13 +25,6 @@ export function MessagePageSidebar({setChatOpen, selectedId, setSelectedId, hand
       ...chat,
       messages: [...chat.messages]
     })
-    if (window.innerWidth < 768) {
-      window.history.pushState(
-        {chatOpen: true},
-        '',
-        window.location.href
-      )
-    }
     if (selectedId === list.id) {
       handleScrollTop();
       return;

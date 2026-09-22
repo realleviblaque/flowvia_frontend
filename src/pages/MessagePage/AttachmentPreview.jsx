@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function AttachmentPreview({file, onRemove}) {
+export function AttachmentPreview({file, onRemove, type}) {
   const [previewUrl, setPreviewUrl] = useState('');
   const [videoThumbnail, setVideoThumbnail] = useState('')
   const fileExtention = file.name?.split('.').pop();
@@ -62,35 +62,71 @@ export function AttachmentPreview({file, onRemove}) {
     }
     return filename;
   }
-
-  if (file.type.startsWith('image/')) {
+  if (type === 'media') {
+    if (file.type.startsWith('image/')) {
+      return (
+        <div className="attachment-preview">
+          <i className="fa-solid fa-x remove" onClick={onRemove}></i>
+          {previewUrl && (
+            <img src={previewUrl} alt={file.name} />
+          )}
+        </div>
+      )
+    }
+    if (file.type.startsWith('video/')) {
+      return (
+        <div className="attachment-preview video">
+          <i className="fa-solid fa-x remove" onClick={onRemove}></i>
+          {videoThumbnail && (
+            <img src={videoThumbnail} alt={file.name} />
+          )}
+          <i className="fa-solid fa-play video"></i>
+        </div>
+      )
+    }
+  }
+  if (type === 'file') {
+    if (file.type.startsWith('image/')) {
+      return (
+        <div className="attachment-preview files">
+          <i className="fa-solid fa-x remove" onClick={onRemove}></i>
+          <i className='fa-solid fa-image file'></i>
+          <span>
+            {fileExtention.toUpperCase()}
+          </span>
+        </div>
+      )
+    }
+    if (file.type.startsWith('video/')) {
+      return (
+        <div className="attachment-preview files">
+          <i className="fa-solid fa-x remove" onClick={onRemove}></i>
+          <i className='fa-solid fa-play file'></i>
+          <span>
+            {fileExtention.toUpperCase()}
+          </span>
+        </div>
+      )
+    }
+    if (fileExtention === 'mp3') {
+      return (
+        <div className="attachment-preview files">
+          <i className="fa-solid fa-x remove" onClick={onRemove}></i>
+          <i className='fa-solid fa-music file mp3'></i>
+          <span>
+            {fileExtention.toUpperCase()}
+          </span>
+        </div>
+      ) 
+    }
     return (
-      <div className="attachment-preview">
+      <div className="attachment-preview files">
         <i className="fa-solid fa-x remove" onClick={onRemove}></i>
-        {previewUrl && (
-          <img src={previewUrl} alt={file.name} />
-        )}
+        <i className={`fa-solid fa-${fileExtention.includes('mp') ? 'music' : 'file'} file ${fileExtention === 'pdf' ? 'pdf' :fileExtention.includes('doc') ? 'doc' : ''}`}></i>
+        <span>
+          {truncatedFilename(file.name)}
+        </span>
       </div>
     )
   }
-  if (file.type.startsWith('video/')) {
-    return (
-      <div className="attachment-preview video">
-        <i className="fa-solid fa-x remove" onClick={onRemove}></i>
-        {videoThumbnail && (
-          <img src={videoThumbnail} alt={file.name} />
-        )}
-        <i className="fa-solid fa-play video"></i>
-      </div>
-    )
-  }
-  return (
-    <div className="attachment-preview files">
-      <i className="fa-solid fa-x remove" onClick={onRemove}></i>
-      <i className={`fa-solid fa-file file ${fileExtention === 'pdf' ? 'pdf' :fileExtention.includes('doc') ? 'doc' : ''}`}></i>
-      <span>
-        {truncatedFilename(file.name)}
-      </span>
-    </div>
-  )
 }

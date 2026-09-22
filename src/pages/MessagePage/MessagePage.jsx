@@ -259,48 +259,52 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     filesInputRef.current?.click();
     setPlusMediaOpen(false)
   }
-  const addSelectedFiles = (files) => {
+  const addSelectedFiles = (files, type) => {
     if (!files.length) return;
-    const media = [];
-    const otheFiles = [];
-    files.forEach((file) => {
-      if (file.type.startsWith('image/') || file.type.startsWith('video/')) {
-        media.push(file)
-      } else {
+    if (type === 'file') {
+      const otheFiles = [];
+      files.forEach((file) => {
         otheFiles.push(file)
+      })
+      if (otheFiles.length > 0) {
+        setSelectedFiles(prev => {
+          const remianingSlots = 4 - prev.length;
+          if (remianingSlots <= 0) return prev;
+          return [
+            ...prev,
+            ...otheFiles.slice(0, remianingSlots)
+          ]
+        })
       }
-    })
-
-    if (media.length > 0) {
-      setSelectedMedia(prev => {
-        const remianingSlots = 4 - prev.length;
-        if (remianingSlots <= 0) return prev;
-        return [
-          ...prev,
-          ...media.slice(0, remianingSlots)
-        ]
-      })
     }
-    if (otheFiles.length > 0) {
-      setSelectedFiles(prev => {
-        const remianingSlots = 4 - prev.length;
-        if (remianingSlots <= 0) return prev;
-        return [
-          ...prev,
-          ...otheFiles.slice(0, remianingSlots)
-        ]
+    if (type === 'media') {
+      const media = [];
+      files.forEach((file) => {
+        if (file.type.startsWith('image/') || file.type.startsWith('video/')) {
+          media.push(file);
+        }
       })
+      if (media.length > 0) {
+        setSelectedMedia(prev => {
+          const remianingSlots = 4 - prev.length;
+          if (remianingSlots <= 0) return prev;
+          return [
+            ...prev,
+            ...media.slice(0, remianingSlots)
+          ]
+        })
+      }
     }
   }
   const handlePhotosSelected = (e) => {
     const files = Array.from(e.target.files || []);
-    addSelectedFiles(files)
+    addSelectedFiles(files, 'media')
     e.target.value = ''
     messageInput.current.focus();
   }
   const handleFilesSelected = (e) => {
     const files = Array.from(e.target.files || []);
-    addSelectedFiles(files)
+    addSelectedFiles(files, 'file')
     e.target.value = ''
     messageInput.current.focus();
   }
@@ -309,6 +313,12 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   }
   const handleRemoveFile = (index) => {
     setSelectedFiles((prev) => prev.filter((_, fileIndex) => fileIndex !== index))
+  }
+  const getFileSize = (size) => {
+    if (size < 1024) return `${size} B`;
+    else if (size < 1024 * 1024) return `${(size / 1024).toFixed(1)} KB`;
+    else if (size < 1024 * 1024 * 1024) return `${(size / (1024 * 1024)).toFixed(1)} MB`;
+    else return `${(size / (1024 * 1024 * 1024)).toFixed(1)} GB`;
   }
   return (
     <>
@@ -430,6 +440,44 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       {message.details.sender == 'user' && (
                         isMobile ? (
                           <>
+                            {message.details.files && (
+                              <div className="receive-wrap">
+                                <img src="/profile.png" />
+                                <div className="receive-file-msg-wrap">
+                                  {message.details.files.map((file, index) => {
+                                    const extention = file.name.split('.').pop();
+                                    const image = file.type.startsWith('image/');
+                                    const video = file.type.startsWith('video/')
+                                    return (
+                                      <div className={`file-wrap ${index === message.details.files.length - 1 ? 'last' : ''}`} key={`${file.name}-${index}`}>
+                                        <div className="file-box">
+                                          <i className={`fa-solid fa-${image ? 'image' :video ? 'play-circle' :extention === 'mp3' ? 'music' : 'file'} ${extention.includes('doc') ? 'doc' :extention === 'pdf' ? 'pdf' :extention === 'mp3' ? 'mp3' : ''}`}></i>
+                                          <div className="info">
+                                            <p className="name">{file.name}</p>
+                                            <div>
+                                              <p>{getFileSize(file.size)}</p>
+                                              <span></span>
+                                              <p>{extention.toUpperCase()}</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <span className="text-wrap">
+                                          <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                        </span>
+                                      </div>
+                                    )
+                                  })}
+                                  {message.details.text && (
+                                    <div className="receive-msg-wrap">
+                                      <span className="text-wrap">
+                                        <p className="receive-msg-text">{message.details.text}</p>
+                                        <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                      </span>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            )}
                             {message.details.images && (
                               <div className="receive-wrap">
                                 <img src="/profile.png" />
@@ -451,7 +499,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                                 </div>
                               </div>
                             )}
-                            {(message.details.text && !message.details.images) && (
+                            {(message.details.text && !message.details.images && !message.details.files) && (
                               <div className="receive-wrap">
                                 <img src="/profile.png" />
                                 <div className="receive-msg-wrap">
@@ -466,6 +514,41 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                           </>
                         ) : (
                           <>
+                            {message.details.files && (
+                              <div className="receive-file-msg-wrap">
+                                {message.details.files.map((file, index) => {
+                                  const extention = file.name.split('.').pop();
+                                  const image = file.type.startsWith('image/');
+                                  const video = file.type.startsWith('video/')
+                                  return (
+                                    <div className={`file-wrap ${index === message.details.files.length - 1 ? 'last' : ''}`} key={`${file.name}-${index}`}>
+                                      <div className="file-box">
+                                        <i className={`fa-solid fa-${image ? 'image' :video ? 'play-circle' :extention === 'mp3' ? 'music' : 'file'} ${extention.includes('doc') ? 'doc' :extention === 'pdf' ? 'pdf' :extention === 'mp3' ? 'mp3' : ''}`}></i>
+                                        <div className="info">
+                                          <p className="name">{file.name}</p>
+                                          <div>
+                                            <p>{getFileSize(file.size)}</p>
+                                            <span></span>
+                                            <p>{extention.toUpperCase()}</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <span className="text-wrap">
+                                        <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                      </span>
+                                    </div>
+                                  )
+                                })}
+                                {message.details.text && (
+                                  <div className="receive-msg-wrap">
+                                    <span className="text-wrap">
+                                      <p className="receive-msg-text">{message.details.text}</p>
+                                      <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            )}
                             {message.details.images && (
                               <div className="receive-image-msg-wrap">
                                 <div className="image-grid">
@@ -484,7 +567,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                                 </span>
                               </div>
                             )}
-                            {(message.details.text && !message.details.images) && (
+                            {(message.details.text && !message.details.images && !message.details.files) && (
                               <div className="receive-msg-wrap">
                                 <span className="text-wrap">
                                   <p className="receive-msg-text">{message.details.text}
@@ -498,16 +581,51 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       )}
                       {message.details.sender === 'sender' && (
                         <>
+                          {message.details.files && (
+                            <div className="send-file-msg-wrap">
+                              {message.details.files.map((file, index) => {
+                                const extention = file.name.split('.').pop();
+                                const image = file.type.startsWith('image/');
+                                const video = file.type.startsWith('video/')
+                                return (
+                                  <div className={`file-wrap ${index === message.details.files.length - 1 ? 'last' : ''}`} key={`${file.name}-${index}`}>
+                                    <div className="file-box">
+                                      <i className={`fa-solid fa-${image ? 'image' :video ? 'play-circle' :extention === 'mp3' ? 'music' : 'file'} ${extention.includes('doc') ? 'doc' :extention === 'pdf' ? 'pdf' :extention === 'mp3' ? 'mp3' : ''}`}></i>
+                                      <div className="info">
+                                        <p className="name">{file.name}</p>
+                                        <div>
+                                          <p>{getFileSize(file.size)}</p>
+                                          <span></span>
+                                          <p>{extention.toUpperCase()}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span className="text-wrap">
+                                      <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
+                                    </span>
+                                  </div>
+                                )
+                              })}
+                              {message.details.text && (
+                                <div className="send-msg-wrap">
+                                  <span className="text-wrap">
+                                    <p className="send-msg-text">{message.details.text}</p>
+                                    <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          )}
                           {message.details.images && (
                             <div className="send-image-msg-wrap">
                               <div className="image-grid">
                                 {message.details.images.map((image, index) => {
-                                const imageUrl = URL.createObjectURL(image);
-                                return (
-                                  <div className="media-box" key={`${image.name}-${index}`}>
-                                    <img loading="lazy" src={imageUrl} />
-                                  </div>
-                                )
+                                  const imageUrl = URL.createObjectURL(image);
+                                  return (
+                                    <div className="media-box" key={`${image.name}-${index}`}>
+                                      <img loading="lazy" src={imageUrl} />
+                                    </div>
+                                  )
                                 })}
                               </div>
                               <span className="text-wrap">
@@ -516,7 +634,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                               </span>
                             </div>
                           )}
-                          {(message.details.text && !message.details.images) && (
+                          {(message.details.text && !message.details.images && !message.details.files) && (
                             <div className="send-msg-wrap">
                               <span className="text-wrap">
                                 <p className="send-msg-text">{message.details.text}</p>
@@ -539,12 +657,12 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       <div className="media-cover">
                         {selectedMedia.length > 0 && selectedMedia.map((file, index) => {
                           return (
-                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveMedia(index)} />
+                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveMedia(index)} type='media' />
                           )
                         })}
                         {selectedFiles.length > 0 && selectedFiles.map((file, index) => {
                           return (
-                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveFile(index)} />
+                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveFile(index)} type='file' />
                           )
                         })}
                       </div>

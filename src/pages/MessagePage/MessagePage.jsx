@@ -27,9 +27,9 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
   const [plusMediaOpen, setPlusMediaOpen] = useState(false)
   const [chatMenuOpen, setChatMenuOpen] = useState(false)
   const navigate = useNavigate()
+  const [selectedMedia, setSelectedMedia] = useState([])
   const [selectedFiles, setSelectedFiles] = useState([])
-  const cameraInputRef = useRef(null)
-  const photoInputRef = useRef(null)
+  const photosInputRef = useRef(null)
   const filesInputRef = useRef(null)
   const chatId = searchParams.get('chat')
   const messageRef = useRef(message);
@@ -207,7 +207,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     }
   }
   const sendMessage = () => {
-    if (message.trim() || selectedFiles.length > 0) {
+    if (message.trim() || selectedFiles.length > 0 || selectedMedia.length > 0) {
       const chat = ChatLists.find(chat => chat.id === selectedId);
       if (!chat) return;
       const newMessage = {
@@ -217,7 +217,8 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
         details: {
           sender: 'sender',
           ...(message.trim() && {text: message.trim()}),
-          ...(selectedFiles.length > 0 && {images: selectedFiles}),
+          ...(selectedMedia.length > 0 && {images: selectedMedia}),
+          ...(selectedFiles.length > 0 && {files: selectedFiles}),
           isSeen: false
         }
       }
@@ -239,6 +240,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       setFilter('All')
       setMessage('')
       setSelectedFiles([])
+      setSelectedMedia([])
       if (isMobile) {
         messageInput.current.style.height = '18px'
       } else {
@@ -247,29 +249,66 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       messageInput.current.focus();
     }
   }
-  const handleFilesSelected = (e) => {
-    const files = Array.from(e.target.files || []);
-
-    if (!files.length) return;
-
-    setSelectedFiles((prev) => [...prev, ...files]);
-    e.target.value = ''
-    messageInput.current.focus();
-  };
-  const handleRemoveFile = (index) => {
-    setSelectedFiles((prev) => prev.filter((_, fileIndex) => fileIndex !== index))
-  }
-  const handleCameraClick = () => {
-    cameraInputRef.current?.click();
-    setPlusMediaOpen(false)
-  }
-  const handlePhotoClick = () => {
-    photoInputRef.current?.click();
+  const handlePhotosClick = () => {
+    if (selectedMedia.length >= 4 || selectedFiles.length > 0) return;
+    photosInputRef.current?.click();
     setPlusMediaOpen(false)
   }
   const handleFilesClick = () => {
+    if (selectedFiles.length >= 4 || selectedMedia.length > 0) return;
     filesInputRef.current?.click();
     setPlusMediaOpen(false)
+  }
+  const addSelectedFiles = (files) => {
+    if (!files.length) return;
+    const media = [];
+    const otheFiles = [];
+    files.forEach((file) => {
+      if (file.type.startsWith('image/') || file.type.startsWith('video/')) {
+        media.push(file)
+      } else {
+        otheFiles.push(file)
+      }
+    })
+
+    if (media.length > 0) {
+      setSelectedMedia(prev => {
+        const remianingSlots = 4 - prev.length;
+        if (remianingSlots <= 0) return prev;
+        return [
+          ...prev,
+          ...media.slice(0, remianingSlots)
+        ]
+      })
+    }
+    if (otheFiles.length > 0) {
+      setSelectedFiles(prev => {
+        const remianingSlots = 4 - prev.length;
+        if (remianingSlots <= 0) return prev;
+        return [
+          ...prev,
+          ...otheFiles.slice(0, remianingSlots)
+        ]
+      })
+    }
+  }
+  const handlePhotosSelected = (e) => {
+    const files = Array.from(e.target.files || []);
+    addSelectedFiles(files)
+    e.target.value = ''
+    messageInput.current.focus();
+  }
+  const handleFilesSelected = (e) => {
+    const files = Array.from(e.target.files || []);
+    addSelectedFiles(files)
+    e.target.value = ''
+    messageInput.current.focus();
+  }
+  const handleRemoveMedia = (index) => {
+    setSelectedMedia((prev) => prev.filter((_, mediaIndex) => mediaIndex !== index))
+  }
+  const handleRemoveFile = (index) => {
+    setSelectedFiles((prev) => prev.filter((_, fileIndex) => fileIndex !== index))
   }
   return (
     <>
@@ -462,10 +501,10 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                           {message.details.images && (
                             <div className="send-image-msg-wrap">
                               <div className="image-grid">
-                                {message.details.images.map((image) => {
+                                {message.details.images.map((image, index) => {
                                 const imageUrl = URL.createObjectURL(image);
                                 return (
-                                  <div className="media-box">
+                                  <div className="media-box" key={`${image.name}-${index}`}>
                                     <img loading="lazy" src={imageUrl} />
                                   </div>
                                 )
@@ -496,9 +535,14 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
               {isMobile ? (
                 <div className="message-bottom-cover">
                   <div className="message-input">
-                    {selectedFiles.length > 0 && (
+                    {(selectedFiles.length > 0 || selectedMedia.length > 0) && (
                       <div className="media-cover">
-                        {selectedFiles.map((file, index) => {
+                        {selectedMedia.length > 0 && selectedMedia.map((file, index) => {
+                          return (
+                            <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveMedia(index)} />
+                          )
+                        })}
+                        {selectedFiles.length > 0 && selectedFiles.map((file, index) => {
                           return (
                             <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveFile(index)} />
                           )
@@ -522,37 +566,25 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                             sendMessage();
                           }
                         }} />
-                      <span className={`send ${(message.trim() || selectedFiles.length > 0) && 'ready'}`} onClick={sendMessage}>
+                      <span className={`send ${(message.trim() || selectedFiles.length > 0 || selectedMedia.length > 0) && 'ready'}`} onClick={sendMessage}>
                         <i className="fa-solid fa-paper-plane"></i>
                       </span>
                     </div>
                   </div>
                     <div className={`plus-media-modal ${plusMediaOpen ? 'open' : ''}`}>
-                      <div onClick={handleCameraClick}>
+                      <div className={(selectedMedia.length >= 4 || selectedFiles.length > 0) ? 'mute' : ''} onClick={handlePhotosClick}>
                         <input 
-                          ref={cameraInputRef}
-                          type="file"
-                          accept="image/*,video/*"
-                          capture="environmet"
-                          hidden 
-                          onChange={handleFilesSelected}
-                        />
-                        <i className="fa-regular fa-camera"></i>
-                        <p>Camera</p>
-                      </div>
-                      <div onClick={handlePhotoClick}>
-                        <input 
-                          ref={photoInputRef}
+                          ref={photosInputRef}
                           type="file"
                           accept="image/*,video/*"
                           multiple
                           hidden 
-                          onChange={handleFilesSelected}
+                          onChange={handlePhotosSelected}
                         />
                         <i className="fa-regular fa-image"></i>
                         <p>Photos</p>
                       </div>
-                      <div onClick={handleFilesClick}>
+                      <div className={(selectedFiles.length >= 4 || selectedMedia.length > 0) ? 'mute' : ''} onClick={handleFilesClick}>
                         <input 
                           ref={filesInputRef}
                           type="file"
@@ -596,7 +628,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         onChange={handleFilesSelected}
                       />
                       <input 
-                        ref={photoInputRef}
+                        ref={photosInputRef}
                         type="file"
                         accept="image/*,video/*"
                         multiple
@@ -604,7 +636,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         onChange={handleFilesSelected}
                       />
                       <i className="fa-solid fa-paperclip" onClick={handleFilesClick}></i>
-                      <i className="fa-regular fa-image" onClick={handlePhotoClick}></i>
+                      <i className="fa-regular fa-image" onClick={handlePhotosClick}></i>
                       <i className="fa-solid fa-table-cells-large"></i>
                       <button onClick={sendMessage} className={message.trim() && 'active'}>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>

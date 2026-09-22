@@ -268,7 +268,7 @@
         margin-right: auto;
         max-width: 500px;
         background-color: rgb(40, 17, 122);
-        border-radius: 18px;
+        border-radius: 25px;
         border-bottom-left-radius: 5px;
         display: flex;
         justify-content: left;
@@ -284,6 +284,7 @@
             text-align: left;
             font-size: 16px;
             white-space: pre-wrap;
+            overflow-wrap: anywhere;
             &::selection {
               background-color: rgb(68, 32, 197);
             }
@@ -372,6 +373,7 @@
             text-align: left;
             font-size: 16px;
             white-space: pre-wrap;
+            overflow-wrap: anywhere;
             &::selection {
               background-color: rgb(68, 32, 197);
             }
@@ -419,6 +421,7 @@
             text-align: left;
             font-size: 16px;
             white-space: pre-wrap;
+            overflow-wrap: anywhere;
             &::selection {
               background-color: rgb(40, 17, 122);
             }
@@ -511,6 +514,7 @@
             text-align: left;
             font-size: 16px;
             white-space: pre-wrap;
+            overflow-wrap: anywhere;
             &::selection {
               background-color: rgb(40, 17, 122);
             }
@@ -816,7 +820,7 @@
           max-width: 250px;
           background-color: var(--cards);
           border: 1px solid var(--border);
-          border-radius: 15px;
+          border-radius: 28px;
           border-bottom-left-radius: 3px;
           display: flex;
           justify-content: left;
@@ -899,7 +903,7 @@
           height: auto;
           max-width: 250px;
           background-color: rgb(68, 32, 197);
-          border-radius: 15px;
+          border-radius: 28px;
           border-bottom-right-radius: 3px;
           display: flex;
           justify-content: left;
@@ -1128,7 +1132,7 @@
         }
         .plus-media-modal {
           position: absolute;
-          height: 250px;
+          height: 190px;
           width: 220px;
           bottom: 10px;
           left: 10px;
@@ -1166,6 +1170,14 @@
             p {
               font-size: 18px;
               color: var(--secondary-text);
+            }
+            &.mute {
+              i {
+                color: var(--mutetd-tetx);
+              }
+              p {
+                color: var(--mutetd-tetx);
+              }
             }
           }
         }

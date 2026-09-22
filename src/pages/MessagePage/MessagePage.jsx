@@ -144,13 +144,8 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     const updateChatHeight = () => {
       if (!chatContainerRef.current) return;
       const wasNearBottom = isNearBottom();
-
-      chatContainerRef.current.style.height =
-        `${viewport.height}px`;
-
-      chatContainerRef.current.style.top =
-        `${viewport.offsetTop}px`;
-
+      chatContainerRef.current.style.height = `${viewport.height}px`;
+      chatContainerRef.current.style.top = `${viewport.offsetTop}px`;
       if (wasNearBottom) {
         requestAnimationFrame(() => {
           handleScrollTop();
@@ -212,7 +207,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
     }
   }
   const sendMessage = () => {
-    if (message.trim()) {
+    if (message.trim() || selectedFiles.length > 0) {
       const chat = ChatLists.find(chat => chat.id === selectedId);
       if (!chat) return;
       const newMessage = {
@@ -221,7 +216,8 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
         updatedAt: null,
         details: {
           sender: 'sender',
-          text: message.trim(),
+          ...(message.trim() && {text: message.trim()}),
+          ...(selectedFiles.length > 0 && {images: selectedFiles}),
           isSeen: false
         }
       }
@@ -242,6 +238,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
       }
       setFilter('All')
       setMessage('')
+      setSelectedFiles([])
       if (isMobile) {
         messageInput.current.style.height = '18px'
       } else {
@@ -257,6 +254,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
 
     setSelectedFiles((prev) => [...prev, ...files]);
     e.target.value = ''
+    messageInput.current.focus();
   };
   const handleRemoveFile = (index) => {
     setSelectedFiles((prev) => prev.filter((_, fileIndex) => fileIndex !== index))
@@ -392,39 +390,95 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                       )}
                       {message.details.sender == 'user' && (
                         isMobile ? (
-                          <div className="receive-wrap">
-                            <img src="/profile.png" />
-                            <div className="receive-msg-wrap">
-                              <span className="text-wrap">
-                                <p className="receive-msg-text">{message.details.text}
-                                </p>
-                                <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
-                              </span>
-                            </div>
-                          </div>
+                          <>
+                            {message.details.images && (
+                              <div className="receive-wrap">
+                                <img src="/profile.png" />
+                                <div className="receive-image-msg-wrap">
+                                  <div className="image-grid">
+                                    {message.details.images.map((image) => {
+                                    const imageUrl = URL.createObjectURL(image);
+                                    return (
+                                      <div className="media-box">
+                                        <img loading="lazy" src={imageUrl} />
+                                      </div>
+                                    )
+                                    })}
+                                  </div>
+                                  <span className="text-wrap">
+                                    {message.details.text && <p className="receive-msg-text">{message.details.text}</p>}
+                                    <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                  </span>
+                                </div>
+                              </div>
+                            )}
+                            {(message.details.text && !message.details.images) && (
+                              <div className="receive-wrap">
+                                <img src="/profile.png" />
+                                <div className="receive-msg-wrap">
+                                  <span className="text-wrap">
+                                    <p className="receive-msg-text">{message.details.text}
+                                    </p>
+                                    <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                  </span>
+                                </div>
+                              </div>
+                            )}
+                          </>
                         ) : (
-                          <div className="receive-msg-wrap">
-                            <span className="text-wrap">
-                              <p className="receive-msg-text">{message.details.text}
-                              </p>
-                              <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
-                            </span>
-                          </div>
+                          <>
+                            {message.details.images && (
+                              <div className="receive-image-msg-wrap">
+                                <div className="image-grid">
+                                  {message.details.images.map((image) => {
+                                  const imageUrl = URL.createObjectURL(image);
+                                  return (
+                                    <div className="media-box">
+                                      <img loading="lazy" src={imageUrl} />
+                                    </div>
+                                  )
+                                  })}
+                                </div>
+                                <span className="text-wrap">
+                                  {message.details.text && <p className="receive-msg-text">{message.details.text}</p>}
+                                  <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                </span>
+                              </div>
+                            )}
+                            {(message.details.text && !message.details.images) && (
+                              <div className="receive-msg-wrap">
+                                <span className="text-wrap">
+                                  <p className="receive-msg-text">{message.details.text}
+                                  </p>
+                                  <p className="time">{dayjs(message.createdAt).format('h:mm A')}</p>
+                                </span>
+                              </div>
+                            )}
+                          </>
                         )
                       )}
                       {message.details.sender === 'sender' && (
                         <>
-                          {!message.details.image && (
-                            <div className="send-msg-wrap">
+                          {message.details.images && (
+                            <div className="send-image-msg-wrap">
+                              <div className="image-grid">
+                                {message.details.images.map((image) => {
+                                const imageUrl = URL.createObjectURL(image);
+                                return (
+                                  <div className="media-box">
+                                    <img loading="lazy" src={imageUrl} />
+                                  </div>
+                                )
+                                })}
+                              </div>
                               <span className="text-wrap">
-                                <p className="send-msg-text">{message.details.text}</p>
+                                {message.details.text && <p className="send-msg-text">{message.details.text}</p>}
                                 <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
                               </span>
                             </div>
                           )}
-                          {message.details.image && (
-                            <div className="send-image-msg-wrap">
-                              <img src={message.details.image} />
+                          {(message.details.text && !message.details.images) && (
+                            <div className="send-msg-wrap">
                               <span className="text-wrap">
                                 <p className="send-msg-text">{message.details.text}</p>
                                 <p className="time">{dayjs(message.createdAt).format('h:mm A')} <i className={`fa-${message.details.isSeen ? 'solid' : 'regular'} fa-check-circle`}></i></p>
@@ -468,7 +522,7 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                             sendMessage();
                           }
                         }} />
-                      <span className={`send ${message.trim() && 'ready'} ${selectedFiles.length > 0 && 'ready'}`} onClick={sendMessage}>
+                      <span className={`send ${(message.trim() || selectedFiles.length > 0) && 'ready'}`} onClick={sendMessage}>
                         <i className="fa-solid fa-paper-plane"></i>
                       </span>
                     </div>

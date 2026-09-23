@@ -148,7 +148,23 @@ export function MessagePageSidebar({setSearchParams, setChatOpen, selectedId, se
                   </div>
                   {draftText[list.id]?.trim() ? (
                     <p className="message"><span>Draft:</span> {draftText[list.id]}</p>
-                  ) : <p className="message">{lastMessage?.details.text || 'New'}</p>}
+                  ) : <p className="message">{(lastMessage?.details.images && !lastMessage?.details.text) && (
+                    <>
+                      <i className="fa-solid fa-image"></i> Photo
+                    </>
+                  ) || (lastMessage?.details.images && lastMessage?.details.text) && (
+                    <>
+                      <i className="fa-solid fa-image"></i> {lastMessage.details.text}
+                    </>
+                  ) || (lastMessage?.details.files && !lastMessage?.details.text) && (
+                    <>
+                      <i className="fa-solid fa-file-lines"></i> {lastMessage.details.files[lastMessage.details.files.length - 1].name}
+                    </>
+                  ) || (lastMessage?.details.files && lastMessage?.details.text) && (
+                    <>
+                      <i className="fa-solid fa-file-lines"></i> {lastMessage.details.text}
+                    </>
+                  ) || lastMessage?.details.text || 'New'}</p>}
                 </div>
                 {lastMessage?.details.sender === 'sender' && (
                   <div className="message-read">

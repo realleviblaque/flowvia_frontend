@@ -359,7 +359,7 @@
               height: 100%;
               display: block;
               object-fit: cover;
-              border-radius: 18px;
+              border-radius: 10px;
             }
           }
         }
@@ -602,7 +602,7 @@
               height: 100%;
               display: block;
               object-fit: cover;
-              border-radius: 18px;
+              border-radius: 10px;
             }
           }
         }
@@ -1270,9 +1270,6 @@
             &:has(.media-box:nth-child(2)) {
               .media-box {
                 height: 240px;
-                img {
-                  border-radius: 8px;
-                }
               }
             }
             &:has(.media-box:nth-child(3)) {
@@ -1283,7 +1280,7 @@
             .media-box {
               height: 340px;
               img {
-                border-radius: 17px;
+                border-radius: 8px;
               }
             }
           }

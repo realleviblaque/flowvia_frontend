@@ -14,7 +14,6 @@ import { FreelancerWorkCircle } from './pages/WorkCirclePage/Freelancer/Freelanc
 import { ClientrWorkCircle } from './pages/WorkCirclePage/Client/ClientrWorkCircle'
 import { NotificationPage } from './pages/NotificationPage/NotificationPage'
 import { Notifications } from './data/NotificationPage/notifications'
-import { ProfilePage } from './pages/ProfilePage/ProfilePage'
 import { SettingsPage } from './pages/SettingsPage/SettingsPage'
 import { ProfileTab } from './pages/SettingsPage/Tabs/Profile/ProfileTab'
 import { AccountTab } from './pages/SettingsPage/Tabs/AccountInfo/AccountTab'
@@ -68,7 +67,7 @@ import { MobileSettingsPage } from './pages/MobileSettingsPage/MobileSettingsPag
 import { useState } from 'react'
 import dayjs from 'dayjs'
 import { FullPost } from './pages/ViewPost/FullPost'
-import { UserProfile } from './pages/User Profile/UserProfile'
+import { PubicProfile } from './pages/PubicProfile/PubicProfile'
 import { CreatePost } from './pages/CreatePost/CreatePost'
 import { ActiveProject } from './pages/StatusPage/Work/ActiveProject'
 import { AppliedJob } from './pages/StatusPage/Work/AppliedJob'
@@ -83,6 +82,7 @@ import { HireCompletedProject } from './pages/StatusPage/Hire/HireCompletedProje
 import { CreateJob } from './pages/StatusPage/CreateJob'
 import { Login } from './Auth/Login/Login'
 import { Signup } from './Auth/Signup/Signup'
+import { UserProfile } from './pages/UserProfile/UserProfile'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -337,7 +337,7 @@ function App() {
         />
       } />
       <Route path='/profile' element={
-        <ProfilePage 
+        <UserProfile 
           all={all} 
           plusDialog={plusDialog} 
           hadnlePlusDialogClose={hadnlePlusDialogClose} 
@@ -345,7 +345,7 @@ function App() {
         />
       }  />
       <Route path='/user/:username' element={
-        <UserProfile
+        <PubicProfile
           all={all}
           plusDialog={plusDialog}
           hadnlePlusDialogOpen={hadnlePlusDialogOpen} 

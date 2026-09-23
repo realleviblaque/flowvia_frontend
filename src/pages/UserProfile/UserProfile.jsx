@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ProfilePageNavBar } from "../../components/ProfilePage/ProfilePageNavBar";
 import { SideBar } from "../../components/Sidebar";
-import './ProfilePage.css'
+import './UserProfile.css'
 import { MobileHeader2 } from "../../components/MobileHeader2";
 import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
@@ -15,7 +15,7 @@ import { AboutSection } from "./Section/About/AboutSection";
 import { ReviewSection } from "./Section/Review/ReviewSection";
 import { useNavigate } from "react-router-dom";
 
-export function ProfilePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
+export function UserProfile({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, plusDialog}) {
   const [viewingSection, setViewingSection] = useState('Activity')
   const [openMoreMenu, setOpenMoreMenu] = useState(false)
   const scrollRef = useRef(null);

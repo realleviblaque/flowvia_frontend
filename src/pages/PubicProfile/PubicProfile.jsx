@@ -12,9 +12,9 @@ import { BottomBar } from "../../components/BottomBar";
 import { PlusModal } from "../../components/PlusModal";
 import dayjs from "dayjs";
 import formatCount from '../../utils/formatCount'
-import './UserProfile.css'
+import './PubicProfile.css'
 
-export function UserProfile({all, hadnlePlusDialogOpen, plusDialog, hadnlePlusDialogClose}) {
+export function PubicProfile({all, hadnlePlusDialogOpen, plusDialog, hadnlePlusDialogClose}) {
   const { username } = useParams();
   const user = Users.find(p => p.profile.username === username)
   

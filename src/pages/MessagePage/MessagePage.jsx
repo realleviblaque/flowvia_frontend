@@ -723,19 +723,35 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                 <div className="send-msg-input-wrap">
                   <div className="wrap">
                     <div className="top">
-                      <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
-                        const input = messageInput.current;
-                        input.style.height = '27px'
-                        input.style.height = (input.scrollHeight - 10) + 'px'
-                        if (input.scrollHeight > 250) {
-                          input.style.height = '250px'
-                        }
-                      }} onKeyDown={e => {
-                        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-                          e.preventDefault();
-                          sendMessage();
-                        }
-                      }}></textarea>
+                      {(selectedFiles.length > 0 || selectedMedia.length > 0) && (
+                        <div className="media-cover">
+                          {selectedMedia.length > 0 && selectedMedia.map((file, index) => {
+                            return (
+                              <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveMedia(index)} type='media' />
+                            )
+                          })}
+                          {selectedFiles.length > 0 && selectedFiles.map((file, index) => {
+                            return (
+                              <AttachmentPreview key={`${file.name}-${index}`} file={file} onRemove={() => handleRemoveFile(index)} type='file' />
+                            )
+                          })}
+                        </div>
+                      )}
+                      <div className="input-area">
+                        <textarea placeholder="Type a message..." value={message} ref={messageInput} onChange={e => setMessage(e.target.value)} onInput={() => {
+                          const input = messageInput.current;
+                          input.style.height = '27px'
+                          input.style.height = (input.scrollHeight - 10) + 'px'
+                          if (input.scrollHeight > 250) {
+                            input.style.height = '250px'
+                          }
+                        }} onKeyDown={e => {
+                          if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                            e.preventDefault();
+                            sendMessage();
+                          }
+                        }}></textarea>
+                      </div>
                     </div>
                     <div className="bottom">
                       <input 
@@ -751,12 +767,12 @@ export function MessagePage({all, hadnlePlusDialogOpen, hadnlePlusDialogClose, p
                         accept="image/*,video/*"
                         multiple
                         hidden 
-                        onChange={handleFilesSelected}
+                        onChange={handlePhotosSelected}
                       />
-                      <i className="fa-solid fa-paperclip" onClick={handleFilesClick}></i>
-                      <i className="fa-regular fa-image" onClick={handlePhotosClick}></i>
-                      <i className="fa-solid fa-table-cells-large"></i>
-                      <button onClick={sendMessage} className={message.trim() && 'active'}>Send <i className="fa-solid fa-paper-plane"></i></button>
+                      <i className={`fa-solid fa-paperclip ${(selectedFiles.length >= 4 || selectedMedia.length > 0) ? 'mute' : ''}`} onClick={handleFilesClick}></i>
+                      <i className={`fa-regular fa-image ${(selectedMedia.length >= 4 || selectedFiles.length > 0) ? 'mute' : ''}`} onClick={handlePhotosClick}></i>
+                      <i className="fa-regular fa-folder"></i>
+                      <button className={`send ${(message.trim() || selectedFiles.length > 0 || selectedMedia.length > 0) && 'active'}`} onClick={sendMessage}>Send <i className="fa-solid fa-paper-plane"></i></button>
                     </div>
                   </div>
                 </div>

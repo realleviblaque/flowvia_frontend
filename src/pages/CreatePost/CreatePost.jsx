@@ -17,8 +17,10 @@ export function CreatePost({all}) {
   const navigate = useNavigate();
   const [isAueOpen, setIsAueOpen] = useState(false);
   const [audience, setAudience] = useState('Everyone')
+  const [selectedMedia, setSelectedMedia] = useState([])
   const [projectMIlestone, setProjectMilestone] = useState(null);
   const [projectOpportunity, setProjectOpportunity] = useState(null);
+  const mediaInputRef = useRef(null)
   const audienceDialogRef = useRef(null);
   const projectDialogRef = useRef(null);
   const opportunityDialogRef = useRef(null);
@@ -59,26 +61,8 @@ export function CreatePost({all}) {
     handleOpportunitySearch();
   })
   useEffect(() => {
-    function handleChange() {
-      if (attachPost === 'milestone') {
-        projectDialogRef.current.showModal();
-        setProjectOpportunity(null);
-      } else {
-        projectDialogRef.current.close();
-      }
-
-      if (attachPost === 'opportunity') {
-        opportunityDialogRef.current.showModal();
-        setProjectMilestone(null)
-      } else {
-        opportunityDialogRef.current.close();
-      }
-    } 
-    handleChange();
-  }, [attachPost])
-  useEffect(() => {
     function validatePost() {
-      if (text.trim() || tags.length > 0 || projectMIlestone || projectOpportunity) {
+      if (text.trim() || tags.length > 0 || projectMIlestone || projectOpportunity || selectedMedia.length > 0) {
         setPostNow(true);
         setIsDrafting(true);
       } else {
@@ -86,9 +70,8 @@ export function CreatePost({all}) {
         setIsDrafting(false);
       }
     }
-
     validatePost();
-  }, [text, tags, projectMIlestone, projectOpportunity])
+  }, [text, tags, projectMIlestone, projectOpportunity, selectedMedia])
   useEffect(() => {
     if (!postNow) return;
     window.history.pushState(null, '', window.location.href);
@@ -170,6 +153,9 @@ export function CreatePost({all}) {
     })
     projectDialogRef.current.close();
     setMilestoneSearch('')
+    setAttachPost('milestone')
+    setSelectedMedia([])
+    setProjectOpportunity(null)
   }
   const handleOpportunotyClick = (project) => {
     setProjectOpportunity({
@@ -186,6 +172,9 @@ export function CreatePost({all}) {
     })
     opportunityDialogRef.current.close();
     setOpportunitySearch('')
+    setAttachPost('opportunity')
+    setSelectedMedia([])
+    setProjectMilestone(null)
   }
   const handlePostNow = () => {
     if (postNow) {
@@ -270,6 +259,35 @@ export function CreatePost({all}) {
       navigate('/')
     }
   }
+  const handleImageClick = () => {
+    if (selectedMedia.length >= 4) return;
+    mediaInputRef.current.click();
+  }
+  const handleSelectedImage = (e) => {
+    const files = Array.from(e.target.files || [])
+    if (!files.length) return;
+    setSelectedMedia(prev => {
+      const remianingSlots = 4 - prev.length;
+      if (remianingSlots <= 0) return prev;
+      return [
+        ...prev,
+        ...files.slice(0, remianingSlots)
+      ]
+    })
+    e.target.value = '';
+    setAttachPost('image');
+    setProjectMilestone(null)
+    setProjectOpportunity(null)
+  }
+  const handleImageRemove = (index) => {
+    setSelectedMedia(prev => {
+      const newMedia = prev.filter((_, i) => i !== index);
+      if (newMedia.length === 0) {
+        setAttachPost('')
+      }
+      return newMedia;
+    });
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -318,15 +336,20 @@ export function CreatePost({all}) {
           </div>
           <div className="middle">
             <textarea rows={4} placeholder="Share an update..." onInput={handleInput} value={text} maxLength={1000}></textarea>
-            {attachPost === 'image' && (
+            {(attachPost === 'image' && selectedMedia.length > 0) && (
               <div className="image-wrapper">
-                <div className="wrapper">
-                  <img src="/profile.png" />
-                  <i className="fa-solid fa-x"></i>
-                </div>
+                {selectedMedia.map((media, index) => {
+                  const imageUrl = URL.createObjectURL(media)
+                  return (
+                    <div key={`${media.name}-${index}`} className="wrapper">
+                      <img src={imageUrl} />
+                      <i className="fa-solid fa-x" onClick={() => handleImageRemove(index)}></i>
+                    </div>
+                  )
+                })}
               </div>
             )}
-            {attachPost === 'milestone' && projectMIlestone && (
+            {(attachPost === 'milestone' && projectMIlestone) && (
               <div className="project-milestone">
                 <div className="top-side">
                   <div className="left">
@@ -367,7 +390,7 @@ export function CreatePost({all}) {
                 </div>
               </div>
             )}
-            {attachPost === 'opportunity' && projectOpportunity && (
+            {(attachPost === 'opportunity' && projectOpportunity) && (
               <div className="project-opportunity">
                 <div className="top-side">
                   {/* <p>Full Stack Developer Needed</p> */}
@@ -404,15 +427,23 @@ export function CreatePost({all}) {
           </div>
           <div className="bottom">
             <div className="left">
-              <div className={attachPost === 'image' ? 'active' : ''} onClick={() => setAttachPost('image')}>
+              <div className={attachPost === 'image' ? 'active' : ''} onClick={handleImageClick}>
+                <input 
+                  ref={mediaInputRef}
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  hidden 
+                  onChange={e => handleSelectedImage(e)}
+                />
                 <i className="fa-regular fa-image"></i>
                 <p>Image</p>
               </div>
-              <div className={attachPost === 'milestone' ? 'active' : ''} onClick={() => setAttachPost('milestone')}>
+              <div className={attachPost === 'milestone' ? 'active' : ''} onClick={() => projectDialogRef.current.showModal()}>
                 <i className="fa-solid fa-table-cells-large"></i>
                 <p>Milestone</p>
               </div>
-              <div className={attachPost === 'opportunity' ? 'active' : ''} onClick={() => setAttachPost('opportunity')}>
+              <div className={attachPost === 'opportunity' ? 'active' : ''} onClick={() => opportunityDialogRef.current.showModal()}>
                 <i className="fa-solid fa-laptop"></i>
                 <p>Opportunity</p>
               </div>
@@ -555,10 +586,7 @@ export function CreatePost({all}) {
             Project Milestone
           </div>
           <div className="right">
-            <i className="fa-solid fa-x" onClick={() => {
-              setAttachPost('');
-              setProjectMilestone(null);
-            }}></i>
+            <i className="fa-solid fa-x" onClick={() =>  projectDialogRef.current.close()}></i>
           </div>
         </div>
         <div className="middle">
@@ -607,10 +635,7 @@ export function CreatePost({all}) {
             Project Oportunity
           </div>
           <div className="right">
-            <i className="fa-solid fa-x" onClick={() => {
-              setAttachPost('');
-              setProjectOpportunity(null);
-            }}></i>
+            <i className="fa-solid fa-x" onClick={() => opportunityDialogRef.current.close()}></i>
           </div>
         </div>
         <div className="middle">

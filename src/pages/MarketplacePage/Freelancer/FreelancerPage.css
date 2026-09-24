@@ -33,14 +33,30 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 65px;
+          margin-right: 5PX;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
           position: relative;
+          background-color: var(--cards);
+          border: 1px solid var(--blue-border);
+          padding: 2px;
+          .name-text {
+            height: 100%;
+            width: 100%;
+            background-color: var(--blue-bg);
+            color: var(--accent-blue);
+            font-size: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
           img {
-            width: 60px;
-            height: 60px;
+            height: 100%;
+            width: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 1px solid var(--blue-border);
           }
           .active-badge {
             width: 10px;

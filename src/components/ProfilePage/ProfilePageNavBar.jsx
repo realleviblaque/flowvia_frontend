@@ -1,3 +1,5 @@
+import './ProfilePageNavBar.css'
+
 export function ProfilePageNavBar({viewingSection, handleTabClick}) {
   return (
     <div className="button-options">

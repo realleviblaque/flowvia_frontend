@@ -17,15 +17,16 @@ export function TeamSidebar() {
       </div>
       <div className="sug-team-container">
         {allTeams.map((team) => {
+          const name = team.profile.teamName.split(' ').map(n => n[0]).join('')
           i++;
           return (
             i <= 4 && (
               <div key={team.id} className="content-wrapper">
                 <div className="left">
-                  <img src={team.profile.image} />
+                  {team.profile.image ? <img src={team.profile.image} /> : <p>{name.toUpperCase()}</p>}
                 </div>
                 <div className="middle">
-                  <p className="name team-name">{team.profile.name}</p>
+                  <p className="name team-name">{team.profile.teamName}</p>
                   <p className="profession">{team.profile.title}</p>
                 </div>
                 <div className="right">

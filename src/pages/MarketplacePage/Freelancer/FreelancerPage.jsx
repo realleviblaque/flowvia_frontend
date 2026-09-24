@@ -150,23 +150,24 @@ export function FreelancerPage({all, handleDialogOpen, dialog, handleDialogClose
           ) : (
               <div className="individual-wrapper">
                 {freelancers.map((freelancer) => {
+                  const name = freelancer.profile.firstName.slice(0, 1) + freelancer.profile.lastName.slice(0, 1)
                   return (
                     <div key={freelancer.id} className="individual-contianer">
                       <div className="top">
                         <div className="top-left">
-                          <img src={freelancer.profile.image} loading="lazy" />
+                          {freelancer.profile.image ? <img src={freelancer.profile.image} loading="lazy" /> : <p className="name-text">{name.toUpperCase()}</p>}
                           {freelancer.info.isOnline && (
                             <span className="active-badge"></span>
                           )}
                         </div>
                         <div className="top-middle">
-                          <p className="name">{freelancer.profile.name} {freelancer.info.isVerified && <i className="fa-regular fa-check-circle"></i>}</p>
+                          <p className="name">{freelancer.profile.firstName} {freelancer.profile.lastName} {freelancer.info.isVerified && <i className="fa-regular fa-check-circle"></i>}</p>
                           <p className="username">@{freelancer.profile.username}</p>
                           <div>
                             <span className="pro-title">{freelancer.profile.title}</span>
-                            <span className={freelancer.info.status === 'Available' ? 'available' :  'busy'}>
+                            <span className={freelancer.info.availability === 'Available' ? 'available' :  'busy'}>
                               <span className="dot"></span>
-                              <p>{freelancer.info.status}</p>
+                              <p>{freelancer.info.availability}</p>
                             </span>
                           </div>
                         </div>

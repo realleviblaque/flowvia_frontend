@@ -3,10 +3,13 @@ import { formatDate } from "../../../../utils/formatDate";
 import { generateStars } from "../../../../utils/generateStars";
 import { Reviews } from "../../../../data/ProfilePage/reviews";
 import dayjs from "../../../../lib/dayjs";
+import { useLocation } from "react-router-dom";
 
-export function Review({review, setReviews, filter}) {
+export function Review({review, setReviews, filter, user}) {
   const [openReply, setOpenReply] = useState(false)
   const [value, setValue] = useState('')
+  const location = useLocation();
+  const userProfile = location.pathname === '/profile';
   const handleSendReply = (revId) => {
     const updatedReviews = Reviews.map(rev => {
       if (rev.id === revId) {
@@ -49,7 +52,7 @@ export function Review({review, setReviews, filter}) {
     setValue('')
   }
   return (
-    <div key={review.id} className="reviews-container">
+    <div className="reviews-container">
       <div className="top-review">
         <div className="left">
           <img src={review.sender.profile} className={review.sender.accountTYpe === 'Team' ? 'team-profile' : ''} />
@@ -76,14 +79,14 @@ export function Review({review, setReviews, filter}) {
         <p className="review-msg">{review.reviewMessage}</p>
       </div>
       <div className="bottom-review">
-        {!review.reply && (
+        {(userProfile && !review.reply) && (
           <div className="up">
             <p className="reply-btn" onClick={handleClose}><i className="fa-solid fa-reply"></i> {openReply ? 'Close' : 'Reply'}</p>
           </div>
         )}
         {review.reply && (
           <div className="reply-container">
-            <p className="hd-txt">YOUR REPLY</p>
+            <p className="hd-txt">{userProfile ? 'YOUR' : user.profile.firstName?.toUpperCase() || user.profile.companyName?.toUpperCase().split(' ').slice(0, 1) || user.profile.teamName?.toUpperCase().split(' ').slice(0, 1)} {userProfile ? 'REPLY' : 'REPLIED'}</p>
             <p className="date">{formatDate(review.updatedAt)}</p>
             <p className="reply-msg">{review.reply}</p>
           </div>

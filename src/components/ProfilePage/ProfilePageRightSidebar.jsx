@@ -1,24 +1,31 @@
 import { Fragment } from 'react'
-import { user } from '../../data/ProfilePage/user'
 import './ProfilePageRightSidebar.css'
 import { generateStars } from '../../utils/generateStars';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-export function ProfilePageRightSidebar() {
+export function ProfilePageRightSidebar({user}) {
   const naviagate = useNavigate();
+  const location = useLocation();
+  const userProfile = location.pathname === '/profile';
   let linkCount = 0;
   return (
     <div className="acivity-sidebar">
       <div className="skils-wrap">
         <div className="top">
           <p>Skills</p>
-          {user.skills.length > 0 && <p className="skill-edit-btn">Edit</p>}
+          {(userProfile && user.skills.length) > 0 && <p className="skill-edit-btn">Edit</p>}
         </div>
         <div className="skills-container">
           {user.skills.length === 0 && (
             <div className='no-skills'>
-              <p>You have not added any skills yet</p>
-              <button onClick={() => naviagate('/settings/professional-details')}>Add Skills</button>
+              {userProfile ? (
+                <>
+                  <p>You have not added any skills yet.</p>
+                  <button onClick={() => naviagate('/settings/professional-details')}>Add Skills</button>
+                </>
+              ) : (
+                  <p>{user.profile.firstName || user.profile.companyName?.split(' ').slice(0, 1) || user.profile.teamName?.split(' ').slice(0, 1)} has not added any skills yet.</p>
+              )}
             </div>
           )}
           <div className="skill-wrap-fill">
@@ -33,12 +40,21 @@ export function ProfilePageRightSidebar() {
       <div className="recent-preview-wrap">
         <div className="top">
           <p>Reviews</p>
-          {user.reviews.length > 0 && <p className="preview-see-all-btn">See all</p>}
+          {(userProfile && user.reviews.length) > 0 && <p className="preview-see-all-btn">See all</p>}
         </div>
         {user.reviews.length === 0 && (
           <div className="no-reviews">
-            <p>No review yet</p>
-            <p>Complete projects to get feedback from clients</p>
+            {userProfile ? (
+              <>
+                <p>No review yet</p>
+                <p>Complete a project to get feedback from clients.</p>
+              </>
+            ) : (
+              <>
+                <p>No review yet</p>
+                <p>{user.accountType === 'Recruiter' ? `${user.profile.companyName?.split(' ').slice(0, 1)} has not given out any reviews yet.` :`${user.profile.firstName || user.profile.teamName?.split(' ').slice(0, 1)} has not gotten any reviews from clients.`}</p>
+              </>
+            )}
           </div>
         )}
         <div className="reviews-wrap">
@@ -69,12 +85,18 @@ export function ProfilePageRightSidebar() {
       <div className="links-container">
         <div className="top">
           <p>Links</p>
-          {user.links.length > 0 && <p className="link-eidt-btn">Edit</p>}
+          {(userProfile && user.links.length) > 0 && <p className="link-eidt-btn">Edit</p>}
         </div>
         {user.links.length === 0 && (
           <div className="no-links">
-            <p>You have not added any links yet</p>
-            <button onClick={() => naviagate('/settings')}>Add Links</button>
+            {userProfile ? (
+              <>
+                <p>You have not added any links yet.</p>
+                <button onClick={() => naviagate('/settings')}>Add Links</button>
+              </>
+            ) : (
+              <p>{user.profile.firstName || user.profile.companyName?.split(' ').slice(0, 1) || user.profile.teamName?.split(' ').slice(0, 1)} has not added any links yet.</p>
+            )}
           </div>
         )}
         <div className="link-content">

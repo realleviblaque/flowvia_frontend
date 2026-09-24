@@ -17,15 +17,16 @@ export function FreelancerSidebar() {
       </div>
       <div className="sug-self-container">
         {allFreelancer.map((freelancer) => {
+          const name = freelancer.profile.firstName.slice(0, 1) + freelancer.profile.lastName.slice(0, 1)
           i++;
           return (
             i <= 4 && (
               <div key={freelancer.id} className="content-wrapper">
                 <div className="left">
-                  <img src={freelancer.profile.image} />
+                  {freelancer.profile.image ? <img src={freelancer.profile.image} /> : <p>{name.toUpperCase()}</p>}
                 </div>
                 <div className="middle">
-                  <p className="name">{freelancer.profile.name}</p>
+                  <p className="name">{freelancer.profile.firstName} {freelancer.profile.lastName}</p>
                   <p className="profession">{freelancer.profile.title}</p>
                 </div>
                 <div className="right">

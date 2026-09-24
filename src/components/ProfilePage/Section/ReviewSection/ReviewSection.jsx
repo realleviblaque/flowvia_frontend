@@ -4,7 +4,7 @@ import {ProfilePageRightSidebar} from '../../../../components/ProfilePage/Profil
 import './ReviewSection.css'
 import { Review } from "./Review"
 
-export function ReviewSection() {
+export function ReviewSection({user}) {
   const [reviews, setReviews] = useState([])
   const [filter, setFilter] = useState('All')
   const [all, ] = useState(reviews.length),
@@ -39,33 +39,31 @@ export function ReviewSection() {
           break;
       }
     }
-    // handleFIlter()
+    //handleFIlter()
   }, [filter])
   return (
-    <>
-      <section className="reviews-section">
-        <div className="main-portfolio-wrap">
-          <div className="review-project-top">
-            <div className={filter === 'All' ? 'current' : ''} onClick={() => setFilter('All')}>All <span>({all})</span></div>
-            <div className={filter === '5 Star' ? 'current' : ''} onClick={() => setFilter('5 Star')}>5 stars <span>({star5})</span></div>
-            <div className={filter === '4 Star' ? 'current' : ''} onClick={() => setFilter('4 Star')}>4 stars <span>({star4})</span></div>
-            <div className={filter === '3 Star' ? 'current' : ''} onClick={() => setFilter('3 Star')}>3 stars <span>({star3})</span></div>
-            <div className={filter === '2 Star' ? 'current' : ''} onClick={() => setFilter('2 Star')}>2 stars <span>({star2})</span></div>
-            <div className={filter === '1 Star' ? 'current' : ''} onClick={() => setFilter('1 Star')}>1 stars <span>({star1})</span></div>
-          </div>
-          <div className="review-project-container">
-            {reviews.length === 0 && (
-              <div className="empty-reviews">
-                No reviews found.
-              </div>
-            )}
-            {reviews.map((review) => {
-              return <Review review={review} setReviews={setReviews} filter={filter} />
-            })}
-          </div>
+    <section className="review-section">
+      <div className="main-review-wrap">
+        <div className="review-project-top">
+          <div className={filter === 'All' ? 'current' : ''} onClick={() => setFilter('All')}>All <span>({all})</span></div>
+          <div className={filter === '5 Star' ? 'current' : ''} onClick={() => setFilter('5 Star')}>5 stars <span>({star5})</span></div>
+          <div className={filter === '4 Star' ? 'current' : ''} onClick={() => setFilter('4 Star')}>4 stars <span>({star4})</span></div>
+          <div className={filter === '3 Star' ? 'current' : ''} onClick={() => setFilter('3 Star')}>3 stars <span>({star3})</span></div>
+          <div className={filter === '2 Star' ? 'current' : ''} onClick={() => setFilter('2 Star')}>2 stars <span>({star2})</span></div>
+          <div className={filter === '1 Star' ? 'current' : ''} onClick={() => setFilter('1 Star')}>1 stars <span>({star1})</span></div>
         </div>
-        <ProfilePageRightSidebar />
-      </section>
-    </>
+        <div className="review-project-container">
+          {reviews.length === 0 && (
+            <div className="empty-reviews">
+              No reviews found.
+            </div>
+          )}
+          {reviews.map((review) => {
+            return <Review key={review.id} review={review} setReviews={setReviews} filter={filter} user={user} />
+          })}
+        </div>
+      </div>
+      <ProfilePageRightSidebar user={user} />
+    </section>
   )
 }

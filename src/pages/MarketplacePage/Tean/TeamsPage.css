@@ -25,7 +25,7 @@
         display: flex;
         position: relative;
         height: 90px;
-        background-color: var(--purple-bg);
+        background-color: var(--green-bg);
         .bookmark-btn {
           position: absolute;
           top: 8px;
@@ -60,15 +60,34 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            img {
+            .pic {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               height: 60px;
               width: 60px;
+              background-color: var(--cards);
+              border: 1px solid var(--green-border);
               border-radius: 15px;
-              object-fit: cover;
-              padding: 3px;
-              background-color: var(--element-bg);
-              border: 2px solid var(--blue-border);
               margin-top: -15px;
+              padding: 2px;
+              .name-text {
+                height: 100%;
+                width: 100%;
+                border-radius: 12px;
+                background-color: var(--green-bg);
+                color: var(--green);
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              img {
+                height: 100%;
+                width: 100%;
+                border-radius: 12px;
+                object-fit: cover;
+              }
             }
             .verified-badge {
               display: flex;

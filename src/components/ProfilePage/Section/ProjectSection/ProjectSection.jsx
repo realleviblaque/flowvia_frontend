@@ -1,26 +1,77 @@
-import { useState } from "react";
-import { ProfilePageRightSidebar } from "./ProfilePageRightSidebar";
-import { Projects } from "../../data/ProfilePage/projects";
+import { useEffect, useState } from 'react';
+import { ProfilePageRightSidebar } from '../../../../components/ProfilePage/ProfilePageRightSidebar';
+import { Projects } from '../../../../data/ProfilePage/projects';
 
-export function ProjectSection() {
-  const [projectView, setProjectView] = useState('All')
-  const allCount = Projects.length;
+import './ProjectSection.css'
+import { statusTimeAgo } from '../../../../utils/statusTimeAgo';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+export function ProjectSection({user}) {
+  const [projects, setProjects] = useState([])
+  const [filter, setFilter] = useState('All')
+  const all = projects.length,
+  ongoing = projects.filter(p => !p.isComplete).length,
+  open = projects.filter(p => p.projectType === 'Public Project').length,
+  completed = projects.filter(p => p.isComplete).length
+  const naviage = useNavigate();
+  const location = useLocation();
+  const userProfile = location.pathname === '/profile';
+  useEffect(() => {
+    const handleFilter = () => {
+      switch (filter) {
+        case 'All':
+          setProjects(Projects)
+          break;
+        case 'Ongoing':
+          setProjects(Projects.filter(p => !p.isComplete))
+          break;
+        case 'Open':
+          setProjects(Projects.filter(p => p.projectType === 'Public Project'))
+          break;
+        case 'Completed':
+          setProjects(Projects.filter(p => p.isComplete))
+          break;
+        default:
+          setProjects(Projects)
+          break;
+      }
+    }
+    // handleFilter();
+  }, [filter])
   const isMobile = window.innerWidth < 768;
   return (
-    <>
+    <section className="project-section">
       <div className="main-project-wrap">
-        <div className="project-tab">
-          <div className={projectView === 'All' ? 'current' : ''} onClick={() => setProjectView('All')}>All <span>{allCount}</span></div>
-          <div className={projectView === 'Ongoing' ? 'current' : ''} onClick={() => setProjectView('Ongoing')}>Ongoing <span>0</span></div>
-          <div className={projectView === 'Open' ? 'current' : ''} onClick={() => setProjectView('Open')}>Open <span>0</span></div>
-          <div className={projectView === 'Completed' ? 'current' : ''} onClick={() => setProjectView('Completed')}>Completed <span>0</span></div>
-          <button>
-            Go to Projects
-          </button>
-        </div>
+        {projects.length >= 1 && (
+          <div className="project-tab">
+            <div className={filter === 'All' ? 'current' : ''} onClick={() => setFilter('All')}>All <span>{all}</span></div>
+            <div className={filter === 'Ongoing' ? 'current' : ''} onClick={() => setFilter('Ongoing')}>Ongoing <span>{ongoing}</span></div>
+            <div className={filter === 'Open' ? 'current' : ''} onClick={() => setFilter('Open')}>Open <span>{open}</span></div>
+            <div className={filter === 'Completed' ? 'current' : ''} onClick={() => setFilter('Completed')}>Completed <span>{completed}</span></div>
+            {userProfile && (
+              <button onClick={() => naviage('/projects')}>
+                Go to Projects
+              </button>
+            )}
+          </div>
+        )}
         <div className="all-project-section">
+          {projects.length === 0 && (
+            <div className="empty-projects">
+              <i className="fa-solid fa-feather-alt"></i>
+              <p>No projects yet</p>
+              {userProfile ? (
+                <>
+                  <p>You have not work on any project!</p>
+                  <button>Create new Project</button>
+                </>
+              ) : (
+                  <p>{user.profile.firstName || user.profile.companyName?.split(' ').slice(0, 1) || user.profile.teamName?.split(' ').slice(0, 1)} has not work on any project!</p>
+              )}
+            </div>
+          )}
           <div className="project-wrapper">
-            {Projects.slice().reverse().map((project) => {
+            {projects.map((project) => {
               return (
                 <div className="project-container" key={project.id}>
                   <div className={`left ${project.projectType === 'Client Project' && 'client-project-left'} ${project.projectType === 'Public Project' && 'public-project-left'}`}>
@@ -107,11 +158,11 @@ export function ProjectSection() {
                   </div>
                   <div className="right">
                     <div className="top">
-                      <p>Updatetd 2 days ago</p>
+                      <p>{statusTimeAgo(project.createdAt)}</p>
                     </div>
                     <div className="bottom">
                       <button className="view-project-btn">View Full Project</button>
-                      <button className="edit-project-btn">Edit Project</button>
+                      {userProfile && <button className="edit-project-btn">Edit Project</button>}
                     </div>
                   </div>
                 </div>
@@ -120,7 +171,7 @@ export function ProjectSection() {
           </div>
         </div>
       </div>
-      <ProfilePageRightSidebar />
-    </>
+      <ProfilePageRightSidebar user={user} />
+    </section>
   )
 }

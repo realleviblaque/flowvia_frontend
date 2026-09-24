@@ -4,21 +4,29 @@ export const user = {
   id: crypto.randomUUID(),
   createdAt: dayjs().toISOString(),
   updatedAt: dayjs().toISOString(),
-  accountType: 'Freelancer',
-  //image: '/profile.png',
-  firstName: 'Levi',
-  lastName: 'Blaque',
-  username: 'realleviblaque',
   email: 'realleviblaque@gmail.com',
-  bio: 'I am a forex trader and a full stack developer, founder and leader',
-  title: 'Full Stack Developer',
-  website: 'realleviblaque.dev',
-  workPreference: 'Remote',  
-  counts: {
-    following: 300,
-    followers: 1200,
-    posts: 47,
-    projects: 30
+  password: 'hasedPassword',
+  accountType: 'Freelancer',
+  teamEnabled: false, // true if team created
+  teamId: null, // team id if team created
+  profile: {
+    //image: '/profile.png',
+    //coverPicture: '/profile.png',
+    firstName: 'Levi',
+    lastName: 'Blaque',
+    username: 'realleviblaque',
+    bio: 'I am a forex trader and a full stack developer, founder and leader',
+    title: 'Full-Stack Developer',
+    website: 'leviblaque.dev',
+    workPreference: 'Remote',  
+    additionalTitle: null,
+    location: null,
+    counts: {
+      following: 300,
+      followers: 1200,
+      posts: 0,
+      project: 0
+    },
   },
   rates: {
     hourlyRate: {
@@ -31,31 +39,16 @@ export const user = {
     }
   },
   info: {
+    isOnline: true,
     isVerified: true,
     openToWork: true,
     openToHire: false,
-    isAvailable: true
+    availability: 'Available', // Available, Busy
+    ratings: 4.0,
+    reviews: 50,
   },
   workedWith: [],
-  skills: [/* {
-    id: crypto.randomUUID(),
-    name: 'React'
-  }, {
-    id: crypto.randomUUID(),
-    name: 'Nodjs'
-  }, {
-    id: crypto.randomUUID(),
-    name: 'Nodjs'
-  }, {
-    id: crypto.randomUUID(),
-    name: 'Nodjs'
-  }, {
-    id: crypto.randomUUID(),
-    name: 'Nodjs'
-  }, {
-    id: crypto.randomUUID(),
-    name: 'Nodjs'
-  } */],
+  skills: [],
   links: [/* {
     id: crypto.randomUUID(),
     name: 'X',
@@ -85,5 +78,5 @@ export const user = {
     name: 'Github',
     url: 'github.com/realleviblaque'
   } */],
-  reviews: [],
+  reviews: []
 }

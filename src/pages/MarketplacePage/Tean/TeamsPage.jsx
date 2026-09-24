@@ -157,6 +157,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
           ) : (
               <div className="team-wrapper">
                 {teams.map((team) => {
+                  const name = team.profile.teamName.split(' ').map(n => n[0]).join('')
                   return (
                     <div key={team.id} className="team-contianer">
                       <div className="top-cover">
@@ -167,7 +168,9 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                       <div className="down">
                         <div className="top">
                           <div className="top-profile">
-                            <img src={team.profile.image} loading="lazy" />
+                            <div className="pic">
+                              {team.profile.image ? <img src={team.profile.image} loading="lazy" /> : <p className="name-text">{name.toUpperCase()}</p>}
+                            </div>
                             {team.info.isVerified && (
                               <div className="verified-badge">
                                 <i className="fa-regular fa-circle-check"></i>
@@ -178,7 +181,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                         </div>
                         <div className="middle">
                           <div className="profile">
-                            <p className="name">{team.profile.name} {team.info.isVerified && <i className="fa-regular fa-check-circle"></i>}</p>
+                            <p className="name">{team.profile.teamName} {team.info.isVerified && <i className="fa-regular fa-check-circle"></i>}</p>
                             <div>
                               <p className="username">@{team.profile.username}</p>
                               <span></span>
@@ -203,7 +206,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                               <div className="title">Followers</div>
                             </div>
                             <div>
-                              <p className="count">{formatCount(team.profile.counts.member)}</p>
+                              <p className="count">{formatCount(team.teamDetails.members.length)}</p>
                               <div className="title">Members</div>
                             </div>
                             <div>
@@ -211,7 +214,7 @@ export function TeamsPage({all, handleDialogOpen, dialog, handleDialogClose, plu
                               <div className="title">Projects</div>
                             </div>
                             <div>
-                              <p className={team.info.status}>{team.info.status}</p>
+                              <p className={team.info.availability}>{team.info.availability}</p>
                               <div className="title">Status</div>
                             </div>
                           </div>

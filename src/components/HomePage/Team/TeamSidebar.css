@@ -12,11 +12,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 32px;
+      width: 32px;
+      padding: 2px;
+      border: 1px solid var(--green-border);
+      background-color: var(--cards);
+      border-radius: 6px;
+      p {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background-color: var(--green-bg);
+        color: var(--green);
+        border-radius: 2px;
+        cursor: pointer;
+      }
       img {
-        height: 32px;
-        width: 32px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 2px;
         cursor: pointer;
       }
     }

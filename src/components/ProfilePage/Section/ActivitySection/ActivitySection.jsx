@@ -1,48 +1,64 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { ProfilePageRightSidebar } from "../../../../components/ProfilePage/ProfilePageRightSidebar"
-import { user } from "../../../../data/ProfilePage/user"
 import './ActivitySection.css'
 import { useState } from "react"
 
-export function ActivitySection() {
+export function ActivitySection({user}) {
   const [posts, setPosts] = useState([])
   const navigate = useNavigate();
+  const location = useLocation();
+  const userProfile = location.pathname === '/profile';
+  
   const goToCreatePost = () => {
     navigate('/create/post?f=profile')
   }
-  const name = user.firstName.slice(0, 1) + user.lastName.slice(0, 1)
+  const name = 
+    user.accountType === 'Recruiter' 
+      ? user.profile.companyName.split(' ').map(n => n[0]).join('').slice(0, 2) 
+    : user.accountType === 'Team' 
+      ? user.profile.teamName.split(' ').map(n => n[0]).join('').slice(0, 2) 
+    : user.profile.firstName.slice(0, 1) + user.profile.lastName.slice(0, 1)
+  ;
   return (
     <section className="activity-section">
       <div className="main-post-wrap">
-        <div className="post-container-input">
-          <div className="top-post">
-            <div className="prof-wrap">
-              {user.image ? <img src={user.image} /> : <p>{name.toUpperCase()}</p>}
+        {userProfile && (
+          <div className="post-container-input">
+            <div className="top-post">
+              <div className="prof-wrap">
+                {user.profile.image ? <img src={user.profile.image} /> : <p>{name.toUpperCase()}</p>}
+              </div>
+              <div className="post-input-btn" onClick={goToCreatePost}>
+                Share an update...
+              </div>
+              <div className="phone-options">
+                <i className="fa-solid fa-image" onClick={goToCreatePost}></i>
+                <i className="fa-solid fa-pencil" onClick={goToCreatePost}></i>
+              </div>
             </div>
-            <div className="post-input-btn" onClick={goToCreatePost}>
-              Share an update...
-            </div>
-            <div className="phone-options">
-              <i className="fa-solid fa-image" onClick={goToCreatePost}></i>
-              <i className="fa-solid fa-pencil" onClick={goToCreatePost}></i>
+            <div className="bottom-post">
+              <div className="left-image-btn" onClick={goToCreatePost}>
+                <i className="fa-solid fa-image"></i>
+              </div>
+              <div className="right-post-btn">
+                <button onClick={goToCreatePost}>Post</button>
+              </div>
             </div>
           </div>
-          <div className="bottom-post">
-            <div className="left-image-btn" onClick={goToCreatePost}>
-              <i className="fa-solid fa-image"></i>
-            </div>
-            <div className="right-post-btn">
-              <button onClick={goToCreatePost}>Post</button>
-            </div>
-          </div>
-        </div>
+        )}
         <div className="activity-container">
           {posts.length === 0 && (
             <div className="empty-posts">
               <i className="fa-solid fa-feather-alt"></i>
               <p>No posts yet</p>
-              <p>Share an updates across Flowvia!</p>
-              <button onClick={goToCreatePost}>Create a Post</button>
+              {userProfile ? (
+                <>
+                  <p>Share an updates across Flowvia!</p>
+                  <button onClick={goToCreatePost}>Create a Post</button>
+                </>
+              ) : (
+                <p>{user.profile.firstName || user.profile.companyName?.split(' ').slice(0, 1) || user.profile.teamName?.split(' ').slice(0, 1)} has not shared any updates on Flowvia!</p>
+              )}
             </div>
           )}
           {posts.map((post) => {
@@ -136,7 +152,7 @@ export function ActivitySection() {
           })}
         </div>
       </div>
-      <ProfilePageRightSidebar />
+      <ProfilePageRightSidebar user={user} />
     </section>
   )
 }

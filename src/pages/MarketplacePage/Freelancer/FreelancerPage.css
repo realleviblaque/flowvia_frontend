@@ -30,6 +30,7 @@
         align-items: center;
         gap: 10px;
         .top-left {
+          flex-shrink: 0;
           display: flex;
           justify-content: center;
           align-items: center;

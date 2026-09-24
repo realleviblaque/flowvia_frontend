@@ -34,9 +34,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 5PX;
-          width: 60px;
-          height: 60px;
+          margin-right: 5px;
           border-radius: 50%;
           position: relative;
           background-color: var(--cards);
@@ -44,8 +42,8 @@
           padding: 2px;
           .name-text {
             flex-shrink: 0;
-            height: 100%;
-            width: 100%;
+            width: 60px;
+            height: 60px;
             background-color: var(--blue-bg);
             color: var(--accent-blue);
             font-size: 20px;
@@ -56,8 +54,8 @@
           }
           img {
             flex-shrink: 0;
-            height: 100%;
-            width: 100%;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             object-fit: cover;
           }

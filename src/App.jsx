@@ -83,6 +83,7 @@ import { CreateJob } from './pages/StatusPage/CreateJob'
 import { Login } from './Auth/Login/Login'
 import { Signup } from './Auth/Signup/Signup'
 import { UserProfile } from './pages/UserProfile/UserProfile'
+import { DraftsPage } from './pages/DraftsPage/DraftsPage'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -227,6 +228,7 @@ function App() {
       <Route path='/signup' element={<Signup />} />
       <Route path='/login' element={<Login />} />
       <Route path='/create/post' element={<CreatePost all={all} />} />
+      <Route path='/create/post/drafts' element={<DraftsPage all={all} />} />
       <Route path='/post/:username/:id' element={<FullPost all={all} savePosts={savePosts} setSavePosts={setSavePosts} />} />
       <Route path='/status' element={
         <StatusPage 

@@ -7,6 +7,7 @@ import dayjs from '../../lib/dayjs';
 import { posts, savePosts } from "../../data/HomePage/posts";
 import { openProjects } from "../../data/StatusPage/openProject";
 import formatCount from "../../utils/formatCount";
+import { Drafts } from "../../data/DraftsPost/drafts";
 
 export function CreatePost({all}) {
   const [text, setText] = useState('');
@@ -39,6 +40,29 @@ export function CreatePost({all}) {
   const [searchParams] = useSearchParams();
   const from = searchParams.get('f')
   const confirmRef = useRef(null)
+  const draft = searchParams.get('draft')
+  useEffect(() => {
+    const handleContinueDraft = () => {
+      if (draft) {
+        const draftPost = Drafts.find(d => d.id === draft)
+        if (draftPost.text) setText(draftPost.text);
+        if (draftPost.tags) setTags(draftPost.tags);
+        if (draftPost.images) {
+          setSelectedMedia(draftPost.images)
+          setAttachPost('image')
+        };
+        if (draftPost.milestone) {
+          setProjectMilestone(draftPost.milestone)
+          setAttachPost('milestone')
+        };
+        if (draftPost.opportunity) {
+          setProjectOpportunity(draftPost.opportunity)
+          setAttachPost('opportunity')
+        }
+      }
+    }
+    handleContinueDraft()
+  }, [draft])
   useEffect(() => {
     const handleMilstoneSearch = () => {
       if (milestoneSearch.trim()) {
@@ -59,7 +83,7 @@ export function CreatePost({all}) {
 
     handleMilstoneSearch();
     handleOpportunitySearch();
-  })
+  }, [milestoneSearch, opportunitySearch])
   useEffect(() => {
     function validatePost() {
       if (text.trim() || tags.length > 0 || projectMIlestone || projectOpportunity || selectedMedia.length > 0) {
@@ -288,6 +312,26 @@ export function CreatePost({all}) {
       return newMedia;
     });
   }
+  const handleSaveDraft = () => {
+    if (!isDrafting) return navigate('/create/post/drafts');
+    const newDraft = {
+      id: crypto.randomUUID(),
+      ...(text.trim() && {text}),
+      ...(tags.length > 0 && {tags}),
+      ...(selectedMedia.length > 0 && {images: selectedMedia}),
+      ...(projectMIlestone && {milestone: projectMIlestone}),
+      ...(projectOpportunity && {opportunity: projectOpportunity}),
+    }
+    const updatedDrafts = Drafts.filter(d => d.id !== draft)
+    updatedDrafts.unshift(newDraft);
+    Drafts.length = 0;
+    Drafts.push(...updatedDrafts)
+    if (from === 'profile') {
+      navigate('/profile')
+    } else {
+      navigate('/')
+    }
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -304,12 +348,12 @@ export function CreatePost({all}) {
         <div className="right">
           {isMobile ? (
             <>
-              <p className="draft">Draft</p>
+              <p onClick={handleSaveDraft} className="draft">Drafts</p>
               <button className={`m-post ${postNow && 'm-post-now'}`} onClick={handlePostNow}>Post</button>
             </>
           ) : (
             <>
-              <button className="draft">{isDrafting ? 'Save' : 'View'} Draft</button>
+              <button onClick={handleSaveDraft} className="draft">{isDrafting ? 'Save' : 'View'} Draft{isDrafting ? '' : 's'}</button>
               <button className={`post ${postNow && 'post-now'}`}  onClick={handlePostNow}><i className="fa-solid fa-paper-plane"></i> Post Now</button>
             </>
           )}
@@ -370,7 +414,7 @@ export function CreatePost({all}) {
                   </div>
                   <div className="preogress-details">
                     <div className="progress-bar">
-                      <span className="bar"></span>
+                      <span className="bar" style={{width: `${Math.round((projectMIlestone.phases.filter(p => p.isCompleted).length / projectMIlestone.phases.length) * 100)}%`}}></span>
                     </div>
                     <div className="count-phase">
                       <p className="phase-count">Phase {projectMIlestone.phases.filter(p => p.isCompleted).length} / {projectMIlestone.phases.length} complete</p>
@@ -679,7 +723,7 @@ export function CreatePost({all}) {
         </div>
         <div className="action">
           <button onClick={handleDelete}>Delete</button>
-          <button>Save</button>
+          <button onClick={handleSaveDraft}>Save</button>
         </div>
       </dialog>
     </>

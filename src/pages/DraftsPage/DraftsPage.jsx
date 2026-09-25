@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { SideBar } from '../../components/Sidebar'
 import './DraftsPage.css'
 import dayjs from '../../lib/dayjs'
@@ -9,6 +9,20 @@ import { useNavigate } from 'react-router-dom'
 export function DraftsPage({all}) {
   const [drafts, setDrafts] = useState(Drafts)
   const navigate = useNavigate();
+  const deleteRef = useRef(null)
+  const clickedId = useRef(null)
+  const handleDeleteClick = (id) => {
+    clickedId.current = id;
+    deleteRef.current.showModal();
+  }
+  const handleDelete = () => {
+    const deletedId = clickedId.current;
+    const updatedDrafts = Drafts.filter(draft => draft.id !== deletedId)
+    Drafts.length = 0;
+    Drafts.push(...updatedDrafts)
+    setDrafts(updatedDrafts)
+    deleteRef.current.close();
+  }
   return (
     <>
       <SideBar notification={all} />
@@ -42,7 +56,7 @@ export function DraftsPage({all}) {
                   </div>
                   <div className="bottom">
                     <button className='continue' onClick={() => navigate(`/create/post?draft=${draft.id}`)}>Continue</button>
-                    <button className='delete'>Delete</button>
+                    <button className='delete' onClick={() => handleDeleteClick(draft.id)}>Delete</button>
                   </div>
                 </div>
                 <div className="right">
@@ -112,6 +126,15 @@ export function DraftsPage({all}) {
           })}
         </div>
       </main>
+      <dialog className="delete-modal" ref={deleteRef}>
+        <div className="top">
+          <p>Are you sure you want to delete this draft post?</p>
+        </div>
+        <div className="bottom">
+          <button onClick={() => deleteRef.current.close()}>Keep</button>
+          <button onClick={handleDelete}>Delete</button>
+        </div>
+      </dialog>
     </>
   )
 }

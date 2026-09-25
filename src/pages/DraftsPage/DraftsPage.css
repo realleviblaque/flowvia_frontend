@@ -84,6 +84,7 @@
               color: var(--accent-blue);
               font-size: 13px;
               border-radius: 20px;
+              cursor: pointer;
             }
           }
         }
@@ -359,4 +360,49 @@
       }
     }
   }
+}
+.delete-modal {
+  flex-direction: column;
+  height: 150px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: var(--cards);
+  border: 1px solid var(--border);
+  .top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    p {
+      line-height: 25px;
+      font-size: 18px;
+      color: var(--secondary-text);
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px;
+    button {
+      padding: 7px 25px;
+      border: 1px solid;
+      border-radius: 20px;
+      cursor: pointer;
+      &:nth-child(2) {
+        background-color: var(--coral-bg);
+        color: var(--coral);
+        border-color: var(--coral-border);
+      }
+      &:nth-child(1) {
+        background-color: var(--green-bg);
+        color: var(--green);
+        border-color: var(--green-border);
+      }
+    }
+  }
+}
+.delete-modal[open] {
+  display: flex;
 }

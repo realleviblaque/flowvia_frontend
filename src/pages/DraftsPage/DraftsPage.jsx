@@ -4,13 +4,15 @@ import './DraftsPage.css'
 import dayjs from '../../lib/dayjs'
 import formatCount from '../../utils/formatCount'
 import { Drafts } from '../../data/DraftsPost/drafts'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 
 export function DraftsPage({all}) {
   const [drafts, setDrafts] = useState(Drafts)
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const deleteRef = useRef(null)
   const clickedId = useRef(null)
+  const from = searchParams.get('f')
   const handleDeleteClick = (id) => {
     clickedId.current = id;
     deleteRef.current.showModal();
@@ -34,6 +36,17 @@ export function DraftsPage({all}) {
       </header>
       <main className="drafts-post-main">
         <div className="drafts-wrapper">
+          {drafts.length === 0 && (
+            <div className="empty-draft">
+              <div className="top">
+                <i className="fa-solid fa-folder-open"></i>
+                <p>No drafts yet!</p>
+              </div>
+              <div className="bottom">
+                <button onClick={() => navigate(`/create/post${from === 'profile' ? '?f=profile' : ''}`)}>Create a post</button>
+              </div>
+            </div>
+          )}
           {drafts.map((draft) => {
             return (
               <div className="draft-wrap" key={draft.id}>
@@ -55,7 +68,7 @@ export function DraftsPage({all}) {
                     )}
                   </div>
                   <div className="bottom">
-                    <button className='continue' onClick={() => navigate(`/create/post?draft=${draft.id}`)}>Continue</button>
+                    <button className='continue' onClick={() => navigate(`/create/post?draft=${draft.id}${from === 'profile' ? '&f=profile' : ''}`)}>Continue</button>
                     <button className='delete' onClick={() => handleDeleteClick(draft.id)}>Delete</button>
                   </div>
                 </div>

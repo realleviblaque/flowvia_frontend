@@ -68,7 +68,7 @@ export function MobileHeader2({setNotifications, setOpenMoreMenu, openMoreMenu, 
             </span>
             <div className={`more-options ${openMoreMenu ? 'open' : ''}`}>
               {userProfile && (
-                <div onClick={() => navigate('/create/post/drafts')}>
+                <div onClick={() => navigate('/create/post/drafts?f=profile')}>
                   <p>Drafts</p>
                   <i className="fa-solid fa-file-alt"></i>
                 </div>

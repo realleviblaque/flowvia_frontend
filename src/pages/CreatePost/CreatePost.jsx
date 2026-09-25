@@ -313,7 +313,7 @@ export function CreatePost({all}) {
     });
   }
   const handleSaveDraft = () => {
-    if (!isDrafting) return navigate('/create/post/drafts');
+    if (!isDrafting) return navigate(`/create/post/drafts${from === 'profile' ? '?f=profile' : ''}`);
     const newDraft = {
       id: crypto.randomUUID(),
       ...(text.trim() && {text}),

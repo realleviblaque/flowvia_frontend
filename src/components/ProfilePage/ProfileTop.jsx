@@ -116,7 +116,7 @@ export function ProfileTop({user, setOpenMoreMenu, openMoreMenu}) {
           </button>
           <div className={`more-options ${openMoreMenu ? 'open' : ''}`}>
             {userProfile && (
-              <div onClick={() => navigate('/create/post/drafts')}>
+              <div onClick={() => navigate('/create/post/drafts?f=profile')}>
                 <p>Drafts</p>
                 <i className="fa-solid fa-file-alt"></i>
               </div>

@@ -23,6 +23,7 @@ export function DraftsPage({all}) {
     Drafts.length = 0;
     Drafts.push(...updatedDrafts)
     setDrafts(updatedDrafts)
+    clickedId.current = null;
     deleteRef.current.close();
   }
   return (
@@ -144,7 +145,10 @@ export function DraftsPage({all}) {
           <p>Are you sure you want to delete this draft post?</p>
         </div>
         <div className="bottom">
-          <button onClick={() => deleteRef.current.close()}>Keep</button>
+          <button onClick={() => {
+            clickedId.current = null;
+            deleteRef.current.close()
+          }}>Keep</button>
           <button onClick={handleDelete}>Delete</button>
         </div>
       </dialog>

@@ -10,7 +10,7 @@ export function StatusPageHeader() {
         <p>Track your work - client jobs, public projects, and hiring posts</p>
       </div>
       <div className="right">
-        <button className="post-job-btn" onClick={() => navigate('/status/create/job')}>
+        <button className="post-job-btn" onClick={() => navigate('/create/job')}>
           <i className="fa-solid fa-plus"></i>
           <p>Post a Job</p>
         </button>

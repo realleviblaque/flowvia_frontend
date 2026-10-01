@@ -94,11 +94,11 @@ export function StatusSectionHeader({selectedId, setSelectedId}) {
                   </button>
               )}
               {isMobile ? (
-                <button className='p-post'>
+                <button className='p-post' onClick={() => navigate('/create/job')}>
                   Post Job
                 </button>
               ) : (
-                <button className='post'>
+                <button className='post' onClick={() => navigate('/create/job')}>
                   <i className="fa-solid fa-plus"></i>
                   Post a Job
                 </button>

@@ -79,11 +79,11 @@ import { InNegotiation } from './pages/StatusPage/Hire/InNegotiation'
 import { TakenProject } from './pages/StatusPage/Hire/TakenProject'
 import { HirePendingRequest } from './pages/StatusPage/Hire/HirePendingRequest'
 import { HireCompletedProject } from './pages/StatusPage/Hire/HireCompletedProject'
-import { CreateJob } from './pages/StatusPage/CreateJob'
 import { Login } from './Auth/Login/Login'
 import { Signup } from './Auth/Signup/Signup'
 import { UserProfile } from './pages/UserProfile/UserProfile'
 import { DraftsPage } from './pages/DraftsPage/DraftsPage'
+import { CreateJob } from './pages/CreateJob/CreateJob'
 
 function App() {
   const [savePosts, setSavePosts] = useState(JSON.parse(localStorage.getItem('savePosts')) || [{
@@ -251,7 +251,7 @@ function App() {
       <Route path='/status/hire/taken' element={<TakenProject all={all} />} />
       <Route path='/status/hire/pending' element={<HirePendingRequest all={all} selectedId={selectedId} setSelectedId={setSelectedId} />} />
       <Route path='/status/hire/completed' element={<HireCompletedProject all={all} />} />
-      <Route path='/status/create/job' element={<CreateJob />} />
+      <Route path='/create/job' element={<CreateJob all={all} />} />
       <Route path='/projects' element={
         <ProjectPage 
           all={all} 

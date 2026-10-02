@@ -3,6 +3,7 @@ import { SideBar } from "../../components/Sidebar";
 import './CreateJob.css'
 import { useNavigate } from "react-router-dom";
 import { Users } from "../../data/Users/users";
+import { workCircle } from "../../data/WorkCirclePage/workCircle";
 
 export function CreateJob({all}) {
   const [job, setJob] = useState({})
@@ -19,26 +20,13 @@ export function CreateJob({all}) {
     max: ''
   })
   const [skills, setSkills] = useState([]);
-  const [invitess, setInvitees] = useState([/* {
-    id: crypto.randomUUID(),
-    from: 'Work Circle',
-    accountType: 'Freelancer',
-    profile: {
-      firstName: 'Levi',
-      lastName: 'Blaque',
-      username: 'realleviblaque',
-      title: 'Full Stack Developer'
-    }
-  }, {
-    id: crypto.randomUUID(),
-    from: 'Marketplace',
-    accountType: 'Team',
-    profile: {
-      teamName: 'Levi Team',
-      username: 'theleviteam',
-      title: 'Team Space Dev'
-    }
-  } */])
+  const [invitess, setInvitees] = useState([])
+  const [workCircleUsername, setWorkCircleUsername] = useState('')
+  const [workCircleChecking, setWorkCircleChecking] = useState(false)
+  const [workCircleFoundUser, setWorkCircleFoundUser] = useState(null)
+  const [marketplaceUsername, setMarketplaceUsername] = useState('')
+  const [marketplaceChecking, setMarketplaceChecking] = useState(false)
+  const [marketplaceFoundUser, setMarketplaceFoundUser] = useState(null)
   const [skillsInput, setSkillsInput] = useState('')
   const [postToHome, setPostToHome] = useState(false)
   const [isPostReady, setIsPostReady] = useState(false)
@@ -57,6 +45,68 @@ export function CreateJob({all}) {
     }
     handlePostReady();
   }, [budget, deadline, description, workType, location, experience, projectType, requiredTitle, skills, title])
+  // Work Circle Invite UseEffect
+  useEffect(() => {
+    const handleWorkCircleInvite = () => {
+      if (!workCircleUsername.trim()) {
+        setWorkCircleChecking(false)
+        setWorkCircleFoundUser(null)
+        return;
+      }
+      const timer = setTimeout(() => {
+        const workCircleUser = workCircle.find(user => user.profile.username.toLowerCase() === workCircleUsername.trim().toLowerCase());
+        const inviteUser = workCircleUser ? {
+          id: crypto.randomUUID(),
+          from: 'Work Circle',
+          accountType: workCircleUser.accountType,
+          profile: {
+            id: workCircleUser.profile.id,
+            ...(workCircleUser.accountType === 'Freelancer' && {firstName: workCircleUser.profile.firstName, lastName: workCircleUser.profile.lastName}),
+            ...(workCircleUser.accountType === 'Team' && {teamName: workCircleUser.profile.teamName}),
+            ...(workCircleUser.accountType === 'Recruiter' && {companyName: workCircleUser.profile.companyName}),
+            username: workCircleUser.profile.username,
+            title: workCircleUser.profile.title
+          }
+        } : null
+        setWorkCircleFoundUser(inviteUser)
+        setWorkCircleChecking(false)
+      }, 600);
+
+      return () => clearTimeout(timer)
+    }
+    return handleWorkCircleInvite()
+  }, [workCircleUsername])
+  // Marketplace Invite UseEffect
+  useEffect(() => {
+    const handleWorkCircleInvite = () => {
+      if (!marketplaceUsername.trim()) {
+        setMarketplaceChecking(false)
+        setMarketplaceFoundUser(null)
+        return;
+      }
+      const timer = setTimeout(() => {
+        const marketplaceUser = Users.find(user => user.profile.username.toLowerCase() === marketplaceUsername.trim().toLowerCase());
+        const inviteUser = marketplaceUser ? {
+          id: crypto.randomUUID(),
+          from: 'Marketplace',
+          accountType: marketplaceUser.accountType,
+          profile: {
+            id: marketplaceUser.id,
+            ...(marketplaceUser.accountType === 'Freelancer' && {firstName: marketplaceUser.profile.firstName, lastName: marketplaceUser.profile.lastName}),
+            ...(marketplaceUser.accountType === 'Team' && {teamName: marketplaceUser.profile.teamName}),
+            ...(marketplaceUser.accountType === 'Recruiter' && {companyName: marketplaceUser.profile.companyName}),
+            username: marketplaceUser.profile.username,
+            title: marketplaceUser.profile.title
+          }
+        } : null
+        setMarketplaceFoundUser(inviteUser)
+        setMarketplaceChecking(false)
+      }, 600);
+
+      return () => clearTimeout(timer)
+    }
+    return handleWorkCircleInvite()
+  }, [marketplaceUsername])
   const handleSkillsKeydown = (e) => {
     if (e.key === 'Enter' && skillsInput.trim()) {
       setSkills(prev => [
@@ -107,6 +157,21 @@ export function CreateJob({all}) {
     e.stopPropagation()
     setExperience(experience)
     setExperienceModalOpen(false)
+  }
+  const handleWorkCircleInviteClick = () => {
+    if (!workCircleFoundUser) return;
+    setInvitees(prev => [workCircleFoundUser, ...prev])
+    setWorkCircleUsername('')
+    setWorkCircleFoundUser(null)
+  }
+  const handleMarketplaceInviteClick = () => {
+    if (!marketplaceFoundUser) return;
+    setInvitees(prev => [marketplaceFoundUser, ...prev])
+    setMarketplaceUsername('')
+    setMarketplaceFoundUser(null)
+  }
+  const handleInviteRemove = (index) => {
+    setInvitees(prev => prev.filter((_, prevIndex) => prevIndex !== index))
   }
   const handlePostJob = () => {
     if (!isPostReady) return;
@@ -311,7 +376,7 @@ export function CreateJob({all}) {
               </div>
               <div className="bottom">
                 <div className="invite-wrapper">
-                  {invitess.map((invite) => {
+                  {invitess.map((invite, index) => {
                     const name = invite.profile.companyName?.split(' ').map(n => n[0]).join('').slice(0, 2) 
                     || invite.profile.teamName?.split(' ').map(n => n[0]).join('').slice(0, 2) 
                     || invite.profile.firstName?.slice(0, 1) + invite.profile.lastName.slice(0, 1);
@@ -332,7 +397,7 @@ export function CreateJob({all}) {
                         </div>
                         <div className="right">
                           <span className="from">{invite.from}</span>
-                          <i className="fa-solid fa-x"></i>
+                          <i className="fa-solid fa-x" onClick={() => handleInviteRemove(index)}></i>
                         </div>
                       </div>
                     )
@@ -340,8 +405,20 @@ export function CreateJob({all}) {
                 </div>
                 <div className="input-wrapper">
                   <div className="input-wrap">
-                    <input type="text" placeholder="Search Work Circle by @handle..." />
-                    <button><i className="fa-solid fa-plus"></i> Invite</button>
+                    <div className="wrap">
+                      <input type="text" placeholder="Search Work Circle by @handle..." value={workCircleUsername} onChange={e => {
+                        const value = e.target.value;
+                        setWorkCircleUsername(value)
+                        setWorkCircleChecking(!!value.trim());
+                        setWorkCircleFoundUser(null)
+                      }} />
+                      <div className="found-check">
+                        {(!workCircleChecking  && workCircleFoundUser) && <i className="fa-solid fa-circle-check found"></i>}
+                        {(!workCircleChecking && workCircleUsername && !workCircleFoundUser) && <i className="fa-solid fa-circle-xmark not-found"></i>}
+                      </div>
+                      <div className="checking">{workCircleChecking && <p>Checking...</p>}</div>
+                    </div>
+                    <button onClick={handleWorkCircleInviteClick}><i className="fa-solid fa-plus"></i> Invite</button>
                   </div>
                   <div className="line">
                     <span></span>
@@ -349,8 +426,20 @@ export function CreateJob({all}) {
                     <span></span>
                   </div>
                   <div className="input-wrap">
-                    <input type="text" placeholder="Search Marketplace by @handle..." />
-                    <button><i className="fa-solid fa-plus"></i> Invite</button>
+                    <div className="wrap">
+                      <input type="text" placeholder="Search Marketplace by @handle..." value={marketplaceUsername} onChange={e => {
+                        const value = e.target.value;
+                        setMarketplaceUsername(e.target.value)
+                        setMarketplaceChecking(!!value.trim());
+                        setMarketplaceFoundUser(null)
+                      }} />
+                      <div className="found-check">
+                        {(!marketplaceChecking  && marketplaceFoundUser) && <i className="fa-solid fa-circle-check found"></i>}
+                        {(!marketplaceChecking && marketplaceUsername && !marketplaceFoundUser) && <i className="fa-solid fa-circle-xmark not-found"></i>}
+                      </div>
+                      <div className="checking">{marketplaceChecking && <p>Checking...</p>}</div>
+                    </div>
+                    <button onClick={handleMarketplaceInviteClick}><i className="fa-solid fa-plus"></i> Invite</button>
                   </div>
                 </div>
               </div>

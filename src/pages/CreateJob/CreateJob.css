@@ -31,7 +31,7 @@
       background-color: var(--cards);
       border: 1px solid var(--border);
       border-radius: 8px;
-      color: var(--mutetd-tetx);
+      color: var(--secondary-text);
       font-size: 12px;
       padding: 0 8px;
       cursor: pointer;
@@ -771,6 +771,9 @@
                 bottom: -16px;
                 font-size: 12px;
                 color: var(--secondary-text);
+                .err {
+                  color: var(--coral);
+                }
               }
             }
             button {

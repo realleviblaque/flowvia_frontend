@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SideBar } from "../../components/Sidebar";
 import './CreateJob.css'
 import { useNavigate } from "react-router-dom";
@@ -24,16 +24,20 @@ export function CreateJob({all}) {
   const [workCircleUsername, setWorkCircleUsername] = useState('')
   const [workCircleChecking, setWorkCircleChecking] = useState(false)
   const [workCircleFoundUser, setWorkCircleFoundUser] = useState(null)
+  const [workCircleInviteMessage, setWorkCircleInviteMessage] = useState('')
   const [marketplaceUsername, setMarketplaceUsername] = useState('')
   const [marketplaceChecking, setMarketplaceChecking] = useState(false)
   const [marketplaceFoundUser, setMarketplaceFoundUser] = useState(null)
+  const [marketplaceInviteMessage, setMarketplaceInviteMessage] = useState('')
   const [skillsInput, setSkillsInput] = useState('')
   const [postToHome, setPostToHome] = useState(false)
   const [isPostReady, setIsPostReady] = useState(false)
-  const navigate = useNavigate()
   const [workModalOpen, setWorkModalOpen] = useState(false)
   const [locationModalOpen, setLocationModalOpen] = useState(false)
   const [experienceModalOpen, setExperienceModalOpen] = useState(false)
+  const workCircleTimeout = useRef(null)
+  const marketplaceTimeout = useRef(null)
+  const navigate = useNavigate()
   useEffect(() => {
     const handlePostReady = () => {
       if (!projectType.trim() || !title.trim() || !description.trim() || !deadline.trim() || !requiredTitle.trim() || !workType.trim() || !location.trim() || !experience.trim() || !budget.min || !budget.max || skills.length === 0) {
@@ -160,12 +164,30 @@ export function CreateJob({all}) {
   }
   const handleWorkCircleInviteClick = () => {
     if (!workCircleFoundUser) return;
+    const alreadyAdded = invitess.some(invite => invite.profile.username.toLowerCase() === workCircleFoundUser.profile.username.toLowerCase());
+    if (alreadyAdded) {
+      clearTimeout(workCircleTimeout.current)
+      setWorkCircleInviteMessage('Already added');
+      workCircleTimeout.current = setTimeout(() => {
+        setWorkCircleInviteMessage('')
+      }, 2000);
+      return;
+    }
     setInvitees(prev => [workCircleFoundUser, ...prev])
     setWorkCircleUsername('')
     setWorkCircleFoundUser(null)
   }
   const handleMarketplaceInviteClick = () => {
     if (!marketplaceFoundUser) return;
+    const alreadyAdded = invitess.some(invite => invite.profile.username.toLowerCase() === marketplaceFoundUser.profile.username.toLowerCase());
+    if (alreadyAdded) {
+      clearTimeout(marketplaceTimeout.current)
+      setMarketplaceInviteMessage('Already added');
+      marketplaceTimeout.current = setTimeout(() => {
+        setMarketplaceInviteMessage('')
+      }, 2000);
+      return;
+    }
     setInvitees(prev => [marketplaceFoundUser, ...prev])
     setMarketplaceUsername('')
     setMarketplaceFoundUser(null)
@@ -191,6 +213,24 @@ export function CreateJob({all}) {
       ...(projectType === 'personal invite' && {invitess}),
     })
     console.log(job)
+  }
+  const handleSaveDraft = () => {
+    const draft = {
+      id: crypto.randomUUID(),
+      projectType,
+      title,
+      description,
+      deadline,
+      requiredTitle,
+      workType,
+      location,
+      experience,
+      budget,
+      skills,
+      ...(projectType === 'public' && {postToHome}),
+      ...(projectType === 'personal invite' && {invitess})
+    }
+    console.log(draft)
   }
   return (
     <>
@@ -416,7 +456,10 @@ export function CreateJob({all}) {
                         {(!workCircleChecking  && workCircleFoundUser) && <i className="fa-solid fa-circle-check found"></i>}
                         {(!workCircleChecking && workCircleUsername && !workCircleFoundUser) && <i className="fa-solid fa-circle-xmark not-found"></i>}
                       </div>
-                      <div className="checking">{workCircleChecking && <p>Checking...</p>}</div>
+                      <div className="checking">
+                        {workCircleChecking && <p>Checking...</p>}
+                        {workCircleInviteMessage.trim() && <p className="err">{workCircleInviteMessage}</p>}
+                      </div>
                     </div>
                     <button onClick={handleWorkCircleInviteClick}><i className="fa-solid fa-plus"></i> Invite</button>
                   </div>
@@ -437,7 +480,10 @@ export function CreateJob({all}) {
                         {(!marketplaceChecking  && marketplaceFoundUser) && <i className="fa-solid fa-circle-check found"></i>}
                         {(!marketplaceChecking && marketplaceUsername && !marketplaceFoundUser) && <i className="fa-solid fa-circle-xmark not-found"></i>}
                       </div>
-                      <div className="checking">{marketplaceChecking && <p>Checking...</p>}</div>
+                      <div className="checking">
+                        {marketplaceChecking && <p>Checking...</p>}
+                        {marketplaceInviteMessage.trim() && <p className="err">{marketplaceInviteMessage}</p>}
+                      </div>
                     </div>
                     <button onClick={handleMarketplaceInviteClick}><i className="fa-solid fa-plus"></i> Invite</button>
                   </div>
@@ -452,10 +498,10 @@ export function CreateJob({all}) {
       </main>
       <div className="bottom-action">
         <div className="left">
-          <span className="discard">Discard</span>
+          <span className="discard" onClick={() => navigate(-1)}>Discard</span>
         </div>
         <div className="right">
-          <button>Save as Draft</button>
+          <button onClick={handleSaveDraft}>Save as Draft</button>
           <button className={isPostReady ? 'active' : ''} onClick={handlePostJob}>Post Job</button>
         </div>
       </div>

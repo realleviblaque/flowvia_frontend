@@ -1185,7 +1185,7 @@
         }
       }
       .middle {
-        max-height: 510px;
+        max-height: unset;
         &::-webkit-scrollbar {
           display: none;
         }

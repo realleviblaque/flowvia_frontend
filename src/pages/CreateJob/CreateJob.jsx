@@ -232,18 +232,21 @@ export function CreateJob({all}) {
     }
     console.log(draft)
   }
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <SideBar notification={all} />
       <header className="create-job-header">
         <div className="left">
-          <button onClick={() => navigate('/status')}><i className="fa-solid fa-chevron-left"></i> Back to Status</button>
+          {isMobile ? <i onClick={() => navigate('/status')} className="fa-solid fa-chevron-left"></i> : <button onClick={() => navigate('/status')}><i className="fa-solid fa-chevron-left"></i> Back to Status</button>}
           <span></span>
           <p className="hd-txt">Create Job Post</p>
         </div>
-        <div className="right">
-          <p className="txt">Choose type - Fill details - Post</p>
-        </div>
+        {!isMobile && (
+          <div className="right">
+            <p className="txt">Choose type - Fill details - Post</p>
+          </div>
+        )}
       </header>
       <main className="create-job-main">
         <div className="create-job-container">
@@ -371,7 +374,7 @@ export function CreateJob({all}) {
                       <div className="skills-wrapper">
                         {skills.map((skill) => {
                           return (
-                            <span>{skill.name} <i className="fa-solid fa-x" onClick={() => handleSkillsRemove(skill.id)}></i></span>
+                            <span key={skill.id}>{skill.name} <i className="fa-solid fa-x" onClick={() => handleSkillsRemove(skill.id)}></i></span>
                           )
                         })}
                       </div>

@@ -1082,6 +1082,13 @@
                 padding: 0 10px;
                 font-size: 14px;
               }
+              input[type='date'] {
+                display: block;
+                width: 100%;
+                min-width: 0;
+                box-sizing: border-box;
+                max-width: 100%;
+              }
               textarea {
                 padding: 10px;
                 font-size: 14px;
